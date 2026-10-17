@@ -1,7 +1,7 @@
 """
 C트랙 37건(설명 안 됨) 확정 실험 (읽기 전용, 분석 전용). baseline은 전혀 건드리지 않고,
 **옛 MPC 인스턴스의 P만** 표준 QP 스케일(전부 x2 -- qy,qpsi,rdelta,rddelta 동시 2배,
-`legacy_2025/final_hierarchical_backup_thesis_1204.py:855-881`(구 legacy_2025/code_backup/final_hierarchical_backup.py)의 self.P를 그대로 2배)로 바꾼 변형을
+`legacy_2025/final_hierarchical_backup_thesis_1204.py:855-881`(구 code_backup/final_hierarchical_backup.py)의 self.P를 그대로 2배)로 바꾼 변형을
 이 스크립트 안에서만 만들어 37건을 재실행한다. old 코드 파일 자체는 수정하지 않는다
 (런타임에 인스턴스 속성만 교체, `old_mpc.P = old_mpc.P * 2`).
 

@@ -10,7 +10,7 @@
 baseline에 넣지 않고 `IMPROVEMENT_BACKLOG.md`에만 기록(이 문서엔 후보만 적어둠).
 
 근거 페이지는 전부 1단계에서 이미지로 직접 확인한 것입니다(`repro/docs/THESIS_PAGES.md`,
-`repro/docs/pdf_pages/page_NN.png`). 원문 인용은 pdftotext 결과(`docs/졸업논문.txt`, 한글 깨짐
+`repro/docs/pdf_pages/page_NN.png`). 원문 인용은 pdftotext 결과(`repro/docs/thesis_pdftotext.txt`, 한글 깨짐
 없는 숫자·수식 부분)와 이미지 판독을 함께 사용했습니다.
 
 ---

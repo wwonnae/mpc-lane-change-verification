@@ -30,9 +30,9 @@
 docs/revision/
   재구현검증보고서_2026.md        # 최종 본문(장별 파일을 합친 결과물)
   chapters/NN_<장>.md             # 장별 원고(세션 간 중단·재개 단위, §8)
-  legacy_2025/figures/                        # 그림 PNG(캡션에 생성 스크립트·조건 태그 표기)
+  figures/                        # 그림 PNG(캡션에 생성 스크립트·조건 태그 표기)
   REVISION_NUMBERS.csv            # 수치 교체표(집필 기준표, §3) — 생성 완료
-  PROGRESS.md                     # 집필 진행 체크리스트(§8)
+  PROGRESS.md                     # 집필 진행 체크리스트(§8, 공개본에서는 repro/docs/REVISION_PROGRESS.md)
   scripts/                        # 수치·그림 생성 스크립트(분석 전용, 원 결과 폴더는 읽기만)
     make_revision_numbers.py      # CSV 생성(완료)
     r1_baseline_e2_stats.py       # R1 (예정)
@@ -170,7 +170,7 @@ docs/revision/
 ### 3-4. CSV 전사 검증 (S2, 2026-09-25)
 
 **방법** (두 가지를 독립적으로):
-1. **텍스트 대조(자동)**: `docs/졸업논문.txt`(pdftotext, 한글은 깨지지만 숫자·영문은 보존)를 쪽 단위(``)로 나눠, CSV 각 행 `제출본_값`의
+1. **텍스트 대조(자동)**: `repro/docs/thesis_pdftotext.txt`(pdftotext, 한글은 깨지지만 숫자·영문은 보존)를 쪽 단위(``)로 나눠, CSV 각 행 `제출본_값`의
    모든 숫자 토큰이 **그 행의 쪽** 텍스트에 있는지 확인.
 2. **이미지 대조(수동)**: 표에서 온 행(표 1–18, 150행)을 `repro/docs/pdf_pages/page_06~20.png` 이미지와 칸 단위로 대조. 본문 반복 행은
    해당 표 행과 값이 같은지(반올림 포함) 대조.
@@ -327,7 +327,7 @@ docs/revision/
 ## 8. 집필 순서 (여러 세션 전제)
 
 ### 8-1. 원칙
-- **장별 파일**(`docs/revision/chapters/NN_*.md`)로 씁니다 — 세션이 끊겨도 완료된 장은 그대로 남고, 재개는 `PROGRESS.md` 체크리스트의 첫
+- **장별 파일**(`docs/revision/chapters/NN_*.md`)로 씁니다 — 세션이 끊겨도 완료된 장은 그대로 남고, 재개는 `REVISION_PROGRESS.md` 체크리스트의 첫
   미완료 항목부터. 최종 본문은 `build_report.py`로 결합.
 - **수치는 CSV에서만**: 장을 쓰기 전에 그 장이 쓰는 CSV 행이 전부 `상태=확정`이어야 합니다. 장 완료 시 본문에 쓴 수치를 CSV와 자동 대조
   (`build_report.py --check`: 본문에 등장한 제출본 값이 "제출본" 표기 없이 쓰였는지, 교체 행의 개정판 값이 해당 장에 있는지).
@@ -339,7 +339,7 @@ docs/revision/
 |---|---|---|---|
 | **S1**(완료) | 설계 확정, CSV 생성 | `DESIGN_REVISION.md`, `REVISION_NUMBERS.csv` | — |
 | **S2** | R1·R3 재생 통계 스크립트 작성·실행(일치 확인 포함) → CSV 채움. R2는 스크립트만 작성, **실행은 사용자**(공식 조건, 약 2분) | `scripts/r1_*.py`, `r3_*.py`, `r2_*.py`, 갱신된 CSV | CSV `상태=확정` 256/256 (R2 대기 8행만 남아도 S3 진행 가능 — 해당 8행은 VI.2·VI.4 계산시간 표에만 쓰임) |
-| **S3** | **그림 생성**(R1·R3 결과 확정 직후, 집필 전에 전부) | `legacy_2025/figures/` 9개(§8-4) | 모든 그림 PNG + 캡션 조건 태그 초안 |
+| **S3** | **그림 생성**(R1·R3 결과 확정 직후, 집필 전에 전부) | `figures/` 9개(§8-4) | 모든 그림 PNG + 캡션 조건 태그 초안 |
 | **S4** | 부록 B(조건 코드표) → III → IV → V | `chapters/03~05`, `A_B.md` | 장 파일 4개, CSV 대조 통과 |
 | **S5** | VI.1 → VI.2 → VI.3 → VI.5 | `chapters/06_1~3, 06_5` | 〃 |
 | **S6** | VI.6 → VI.4 → VI.7 | `chapters/06_6, 06_4, 06_7` | 〃 |

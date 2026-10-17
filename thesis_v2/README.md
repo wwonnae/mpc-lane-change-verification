@@ -1,8 +1,8 @@
-# thesis_v2 — 실행 환경 (초안)
+# thesis_v2 — 실행 환경
 
-이 문서는 5단계(README 정리) 전, 2단계-B에서 교차 환경(SSAFY PC / 노트북) 재현성을
-확보하기 위해 필요한 최소 정보만 기록한 초안입니다. 전체 프로젝트 README는 5단계에서
-작성합니다.
+2단계-B에서 교차 환경(SSAFY PC / 노트북) 재현성을 확보하기 위해 실행 환경 정보를 기록한
+문서입니다. 프로젝트 전체 개요는 저장소 루트의 `README.md`에 있습니다. 이후 CI(GitHub Actions)는
+ubuntu·windows × Python 3.9로 같은 테스트를 실행합니다(`docs/verification/CI.md`).
 
 ## 지원 Python 버전
 

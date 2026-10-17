@@ -1,5 +1,5 @@
 """
-M/C트랙 전용: legacy_2025/final_hierarchical_backup_thesis_1204.py(루트, 5단계 재정리 전 위치 legacy_2025/code_backup/final_hierarchical_backup.py,
+M/C트랙 전용: legacy_2025/final_hierarchical_backup_thesis_1204.py(5단계 재정리 전 위치 code_backup/final_hierarchical_backup.py,
 2025-12-04 04:17, STAGE1_FACTS.md에서
 확인된 "실험 당시 코드")의 OSQPMPC를 그대로 불러와 옛 MPC 출력을 구한다.
 repro/docs/WORK_RULES.md 예외 허용 위치(thesis_v2/tests/compare/만 기존 코드 import 허용) — 이 파일만

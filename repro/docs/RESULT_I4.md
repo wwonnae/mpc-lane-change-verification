@@ -204,7 +204,7 @@ batch=1로 추론, warmup 50 제외. "e2e" = feature 정규화+추론+역정규�
 
 ## 8. Student v2 — S10/S11 dev 비교와 선택 (DESIGN_I4 §6-7, eval3 전)
 
-원자료: `thesis_v2/results/i4_student_v2/20260925_092109_DESKTOP-MDCKRJS/` (`legacy_2025/dataset/`, `S10/`, `S11/`, `dev_compare/dev_compare.json`). 코드:
+원자료: `thesis_v2/results/i4_student_v2/20260925_092109_DESKTOP-MDCKRJS/` (`dataset/`, `S10/`, `S11/`, `dev_compare/dev_compare.json`). 코드:
 `thesis_v2/improved/student_i4/dev_compare.py`. 근거: SETTINGS_DECISION §20(ψ [개정], δ_prev [발전]).
 **dev 데이터만 사용**(eval 데이터 미사용). 9입력은 I4 모델 그대로(재학습 없음).
 

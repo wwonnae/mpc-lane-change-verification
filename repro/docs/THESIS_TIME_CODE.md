@@ -381,7 +381,7 @@ random.randint(40, 60)`(20 step 폭), `obstacle_start = random.randint(30, 50)`(
 
 - **zip 파일 정체**: `code_backup.zip`=2025-10-14–12-04 개발 스냅샷(`legacy_2025/code_backup/`와 거의 동일,
   49개 파일). `folder_backup.zip`=2025-10-04–2026-05-07까지 걸친 훨씬 넓은 범위의 개발 폴더
-  전체 백업(964개 항목, `legacy_2025/results/`·`__pycache__`·`test_sim/` 등 포함) — 이번 조사로 최소
+  전체 백업(964개 항목, `results/`·`__pycache__`·`test_sim/` 등 포함) — 이번 조사로 최소
   2026-05-07 재실행 이후 시점까지 담고 있음이 확인됨.
 - **논문 결과 데이터 출처**: `legacy_2025/run_simulation.py`(스크립트형 센서 주입) + 당시 `final_hierarchical_backup.py`
   (97,747B, cooldown 없음, EVADE_L 예외 없음) — **확인됨** (스키마 일치 1절, FSM 전이 간격 7절,

@@ -45,7 +45,7 @@ thesis_v2/improved/student_i4/        # 학습·평가 코드(신규 패키지, 
   train.py                            # 학습 루프
   evaluate.py                         # MAE·폐루프·계산시간·변동성 평가
 thesis_v2/results/i4_student/<timestamp>_<host>/
-  legacy_2025/dataset/                            # 생성된 학습·검증 데이터셋(옛 데이터셋과 분리 보관)
+  dataset/                            # 생성된 학습·검증 데이터셋(옛 데이터셋과 분리 보관)
   checkpoints/policy_i4_best.pt       # 새 모델(원본 legacy_2025/models/policy_best.pth와 별도 경로, 수정 없음)
   train_log.json                      # epoch별 train/val loss, lr, 시각
   eval/                               # MAE·폐루프·계산시간·변동성 결과 JSON
@@ -167,7 +167,7 @@ MPC 호출 스텝만, 모든 dev 에피소드 outcome=성공(paper 500/500, S3 9
 - **학습 데이터 결정(2026-09-25 사용자): Round 0 채택 — 115,076 샘플**(paper dev 100 + S3 dev
   900). 근거: 설계가 사전 고정한 범위이고, seed 확대는 불균형 해소를 조건으로 한 조치였는데
   그 조건이 성립하지 않음(0.0789→0.0791→0.0790, 구조적). Round 2 데이터(160,047 샘플)는
-  삭제하지 않고 `dataset_round2_UNUSED/`로 **미사용 보존**. 학습용 `legacy_2025/dataset/`은
+  삭제하지 않고 `dataset_round2_UNUSED/`로 **미사용 보존**. 학습용 `dataset/`은
   `--expansion-rounds 0`으로 같은 코드·같은 seed로 재생성(상태별 수는 라운드 0과 동일).
   - (정정) 이전 보고의 "114,576"은 합산 오기, 정확한 값은 115,076(= 8,176+46,001+4,453+56,446).
   - Round 0 계층 분할: train 97,824 / val 17,252. 상태 비율 train/val = KEEP_L2 7.13%/6.95%,
