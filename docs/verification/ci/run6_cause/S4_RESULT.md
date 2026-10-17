@@ -1,6 +1,6 @@
 # S4 결과: GitHub 러너 재현 (flaky-probe #1, #2)
 
-§1~§4는 #1(repeats 500), §5는 #2(repeats 1500, 보강)다.
+§1–§4는 #1(repeats 500), §5는 #2(repeats 1500, 보강)다.
 
 - 실행: 워크플로 `flaky-probe` #1, 커밋 **97d1ed6**, 사용자가 수동 실행했다. 총 15분 36초.
   입력은 repeats=500, conditions=orig,A, load=none이다(사용자 보고).
@@ -25,7 +25,7 @@
 | **windows / orig** | **16/500 [0.018, 0.051]** | i5 3, i4_rec 4, i4_cl100 6, i4_cl101 5, base 0 | **18** | 20 (그중 base 2) | 77.2 ms (base), 75.5 ms (time_limit 대상) | **18/18** 대상·회차, 첫 불일치 쌍 21/21. 입력 동일 21/21 |
 | windows / A | 0/500 [0, 0.0074] | 전부 0 | 0 | **42** | 238.4 ms | — |
 
-- "45 ms 넘는 solve 수" 대신 "45 ms 넘는 solve가 있는 에피소드 수"를 셌다. 래퍼가 회차마다 남기는 것이 에피소드별 최대 solve 시간과 지문 solve 목록이기 때문이다. 전체 solve 기록은 job마다 처음 2회차뿐이다. orig에서는 45 ms를 넘긴 solve가 거의 모두 지문 solve가 된다. 지문 solve 18개의 run_time은 45.0~75.5 ms였다.
+- "45 ms 넘는 solve 수" 대신 "45 ms 넘는 solve가 있는 에피소드 수"를 셌다. 래퍼가 회차마다 남기는 것이 에피소드별 최대 solve 시간과 지문 solve 목록이기 때문이다. 전체 solve 기록은 job마다 처음 2회차뿐이다. orig에서는 45 ms를 넘긴 solve가 거의 모두 지문 solve가 된다. 지문 solve 18개의 run_time은 45.0–75.5 ms였다.
 - **windows/orig 지문 18개의 형태**는 다음과 같다. mpc.py와 time_limit_monitor가 세는 것은 "run time limit reached"뿐이므로, 6/18은 기존 감시에 잡히지 않는다.
 
   | status | iter가 25의 배수 아님 | 25의 배수 | 합 |
@@ -39,7 +39,7 @@
   - orig_036#9: "solved inaccurate", iter 700, 50.1 ms
   - orig_039#0: "solved inaccurate", iter 14, 45.0 ms
 
-  3건 중 2건은 time_limit_monitor 기준 발동 0회로 보였을 형태다. 조향 최대 차이는 0.0014~0.029°였다.
+  3건 중 2건은 time_limit_monitor 기준 발동 0회로 보였을 형태다. 조향 최대 차이는 0.0014–0.029°였다.
 - **Fisher 정확검정(양측) windows orig 대 A:**
   - 대상별(사전 지정 단위): i5 [[3,497],[0,500]] p=0.25, i4_rec p=0.12, i4_cl100 [[6,494],[0,500]] **p=0.031**, i4_cl101 p=0.062, base p=1
   - 회차 단위(보조): [[16,484],[0,500]] **p=2.7e-5**
@@ -56,7 +56,7 @@
 
 - 소프트웨어는 두 OS 모두 Python 3.9.13, numpy 2.0.2, scipy 1.13.1, osqp 1.1.1, torch 2.8.0+cpu다(pip_freeze.txt).
 - **windows 러너 CPU(sysmon):**
-  - 평균 total 64~67%, 실험 25~26%, other 14~17%.
+  - 평균 total 64–67%, 실험 25–26%, other 14–17%.
   - other의 주요 기여 프로세스는 CompatTelRunner(Windows 호환성 원격분석)와 svchost, WindowsTerminal, MsMpEng(Defender)이다.
   - windows/orig 불일치 16회차는 모두 other>10% 회차였다(위반 아닌 145회차 중 0). Fisher p=0.0047, 보조 분석이다.
 - ubuntu는 sysmon이 없다(Windows 전용). harness.log에는 loadavg만 남아 있다.
@@ -76,9 +76,9 @@
 
 - **windows 러너는 부하가 없는데도 45 ms를 넘는 정지가 이 PC의 k=8 부하보다 훨씬 잦다.** 에피소드 단위로 orig 20/6000(0.33%) 대 PC S3 orig 1/12000(0.008%)이고, Fisher p=4e-9(보조)다. 약 40배다.
 - **꼬리의 모양이 다르다.**
-  - 이 PC에 바쁜 루프 부하를 주면 짧은 정지가 아주 잦다(p90 11~15 ms, >10 ms가 에피소드의 15~20%). 하지만 45 ms를 넘는 경우는 드물다.
+  - 이 PC에 바쁜 루프 부하를 주면 짧은 정지가 아주 잦다(p90 11–15 ms, >10 ms가 에피소드의 15–20%). 하지만 45 ms를 넘는 경우는 드물다.
     Windows 스케줄러의 시간 조각(약 15.6 ms) 몇 개만큼 밀리는 모양으로 보인다(추정).
-  - windows 러너는 p90이 3 ms로 평소에는 조용하다. 대신 한 번 멈추면 길다(>10 ms 중 약 1/3~1/2이 >45 ms, 최대 238 ms).
+  - windows 러너는 p90이 3 ms로 평소에는 조용하다. 대신 한 번 멈추면 길다(>10 ms 중 약 1/3–1/2이 >45 ms, 최대 238 ms).
     코어 2개짜리 VM이고, 원격분석·Defender 같은 백그라운드 작업이 겹친다. 그래서 VM 스케줄링이나 백그라운드 작업에 의한 긴 정지로 보인다(추정, 근거: sysmon other 기여 프로세스, 불일치가 모두 other>10% 회차에 있음).
 - ubuntu 러너는 최대 5 ms였다. 45 ms 근처의 정지가 없었고 불일치도 없었다.
 
@@ -106,7 +106,7 @@
 
 - 실행: 사용자가 수동 실행했다. 입력은 repeats=1500, conditions=orig,A, load=none이다.
   - 실행 커밋은 사용자 보고가 없다. 다만 네 job의 `_run6_condition.json`(조건 적용 전후 해시)이 #1과 바이트 단위로 같아서, 같은 코드로 실행된 것으로 본다(추정, 근거: 해시 일치, 이후 푸시 없음).
-  - windows/orig harness는 05:28~05:51 UTC(23분)에 돌았다.
+  - windows/orig harness는 05:28–05:51 UTC(23분)에 돌았다.
 - 원자료: `raw/S4_runner/run2/<os>-<cond>/`, zip sha256은 `raw/S4_runner/run2/zip_sha256.txt`에 있다. 저장소 밖 `%TEMP%/run6_cause/S4_unzip2`에서 풀었다.
   - 파일↔OS·조건 대응을 확인했다. cond, platform, ImageVersion, batch 접두사, spec trials=1500이 zip 이름과 모두 일치했다.
   - CI 안 집계(`probe-out/summary.md`)와 이 PC 재집계는 수치가 같았다. ubuntu는 줄바꿈 문자만 달랐다.
@@ -123,7 +123,7 @@
 - 이미지는 #1과 같다: ubuntu24 `20261004.327.1`, win25-vs2026 `20260925.250.1`.
   - **#1과 달리 job마다 CPU 모델이 다르다.** #1은 네 job 모두 EPYC 7763이었다.
   - windows orig(9V74)와 A(9V45)가 서로 다른 VM 종류에서 돌았다는 점은 비교의 교란 요인이다.
-- **흔적 11개의 형태:** run time limit reached 9(iter가 25의 배수인 것 5 포함), solved inaccurate 1, solved 1이다. 2/11은 기존 감시(`time_limit_hit`)에 잡히지 않는 형태다. 흔적 solve의 run_time은 46.4~105.9 ms였다.
+- **흔적 11개의 형태:** run time limit reached 9(iter가 25의 배수인 것 5 포함), solved inaccurate 1, solved 1이다. 2/11은 기존 감시(`time_limit_hit`)에 잡히지 않는 형태다. 흔적 solve의 run_time은 46.4–105.9 ms였다.
 - **조향 차이:** 첫 불일치의 조향 최대 차이는 최대 0.22°였다.
 - **rho 갱신 수:** 불일치가 없는 회차에서는 4개 job 모두 대상·에피소드 위치마다 값이 1개였다.
 - **CPU(sysmon, windows):**

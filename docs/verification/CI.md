@@ -92,7 +92,7 @@ improved v2 MPC는 반복 상한(972)과 함께 OSQP `time_limit = 0.045 s`(벽�
 >   이 규칙은 OSQP C v1.0.0 소스의 종료 경로에서 도출했고, 실측 절단 31/31과 양성 대조에서 일치했다(S6). run_time 조건(안 C)은 넣지 않았다. 플러그인 코드는 바뀌지 않았고 이 새 판정을 그대로 읽는다(`time_limit_monitor.py` docstring 정정 블록).
 > - **"발동 0회" 판정 문구의 범위.** 커밋 6971d64 이후 실행에서 "기본 설정 인스턴스의 발동 0회"는 "그 테스트의 기본 설정 인스턴스에서 지문 규칙상 절단이 없었다"는 뜻이다. 판정은 C OSQP v1.0.0 소스 분석에 기댄다. 설치된 osqp 1.1.1 바이너리가 v1.0.0으로 빌드됐다는 것은 sdist 빌드 스크립트에서 추론한 것이다(추정, STATIC_ANALYSIS §1). 그 전 커밋의 기록에는 이 해석을 적용하지 않는다. 플러그인이 출력하는 문구 "(시간 제한 원인 아님)"은 코드에 그대로 남아 있다(`time_limit_monitor.py:104`, 이번에 바꾸지 않음).
 > - **결정론 테스트는 time_limit을 끄고 돈다.** 결정론 비교 테스트는 `i5_time_limit_off` fixture(1e10)로 실행된다. 그 인스턴스는 생성 시점 설정값이 기본값과 달라 위 "의도적" 분류에 들어간다. 1e10이라 실제 발동은 없다. 따라서 이 테스트들이 실패하면 time_limit 절단이 아닌 다른 원인을 찾는다.
-> - **원인 서술 정정.** 절의 첫 문단 "느린 러너에서는 이 안전망이 발동"은 부정확하다. 절단은 평소 0.1~3 ms인 solve가 한 번에 45 ms 넘게 멈출 때 일어났다(VM 스케줄링·백그라운드 작업으로 추정, S4_RESULT §2). 부하 없는 windows 러너에서도 에피소드의 0.06~0.7%에서 45 ms 초과 정지가 있었다.
+> - **원인 서술 정정.** 절의 첫 문단 "느린 러너에서는 이 안전망이 발동"은 부정확하다. 절단은 평소 0.1–3 ms인 solve가 한 번에 45 ms 넘게 멈출 때 일어났다(VM 스케줄링·백그라운드 작업으로 추정, S4_RESULT §2). 부하 없는 windows 러너에서도 에피소드의 0.06–0.7%에서 45 ms 초과 정지가 있었다.
 > - 커밋 6971d64 이후 로컬 전체 테스트(359 passed)에서는 기본 설정 발동 0회, 의도적 발동 4회였다(COMMIT2_VERIFY §5).
 
 ## golden 실패 시 판정 절차
@@ -189,7 +189,7 @@ OS별 artifact(`ci-out-ubuntu-latest-py3.9.zip`, `ci-out-windows-latest-py3.9.zi
 |---|---|---|---|---|
 | run #1 | tests-and-golden(`-latest` 라벨) | b3d2ead | 두 OS 성공. 295 passed, golden 6/6(차이 0) | 위 "첫 GitHub 실행 결과"(로그 zip·artifact, 확인됨·파일) |
 | run #2 | tests-and-golden(이미지 고정) | 45c944e | 두 job 성공. Runner Image가 run #1과 같음 | 위 "run #2"(사용자 전달, 로그·artifact 받지 않음) |
-| run #3~#5 | tests-and-golden | — | **기록 없음** | 저장소에 결과·커밋 대응 근거가 없다 |
+| run #3–#5 | tests-and-golden | — | **기록 없음** | 저장소에 결과·커밋 대응 근거가 없다 |
 | run #6 | tests-and-golden | 4c0c503 | attempt 1: ubuntu 340 passed, **windows 1 failed·339 passed**(`test_i5_golden_determinism_three_runs`). golden 6/6, 추적·UML·안전 수치표 일치(두 OS). attempt 2: windows 성공 | 아래 "run #6"(`ci/raw/run6_attempt1/`, attempt 2는 사용자 전달) |
 | (번호 기록 없음) | tests-and-golden | 97d1ed6 | 두 OS(windows-2025, ubuntu-24.04) 성공 | `ci/run6_cause/S4_RESULT.md` §3(사용자 보고, 2026-10-14). run 번호는 기록되지 않았다 |
 | flaky-probe #1 | flaky-probe, repeats 500, orig·A, 부하 없음 | 97d1ed6 | job 4개 워크플로 성공(테스트 결과로 실패 처리하지 않는 워크플로). 불일치 회차 windows orig **16/500**, windows A 0/500, ubuntu orig·A 모두 0 | `ci/run6_cause/S4_RESULT.md` §1, `ci/run6_cause/raw/S4_runner/run1/`(원본 zip은 `run1/original_zips/`) |
@@ -219,7 +219,7 @@ OS별 artifact(`ci-out-ubuntu-latest-py3.9.zip`, `ci-out-windows-latest-py3.9.zi
 >   - 2: 결정론 테스트 fixture — `thesis_v2/conftest.py`의 `i5_time_limit_off`를 결정론 비교 테스트 등 9개 함수(수집 37개)에 명시 적용. 제품 설정 0.045는 유지(커밋 6971d64).
 >   - 5: 지문 규칙 B — `time_limit_hit`를 `time_limit_fingerprint`로 판정. 출력 불변 로깅 변경이며, 저장 평가 `--check`로 확인했다(COMMIT2_VERIFY §2·§3·§8).
 >   - 0: 문서 정정 — DESIGN_IMPROVED_V2, RESULT_IMPROVED §10, anomaly DESIGN, `time_limit_monitor.py` docstring(커밋 6971d64), 그리고 이 CI.md(이번).
-> - **아래 노트북 실험(A~E, F 부분 실행)은 조건 통제 안 됨, 참고로만 둔다.** 같은 노트북에서 다른 작업을 함께 했고(커밋 7bd9363 메시지), 같은 "강한 부하"에서도 실패 빈도가 D1 15/30·D2 16/30·E 2/30으로 흔들렸다. 원인 판단은 run6_cause의 사전 선언 실험(3층PC109 S1~S3, GitHub 러너 S4)에 기댄다.
+> - **아래 노트북 실험(A–E, F 부분 실행)은 조건 통제 안 됨, 참고로만 둔다.** 같은 노트북에서 다른 작업을 함께 했고(커밋 7bd9363 메시지), 같은 "강한 부하"에서도 실패 빈도가 D1 15/30·D2 16/30·E 2/30으로 흔들렸다. 원인 판단은 run6_cause의 사전 선언 실험(3층PC109 S1–S3, GitHub 러너 S4)에 기댄다.
 > - **노트북에서 세운 가설의 판정:**
 >   - 가설 (1) time_limit — **맞음**(위 근거로 확정).
 >   - 가설 (2) adaptive rho(시간 기준 rho 갱신이 실행마다 달라짐) — **틀림.** 설정은 반복 수 기준(`adaptive_rho=1`, interval 50)이고, 래퍼가 기록한 rho 갱신 수는 모든 조건에서 실행마다 같았다(README §1-3). 노트북 원문도 이미 "시간 기반 모드는 쓰이지 않는다"고 적었지만, 원인 후보에서 빼지 않고 F 재실행을 남겨 두었다. F는 다시 실행하지 않았다. interval 50 고정이 원래 설정과 같아서, 그 조건(조건 B)은 run6_cause에서도 두지 않았다(README §1 "사용자 결정 기록").
@@ -239,7 +239,7 @@ OS별 artifact(`ci-out-ubuntu-latest-py3.9.zip`, `ci-out-windows-latest-py3.9.zi
 | golden / 추적 / UML / 안전 수치표 | 일치 | golden 6/6(차이 0), 나머지도 일치 | — | `golden.txt`, `*_check.txt` |
 
 - 테스트 내용(`thesis_v2/tests/test_improved_i5.py:113-122`): `ImprovedMPC(FINAL_COMBO, enable_i5=True, i5_max_iter=1944)`로 paper seed 0을 3회 실행한다. 조향 시계열(`delta_final`)이 3회 **완전히 같아야**(`==`) 통과한다.
-- 실패 내용: 두 시계열은 모두 길이 162다. 인덱스 38~145 사이 86개 step이 다르고, 최대 차이는 3.15e-4°다. 처음 다른 값은 인덱스 38의 `-2.174894544892109` vs `-2.175209512130098`이다.
+- 실패 내용: 두 시계열은 모두 길이 162다. 인덱스 38–145 사이 86개 step이 다르고, 최대 차이는 3.15e-4°다. 처음 다른 값은 인덱스 38의 `-2.174894544892109` vs `-2.175209512130098`이다.
 - **같은 커밋·같은 이미지에서 attempt 1은 실패하고 attempt 2는 통과했다. 따라서 이 테스트는 이 환경에서 비결정적이다(확인됨).**
 - golden(`check_golden`)은 baseline MPC만 쓰고, baseline에는 time_limit이 없다. 따라서 이 실패와 무관하다(위 "OSQP time_limit 기록"의 마지막 항목).
 
@@ -364,7 +364,7 @@ CPU 부하는 논리 코어 수(22)만큼 바쁜 루프 프로세스를 띄워 �
   - L1 closed_loop 13개: `test_p0_matches_observational_runner`, `killed` 9 + `killed_exception` 4
 - 해석(추정)
   - `killed_exception`은 수치 불일치(AssertionError)가 아니라 변이가 일으킨 예외다. time_limit 비결정과는 무관하다고 본다.
-  - 단언 실패 9개(closed_loop:002, 004~008, 013, 015, 027)는 모두 `first_alarm_step` 기록 로직(`closed_loop.py:171-197`)을 바꾼 변이다. 테스트가 `first_alarm_step` 일치를 직접 단언하므로 결정론적으로 잡혔을 것으로 본다(코드 읽기).
+  - 단언 실패 9개(closed_loop:002, 004–008, 013, 015, 027)는 모두 `first_alarm_step` 기록 로직(`closed_loop.py:171-197`)을 바꾼 변이다. 테스트가 `first_alarm_step` 일치를 직접 단언하므로 결정론적으로 잡혔을 것으로 본다(코드 읽기).
   - 1차 실행 당시 PC 부하는 시작 14%, 끝 6%였다(`run_before.json`의 `pc_load_before/after`). 위 A·C의 약한 부하(36%)에서도 실패는 0/30이었다.
 - **2차 실행 위험**: L2에는 이 테스트와 위 동등성 테스트들이 들어 있다. 부하가 큰 상태에서 돌리면, 생존해야 할 변이가 비결정 실패 때문에 "잡힘"으로 잘못 기록될 수 있다.
   깨끗한 사본 사전 확인(PREREGISTRATION 50행)에서 이런 실패가 나면 실행 전체가 중단된다.
@@ -408,16 +408,16 @@ improved v2 eval의 최대 solve는 34.96 ms이고 폐루프 평가의 최대 so
 > 5. 2차 mutation 실행 — **완료**(2026-10-14, 커밋 6971d64, mutation RESULTS.md "2차 실행").
 > 6. 커밋 — 조사 기록은 7bd9363(노트북), run6_cause 조사·대응은 97d1ed6·30a3a22·6971d64·ac5f01b로 커밋됐다.
 
-2026-10-13 저녁, 사용자가 노트북을 끄려고 실행 중인 python 프로세스를 강제 종료했다. 이때 중단된 실험은 F 하나다. A~E는 모두 끝났고 원자료 JSON이 `ci/raw/`에 저장되어 있다. 콘솔 로그는 `ci/raw/logs/`에 복사했다.
+2026-10-13 저녁, 사용자가 노트북을 끄려고 실행 중인 python 프로세스를 강제 종료했다. 이때 중단된 실험은 F 하나다. A–E는 모두 끝났고 원자료 JSON이 `ci/raw/`에 저장되어 있다. 콘솔 로그는 `ci/raw/logs/`에 복사했다.
 
 1. **F 재실행**(adaptive_rho_interval=50, 강한 부하, 전체 suite 30회, 약 35분):
    `python docs/verification/ci/i5_determinism_suite_experiment.py --trials 30 --loads cpu_strong --variant rho_interval_50 --hidden-probe --out docs/verification/ci/raw/i5_determinism_suite_laptop_cpu_strong_monitor_rho_interval_50.json`
-   - 원본(none)도 같은 조건에서 2/30~16/30으로 흔들렸다. 그래서 같은 세션에서 none과 번갈아 돌리는 등 비교 설계를 실행 전에 정한다.
+   - 원본(none)도 같은 조건에서 2/30–16/30으로 흔들렸다. 그래서 같은 세션에서 none과 번갈아 돌리는 등 비교 설계를 실행 전에 정한다.
 2. **원인 확정**: 가설 (1) time_limit, (2) adaptive rho. 확정 전까지 둘 다 "가설"로 둔다.
 3. **대응 선택지 결정(사용자)**: 위 ①·②·③과 보완안.
 4. **L2 kill 3개 재판정**: fsm:003, fsm:005, fsm:006. 조용한 노트북에서 해당 변이만 다시 실행하고, 결과를 `mutation/RESULTS.md`에 기록한다.
 5. **2차 mutation 실행**: 3의 결정과 4의 결과를 반영한 사전 선언 추가 후 실행.
-   `python docs/verification/mutation/mutate.py run --out docs/verification/mutation/raw/run_after.json`(약 50~60분)
+   `python docs/verification/mutation/mutate.py run --out docs/verification/mutation/raw/run_after.json`(약 50–60분)
 6. **커밋**(사용자).
 
 ## 알려진 위험 (추정)

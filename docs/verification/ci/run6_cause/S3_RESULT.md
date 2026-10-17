@@ -1,4 +1,4 @@
-# S3 결과 요약 (orig 대 A, 부하 k=8, 2026-10-14 12:12~13:04)
+# S3 결과 요약 (orig 대 A, 부하 k=8, 2026-10-14 12:12–13:04)
 
 원자료: `raw/S3/`(집계 `summary.md`/`summary.json`), 스펙 `specs/S3.json`, 로그 `specs/S3.log`.
 - 사본: `copies/orig`(I5_TIME_LIMIT_SEC=0.045), `copies/A`(=1e10). 두 사본의 소스 차이는 config.py 한 줄뿐이다(diff 확인).

@@ -1,4 +1,4 @@
-# 5단계: mutation 1차 kill 재확인 (2026-10-14 14:16~14:21)
+# 5단계: mutation 1차 kill 재확인 (2026-10-14 14:16–14:21)
 
 - 원자료: `raw/S5_mutant_recheck/`(`result.json`, `run.log`, `started.txt`).
 - 도구: `mutant_recheck.py`. 대상은 사전 규칙(PLAN §7)으로 정한 16개다. 사용자가 지목한 fsm:003/005/006과, anomaly `test_p0_matches_observational_runner`에서 처음 실패한 closed_loop 13개다.
@@ -33,7 +33,7 @@
 1. **정확 일치 테스트**(결정론 반복 비교, `test_p0_matches_observational_runner`처럼 두 경로가 같은지 보는 테스트)에서는 전제가 성립한다.
    - time_limit 절단은 출력을 바꿀 뿐이다. 변이가 만든 차이를 정확히 상쇄해 "같음"으로 되돌릴 수는 사실상 없다.
 2. **문턱값 테스트**(경보가 몇 스텝 안에 울린다, 충돌이 없다, 오차가 허용치 이하다 등)에서는 **전제가 깨질 수 있다.**
-   - 절단은 조향을 어느 방향으로든 바꾼다. 관측된 차이는 4e-5°~10°였다(S2·S3·S4 첫 불일치 최대 차이, windows orig_044#1 i4_cl100은 10.0°).
+   - 절단은 조향을 어느 방향으로든 바꾼다. 관측된 차이는 4e-5°–10°였다(S2·S3·S4 첫 불일치 최대 차이, windows orig_044#1 i4_cl100은 10.0°).
    - 그래서 변이 때문에 문턱을 살짝 넘은 값이 절단 때문에 다시 문턱 안으로 들어오면, "실패"가 "통과"로 바뀔 수 있다.
    - **해당 범위 [확인-파일]:** I5 on MPC(V2_MPC_FLAGS)로 폐루프를 돌리는 테스트는 `anomaly/tests/test_closed_loop.py:16`과 `anomaly/tests/test_detector_a.py:27,48-49,227`이다. 생존 변이 중 closed_loop 31개와 detector_a 51개는 이 테스트들이 포함된 층을 모두 통과해 생존 판정을 받았다(변이별로 실제 문턱값 테스트에 영향이 닿는지는 따로 확인하지 않았다).
    - 나머지 fsm 7개와 baseline_mpc 40개의 판정에 쓰인 baseline MPC에는 time_limit이 없다(1e10, STATIC_ANALYSIS §2-2). 이들에게는 이 반례가 적용되지 않는다.

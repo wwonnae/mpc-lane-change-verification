@@ -144,7 +144,7 @@
    ],
    "code": [
     "thesis_v2/baseline/config.py:<module> (행 16, 주석·직접)",
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (추적표 15행)",
     "thesis_v2/baseline/fsm.py:step (행 46, 주석·직접)",
     "thesis_v2/baseline/fsm.py:step (행 54, 주석·직접)"
@@ -170,9 +170,9 @@
    ],
    "code": [
     "thesis_v2/baseline/config.py:<module> (행 17, 주석·직접)",
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (추적표 16행)",
-    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (행 50, 주석·직접)",
     "thesis_v2/baseline/summary.py:<module> (행 41, 주석·직접)",
     "thesis_v2/baseline/summary.py:build_summary (행 225, 주석·직접)",
@@ -201,9 +201,9 @@
    ],
    "code": [
     "thesis_v2/baseline/config.py:<module> (행 25, 주석·직접)",
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (추적표 17행)",
-    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (행 58, 주석·직접)"
    ],
    "tests": [
@@ -225,10 +225,10 @@
    ],
    "code": [
     "thesis_v2/baseline/config.py:<module> (행 24, 주석·직접)",
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:FSM (행 30, 주석·직접)",
     "thesis_v2/baseline/fsm.py:step (추적표 18행)",
-    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (행 62, 주석·직접)",
     "thesis_v2/baseline/sensors.py:right_clear (추적표 18행)"
    ],
@@ -257,9 +257,9 @@
    "code": [
     "thesis_v2/baseline/config.py:<module> (행 26, 주석·직접)",
     "thesis_v2/baseline/config.py:<module> (행 27, 주석·직접)",
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (추적표 19행)",
-    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (행 67, 주석·직접)",
     "thesis_v2/improved/config.py:<module> (행 59, 주석·직접)"
    ],
@@ -288,7 +288,7 @@
    "code": [
     "thesis_v2/baseline/config.py:<module> (행 18, 주석·직접)",
     "thesis_v2/baseline/config.py:<module> (행 4, 주석·직접)",
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:FSM (행 29, 주석·직접)",
     "thesis_v2/baseline/fsm.py:step (추적표 20행)"
    ],
@@ -310,7 +310,7 @@
     "DESIGN_BASELINE.md §2 (행 32, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (추적표 20행)",
     "thesis_v2/baseline/fsm.py:step (행 46, 주석·직접)"
    ],
@@ -333,7 +333,7 @@
     "SETTINGS_DECISION.md §13 (행 329, 절 제목)"
    ],
    "code": [
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:initial_fsm (추적표 21행)",
     "thesis_v2/baseline/fsm.py:initial_fsm (행 34, 주석·직접)"
    ],
@@ -352,7 +352,7 @@
     "SETTINGS_DECISION.md §1 (행 12, 절 제목)"
    ],
    "code": [
-    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/fsm.py:step (추적표 22행)",
     "thesis_v2/baseline/fsm.py:step (행 71, 주석·직접)"
    ],
@@ -397,11 +397,11 @@
     "SETTINGS_DECISION.md §16 (행 394, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/lateral.py:<module> (행 4, 주석·직접)",
     "thesis_v2/baseline/lateral.py:compute_lateral (추적표 39행)",
     "thesis_v2/baseline/lateral.py:compute_lateral (행 53, 주석·직접)",
-    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(~))",
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(`~`))",
     "thesis_v2/improved/student_i4/features.py:<module> (행 50, 주석·직접)"
    ],
    "tests": [
@@ -423,11 +423,11 @@
     "SETTINGS_DECISION.md §9 (행 191, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/lateral.py:compute_lateral (추적표 40행)",
     "thesis_v2/baseline/lateral.py:compute_lateral (행 53, 주석·연속(/))",
     "thesis_v2/baseline/sensors.py:ey_line (행 94, 주석·직접)",
-    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(~))",
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(`~`))",
     "thesis_v2/improved/student_i4/features.py:<module> (행 50, 주석·연속(/))"
    ],
    "tests": [
@@ -447,10 +447,10 @@
     "SETTINGS_DECISION.md §5 (행 74, 절 제목)"
    ],
    "code": [
-    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/lateral.py:compute_lateral (추적표 41행)",
     "thesis_v2/baseline/lateral.py:compute_lateral (행 53, 주석·연속(/))",
-    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(~))"
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(`~`))"
    ],
    "tests": [
     "thesis_v2/tests/test_lateral.py::test_keep_state_line_follow_when_detected (추적표·함수 명시)",
@@ -466,14 +466,14 @@
     "SETTINGS_DECISION.md §16 (행 394, 절 제목)"
    ],
    "code": [
-    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/lateral.py:<module> (행 6, 주석·직접)",
     "thesis_v2/baseline/lateral.py:compute_lateral (추적표 42행)",
     "thesis_v2/baseline/lateral.py:compute_lateral (행 38, 주석·직접)",
     "thesis_v2/baseline/metrics.py:y_within_tolerance (행 45, 주석·직접)",
     "thesis_v2/baseline/runner.py:run_episode (행 146, 주석·직접)",
     "thesis_v2/baseline/summary.py:build_summary (행 240, 주석·직접)",
-    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(~))",
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(`~`))",
     "thesis_v2/improved/student_i4/features.py:<module> (행 50, 주석·직접)"
    ],
    "tests": [
@@ -524,7 +524,7 @@
     "SETTINGS_DECISION.md §20 (행 658, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/mpc.py:OSQPMPC._build_P (행 80, 주석·직접)",
     "thesis_v2/baseline/mpc.py:_build_P (추적표 24행)",
     "thesis_v2/improved/mpc.py:ImprovedMPC._build_P (행 207, 주석·직접)"
@@ -556,7 +556,7 @@
     "thesis_v2/baseline/config.py:<module> (행 13, 주석·직접)",
     "thesis_v2/baseline/config.py:<module> (행 4, 주석·직접)",
     "thesis_v2/baseline/config.py:<module> (행 8, 주석·직접)",
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))"
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))"
    ],
    "tests": [
     "thesis_v2/tests/test_config.py::test_fixed_params_match_claude_md (추적표·함수 명시)",
@@ -573,7 +573,7 @@
     "SETTINGS_DECISION.md §18 (행 455, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·직접)",
     "thesis_v2/baseline/mpc.py:OSQPMPC._build_P (행 80, 주석·연속(/))",
     "thesis_v2/baseline/mpc.py:_build_P (추적표 26행)",
@@ -606,7 +606,7 @@
     "thesis_v2/baseline/config.py:<module> (행 33, 주석·직접)",
     "thesis_v2/baseline/metrics.py:delta_within_tolerance (행 34, 주석·직접)",
     "thesis_v2/baseline/metrics.py:psi_within_tolerance (행 39, 주석·직접)",
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·직접)",
     "thesis_v2/baseline/mpc.py:OSQPMPC._build_A_template (행 147, 주석·직접)",
     "thesis_v2/baseline/mpc.py:OSQPMPC._build_A_template (행 152, 주석·직접)",
@@ -640,7 +640,7 @@
     "SETTINGS_DECISION.md §18 (행 455, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/postprocess.py:apply (추적표 28행)"
    ],
    "tests": [
@@ -661,7 +661,7 @@
     "thesis_v2/baseline/config.py:<module> (행 36, 주석·직접)",
     "thesis_v2/baseline/config.py:POSITION_CONSTRAINTS (추적표 29행)",
     "thesis_v2/baseline/metrics.py:y_within_tolerance (행 44, 주석·직접)",
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·연속(/))",
     "thesis_v2/baseline/mpc.py:solve (추적표 29행)"
    ],
@@ -687,7 +687,7 @@
     "SETTINGS_DECISION.md §20 (행 658, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/mpc.py:<module> (행 7, 주석·직접)",
     "thesis_v2/baseline/mpc.py:OSQPMPC.__init__ (추적표 30행)"
    ],
@@ -710,7 +710,7 @@
    "code": [
     "thesis_v2/baseline/config.py:<module> (행 28, 주석·직접)",
     "thesis_v2/baseline/config.py:<module> (행 70, 주석·직접)",
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/mpc.py:<module> (행 4, 주석·직접)",
     "thesis_v2/baseline/mpc.py:OSQPMPC.solve (행 257, 주석·직접)",
     "thesis_v2/baseline/mpc.py:solve (추적표 31행)"
@@ -737,7 +737,7 @@
    ],
    "code": [
     "thesis_v2/baseline/lateral.py:compute_lateral (행 47, 주석·직접)",
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/mpc.py:<module> (행 4, 주석·연속(/))",
     "thesis_v2/baseline/mpc.py:OSQPMPC.solve (행 257, 주석·연속(/))",
     "thesis_v2/baseline/mpc.py:solve (추적표 31행)"
@@ -758,7 +758,7 @@
     "SETTINGS_DECISION.md §11 (행 271, 절 제목)"
    ],
    "code": [
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/mpc.py:<module> (행 4, 주석·연속(/))",
     "thesis_v2/baseline/mpc.py:solve (추적표 32행)",
     "thesis_v2/baseline/vehicle.py:<module> (행 4, 주석·직접)",
@@ -780,7 +780,7 @@
    ],
    "code": [
     "thesis_v2/baseline/mpc.py (추적표 33행)",
-    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))"
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(`~`))"
    ],
    "tests": [],
    "evals": [
@@ -834,7 +834,7 @@
    ],
    "code": [
     "thesis_v2/anomaly/detector_a.py:<module> (행 65, 주석·직접)",
-    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/sensors.py:_window_clear (행 48, 주석·직접)",
     "thesis_v2/baseline/sensors.py:left_clear (추적표 35행)",
     "thesis_v2/baseline/sensors.py:left_clear (행 62, 주석·직접)",
@@ -862,7 +862,7 @@
    "code": [
     "thesis_v2/baseline/config.py:<module> (행 30, 주석·직접)",
     "thesis_v2/baseline/config.py:<module> (행 31, 주석·직접)",
-    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/sensors.py:ey_line (행 94, 주석·직접)",
     "thesis_v2/baseline/sensors.py:ir_pattern (추적표 36행)",
     "thesis_v2/baseline/sensors.py:ir_pattern (행 72, 주석·직접)"
@@ -885,7 +885,7 @@
    ],
    "code": [
     "thesis_v2/anomaly/detector_a.py:<module> (행 64, 주석·직접)",
-    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/sensors.py:_window_clear (행 48, 주석·연속(/))",
     "thesis_v2/baseline/sensors.py:right_clear (추적표 37행)",
     "thesis_v2/baseline/sensors.py:right_clear (행 67, 주석·직접)"
@@ -924,7 +924,7 @@
   "REQ-SIM-02": {
    "status": "SPEC 정의",
    "where": "repro/docs/SPEC.md:102",
-   "summary": "장애물: L2 차선에 정지 장애물 1개(크기 L×B, 차량과 동일 풋프린트로 가정), 위치 X_obs~U(0.5,2.0)m",
+   "summary": "장애물: L2 차선에 정지 장애물 1개(크기 L×B, 차량과 동일 풋프린트로 가정), 위치 X_obs–U(0.5,2.0)m",
    "design": [
     "SETTINGS_DECISION.md left_clear (행 225, 본문 인용)",
     "SETTINGS_DECISION.md §12 (행 289, 본문 인용)"
@@ -965,7 +965,7 @@
   "REQ-SIM-03": {
    "status": "SPEC 정의",
    "where": "repro/docs/SPEC.md:104",
-   "summary": "초기 조건: v0~U(0.3,0.5)m/s, y0~TruncatedNormal(0, 0.05², [−0.15,0.15])(원문…",
+   "summary": "초기 조건: v0–U(0.3,0.5)m/s, y0–TruncatedNormal(0, 0.05², [−0.15,0.15])(원문…",
    "design": [
     "SETTINGS_DECISION.md 확정된 (행 597, 본문 인용)"
    ],
@@ -1107,7 +1107,7 @@
     "SETTINGS_DECISION.md §16 (행 394, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/longitudinal.py:compute_v_cmd (추적표 44행)",
     "thesis_v2/baseline/longitudinal.py:compute_v_cmd (행 11, 주석·직접)",
     "thesis_v2/improved/student_i4/features.py:v_target_label (행 68, 주석·연속(/))"
@@ -1131,7 +1131,7 @@
     "SETTINGS_DECISION.md §3 (행 45, 절 제목)"
    ],
    "code": [
-    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/longitudinal.py:compute_v_cmd (추적표 45행)",
     "thesis_v2/baseline/longitudinal.py:compute_v_cmd (행 11, 주석·연속(/))"
    ],
@@ -1151,7 +1151,7 @@
    "code": [
     "thesis_v2/baseline/config.py:G_SAFE_MIN (추적표 46행)",
     "thesis_v2/baseline/config.py:G_TRIG (추적표 46행)",
-    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(~))"
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(`~`))"
    ],
    "tests": [
     "thesis_v2/tests/test_config.py::test_fixed_params_match_claude_md (추적표·함수 명시)"
@@ -1167,7 +1167,7 @@
     "DESIGN_BASELINE.md §2 (행 32, 본문 인용)"
    ],
    "code": [
-    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(`~`))",
     "thesis_v2/baseline/longitudinal.py:compute_v_cmd (추적표 47행)"
    ],
    "tests": [],
@@ -1269,7 +1269,7 @@
   "REQ-VEH-02": {
    "status": "SPEC 정의",
    "where": "repro/docs/SPEC.md:23",
-   "summary": "차량 파라미터: L=0.20m(축간거리), B=0.15m(차폭), δ_max=±25°, 속도범위 0.0~0.5 m/s, δ_r…",
+   "summary": "차량 파라미터: L=0.20m(축간거리), B=0.15m(차폭), δ_max=±25°, 속도범위 0.0–0.5 m/s, δ_r…",
    "design": [
     "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
     "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",

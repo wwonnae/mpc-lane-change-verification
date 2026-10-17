@@ -32,7 +32,7 @@
 | D3 | `fsm.py:64` | KEEP_L1 → RETURN_TO_L2 | `cooldown_ok` ∧ `t − state_enter_t > T_KEEP_L1_MIN` ∧ `right_clear` | REQ-FSM-02d, 03a |
 | D4 | `fsm.py:68` | RETURN_TO_L2 → KEEP_L2 | `cooldown_ok` ∧ `\|y\| ≤ NEAR_L2` ∧ `\|ψ\| ≤ PSI_L2_LIMIT_DEG` | REQ-FSM-02e, 03a |
 
-`cooldown_ok = (t − last_change_t) ≥ COOLDOWN`는 47행에서 한 번 계산해 다섯 결정이 함께 쓴다. D1~D4는 D0이 거짓일 때만 평가된다(`elif` 사슬).
+`cooldown_ok = (t − last_change_t) ≥ COOLDOWN`는 47행에서 한 번 계산해 다섯 결정이 함께 쓴다. D1–D4는 D0이 거짓일 때만 평가된다(`elif` 사슬).
 
 ## 2. MC/DC 방식 — unique-cause (단락 평가 반영)
 
@@ -42,7 +42,7 @@ Python의 `and`는 단락 평가다. 앞 조건이 거짓이면 뒤 조건은 �
   "don't care"로 두지 않는다. 입력으로부터 계산한 값이 두 사례에서 같아야 한다(입력 값 기준의 엄격한 unique-cause).
 - 결정 결과가 뒤집혀야 하고, **관측 가능한 출력**(다음 FSM 상태)도 달라야 한다. 두 사례의 입력 FSM 상태도 같아야 한다.
   D0처럼 모든 상태에 걸치는 결정에서, 출력이 다른 이유가 입력 상태 차이가 아님을 보장하기 위해서다.
-- 해당 결정이 두 사례 모두에서 실제로 평가되어야 한다(D1~D4는 D0이 거짓인 사례만).
+- 해당 결정이 두 사례 모두에서 실제로 평가되어야 한다(D1–D4는 D0이 거짓인 사례만).
 - **masking MC/DC로 처리한 쌍은 없다.** 14개 조건 모두 위 조건의 unique-cause 쌍이 존재한다. 결정 하나 안의 조건들은 서로 다른 입력
   (시각, front_gap, 센서 bool, y, ψ)에 의존하므로, 결정 안에서 독립적으로 바꿀 수 있다. 예외는 아래 D3의 시각 결합이다.
 
@@ -75,7 +75,7 @@ Python의 `and`는 단락 평가다. 앞 조건이 거짓이면 뒤 조건은 �
 
 ## 5. 검증 도구 (`mcdc/mcdc_trace.py`)
 
-- pytest 플러그인이다. `fsm.step`을 감싸 원래 함수를 그대로 호출하고, 입력에서 D0~D4의 조건 값, 평가 여부(단락·`elif` 반영), 입력·출력 상태를 기록한다.
+- pytest 플러그인이다. `fsm.step`을 감싸 원래 함수를 그대로 호출하고, 입력에서 D0–D4의 조건 값, 평가 여부(단락·`elif` 반영), 입력·출력 상태를 기록한다.
 - 조건 재진술이 코드와 어긋나는지 점검한다. 재진술로 예측한 다음 상태와 실제 다음 상태를 매 호출 비교하고, 하나라도 다르면 세션을 실패시킨다. 이번 측정에서 불일치는 0건이었다.
 - 재현(저장소 루트, PowerShell):
   ```powershell

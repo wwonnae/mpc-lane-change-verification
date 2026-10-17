@@ -12,11 +12,11 @@
 | `config.py` | 고정 파라미터 + 결정표 값 정의, 시작 시 assert | REQ-VEH-02, REQ-MPC-03, REQ-FSM-03, 전체 §값 | 모듈 상수만(함수 없음). `assert_fixed_params()`가 import 시 자동 실행 |
 | `vehicle.py` | kinematic bicycle, Euler 적분, 후륜 중심 | REQ-VEH-01,04,05, REQ-MPC-07b(부호) | `class VehicleState(x:float m, y:float m, psi:float rad, v:float m/s)`. `step(state, delta_deg:float, v_cmd:float m/s, dt:float) -> VehicleState`. +y=좌측, +psi=좌회전, +delta_deg=좌회전 |
 | `world.py` | 도로·장애물·시나리오 생성 | REQ-SIM-01,02,02a,03, §개정2 | `class Obstacle(x_near:float, x_far:float, y_range:Tuple[float,float])`. `class Scenario(front_gap0, obstacle, v0, y0, psi0=0.0)`. `generate_scenario(rng: np.random.Generator) -> Scenario`, `generate_left_obstacle_scenario(rng) -> Scenario`(추가 검증용, §9/left_clear 테스트) |
-| `sensors.py` | LiDAR·IR 센서 모사 | REQ-SEN-01~04, §7,9,14 | `front_gap(state, obstacle) -> float`(m). `left_clear(state, obstacles) -> bool`. `right_clear(state, obstacles) -> bool`. `ir_pattern(state, active_line_y) -> Tuple[int,int,int]`. `ey_line(pattern) -> Optional[float]`(m, None=미검출) |
-| `fsm.py` | 5상태, 전이표, 쿨다운 | REQ-FSM-01~04, §1,2,13,14 | `class FSMState(Enum)`. `class FSM(state, target_lane, last_change_t, entered_t)`. `step(fsm, sensors, t) -> FSM`(새 FSM 반환, 순수함수) |
-| `mpc.py` | OSQP 2-state MPC + fallback | REQ-MPC-01~08, §2,11 | `class OSQPMPC` — `__init__(config)`(P,A 구조 1회 생성), `solve(y0, psi0, v0, target_y, state_name) -> MPCResult(delta_deg, solver_status:str, ok:bool, fallback_used:bool, compute_time_ms:float)` |
-| `lateral.py` | 상태별 라인추종/MPC 선택 | REQ-LAT-01~04, §4,5 | `compute_lateral(fsm_state, ey_line, y, psi, v, mpc) -> LateralResult(delta_desired_deg, mode:str, mpc_result:Optional[MPCResult])` |
-| `longitudinal.py` | 상태별 v_ref | REQ-SPD-01~05 | `compute_v_cmd(fsm_state) -> float`(m/s) |
+| `sensors.py` | LiDAR·IR 센서 모사 | REQ-SEN-01–04, §7,9,14 | `front_gap(state, obstacle) -> float`(m). `left_clear(state, obstacles) -> bool`. `right_clear(state, obstacles) -> bool`. `ir_pattern(state, active_line_y) -> Tuple[int,int,int]`. `ey_line(pattern) -> Optional[float]`(m, None=미검출) |
+| `fsm.py` | 5상태, 전이표, 쿨다운 | REQ-FSM-01–04, §1,2,13,14 | `class FSMState(Enum)`. `class FSM(state, target_lane, last_change_t, entered_t)`. `step(fsm, sensors, t) -> FSM`(새 FSM 반환, 순수함수) |
+| `mpc.py` | OSQP 2-state MPC + fallback | REQ-MPC-01–08, §2,11 | `class OSQPMPC` — `__init__(config)`(P,A 구조 1회 생성), `solve(y0, psi0, v0, target_y, state_name) -> MPCResult(delta_deg, solver_status:str, ok:bool, fallback_used:bool, compute_time_ms:float)` |
+| `lateral.py` | 상태별 라인추종/MPC 선택 | REQ-LAT-01–04, §4,5 | `compute_lateral(fsm_state, ey_line, y, psi, v, mpc) -> LateralResult(delta_desired_deg, mode:str, mpc_result:Optional[MPCResult])` |
+| `longitudinal.py` | 상태별 v_ref | REQ-SPD-01–05 | `compute_v_cmd(fsm_state) -> float`(m/s) |
 | `postprocess.py` | rate limit + clip | REQ-VEH-03, REQ-MPC-04a | `apply_rate_limit(delta_desired, delta_prev, dt) -> float`(PDF 식 그대로: `clip(desired, prev-Δmax, prev+Δmax)`) |
 | `collision.py` | 회전 사각형 SAT | REQ-SIM-08, §8 | `check_collision(vehicle_state, obstacle) -> bool` |
 | `runner.py` | 에피소드 루프 | REQ-SIM-04,05, §6, repro/docs/WORK_RULES.md 스텝순서 | `run_episode(scenario, seed, config) -> EpisodeResult` |
@@ -132,9 +132,9 @@ finish_step, state_durations(dict), transitions(list of {step,t,from,to})`.
 
 ## 4. 계산시간 측정 범위
 
-- **`t_mpc_solve_ms`**: `OSQPMPC.solve()` 함수 진입~반환까지만(순수 QP 빌드+solve, 논문 Table 8과
+- **`t_mpc_solve_ms`**: `OSQPMPC.solve()` 함수 진입–반환까지만(순수 QP 빌드+solve, 논문 Table 8과
   같은 정의로 맞춤 — REQ-EVAL-03). `time.perf_counter()`를 `mpc.py`의 `solve()` 내부 시작/끝에 배치.
-- **`t_step_ms`**: `runner.py`의 스텝 루프 1~8번 전체(센서~종료판정)를 감싸는 시간. 20Hz
+- **`t_step_ms`**: `runner.py`의 스텝 루프 1–8번 전체(센서–종료판정)를 감싸는 시간. 20Hz
   예산(50ms) 대비 주장 검증용(REQ-EVAL-03 "주장 수준" 판정).
 - 라인추종만 쓰는 스텝은 `t_mpc_solve_ms=0.0`(MPC 자체를 호출 안 함, REQ-LAT-01).
 
@@ -150,7 +150,7 @@ finish_step, state_durations(dict), transitions(list of {step,t,from,to})`.
 | MPC 헤딩·조향 제약 상수 확인 | REQ-MPC-04 | 1 |
 | 부호 규약(양의 δ→양의 ψ̇→양의 ẏ 한 스텝으로 확인) | REQ-MPC-07b | 1 |
 | Fallback 단위(K_p rad/m 변환 확인, 알려진 입력→출력 수치 비교) | REQ-MPC-07,07a | 1 |
-| FSM 전이 5개(각 조건 참/거짓 양쪽 케이스) | REQ-FSM-02a~02e | 10(전이당 참/거짓 2개) |
+| FSM 전이 5개(각 조건 참/거짓 양쪽 케이스) | REQ-FSM-02a–02e | 10(전이당 참/거짓 2개) |
 | 쿨다운(전이 직후 0.3s 내 재전이 차단, 5개 전이 전부 + 초기값이 첫 전이를 막지 않음) | REQ-FSM-03,03a,03b | 6 |
 | SAFE_STOP(모든 상태에서 진입 가능 — EVADE_L 포함 5개 상태 전부) | REQ-FSM-02b | 5 |
 | IR 변환표 6패턴(100/110/010/011/001/000 → 지정된 ey_line) | REQ-SEN-03 | 6 |
@@ -273,7 +273,7 @@ PDF는 이 순서를 명시하지 않아 **[공백]으로 `SETTINGS_DECISION.md`
 | 후처리: rate limit 경계(딱 10°/step, 그 이상) | REQ-VEH-03 | 2 |
 | 후처리: clip 경계(딱 25°, 그 이상) | REQ-VEH-02 | 2 |
 | 후처리: 순서(rate limit 결과가 25° 넘으면 clip이 한 번 더 깎는 케이스) | §15 | 1 |
-| 횡방향 선택: 상태(5)×IR감지여부(2) 조합 | REQ-LAT-01~04 | 10 − (SAFE_STOP은 제어 자체가 없어 제외 4상태×2=8) → **8** |
+| 횡방향 선택: 상태(5)×IR감지여부(2) 조합 | REQ-LAT-01–04 | 10 − (SAFE_STOP은 제어 자체가 없어 제외 4상태×2=8) → **8** |
 | 종방향: 상태별 v_cmd(5상태) | REQ-SPD-01,02 | 5 |
 | 로거: steps.npz 스키마 필드 전부 존재 확인 | §3 | 1 |
 | **추가 합계** | | **19** |

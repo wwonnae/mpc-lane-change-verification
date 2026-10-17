@@ -30,7 +30,7 @@
 
 | 파일 | 내용 | 단계 |
 |---|---|---|
-| [PREREGISTRATION.md](PREREGISTRATION.md) | 범위 600개, 연산자 8종, 판정 층, 타임아웃, 점수 규칙, 예측(P1~P7′, M1~M6), LLM 보강 절차, CI 결정 | A |
+| [PREREGISTRATION.md](PREREGISTRATION.md) | 범위 600개, 연산자 8종, 판정 층, 타임아웃, 점수 규칙, 예측(P1–P7′, M1–M6), LLM 보강 절차, CI 결정 | A |
 | `mutate.py` | 변이 생성기 + 층별 실행기(저장소 밖 임시 사본에서만 변이) | A |
 | `test_mutate.py` | 도구 자체 테스트 | A |
 | [RESULTS.md](RESULTS.md) | 점수(보강 전·후), 예측 대조, 커버리지 대조, LLM 기록 요약 | B |
@@ -43,7 +43,7 @@
 | `build_equiv.py` | 생존 변이 분류 표 → `equivalence.json` | B |
 | `mpc_setup_experiment.py`, `mpc_setup_probe.py`, `raw/mpc_setup_experiment.json` | baseline_mpc 생성 단계 변이의 등가·보류 판단용 실험 | B |
 | `mpc_golden_psi_activity.py`, `raw/mpc_golden_psi_activity.json` | golden 시나리오에서 ψ 제약 활성 여부 측정 | B |
-| `check_gap_tests.py`, `raw/gap_tests_*_check*.json` | LLM 보조 테스트 수락 기준 ①~③ 자동 확인 | B |
+| `check_gap_tests.py`, `raw/gap_tests_*_check*.json` | LLM 보조 테스트 수락 기준 ①–③ 자동 확인 | B |
 | `count_stop_step_steer_faults.py`, `raw/stop_step_steer_fault_count.json` | 저장된 폐루프 평가에서 steer 고장 활성 중 정지 step 수(RESULTS 발견 사항 3, 읽기 전용) | B |
 
 - 위 보조 스크립트들은 `mutate.py`를 고치지 않고 그 함수만 호출한다.

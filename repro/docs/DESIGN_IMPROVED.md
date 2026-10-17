@@ -1,7 +1,7 @@
 # 3단계 발전 버전 설계 (v2, 검토 반영판)
 
 **단계**: 3단계 설계 확정본. `thesis_v2/baseline/`는 동결(수정하지 않음). 개선은 전부
-`thesis_v2/improved/`에서만 구현합니다. 이 문서 승인 후 Stage 0~4까지 구현·dev 실행하고,
+`thesis_v2/improved/`에서만 구현합니다. 이 문서 승인 후 Stage 0–4까지 구현·dev 실행하고,
 **eval(§4)은 절대 실행하지 않습니다** — Stage 5는 별도 승인 후 진행.
 
 **선행 확인(0번, 완료)**: C트랙 잔여 37건에 대해 옛 MPC의 rΔδ를 실제로 baseline과 같은
@@ -146,9 +146,9 @@ psi 하한 자체는 I1b가 켜져 있으면 슬랙(소프트), 꺼져 있으면
   기록해 관찰
 - **고정 파라미터 변경**: 없음
 
-### I4 — Student 재학습 (`IMPROVEMENT_BACKLOG.md` 후보6, I1~I3 확정 후 최종 MPC로)
+### I4 — Student 재학습 (`IMPROVEMENT_BACKLOG.md` 후보6, I1–I3 확정 후 최종 MPC로)
 
-§6 참고. **I1~I3(및 I1b)이 dev에서 비열화 확인되고 eval까지 완료된 뒤에만** 착수.
+§6 참고. **I1–I3(및 I1b)이 dev에서 비열화 확인되고 eval까지 완료된 뒤에만** 착수.
 
 ### 이번 범위에 넣지 않는 후보 (제안만)
 
@@ -205,8 +205,8 @@ ENABLE_I3_WARM_START_FALLBACK = False
 
 | 구분 | 내용 |
 |---|---|
-| **개발용(dev)** | seed 100~199, S3 격자는 eval 격자에서 반 칸 어긋난 별도 격자(front_gap0 0.525~1.975/0.05, y0 -0.145~0.145/0.01), S4~S7은 seed 1000~1099. margin(I2)·penalty(I1b)는 §1에서 **해석적으로 이미 확정**(dev 튜닝 대상 아님) — dev는 이 확정값으로 실행해 성능만 확인 |
-| **평가용(eval)** | 기존 seed 0~99, 기존 S3/S4~S7 설정. **이번 라운드에는 절대 실행하지 않음**(Stage 5는 별도 승인 후) |
+| **개발용(dev)** | seed 100–199, S3 격자는 eval 격자에서 반 칸 어긋난 별도 격자(front_gap0 0.525–1.975/0.05, y0 -0.145–0.145/0.01), S4–S7은 seed 1000–1099. margin(I2)·penalty(I1b)는 §1에서 **해석적으로 이미 확정**(dev 튜닝 대상 아님) — dev는 이 확정값으로 실행해 성능만 확인 |
+| **평가용(eval)** | 기존 seed 0–99, 기존 S3/S4–S7 설정. **이번 라운드에는 절대 실행하지 않음**(Stage 5는 별도 승인 후) |
 
 **보장 방법**: (1) dev/eval 출력 경로 물리적 분리, (2) 설계 결정은 해석적 도출(§1) +
 dev 수치로만 기록, (3) eval 실행 전 코드 커밋 고정 + **사용자 검토 필수**(승인 전
@@ -244,7 +244,7 @@ eval 실행 금지), (4) eval은 1회만, 재실행 시 새 반복으로 명시 
 
 | Stage | 내용 | 완료 조건 |
 |---|---|---|
-| 0 | `improved/` 골격(플래그 4개, 미변경 모듈은 `thesis_v2.baseline`에서 import) | 플래그 전부 False → golden(seed 0~2) 6/6 PASS, pytest 전체 통과 |
+| 0 | `improved/` 골격(플래그 4개, 미변경 모듈은 `thesis_v2.baseline`에서 import) | 플래그 전부 False → golden(seed 0–2) 6/6 PASS, pytest 전체 통과 |
 | 1 | I1, I1b 구현 | 단위테스트(rate 위반 케이스, slack 소프트닝 케이스) 통과 + pytest·golden 유지 |
 | 2 | I2 구현(센서 확장 포함) | 단위테스트(margin 계산, 장애물 구간 판정) 통과 + pytest·golden 유지 |
 | 3 | I3 구현 | 단위테스트(shift 로직) 통과 + pytest·golden 유지 |
@@ -275,7 +275,7 @@ eval 실행 금지), (4) eval은 1회만, 재실행 시 새 반복으로 명시 
 
 ---
 
-## 10. Stage 0~4 구현·dev 실행 결과 (2026-09-23)
+## 10. Stage 0–4 구현·dev 실행 결과 (2026-09-23)
 
 **구현**: `thesis_v2/improved/{config,sensors,mpc,lateral,runner,run_dev_ablation}.py`.
 baseline 미변경 모듈은 import만 함(§8 확정 사항대로). 단위 테스트
@@ -327,7 +327,7 @@ dev paper·S3에서 사실상 동일(dev seed들이 constraint-infeasibility가 
 
 **발견**: `MEASURE_PLAN.md`가 실행 전에 정한 허용오차(=OSQP eps_abs, 1e-4 rad≈0.0057°)
 기준으로 I1+I1b+I2'+I3의 raw MPC 출력을 다시 판정하자, 조향각·조향변화율에서
-100 에피소드 중 4~5건이 허용오차를 넘었습니다(최대 0.0073°/0.0073°) — §10/§11에서
+100 에피소드 중 4–5건이 허용오차를 넘었습니다(최대 0.0073°/0.0073°) — §10/§11에서
 "수치오차 수준"이라 표현한 것은 이 기준을 적용하지 않은 채 쓴 표현이었고, 정정합니다.
 
 **원인**: 전부 `solver_status="solved"`. OSQP의 결합 종료 기준(`eps_abs+eps_rel·
@@ -344,7 +344,7 @@ max(‖Ax‖,‖z‖)`)에서 I1b의 무상한 슬랙이 같은 solve 안에서 
 
 **결론: 0번 통과 — eval 실행 가능.** S5(제어 지연)는 `thesis_v2/improved/runner.py`에
 `control_delay_steps` 인자를 baseline과 동일한 방식으로 추가(기본값 0, 회귀 없음
-확인)해 eval 대상 시나리오(S3~S7)를 baseline과 동일하게 커버할 수 있게 했습니다.
+확인)해 eval 대상 시나리오(S3–S7)를 baseline과 동일하게 커버할 수 있게 했습니다.
 
 ---
 

@@ -7,7 +7,7 @@
 
 | 파일 | 내용 | 자동 대조 |
 |---|---|---|
-| [SWE_MAPPING.md](SWE_MAPPING.md) | SWE.1~6 프로세스별 대응 산출물, 근거 파일:행, 갭 | — (손으로 쓴 문서) |
+| [SWE_MAPPING.md](SWE_MAPPING.md) | SWE.1–6 프로세스별 대응 산출물, 근거 파일:행, 갭 | — (손으로 쓴 문서) |
 | [TRACE_MATRIX.md](TRACE_MATRIX.md), [trace_matrix.json](trace_matrix.json) | 양방향 추적: REQ → 설계 → 코드 → 테스트 → 평가 문서, 그리고 테스트 → REQ, 코드 → REQ. 고아 집계·범주. 이상탐지 별도 표 | `make_trace_matrix.py --check` |
 | [UML.md](UML.md) | Mermaid 상태도(FSM), 시퀀스도(폐루프 1스텝), 컴포넌트도(패키지 import 그래프) | `check_uml.py` |
 | `make_trace_matrix.py` | 매트릭스 생성기(연결 규칙은 머리말) | — |

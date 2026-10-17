@@ -31,6 +31,20 @@ OPEN_OUT = REV / "OPEN_ITEMS.md"
 NUM = re.compile(r"(?<![\w.])[-−]?\d+(?:[.,]\d+)*")
 
 
+
+def gfm_safe_tildes(text):
+    """GitHub(GFM)는 단일 ~ 두 개를 취소선으로 렌더링한다. 범위 표기 ~를 –로 바꾼다(코드 블록·코드 스팬·~~ 제외).
+    본문 수치 검사(--check)는 바꾸기 전 원고로 하므로 검사 결과에는 영향이 없다."""
+    def seg(s):
+        return re.sub(r"(?<!~)~(?!~)(?=\S)|(?<=\S)(?<!~)~(?!~)", "–", s)
+    parts = re.split(r"(```.*?```)", text, flags=re.S)
+    for k in range(0, len(parts), 2):
+        sub = re.split(r"(`[^`\n]*`)", parts[k])
+        for j in range(0, len(sub), 2):
+            sub[j] = seg(sub[j])
+        parts[k] = "".join(sub)
+    return "".join(parts)
+
 def load_csv():
     rows = list(csv.DictReader(open(CSV, encoding="utf-8-sig")))
     by = {r["no"]: r for r in rows}
@@ -264,7 +278,7 @@ def main():
             opens.append((path.name, line, " ".join(m.group(1).split())))
         if args.check:
             check_chapter(path, src, rendered, csv_new, csv_old_only, errors, warns)
-    OUT.write_text("\n\n".join(parts) + "\n", encoding="utf-8")
+    OUT.write_text(gfm_safe_tildes("\n\n".join(parts) + "\n"), encoding="utf-8")
     # OPEN_ITEMS.md
     lines = ["# OPEN 항목 (집필 중 판단 보류·결정 필요)", "",
              "`build_report.py`가 장 파일의 `<!-- OPEN: … -->` 주석을 모아 자동 생성합니다. 형식: `[우선순위] 내용 | 필요한 결정`.",

@@ -1,6 +1,6 @@
 # golden 기준 데이터
 
-`paper`·`left_obstacle` 시나리오 seed 0~2의 재구현 결과(전이 목록, 결과 분류, 완료 step,
+`paper`·`left_obstacle` 시나리오 seed 0–2의 재구현 결과(전이 목록, 결과 분류, 완료 step,
 최종 상태, 조향각 시계열)를 저장합니다. 생성 환경은 `env.json` 참고.
 
 ## 생성 환경 (최초, 이 파일들을 만든 실행)
@@ -16,7 +16,7 @@ numpy 2.0.2, scipy 1.13.1, osqp 1.1.1.
 재실행 결과 **6/6 PASS, 전 항목 max\|diff\|=0.000000 rad**(파일 내용 갱신 없음 — 값이
 그대로 일치했으므로 이 표기만 추가). 이 결과는 예상된 것입니다: 두 변경 모두 `lateral.py`의
 조향 계산 입력(ey, y, psi, v, state)에 front_gap을 넣지 않으므로 golden이 저장하는
-조향각 시계열에는 애초에 영향이 없고, seed 0~2의 100-episode 비교(`paper`/`left_obstacle`
+조향각 시계열에는 애초에 영향이 없고, seed 0–2의 100-episode 비교(`paper`/`left_obstacle`
 전체 100 seed)에서도 outcome·finish_step·transitions가 v1.0과 완전히 동일함을 별도
 확인했습니다.
 

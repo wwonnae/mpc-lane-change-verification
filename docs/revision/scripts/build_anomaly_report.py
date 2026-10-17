@@ -19,7 +19,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from build_report import num_set, raw_numbers, estimate_pages  # noqa: E402  (기존 규칙 재사용)
+from build_report import num_set, raw_numbers, estimate_pages, gfm_safe_tildes  # noqa: E402  (기존 규칙 재사용)
 
 ROOT = HERE.parents[2]
 REV = ROOT / "docs/revision"
@@ -89,7 +89,7 @@ def main():
         for need in ("확장", "제출본", "기존 개정 보고서"):
             if need not in para:
                 errors.append(f"{files[0].name}: 첫 문단에 '{need}' 명시 없음")
-    OUT.write_text("\n\n".join(parts) + "\n", encoding="utf-8")
+    OUT.write_text(gfm_safe_tildes("\n\n".join(parts) + "\n"), encoding="utf-8")
     pages, chars, trows, figs = estimate_pages("\n".join(parts))
     print(f"조립: {OUT.name} ({len(parts)}개 장 파일), 분량 추정 {pages:.1f}쪽(글자 {chars:,}, 표 행 {trows})")
     if args.check:

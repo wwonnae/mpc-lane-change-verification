@@ -1,4 +1,4 @@
-# seed=85: 실제(MPC) vs 최대노력(bang-bang) 헤딩·조향 비교 (step 1~24)
+# seed=85: 실제(MPC) vs 최대노력(bang-bang) 헤딩·조향 비교 (step 1–24)
 
 | step | 실제 psi(deg) | bang-bang psi(deg) | 실제 delta_final(deg) | bang-bang delta(deg) |
 |---|---|---|---|---|

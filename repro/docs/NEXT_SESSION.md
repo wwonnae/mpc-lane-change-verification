@@ -11,7 +11,7 @@
 > 종료 처리된 대기 항목(2026-09-25):
 > - ~~계산시간 공식 재측정 미완~~ → **종료**. Student v2 계산시간 측정(S10·S11 각각, `--power-mode-confirmed`,
 >   `meets_official_condition=true`)에서 v2 MPC를 같은 조건으로 재측정했고, timing_v3 공식값과 호출 수·반복 분포가 동일하며
->   p99가 paper/S6 1~3% 이내로 일치(`RESULT_I4.md` §9-5). I4 9입력 계산시간(§4)은 참고치로 그대로 둠.
+>   p99가 paper/S6 1–3% 이내로 일치(`RESULT_I4.md` §9-5). I4 9입력 계산시간(§4)은 참고치로 그대로 둠.
 > - ~~Student v2 설계 승인 대기~~ → 승인·실행·eval3 판정 완료(S10 "통과", `RESULT_I4.md` §9).
 
 **순서 갱신(2026-09-22)**: 노트북 `_OFFICIAL` 계산시간 공식 판정을 맨 마지막으로 연기했습니다.
@@ -26,7 +26,7 @@ SSAFY PC에서의 마지막 실행(2026-09-18, ONNX 재측정 + MAE 조건 보�
 
 ---
 
-## 1. 검증 시나리오 확장 (S3~S7, `[발전]` 강건성 검증)
+## 1. 검증 시나리오 확장 (S3–S7, `[발전]` 강건성 검증)
 
 **현재 상태**: 설계 문서 `repro/docs/ROBUSTNESS_PLAN.md` 작성 완료(2026-09-22), 채팅으로
 요약 보고 후 사용자 승인 대기 중. **코드 수정·실행 전 승인 필요**(baseline 제어 로직은
@@ -39,7 +39,7 @@ sensors.py(및 필요 시 runner.py)에 옵션 추가 → 기존 두 시나리�
 golden 테스트가 바이트 단위로 그대로 통과하는지 먼저 확인 → S3(격자, 실행 없이 코드
 검증만 소규모로) → 사용자 승인 후 전체 격자/시나리오 실행.
 
-결과는 `thesis_v2/results/<타임스탬프>_<호스트>_baseline_R<번호>/`(R3~R7)에 저장합니다.
+결과는 `thesis_v2/results/<타임스탬프>_<호스트>_baseline_R<번호>/`(R3–R7)에 저장합니다.
 
 ---
 
@@ -75,14 +75,14 @@ mkdir thesis_v2/improved
 ```
 
 같은 seed·같은 측정 기준(`MEASURE_PLAN.md`)으로 baseline과 비교해야 합니다(새 기준
-만들지 말 것). 검증 시나리오(S3~S7)로 baseline에서 드러난 약점(예: 충돌 seed=85 계열)이
+만들지 말 것). 검증 시나리오(S3–S7)로 baseline에서 드러난 약점(예: 충돌 seed=85 계열)이
 있다면 개선판에서 같은 시나리오로 다시 측정해 비교합니다.
 
 ---
 
 ## 4. 노트북에서 계산시간 일괄 측정·판정 (구 "1." 항목, 순서 변경 + 조건 갱신)
 
-**현재 상태**: `RESULT_BASELINE.md` §7~§8 — AC 전원은 확인됐지만 "Windows 전원 모드=
+**현재 상태**: `RESULT_BASELINE.md` §7–§8 — AC 전원은 확인됐지만 "Windows 전원 모드=
 최고 성능"은 미확인이라 baseline만의 계산시간이 "보류" 판정으로 남아 있습니다. **이제
 이 값을 단독으로 "합격/불합격"으로 승격하지 않고, 3단계 개선판이 완성된 뒤 아래 일괄
 측정으로 함께 판정합니다**(`MEASURE_PLAN.md` 공통 원칙 "공식 계산시간 측정 시점[2026-09-22
@@ -94,7 +94,7 @@ mkdir thesis_v2/improved
   (여러 개면 버전마다 별도 실행 — 후보를 나중에 골라내지 않고 3단계에서 실제로 완성한
   버전 전부를 포함).
 - **시나리오**: `paper`, `left_obstacle`(논문 정합 시나리오, 기존 2단계-C와 동일 조건).
-  강건성 시나리오(S3~S7, `ROBUSTNESS_PLAN.md`)는 계산시간이 아니라 강건성 지표가 목적이라
+  강건성 시나리오(S3–S7, `ROBUSTNESS_PLAN.md`)는 계산시간이 아니라 강건성 지표가 목적이라
   기본적으로 제외하되, 특정 시나리오(예: S5 제어 지연)가 계산시간 자체에 영향을 줄 만하면
   포함 여부를 실행 전에 사용자와 확정.
 - **실행 순서**: 매 버전에 대해 동일한 순서로 (1) `env.json` 전원 상태 확인 (2)
@@ -167,7 +167,7 @@ REQ-MPC-02 옛 코드 비용함수 스케일링 버그 등).
 
 ## 참고: 이번 세션(2026-09-22)에서 새로 생긴 산출물
 
-- `repro/docs/ROBUSTNESS_PLAN.md`(S3~S7 강건성 검증 설계, 실행 없음, 승인 대기)
+- `repro/docs/ROBUSTNESS_PLAN.md`(S3–S7 강건성 검증 설계, 실행 없음, 승인 대기)
 - `repro/docs/MEASURE_PLAN.md`에 "공식 계산시간 측정 시점[2026-09-22 변경]" 추가(baseline·
   개선판을 노트북 1회 세션에서 연속 측정하는 것만 공식으로 인정)
 - 본 문서(`NEXT_SESSION.md`) 순서 갱신(계산시간 공식 판정을 3단계 이후로 연기, C트랙
@@ -180,7 +180,7 @@ REQ-MPC-02 옛 코드 비용함수 스케일링 버그 등).
 - `thesis_v2/results/20260918_090132_3층PC108_m_track/`,
   `thesis_v2/results/20260918_143759_3층PC108_onnx_benchmark/`(ONNX 모델 파일 포함),
   `thesis_v2/results/mae_recorded_result.json`
-- `repro/docs/RESULT_STUDENT.md`(§1~§8, ONNX 재측정·MAE 조건 보완 포함)
+- `repro/docs/RESULT_STUDENT.md`(§1–§8, ONNX 재측정·MAE 조건 보완 포함)
 - `repro/docs/RESULT_BASELINE.md` §9(교차 환경 재현성, SSAFY PC golden 확인)
 - `repro/docs/THESIS_REVISION_LOG.md`, `repro/docs/IMPROVEMENT_BACKLOG.md`에 신규 항목
   추가(REQ-MPC-02 옛 코드 버그, ONNX Runtime 교체 후보)

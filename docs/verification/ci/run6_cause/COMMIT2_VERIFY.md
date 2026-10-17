@@ -44,8 +44,8 @@
 
 | 대상 | 에피소드 | 결과 |
 |---|---|---|
-| eval 2회차 방식 v2 paper seed 200~209(인스턴스 공유, `run_eval_v2.run_paper`와 같음) | 10 | 전부 동일 |
-| I5 on(COMBO_V2) paper seed 0~2(에피소드마다 새 인스턴스) | 3 | 전부 동일 |
+| eval 2회차 방식 v2 paper seed 200–209(인스턴스 공유, `run_eval_v2.run_paper`와 같음) | 10 | 전부 동일 |
+| I5 on(COMBO_V2) paper seed 0–2(에피소드마다 새 인스턴스) | 3 | 전부 동일 |
 | anomaly 폐루프 P0(V2_MPC_FLAGS, 탐지기 A) seed 3200·3201·3207 | 3 | 전부 동일 |
 
 - 두 실행 모두 절단(time_limit_hit)은 0회였다.
@@ -71,7 +71,7 @@
 | 소규모 동적 비교 | `python docs/verification/ci/run6_cause/commit2_compare.py --out docs/verification/ci/run6_cause/raw/C2_compare` | **16/16 에피소드 동일**(ALL EQUAL, 15:32 재실행) |
 | S6 지문 검토 | `python docs/verification/ci/run6_cause/raw/S6_fingerprint_check/check_fingerprint.py` | 실측 31/31 일치, 안 B 추가분 0, 제품·도구 불일치 0 |
 
-## 6. 야간 실행 스크립트 dry-run [확인-실행] (1차 2026-10-14 15:28~15:32, 커밋·푸시 없음, 출력은 저장소 밖)
+## 6. 야간 실행 스크립트 dry-run [확인-실행] (1차 2026-10-14 15:28–15:32, 커밋·푸시 없음, 출력은 저장소 밖)
 
 > 이 절의 표는 **순서 변경 전** 1차 dry-run(--check → mutation → 재확인)이다. 사용자 지시로 순서를 바꿨다.
 > 바뀐 순서는 mutation → 재확인 → --check이고, 이유는 --check가 git 추적 파일 `_check_diag_timing.csv`를 덮어써 mutation 원자료의 git.dirty가 참이 되는 것을 피하기 위해서다.
@@ -86,12 +86,12 @@
 | 3a kill 재확인 | 위 결과(kill 2개) | 0 (대상 0: 첫 실패 테스트가 time_limit 켠 I5 MPC를 쓰지 않음) | 4 s |
 | 3b kill 재확인 | 1차 결과 run_before.json, 대상 1개·1회 | 0 (kill 469개 중 대상 114개 판정, detector_a:001 orig·A 실패·대조 통과 → kill 유지) | 47 s |
 
-- PC 상태 기록(before/after)도 남았다. 부하 14~19%, 전원 "균형 조정", AC 절전·최대 절전 "안 함"(0).
-  다만 **Windows Update 재부팅 대기 키가 둘 다 True**였고, 활성 시간은 08~19시였다(야간 자동 재시작 가능성, 보고서 참조).
+- PC 상태 기록(before/after)도 남았다. 부하 14–19%, 전원 "균형 조정", AC 절전·최대 절전 "안 함"(0).
+  다만 **Windows Update 재부팅 대기 키가 둘 다 True**였고, 활성 시간은 08–19시였다(야간 자동 재시작 가능성, 보고서 참조).
 - 저장소 작업 트리는 dry-run 전후로 같았다(저장 평가 폴더를 복사해 썼음).
 - 3b의 대상 114개는 1차 결과에 지금 테스트 스위트를 적용한 값이다. 정식 실행에서는 run_after.json 기준으로 다시 판정한다. 재확인 시간은 대상 수 × 10회 실행에 비례한다.
 
-## 7. 순서 변경 후 dry-run [확인-실행] (2차, 2026-10-14 15:48~15:51, 커밋·푸시 없음, 출력은 저장소 밖)
+## 7. 순서 변경 후 dry-run [확인-실행] (2차, 2026-10-14 15:48–15:51, 커밋·푸시 없음, 출력은 저장소 밖)
 
 | 단계 | dry-run 내용 | 종료 코드 | 결과 |
 |---|---|---|---|

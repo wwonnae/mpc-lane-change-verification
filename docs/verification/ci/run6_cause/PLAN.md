@@ -144,7 +144,7 @@
 - 2026-10-14: S4_RESULT §3에 기존 CI 결과(두 OS 성공)를 기록했다. 5단계 영향 분석(S5_IMPACT.md), S5_MUTANT_RESULT 생존 129개 검토, README.md 초안을 작성했다(커밋 전, #2 결과 대기).
 - 2026-10-14: 사용자 대응 결정(선택지 2+5+0, 1·3·4 불채택)을 README §4에 기록했다. 제품·테스트 변경은 커밋 1 이후 계획 승인 뒤에 한다.
 - 2026-10-14: S4 #2(repeats 1500) 원자료를 raw/S4_runner/run2/에 정리했고(#1은 run1/로 이동), S4_RESULT §5, README, S5_IMPACT 수치를 갱신했다.
-- 2026-10-14 15:10~15:12: S6 양성 대조 실행 중 경로 사고가 있었다. 스펙에 경로를 `/c/Users/...`(Git Bash 형식)로 적어 Windows Python이 `C:\c\Users\...`에 출력 폴더를 만들었다. 13:05 harness 상대경로 smoke 테스트 때도 같은 원인으로 이 폴더가 생겼다. 내용이 이 두 실행의 출력 16개 파일뿐인 것을 확인하고 `C:\c`를 지웠다. 저장소와 다른 파일에는 영향이 없다. 이후 스펙은 `C:/Users/...` 형식만 쓴다.
+- 2026-10-14 15:10–15:12: S6 양성 대조 실행 중 경로 사고가 있었다. 스펙에 경로를 `/c/Users/...`(Git Bash 형식)로 적어 Windows Python이 `C:\c\Users\...`에 출력 폴더를 만들었다. 13:05 harness 상대경로 smoke 테스트 때도 같은 원인으로 이 폴더가 생겼다. 내용이 이 두 실행의 출력 16개 파일뿐인 것을 확인하고 `C:\c`를 지웠다. 저장소와 다른 파일에는 영향이 없다. 이후 스펙은 `C:/Users/...` 형식만 쓴다.
 - 2026-10-14: S6 지문 규칙 검토(raw/S6_fingerprint_check/). 사용자 결정으로 안 B를 채택했다. osqp_probe.tl_fingerprint를 안 B로 맞췄고, 기존 판정 변화는 0건이었다. STATIC_ANALYSIS §3-3·S5_IMPACT·README에 정정 블록을 붙였다.
 - 2026-10-14: 커밋 2(대응 변경 2+5+0) 준비. 재확인 기록은 COMMIT2_VERIFY.md에 있다.
-- 2026-10-15: 야간 실행(3187e40) 결과를 반영했다(README §6 1~4 완료, COMMIT2_VERIFY §8). mutation 4단계를 마무리했다(RESULTS.md, MUTATION_TABLES, CI 단계).
+- 2026-10-15: 야간 실행(3187e40) 결과를 반영했다(README §6 1–4 완료, COMMIT2_VERIFY §8). mutation 4단계를 마무리했다(RESULTS.md, MUTATION_TABLES, CI 단계).

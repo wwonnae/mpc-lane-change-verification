@@ -19,7 +19,7 @@ baseline(`thesis_v2/baseline/`, 아직 미구현)이 기존 코드를 복사하�
 
 | REQ | 판정 | 근거(파일:행) |
 |---|---|---|
-| REQ-VEH-01 (kinematic model) | 일치 | `final_hierarchical_backup.py:656-659`(Pose 클래스 `update()`): `x+=v·cos(ψ)·dt; y+=v·sin(ψ)·dt; ψ+=(v/L)·tan(δ)·dt` — 식(1)~(3)과 동일 |
+| REQ-VEH-01 (kinematic model) | 일치 | `final_hierarchical_backup.py:656-659`(Pose 클래스 `update()`): `x+=v·cos(ψ)·dt; y+=v·sin(ψ)·dt; ψ+=(v/L)·tan(δ)·dt` — 식(1)–(3)과 동일 |
 | REQ-VEH-02 (Table1 파라미터) | 일치 | argparse 기본값: `--delta_max 25.0`, `--v_max 0.5`, `--delta_rate 200.0`, `L=0.20/B=0.15`(`VehicleParams` 기본값, 90-96행 부근) |
 | REQ-VEH-03 (Δδ_max=10°/step 후처리) | 일치 | `978-979행`: `max_rate_per_step = DELTA_RATE_MAX_DEGPS*dt; self.rate=RateLimit(...)` — `RateLimit.step()`(635-644행)이 클리핑 수행 |
 | REQ-VEH-04 (Euler 적분) | 일치 | 위 Pose.update()가 직접 오일러 스텝 |
@@ -69,7 +69,7 @@ baseline(`thesis_v2/baseline/`, 아직 미구현)이 기존 코드를 복사하�
 |---|---|---|
 | REQ-SEN-01 (front_gap 계산) | **불일치**(다른 설계) | `simulator.py:131-139`: `dx=obstacle_x−x`; **`0<dx<5.0 AND \|dy\|<0.4`일 때만** `front_gap=dx`, 아니면 **`None`**(추천안 §7처럼 "큰 값"이 아니라 `None`, 게다가 횡방향 `dy` 게이트가 있어 차량이 충분히 옆으로 비켜서면 front_gap 자체가 사라짐 — PDF·추천안엔 없는 조건) |
 | REQ-SEN-02 (left_clear 계산) | **불일치**(다른 설계) | `simulator.py:141-145`: `y<W*0.5`이면 무조건 True, 아니면 `\|y−obstacle_y\|>0.15`. §추천안의 "항상 True"보다 조건부(다만 L1 쪽 별도 장애물은 여전히 없음) |
-| REQ-SEN-03 (IR→ey_line 변환) | 미확인 | `simulator.py`의 `_get_ir_sensors()`(107행~) 내부 변환식은 이번엔 상세 확인 안 함(2단계-B에서 필요시) |
+| REQ-SEN-03 (IR→ey_line 변환) | 미확인 | `simulator.py`의 `_get_ir_sensors()`(107행–) 내부 변환식은 이번엔 상세 확인 안 함(2단계-B에서 필요시) |
 
 ## REQ-LAT / REQ-CTRL
 
@@ -87,7 +87,7 @@ baseline(`thesis_v2/baseline/`, 아직 미구현)이 기존 코드를 복사하�
 |---|---|---|
 | REQ-SIM-01 (도로 W=0.30, L2/L1 중심) | 일치 | `RoadParams(W=0.30)` 기본값, `lane_centers=[0.0, self.rp.W]`(simulator.py:108) |
 | REQ-SIM-02 (장애물 위치 U(0.5,2.0)) | **불일치** | `simulator.py:52`: `obstacle_x = np.random.uniform(2.5, 4.0)`(1단계 `STAGE1_FACTS.md` 항목4에서 이미 확인) |
-| REQ-SIM-03 (초기 v~U(0.3,0.5), y~N(0,0.05²)) | **부분 불일치** | `simulator.py` reset(): `state.v=np.random.uniform(0.3,0.5)`(일치), `state.y=np.random.uniform(-0.05,0.05)`(균등, Gaussian 아님 — 불일치) |
+| REQ-SIM-03 (초기 v–U(0.3,0.5), y–N(0,0.05²)) | **부분 불일치** | `simulator.py` reset(): `state.v=np.random.uniform(0.3,0.5)`(일치), `state.y=np.random.uniform(-0.05,0.05)`(균등, Gaussian 아님 — 불일치) |
 | REQ-SIM-04/05 (200step/10s, "완료" 종료) | **불일치** | `simulator.py:92-104`: 종료는 `step_count≥max_steps`(200 또는 400) **또는** `\|y\|>MAX_Y_DEVIATION` **또는** `dist_to_obs<0.1`(충돌) 셋 중 하나 — "FSM이 KEEP_L2로 안전복귀"라는 조건은 없음 |
 | REQ-SIM-08 (충돌 판정) | **불일치**(더 단순) | `simulator.py:100-101`: `dist_to_obs=sqrt((x−ox)²+(y−oy)²)<0.1` — 유클리드 거리 기반 점-점 충돌, 차량 크기(L,B)나 헤딩 미반영. §8 재검토 추천안(사각형-점)보다 단순하지만 최소한 **횡방향(y)도 함께 고려**하므로 1차 기각안(front_gap≤0, 종방향만)보다는 낫습니다 — 사실 이 점이 §8 옵션 선택에 참고할 만한 선례임 |
 

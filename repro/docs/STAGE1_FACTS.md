@@ -16,7 +16,7 @@
 |---|---|---|
 | 논문 페이지별 핵심 수치/서술(전 페이지 표 이미지 대조 완료) | `repro/docs/THESIS_PAGES.md` | 완료 |
 | 실험 당시 코드 추정 상세 조사(10절) | `repro/docs/THESIS_TIME_CODE.md` | 완료 |
-| 코드 재분류(A~E, 그림/표 매핑, 폴더 충돌) | `repro/docs/CLASSIFICATION.md` | 완료 |
+| 코드 재분류(A–E, 그림/표 매핑, 폴더 충돌) | `repro/docs/CLASSIFICATION.md` | 완료 |
 | PDF vs 코드 전 항목 대조(22개 항목, FSM 조건 코드 인용 재검증 완료) | `repro/docs/PDF_VS_CODE.md` | 완료 |
 | 사실 확정 최종 요약(본 문서) | `repro/docs/STAGE1_FACTS.md` | 완료 |
 | 1단계 분석 스크립트·중간 산출물 | `repro/stage1_analysis/` | 완료(이동 완료) |
@@ -49,7 +49,7 @@
    위치(y)는 "정상주행/KEEP_L1/RETURN_TO_L2 구간=주입값 그대로" + "EVADE_L 트리거·마지막
    정상주행 구간=진짜 MPC 물리 업데이트"가 섞인 값입니다.
 4. **고정 파라미터 12개(N, dt, qy, qψ, rδ, rΔδ, δ범위, 조향속도, G_TRIG, G_SAFE_MIN, COOLDOWN
-   상수값, W, L/B)는 코드와 논문이 전부 일치**합니다(`PDF_VS_CODE.md` 1~14행).
+   상수값, W, L/B)는 코드와 논문이 전부 일치**합니다(`PDF_VS_CODE.md` 1–14행).
 5. **FSM 전이 조건은 부분적으로만 일치합니다.** KEEP_L2→EVADE_L, KEEP_L1→RETURN_TO_L2,
    "모든상태→SAFE_STOP"(A만), **EVADE_L→KEEP_L1**은 A가 논문과 일치합니다 — 확인 결과
    `legacy_2025/run_simulation.py`가 주입하는 `line_ey`는 `LineTraceSensor`가 실제로 읽는 값(`sig_ey.v`)에
@@ -112,7 +112,7 @@
 
 ## 남은 미결 사항
 
-- `legacy_2025/run_simulation.py`의 초기속도(0.4~0.6) 주입값은 teacher 모드에서 실제로 안 쓰이는 것으로
+- `legacy_2025/run_simulation.py`의 초기속도(0.4–0.6) 주입값은 teacher 모드에서 실제로 안 쓰이는 것으로
   확인됐지만(핵심요약 6·`PDF_VS_CODE.md`), student 모드나 다른 경로에서 실제로 쓰이는지는
   이번 세션에서 끝까지 추적하지 않았습니다 — 2단계에서 필요하면 확인합니다.
 - Table 12(제약 만족률) 재계산은 판정 기준(경계 완화 여부 등)이 코드에 없어 2단계-A에서
@@ -122,7 +122,7 @@
 
 ## 부록: 조사 경위 (결론 도출 과정, 참고용 — 위 "핵심 요약"이 최종 결론입니다)
 
-논문 Table 6~18 수치의 출처를 찾기 위해 저장소의 후보 스크립트를 하나씩 배제해 나간 과정입니다.
+논문 Table 6–18 수치의 출처를 찾기 위해 저장소의 후보 스크립트를 하나씩 배제해 나간 과정입니다.
 최종 결론(핵심 요약 1번)과 다른 것처럼 보이는 문장이 있다면, 이 부록은 "그 결론에 도달하기까지
 배제한 후보들"이고 본문의 핵심 요약이 우선한다는 점에 유의하십시오.
 

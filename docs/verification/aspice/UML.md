@@ -36,13 +36,13 @@ stateDiagram-v2
 
 - 가드는 `fsm.py`의 조건식을 그대로 옮겼다. 상수는 `thesis_v2/baseline/config.py`의 값이다. G_TRIG=1.2, G_SAFE_MIN=0.20, COOLDOWN=0.3, W=0.30, NEAR_L1=0.08,
   NEAR_L2=0.08([개정]), T_KEEP_L1_MIN=0.6, PSI_L2_LIMIT_DEG=20.0이다(`config.py:16-27`).
-- D0은 `if`, D1~D4는 `elif fsm.state == …` 사슬 안에 있다(`fsm.py:51-71`). 그래서 D0이 참이면 D1~D4는 평가되지 않는다. D0이 SAFE_STOP 자신에서 참이면 상태는
+- D0은 `if`, D1–D4는 `elif fsm.state == …` 사슬 안에 있다(`fsm.py:51-71`). 그래서 D0이 참이면 D1–D4는 평가되지 않는다. D0이 SAFE_STOP 자신에서 참이면 상태는
   그대로라서 전이로 기록되지 않는다(`fsm.py:73`). 그림에는 SAFE_STOP이 아닌 4개 상태에서 나가는 화살표로 그렸다.
-- D0~D4 이름은 `docs/verification/MCDC_FSM.md`와 같다.
+- D0–D4 이름은 `docs/verification/MCDC_FSM.md`와 같다.
 - **자동 대조**(`check_uml.py`):
   - 상태 집합이 `FSMState`와 같은지
   - 전이 집합(출발, 도착, 행)이 `fsm.py`를 AST로 읽은 결과와 같은지. 규칙: 상태 조건 없는 첫 `if`는 SAFE_STOP이 아닌 모든 상태에서의 전이로 펼치고, 초기 전이는 `initial_fsm`의 반환 행으로 본다.
-  - 각 결정의 가드에 나오는 `config.*` 상수, `sensors.*` 필드, 지역 변수가 그 결정 ID(D0~D4)가 적힌 그림 행에 모두 있는지
+  - 각 결정의 가드에 나오는 `config.*` 상수, `sensors.*` 필드, 지역 변수가 그 결정 ID(D0–D4)가 적힌 그림 행에 모두 있는지
 
 ## 2. 제어 1스텝 시퀀스도 (이상탐지 폐루프, `thesis_v2/anomaly/closed_loop.py`)
 
@@ -87,7 +87,7 @@ sequenceDiagram
     end
 ```
 
-- 횡방향은 상태와 라인 감지 여부에 따라 라인추종 또는 MPC를 쓴다(REQ-LAT-01~05, `improved/lateral.py`). 그림의 `mpc.solve()`는 MPC 경로다. 라인추종 경로는 생략했다.
+- 횡방향은 상태와 라인 감지 여부에 따라 라인추종 또는 MPC를 쓴다(REQ-LAT-01–05, `improved/lateral.py`). 그림의 `mpc.solve()`는 MPC 경로다. 라인추종 경로는 생략했다.
 - 이탈 판정(`vehicle_off_road`, 240행)과 종료 판정(243-279행)은 시뮬레이션 쪽이라 생략했다.
 - **자동 대조**(`check_uml.py`):
   - `호출() · 파일:행` 표기마다 그 행에 호출 이름이 실제로 있는지

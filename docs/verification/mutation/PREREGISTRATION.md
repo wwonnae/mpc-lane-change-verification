@@ -110,7 +110,7 @@
 2. Claude Code(이 세션)가 테스트 공백 변이마다 테스트를 제안한다. 새 파일로만 추가한다.
    - `thesis_v2/tests/test_mutation_gaps_*.py`
    - `thesis_v2/anomaly/tests/test_mutation_gaps_*.py`
-3. 수락 기준 ①~③은 자동으로 확인한다.
+3. 수락 기준 ①–③은 자동으로 확인한다.
    - ① 원본에서 통과
    - ② 대상 변이를 잡음(임시 사본에서 실행)
    - ③ docstring에 REQ ID 또는 DESIGN 절이 있음

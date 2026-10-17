@@ -1,19 +1,19 @@
 # 기술보고서 그림 캡션 (S3, 2026-09-25)
 
-생성: `docs/revision/scripts/fig_f1_f2_baseline.py`, `fig_f3_to_f9.py`, 캡션: `make_captions.py`. 조건 코드는 부록 B (E2 = paper seed 200~299·S3 1/4칸 격자, E3 = paper seed 2000~2099·S3 3/4칸 격자, D = dev, T0-H1 = 계산시간 seed 0~99·공식 호스트).
+생성: `docs/revision/scripts/fig_f1_f2_baseline.py`, `fig_f3_to_f9.py`, 캡션: `make_captions.py`. 조건 코드는 부록 B (E2 = paper seed 200–299·S3 1/4칸 격자, E3 = paper seed 2000–2099·S3 3/4칸 격자, D = dev, T0-H1 = 계산시간 seed 0–99·공식 호스트).
 재생 기반 그림(F1·F2·F7·F8)은 저장 결과와 일치 검증을 통과한 데이터만 사용(D9).
 
 | 번호 | 제목 | 데이터 출처 | 조건 | 대표 에피소드 선택 규칙 | 대체 대상 |
 |---|---|---|---|---|---|
-| F1 | baseline v1.1 대표 에피소드 궤적·조향(성공 1, 충돌 1) | `docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계` | E2 (paper seed 200~299) | seed 오름차순 첫 성공(seed 200) + 첫 충돌(seed 230) | 제출본 그림 1(Teacher 궤적 예시 부분) |
-| F2 | baseline v1.1 성능 종합(체류·조향·위치·추종 오차·헤딩·제약 만족) | `docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계` | E2 (paper seed 200~299, 전 스텝) | 선택 없음(전 에피소드·전 스텝) | 제출본 그림 2(MPC 성능 종합 분석) |
-| F3 | 논문 입력(9차원) 그대로 재학습한 Student의 폐루프 실패 사례 vs 같은 seed v2 MPC | `repro/2c_analysis/out/i4_closed_loop_failure/ (i4_closed_loop_failure_analysis.py, 저장 결과와 outcome 일치 재생)` | E2 (paper seed 200~299) | seed 오름차순 첫 충돌(201) + 첫·둘째 타임아웃(202, 204) — I4 분석 시 사전 고정 | 없음(신설, VI.4) |
+| F1 | baseline v1.1 대표 에피소드 궤적·조향(성공 1, 충돌 1) | `docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계` | E2 (paper seed 200–299) | seed 오름차순 첫 성공(seed 200) + 첫 충돌(seed 230) | 제출본 그림 1(Teacher 궤적 예시 부분) |
+| F2 | baseline v1.1 성능 종합(체류·조향·위치·추종 오차·헤딩·제약 만족) | `docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계` | E2 (paper seed 200–299, 전 스텝) | 선택 없음(전 에피소드·전 스텝) | 제출본 그림 2(MPC 성능 종합 분석) |
+| F3 | 논문 입력(9차원) 그대로 재학습한 Student의 폐루프 실패 사례 vs 같은 seed v2 MPC | `repro/2c_analysis/out/i4_closed_loop_failure/ (i4_closed_loop_failure_analysis.py, 저장 결과와 outcome 일치 재생)` | E2 (paper seed 200–299) | seed 오름차순 첫 충돌(201) + 첫·둘째 타임아웃(202, 204) — I4 분석 시 사전 고정 | 없음(신설, VI.4) |
 | F4 | S3 경계 지도와 물리 한계 — baseline v1.1 vs improved v2 | `thesis_v2/results/eval_v2/20260924_214446_DESKTOP-MDCKRJS/s3_grid_new_{baseline,v2}.json, all_eval_v2_summary.json(physical_limit_curve)` | E2 (S3 격자 1/4칸 오프셋 900) | 선택 없음(격자 전체) | 없음(신설, VI.5) — 기존 분석 그림(구 격자·3층PC104)을 E2로 다시 그림 |
-| F5 | 개선판 비교 요약(baseline·v1·v2) — 충돌·S3 실패·계산시간 p99 | `eval_v2/.../all_eval_v2_summary.json, timing_v3/*/timing_*.json` | E2 (a·b) / T0-H1 (c, paper seed 0~99) | 선택 없음(전 에피소드) | 없음(신설, VI.6) |
-| F6 | 입력 관측성 — 9입력 / +ψ / +ψ+δ_prev와 위약 대조 | `repro/2c_analysis/out/i4_input_observability/observability.json` | D (dev paper seed 100~199 + S3 dev 격자 900) | 선택 없음(dev MPC 호출 스텝 전체) | 없음(신설, VI.7 — [개정] 근거) |
-| F7 | v2 MPC vs Student S10 궤적·조향(대표 3 에피소드) | `docs/revision/data/r3_eval3_paper_steps.npz(재생, eval3 저장 outcome과 일치 검증)` | E3 (paper seed 2000~2099) | eval3 seed 2000·2001·2002(처음 세 seed, 사전 고정) | 제출본 그림 1(Teacher–Student 궤적 비교 부분) |
-| F8 | v2 MPC vs Student S10 제어 비교(조향 분포·위치 분포·추종 오차·부드러움) | `docs/revision/data/r3_eval3_paper_steps.npz, r3_eval3_stats.json` | E3 (paper seed 2000~2099, 전 스텝) | 선택 없음(전 에피소드·전 스텝) | 제출본 그림 3(Teacher와 Student 제어 비교, 학습 데이터 기반) — 폐루프 기반으로 대체 |
-| F9 | 계산시간 분위수 — baseline MPC / v2 MPC / S10 PyTorch / S10 ONNX | `docs/revision/data/r2_timing_supplement/r2_timing.json` | T0-H1 (paper seed 0~99, 공식 조건 True) | 선택 없음(전 MPC 호출) | 제출본 표 16·18의 그림 대응(제출본에 해당 그림 없음 — 신설) |
+| F5 | 개선판 비교 요약(baseline·v1·v2) — 충돌·S3 실패·계산시간 p99 | `eval_v2/.../all_eval_v2_summary.json, timing_v3/*/timing_*.json` | E2 (a·b) / T0-H1 (c, paper seed 0–99) | 선택 없음(전 에피소드) | 없음(신설, VI.6) |
+| F6 | 입력 관측성 — 9입력 / +ψ / +ψ+δ_prev와 위약 대조 | `repro/2c_analysis/out/i4_input_observability/observability.json` | D (dev paper seed 100–199 + S3 dev 격자 900) | 선택 없음(dev MPC 호출 스텝 전체) | 없음(신설, VI.7 — [개정] 근거) |
+| F7 | v2 MPC vs Student S10 궤적·조향(대표 3 에피소드) | `docs/revision/data/r3_eval3_paper_steps.npz(재생, eval3 저장 outcome과 일치 검증)` | E3 (paper seed 2000–2099) | eval3 seed 2000·2001·2002(처음 세 seed, 사전 고정) | 제출본 그림 1(Teacher–Student 궤적 비교 부분) |
+| F8 | v2 MPC vs Student S10 제어 비교(조향 분포·위치 분포·추종 오차·부드러움) | `docs/revision/data/r3_eval3_paper_steps.npz, r3_eval3_stats.json` | E3 (paper seed 2000–2099, 전 스텝) | 선택 없음(전 에피소드·전 스텝) | 제출본 그림 3(Teacher와 Student 제어 비교, 학습 데이터 기반) — 폐루프 기반으로 대체 |
+| F9 | 계산시간 분위수 — baseline MPC / v2 MPC / S10 PyTorch / S10 ONNX | `docs/revision/data/r2_timing_supplement/r2_timing.json` | T0-H1 (paper seed 0–99, 공식 조건 True) | 선택 없음(전 MPC 호출) | 제출본 표 16·18의 그림 대응(제출본에 해당 그림 없음 — 신설) |
 
 ## 그림별 캡션 전문
 
@@ -22,7 +22,7 @@
 ![F1_baseline_trajectories](F1_baseline_trajectories.png)
 
 - 데이터 출처: `docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계`
-- 조건 코드: E2 (paper seed 200~299)
+- 조건 코드: E2 (paper seed 200–299)
 - 대표 에피소드 선택 규칙: seed 오름차순 첫 성공(seed 200) + 첫 충돌(seed 230)
 - 대체 대상: 제출본 그림 1(Teacher 궤적 예시 부분)
 - 생성: `fig_f1_f2_baseline.py`
@@ -33,7 +33,7 @@
 ![F2_baseline_summary](F2_baseline_summary.png)
 
 - 데이터 출처: `docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계`
-- 조건 코드: E2 (paper seed 200~299, 전 스텝)
+- 조건 코드: E2 (paper seed 200–299, 전 스텝)
 - 대표 에피소드 선택 규칙: 선택 없음(전 에피소드·전 스텝)
 - 대체 대상: 제출본 그림 2(MPC 성능 종합 분석)
 - 생성: `fig_f1_f2_baseline.py`
@@ -44,7 +44,7 @@
 ![F3_student9_failure](F3_student9_failure.png)
 
 - 데이터 출처: `repro/2c_analysis/out/i4_closed_loop_failure/ (i4_closed_loop_failure_analysis.py, 저장 결과와 outcome 일치 재생)`
-- 조건 코드: E2 (paper seed 200~299)
+- 조건 코드: E2 (paper seed 200–299)
 - 대표 에피소드 선택 규칙: seed 오름차순 첫 충돌(201) + 첫·둘째 타임아웃(202, 204) — I4 분석 시 사전 고정
 - 대체 대상: 없음(신설, VI.4)
 - 생성: `(재사용) repro/2c_analysis/i4_closed_loop_failure_analysis.py`
@@ -66,7 +66,7 @@
 ![F5_improvement_ablation](F5_improvement_ablation.png)
 
 - 데이터 출처: `eval_v2/.../all_eval_v2_summary.json, timing_v3/*/timing_*.json`
-- 조건 코드: E2 (a·b) / T0-H1 (c, paper seed 0~99)
+- 조건 코드: E2 (a·b) / T0-H1 (c, paper seed 0–99)
 - 대표 에피소드 선택 규칙: 선택 없음(전 에피소드)
 - 대체 대상: 없음(신설, VI.6)
 - 생성: `fig_f3_to_f9.py`
@@ -77,7 +77,7 @@
 ![F6_input_observability](F6_input_observability.png)
 
 - 데이터 출처: `repro/2c_analysis/out/i4_input_observability/observability.json`
-- 조건 코드: D (dev paper seed 100~199 + S3 dev 격자 900)
+- 조건 코드: D (dev paper seed 100–199 + S3 dev 격자 900)
 - 대표 에피소드 선택 규칙: 선택 없음(dev MPC 호출 스텝 전체)
 - 대체 대상: 없음(신설, VI.7 — [개정] 근거)
 - 생성: `fig_f3_to_f9.py`
@@ -88,7 +88,7 @@
 ![F7_v2_vs_s10_trajectories](F7_v2_vs_s10_trajectories.png)
 
 - 데이터 출처: `docs/revision/data/r3_eval3_paper_steps.npz(재생, eval3 저장 outcome과 일치 검증)`
-- 조건 코드: E3 (paper seed 2000~2099)
+- 조건 코드: E3 (paper seed 2000–2099)
 - 대표 에피소드 선택 규칙: eval3 seed 2000·2001·2002(처음 세 seed, 사전 고정)
 - 대체 대상: 제출본 그림 1(Teacher–Student 궤적 비교 부분)
 - 생성: `fig_f3_to_f9.py`
@@ -99,7 +99,7 @@
 ![F8_v2_vs_s10_control](F8_v2_vs_s10_control.png)
 
 - 데이터 출처: `docs/revision/data/r3_eval3_paper_steps.npz, r3_eval3_stats.json`
-- 조건 코드: E3 (paper seed 2000~2099, 전 스텝)
+- 조건 코드: E3 (paper seed 2000–2099, 전 스텝)
 - 대표 에피소드 선택 규칙: 선택 없음(전 에피소드·전 스텝)
 - 대체 대상: 제출본 그림 3(Teacher와 Student 제어 비교, 학습 데이터 기반) — 폐루프 기반으로 대체
 - 생성: `fig_f3_to_f9.py`
@@ -110,7 +110,7 @@
 ![F9_timing_quantiles](F9_timing_quantiles.png)
 
 - 데이터 출처: `docs/revision/data/r2_timing_supplement/r2_timing.json`
-- 조건 코드: T0-H1 (paper seed 0~99, 공식 조건 True)
+- 조건 코드: T0-H1 (paper seed 0–99, 공식 조건 True)
 - 대표 에피소드 선택 규칙: 선택 없음(전 MPC 호출)
 - 대체 대상: 제출본 표 16·18의 그림 대응(제출본에 해당 그림 없음 — 신설)
 - 생성: `fig_f3_to_f9.py`

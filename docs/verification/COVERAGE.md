@@ -42,7 +42,7 @@
 
 | 분류 | 예(행) | 의미 |
 |---|---|---|
-| 정상 주행에서 일어나지 않는 이상·방어 경로 | `baseline/runner.py:151`(solver 실패), `:153`(fallback), `:166`·`:168`(clip 종류), `:174`·`:189`(허용오차 위반 기록), `:239`(MAX_STEPS 시간 초과), `improved/runner.py:188~202`(solver 실패·fallback·warm-start shift·time limit), `:209~226`(제약 위반량 기록), `baseline/collision.py:38`(퇴화 축), `baseline/world.py:51·53`(초기 위치 재추출 1000회 소진) | 테스트 시나리오(paper·left_obstacle seed 0~2 등)가 정상이라 이 분기에 도달하지 않는다. 기록·안전 경로라서 **단위 결함 주입 테스트 후보**다(이번 범위 밖, 추가하지 않음) |
+| 정상 주행에서 일어나지 않는 이상·방어 경로 | `baseline/runner.py:151`(solver 실패), `:153`(fallback), `:166`·`:168`(clip 종류), `:174`·`:189`(허용오차 위반 기록), `:239`(MAX_STEPS 시간 초과), `improved/runner.py:188~202`(solver 실패·fallback·warm-start shift·time limit), `:209~226`(제약 위반량 기록), `baseline/collision.py:38`(퇴화 축), `baseline/world.py:51·53`(초기 위치 재추출 1000회 소진) | 테스트 시나리오(paper·left_obstacle seed 0–2 등)가 정상이라 이 분기에 도달하지 않는다. 기록·안전 경로라서 **단위 결함 주입 테스트 후보**다(이번 범위 밖, 추가하지 않음) |
 | 환경 의존 | `baseline/envinfo.py:31~95`(Windows 전원 API 실패·성공 분기), `baseline/summary.py:193~200`(공식 측정 호스트 여부), `anomaly/common.py:81~98`(환경 기록) | 실행하는 PC의 상태에 따라 갈린다. 테스트 PC는 공식 호스트가 아니다 |
 | 학습·오프라인 함수 | `anomaly/ae_model.py:51~84`(오토인코더 학습 루프) | 테스트는 학습 대신 작은 모델 state_dict를 쓴다(`test_eval_offline.py:91~114`) |
 | 설정 변형(ablation 플래그) | `improved/mpc.py:379`(I2 `narrow` 변형), `:440`(I1 꺼짐) | 최종 조합(v2) 외의 플래그 조합 |

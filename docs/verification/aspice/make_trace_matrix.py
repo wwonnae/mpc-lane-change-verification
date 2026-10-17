@@ -74,8 +74,8 @@ ANOMALY_CHAIN = [
 ]
 
 ID_RE = re.compile(r"REQ-([A-Z]+)-(\d+)([a-z]?)")
-# REQ-X-NN 뒤에 붙는 '/ MMa' 연속 표기, 'NNa~MMb' 범위 표기
-CITE_RE = re.compile(r"REQ-([A-Z]+)-(\d+[a-z]?)((?:\s*/\s*\d+[a-z]?)*)(?:\s*~\s*(\d+[a-z]?))?")
+# REQ-X-NN 뒤에 붙는 '/ MMa' 연속 표기, 'NNa~MMb' 범위 표기(문서에서는 GitHub 취소선을 피하려고 – 도 씀)
+CITE_RE = re.compile(r"REQ-([A-Z]+)-(\d+[a-z]?)((?:\s*/\s*\d+[a-z]?)*)(?:\s*[~–]\s*(\d+[a-z]?))?")
 
 
 def rel(p: Path) -> str:
@@ -105,7 +105,7 @@ def cite_ids(text: str, universe=None):
             for rid in universe:
                 a = ID_RE.fullmatch(rid)
                 if a and a.group(1) == area and lo <= (int(a.group(2)), a.group(3)) <= hi and rid != f"REQ-{area}-{first}":
-                    out.append((rid, "범위(~)"))
+                    out.append((rid, "범위(`~`)"))
     return out
 
 

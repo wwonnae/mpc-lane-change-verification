@@ -72,7 +72,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <li>Student 입력: 헤딩이 없어 교사 MPC를 원리적으로 모방할 수 없음(VI장 7절).</li>
 </ol>
 <p>이 밖에 근거 파일을 찾지 못한 수치(계산 시간, 학습 표본 수)와 정의가 맞지 않는 표가 있어, 새 측정값으로 대체하고 부록 A에 사실을 기록하였다.</p>
-<p><strong>제출본이 한계로 남긴 검증.</strong> 제출본은 "Student 정책의 실제 주행 성능이 검증되지 않았다"를 첫째 한계로 적었다. 이 보고서는 그중 시뮬레이션 폐루프 검증을 수행하였다. 제출본 입력 그대로의 Student는 실패했고(paper 성공 7/100 (95% CI 3.4~13.7%)), 헤딩을 입력에 더한 Student는 한 번도 쓰지 않은 평가 데이터에서 에피소드별 성공·충돌·타임아웃 결과가 교사 MPC와 모두 같았다(시뮬레이션)(paper 성공 100/100 (95% CI 96.3~100.0%), 충돌 0/100 (95% CI 0.0~3.7%)).</p>
+<p><strong>제출본이 한계로 남긴 검증.</strong> 제출본은 "Student 정책의 실제 주행 성능이 검증되지 않았다"를 첫째 한계로 적었다. 이 보고서는 그중 시뮬레이션 폐루프 검증을 수행하였다. 제출본 입력 그대로의 Student는 실패했고(paper 성공 7/100 (95% CI 3.4–13.7%)), 헤딩을 입력에 더한 Student는 한 번도 쓰지 않은 평가 데이터에서 에피소드별 성공·충돌·타임아웃 결과가 교사 MPC와 모두 같았다(시뮬레이션)(paper 성공 100/100 (95% CI 96.3–100.0%), 충돌 0/100 (95% CI 0.0–3.7%)).</p>
 <p><strong>읽는 방법.</strong> 장 구성은 제출본을 따르고, 제출본에 없던 강건성 검증(VI장 5절), 개선판(VI장 6절), Student 폐루프 검증(VI장 7절)을 더하였다. 모든 표·그림 캡션에는 <code>[데이터 | 호스트 | 버전 | 커밋]</code> 조건 태그가 있으며 코드 정의는 부록 B에, 제출본의 모든 수치와 이 보고서 값의 대응은 부록 A에 있다. 본문의 수치는 <code>docs/revision/REVISION_NUMBERS.csv</code>의 행에서 자동으로 채워지고, 조립 도구가 본문 수치와 표의 일치를 검사한다(부록 C).</p>
 <h1>I. 서론</h1>
 <h2>1. 연구 배경 및 필요성</h2>
@@ -123,10 +123,10 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>축간거리 L</td><td>0.20 m</td><td>고정 파라미터</td></tr>
 <tr><td>차폭 B</td><td>0.15 m</td><td>고정 파라미터</td></tr>
 <tr><td>최대 조향각</td><td>±25 deg</td><td>고정 파라미터</td></tr>
-<tr><td>속도 범위</td><td>0.0~0.5 m/s</td><td>고정 파라미터</td></tr>
+<tr><td>속도 범위</td><td>0.0–0.5 m/s</td><td>고정 파라미터</td></tr>
 <tr><td>최대 조향각 변화율</td><td>200 deg/s</td><td>고정 파라미터 — 제어 주기당 200 deg/s × 0.05 s = 10 deg/step</td></tr>
 </tbody></table>
-<p>차량 동역학은 제출본 식 (1)~(3)의 kinematic bicycle model을 Euler 적분으로 푼다(x, y는 후륜 중심). 속도는 동역학 없이 다음 스텝에 명령값이 바로 대입된다(제출본에 속도 동역학 서술이 없어 최소 가정).</p>
+<p>차량 동역학은 제출본 식 (1)–(3)의 kinematic bicycle model을 Euler 적분으로 푼다(x, y는 후륜 중심). 속도는 동역학 없이 다음 스텝에 명령값이 바로 대입된다(제출본에 속도 동역학 서술이 없어 최소 가정).</p>
 <h3>(3) 센서 모델</h3>
 <ul>
 <li><strong>IR 센서</strong>: 3개, 0.04 m로 배치된 이진 센서 패턴을 차선 중심 오차 ey_line으로 바꾼다. 제출본에 변환식이 없어 패턴별 대응표를 정의했고(<code>SETTINGS_DECISION.md</code> §9), 세 센서가 모두 선을 보지 못하면 "라인 미검출"로 처리한다.</li>
@@ -160,7 +160,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>KEEP_L1 → RETURN_TO_L2</td><td>t &gt; 0.6 s</td><td>t &gt; 0.6 s 그리고 right_clear</td><td>[해석]</td></tr>
 <tr><td>RETURN_TO_L2 → KEEP_L2</td><td>|y| ≤ 0.20 m, |ψ| ≤ 20°</td><td>|y| ≤ 0.08 m, |ψ| ≤ 20°</td><td><strong>[개정]</strong></td></tr>
 </tbody></table>
-<p><strong>[개정] RETURN_TO_L2 → KEEP_L2의 위치 임계값.</strong> 제출본의 두 확정값이 서로 호환되지 않음이 실행 전 계산으로 확인되었다. 복귀 완료 조건은 |y| ≤ 0.20 m인데, 전이 직후 적용되는 KEEP_L2 위치 제약은 |y| ≤ 0.15 m이다(IV장 2절). 임계값 가까이에서 전이하면 한 스텝 안에 0.05 m를 움직여야 하지만, 한 스텝의 최대 이동량은 0.0086~0.0125 m이다. 따라서 0.15 &lt; |y| ≤ 0.20 m에서 전이하고 곧바로 MPC가 호출되면 그 스텝의 QP는 구조적으로 풀 수 없고(infeasible), 그 스텝의 조향은 "MPC가 계산한 제약 만족 조향각"이 아니게 된다. EVADE_L → KEEP_L1 조건과 대칭이 되도록 임계값을 0.08 m로 바꿨고, 헤딩 조건은 이 충돌과 무관해 그대로 두었다.</p>
+<p><strong>[개정] RETURN_TO_L2 → KEEP_L2의 위치 임계값.</strong> 제출본의 두 확정값이 서로 호환되지 않음이 실행 전 계산으로 확인되었다. 복귀 완료 조건은 |y| ≤ 0.20 m인데, 전이 직후 적용되는 KEEP_L2 위치 제약은 |y| ≤ 0.15 m이다(IV장 2절). 임계값 가까이에서 전이하면 한 스텝 안에 0.05 m를 움직여야 하지만, 한 스텝의 최대 이동량은 0.0086–0.0125 m이다. 따라서 0.15 &lt; |y| ≤ 0.20 m에서 전이하고 곧바로 MPC가 호출되면 그 스텝의 QP는 구조적으로 풀 수 없고(infeasible), 그 스텝의 조향은 "MPC가 계산한 제약 만족 조향각"이 아니게 된다. EVADE_L → KEEP_L1 조건과 대칭이 되도록 임계값을 0.08 m로 바꿨고, 헤딩 조건은 이 충돌과 무관해 그대로 두었다.</p>
 <p>제출본에 없는 동작은 다음과 같이 최소 가정으로 채웠다.</p>
 <ul>
 <li><strong>SAFE_STOP은 종단 상태</strong>이다(복귀 조건이 서술되지 않음). 이 상태에서는 속도 0, 조향은 직전 값을 유지한다.</li>
@@ -170,7 +170,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <p>조향 변화율 제한은 200 deg/s × 0.05 s = 10 deg/step이며, 뒤의 후처리 단계에서 적용한다(본 장 4절).</p>
 <h2>2. MPC 기반 횡방향 경로 계획</h2>
 <h3>(1) 모델과 비용함수</h3>
-<p>MPC는 제출본 식 (4)~(5)의 2-상태(y, ψ) 선형 모델과 식 (6)의 비용함수를 그대로 쓴다. 가중치와 예측 구간은 표 3과 같으며 모두 고정 파라미터이다.</p>
+<p>MPC는 제출본 식 (4)–(5)의 2-상태(y, ψ) 선형 모델과 식 (6)의 비용함수를 그대로 쓴다. 가중치와 예측 구간은 표 3과 같으며 모두 고정 파라미터이다.</p>
 <p class="caption"><strong>표 3. MPC 비용함수 가중치(제출본과 동일).</strong> [데이터: 설정값 | 호스트: 해당 없음 | 버전: baseline v1.1 | 커밋: C2]</p>
 <table>
 <thead><tr>
@@ -190,7 +190,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <li>Hessian 대각에는 가중치 원값을, 선형항에는 2배 계수를 넣어, 무제약 최적점이 목표선이 아니라 목표선의 두 배 위치가 된다. 목표선이 0.30 m인 상태(EVADE_L·KEEP_L1)에서 차량이 정확히 목표선 위에 있어도 +25°(최대 조향)를 낸다.</li>
 <li>r_Δδ 항이 차분이 아니라 크기 벌점으로 구현되어 있다.</li>
 </ol>
-<p>이 보고서의 MPC는 식 (6)을 표준 QP 형태로 새로 구현해 두 차이가 없다. 옛 코드와의 조향 차이는 격자 비교에서 이 두 차이와 상태별 위치 제약 차이로 대부분 설명되었다(<code>repro/docs/SPEC_VS_OLDCODE.md</code>). 다만 target_y = 0 근방의 잔여 격자는 옛 코드의 r_Δδ를 차분형으로 바꿔도 30/37건 잔존(잔차 1.0~6.0°) 남아, 차이를 완전히 분리하지는 못하였다(<code>repro/docs/THESIS_REVISION_LOG.md</code> 2026-09-23 추가 검증). 제출본 VI장의 Student 오차(표 15)가 어느 구현을 교사로 삼았는지는 확인하지 못하였다(부록 A).</p>
+<p>이 보고서의 MPC는 식 (6)을 표준 QP 형태로 새로 구현해 두 차이가 없다. 옛 코드와의 조향 차이는 격자 비교에서 이 두 차이와 상태별 위치 제약 차이로 대부분 설명되었다(<code>repro/docs/SPEC_VS_OLDCODE.md</code>). 다만 target_y = 0 근방의 잔여 격자는 옛 코드의 r_Δδ를 차분형으로 바꿔도 30/37건 잔존(잔차 1.0–6.0°) 남아, 차이를 완전히 분리하지는 못하였다(<code>repro/docs/THESIS_REVISION_LOG.md</code> 2026-09-23 추가 검증). 제출본 VI장의 Student 오차(표 15)가 어느 구현을 교사로 삼았는지는 확인하지 못하였다(부록 A).</p>
 <h3>(2) 제약조건</h3>
 <p>조향각 −25° ≤ δ ≤ 25°, 헤딩각 −80° ≤ ψ ≤ 80°, 횡방향 위치는 상태별로 L2 주행 −0.15 ≤ y ≤ 0.15, L1 주행 0.15 ≤ y ≤ 0.45, 차선 변경 구간 −0.15 ≤ y ≤ 0.45이다(제출본과 동일).</p>
 <h3>(3) 풀이와 fallback</h3>
@@ -294,15 +294,15 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 </tr></thead><tbody>
 <tr><td>baseline v1.1</td><td>제출본 설계를 요구사항대로 옮긴 제어기([개정] 반영). 제출본의 "Teacher 정책"에 해당</td><td>VI.2·VI.3·VI.5</td></tr>
 <tr><td>improved v1</td><td>baseline에 개선 I1·I1b·I2'·I3을 더한 MPC</td><td>VI.5·VI.6</td></tr>
-<tr><td>improved v2</td><td>v1에 반복 상한 I5를 더한 MPC — 개선 단계의 최종 MPC이자 Student의 교사</td><td>VI.5~VI.7</td></tr>
+<tr><td>improved v2</td><td>v1에 반복 상한 I5를 더한 MPC — 개선 단계의 최종 MPC이자 Student의 교사</td><td>VI.5–VI.7</td></tr>
 <tr><td>Student 9입력</td><td>제출본 입력 정의 그대로 학습한 신경망</td><td>VI.4</td></tr>
 <tr><td>Student S10 / S11</td><td>입력에 ψ(S10), ψ와 δ_prev(S11)를 더한 신경망</td><td>VI.7</td></tr>
 </tbody></table>
 <h3>(2) 데이터와 판정 원칙</h3>
 <ul>
-<li><strong>개발·평가 분리</strong>: 파라미터와 모델은 개발 데이터 D에서만 정했고, 평가 데이터(E1·E2·E3)는 확정된 코드에 한 번씩만 실행하였다(부록 B). 제출본의 "100개 무작위 시나리오"(100개)에 대응하는 이 보고서의 기본 평가는 100 (E2 paper seed 200~299)이다.</li>
+<li><strong>개발·평가 분리</strong>: 파라미터와 모델은 개발 데이터 D에서만 정했고, 평가 데이터(E1·E2·E3)는 확정된 코드에 한 번씩만 실행하였다(부록 B). 제출본의 "100개 무작위 시나리오"(100개)에 대응하는 이 보고서의 기본 평가는 100 (E2 paper seed 200–299)이다.</li>
 <li><strong>판정 기준은 실행 전에 고정</strong>하였다. 결과를 보고 기준·seed·에피소드를 바꾸지 않았다.</li>
-<li><strong>시나리오</strong>: 제출본 시나리오(paper)에 더해, 좌측 차선도 막혀 SAFE_STOP이 나야 하는 left_obstacle과 강건성 시나리오 S3~S7(VI.5)을 별도로 실행하였다.</li>
+<li><strong>시나리오</strong>: 제출본 시나리오(paper)에 더해, 좌측 차선도 막혀 SAFE_STOP이 나야 하는 left_obstacle과 강건성 시나리오 S3–S7(VI.5)을 별도로 실행하였다.</li>
 </ul>
 <h3>(3) 지표</h3>
 <ul>
@@ -314,7 +314,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <h2>2. Teacher 정책(baseline v1.1) 성능</h2>
 <p>제출본 VI장 2절의 "Teacher 정책"에 해당하는 것은 제출본 설계를 옮긴 baseline v1.1이다. 이 절의 수치는 모두 E2 paper 100 에피소드(15,094 스텝)의 폐루프 결과이다.</p>
 <h3>(1) 제어 성능</h3>
-<p>baseline v1.1은 95/100 (95% CI 88.8~97.8%)로 회피·복귀를 마쳤고, 충돌은 5/100 (95% CI 2.2~11.2%)였다. 제출본 코드에는 기하학적 충돌 판정이 없어 제출본의 "충돌 0회"가 충돌이 실제로 없었다는 뜻인지 판정하지 않았다는 뜻인지 구분되지 않는다. 이 보고서의 판정(III장 2절)에서는 충돌이 확인되었다. E1의 충돌 사례 한 건을 분석한 결과 원인은 제어기 설계였다 — 비용함수(식 6)에 장애물 정보가 없어, 헤딩이 커지면 목표선 추종을 우선해 조향을 되돌리다 장애물과 겹쳤고, 같은 초기 조건에서도 최대 조향으로 회피하는 궤적은 존재하였다(실제 동역학으로 재계산, <code>repro/2c_analysis/avoidance_feasibility_recheck.py</code>). E2의 충돌도 같은 기전으로 보이지만(추정, 개별 분석하지 않음), 장애물 인지 하한(I2')을 포함한 개선판에서 충돌이 관측되지 않은 것과 부합한다(VI장 6절).</p>
+<p>baseline v1.1은 95/100 (95% CI 88.8–97.8%)로 회피·복귀를 마쳤고, 충돌은 5/100 (95% CI 2.2–11.2%)였다. 제출본 코드에는 기하학적 충돌 판정이 없어 제출본의 "충돌 0회"가 충돌이 실제로 없었다는 뜻인지 판정하지 않았다는 뜻인지 구분되지 않는다. 이 보고서의 판정(III장 2절)에서는 충돌이 확인되었다. E1의 충돌 사례 한 건을 분석한 결과 원인은 제어기 설계였다 — 비용함수(식 6)에 장애물 정보가 없어, 헤딩이 커지면 목표선 추종을 우선해 조향을 되돌리다 장애물과 겹쳤고, 같은 초기 조건에서도 최대 조향으로 회피하는 궤적은 존재하였다(실제 동역학으로 재계산, <code>repro/2c_analysis/avoidance_feasibility_recheck.py</code>). E2의 충돌도 같은 기전으로 보이지만(추정, 개별 분석하지 않음), 장애물 인지 하한(I2')을 포함한 개선판에서 충돌이 관측되지 않은 것과 부합한다(VI장 6절).</p>
 <p class="caption"><strong>표 6. FSM 상태별 제어 성능.</strong> [데이터: E2 (paper, 전 스텝) | 호스트: H1(재생) | 버전: baseline v1.1 | 커밋: C2 평가 · C7 재생]</p>
 <table class="xdense">
 <thead><tr>
@@ -349,16 +349,16 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>최소 속도</td><td>0.301 m/s</td><td>0.303 m/s</td></tr>
 <tr><td>최대 속도</td><td>0.500 m/s</td><td>0.500 m/s</td></tr>
 <tr><td>최소 front_gap</td><td>0.648 m</td><td>0.000 m(최솟값 — 차량 전단이 장애물 옆을 지날 때 0, 충돌 아님) / EVADE_L 진입 시 1.080 ± 0.190 m(최소 0.512)</td></tr>
-<tr><td>충돌</td><td>0</td><td>5/100 (95% CI 2.2~11.2%)</td></tr>
-<tr><td>회피 성공</td><td>100.0%</td><td>95/100 (95% CI 88.8~97.8%)</td></tr>
+<tr><td>충돌</td><td>0</td><td>5/100 (95% CI 2.2–11.2%)</td></tr>
+<tr><td>회피 성공</td><td>100.0%</td><td>95/100 (95% CI 88.8–97.8%)</td></tr>
 </tbody></table>
 <ul>
 <li>속도는 규칙 기반이라 첫 스텝의 초기 속도를 빼면 항상 v_ref이다. 제출본 표 7의 속도 통계는 이 규칙과 맞지 않고 저장된 Student 결과와 가까웠다(부록 A).</li>
 <li>front_gap은 차량 전단이 장애물 옆을 지나는 동안 정의상 0이 되므로(충돌이 아님) 최솟값 대신 <strong>회피를 시작한 순간의 front_gap</strong> (1.080 ± 0.190 m / 최소 0.512 m)을 함께 적었다.</li>
 </ul>
-<figure><img src="figures/F1_baseline_trajectories.png" alt="baseline v1.1 대표 에피소드 궤적·조향(성공 1, 충돌 1)"><figcaption><em>그림 F1. baseline v1.1 대표 에피소드 궤적·조향(성공 1, 충돌 1).</em> [데이터: E2 (paper seed 200~299) | 호스트: H1(재생) | 버전: baseline v1.1 | 커밋: C2 평가 · C7 재생] 출처: <code>docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계</code>. 대표 에피소드 선택: seed 오름차순 첫 성공(seed 200) + 첫 충돌(seed 230). 대체 대상: 제출본 그림 1(Teacher 궤적 예시 부분). 생성: <code>fig_f1_f2_baseline.py</code>.</figcaption></figure>
+<figure><img src="figures/F1_baseline_trajectories.png" alt="baseline v1.1 대표 에피소드 궤적·조향(성공 1, 충돌 1)"><figcaption><em>그림 F1. baseline v1.1 대표 에피소드 궤적·조향(성공 1, 충돌 1).</em> [데이터: E2 (paper seed 200–299) | 호스트: H1(재생) | 버전: baseline v1.1 | 커밋: C2 평가 · C7 재생] 출처: <code>docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계</code>. 대표 에피소드 선택: seed 오름차순 첫 성공(seed 200) + 첫 충돌(seed 230). 대체 대상: 제출본 그림 1(Teacher 궤적 예시 부분). 생성: <code>fig_f1_f2_baseline.py</code>.</figcaption></figure>
 <h3>(2) 계산 시간</h3>
-<p class="caption"><strong>표 8. baseline v1.1 MPC 계산 시간.</strong> [데이터: T0 (paper seed 0~99) | 호스트: H1(공식 조건) | 버전: baseline v1.1 | 커밋: C7]</p>
+<p class="caption"><strong>표 8. baseline v1.1 MPC 계산 시간.</strong> [데이터: T0 (paper seed 0–99) | 호스트: H1(공식 조건) | 버전: baseline v1.1 | 커밋: C7]</p>
 <table>
 <thead><tr>
 <th>통계량</th>
@@ -372,7 +372,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>최대</td><td>5.747</td><td>1.508</td></tr>
 <tr><td>95 백분위</td><td>1.312</td><td>0.115</td></tr>
 <tr><td>99 백분위</td><td>1.524</td><td>0.184 (주 지표)</td></tr>
-<tr><td>표본 수</td><td>3,000회</td><td>11,670회(seed 0~99 전 MPC 호출)</td></tr>
+<tr><td>표본 수</td><td>3,000회</td><td>11,670회(seed 0–99 전 MPC 호출)</td></tr>
 </tbody></table>
 <ul>
 <li>측정 환경: DESKTOP-MDCKRJS, AC, 최고 성능 사용자 확인(meets_official_condition=True). 제출본 환경은 Intel Core i7, 16GB RAM.</li>
@@ -380,7 +380,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <li>제출본 표 8과 본문의 계산 시간은 측정 코드를 저장소에서 찾지 못하였다. 제출본 값 가운데 표 8·16의 평균·표준편차·최대 여섯 개(1.091 / 0.152 / 5.747, 0.206 / 0.055 / 1.557 ms)와 제출본 본문의 전체 평균(3.23 ms)은 옛 스크립트에 상수로 들어 있었고, 나머지 통계량은 출처를 찾지 못하였다(부록 A). 이 보고서의 값은 고정한 조건에서 새로 잰 것이다. 1 ms 미만 양의 p99는 같은 조건에서도 실행마다 −21%, −31%까지 달라졌으므로(부록 B), p99 절댓값보다 예산 대비 여유의 크기로 읽는 것이 적절하다.</li>
 </ul>
 <h2>3. 학습 데이터와 교사 제어 명령 분석</h2>
-<p>제출본 VI장 3절은 교사가 만든 학습 데이터의 통계와 품질을 한 절에서 다뤘다. 이 보고서에서는 두 대상이 다르므로 나눠서 쓴다. (1)은 Student 학습 데이터(개발 데이터 D, 교사 improved v2), (2)~(4)는 제출본 설계의 MPC(baseline v1.1)가 E2에서 실제로 낸 제어 명령의 통계이다.</p>
+<p>제출본 VI장 3절은 교사가 만든 학습 데이터의 통계와 품질을 한 절에서 다뤘다. 이 보고서에서는 두 대상이 다르므로 나눠서 쓴다. (1)은 Student 학습 데이터(개발 데이터 D, 교사 improved v2), (2)–(4)는 제출본 설계의 MPC(baseline v1.1)가 E2에서 실제로 낸 제어 명령의 통계이다.</p>
 <h3>(1) 학습 데이터셋 통계</h3>
 <p class="caption"><strong>표 9. 학습 데이터셋 통계("평균 주행 시간" 행만 E2 baseline 데이터, 나머지 행은 학습 데이터 D).</strong> [데이터: D (표본) · E2 (평균 주행 시간 행) | 호스트: H1 | 버전: 교사 improved v2 · baseline v1.1 | 커밋: C5 · C7]</p>
 <table>
@@ -444,13 +444,13 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <th>이 보고서 위반율 / 만족률</th>
 </tr></thead><tbody>
 <tr><td>조향각 ±25° (MPC 원출력)</td><td>0.00 / 100.00</td><td>0.00 / 100.00 (허용오차 §19 정정값; 정정 전 상수 기준 3/15094 스텝 초과)</td></tr>
-<tr><td>속도</td><td>범위 0~1.5 m/s: 0.00 / 100.00</td><td>범위 0~0.5 m/s: 0.00 / 100.00</td></tr>
+<tr><td>속도</td><td>범위 0–1.5 m/s: 0.00 / 100.00</td><td>범위 0–0.5 m/s: 0.00 / 100.00</td></tr>
 <tr><td>횡방향 위치(상태별)</td><td>0.2143% / 99.7857%</td><td>0.0000% / 100.0000%</td></tr>
 <tr><td>헤딩각 ±80°</td><td>0.00 / 100.00</td><td>0.00 / 100.00</td></tr>
 </tbody></table>
 <ul>
 <li>제출본은 위치 제약을 41 / 19,129 스텝(0.2143% (0.21%))에서 위반했다고 보고한다. 이 보고서에서는 0 / 15,094이다. [개정] 두 건(복귀 임계값, 초기 위치 절단)이 없으면 경계 조건에서 위치 제약을 구조적으로 지킬 수 없는 스텝이 생길 수 있는데(IV장 1절, III장 2절), 이를 고친 뒤 MPC 원출력·차량 위치가 모든 스텝에서 허용오차 안에 있다. 핵심 전제 1("MPC가 제약을 만족하는 조향각을 계산한다")이 이 데이터에서 성립한다.</li>
-<li>제출본 표 12의 속도 범위(0~1.5 m/s)는 제출본 표 1의 속도 범위와 다르다. 1.5는 제어기가 아니라 분석 스크립트의 상수에서 왔다 (부록 A). 이 보고서는 표 1의 범위를 쓴다.</li>
+<li>제출본 표 12의 속도 범위(0–1.5 m/s)는 제출본 표 1의 속도 범위와 다르다. 1.5는 제어기가 아니라 분석 스크립트의 상수에서 왔다 (부록 A). 이 보고서는 표 1의 범위를 쓴다.</li>
 </ul>
 <h3>(4) 데이터 품질 지표</h3>
 <p class="caption"><strong>표 13. 부드러움 지표(에피소드 안 차분).</strong> [데이터: E2 (paper, 전 스텝) | 호스트: H1(재생) | 버전: baseline v1.1 | 커밋: C2 평가 · C7 재생]</p>
@@ -484,7 +484,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>RETURN_TO_L2</td><td>0.00</td><td>0.245 / 0.263</td><td>0.179 / 0.193</td></tr>
 </tbody></table>
 <p>EVADE_L·RETURN_TO_L2의 오차가 큰 것은 차선을 바꾸는 중이라 목표선에서 먼 구간이 대부분이기 때문이다. 유지 상태(KEEP_L2 / KEEP_L1)의 평균 오차는 0.044 / 0.052 m이다. 제출본 표 14의 EVADE_L 값은 목표선 대비 오차로는 나오기 어려운 크기여서 정의를 확인하지 못하였다(부록 A).</p>
-<figure><img src="figures/F2_baseline_summary.png" alt="baseline v1.1 성능 종합(체류·조향·위치·추종 오차·헤딩·제약 만족)"><figcaption><em>그림 F2. baseline v1.1 성능 종합(체류·조향·위치·추종 오차·헤딩·제약 만족).</em> [데이터: E2 (paper seed 200~299, 전 스텝) | 호스트: H1(재생) | 버전: baseline v1.1 | 커밋: C2 평가 · C7 재생] 출처: <code>docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계</code>. 대표 에피소드 선택: 선택 없음(전 에피소드·전 스텝). 대체 대상: 제출본 그림 2(MPC 성능 종합 분석). 생성: <code>fig_f1_f2_baseline.py</code>.</figcaption></figure>
+<figure><img src="figures/F2_baseline_summary.png" alt="baseline v1.1 성능 종합(체류·조향·위치·추종 오차·헤딩·제약 만족)"><figcaption><em>그림 F2. baseline v1.1 성능 종합(체류·조향·위치·추종 오차·헤딩·제약 만족).</em> [데이터: E2 (paper seed 200–299, 전 스텝) | 호스트: H1(재생) | 버전: baseline v1.1 | 커밋: C2 평가 · C7 재생] 출처: <code>docs/revision/data/baseline_e2_steps.npz(재생, 저장 집계 일치 검증) · R1 통계</code>. 대표 에피소드 선택: 선택 없음(전 에피소드·전 스텝). 대체 대상: 제출본 그림 2(MPC 성능 종합 분석). 생성: <code>fig_f1_f2_baseline.py</code>.</figcaption></figure>
 <p>그림 F2는 제출본 그림 2(MPC 성능 종합 분석)를 대신한다. 조향각은 평균·표준편차 −0.47° / 6.46°, 속도 분포는 0.499 m/s에 몰려 있고, KEEP_L2 체류는 20.2%이다.</p>
 <h2>4. Student 정책 — 제출본 입력 정의 그대로</h2>
 <p>이 절은 제출본의 입력 정의(9차원, V장 1절)를 그대로 따른 Student를 다룬다. 제출본 VII장은 "Student 정책의 실제 주행 성능이 검증되지 않았다"를 첫째 한계로, "closed-loop 시뮬레이션을 통한 검증"을 첫째 향후 연구로 적었다. 이 보고서는 그 검증을 시뮬레이션에서 수행했고(실차 주행은 하지 않음), 결과는 실패였다. 원인을 찾아 입력 정의를 고친 결과는 7절에 있다.</p>
@@ -513,8 +513,8 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <th>충돌</th>
 <th>타임아웃</th>
 </tr></thead><tbody>
-<tr><td>paper</td><td>7/100 (95% CI 3.4~13.7%)</td><td>23/100 (95% CI 15.8~32.2%)</td><td>70/100</td></tr>
-<tr><td>S3 격자</td><td>60/900 (95% CI 5.2~8.5%)</td><td>290/900 (95% CI 29.3~35.3%)</td><td>550/900</td></tr>
+<tr><td>paper</td><td>7/100 (95% CI 3.4–13.7%)</td><td>23/100 (95% CI 15.8–32.2%)</td><td>70/100</td></tr>
+<tr><td>S3 격자</td><td>60/900 (95% CI 5.2–8.5%)</td><td>290/900 (95% CI 29.3–35.3%)</td><td>550/900</td></tr>
 </tbody></table>
 <p><strong>개루프 오차가 작아도 폐루프에서는 회피·복귀를 거의 하지 못하였다.</strong> 실행 오류나 NaN 출력은 없었다.</p>
 <h3>(3) 원인 분석</h3>
@@ -522,13 +522,13 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <ol>
 <li><strong>분포 이탈</strong>: 상태별 학습 통계 대비 입력이 3표준편차를 벗어난 비율이 학습 데이터 자신은 1.0%인데, 폐루프에서는 paper 30.0%, S3 32.4%였다. Student가 만든 입력의 약 3분의 1이 학습 분포(상태별 3표준편차) 밖이었다.</li>
 <li><strong>오차는 처음부터 큼</strong>: 입력 이탈이 아직 작은 처음 2초에도 Student와 v2의 조향 차이가 paper 7.9°, S3 8.1°였다. 처음 2초의 오차가 이미 이후 구간과 비슷한 크기여서, 오차 누적(compounding error)만으로는 실패를 설명하기 어렵다.</li>
-<li><strong>헤딩과의 상관</strong>: 폐루프 조향 오차는 헤딩 ψ와 상관하였다(paper, r = 0.54~0.65: EVADE_L·KEEP_L1·RETURN_TO_L2; KEEP_L2는 0.28). 복귀 구간 평균 |ψ|는 v2가 스스로 주행할 때와 Student가 주행할 때 9.6° / 28.6°였다.</li>
+<li><strong>헤딩과의 상관</strong>: 폐루프 조향 오차는 헤딩 ψ와 상관하였다(paper, r = 0.54–0.65: EVADE_L·KEEP_L1·RETURN_TO_L2; KEEP_L2는 0.28). 복귀 구간 평균 |ψ|는 v2가 스스로 주행할 때와 Student가 주행할 때 9.6° / 28.6°였다.</li>
 <li><strong>타임아웃의 공통 양상</strong>: 타임아웃의 대부분(paper 64/70, S3 531/550)이 RETURN_TO_L2에서 멈췄다. 큰 헤딩으로 L2 중심선을 가로질러 반대편으로 넘어가는 진동이 반복되어, 복귀 완료 조건(위치와 헤딩을 동시에 만족)을 한 번도 만족하지 못하였다.</li>
 <li><strong>원출력 범위</strong>: Student 원출력이 ±25°를 넘은 비율과 최댓값은 paper 1.60% / 44.5°, S3 3.80% / 50.4°였다. 후처리가 차량 입력을 범위 안으로 잘랐지만, 신경망은 제약을 구조적으로 보장하지 않는다.</li>
 </ol>
 <p>제출본 VI장 4절 (5)는 "compounding error, domain gap"을 실제 주행의 위험으로 적었다. 두 현상은 실제로 확인되었고(1·2), 여기에 더해 <strong>Student 입력에 헤딩이 없어 교사의 조향을 원리적으로 결정할 수 없다</strong>는 원인(3)이 확인되었다. 7절에서 이를 계산으로 증명하고 입력을 정정한다.</p>
-<figure><img src="figures/F3_student9_failure.png" alt="논문 입력(9차원) 그대로 재학습한 Student의 폐루프 실패 사례 vs 같은 seed v2 MPC"><figcaption><em>그림 F3. 논문 입력(9차원) 그대로 재학습한 Student의 폐루프 실패 사례 vs 같은 seed v2 MPC.</em> [데이터: E2 (paper seed 200~299) | 호스트: H1 | 버전: Student 9입력 · v2 MPC | 커밋: C4] 출처: <code>repro/2c_analysis/out/i4_closed_loop_failure/ (i4_closed_loop_failure_analysis.py, 저장 결과와 outcome 일치 재생)</code>. 대표 에피소드 선택: seed 오름차순 첫 충돌(201) + 첫·둘째 타임아웃(202, 204) — I4 분석 시 사전 고정. 대체 대상: 없음(신설, VI.4). 생성: <code>(재사용) repro/2c_analysis/i4_closed_loop_failure_analysis.py</code>.</figcaption></figure>
-<h2>5. 강건성 검증 (S3~S7)</h2>
+<figure><img src="figures/F3_student9_failure.png" alt="논문 입력(9차원) 그대로 재학습한 Student의 폐루프 실패 사례 vs 같은 seed v2 MPC"><figcaption><em>그림 F3. 논문 입력(9차원) 그대로 재학습한 Student의 폐루프 실패 사례 vs 같은 seed v2 MPC.</em> [데이터: E2 (paper seed 200–299) | 호스트: H1 | 버전: Student 9입력 · v2 MPC | 커밋: C4] 출처: <code>repro/2c_analysis/out/i4_closed_loop_failure/ (i4_closed_loop_failure_analysis.py, 저장 결과와 outcome 일치 재생)</code>. 대표 에피소드 선택: seed 오름차순 첫 충돌(201) + 첫·둘째 타임아웃(202, 204) — I4 분석 시 사전 고정. 대체 대상: 없음(신설, VI.4). 생성: <code>(재사용) repro/2c_analysis/i4_closed_loop_failure_analysis.py</code>.</figcaption></figure>
+<h2>5. 강건성 검증 (S3–S7)</h2>
 <p>제출본은 단일 정지 장애물 시나리오만 다뤘다. 이 절은 제출본에 없는 조건에서 같은 제어기가 어떻게 동작하는지 확인한다. 모든 조건은 E2(부록 B)에서 baseline v1.1·improved v1·improved v2를 같은 seed로 실행한 결과이며, 개선판 설계는 VI장 6절에 있다.</p>
 <h3>(1) 시나리오</h3>
 <ul>
@@ -536,7 +536,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <li><strong>S3 경계 지도</strong>: 초기 front_gap0과 초기 횡방향 위치 y0의 격자(속도 최대, 초기 헤딩 0)에서 회피 성공·실패를 지도로 그린다.</li>
 <li><strong>S4 센서 노이즈</strong>: front_gap·ey_line에 가우시안 노이즈, left/right_clear를 일정 확률로 뒤집는 3단계 프로파일.</li>
 <li><strong>S5 제어 지연</strong>: 최종 조향 명령이 1·2 스텝 늦게 차량에 반영.</li>
-<li><strong>S6 초기 헤딩 오차</strong>: ψ0 = −15°~+15°(5° 간격).</li>
+<li><strong>S6 초기 헤딩 오차</strong>: ψ0 = −15°–+15°(5° 간격).</li>
 <li><strong>S7a 장애물 크기</strong>: 길이·폭을 바꾼 장애물. <strong>S7b 전후 장애물</strong>: 뒤쪽에 두 번째 장애물을 둔 배치.</li>
 </ul>
 <h3>(2) 결과</h3>
@@ -548,19 +548,19 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <th>improved v1</th>
 <th>improved v2</th>
 </tr></thead><tbody>
-<tr><td>paper</td><td>5/100 (95% CI 2.2~11.2%)</td><td>0/100 (95% CI 0.0~3.7%)</td><td>0/100 (95% CI 0.0~3.7%)</td></tr>
-<tr><td>left_obstacle</td><td>0/100 (95% CI 0.0~3.7%)</td><td>0/100 (95% CI 0.0~3.7%)</td><td>0/100 (95% CI 0.0~3.7%)</td></tr>
-<tr><td>S4 노이즈</td><td>9/300 (95% CI 1.6~5.6%)</td><td>0/300 (95% CI 0.0~1.3%)</td><td>0/300 (95% CI 0.0~1.3%)</td></tr>
-<tr><td>S5 지연</td><td>10/200 (95% CI 2.7~9.0%)</td><td>0/200 (95% CI 0.0~1.9%)</td><td>0/200 (95% CI 0.0~1.9%)</td></tr>
-<tr><td>S6 초기 헤딩</td><td>35/700 (95% CI 3.6~6.9%)</td><td>0/700 (95% CI 0.0~0.5%)</td><td>0/700 (95% CI 0.0~0.5%)</td></tr>
-<tr><td>S7a 장애물 크기</td><td>37/900 (95% CI 3.0~5.6%)</td><td>0/900 (95% CI 0.0~0.4%)</td><td>0/900 (95% CI 0.0~0.4%)</td></tr>
-<tr><td>S7b 전후 장애물</td><td>0/400 (95% CI 0.0~1.0%)</td><td>0/400 (95% CI 0.0~1.0%)</td><td>0/400 (95% CI 0.0~1.0%)</td></tr>
+<tr><td>paper</td><td>5/100 (95% CI 2.2–11.2%)</td><td>0/100 (95% CI 0.0–3.7%)</td><td>0/100 (95% CI 0.0–3.7%)</td></tr>
+<tr><td>left_obstacle</td><td>0/100 (95% CI 0.0–3.7%)</td><td>0/100 (95% CI 0.0–3.7%)</td><td>0/100 (95% CI 0.0–3.7%)</td></tr>
+<tr><td>S4 노이즈</td><td>9/300 (95% CI 1.6–5.6%)</td><td>0/300 (95% CI 0.0–1.3%)</td><td>0/300 (95% CI 0.0–1.3%)</td></tr>
+<tr><td>S5 지연</td><td>10/200 (95% CI 2.7–9.0%)</td><td>0/200 (95% CI 0.0–1.9%)</td><td>0/200 (95% CI 0.0–1.9%)</td></tr>
+<tr><td>S6 초기 헤딩</td><td>35/700 (95% CI 3.6–6.9%)</td><td>0/700 (95% CI 0.0–0.5%)</td><td>0/700 (95% CI 0.0–0.5%)</td></tr>
+<tr><td>S7a 장애물 크기</td><td>37/900 (95% CI 3.0–5.6%)</td><td>0/900 (95% CI 0.0–0.4%)</td><td>0/900 (95% CI 0.0–0.4%)</td></tr>
+<tr><td>S7b 전후 장애물</td><td>0/400 (95% CI 0.0–1.0%)</td><td>0/400 (95% CI 0.0–1.0%)</td><td>0/400 (95% CI 0.0–1.0%)</td></tr>
 </tbody></table>
 <ul>
-<li>left_obstacle에서는 세 버전 모두 SAFE_STOP이 100/100 (95% CI 96.3~100.0%)로 발동했고 충돌은 없었다(비상 정지 전이가 명세대로 동작).</li>
-<li>baseline의 충돌 수는 초기 헤딩 오차(S6)와 장애물 크기(S7a)에서 가장 많았지만(두 조건은 에피소드 수도 가장 많음), 충돌률은 paper·S5와 신뢰구간이 겹쳐 조건 간 차이가 뚜렷하지 않다(표 6-5). E1에서도 두 조건에서 충돌이 있었다(ψ0 = −15°: 8/100 (95% CI 4.1~15.0%), 폭 0.20 m 장애물: 7/100 (95% CI 3.4~13.7%)). VI장 2절의 분석 사례와 같은 비용함수 구조 — 장애물을 모르는 MPC가 목표선 추종을 우선해 조향을 일찍 되돌리는 것 — 가 원인으로 보이며(추정, 개별 분석하지 않음), 개선판(v1·v2)에서는 시험한 모든 조건에서 충돌이 관측되지 않았다.</li>
+<li>left_obstacle에서는 세 버전 모두 SAFE_STOP이 100/100 (95% CI 96.3–100.0%)로 발동했고 충돌은 없었다(비상 정지 전이가 명세대로 동작).</li>
+<li>baseline의 충돌 수는 초기 헤딩 오차(S6)와 장애물 크기(S7a)에서 가장 많았지만(두 조건은 에피소드 수도 가장 많음), 충돌률은 paper·S5와 신뢰구간이 겹쳐 조건 간 차이가 뚜렷하지 않다(표 6-5). E1에서도 두 조건에서 충돌이 있었다(ψ0 = −15°: 8/100 (95% CI 4.1–15.0%), 폭 0.20 m 장애물: 7/100 (95% CI 3.4–13.7%)). VI장 2절의 분석 사례와 같은 비용함수 구조 — 장애물을 모르는 MPC가 목표선 추종을 우선해 조향을 일찍 되돌리는 것 — 가 원인으로 보이며(추정, 개별 분석하지 않음), 개선판(v1·v2)에서는 시험한 모든 조건에서 충돌이 관측되지 않았다.</li>
 </ul>
-<p><strong>S3 경계 지도.</strong> baseline은 81/900 (95% CI 7.3~11.0%)에서 실패했고, v1은 0/900 (95% CI 0.0~0.4%), v2는 0/900 (95% CI 0.0~0.4%)였다. 실패 경계를 물리 한계(조향을 최대로 써서 회피할 때 충돌하지 않는 최소 front_gap0)와 비교하면, baseline은 물리적으로 필요한 것보다 평균 0.407 m (0.267~0.574 m, 17열) 더 먼 거리가 있어야 회피에 성공한다. 즉 baseline의 실패는 물리적 불가능이 아니라 제어기 설계의 여유 손실이다. 개선판은 이 격자 범위에서 실패가 없어 관측 가능한 실패 경계 자체가 사라졌다.</p>
+<p><strong>S3 경계 지도.</strong> baseline은 81/900 (95% CI 7.3–11.0%)에서 실패했고, v1은 0/900 (95% CI 0.0–0.4%), v2는 0/900 (95% CI 0.0–0.4%)였다. 실패 경계를 물리 한계(조향을 최대로 써서 회피할 때 충돌하지 않는 최소 front_gap0)와 비교하면, baseline은 물리적으로 필요한 것보다 평균 0.407 m (0.267–0.574 m, 17열) 더 먼 거리가 있어야 회피에 성공한다. 즉 baseline의 실패는 물리적 불가능이 아니라 제어기 설계의 여유 손실이다. 개선판은 이 격자 범위에서 실패가 없어 관측 가능한 실패 경계 자체가 사라졌다.</p>
 <figure><img src="figures/F4_s3_boundary.png" alt="S3 경계 지도와 물리 한계 — baseline v1.1 vs improved v2"><figcaption><em>그림 F4. S3 경계 지도와 물리 한계 — baseline v1.1 vs improved v2.</em> [데이터: E2 (S3 격자 1/4칸 오프셋 900) | 호스트: H1 | 버전: baseline v1.1 · improved v2 | 커밋: C2] 출처: <code>thesis_v2/results/eval_v2/20260924_214446_DESKTOP-MDCKRJS/s3_grid_new_{baseline,v2}.json, all_eval_v2_summary.json(physical_limit_curve)</code>. 대표 에피소드 선택: 선택 없음(격자 전체). 대체 대상: 없음(신설, VI.5) — 기존 분석 그림(구 격자·3층PC104)을 E2로 다시 그림. 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
 <h2>6. 개선: I1·I1b·I2'·I3·I5</h2>
 <p>VI장 2절과 5절에서 확인된 baseline의 한계(장애물을 모르는 비용함수, 변화율 제한을 모르는 재계획, 풀이 실패 시 약한 fallback)를 제출본에 없는 개선으로 다뤘다. baseline 코드는 이 단계 동안 동결했고, 개선은 별도 코드(<code>thesis_v2/improved/</code>)에서 항목마다 켜고 끌 수 있게 만들었다. 파라미터는 해석적으로 정하거나 개발 데이터 D에서만 정했으며, 평가 데이터로는 아무것도 조정하지 않았다.</p>
@@ -582,8 +582,8 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <p>v1 = I1 + I1b + I2' + I3, v2 = v1 + I5이다. 각 항목을 단독·조합으로 개발 데이터에서 비교한 뒤(ablation, <code>thesis_v2/results/dev_ablation/</code>) 조합을 확정하였다. 평가 데이터에서는 baseline·v1·v2 세 조합만 비교했으며(그림 F5), 항목별 단독 효과는 평가 데이터에서 분리하지 않았다.</p>
 <h3>(2) 안전성 결과</h3>
 <ul>
-<li><strong>E1(개선 v1 첫 평가)</strong>: paper 충돌 1/100 (95% CI 0.2~5.4%) → 0/100 (95% CI 0.0~3.7%)(차이는 유의하지 않음, 쌍대 정확검정 p=1.0000), S3 격자 실패 86/961 (95% CI 7.3~10.9%) → 0/961 (95% CI 0.0~0.4%).</li>
-<li><strong>E2(v2 포함 3자 비교)</strong>: 모든 시나리오에서 v1·v2의 충돌이 0이었고(표 6-5), paper 성공은 v2 100/100 (95% CI 96.3~100.0%)이다. 두 개선판 사이에 성공이 실패로 뒤집힌 에피소드는 없었다.</li>
+<li><strong>E1(개선 v1 첫 평가)</strong>: paper 충돌 1/100 (95% CI 0.2–5.4%) → 0/100 (95% CI 0.0–3.7%)(차이는 유의하지 않음, 쌍대 정확검정 p=1.0000), S3 격자 실패 86/961 (95% CI 7.3–10.9%) → 0/961 (95% CI 0.0–0.4%).</li>
+<li><strong>E2(v2 포함 3자 비교)</strong>: 모든 시나리오에서 v1·v2의 충돌이 0이었고(표 6-5), paper 성공은 v2 100/100 (95% CI 96.3–100.0%)이다. 두 개선판 사이에 성공이 실패로 뒤집힌 에피소드는 없었다.</li>
 </ul>
 <p><strong>제약 만족(핵심 전제 1).</strong> I1b는 위치·헤딩 제약을 소프트화하므로, 개선판에서는 "MPC 원출력이 원래의 하드 제약을 지키는가"를 따로 센다.</p>
 <p class="caption"><strong>표 6-7. E2 paper에서 개선판 MPC의 제약 관련 기록.</strong> [데이터: E2 (paper) | 호스트: H1 | 버전: improved v1 · v2 | 커밋: C2]</p>
@@ -617,13 +617,13 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 </tbody></table>
 <ul>
 <li>소프트 제약(I1b)을 넣은 v1은 풀기 어려운 구간에서 반복이 솔버 상한까지 늘어 꼬리 계산 시간이 커졌다. 특히 left_obstacle에서 좌우가 모두 막혀 SAFE_STOP 직전인 스텝들이 반복 상한(20,000회)에 도달하였다. 이 스텝들은 수렴 판정 전에 반복 한도에서 멈춘 것으로, 근사해는 하드 제약을 통과했고 fallback은 0건이었다(발산이 아님).</li>
-<li>v2는 반복을 972회에서 끊어 모든 시나리오의 p99를 1 ms대로 낮췄다. v2의 p99는 공식 조건 네 번의 실행에서 1.380~1.405 ms로 안정적이었다(반복 횟수 분포가 실행마다 같음 — 계산량이 결정론적).</li>
-<li>baseline의 p99가 가장 작은 것은 소프트 제약·장애물 하한이 없는 작은 QP이기 때문으로 보인다. 개선판은 계산 시간을 더 쓰는 대신 E2 전 조건에서 충돌이 관측되지 않았다(합산 96/2700 (95% CI 2.9~4.3%) → 0/2700 (95% CI 0.0~0.1%), p=2.5×10^−29). 시나리오별로는 paper만으로는 유의하지 않다(성공 쌍대 정확검정 5/0, p=0.0625).</li>
+<li>v2는 반복을 972회에서 끊어 모든 시나리오의 p99를 1 ms대로 낮췄다. v2의 p99는 공식 조건 네 번의 실행에서 1.380–1.405 ms로 안정적이었다(반복 횟수 분포가 실행마다 같음 — 계산량이 결정론적).</li>
+<li>baseline의 p99가 가장 작은 것은 소프트 제약·장애물 하한이 없는 작은 QP이기 때문으로 보인다. 개선판은 계산 시간을 더 쓰는 대신 E2 전 조건에서 충돌이 관측되지 않았다(합산 96/2700 (95% CI 2.9–4.3%) → 0/2700 (95% CI 0.0–0.1%), p=2.5×10^−29). 시나리오별로는 paper만으로는 유의하지 않다(성공 쌍대 정확검정 5/0, p=0.0625).</li>
 </ul>
-<figure><img src="figures/F5_improvement_ablation.png" alt="개선판 비교 요약(baseline·v1·v2) — 충돌·S3 실패·계산시간 p99"><figcaption><em>그림 F5. 개선판 비교 요약(baseline·v1·v2) — 충돌·S3 실패·계산시간 p99.</em> [데이터: E2 (a·b) / T0-H1 (c, paper seed 0~99) | 호스트: H1 | 버전: baseline v1.1 · improved v1 · improved v2 | 커밋: C2 · C3] 출처: <code>eval_v2/.../all_eval_v2_summary.json, timing_v3/*/timing_*.json</code>. 대표 에피소드 선택: 선택 없음(전 에피소드). 대체 대상: 없음(신설, VI.6). 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
+<figure><img src="figures/F5_improvement_ablation.png" alt="개선판 비교 요약(baseline·v1·v2) — 충돌·S3 실패·계산시간 p99"><figcaption><em>그림 F5. 개선판 비교 요약(baseline·v1·v2) — 충돌·S3 실패·계산시간 p99.</em> [데이터: E2 (a·b) / T0-H1 (c, paper seed 0–99) | 호스트: H1 | 버전: baseline v1.1 · improved v1 · improved v2 | 커밋: C2 · C3] 출처: <code>eval_v2/.../all_eval_v2_summary.json, timing_v3/*/timing_*.json</code>. 대표 에피소드 선택: 선택 없음(전 에피소드). 대체 대상: 없음(신설, VI.6). 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
 <h2>7. Student 입력 정정과 폐루프 검증</h2>
 <h3>(1) 제출본 입력 명세의 결함 — 계산으로 확인</h3>
-<p>제출본 MPC는 상태 x = [y, ψ]를 초기값으로 받아 최적 조향을 푼다(식 4~6). 그런데 Student 입력 9차원에는 헤딩 ψ가 없다.</p>
+<p>제출본 MPC는 상태 x = [y, ψ]를 초기값으로 받아 최적 조향을 푼다(식 4–6). 그런데 Student 입력 9차원에는 헤딩 ψ가 없다.</p>
 <ul>
 <li><strong>반례</strong>: Student 입력(속도, ey, front_gap, left_clear, 상태)을 고정하고 초기 헤딩 ψ0만 −30°, −15°, 0°, +15°, +30°로 바꾸면, 제출본 설계의 MPC (baseline v1.1)가 내는 첫 조향은 +25.0° / +21.0° / −13.0° / −25.0° / −25.0°이다. 같은 입력에 서로 다른 정답이 대응하므로, 어떤 함수도 9차원 입력만으로 이 MPC를 모방할 수 없다. 모델 크기나 데이터 양의 문제가 아니다.</li>
 <li><strong>데이터 확인</strong>: 개발 데이터에서 Student 입력을 센서 분해능 수준의 격자로 묶으면, 같은 칸 안의 조향 분산이 전체 분산에서 차지하는 비율이 표 6-7a와 같다. ψ를 더하면 이 몫이 거의 사라지고, 같은 칸 크기의 <strong>섞은(위약) ψ</strong>를 더하면 그대로 남는다 — 줄어든 것은 칸을 잘게 나눈 효과가 아니라 ψ가 가진 정보 때문이다.</li>
@@ -640,8 +640,8 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>9차원 + ψ</td><td>0.3%</td><td>1.2%</td></tr>
 <tr><td>9차원 + ψ + δ_prev</td><td>0.0%</td><td>0.1%</td></tr>
 </tbody></table>
-<figure><img src="figures/F6_input_observability.png" alt="입력 관측성 — 9입력 / +ψ / +ψ+δ_prev와 위약 대조"><figcaption><em>그림 F6. 입력 관측성 — 9입력 / +ψ / +ψ+δ_prev와 위약 대조.</em> [데이터: D (dev paper seed 100~199 + S3 dev 격자 900) | 호스트: H1 | 버전: 교사 baseline v1.1 · v2 MPC | 커밋: C5] 출처: <code>repro/2c_analysis/out/i4_input_observability/observability.json</code>. 대표 에피소드 선택: 선택 없음(dev MPC 호출 스텝 전체). 대체 대상: 없음(신설, VI.7 — [개정] 근거). 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
-<p><strong>분류.</strong> ψ 추가는 [개정]이다 — 제출본 자신의 MPC를 제출본 입력 명세로는 모방할 수 없음이 계산으로 증명되었고, 이는 초기 위치 절단·복귀 임계값과 같은 기준("계산·분석으로 불가능이 증명된 명세만 수정")이다. 직전 조향 δ_prev는 제출본 MPC의 비용함수에 항이 없어 제출본 설계에는 필요 없고, 교사 v2의 변화율 제약(I1)에서만 영향을 준다(δ_prev를 −20°~+20°로 바꾸면 v2의 첫 조향이 −10.0° / +0.0° / +10.0° / +20.0° / +21.0°). 그래서 δ_prev 추가는 [발전]으로 두었다.</p>
+<figure><img src="figures/F6_input_observability.png" alt="입력 관측성 — 9입력 / +ψ / +ψ+δ_prev와 위약 대조"><figcaption><em>그림 F6. 입력 관측성 — 9입력 / +ψ / +ψ+δ_prev와 위약 대조.</em> [데이터: D (dev paper seed 100–199 + S3 dev 격자 900) | 호스트: H1 | 버전: 교사 baseline v1.1 · v2 MPC | 커밋: C5] 출처: <code>repro/2c_analysis/out/i4_input_observability/observability.json</code>. 대표 에피소드 선택: 선택 없음(dev MPC 호출 스텝 전체). 대체 대상: 없음(신설, VI.7 — [개정] 근거). 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
+<p><strong>분류.</strong> ψ 추가는 [개정]이다 — 제출본 자신의 MPC를 제출본 입력 명세로는 모방할 수 없음이 계산으로 증명되었고, 이는 초기 위치 절단·복귀 임계값과 같은 기준("계산·분석으로 불가능이 증명된 명세만 수정")이다. 직전 조향 δ_prev는 제출본 MPC의 비용함수에 항이 없어 제출본 설계에는 필요 없고, 교사 v2의 변화율 제약(I1)에서만 영향을 준다(δ_prev를 −20°–+20°로 바꾸면 v2의 첫 조향이 −10.0° / +0.0° / +10.0° / +20.0° / +21.0°). 그래서 δ_prev 추가는 [발전]으로 두었다.</p>
 <h3>(2) S10·S11 학습과 개발 데이터에서의 선택</h3>
 <p>입력만 다르고 데이터·분할·구조·설정은 모두 같게 두고 두 모델을 학습하였다: S10(9차원 + ψ, [개정]만), S11(S10 + δ_prev). 선택 epoch와 검증 손실은 S10 48 / 0.01597, S11 44 / 0.00365였다(9입력은 46 / 0.18159).</p>
 <p class="caption"><strong>표 6-7b. 개발 데이터 비교.</strong> [데이터: D | 호스트: H1 | 버전: Student 9입력 · S10 · S11 | 커밋: C5]</p>
@@ -670,10 +670,10 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <th>S3 충돌</th>
 <th>S3 타임아웃</th>
 </tr></thead><tbody>
-<tr><td>v2 MPC(교사)</td><td>100/100 (95% CI 96.3~100.0%)</td><td>0/100 (95% CI 0.0~3.7%)</td><td>0</td><td>900/900 (95% CI 99.6~100.0%)</td><td>0/900 (95% CI 0.0~0.4%)</td><td>0</td></tr>
-<tr><td>Student 9입력</td><td>9/100 (95% CI 4.8~16.2%)</td><td>24/100 (95% CI 16.7~33.2%)</td><td>67</td><td>59/900 (95% CI 5.1~8.4%)</td><td>295/900 (95% CI 29.8~35.9%)</td><td>546</td></tr>
-<tr><td><strong>Student S10</strong></td><td>100/100 (95% CI 96.3~100.0%)</td><td>0/100 (95% CI 0.0~3.7%)</td><td>0</td><td>900/900 (95% CI 99.6~100.0%)</td><td>0/900 (95% CI 0.0~0.4%)</td><td>0</td></tr>
-<tr><td>Student S11(참고)</td><td>100/100 (95% CI 96.3~100.0%)</td><td>0/100 (95% CI 0.0~3.7%)</td><td>0</td><td>900/900 (95% CI 99.6~100.0%)</td><td>0/900 (95% CI 0.0~0.4%)</td><td>0</td></tr>
+<tr><td>v2 MPC(교사)</td><td>100/100 (95% CI 96.3–100.0%)</td><td>0/100 (95% CI 0.0–3.7%)</td><td>0</td><td>900/900 (95% CI 99.6–100.0%)</td><td>0/900 (95% CI 0.0–0.4%)</td><td>0</td></tr>
+<tr><td>Student 9입력</td><td>9/100 (95% CI 4.8–16.2%)</td><td>24/100 (95% CI 16.7–33.2%)</td><td>67</td><td>59/900 (95% CI 5.1–8.4%)</td><td>295/900 (95% CI 29.8–35.9%)</td><td>546</td></tr>
+<tr><td><strong>Student S10</strong></td><td>100/100 (95% CI 96.3–100.0%)</td><td>0/100 (95% CI 0.0–3.7%)</td><td>0</td><td>900/900 (95% CI 99.6–100.0%)</td><td>0/900 (95% CI 0.0–0.4%)</td><td>0</td></tr>
+<tr><td>Student S11(참고)</td><td>100/100 (95% CI 96.3–100.0%)</td><td>0/100 (95% CI 0.0–3.7%)</td><td>0</td><td>900/900 (95% CI 99.6–100.0%)</td><td>0/900 (95% CI 0.0–0.4%)</td><td>0</td></tr>
 </tbody></table>
 <ul>
 <li><strong>판정: 조향 명령 대체 시 v2 MPC 대비 비열화 없음(시뮬레이션, eval3) (사전 기준 이름: 「통과 — MPC 대체 가능」).</strong> S10과 v2 MPC의 결과가 다른 에피소드는 paper 0/100, S3 0/900였다.</li>
@@ -715,7 +715,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>S10</td><td>0.108°</td><td>0.811°</td><td>0.130°</td><td>0.324°</td><td>0.512°</td></tr>
 <tr><td>S11</td><td>0.112°</td><td>0.357°</td><td>0.082°</td><td>0.073°</td><td>0.195°</td></tr>
 </tbody></table>
-<figure><img src="figures/F7_v2_vs_s10_trajectories.png" alt="v2 MPC vs Student S10 궤적·조향(대표 3 에피소드)"><figcaption><em>그림 F7. v2 MPC vs Student S10 궤적·조향(대표 3 에피소드).</em> [데이터: E3 (paper seed 2000~2099) | 호스트: H1(재생) | 버전: v2 MPC · Student S10 | 커밋: C5 평가 · C7 재생] 출처: <code>docs/revision/data/r3_eval3_paper_steps.npz(재생, eval3 저장 outcome과 일치 검증)</code>. 대표 에피소드 선택: eval3 seed 2000·2001·2002(처음 세 seed, 사전 고정). 대체 대상: 제출본 그림 1(Teacher–Student 궤적 비교 부분). 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
+<figure><img src="figures/F7_v2_vs_s10_trajectories.png" alt="v2 MPC vs Student S10 궤적·조향(대표 3 에피소드)"><figcaption><em>그림 F7. v2 MPC vs Student S10 궤적·조향(대표 3 에피소드).</em> [데이터: E3 (paper seed 2000–2099) | 호스트: H1(재생) | 버전: v2 MPC · Student S10 | 커밋: C5 평가 · C7 재생] 출처: <code>docs/revision/data/r3_eval3_paper_steps.npz(재생, eval3 저장 outcome과 일치 검증)</code>. 대표 에피소드 선택: eval3 seed 2000·2001·2002(처음 세 seed, 사전 고정). 대체 대상: 제출본 그림 1(Teacher–Student 궤적 비교 부분). 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
 <h3>(5) 원출력 범위와 분포 이탈</h3>
 <p class="caption"><strong>표 6-7e. 폐루프 원출력 ±25° 초과율 / 원출력 최대 / 분포 이탈률.</strong> [데이터: E3 | 호스트: H1(재생) | 버전: v2 MPC · Student 9입력 · S10 · S11 | 커밋: C5 평가 · C6 집계]</p>
 <table>
@@ -747,9 +747,9 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>조향각 jerk (°/step²)</td><td>0.935</td><td>0.905</td><td>+3.2%</td><td>0.734</td><td>0.853</td><td>−16.2%</td></tr>
 </tbody></table>
 <p>개선율은 (Teacher − Student)/Teacher이다. S10의 조향 변화율은 v2보다 약간 작고 조향 jerk는 크다(불리한 방향). 두 값 모두 한 번의 폐루프 실행에서 잰 평균이며 불확실성은 산출하지 않아, 차이의 유의성은 판단하지 않는다. 제출본은 학습 데이터에서 잰 개루프 값이고, 이 보고서는 각 제어기가 실제로 주행한 폐루프 값이다. 제출본 스크립트의 "jerk"는 실제로는 속도의 2차 차분이었다(부록 A).</p>
-<figure><img src="figures/F8_v2_vs_s10_control.png" alt="v2 MPC vs Student S10 제어 비교(조향 분포·위치 분포·추종 오차·부드러움)"><figcaption><em>그림 F8. v2 MPC vs Student S10 제어 비교(조향 분포·위치 분포·추종 오차·부드러움).</em> [데이터: E3 (paper seed 2000~2099, 전 스텝) | 호스트: H1(재생) | 버전: v2 MPC · Student S10 | 커밋: C5 평가 · C7 재생] 출처: <code>docs/revision/data/r3_eval3_paper_steps.npz, r3_eval3_stats.json</code>. 대표 에피소드 선택: 선택 없음(전 에피소드·전 스텝). 대체 대상: 제출본 그림 3(Teacher와 Student 제어 비교, 학습 데이터 기반) — 폐루프 기반으로 대체. 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
+<figure><img src="figures/F8_v2_vs_s10_control.png" alt="v2 MPC vs Student S10 제어 비교(조향 분포·위치 분포·추종 오차·부드러움)"><figcaption><em>그림 F8. v2 MPC vs Student S10 제어 비교(조향 분포·위치 분포·추종 오차·부드러움).</em> [데이터: E3 (paper seed 2000–2099, 전 스텝) | 호스트: H1(재생) | 버전: v2 MPC · Student S10 | 커밋: C5 평가 · C7 재생] 출처: <code>docs/revision/data/r3_eval3_paper_steps.npz, r3_eval3_stats.json</code>. 대표 에피소드 선택: 선택 없음(전 에피소드·전 스텝). 대체 대상: 제출본 그림 3(Teacher와 Student 제어 비교, 학습 데이터 기반) — 폐루프 기반으로 대체. 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
 <h3>(7) 계산 시간 — 제출본 표 16·18 대체</h3>
-<p class="caption"><strong>표 16·18. Student 추론 시간과 v2 MPC 대비(시간은 R2 한 번의 실행, 배수는 두 공식 실행의 범위).</strong> [데이터: T0 (paper seed 0~99) | 호스트: H1(공식 조건) | 버전: v2 MPC · Student S10 | 커밋: C7]</p>
+<p class="caption"><strong>표 16·18. Student 추론 시간과 v2 MPC 대비(시간은 R2 한 번의 실행, 배수는 두 공식 실행의 범위).</strong> [데이터: T0 (paper seed 0–99) | 호스트: H1(공식 조건) | 버전: v2 MPC · Student S10 | 커밋: C7]</p>
 <table>
 <thead><tr>
 <th>통계량</th>
@@ -759,30 +759,30 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <th>S10 PyTorch / ONNX</th>
 <th>v2 ÷ S10 (PyTorch / ONNX)</th>
 </tr></thead><tbody>
-<tr><td>평균</td><td>1.091</td><td>0.206</td><td>0.213</td><td>0.102 / 0.022</td><td>2.1배 / 9.5~9.8배</td></tr>
-<tr><td>중앙값</td><td>1.035</td><td>0.189</td><td>0.160</td><td>0.100 / 0.022</td><td>1.6배 / 7.2~7.3배</td></tr>
-<tr><td>표준편차</td><td>0.152</td><td>0.055</td><td>0.212</td><td>0.019 / 0.004</td><td>8.8~11.0배 / 53.3~65.8배</td></tr>
+<tr><td>평균</td><td>1.091</td><td>0.206</td><td>0.213</td><td>0.102 / 0.022</td><td>2.1배 / 9.5–9.8배</td></tr>
+<tr><td>중앙값</td><td>1.035</td><td>0.189</td><td>0.160</td><td>0.100 / 0.022</td><td>1.6배 / 7.2–7.3배</td></tr>
+<tr><td>표준편차</td><td>0.152</td><td>0.055</td><td>0.212</td><td>0.019 / 0.004</td><td>8.8–11.0배 / 53.3–65.8배</td></tr>
 <tr><td>최소</td><td>0.823</td><td>0.152</td><td>0.145</td><td>0.086 / 0.020</td><td>1.7배 / 7.3배</td></tr>
-<tr><td>최대</td><td>5.747</td><td>1.557</td><td>4.819</td><td>1.000 / 0.175</td><td>4.8~5.9배 / 27.5~29.2배</td></tr>
-<tr><td>95 백분위</td><td>1.312</td><td>0.287</td><td>0.466</td><td>0.113 / 0.025</td><td>4.1~4.2배 / 18.6~21.4배</td></tr>
-<tr><td>99 백분위(주 지표)</td><td>1.524</td><td>0.354</td><td>1.405</td><td>0.141 / 0.029</td><td>6.8~9.9배 / 47.8~51.7배</td></tr>
+<tr><td>최대</td><td>5.747</td><td>1.557</td><td>4.819</td><td>1.000 / 0.175</td><td>4.8–5.9배 / 27.5–29.2배</td></tr>
+<tr><td>95 백분위</td><td>1.312</td><td>0.287</td><td>0.466</td><td>0.113 / 0.025</td><td>4.1–4.2배 / 18.6–21.4배</td></tr>
+<tr><td>99 백분위(주 지표)</td><td>1.524</td><td>0.354</td><td>1.405</td><td>0.141 / 0.029</td><td>6.8–9.9배 / 47.8–51.7배</td></tr>
 </tbody></table>
 <ul>
 <li>표본: 11,518회(paper 전 MPC 호출 입력). Student 시간은 정규화·추론·역정규화를 포함하며 스레드는 1개이다.</li>
-<li>시간 열은 한 번의 실행(R2) 값이다. <strong>같은 공식 조건의 실행 사이에 1 ms 미만 p99가 −21%, −31% 달라지므로</strong>, 배수 열은 두 공식 실행(S10 평가 시 측정과 R2) 각각에서 계산한 배수의 범위로 적었다(값이 하나면 두 실행이 같음; 최소는 R2에만 기록되어 한 값). 주 지표: v2 MPC ÷ S10 p99 = PyTorch 6.8~9.9배, ONNX 47.8~51.7배; 평균 = PyTorch 2.1배(두 실행 모두), ONNX 9.5~9.8배.</li>
+<li>시간 열은 한 번의 실행(R2) 값이다. <strong>같은 공식 조건의 실행 사이에 1 ms 미만 p99가 −21%, −31% 달라지므로</strong>, 배수 열은 두 공식 실행(S10 평가 시 측정과 R2) 각각에서 계산한 배수의 범위로 적었다(값이 하나면 두 실행이 같음; 최소는 R2에만 기록되어 한 값). 주 지표: v2 MPC ÷ S10 p99 = PyTorch 6.8–9.9배, ONNX 47.8–51.7배; 평균 = PyTorch 2.1배(두 실행 모두), ONNX 9.5–9.8배.</li>
 <li>제출본 표 16·18의 수치는 측정 코드를 찾지 못하였다(부록 A). 이 보고서의 비교 대상은 개선판 교사(v2 MPC)이며, 제출본 설계 MPC(baseline)의 계산 시간은 표 8에 있다.</li>
 </ul>
-<figure><img src="figures/F9_timing_quantiles.png" alt="계산시간 분위수 — baseline MPC / v2 MPC / S10 PyTorch / S10 ONNX"><figcaption><em>그림 F9. 계산시간 분위수 — baseline MPC / v2 MPC / S10 PyTorch / S10 ONNX.</em> [데이터: T0-H1 (paper seed 0~99, 공식 조건 True) | 호스트: H1(공식 조건) | 버전: baseline v1.1 · v2 MPC · Student S10 | 커밋: C7] 출처: <code>docs/revision/data/r2_timing_supplement/r2_timing.json</code>. 대표 에피소드 선택: 선택 없음(전 MPC 호출). 대체 대상: 제출본 표 16·18의 그림 대응(제출본에 해당 그림 없음 — 신설). 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
+<figure><img src="figures/F9_timing_quantiles.png" alt="계산시간 분위수 — baseline MPC / v2 MPC / S10 PyTorch / S10 ONNX"><figcaption><em>그림 F9. 계산시간 분위수 — baseline MPC / v2 MPC / S10 PyTorch / S10 ONNX.</em> [데이터: T0-H1 (paper seed 0–99, 공식 조건 True) | 호스트: H1(공식 조건) | 버전: baseline v1.1 · v2 MPC · Student S10 | 커밋: C7] 출처: <code>docs/revision/data/r2_timing_supplement/r2_timing.json</code>. 대표 에피소드 선택: 선택 없음(전 MPC 호출). 대체 대상: 제출본 표 16·18의 그림 대응(제출본에 해당 그림 없음 — 신설). 생성: <code>fig_f3_to_f9.py</code>.</figcaption></figure>
 <h2>8. 논의</h2>
 <h3>(1) MPC의 정당성 — 제약 만족</h3>
 <p>제출본 설계의 MPC(baseline v1.1)는 E2에서 조향 100.00% · 속도 100.00% · 헤딩 100.00%, 횡방향 위치 100.00%의 제약 만족률을 보였다(허용오차: 솔버 수렴 기준). 이 보고서의 구현에서는 [개정] 두 건을 반영한 뒤 위치 제약 위반이 0 / 15,094이었다. 제출본이 보고한 위반(99.79% 만족)은 제출본 데이터의 생성 조건을 재현할 수 없어 원인을 확인하지 못했으며, 두 설정의 비호환은 원인 후보이다(VI장 3절). 초기 헤딩 오차가 있는 강건성 조건(S6)에서는 baseline의 위치 제약 위반 사례가 관찰되었다(<code>repro/docs/RESULT_BASELINE.md</code> 조건부 표기). 평균 계산 시간은 0.096 ms(baseline) / 0.213 ms(v2, p99 1.405)이다. 제출본 값(1.091 ms)은 측정 근거가 없어 비교하지 않는다(부록 A).</p>
-<p>다만 "제약을 만족한다"와 "장애물을 피한다"는 다른 문제였다. 제출본 설계의 비용함수에는 장애물 정보가 없어 baseline은 E2 paper에서도 충돌이 있었고(VI장 2절), 초기 헤딩 오차·장애물 크기 변화 등 강건성 조건에서도 있었다(충돌률은 조건 간 신뢰구간이 겹침, VI장 5절). 장애물 인지 하한과 소프트 제약 등을 더한 개선판(v2)은 E2 전 조건에서 충돌이 관측되지 않았고(합산 96/2700 (95% CI 2.9~4.3%) → 0/2700 (95% CI 0.0~0.1%)), 반복 상한으로 계산 시간 꼬리도 제어하였다(VI장 6절).</p>
+<p>다만 "제약을 만족한다"와 "장애물을 피한다"는 다른 문제였다. 제출본 설계의 비용함수에는 장애물 정보가 없어 baseline은 E2 paper에서도 충돌이 있었고(VI장 2절), 초기 헤딩 오차·장애물 크기 변화 등 강건성 조건에서도 있었다(충돌률은 조건 간 신뢰구간이 겹침, VI장 5절). 장애물 인지 하한과 소프트 제약 등을 더한 개선판(v2)은 E2 전 조건에서 충돌이 관측되지 않았고(합산 96/2700 (95% CI 2.9–4.3%) → 0/2700 (95% CI 0.0–0.1%)), 반복 상한으로 계산 시간 꼬리도 제어하였다(VI장 6절).</p>
 <h3>(2) 모방학습의 효과 — 개루프 지표의 한계</h3>
 <p>제출본은 Student 조향 MAE(1.2°)가 교사 조향 표준편차(6.79°)의 18%에 불과하다는 개루프 지표로 "높은 정확도"를 결론지었다. 이 보고서의 S10은 같은 형식의 지표가 0.512°, 교사 표준편차 8.14°, 비율 6.3%이다. 그러나 이 보고서에서 더 중요한 결과는 다음이다.</p>
 <ul>
-<li><strong>개루프 지표는 폐루프 성능을 보장하지 않는다.</strong> 제출본 입력 정의 그대로의 Student는 개루프 오차 2.48°로 교사를 가깝게 따르는 것처럼 보였지만, 폐루프에서는 paper 성공 7/100 (95% CI 3.4~13.7%)에 그쳤다(VI장 4절).</li>
+<li><strong>개루프 지표는 폐루프 성능을 보장하지 않는다.</strong> 제출본 입력 정의 그대로의 Student는 개루프 오차 2.48°로 교사를 가깝게 따르는 것처럼 보였지만, 폐루프에서는 paper 성공 7/100 (95% CI 3.4–13.7%)에 그쳤다(VI장 4절).</li>
 <li><strong>결정적 요인은 입력의 관측성이었다.</strong> 교사가 의존하는 헤딩을 입력에 넣자(S10) 같은 구조·같은 데이터·같은 설정으로 E3에서 v2 MPC와 같은 결과를 냈다(VI장 7절). 9차원 입력만으로는 교사 조향을 정확히 결정할 수 없어 모델·데이터를 늘려도 없앨 수 없는 오차가 남는다(입력 격자 안 분산 34.6% (4.76°); 용량·데이터 증가 실험은 하지 않음).</li>
-<li><strong>계산 효율</strong>: v2 MPC 대비 S10의 p99 추론 시간은 PyTorch 6.8~9.9배, ONNX 47.8~51.7배 빠르고, 표준편차는 PyTorch 기준 8.8~11.0배 작다(실행 범위). 한편 제출본 설계의 작은 MPC(baseline)는 같은 실행에서 평균 0.096 ms로 PyTorch Student(평균 0.102 ms)와 비슷한 수준이었고, p99도 같은 크기 범위였다(표 8·표 16). 따라서 이 이점은 개선판처럼 계산량이 큰 MPC를 쓰거나 ONNX 같은 경량 런타임을 쓸 때 뚜렷하다.</li>
+<li><strong>계산 효율</strong>: v2 MPC 대비 S10의 p99 추론 시간은 PyTorch 6.8–9.9배, ONNX 47.8–51.7배 빠르고, 표준편차는 PyTorch 기준 8.8–11.0배 작다(실행 범위). 한편 제출본 설계의 작은 MPC(baseline)는 같은 실행에서 평균 0.096 ms로 PyTorch Student(평균 0.102 ms)와 비슷한 수준이었고, p99도 같은 크기 범위였다(표 8·표 16). 따라서 이 이점은 개선판처럼 계산량이 큰 MPC를 쓰거나 ONNX 같은 경량 런타임을 쓸 때 뚜렷하다.</li>
 <li>학습 표본 수는 115,076이다(MPC 호출 스텝만).</li>
 </ul>
 <h3>(3) 계층적 제어</h3>
@@ -792,9 +792,9 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <p><strong>재현·검증 결과</strong></p>
 <ol>
 <li><strong>제출본 설계의 MPC는 E2 paper 조건(초기 헤딩 0)에서 제약을 만족하는 조향각을 계산하였다</strong> — 단, 제출본 설정값 가운데 서로 호환되지 않는 두 곳을 고친 뒤이다([개정]: 복귀 임계값, 초기 위치 절단). E2에서 조향 100.00% · 속도 100.00% · 헤딩 100.00%, 횡방향 위치 100.00%의 만족률을 보였다(허용오차 §19). 초기 헤딩 오차가 있는 강건성 조건(S6)에서는 위치 제약 위반 사례가 관찰되었다.</li>
-<li><strong>그러나 제출본 설계는 충돌을 완전히 막지 못하였다.</strong> 제출본의 "충돌 0회" 대신, 기하학적 충돌 판정을 도입한 결과 E2 paper에서 충돌 5/100 (95% CI 2.2~11.2%), 회피 성공 95/100 (95% CI 88.8~97.8%)였다. 분석한 충돌 사례의 원인은 장애물을 모르는 비용함수였고, 개선판(v2)은 E2 전 조건에서 충돌이 관측되지 않았다(합산 96/2700 (95% CI 2.9~4.3%) → 0/2700 (95% CI 0.0~0.1%), p=2.5×10^−29).</li>
-<li><strong>제출본 입력 정의의 Student는 폐루프 주행에 실패하였다.</strong> 제출본이 향후 과제로 남긴 폐루프 검증을 수행한 결과, 개루프 오차는 작았지만 paper 성공 7/100 (95% CI 3.4~13.7%)였다. 원인은 입력에 헤딩이 없어 교사의 조향을 원리적으로 결정할 수 없다는 명세 결함이었고, 이를 계산으로 증명해 세 번째 [개정]으로 고쳤다.</li>
-<li><strong>헤딩을 더한 Student(S10)는 미사용 평가 데이터에서 에피소드별 결과(성공·충돌·타임아웃)가 교사와 모두 같았다(시뮬레이션, E3)</strong> — paper 100/100 (95% CI 96.3~100.0%), S3 900/900 (95% CI 99.6~100.0%), 충돌 0, 교사와 결과가 다른 에피소드 0. 조향 개루프 오차는 0.512°, 추론 시간 p99는 교사 대비 PyTorch 6.8~9.9배, ONNX 47.8~51.7배 빠르다(실행 범위). 제출본 수치(1.2°, 5.3배)와는 교사·입력·데이터·측정 방법이 달라 직접 비교하지 않는다.</li>
+<li><strong>그러나 제출본 설계는 충돌을 완전히 막지 못하였다.</strong> 제출본의 "충돌 0회" 대신, 기하학적 충돌 판정을 도입한 결과 E2 paper에서 충돌 5/100 (95% CI 2.2–11.2%), 회피 성공 95/100 (95% CI 88.8–97.8%)였다. 분석한 충돌 사례의 원인은 장애물을 모르는 비용함수였고, 개선판(v2)은 E2 전 조건에서 충돌이 관측되지 않았다(합산 96/2700 (95% CI 2.9–4.3%) → 0/2700 (95% CI 0.0–0.1%), p=2.5×10^−29).</li>
+<li><strong>제출본 입력 정의의 Student는 폐루프 주행에 실패하였다.</strong> 제출본이 향후 과제로 남긴 폐루프 검증을 수행한 결과, 개루프 오차는 작았지만 paper 성공 7/100 (95% CI 3.4–13.7%)였다. 원인은 입력에 헤딩이 없어 교사의 조향을 원리적으로 결정할 수 없다는 명세 결함이었고, 이를 계산으로 증명해 세 번째 [개정]으로 고쳤다.</li>
+<li><strong>헤딩을 더한 Student(S10)는 미사용 평가 데이터에서 에피소드별 결과(성공·충돌·타임아웃)가 교사와 모두 같았다(시뮬레이션, E3)</strong> — paper 100/100 (95% CI 96.3–100.0%), S3 900/900 (95% CI 99.6–100.0%), 충돌 0, 교사와 결과가 다른 에피소드 0. 조향 개루프 오차는 0.512°, 추론 시간 p99는 교사 대비 PyTorch 6.8–9.9배, ONNX 47.8–51.7배 빠르다(실행 범위). 제출본 수치(1.2°, 5.3배)와는 교사·입력·데이터·측정 방법이 달라 직접 비교하지 않는다.</li>
 </ol>
 <p><strong>한계</strong></p>
 <ol>
@@ -834,7 +834,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <th>불가능의 근거</th>
 <th>본문</th>
 </tr></thead><tbody>
-<tr><td>1</td><td>RETURN_TO_L2 → KEEP_L2 위치 임계값</td><td>0.20 m</td><td>0.08 m</td><td>전이 직후 KEEP_L2 위치 제약(±0.15 m)을 한 스텝 안에 만족할 수 없음: 필요 0.05 m &gt; 한 스텝 최대 0.0086~0.0125 m</td><td>IV장 1절</td></tr>
+<tr><td>1</td><td>RETURN_TO_L2 → KEEP_L2 위치 임계값</td><td>0.20 m</td><td>0.08 m</td><td>전이 직후 KEEP_L2 위치 제약(±0.15 m)을 한 스텝 안에 만족할 수 없음: 필요 0.05 m &gt; 한 스텝 최대 0.0086–0.0125 m</td><td>IV장 1절</td></tr>
 <tr><td>2</td><td>초기 횡방향 위치 분포</td><td>±0.05m Gaussian</td><td>TruncatedNormal(0, 0.05², [−0.15, 0.15])</td><td>절단이 없으면 0.27% 확률로 시작부터 위치 제약 밖</td><td>III장 2절</td></tr>
 <tr><td>3</td><td>Student 입력</td><td>9차원</td><td>10 (+ψ)</td><td>같은 9차원 입력에서 ψ0만 바꿔도 교사 조향이 +25.0° / +21.0° / −13.0° / −25.0° / −25.0° — 입력만으로 교사를 결정할 수 없음</td><td>VI장 7절</td></tr>
 </tbody></table>
@@ -851,15 +851,15 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <li><strong>계산 시간(표 8·표 16·표 18, VI장 2절 본문)</strong>: 측정 코드를 저장소에서 찾지 못하였다. 제출본 값 가운데 표 8·16의 평균·표준편차·최대 여섯 개(1.091 / 0.152 / 5.747, 0.206 / 0.055 / 1.557 ms)는 <code>legacy_2025/analysis.py</code>에(평균 두 개는 <code>legacy_2025/backup/justify_mpc.py</code>에도), 제출본 본문의 전체 평균(3.23 ms)은 <code>legacy_2025/code_backup/run_hierarchical.py</code>에 상수로 들어 있었다. 나머지 통계량(중앙값·최소·백분위, 본문의 나머지 제어 주기 값, 표 18 배수)은 출처를 찾지 못하였다. 고정 조건에서 새로 쟀다.</li>
 <li><strong>학습 표본 수</strong>: 제출본의 19,129개를 만든 실행 기록을 찾지 못했고, 가장 가까운 저장 데이터와도 개수가 달랐다. 새 데이터셋으로 대체하였다.</li>
 <li><strong>학습 파라미터 수</strong>: 제출본의 "약 135,000"는 표 4 구조로 계산한 값(102,786 (9입력) / 103,042 (10입력, S10))과 맞지 않으며, 옛 학습 스크립트와 저장된 모델도 표 4 구조의 값과 같았다. 그 값을 만드는 계산을 찾지 못하였다.</li>
-<li><strong>표 12의 속도 범위</strong>: 제출본 표 12의 속도 범위(0~1.5 m/s)는 표 1과 다르며, 분석 스크립트의 상수에서 왔다(그림 2의 속도 기준선도 같음).</li>
+<li><strong>표 12의 속도 범위</strong>: 제출본 표 12의 속도 범위(0–1.5 m/s)는 표 1과 다르며, 분석 스크립트의 상수에서 왔다(그림 2의 속도 기준선도 같음).</li>
 <li><strong>속도 변화율(표 13 vs 표 17)</strong>: 같은 정의의 지표인데 제출본 두 표의 값(0.001 / 0.004)이 다르고 둘 다 재현되지 않아, 같은 정의로 다시 쟀다.</li>
 <li><strong>표 17의 "조향각 Jerk"</strong>: 제출본 스크립트는 실제로는 속도의 2차 차분을 계산하였다. 이 보고서는 라벨대로 조향각 jerk를 쟀다.</li>
-<li><strong>"장애물 위치 0.5~2.0 m"와 최소 front_gap</strong>: 제출본 표 7의 최소 front_gap(0.648 m)은 스크립트형 front_gap 주입의 마지막 값과 거의 같아, 서술된 물리적 배치와 다른 방식으로 결과가 만들어졌을 가능성이 있다(추정).</li>
+<li><strong>"장애물 위치 0.5–2.0 m"와 최소 front_gap</strong>: 제출본 표 7의 최소 front_gap(0.648 m)은 스크립트형 front_gap 주입의 마지막 값과 거의 같아, 서술된 물리적 배치와 다른 방식으로 결과가 만들어졌을 가능성이 있다(추정).</li>
 <li><strong>데이터 증강</strong>: 제출본 V장 3절(3)의 입력 노이즈·상태별 밸런싱은 이 보고서의 Student에 적용하지 않았다(V장 3절).</li>
 <li><strong>표 9의 최대 표본 수</strong>: 제출본 표 9의 에피소드당 최대 표본(267)은 제출본 V장 1절의 에피소드 최대 길이(10 s (200 step))를 넘는다. 스텝마다 표본 하나를 기록한다는 서술과 맞지 않으며, 생성 기록이 없어 원인은 확인하지 못하였다.</li>
 <li><strong>문헌 [3]의 특성 서술</strong>: 제출본 II장 2절은 Kim 등[3]이 "횡방향 제어를 MPC로, 종방향 제어를 규칙 기반으로 분리한 시스템을 제안"했다고 서술한다. 출판사 초록(Springer, DOI <code>10.1007/s12239-014-0120-9</code>, 웹 조회)은 조향 액추에이터 동역학을 반영한 MPC 경로 추종, QP 기반 조향 명령 계산, 시뮬레이션 검증만 기술하고 횡·종방향 분리는 언급하지 않으며, 본문(유료)은 확인하지 못하였다. **제출본의 특성 서술은 원문으로 확인하지 못함** — II장 2절은 초록이 뒷받침하는 범위로만 인용하였다.</li>
 </ol>
-<h2>A.4 제출본 그림 1~3을 재사용하지 않은 이유</h2>
+<h2>A.4 제출본 그림 1–3을 재사용하지 않은 이유</h2>
 <p>세 그림 모두 근거 데이터의 생성 조건을 재현할 수 없어(그림 1은 에피소드·seed 기록 없음, 그림 2·3은 A.3의 3·8번 항목) 같은 목적의 새 그림으로 대신하였다: 그림 1 → F1·F7, 그림 2 → F2, 그림 3 → F8(폐루프 기반).</p>
 <h2>A.5 수치 대조표</h2>
 <p>제출본 수치와 이 보고서 값의 대응 목록은 <a href="REVISION_NUMBERS.csv"><code>docs/revision/REVISION_NUMBERS.csv</code></a>에 있다. <strong>전체 256행은 CSV 참조.</strong> 표 A-1b는 분류별 행 수, 표 A-2는 제출본 값을 그대로 쓸 수 없었던 세 분류의 행이다. 근거 파일·비고는 CSV에, 값 변경 이력은 <code>docs/revision/CSV_CHANGELOG.md</code>에 있다. "확인필요"는 제출본 값의 정의·출처가 불명확한 행(A.3), 조건 코드는 부록 B이다.</p>
@@ -948,8 +948,8 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>188</td><td>19</td><td>표16</td><td>Student 추론 95 백분위 ms (PyTorch e2e)</td><td>0.287</td><td>0.113</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>189</td><td>19</td><td>표16</td><td>Student 추론 99 백분위 ms (PyTorch e2e)</td><td>0.354</td><td>0.141 (주 지표)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>190</td><td>19</td><td>표16</td><td>평균 대비 배수</td><td>5.30배 빠름</td><td>2.1배(v2 MPC ÷ PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>191</td><td>19</td><td>표16</td><td>표준편차 대비</td><td>2.76배 낮음</td><td>8.8~11.0배 낮음(PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>192</td><td>19</td><td>표16</td><td>최대 대비</td><td>3.69배 낮음</td><td>4.8~5.9배 낮음(PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>191</td><td>19</td><td>표16</td><td>표준편차 대비</td><td>2.76배 낮음</td><td>8.8–11.0배 낮음(PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>192</td><td>19</td><td>표16</td><td>최대 대비</td><td>3.69배 낮음</td><td>4.8–5.9배 낮음(PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>194</td><td>19</td><td>VI.4(2) 본문</td><td>Student 평균(본문)</td><td>0.206 ms</td><td>표16·18 개정값 참조</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>195</td><td>19</td><td>VI.4(2) 본문</td><td>Teacher 평균(본문)</td><td>1.091 ms</td><td>표16·18 개정값 참조</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>196</td><td>19</td><td>VI.4(2) 본문</td><td>배수(본문)</td><td>5.30배</td><td>표16·18 개정값 참조</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
@@ -957,36 +957,36 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <tr><td>209</td><td>20</td><td>그림3 본문</td><td>속도 분포 중심</td><td>0.46 m/s</td><td>0.499 m/s</td><td>라벨불일치_대체</td><td>E3</td><td>일치</td></tr>
 <tr><td>210</td><td>20</td><td>표18</td><td>Teacher 평균 ms</td><td>1.091</td><td>0.213</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>211</td><td>20</td><td>표18</td><td>Student 평균 ms</td><td>0.206</td><td>0.102 / 0.022</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>212</td><td>20</td><td>표18</td><td>속도 향상 평균</td><td>5.30배</td><td>2.1배 / 9.5~9.8배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>212</td><td>20</td><td>표18</td><td>속도 향상 평균</td><td>5.30배</td><td>2.1배 / 9.5–9.8배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>213</td><td>20</td><td>표18</td><td>Teacher 중앙값 ms</td><td>1.035</td><td>0.160</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>214</td><td>20</td><td>표18</td><td>Student 중앙값 ms</td><td>0.189</td><td>0.100 / 0.022</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>215</td><td>20</td><td>표18</td><td>속도 향상 중앙값</td><td>5.48배</td><td>1.6배 / 7.2~7.3배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>215</td><td>20</td><td>표18</td><td>속도 향상 중앙값</td><td>5.48배</td><td>1.6배 / 7.2–7.3배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>216</td><td>20</td><td>표18</td><td>Teacher 표준편차 ms</td><td>0.152</td><td>0.212</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>217</td><td>20</td><td>표18</td><td>Student 표준편차 ms</td><td>0.055</td><td>0.019 / 0.004</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>218</td><td>20</td><td>표18</td><td>속도 향상 표준편차</td><td>2.76배</td><td>8.8~11.0배 / 53.3~65.8배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>218</td><td>20</td><td>표18</td><td>속도 향상 표준편차</td><td>2.76배</td><td>8.8–11.0배 / 53.3–65.8배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>219</td><td>20</td><td>표18</td><td>Teacher 최소 ms</td><td>0.823</td><td>0.145</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>220</td><td>20</td><td>표18</td><td>Student 최소 ms</td><td>0.152</td><td>0.086 / 0.020</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>221</td><td>20</td><td>표18</td><td>속도 향상 최소</td><td>5.41배</td><td>1.7배 / 7.3배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>222</td><td>20</td><td>표18</td><td>Teacher 최대 ms</td><td>5.747</td><td>4.819</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>223</td><td>20</td><td>표18</td><td>Student 최대 ms</td><td>1.557</td><td>1.000 / 0.175</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>224</td><td>20</td><td>표18</td><td>속도 향상 최대</td><td>3.69배</td><td>4.8~5.9배 / 27.5~29.2배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>224</td><td>20</td><td>표18</td><td>속도 향상 최대</td><td>3.69배</td><td>4.8–5.9배 / 27.5–29.2배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>225</td><td>20</td><td>표18</td><td>Teacher 95 백분위 ms</td><td>1.312</td><td>0.466</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>226</td><td>20</td><td>표18</td><td>Student 95 백분위 ms</td><td>0.287</td><td>0.113 / 0.025</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>227</td><td>20</td><td>표18</td><td>속도 향상 95 백분위</td><td>4.57배</td><td>4.1~4.2배 / 18.6~21.4배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>227</td><td>20</td><td>표18</td><td>속도 향상 95 백분위</td><td>4.57배</td><td>4.1–4.2배 / 18.6–21.4배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>228</td><td>20</td><td>표18</td><td>Teacher 99 백분위 ms</td><td>1.524</td><td>1.405</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>229</td><td>20</td><td>표18</td><td>Student 99 백분위 ms</td><td>0.354</td><td>0.141 / 0.029</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>230</td><td>20</td><td>표18</td><td>속도 향상 99 백분위</td><td>4.31배</td><td>6.8~9.9배 / 47.8~51.7배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>231</td><td>20</td><td>VI.4(4) 본문</td><td>평균 배수</td><td>5.30배</td><td>평균 2.1배 / 9.5~9.8배, p99 6.8~9.9배(PyTorch) / 47.8~51.7배(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>235</td><td>20</td><td>VI.4(5)</td><td>추론 배수</td><td>5.3배</td><td>p99 6.8~9.9배(PyTorch) / 47.8~51.7배(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>230</td><td>20</td><td>표18</td><td>속도 향상 99 백분위</td><td>4.31배</td><td>6.8–9.9배 / 47.8–51.7배</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>231</td><td>20</td><td>VI.4(4) 본문</td><td>평균 배수</td><td>5.30배</td><td>평균 2.1배 / 9.5–9.8배, p99 6.8–9.9배(PyTorch) / 47.8–51.7배(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>235</td><td>20</td><td>VI.4(5)</td><td>추론 배수</td><td>5.3배</td><td>p99 6.8–9.9배(PyTorch) / 47.8–51.7배(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>236</td><td>20</td><td>VI.5</td><td>샘플 수</td><td>19,129</td><td>115,076</td><td>재현불가_대체</td><td>D</td><td>일치</td></tr>
 <tr><td>239</td><td>20</td><td>VI.5</td><td>MPC 평균 계산시간</td><td>1.091 ms</td><td>0.096 ms(baseline) / 0.213 ms(v2, p99 1.405)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>241</td><td>21</td><td>VI.5</td><td>Teacher 조향 표준편차</td><td>6.79°</td><td>8.14°</td><td>라벨불일치_대체</td><td>E2</td><td>일치</td></tr>
-<tr><td>243</td><td>21</td><td>VI.5</td><td>추론 속도 배수</td><td>5.3배</td><td>p99 6.8~9.9배(PyTorch) / 47.8~51.7배(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>244</td><td>21</td><td>VI.5</td><td>표준편차 배수</td><td>2.8배</td><td>8.8~11.0배(PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>243</td><td>21</td><td>VI.5</td><td>추론 속도 배수</td><td>5.3배</td><td>p99 6.8–9.9배(PyTorch) / 47.8–51.7배(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>244</td><td>21</td><td>VI.5</td><td>표준편차 배수</td><td>2.8배</td><td>8.8–11.0배(PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>253</td><td>21</td><td>VII</td><td>Student 추론 평균</td><td>0.206 ms</td><td>0.102 ms(PyTorch) / 0.022 ms(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 <tr><td>254</td><td>21</td><td>VII</td><td>Teacher 평균</td><td>1.091 ms</td><td>0.213 ms(v2 MPC)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>255</td><td>21</td><td>VII</td><td>추론 배수</td><td>5.3배</td><td>p99 6.8~9.9배(PyTorch) / 47.8~51.7배(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
-<tr><td>256</td><td>21</td><td>VII</td><td>표준편차 배수</td><td>2.8배</td><td>8.8~11.0배(PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>255</td><td>21</td><td>VII</td><td>추론 배수</td><td>5.3배</td><td>p99 6.8–9.9배(PyTorch) / 47.8–51.7배(ONNX)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
+<tr><td>256</td><td>21</td><td>VII</td><td>표준편차 배수</td><td>2.8배</td><td>8.8–11.0배(PyTorch)</td><td>재현불가_대체</td><td>T0-H1</td><td>일치</td></tr>
 </tbody></table>
 <h1>부록 B. 측정 조건 코드</h1>
 <p>이 보고서의 모든 표·그림 캡션 끝에는 <code>[데이터 | 호스트 | 버전 | 커밋]</code> 네 가지 조건 태그가 붙는다. 이 부록은 그 코드의 정의이다. 수치 자체는 모두 <code>docs/revision/REVISION_NUMBERS.csv</code>의 한 행에서 가져왔으며, 캡션의 코드를 따라가면 어떤 데이터·어떤 기기·어떤 코드 버전에서 나온 값인지 확인할 수 있다.</p>
@@ -998,11 +998,11 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <th>정의</th>
 <th>용도</th>
 </tr></thead><tbody>
-<tr><td>E1</td><td>paper·left_obstacle seed 0~99, S3 원 격자 961(front_gap0 0.50~2.00 × y0 −0.15~0.15, 간격 0.05·0.01), S4~S7 seed 0~99</td><td>eval 1회차 — 개선판 v1의 최초 평가. 이 보고서에서는 연속성 참고</td></tr>
-<tr><td>E2</td><td>paper·left_obstacle·S4~S7 seed 200~299, S3 1/4칸 오프셋 격자 900(front_gap0 0.5025~1.9975 × y0 −0.1475~0.1475)</td><td>eval 2회차 — baseline v1.1·improved v1·improved v2 비교의 기준 데이터</td></tr>
-<tr><td>E3</td><td>paper seed 2000~2099, S3 3/4칸 오프셋 격자 900(front_gap0 0.5375~1.9875 × y0 −0.1425~0.1475)</td><td>eval3 — Student S10 최종 확인(1회만 실행)</td></tr>
-<tr><td>D</td><td>dev: paper seed 100~199, S3 반 칸 오프셋 격자 900(front_gap0 0.525~1.975 × y0 −0.145~0.145), S4~S7 seed 1000~1099</td><td>개발용(dev) — 파라미터·모델 선택은 이 데이터에서만. 판정 근거로 쓰지 않음</td></tr>
-<tr><td>T0</td><td>계산시간 측정: paper(·left_obstacle·S6 ψ0=−15°) seed 0~99, 제어기 인스턴스 재사용, 스레드 1, warmup 50 제외</td><td>계산시간 측정 전용</td></tr>
+<tr><td>E1</td><td>paper·left_obstacle seed 0–99, S3 원 격자 961(front_gap0 0.50–2.00 × y0 −0.15–0.15, 간격 0.05·0.01), S4–S7 seed 0–99</td><td>eval 1회차 — 개선판 v1의 최초 평가. 이 보고서에서는 연속성 참고</td></tr>
+<tr><td>E2</td><td>paper·left_obstacle·S4–S7 seed 200–299, S3 1/4칸 오프셋 격자 900(front_gap0 0.5025–1.9975 × y0 −0.1475–0.1475)</td><td>eval 2회차 — baseline v1.1·improved v1·improved v2 비교의 기준 데이터</td></tr>
+<tr><td>E3</td><td>paper seed 2000–2099, S3 3/4칸 오프셋 격자 900(front_gap0 0.5375–1.9875 × y0 −0.1425–0.1475)</td><td>eval3 — Student S10 최종 확인(1회만 실행)</td></tr>
+<tr><td>D</td><td>dev: paper seed 100–199, S3 반 칸 오프셋 격자 900(front_gap0 0.525–1.975 × y0 −0.145–0.145), S4–S7 seed 1000–1099</td><td>개발용(dev) — 파라미터·모델 선택은 이 데이터에서만. 판정 근거로 쓰지 않음</td></tr>
+<tr><td>T0</td><td>계산시간 측정: paper(·left_obstacle·S6 ψ0=−15°) seed 0–99, 제어기 인스턴스 재사용, 스레드 1, warmup 50 제외</td><td>계산시간 측정 전용</td></tr>
 </tbody></table>
 <ul>
 <li>세 평가 데이터(E1·E2·E3)와 개발 데이터(D)는 seed 대역과 S3 격자 좌표가 서로 겹치지 않는다(격자 오프셋이 모두 다름 — 생성 코드에서 assert로 확인).</li>
@@ -1043,7 +1043,7 @@ figure figcaption { font-size: 8.5pt; color: var(--muted); }
 <h2>B.4 표기 규칙</h2>
 <ol>
 <li>비율은 항상 <code>k/n (95% CI a~b%)</code>(Wilson 구간)로 쓴다.</li>
-<li>계산시간의 주 지표는 p99이고 평균·최댓값은 참고로 함께 쓴다. 같은 공식 조건에서도 1 ms 미만 양의 p99는 실행마다 −21%, −31%까지 달라졌으므로, 제어기 간 <strong>배수는 항상 실행 범위로</strong> 쓴다(예: v2 MPC ÷ S10 ONNX p99 = 47.8~51.7배).</li>
+<li>계산시간의 주 지표는 p99이고 평균·최댓값은 참고로 함께 쓴다. 같은 공식 조건에서도 1 ms 미만 양의 p99는 실행마다 −21%, −31%까지 달라졌으므로, 제어기 간 <strong>배수는 항상 실행 범위로</strong> 쓴다(예: v2 MPC ÷ S10 ONNX p99 = 47.8–51.7배).</li>
 <li>제출본 수치는 "제출본" 열이나 "제출본 …" 문장 안에서만 인용하며, 이 보고서의 새 값과 한 칸에 섞지 않는다.</li>
 <li>결정론적 재생 통계는 저장된 평가 결과와 에피소드 단위(또는 저장된 집계 전부)가 일치할 때만 사용하였다.</li>
 </ol>

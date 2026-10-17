@@ -4,7 +4,7 @@
 
 원본은 전혀 수정·삭제·이동하지 않았습니다. 전부 읽기만 했습니다.
 
-## 분류 기준 (A~E, 이번 조사로 확정된 사실 반영)
+## 분류 기준 (A–E, 이번 조사로 확정된 사실 반영)
 
 - **A. 논문 데이터 생성 파이프라인 (확인됨)** — `legacy_2025/run_simulation.py` + `legacy_2025/final_hierarchical_backup_thesis_1204.py`(당시 이름 `final_hierarchical_backup.py`)
   code_backup 12-04 계열(97,747B, cooldown_ok/EVADE_L 예외 없음). `THESIS_TIME_CODE.md` 1·7·8절.
@@ -12,7 +12,7 @@
 - **C. 사후(2026, 논문 이후) 물리 검증/디버그** — `legacy_2025/verify/` 및 이를 위해 만든 루트 스크립트.
 - **D. 논문 그림·표 생성 스크립트** — `results/*/metrics.npz`를 읽어 그림/표를 만드는 분석 코드
   (논문에 채택된 것과 안 된 것 모두 포함, 컬럼에 구분 표시).
-- **E. 그 외** — 폐기된 실험 분기, 학습 스크립트, 데이터 생성 실험, 벤치마크 유틸 등 A~D에
+- **E. 그 외** — 폐기된 실험 분기, 학습 스크립트, 데이터 생성 실험, 벤치마크 유틸 등 A–D에
   안 들어가는 것.
 
 ## (a) 전체 .py 분류표
@@ -30,10 +30,10 @@
 | `legacy_2025/backup/recompute_table12_y.py` | `legacy_2025/backup/`(code_backup 사본과 동일) | **E**(고아) | 존재하지 않는 `runs/metrics.npz` 하드코딩 경로, 실행 불가 | 확인됨 |
 | `legacy_2025/analysis.py` | 루트=code_backup 동일 | **D (논문 채택)** | `results/{mode}/metrics.npz` 로드(14행) → `trajectory_comparison.png` 저장(238행) = 논문 **그림1** | 확인됨 |
 | `legacy_2025/analyze_mpc.py` | code_backup 전용 | **D (논문 채택)** | 서브플롯 제목이 논문 **그림2·그림3**과 완전 일치(9개+4개), `results/*/metrics.npz` 로드 | 확인됨 |
-| `legacy_2025/backup/justify_mpc.py` | `legacy_2025/backup/`(code_backup 사본과 동일) | **D (논문 미채택)** | 서브플롯 제목이 논문 그림1~3 어디에도 없음, 1.091/0.206ms 하드코딩(351행) | 확인됨 |
+| `legacy_2025/backup/justify_mpc.py` | `legacy_2025/backup/`(code_backup 사본과 동일) | **D (논문 미채택)** | 서브플롯 제목이 논문 그림1–3 어디에도 없음, 1.091/0.206ms 하드코딩(351행) | 확인됨 |
 | `legacy_2025/backup/constraint_analysis.py` | `legacy_2025/backup/`(code_backup 사본과 동일) | **D (논문 미채택)** | `/mnt/user-data/uploads` 하드코딩(37행) — RC카 개발 PC와 무관한 AI 툴 업로드 경로 패턴. 논문은 Table 12로 텍스트만 제시, 이 스크립트 그림은 없음 | 확인됨 |
 | `analyze_dataset.py` | code_backup 전용 | **D (논문 미채택)** | 서브플롯 제목(TTC Distribution 등)이 논문에 없음 | 확인됨 |
-| `legacy_2025/backup/compare_mpc_student.py` | `legacy_2025/backup/`(code_backup 사본과 동일) | **D (논문 미채택)** | Inference Time/Acceleration·Steering Error 서브플롯, 논문 그림1~3과 불일치 | 확인됨 |
+| `legacy_2025/backup/compare_mpc_student.py` | `legacy_2025/backup/`(code_backup 사본과 동일) | **D (논문 미채택)** | Inference Time/Acceleration·Steering Error 서브플롯, 논문 그림1–3과 불일치 | 확인됨 |
 | `analyze_training_data.py` | code_backup 전용 | **D (논문 미채택)** | docstring "Analyze RETURN_TO_L2 samples" — 개발 중 디버그용 | 추정 |
 | `analyze_loop_time.py` | code_backup 전용 | **D (논문 미채택)** | docstring "Loop time 분석" | 추정 |
 | `check_return_data.py` | code_backup 전용 | **E** | "Check RETURN_TO_L2 data quality" — 1회성 점검 스크립트 | 추정 |
@@ -69,12 +69,12 @@
 | 그림 1 (Trajectory) | `legacy_2025/analysis.py`(확인) | `legacy_2025/figures/trajectory_comparison.png` | **근사 재현 가능** — `results/*/metrics.npz` 존재, 다만 원본 실행이 아닐 수 있음(teacher는 05-07 재실행분) |
 | 그림 2 (MPC 성능 종합) | `legacy_2025/analyze_mpc.py`(확인) | `legacy_2025/figures/mpc_performance_analysis.png` | 근사 재현 가능(위와 동일 사유) |
 | 그림 3 (Teacher-Student 비교) | `legacy_2025/analyze_mpc.py`(확인) | `legacy_2025/figures/teacher_student_comparison.png` | 근사 재현 가능 |
-| Table 6,7,9,10,11,14 (FSM 상태·오차·속도·샘플분포) | `legacy_2025/run_simulation.py`+A컨트롤러(확인) → 수작업 또는 별도 스크립트로 표 작성(미발견) | `results/*/metrics.npz` | **근사 재현**(3절, 0.3~2%p 오차). 표를 직접 만든 스크립트 자체는 저장소에 없음 — 사람이 npz를 보고 수기로 정리했을 가능성 |
+| Table 6,7,9,10,11,14 (FSM 상태·오차·속도·샘플분포) | `legacy_2025/run_simulation.py`+A컨트롤러(확인) → 수작업 또는 별도 스크립트로 표 작성(미발견) | `results/*/metrics.npz` | **근사 재현**(3절, 0.3–2%p 오차). 표를 직접 만든 스크립트 자체는 저장소에 없음 — 사람이 npz를 보고 수기로 정리했을 가능성 |
 | Table 8, 16, 17, 18 (계산/추론 시간) | `legacy_2025/analysis.py:70-77`, `legacy_2025/backup/justify_mpc.py:351`, `legacy_2025/code_backup/run_hierarchical.py:390` — **일부만 상수**(정정 2026-09-26: 표 8·16 평균·표준편차·최대 6개와 본문 3.23 ms = 7개. 나머지는 출처 미발견) | 없음(코드 상수 또는 출처 미발견) | **재현 불가** — 근거 로그 없음, 재계산 값과 4배 이상 차이 나는 항목도 있음 |
 | Table 12 (제약 만족률) | 미발견 | 없음 | **판정불가** — 판정 로직(경계 완화 기준 등)이 코드 어디에도 없어 2단계에서 기준 정의 필요 |
 | Table 13 (조향각 변화율) | 추정: `legacy_2025/analyze_mpc.py`류가 `delta` 배열 diff로 계산 가능 | 없음(전용 스크립트 미발견) | 근사 재현 가능(2단계에서 직접 계산 필요) |
 | Table 15 (Student 학습 손실 MSE/MAE) | `train_policy*.py`류(추정) | `legacy_2025/models/training_curves.png` 등 | **재현 불가** — 대응 학습 데이터셋 npz가 저장소에 없음 |
-| 19,129 샘플 / 191.3 평균 | 미발견(수작업 집계로 추정) | - | **근사 재현**(18,989~18,950 vs 19,129) |
+| 19,129 샘플 / 191.3 평균 | 미발견(수작업 집계로 추정) | - | **근사 재현**(18,989–18,950 vs 19,129) |
 
 ## (c) 폴더 배치와 분류가 충돌하는 사례
 
@@ -86,7 +86,7 @@
    다른 내용(A vs B)을 가리켜, 파일명만으로는 어느 버전인지 구분이 안 됩니다.**
 3. `simulator.py`(현재 버전, E)와 `simulator_original.py`(더 이른 버전, E)의 이름이 실제 최신/구버전
    관계와 어긋납니다 — "original"이 붙은 쪽이 시간상 더 이르고(2025-12-01 22:19),
-   "original"이 안 붙은 `simulator.py`가 더 나중 버전인데, 논문 서술(0.5~2.0m)에는 **둘 다** 안
+   "original"이 안 붙은 `simulator.py`가 더 나중 버전인데, 논문 서술(0.5–2.0m)에는 **둘 다** 안
    맞습니다. `final_original.py`/`final.py`도 같은 패턴(이르든 늦든 어느 쪽도 A가 아님).
 4. `legacy_2025/results/teacher/`, `legacy_2025/results/student/` 폴더는 이름상 "실험 결과"로 보이지만, 내부에는 **논문과
    무관한 실행(E, front_gap NA)** 과 **논문에 가까운 실행(A, `metrics.npz`)** 이 같은 폴더에

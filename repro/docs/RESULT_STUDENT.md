@@ -22,7 +22,7 @@ torch 스레드 8) — P트랙 공식 환경(노트북)과 다른 호스트입�
 | `legacy_2025/models/policy_best.pth` 로드 | 성공, `model.eval()` 적용 확인(`sanity.json.eval_mode_applied=true`) |
 | `normalization_stats.json` feature_names 순서 | REQ-STU-02와 정확히 일치(`[v, ey_line, front_gap, left_clear, state_KEEP_L2, state_EVADE_L, state_KEEP_L1, state_RETURN_TO_L2, state_SAFE_STOP]`), 로더에서 assert로 강제 확인 |
 | Student 9차원 입력을 baseline 로그에서 구성 가능한가 | **가능** — 매핑표는 §2 |
-| 입력 표본 수 | 12,016 스텝(paper+left_obstacle, seed 0~99, MPC가 실제로 호출된 스텝 전부 — 표본 선별 없음) |
+| 입력 표본 수 | 12,016 스텝(paper+left_obstacle, seed 0–99, MPC가 실제로 호출된 스텝 전부 — 표본 선별 없음) |
 
 **결론: 막힘 없음 — 조향 오차 측정을 "무효" 처리할 필요 없음**(MEASURE_PLAN.md M트랙 기준).
 
@@ -104,8 +104,8 @@ eager 대비 소형 MLP 단건 추론에서 훨씬 빠른 경우가 흔합니다
 ### §4-1. 옛 MPC 대비 MAE가 큰 이유 — 확인된 원인: 옛 코드 자체의 비용함수 스케일링 버그
 
 **확인됨(코드+수치 재현, 추정 아님)**: `legacy_2025/final_hierarchical_backup_thesis_1204.py`의
-`OSQPMPC._build_P` 상당 부분(848~895행)은 Hessian 대각원소를 `qy`, `qpsi`, `rdelta`,
-`rddelta` **원값 그대로**(2배 하지 않음) 사용하는데, `solve()`(906~964행)의 선형항은
+`OSQPMPC._build_P` 상당 부분(848–895행)은 Hessian 대각원소를 `qy`, `qpsi`, `rdelta`,
+`rddelta` **원값 그대로**(2배 하지 않음) 사용하는데, `solve()`(906–964행)의 선형항은
 `q[y_i] = -2.0*qy*target_y`로 **2배** 계수를 씁니다. 표준 QP 형태
 `0.5*x'Px + q'x`에서 이는 `qy*(y-target)^2` 항의 그래디언트가 아니라
 `qy*(y - 2*target)`이 되어, **y의 실제(무제약) 끌림점이 `target_y`가 아니라
@@ -303,7 +303,7 @@ RETURN_TO_L2를 제외한 나머지 상태에서 자기 일관성(같은 가중�
 | KEEP_L1 | 1,260 | 0.91 | 0% |
 | ~~RETURN_TO_L2~~ | ~~6,780~~ | ~~21.52~~ | ~~0%~~ | **무효(위 근거로 제외)** |
 
-KEEP_L2/KEEP_L1/EVADE_L의 낮은 자기 일관성 MAE(0.9~2.0°)는 `ey`/`left_clear` 근사가
+KEEP_L2/KEEP_L1/EVADE_L의 낮은 자기 일관성 MAE(0.9–2.0°)는 `ey`/`left_clear` 근사가
 이 상태들에서는 큰 오차를 만들지 않는다는 뜻입니다. 다만 EVADE_L은 OOD 비율이
 **54%**로 매우 높습니다 — Student 자신이 실제로 몰았던 회피 구간의 절반 이상이 학습 시
 관측 범위(z-score 기준) 밖이라는 뜻으로, 자기 일관성 MAE가 낮게 나온 것과 별개로
@@ -321,7 +321,7 @@ KEEP_L2/KEEP_L1/EVADE_L의 낮은 자기 일관성 MAE(0.9~2.0°)는 `ey`/`left_
 | 항목 | 판정 기준 | 결과 | 판정 |
 |---|---|---|---|
 | 조향 오차 측정 유효성 | 입력 정의가 REQ-STU-02와 일치할 때만 유효 | 일치 확인(§1) | **유효** |
-| 추론시간 vs MPC(PyTorch) | 참고용 배수, 절대 임계치 없음 | MPC가 1.47~1.66배 더 빠름(§3, §6) | **정보** |
+| 추론시간 vs MPC(PyTorch) | 참고용 배수, 절대 임계치 없음 | MPC가 1.47–1.66배 더 빠름(§3, §6) | **정보** |
 | 추론시간 vs MPC(ONNX) | 참고용 배수, 절대 임계치 없음 | **ONNX가 MPC보다 2.99배 더 빠름**(§6-3) | **정보**(런타임을 바꾸면 결론이 뒤집힘) |
 | 조향 오차(MAE, baseline 궤적) | 임계치 없음, 참고 수치 | 1순위 21.95°(옛 MPC 버그로 과대), 2순위 9.70° | **정보** |
 | 조향 오차(MAE, 학습 분포에 가까운 입력) | 임계치 없음, 참고 수치 | `legacy_2025/results/teacher` 기준 **10.43°**(OOD 0%) | **정보**(Table 15와 가장 근접하지만 근사 한계 있음) |

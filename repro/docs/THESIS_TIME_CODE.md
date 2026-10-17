@@ -29,12 +29,12 @@
 | `legacy_2025/results/teacher/run_1764733587.csv` | 107 | 2025-12-03 12:46:27 | 0 | - | - |
 | `legacy_2025/results/teacher/run_1764738086.csv` | 107 | 2025-12-03 14:01:26 | 0 | - | - |
 | `legacy_2025/results/teacher/run_1778131088.csv` | 107 | **2026-05-07 14:18:08** | 0 | - | - |
-| `legacy_2025/results/teacher/ep_000~007/run_*.csv` | 14,072~14,488 | 2025-12-03 02:49:55~02:51:05 (10초 간격) | 164~173 | KEEP_L2 | 100% |
+| `legacy_2025/results/teacher/ep_000~007/run_*.csv` | 14,072–14,488 | 2025-12-03 02:49:55–02:51:05 (10초 간격) | 164–173 | KEEP_L2 | 100% |
 | `legacy_2025/results/teacher/ep_008/run_1764697875.csv` | 4,861 | 2025-12-03 02:51:15 | 57 | KEEP_L2 | 100% |
 | `legacy_2025/results/teacher/ep_008/metrics.npz` | 6,909 | - | 56(샘플) / 1(에피소드) | KEEP_L2만 | 0%(값 자체는 있으나 회피 없음) |
 | `legacy_2025/results/student/metrics.npz` | 2,124,860 | - | 18,950(샘플) / 100(에피소드) | KEEP_L2,EVADE_L,KEEP_L1,RETURN_TO_L2 | 0% |
 | `legacy_2025/results/student/run_1764698663.csv` | 515,492 | 2025-12-03 03:04:23 | 6,033 | KEEP_L2 | 100% |
-| `legacy_2025/results/student/run_1764699511/866/935.csv` 등 4개 | 107 | 2025-12-03 03:18~14:01 | 0 | - | - |
+| `legacy_2025/results/student/run_1764699511/866/935.csv` 등 4개 | 107 | 2025-12-03 03:18–14:01 | 0 | - | - |
 
 **요약**: `legacy_2025/results/teacher/`, `legacy_2025/results/student/` 안의 **loose csv·ep_* csv는 전부 front_gap이 NA이고
 state가 KEEP_L2뿐**입니다(빈 파일 제외). 반면 **최상위 `metrics.npz` 2개만 4개 상태가 모두
@@ -57,7 +57,7 @@ state가 KEEP_L2뿐**입니다(빈 파일 제외). 반면 **최상위 `metrics.n
 | SAFE_STOP | 0 | 0 | 0 |
 | `success` 배열 | shape=(0,) (비어있음) | shape=(0,) | - |
 
-**모든 항목이 논문 수치와 0.3~2%포인트 이내로 근접하지만 정확히 일치하지는 않습니다.** 에피소드당
+**모든 항목이 논문 수치와 0.3–2%포인트 이내로 근접하지만 정확히 일치하지는 않습니다.** 에피소드당
 최소/최대 샘플(180/200 vs 논문 142/267)은 차이가 더 큽니다. → **같은 파이프라인·같은 코드의 다른
 실행(시드 미고정)일 가능성이 높지만, 이 파일이 논문에 실린 표를 만든 "바로 그 실행"이라고
 단정할 근거는 없습니다.**
@@ -114,7 +114,7 @@ recompute_tables_from_results.py`, 읽기 전용, 새 시뮬레이션 실행 없
 
 | 논문 수치 (페이지) | teacher/metrics.npz 재계산 | student/metrics.npz 재계산 | 판정 | 비고 |
 |---|---|---|---|---|
-| Table 9 총 샘플 19,129 (p.15) | 18,989 | 18,950 | 근사 (0.7~0.9% 차이) | |
+| Table 9 총 샘플 19,129 (p.15) | 18,989 | 18,950 | 근사 (0.7–0.9% 차이) | |
 | Table 9 에피소드당 평균 191.3 (p.15) | 189.89 | 189.5 | 근사 | |
 | Table 10 EVADE_L 402/2.1% (p.15-16) | 400/2.11% | 400/2.11% | 근사 | |
 | Table 10 KEEP_L1 1,263/6.6% (p.16) | 1,256/6.61% | 1,260/6.65% | 근사 | |
@@ -145,11 +145,11 @@ recompute_tables_from_results.py`, 읽기 전용, 새 시뮬레이션 실행 없
 
 ---
 
-## 4. 장애물 0.5~2.0m 추적
+## 4. 장애물 0.5–2.0m 추적
 
 모든 시뮬레이터/주입 생성기의 거리 관련 난수·프로파일 (전부 확인됨, 파일 열람+grep):
 
-| 파일 | 메커니즘 | 범위/수식 | 논문 "0.5~2.0m"과 관계 |
+| 파일 | 메커니즘 | 범위/수식 | 논문 "0.5–2.0m"과 관계 |
 |---|---|---|---|
 | `legacy_2025/code_backup/simulator_original.py:52` | 물리 장애물 x좌표 균등분포 | U(1.5, 2.5)m | 다름 |
 | `legacy_2025/code_backup/simulator.py:52` | 물리 장애물 x좌표 균등분포 | U(2.5, 4.0)m | 다름 |
@@ -166,12 +166,12 @@ recompute_tables_from_results.py`, 읽기 전용, 새 시뮬레이션 실행 없
    물리 장애물 x좌표 방식(simulator.py류)에서는 최소 front_gap이 초기 obstacle_x와 차량
    진행 속도·정지 시점에 좌우되는 연속값이라 이렇게 딱 떨어지는 계단식 최소값이 나오지 않습니다.
 2. `legacy_2025/run_simulation.py`의 스크립트는 "장애물의 물리적 위치"라는 변수 자체가 없고, front_gap이라는
-   **센서값(거리)** 을 직접 만들어 주입합니다. 논문이 "장애물의 위치는 0.5m~2.0m 균등분포"라고
-   쓴 것은, 실제로는 이 **주입 front_gap의 시작~바닥 범위(2.0m→0.5m)** 를 "장애물 위치 범위"로
+   **센서값(거리)** 을 직접 만들어 주입합니다. 논문이 "장애물의 위치는 0.5m–2.0m 균등분포"라고
+   쓴 것은, 실제로는 이 **주입 front_gap의 시작–바닥 범위(2.0m→0.5m)** 를 "장애물 위치 범위"로
    잘못 서술했을 가능성이 높습니다.
-3. 다만 완전히 들어맞지는 않습니다: 논문은 "초기 속도(0.3~0.5m/s) 무작위 설정"이라고도 쓰는데,
+3. 다만 완전히 들어맞지는 않습니다: 논문은 "초기 속도(0.3–0.5m/s) 무작위 설정"이라고도 쓰는데,
    `RandomScenarioGenerator`는 `v: random.uniform(0.4, 0.6)`을 씁니다(확인됨: `legacy_2025/run_simulation.py:27`
-   등) — **0.3~0.5가 아니라 0.4~0.6입니다.** 이 부분은 논문 서술과 코드가 또 다르게 어긋납니다.
+   등) — **0.3–0.5가 아니라 0.4–0.6입니다.** 이 부분은 논문 서술과 코드가 또 다르게 어긋납니다.
 
 **결론**: "물리 장애물 위치설"은 반박됩니다(코드에 그런 변수가 없음). "front_gap 주입 범위설"은
 front_gap 최소값 일치로 뒷받침되지만, 초기 속도 범위 불일치가 있어 **완전한 확인은 아니고 유력한
@@ -186,12 +186,12 @@ front_gap 최소값 일치로 뒷받침되지만, 초기 속도 범위 불일치
 | 그림 1. Teacher 정책의 차선변경 궤적 예시 | 14 | "Trajectory Comparison (Sample Episode)" | `legacy_2025/figures/trajectory_comparison.png` | `legacy_2025/analysis.py:238` → `savefig(...,'trajectory_comparison.png')`, `results/{mode}/metrics.npz` 로드(`legacy_2025/analysis.py:14`) |
 | 그림 2. MPC 성능 종합 분석 | 18 | State/Steering Angle/Velocity/Front Gap/Lateral Position Distribution, Avg Steering by State, Steering·Velocity Constraint Violations, Heading Angle Distribution (9개, 제목까지 완전 일치) | `legacy_2025/figures/mpc_performance_analysis.png` | `legacy_2025/analyze_mpc.py:233` → `savefig(...,'mpc_performance_analysis.png')` |
 | 그림 3. Teacher와 Student 제어 비교 | 19 | Steering Angle/Velocity/Lateral Position Comparison, State-wise RMSE Comparison (4개, 제목 완전 일치) | `legacy_2025/figures/teacher_student_comparison.png` | `legacy_2025/analyze_mpc.py:317` |
-| (논문에 없음) | - | Controller Selection, Dataset Size Comparison, Steering/Velocity Rate Distribution, Cumulative Control Effort, Teacher Tracking Error, Student Preserves..., Computation Time Comparison(5.3x) | `mpc_justification.png`(루트/`code_backup`/`legacy_2025/figures/`) | `legacy_2025/backup/justify_mpc.py:447` — **논문 본문 그림 목록(그림1~3)에 없음. 논문 외 용도(발표자료 등)로 추정** |
+| (논문에 없음) | - | Controller Selection, Dataset Size Comparison, Steering/Velocity Rate Distribution, Cumulative Control Effort, Teacher Tracking Error, Student Preserves..., Computation Time Comparison(5.3x) | `mpc_justification.png`(루트/`code_backup`/`legacy_2025/figures/`) | `legacy_2025/backup/justify_mpc.py:447` — **논문 본문 그림 목록(그림1–3)에 없음. 논문 외 용도(발표자료 등)로 추정** |
 | (논문에 없음) | - | State/Velocity/Lane Error/Front Gap/TTC/Left Lane/Steering/Target Velocity Distribution | `legacy_2025/analysis/dataset_analysis.png` | `legacy_2025/code_backup/analyze_dataset.py` |
 | (논문에 없음, Table 12로 텍스트만 제시) | - | 제약 위반 시각화 | `legacy_2025/constraint_analysis/constraint_analysis.png` | `legacy_2025/backup/constraint_analysis.py:317` |
 | (논문에 없음) | - | 학습 손실 곡선 | `legacy_2025/models/training_curves.png`, `legacy_2025/models/training_history.png` | `legacy_2025/analysis.py:207` (`training_curves.png`), 별도 학습 스크립트가 `training_history.png` 생성 추정 |
 
-**요약**: 논문에 실제로 번호가 매겨져 실린 그림은 3개(그림1~3)뿐이고, 전부 `legacy_2025/analysis.py` +
+**요약**: 논문에 실제로 번호가 매겨져 실린 그림은 3개(그림1–3)뿐이고, 전부 `legacy_2025/analysis.py` +
 `legacy_2025/analyze_mpc.py` 두 스크립트가 `results/{teacher,student}/metrics.npz`를 읽어 생성합니다. 이는
 3절의 결론(두 metrics.npz가 논문 수치의 가장 유력한 데이터 소스)과 다시 한번 정합적입니다.
 `legacy_2025/backup/justify_mpc.py`, `analyze_dataset.py`, `legacy_2025/backup/constraint_analysis.py`의 출력은 논문 본문에는 없습니다.
@@ -202,12 +202,12 @@ front_gap 최소값 일치로 뒷받침되지만, 초기 속도 범위 불일치
 
 ### zip 파일 정체
 
-- **`code_backup.zip`**: `legacy_2025/code_backup/` 폴더의 스냅샷입니다. 내부 mtime 범위 2025-10-14~
+- **`code_backup.zip`**: `legacy_2025/code_backup/` 폴더의 스냅샷입니다. 내부 mtime 범위 2025-10-14–
   2025-12-04 04:34(확인됨: `unzip -l`), `legacy_2025/final_hierarchical_backup_thesis_1204.py` 항목이
   2025-12-04 04:17로 **논문 제출일(2025.12.04)과 같은 날**입니다. 예외적으로 `runcode.json`
   1개만 2026-05-07 15:21인데 내용이 IDE 확장 기본 템플릿이라 다른 파일 수정 시점의 증거로
   쓸 수 없습니다(확인됨).
-- **`folder_backup.zip`**: 964개 항목, 17MB. 내부 mtime 2025-10-04~2026-05-07까지 넓게 분포
+- **`folder_backup.zip`**: 964개 항목, 17MB. 내부 mtime 2025-10-04–2026-05-07까지 넓게 분포
   (확인됨: `unzip -l`). `test_sim/` 등 `code_backup.zip`에 없는 폴더도 포함되어 있어, **더 넓은
   범위(여러 시점에 걸친) 개발 폴더 전체 백업**으로 추정됩니다. 상세 파일별 대조는 이번에도
   하지 않았습니다(필요하면 요청 바랍니다 — 964개 전수 조사는 시간이 걸립니다).
@@ -218,7 +218,7 @@ front_gap 최소값 일치로 뒷받침되지만, 초기 속도 범위 불일치
 |---|---|---|
 | `legacy_2025/run_simulation.py`(루트=code_backup 동일) | **확인됨** — `legacy_2025/results/teacher\|student/metrics.npz`를 만든 코드 | 저장 스키마(`y,psi,delta,v,state,front_gap,loop_time,compute_time,episode,success`)가 `legacy_2025/run_simulation.py:262-273`의 `np.savez` 호출과 정확히 일치 |
 | `final_hierarchical_backup.py` (FSM+MPC 본체, `legacy_2025/run_simulation.py`가 `import *`) | **확인됨(7절에서 확정)** — cooldown_ok/EVADE_L 예외가 **없는** code_backup 12-04 버전과 동일 | 7절: FSM 전이 간격 실측 + `.pyc` 헤더의 소스 mtime/size 대조 |
-| `legacy_2025/analysis.py`, `legacy_2025/analyze_mpc.py` | **확인됨** — 논문 그림1~3을 생성한 스크립트 | 5절, savefig 경로 완전 일치 |
+| `legacy_2025/analysis.py`, `legacy_2025/analyze_mpc.py` | **확인됨** — 논문 그림1–3을 생성한 스크립트 | 5절, savefig 경로 완전 일치 |
 | 루트 `legacy_2025/final_hierarchical_backup_modified_2026.py`(현재본, cooldown_ok+EVADE_L 예외 포함) | **확인됨: 논문 제출 이후 수정본** | code_backup 스냅샷(12-04, 제출일과 동일) 대비 diff (STAGE1_FACTS.md 3절) |
 | `run_experiments.py` + `--random_env` 경로 | **확인됨: 논문 데이터와 무관** | front_gap 항상 NA, KEEP_L2 고정 (1절) |
 | `run_teacher.py`("ORIGINAL parameters") | **확인됨: 논문 최종판과 다른 파라미터(G_TRIG=1.0 등)** — 더 이른 시점의 실험 스크립트로 추정 | `legacy_2025/code_backup/run_teacher.py:25` |
@@ -229,7 +229,7 @@ front_gap 최소값 일치로 뒷받침되지만, 초기 속도 범위 불일치
 **센서 주입**입니다 (물리 시뮬레이션 아님) — 확인됨(3·4절). `legacy_2025/run_simulation.py`의
 `RandomScenarioGenerator`는 kinematic bicycle model로 차량을 물리적으로 움직이며 장애물과의
 거리를 계산하는 것이 아니라, FSM 상태별 구간(정상주행 30step→회피트리거 10step→KEEP_L1
-40~60step→복귀 40step→정상주행)을 미리 스크립트로 짜 놓고 `front_gap`/`y`/`v` 값을 매 스텝
+40–60step→복귀 40step→정상주행)을 미리 스크립트로 짜 놓고 `front_gap`/`y`/`v` 값을 매 스텝
 직접 주입합니다(확인됨: `legacy_2025/run_simulation.py:19-77`, `app.pose.y = sensor_data['y']` 등 대입문).
 FSM+MPC 자체는 진짜로 동작하지만(그래서 δ, 제약만족률 같은 "제어기 출력" 지표는 신뢰할 만함),
 "장애물이 무작위 위치에 있고 차량이 물리적으로 접근한다"는 논문의 실험 설계 서술과는 다른
@@ -247,10 +247,10 @@ FSM+MPC 자체는 진짜로 동작하지만(그래서 δ, 제약만족률 같은
 이번 라운드에서 확인한 "PDF 서술과 코드가 다른 항목"은 최소 **6건**입니다: (1) SAFE_STOP의
 EVADE_L 예외(루트만, **논문 제출 이후 수정 — 규칙 1에 따라 판정 기준은 PDF Table 2로 확정**,
 아래 참고), (2) cooldown_ok가 실제 데이터 생성 당시 코드에는 **없었음**(7절에서 확정), (3) 장애물
-위치 서술 vs 실제 front_gap 주입 메커니즘, (4) 초기 속도 범위 0.3~0.5 vs 코드 0.4~0.6
+위치 서술 vs 실제 front_gap 주입 메커니즘, (4) 초기 속도 범위 0.3–0.5 vs 코드 0.4–0.6
 (`legacy_2025/run_simulation.py`), (5) Table 7·11의 Teacher 속도/조향각 평균이 실제로는 teacher보다 student
 npz에 더 가까움(원인 판정불가), (6) 계산시간류(1.091/0.206/3.23/3.71/5.64ms)가 하드코딩이고
-재계산 값(1.88/0.86/1.91/1.35ms 등)과 다름. **(7)~(8) 추가 확인됨**: EVADE_L→KEEP_L1은 A조차
+재계산 값(1.88/0.86/1.91/1.35ms 등)과 다름. **(7)–(8) 추가 확인됨**: EVADE_L→KEEP_L1은 A조차
 PDF에 없는 `\|ey_line\|<0.04` 분기가 실제로 작동하고, RETURN_TO_L2→KEEP_L2는 A·B·C 전부 임계값
 (0.08 vs PDF의 0.20)과 헤딩각 조건 누락에서 PDF와 다릅니다(`PDF_VS_CODE.md` 참고).
 
@@ -266,7 +266,7 @@ PDF에 없는 `\|ey_line\|<0.04` 분기가 실제로 작동하고, RETURN_TO_L2�
 2. **Teacher 속도/조향각 통계가 실제로는 teacher metrics.npz(상수 0.5, 대칭적 조향각)와 안
    맞고 student metrics.npz와 더 가깝다**는 점 — 논문 자체 그림3(Velocity Comparison)이 이
    불일치를 시각적으로도 보여줌.
-3. **"장애물 위치 0.5~2.0m 균등분포"라는 실험 설계 서술 자체가 실제 코드 메커니즘(스크립트형
+3. **"장애물 위치 0.5–2.0m 균등분포"라는 실험 설계 서술 자체가 실제 코드 메커니즘(스크립트형
    front_gap 주입)과 근본적으로 다름** — 물리적 무작위 장애물 배치가 아니라 결정론적 구간
    스케줄에 각 구간 길이만 무작위인 구조.
 
@@ -325,7 +325,7 @@ front_gap 바닥이 0.65m(4절)라서 SAFE_STOP 트리거 조건(front_gap<0.20)
 **타임라인 재구성(확인됨)**:
 1. 2025-12-04 04:17:59 — `final_hierarchical_backup.py`가 97,747B로 저장됨(코드백업 스냅샷과 동일, cooldown_ok 없음). 논문 제출일(2025.12.04)과 같은 날.
 2. 2025-12-03(전날 기록이지만 파일 자체는 이 버전 계열) — `legacy_2025/run_simulation.py` + 이 컨트롤러로 `legacy_2025/results/student/metrics.npz`, `legacy_2025/results/teacher/ep_008/metrics.npz` 생성. (teacher의 최상위 metrics.npz도 이때 원래 있었을 것으로 추정되나 원본은 소실)
-3. **2026-05-07 14:15:36~14:18:50** — 누군가 **같은(97,747B, cooldown 없는) `final_hierarchical_backup.py`와 한 글자도 안 바뀐 `legacy_2025/run_simulation.py`**로 teacher 쪽만 다시 실행 → `legacy_2025/results/teacher/metrics.npz`, `run_1778131088.csv` 갱신. **이때 기존 Dec-3 teacher metrics.npz가 덮어써져 소실됨.**
+3. **2026-05-07 14:15:36–14:18:50** — 누군가 **같은(97,747B, cooldown 없는) `final_hierarchical_backup.py`와 한 글자도 안 바뀐 `legacy_2025/run_simulation.py`**로 teacher 쪽만 다시 실행 → `legacy_2025/results/teacher/metrics.npz`, `run_1778131088.csv` 갱신. **이때 기존 Dec-3 teacher metrics.npz가 덮어써져 소실됨.**
 4. 2026-05-07 이후 ~ 오늘(2026-09-17) 사이 — 루트 `legacy_2025/final_hierarchical_backup_modified_2026.py`가 100,254B로 수정되어 cooldown_ok·EVADE_L 예외가 추가됨(정확한 날짜는 특정 불가 — 이 구간의 스냅샷이 없음).
 
 **"Teacher npz가 2026-05-07 이후 실행으로 덮어써졌다"는 이전 세션 기록 — 확인됨**(정확히는
@@ -379,8 +379,8 @@ random.randint(40, 60)`(20 step 폭), `obstacle_start = random.randint(30, 50)`(
 
 ## 10. 최종 결론
 
-- **zip 파일 정체**: `code_backup.zip`=2025-10-14~12-04 개발 스냅샷(`legacy_2025/code_backup/`와 거의 동일,
-  49개 파일). `folder_backup.zip`=2025-10-04~2026-05-07까지 걸친 훨씬 넓은 범위의 개발 폴더
+- **zip 파일 정체**: `code_backup.zip`=2025-10-14–12-04 개발 스냅샷(`legacy_2025/code_backup/`와 거의 동일,
+  49개 파일). `folder_backup.zip`=2025-10-04–2026-05-07까지 걸친 훨씬 넓은 범위의 개발 폴더
   전체 백업(964개 항목, `legacy_2025/results/`·`__pycache__`·`test_sim/` 등 포함) — 이번 조사로 최소
   2026-05-07 재실행 이후 시점까지 담고 있음이 확인됨.
 - **논문 결과 데이터 출처**: `legacy_2025/run_simulation.py`(스크립트형 센서 주입) + 당시 `final_hierarchical_backup.py`
@@ -397,7 +397,7 @@ random.randint(40, 60)`(20 step 폭), `obstacle_start = random.randint(30, 50)`(
   `PDF_VS_CODE.md`를 기준 문서로 참고하십시오. **가장 큰 차이 3개**:
   (1) 계산시간류 전부(1.091ms vs 재계산 1.88ms 등, 하드코딩), (2) Table 7·11 "Teacher" 속도·조향각
   통계가 실제 teacher 데이터(속도 상수 0.5)보다 student 데이터와 훨씬 가까움(원인 판정불가),
-  (3) "장애물 위치 0.5~2.0m 균등분포"라는 서술이 실제로는 결정론적 스크립트 구간에 각 구간
+  (3) "장애물 위치 0.5–2.0m 균등분포"라는 서술이 실제로는 결정론적 스크립트 구간에 각 구간
   길이만 무작위인 front_gap 주입 메커니즘을 가리키는 것으로 추정됨(초기속도 범위는 여전히 불일치).
 - **한 줄 요약**: 논문 VI장의 수치는 **물리 폐루프(장애물을 실제로 감지·회피하는 kinematic
   시뮬레이션) 검증이 아니라, FSM 상태 구간을 미리 스크립트로 짜 놓고 센서값(front_gap/y/v)을
@@ -416,5 +416,5 @@ random.randint(40, 60)`(20 step 폭), `obstacle_start = random.randint(30, 50)`(
 - `folder_backup.zip` 964개 전수조사 → 하지 않음. 표적 조사(8절)로 필요한 사실은 확인됨.
 
 **남은 항목**:
-- `legacy_2025/run_simulation.py`의 초기속도 범위(0.4~0.6)를 논문 서술(0.3~0.5)에 맞출지, "실험 당시
+- `legacy_2025/run_simulation.py`의 초기속도 범위(0.4–0.6)를 논문 서술(0.3–0.5)에 맞출지, "실험 당시
   코드"(이제 확인됨, 7·8절)의 값을 그대로 채택할지 — 2단계-A 설정값 결정표에서 다룰 사항.

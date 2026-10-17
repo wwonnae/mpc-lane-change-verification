@@ -78,7 +78,7 @@
 | `final_hierarchical_backup.py`(루트, 100,254B) | B | **유지, 5단계에 개명 예정**(§4-1) | 논문 제출 이후에도 계속 수정되는 활성 버전 — `code_backup/`의 동명 A버전과 이름 충돌해 `final_hierarchical_backup_modified_2026.py`로 개명 확정 |
 | `analysis.py` | D-채택 | **유지** | 논문 그림1(`trajectory_comparison.png`) 생성 |
 | `test_teacher_mpc.py` | C | **backup 이동** | 사후 디버그, 하드코딩 경로가 다른 계정(`C:\Users\user\...`), 논문과 무관한 시나리오 |
-| `justify_mpc.py` | D-미채택 | **backup 이동** | 논문 그림1~3 어디에도 없는 서브플롯, 수치 하드코딩 |
+| `justify_mpc.py` | D-미채택 | **backup 이동** | 논문 그림1–3 어디에도 없는 서브플롯, 수치 하드코딩 |
 | `constraint_analysis.py` | D-미채택 | **backup 이동** | AI 툴 업로드 경로 하드코딩(`/mnt/user-data/uploads`), 논문은 Table12를 텍스트로만 제시 |
 | `compare_mpc_student.py` | D-미채택 | **backup 이동** | 논문 그림과 불일치. **이번 세션(2026-09-18) 재확인**: 실제 OSQP를 쓰지 않는 P제어 placeholder(`self.solver=None`), 10차원 입력(현재 9차원 모델과 불일치) — 논문 Table 8/16을 만든 스크립트가 아님(`RESULT_STUDENT.md` §6-4) |
 | `sensitivity_analysis.py` | E | **backup 이동** | 논문 본문 언급 없음 |

@@ -2,6 +2,7 @@
 import json
 
 from fig_common import FIG_DIR
+from build_report import gfm_safe_tildes
 
 NOTES = {
     "F1_baseline_trajectories": "궤적은 후륜 중심. 충돌 패널(b)만 가로·세로 같은 축척으로 충돌 스텝의 차체(L×B, 헤딩 회전 반영)를 그림 — "
@@ -44,7 +45,7 @@ def main():
                   f"- 대체 대상: {m['replaces']}",
                   f"- 생성: `{m['script']}`",
                   f"- 비고: {NOTES.get(k, m.get('note', ''))}", ""]
-    (FIG_DIR / "CAPTIONS.md").write_text("\n".join(lines), encoding="utf-8")
+    (FIG_DIR / "CAPTIONS.md").write_text(gfm_safe_tildes("\n".join(lines)), encoding="utf-8")
     print("CAPTIONS.md", len(order))
 
 
