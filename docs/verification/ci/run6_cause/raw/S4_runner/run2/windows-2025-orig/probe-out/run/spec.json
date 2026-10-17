@@ -1,0 +1,22 @@
+{
+ "exp": "ci_orig_none",
+ "out_dir": "probe-out/run",
+ "batch_size": 10,
+ "block": 1,
+ "settle_s": 0,
+ "arms": [
+  {
+   "name": "orig",
+   "root": ".",
+   "targets": [
+    "i5",
+    "i4",
+    "base"
+   ],
+   "probe": true,
+   "load_k": 0,
+   "trials": 1500,
+   "keep_full_first": 2
+  }
+ ]
+}

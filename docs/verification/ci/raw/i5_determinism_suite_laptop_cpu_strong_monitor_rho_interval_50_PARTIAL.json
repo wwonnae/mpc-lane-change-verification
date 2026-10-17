@@ -1,0 +1,122 @@
+{
+ "purpose": "CI run #6 비결정 실패 — 전체 suite 반복, 변형 rho_interval_50(adaptive_rho_interval=50 명시), 강한 부하(run F)",
+ "status": "부분 실행(사용자가 강제 종료, 30회 중 15회 완료)",
+ "note": "2026-10-13 사용자가 노트북 종료를 위해 작업 관리자에서 python 프로세스를 강제 종료. 스크립트가 끝에서 JSON을 쓰는 구조라 JSON이 없어, 콘솔 로그(logs/i5suite5_rho50.log)에서 옮겼다. pc_state·monitor 상세(테스트별 발동)는 없음. 강한 부하 조건(CPU 100%)은 같은 스크립트의 앞선 실행과 같은 방식이나 이 실행의 pc_state는 기록되지 않음.",
+ "host": "DESKTOP-MDCKRJS",
+ "git": "4c0c503797fd5ee6f4f1bf8bf152186a149fd581",
+ "variant": "rho_interval_50",
+ "load": "cpu_strong",
+ "n_planned": 30,
+ "n_completed": 15,
+ "n_target_failed": 0,
+ "n_any_failed": 0,
+ "n_time_limit_hits_recorded": 2,
+ "runs": [
+  {
+   "trial": 0,
+   "tail": "340 passed, 6 warnings in 45.80s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 1,
+   "tail": "340 passed, 6 warnings in 44.27s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 2,
+   "tail": "340 passed, 6 warnings in 46.21s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 3,
+   "tail": "340 passed, 6 warnings in 44.94s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 4,
+   "tail": "340 passed, 6 warnings in 51.16s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 1
+  },
+  {
+   "trial": 5,
+   "tail": "340 passed, 6 warnings in 41.15s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 6,
+   "tail": "340 passed, 6 warnings in 49.81s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 7,
+   "tail": "340 passed, 6 warnings in 45.27s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 8,
+   "tail": "340 passed, 6 warnings in 46.36s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 1
+  },
+  {
+   "trial": 9,
+   "tail": "340 passed, 6 warnings in 42.42s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 10,
+   "tail": "340 passed, 6 warnings in 35.88s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 11,
+   "tail": "340 passed, 6 warnings in 45.62s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 12,
+   "tail": "340 passed, 6 warnings in 49.45s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 13,
+   "tail": "340 passed, 6 warnings in 43.64s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  },
+  {
+   "trial": 14,
+   "tail": "340 passed, 6 warnings in 49.30s",
+   "target_failed": false,
+   "any_failed": false,
+   "time_limit_hits": 0
+  }
+ ],
+ "source_log": "logs/i5suite5_rho50.log"
+}

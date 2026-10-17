@@ -1,0 +1,37 @@
+{
+  "n_total": 12016,
+  "mae_vs_old_mpc_deg": 21.951641142169276,
+  "mae_vs_baseline_mpc_deg": 9.698863672636854,
+  "ood_fraction_overall": 0.016061917443408787,
+  "per_state": {
+    "EVADE_L": {
+      "n": 5229,
+      "mae_vs_old_mpc_deg": 27.917085889403435,
+      "mae_vs_baseline_mpc_deg": 7.930305013497291,
+      "old_mpc_solved_fraction": 1.0,
+      "ood_fraction": 0.0011474469305794606
+    },
+    "KEEP_L1": {
+      "n": 468,
+      "mae_vs_old_mpc_deg": 26.234644054347637,
+      "mae_vs_baseline_mpc_deg": 0.17879909273742092,
+      "old_mpc_solved_fraction": 1.0,
+      "ood_fraction": 0.0
+    },
+    "RETURN_TO_L2": {
+      "n": 5344,
+      "mae_vs_old_mpc_deg": 18.442606931610705,
+      "mae_vs_baseline_mpc_deg": 13.137049082732956,
+      "old_mpc_solved_fraction": 1.0,
+      "ood_fraction": 0.0
+    },
+    "KEEP_L2": {
+      "n": 975,
+      "mae_vs_old_mpc_deg": 7.135767167849175,
+      "mae_vs_baseline_mpc_deg": 4.908628411590891,
+      "old_mpc_solved_fraction": 1.0,
+      "ood_fraction": 0.19179487179487179
+    }
+  },
+  "note": "1순위=옛 MPC(code_backup 12-04) 대비, 2순위(참고)=baseline MPC 대비(baseline은 REQ-MPC-02/03a/04/05 등에서 옛 코드와 명세 차이가 있어 '제어기 차이'가 섞임, SPEC_VS_OLDCODE.md). 논문 Table15(MAE 1.20도)와는 다른 데이터셋 대체 측정이라 직접 비교하지 않음."
+}

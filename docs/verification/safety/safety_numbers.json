@@ -1,0 +1,3074 @@
+{
+ "sources": {
+  "closed_loop": "thesis_v2/results/anomaly/20261012_142758_3층PC109_it3_closed_loop_eval",
+  "offline": "thesis_v2/results/anomaly/20261002_145638_3층PC108_it3_eval_offline_eval",
+  "dt": "thesis_v2/baseline/config.py:9",
+  "failure_outcomes": "thesis_v2/anomaly/closed_loop.py:295",
+  "harmful_kinds": "thesis_v2/anomaly/closed_loop.py:296",
+  "harmless_kinds": "thesis_v2/anomaly/closed_loop.py:297",
+  "backlog_13": "repro/docs/IMPROVEMENT_BACKLOG.md:210",
+  "backlog_14": "repro/docs/IMPROVEMENT_BACKLOG.md:226",
+  "seeds": [
+   5000,
+   5099
+  ],
+  "thresholds": {
+   "A": 9.210921221467048,
+   "B1": 0.6484835101813881,
+   "B2": 0.4636532962322235,
+   "HYBRID": 0.6062505529980149
+  }
+ },
+ "dt": 0.05,
+ "failure_outcomes": [
+  "이탈",
+  "충돌"
+ ],
+ "harmful": [
+  "ir_stuck",
+  "left_clear_stuck",
+  "lidar_dropout",
+  "lidar_freeze",
+  "steer_delay",
+  "steer_stuck"
+ ],
+ "harmless": [
+  "ir_dropout",
+  "lidar_spike",
+  "right_clear_stuck"
+ ],
+ "severity_scale": [
+  {
+   "level": 4,
+   "name": "충돌",
+   "outcomes": [
+    "충돌"
+   ]
+  },
+  {
+   "level": 3,
+   "name": "이탈",
+   "outcomes": [
+    "이탈"
+   ]
+  },
+  {
+   "level": 2,
+   "name": "미완료(타임아웃·미정착·관찰 중 상태 이탈)",
+   "outcomes": [
+    "관찰 중 상태 이탈",
+    "미정착",
+    "타임아웃"
+   ]
+  },
+  {
+   "level": 1,
+   "name": "정지(SAFE_STOP·탐지 정지 — 안전 상태이나 임무 미완료)",
+   "outcomes": [
+    "SAFE_STOP",
+    "탐지 정지"
+   ]
+  },
+  {
+   "level": 0,
+   "name": "성공",
+   "outcomes": [
+    "성공"
+   ]
+  }
+ ],
+ "premise": {
+  "P1_A": {
+   "no_alarm_rows": 232,
+   "match": 232,
+   "mismatch": []
+  },
+  "P1_B1": {
+   "no_alarm_rows": 1080,
+   "match": 1080,
+   "mismatch": []
+  },
+  "P1_B2": {
+   "no_alarm_rows": 409,
+   "match": 409,
+   "mismatch": []
+  },
+  "P1_HYBRID": {
+   "no_alarm_rows": 909,
+   "match": 909,
+   "mismatch": []
+  }
+ },
+ "effects": {
+  "ir_stuck": {
+   "n": 100,
+   "outcome_counts": {
+    "성공": 75,
+    "이탈": 25
+   },
+   "collision": 0,
+   "departure": 25,
+   "not_completed": 25,
+   "worst_severity": 3,
+   "severity_hist": {
+    "4": 0,
+    "3": 25,
+    "2": 0,
+    "1": 0,
+    "0": 75
+   },
+   "hazard_seeds": null
+  },
+  "left_clear_stuck": {
+   "n": 100,
+   "outcome_counts": {
+    "이탈": 86,
+    "충돌": 14
+   },
+   "collision": 14,
+   "departure": 86,
+   "not_completed": 100,
+   "worst_severity": 4,
+   "severity_hist": {
+    "4": 14,
+    "3": 86,
+    "2": 0,
+    "1": 0,
+    "0": 0
+   },
+   "hazard_seeds": null
+  },
+  "lidar_dropout": {
+   "n": 100,
+   "outcome_counts": {
+    "SAFE_STOP": 1,
+    "성공": 55,
+    "이탈": 10,
+    "충돌": 34
+   },
+   "collision": 34,
+   "departure": 10,
+   "not_completed": 45,
+   "worst_severity": 4,
+   "severity_hist": {
+    "4": 34,
+    "3": 10,
+    "2": 0,
+    "1": 1,
+    "0": 55
+   },
+   "hazard_seeds": null
+  },
+  "lidar_freeze": {
+   "n": 100,
+   "outcome_counts": {
+    "충돌": 100
+   },
+   "collision": 100,
+   "departure": 0,
+   "not_completed": 100,
+   "worst_severity": 4,
+   "severity_hist": {
+    "4": 100,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 0
+   },
+   "hazard_seeds": null
+  },
+  "steer_delay": {
+   "n": 100,
+   "outcome_counts": {
+    "SAFE_STOP": 1,
+    "미정착": 1,
+    "성공": 77,
+    "이탈": 10,
+    "충돌": 11
+   },
+   "collision": 11,
+   "departure": 10,
+   "not_completed": 23,
+   "worst_severity": 4,
+   "severity_hist": {
+    "4": 11,
+    "3": 10,
+    "2": 1,
+    "1": 1,
+    "0": 77
+   },
+   "hazard_seeds": null
+  },
+  "steer_stuck": {
+   "n": 100,
+   "outcome_counts": {
+    "SAFE_STOP": 1,
+    "성공": 61,
+    "이탈": 38
+   },
+   "collision": 0,
+   "departure": 38,
+   "not_completed": 39,
+   "worst_severity": 3,
+   "severity_hist": {
+    "4": 0,
+    "3": 38,
+    "2": 0,
+    "1": 1,
+    "0": 61
+   },
+   "hazard_seeds": null
+  },
+  "ir_dropout": {
+   "n": 100,
+   "outcome_counts": {
+    "성공": 100
+   },
+   "collision": 0,
+   "departure": 0,
+   "not_completed": 0,
+   "worst_severity": 0,
+   "severity_hist": {
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 100
+   },
+   "hazard_seeds": null
+  },
+  "lidar_spike": {
+   "n": 100,
+   "outcome_counts": {
+    "성공": 100
+   },
+   "collision": 0,
+   "departure": 0,
+   "not_completed": 0,
+   "worst_severity": 0,
+   "severity_hist": {
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 100
+   },
+   "hazard_seeds": null
+  },
+  "right_clear_stuck": {
+   "n": 100,
+   "outcome_counts": {
+    "성공": 100
+   },
+   "collision": 0,
+   "departure": 0,
+   "not_completed": 0,
+   "worst_severity": 0,
+   "severity_hist": {
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 100
+   },
+   "hazard_seeds": null
+  },
+  "none": {
+   "n": 100,
+   "outcome_counts": {
+    "성공": 100
+   },
+   "collision": 0,
+   "departure": 0,
+   "not_completed": 0,
+   "worst_severity": 0,
+   "severity_hist": {
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 100
+   },
+   "hazard_seeds": []
+  },
+  "none_leftobs": {
+   "n": 100,
+   "outcome_counts": {
+    "SAFE_STOP": 99,
+    "충돌": 1
+   },
+   "collision": 1,
+   "departure": 0,
+   "not_completed": 100,
+   "worst_severity": 4,
+   "severity_hist": {
+    "4": 1,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 99
+   },
+   "hazard_seeds": [
+    5011
+   ]
+  }
+ },
+ "offline": {
+  "A": {
+   "ir_dropout": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 2,
+     "p50": 2.0,
+     "max": 16
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "ir_stuck": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 0,
+     "p50": 1.0,
+     "max": 79
+    },
+    "alarm_before_onset": 0,
+    "failures": 23,
+    "alarm_before_failure": 23
+   },
+   "left_clear_stuck": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 32,
+     "p50": 55.5,
+     "max": 90
+    },
+    "alarm_before_onset": 0,
+    "failures": 100,
+    "alarm_before_failure": 100
+   },
+   "lidar_dropout": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 2,
+     "p50": 2.0,
+     "max": 2
+    },
+    "alarm_before_onset": 0,
+    "failures": 52,
+    "alarm_before_failure": 52
+   },
+   "lidar_freeze": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 5,
+     "p50": 7.0,
+     "max": 7
+    },
+    "alarm_before_onset": 0,
+    "failures": 100,
+    "alarm_before_failure": 100
+   },
+   "lidar_spike": {
+    "started": 100,
+    "detected": 69,
+    "ci95": [
+     59.4,
+     77.2
+    ],
+    "delay_steps": {
+     "n": 69,
+     "min": 0,
+     "p50": 0,
+     "max": 2
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "right_clear_stuck": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 1,
+     "p50": 2.0,
+     "max": 5
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "steer_delay": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 1,
+     "p50": 5.0,
+     "max": 53
+    },
+    "alarm_before_onset": 0,
+    "failures": 16,
+    "alarm_before_failure": 16
+   },
+   "steer_stuck": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 1,
+     "p50": 2.0,
+     "max": 4
+    },
+    "alarm_before_onset": 0,
+    "failures": 37,
+    "alarm_before_failure": 37
+   },
+   "none": {
+    "n": 100,
+    "false_alarm_episodes": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ]
+   },
+   "none_leftobs": {
+    "n": 100,
+    "false_alarm_episodes": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ]
+   }
+  },
+  "B2": {
+   "ir_dropout": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 3,
+     "p50": 97.0,
+     "max": 130
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "ir_stuck": {
+    "started": 100,
+    "detected": 91,
+    "ci95": [
+     83.8,
+     95.2
+    ],
+    "delay_steps": {
+     "n": 91,
+     "min": 19,
+     "p50": 48,
+     "max": 97
+    },
+    "alarm_before_onset": 0,
+    "failures": 23,
+    "alarm_before_failure": 14
+   },
+   "left_clear_stuck": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 47,
+     "p50": 64.0,
+     "max": 97
+    },
+    "alarm_before_onset": 0,
+    "failures": 100,
+    "alarm_before_failure": 100
+   },
+   "lidar_dropout": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 1,
+     "p50": 2.0,
+     "max": 3
+    },
+    "alarm_before_onset": 0,
+    "failures": 52,
+    "alarm_before_failure": 52
+   },
+   "lidar_freeze": {
+    "started": 100,
+    "detected": 20,
+    "ci95": [
+     13.3,
+     28.9
+    ],
+    "delay_steps": {
+     "n": 20,
+     "min": 10,
+     "p50": 28.0,
+     "max": 75
+    },
+    "alarm_before_onset": 0,
+    "failures": 100,
+    "alarm_before_failure": 20
+   },
+   "lidar_spike": {
+    "started": 100,
+    "detected": 72,
+    "ci95": [
+     62.5,
+     79.9
+    ],
+    "delay_steps": {
+     "n": 72,
+     "min": 0,
+     "p50": 0.0,
+     "max": 8
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "right_clear_stuck": {
+    "started": 100,
+    "detected": 6,
+    "ci95": [
+     2.8,
+     12.5
+    ],
+    "delay_steps": {
+     "n": 6,
+     "min": 6,
+     "p50": 7.5,
+     "max": 10
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "steer_delay": {
+    "started": 100,
+    "detected": 100,
+    "ci95": [
+     96.3,
+     100.0
+    ],
+    "delay_steps": {
+     "n": 100,
+     "min": 9,
+     "p50": 23.0,
+     "max": 101
+    },
+    "alarm_before_onset": 0,
+    "failures": 16,
+    "alarm_before_failure": 16
+   },
+   "steer_stuck": {
+    "started": 100,
+    "detected": 97,
+    "ci95": [
+     91.5,
+     99.0
+    ],
+    "delay_steps": {
+     "n": 97,
+     "min": 4,
+     "p50": 9,
+     "max": 22
+    },
+    "alarm_before_onset": 0,
+    "failures": 37,
+    "alarm_before_failure": 37
+   },
+   "none": {
+    "n": 100,
+    "false_alarm_episodes": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ]
+   },
+   "none_leftobs": {
+    "n": 100,
+    "false_alarm_episodes": 6,
+    "ci95": [
+     2.8,
+     12.5
+    ]
+   }
+  },
+  "HYBRID": {
+   "ir_dropout": {
+    "started": 100,
+    "detected": 2,
+    "ci95": [
+     0.6,
+     7.0
+    ],
+    "delay_steps": {
+     "n": 2,
+     "min": 22,
+     "p50": 39.0,
+     "max": 56
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "ir_stuck": {
+    "started": 100,
+    "detected": 10,
+    "ci95": [
+     5.5,
+     17.4
+    ],
+    "delay_steps": {
+     "n": 10,
+     "min": 15,
+     "p50": 76.0,
+     "max": 103
+    },
+    "alarm_before_onset": 0,
+    "failures": 23,
+    "alarm_before_failure": 1
+   },
+   "left_clear_stuck": {
+    "started": 100,
+    "detected": 15,
+    "ci95": [
+     9.3,
+     23.3
+    ],
+    "delay_steps": {
+     "n": 15,
+     "min": 19,
+     "p50": 65,
+     "max": 80
+    },
+    "alarm_before_onset": 0,
+    "failures": 100,
+    "alarm_before_failure": 15
+   },
+   "lidar_dropout": {
+    "started": 100,
+    "detected": 1,
+    "ci95": [
+     0.2,
+     5.4
+    ],
+    "delay_steps": {
+     "n": 1,
+     "min": 53,
+     "p50": 53,
+     "max": 53
+    },
+    "alarm_before_onset": 0,
+    "failures": 52,
+    "alarm_before_failure": 1
+   },
+   "lidar_freeze": {
+    "started": 100,
+    "detected": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ],
+    "delay_steps": null,
+    "alarm_before_onset": 0,
+    "failures": 100,
+    "alarm_before_failure": 0
+   },
+   "lidar_spike": {
+    "started": 100,
+    "detected": 6,
+    "ci95": [
+     2.8,
+     12.5
+    ],
+    "delay_steps": {
+     "n": 6,
+     "min": 0,
+     "p50": 5.5,
+     "max": 12
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "right_clear_stuck": {
+    "started": 100,
+    "detected": 20,
+    "ci95": [
+     13.3,
+     28.9
+    ],
+    "delay_steps": {
+     "n": 20,
+     "min": 0,
+     "p50": 66.5,
+     "max": 75
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "steer_delay": {
+    "started": 100,
+    "detected": 86,
+    "ci95": [
+     77.9,
+     91.5
+    ],
+    "delay_steps": {
+     "n": 86,
+     "min": 18,
+     "p50": 48.5,
+     "max": 95
+    },
+    "alarm_before_onset": 0,
+    "failures": 16,
+    "alarm_before_failure": 15
+   },
+   "steer_stuck": {
+    "started": 100,
+    "detected": 52,
+    "ci95": [
+     42.3,
+     61.5
+    ],
+    "delay_steps": {
+     "n": 52,
+     "min": 1,
+     "p50": 17.5,
+     "max": 29
+    },
+    "alarm_before_onset": 1,
+    "failures": 37,
+    "alarm_before_failure": 30
+   },
+   "none": {
+    "n": 100,
+    "false_alarm_episodes": 2,
+    "ci95": [
+     0.6,
+     7.0
+    ]
+   },
+   "none_leftobs": {
+    "n": 100,
+    "false_alarm_episodes": 5,
+    "ci95": [
+     2.2,
+     11.2
+    ]
+   }
+  },
+  "B1": {
+   "ir_dropout": {
+    "started": 100,
+    "detected": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ],
+    "delay_steps": null,
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "ir_stuck": {
+    "started": 100,
+    "detected": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ],
+    "delay_steps": null,
+    "alarm_before_onset": 0,
+    "failures": 23,
+    "alarm_before_failure": 0
+   },
+   "left_clear_stuck": {
+    "started": 100,
+    "detected": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ],
+    "delay_steps": null,
+    "alarm_before_onset": 0,
+    "failures": 100,
+    "alarm_before_failure": 0
+   },
+   "lidar_dropout": {
+    "started": 100,
+    "detected": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ],
+    "delay_steps": null,
+    "alarm_before_onset": 0,
+    "failures": 52,
+    "alarm_before_failure": 0
+   },
+   "lidar_freeze": {
+    "started": 100,
+    "detected": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ],
+    "delay_steps": null,
+    "alarm_before_onset": 0,
+    "failures": 100,
+    "alarm_before_failure": 0
+   },
+   "lidar_spike": {
+    "started": 100,
+    "detected": 1,
+    "ci95": [
+     0.2,
+     5.4
+    ],
+    "delay_steps": {
+     "n": 1,
+     "min": 0,
+     "p50": 0,
+     "max": 0
+    },
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "right_clear_stuck": {
+    "started": 100,
+    "detected": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ],
+    "delay_steps": null,
+    "alarm_before_onset": 0,
+    "failures": 0,
+    "alarm_before_failure": 0
+   },
+   "steer_delay": {
+    "started": 100,
+    "detected": 3,
+    "ci95": [
+     1.0,
+     8.5
+    ],
+    "delay_steps": {
+     "n": 3,
+     "min": 40,
+     "p50": 77,
+     "max": 92
+    },
+    "alarm_before_onset": 0,
+    "failures": 16,
+    "alarm_before_failure": 1
+   },
+   "steer_stuck": {
+    "started": 100,
+    "detected": 4,
+    "ci95": [
+     1.6,
+     9.8
+    ],
+    "delay_steps": {
+     "n": 4,
+     "min": 18,
+     "p50": 20.0,
+     "max": 22
+    },
+    "alarm_before_onset": 0,
+    "failures": 37,
+    "alarm_before_failure": 2
+   },
+   "none": {
+    "n": 100,
+    "false_alarm_episodes": 0,
+    "ci95": [
+     0.0,
+     3.7
+    ]
+   },
+   "none_leftobs": {
+    "n": 100,
+    "false_alarm_episodes": 4,
+    "ci95": [
+     1.6,
+     9.8
+    ]
+   }
+  }
+ },
+ "closed": {
+  "A": {
+   "ir_stuck": {
+    "p0_hazard": 25,
+    "p1_hazard": 0,
+    "prevented": 25,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 0
+   },
+   "left_clear_stuck": {
+    "p0_hazard": 100,
+    "p1_hazard": 0,
+    "prevented": 100,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 1
+   },
+   "lidar_dropout": {
+    "p0_hazard": 44,
+    "p1_hazard": 0,
+    "prevented": 44,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 1
+   },
+   "lidar_freeze": {
+    "p0_hazard": 100,
+    "p1_hazard": 0,
+    "prevented": 100,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 1
+   },
+   "steer_delay": {
+    "p0_hazard": 21,
+    "p1_hazard": 0,
+    "prevented": 21,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 0
+   },
+   "steer_stuck": {
+    "p0_hazard": 38,
+    "p1_hazard": 0,
+    "prevented": 38,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 1
+   },
+   "ir_dropout": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 100
+   },
+   "lidar_spike": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 66,
+    "unnecessary_stop": 66
+   },
+   "right_clear_stuck": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 100
+   },
+   "none": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 1,
+    "unnecessary_stop": 1
+   },
+   "none_leftobs": {
+    "p0_hazard": 1,
+    "p1_hazard": 1,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 1,
+    "unnecessary_stop": 1
+   }
+  },
+  "B2": {
+   "ir_stuck": {
+    "p0_hazard": 25,
+    "p1_hazard": 12,
+    "prevented": 13,
+    "new_hazard": 0,
+    "detect_stop": 88,
+    "unnecessary_stop": 0
+   },
+   "left_clear_stuck": {
+    "p0_hazard": 100,
+    "p1_hazard": 0,
+    "prevented": 100,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 0
+   },
+   "lidar_dropout": {
+    "p0_hazard": 44,
+    "p1_hazard": 0,
+    "prevented": 44,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 0
+   },
+   "lidar_freeze": {
+    "p0_hazard": 100,
+    "p1_hazard": 67,
+    "prevented": 33,
+    "new_hazard": 0,
+    "detect_stop": 33,
+    "unnecessary_stop": 0
+   },
+   "steer_delay": {
+    "p0_hazard": 21,
+    "p1_hazard": 0,
+    "prevented": 21,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 0
+   },
+   "steer_stuck": {
+    "p0_hazard": 38,
+    "p1_hazard": 0,
+    "prevented": 38,
+    "new_hazard": 0,
+    "detect_stop": 93,
+    "unnecessary_stop": 0
+   },
+   "ir_dropout": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 100,
+    "unnecessary_stop": 100
+   },
+   "lidar_spike": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 66,
+    "unnecessary_stop": 66
+   },
+   "right_clear_stuck": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 7,
+    "unnecessary_stop": 7
+   },
+   "none": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 1,
+    "unnecessary_stop": 1
+   },
+   "none_leftobs": {
+    "p0_hazard": 1,
+    "p1_hazard": 1,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 3,
+    "unnecessary_stop": 3
+   }
+  },
+  "HYBRID": {
+   "ir_stuck": {
+    "p0_hazard": 25,
+    "p1_hazard": 25,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 6,
+    "unnecessary_stop": 0
+   },
+   "left_clear_stuck": {
+    "p0_hazard": 100,
+    "p1_hazard": 89,
+    "prevented": 11,
+    "new_hazard": 0,
+    "detect_stop": 11,
+    "unnecessary_stop": 0
+   },
+   "lidar_dropout": {
+    "p0_hazard": 44,
+    "p1_hazard": 41,
+    "prevented": 3,
+    "new_hazard": 0,
+    "detect_stop": 7,
+    "unnecessary_stop": 0
+   },
+   "lidar_freeze": {
+    "p0_hazard": 100,
+    "p1_hazard": 100,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "steer_delay": {
+    "p0_hazard": 21,
+    "p1_hazard": 3,
+    "prevented": 18,
+    "new_hazard": 0,
+    "detect_stop": 89,
+    "unnecessary_stop": 0
+   },
+   "steer_stuck": {
+    "p0_hazard": 38,
+    "p1_hazard": 6,
+    "prevented": 32,
+    "new_hazard": 0,
+    "detect_stop": 47,
+    "unnecessary_stop": 0
+   },
+   "ir_dropout": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 1,
+    "unnecessary_stop": 1
+   },
+   "lidar_spike": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 9,
+    "unnecessary_stop": 9
+   },
+   "right_clear_stuck": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 19,
+    "unnecessary_stop": 19
+   },
+   "none": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "none_leftobs": {
+    "p0_hazard": 1,
+    "p1_hazard": 1,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 2,
+    "unnecessary_stop": 2
+   }
+  },
+  "B1": {
+   "ir_stuck": {
+    "p0_hazard": 25,
+    "p1_hazard": 25,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "left_clear_stuck": {
+    "p0_hazard": 100,
+    "p1_hazard": 100,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "lidar_dropout": {
+    "p0_hazard": 44,
+    "p1_hazard": 43,
+    "prevented": 1,
+    "new_hazard": 0,
+    "detect_stop": 2,
+    "unnecessary_stop": 0
+   },
+   "lidar_freeze": {
+    "p0_hazard": 100,
+    "p1_hazard": 100,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "steer_delay": {
+    "p0_hazard": 21,
+    "p1_hazard": 20,
+    "prevented": 1,
+    "new_hazard": 0,
+    "detect_stop": 2,
+    "unnecessary_stop": 0
+   },
+   "steer_stuck": {
+    "p0_hazard": 38,
+    "p1_hazard": 31,
+    "prevented": 7,
+    "new_hazard": 0,
+    "detect_stop": 11,
+    "unnecessary_stop": 0
+   },
+   "ir_dropout": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "lidar_spike": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "right_clear_stuck": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "none": {
+    "p0_hazard": 0,
+    "p1_hazard": 0,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 0,
+    "unnecessary_stop": 0
+   },
+   "none_leftobs": {
+    "p0_hazard": 1,
+    "p1_hazard": 1,
+    "prevented": 0,
+    "new_hazard": 0,
+    "detect_stop": 3,
+    "unnecessary_stop": 3
+   }
+  }
+ },
+ "ftti": {
+  "ir_stuck": {
+   "p0_hazard": 25,
+   "hazard_before_onset": 0,
+   "steps": {
+    "n": 25,
+    "min": 15,
+    "p50": 59,
+    "max": 111
+   },
+   "first_hazard": 5093
+  },
+  "left_clear_stuck": {
+   "p0_hazard": 100,
+   "hazard_before_onset": 0,
+   "steps": {
+    "n": 100,
+    "min": 54,
+    "p50": 73.0,
+    "max": 108
+   },
+   "first_hazard": 5078
+  },
+  "lidar_dropout": {
+   "p0_hazard": 44,
+   "hazard_before_onset": 0,
+   "steps": {
+    "n": 44,
+    "min": 53,
+    "p50": 56.0,
+    "max": 77
+   },
+   "first_hazard": 5035
+  },
+  "lidar_freeze": {
+   "p0_hazard": 100,
+   "hazard_before_onset": 0,
+   "steps": {
+    "n": 100,
+    "min": 53,
+    "p50": 67.0,
+    "max": 102
+   },
+   "first_hazard": 5000
+  },
+  "steer_delay": {
+   "p0_hazard": 21,
+   "hazard_before_onset": 0,
+   "steps": {
+    "n": 21,
+    "min": 56,
+    "p50": 76,
+    "max": 99
+   },
+   "first_hazard": 5039
+  },
+  "steer_stuck": {
+   "p0_hazard": 38,
+   "hazard_before_onset": 0,
+   "steps": {
+    "n": 38,
+    "min": 20,
+    "p50": 25.0,
+    "max": 68
+   },
+   "first_hazard": 5071
+  },
+  "ir_dropout": {
+   "p0_hazard": 0,
+   "hazard_before_onset": 0,
+   "steps": null,
+   "first_hazard": null
+  },
+  "lidar_spike": {
+   "p0_hazard": 0,
+   "hazard_before_onset": 0,
+   "steps": null,
+   "first_hazard": null
+  },
+  "right_clear_stuck": {
+   "p0_hazard": 0,
+   "hazard_before_onset": 0,
+   "steps": null,
+   "first_hazard": null
+  }
+ },
+ "fdti": {
+  "ir_stuck": {
+   "P1_A": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 0,
+     "p50": 1.0,
+     "max": 78
+    },
+    "frti": {
+     "stop": {
+      "n": 100,
+      "stopped": 100,
+      "steps": {
+       "n": 100,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 0,
+     "p50": 1.0,
+     "max": 78
+    },
+    "frti": {
+     "override_ey": {
+      "n": 99,
+      "stopped": 0,
+      "steps": null,
+      "other_outcomes": {
+       "성공": 99
+      }
+     },
+     "stop": {
+      "n": 1,
+      "stopped": 1,
+      "steps": {
+       "n": 1,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 88,
+    "alarm_before_onset": 0,
+    "no_alarm": 12,
+    "steps": {
+     "n": 88,
+     "min": 1,
+     "p50": 47.5,
+     "max": 91
+    },
+    "frti": {
+     "stop": {
+      "n": 88,
+      "stopped": 88,
+      "steps": {
+       "n": 88,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 6,
+    "alarm_before_onset": 0,
+    "no_alarm": 94,
+    "steps": {
+     "n": 6,
+     "min": 74,
+     "p50": 83.5,
+     "max": 96
+    },
+    "frti": {
+     "stop": {
+      "n": 6,
+      "stopped": 6,
+      "steps": {
+       "n": 6,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B1": {
+    "alarm_after_onset": 0,
+    "alarm_before_onset": 0,
+    "no_alarm": 100,
+    "steps": null,
+    "frti": {}
+   }
+  },
+  "left_clear_stuck": {
+   "P1_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 30,
+     "p50": 55,
+     "max": 89
+    },
+    "frti": {
+     "stop": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 30,
+     "p50": 55,
+     "max": 89
+    },
+    "frti": {
+     "override_lc": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 9,
+       "max": 24
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 19,
+     "p50": 64.0,
+     "max": 99
+    },
+    "frti": {
+     "stop": {
+      "n": 100,
+      "stopped": 100,
+      "steps": {
+       "n": 100,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 11,
+    "alarm_before_onset": 0,
+    "no_alarm": 89,
+    "steps": {
+     "n": 11,
+     "min": 57,
+     "p50": 68,
+     "max": 94
+    },
+    "frti": {
+     "stop": {
+      "n": 11,
+      "stopped": 11,
+      "steps": {
+       "n": 11,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B1": {
+    "alarm_after_onset": 0,
+    "alarm_before_onset": 0,
+    "no_alarm": 100,
+    "steps": null,
+    "frti": {}
+   }
+  },
+  "lidar_dropout": {
+   "P1_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 2,
+     "p50": 2,
+     "max": 2
+    },
+    "frti": {
+     "stop": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 2,
+     "p50": 2,
+     "max": 2
+    },
+    "frti": {
+     "stop": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 1,
+     "p50": 2.0,
+     "max": 3
+    },
+    "frti": {
+     "stop": {
+      "n": 100,
+      "stopped": 100,
+      "steps": {
+       "n": 100,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 7,
+    "alarm_before_onset": 0,
+    "no_alarm": 93,
+    "steps": {
+     "n": 7,
+     "min": 36,
+     "p50": 61,
+     "max": 67
+    },
+    "frti": {
+     "stop": {
+      "n": 7,
+      "stopped": 7,
+      "steps": {
+       "n": 7,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B1": {
+    "alarm_after_onset": 2,
+    "alarm_before_onset": 0,
+    "no_alarm": 98,
+    "steps": {
+     "n": 2,
+     "min": 57,
+     "p50": 62.0,
+     "max": 67
+    },
+    "frti": {
+     "stop": {
+      "n": 2,
+      "stopped": 2,
+      "steps": {
+       "n": 2,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   }
+  },
+  "lidar_freeze": {
+   "P1_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 5,
+     "p50": 7,
+     "max": 7
+    },
+    "frti": {
+     "stop": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 5,
+     "p50": 7,
+     "max": 7
+    },
+    "frti": {
+     "stop": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 33,
+    "alarm_before_onset": 0,
+    "no_alarm": 67,
+    "steps": {
+     "n": 33,
+     "min": 6,
+     "p50": 27,
+     "max": 74
+    },
+    "frti": {
+     "stop": {
+      "n": 33,
+      "stopped": 33,
+      "steps": {
+       "n": 33,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 0,
+    "alarm_before_onset": 0,
+    "no_alarm": 100,
+    "steps": null,
+    "frti": {}
+   },
+   "P1_B1": {
+    "alarm_after_onset": 0,
+    "alarm_before_onset": 0,
+    "no_alarm": 100,
+    "steps": null,
+    "frti": {}
+   }
+  },
+  "steer_delay": {
+   "P1_A": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 1,
+     "p50": 5.0,
+     "max": 38
+    },
+    "frti": {
+     "stop": {
+      "n": 100,
+      "stopped": 100,
+      "steps": {
+       "n": 100,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 1,
+     "p50": 5.0,
+     "max": 38
+    },
+    "frti": {
+     "stop": {
+      "n": 100,
+      "stopped": 100,
+      "steps": {
+       "n": 100,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 6,
+     "p50": 23.0,
+     "max": 96
+    },
+    "frti": {
+     "stop": {
+      "n": 100,
+      "stopped": 100,
+      "steps": {
+       "n": 100,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 89,
+    "alarm_before_onset": 0,
+    "no_alarm": 11,
+    "steps": {
+     "n": 89,
+     "min": 13,
+     "p50": 52,
+     "max": 92
+    },
+    "frti": {
+     "stop": {
+      "n": 89,
+      "stopped": 89,
+      "steps": {
+       "n": 89,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B1": {
+    "alarm_after_onset": 2,
+    "alarm_before_onset": 0,
+    "no_alarm": 98,
+    "steps": {
+     "n": 2,
+     "min": 84,
+     "p50": 87.0,
+     "max": 90
+    },
+    "frti": {
+     "stop": {
+      "n": 2,
+      "stopped": 2,
+      "steps": {
+       "n": 2,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   }
+  },
+  "steer_stuck": {
+   "P1_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 1,
+     "p50": 1,
+     "max": 5
+    },
+    "frti": {
+     "stop": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 1,
+     "p50": 1,
+     "max": 5
+    },
+    "frti": {
+     "stop": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 93,
+    "alarm_before_onset": 0,
+    "no_alarm": 7,
+    "steps": {
+     "n": 93,
+     "min": 3,
+     "p50": 8,
+     "max": 22
+    },
+    "frti": {
+     "stop": {
+      "n": 93,
+      "stopped": 93,
+      "steps": {
+       "n": 93,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 47,
+    "alarm_before_onset": 0,
+    "no_alarm": 53,
+    "steps": {
+     "n": 47,
+     "min": 1,
+     "p50": 20,
+     "max": 50
+    },
+    "frti": {
+     "stop": {
+      "n": 47,
+      "stopped": 47,
+      "steps": {
+       "n": 47,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B1": {
+    "alarm_after_onset": 13,
+    "alarm_before_onset": 0,
+    "no_alarm": 87,
+    "steps": {
+     "n": 13,
+     "min": 18,
+     "p50": 21,
+     "max": 26
+    },
+    "frti": {
+     "stop": {
+      "n": 13,
+      "stopped": 11,
+      "steps": {
+       "n": 11,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {
+       "이탈": 2
+      }
+     }
+    }
+   }
+  },
+  "ir_dropout": {
+   "P1_A": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 2,
+     "p50": 2.0,
+     "max": 10
+    },
+    "frti": {
+     "stop": {
+      "n": 100,
+      "stopped": 100,
+      "steps": {
+       "n": 100,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 2,
+     "p50": 2.0,
+     "max": 10
+    },
+    "frti": {
+     "override_ey": {
+      "n": 100,
+      "stopped": 0,
+      "steps": null,
+      "other_outcomes": {
+       "성공": 100
+      }
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 100,
+    "alarm_before_onset": 0,
+    "no_alarm": 0,
+    "steps": {
+     "n": 100,
+     "min": 2,
+     "p50": 94.5,
+     "max": 127
+    },
+    "frti": {
+     "stop": {
+      "n": 100,
+      "stopped": 100,
+      "steps": {
+       "n": 100,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 1,
+    "alarm_before_onset": 0,
+    "no_alarm": 99,
+    "steps": {
+     "n": 1,
+     "min": 81,
+     "p50": 81,
+     "max": 81
+    },
+    "frti": {
+     "stop": {
+      "n": 1,
+      "stopped": 1,
+      "steps": {
+       "n": 1,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B1": {
+    "alarm_after_onset": 0,
+    "alarm_before_onset": 0,
+    "no_alarm": 100,
+    "steps": null,
+    "frti": {}
+   }
+  },
+  "lidar_spike": {
+   "P1_A": {
+    "alarm_after_onset": 65,
+    "alarm_before_onset": 1,
+    "no_alarm": 34,
+    "steps": {
+     "n": 65,
+     "min": 0,
+     "p50": 0,
+     "max": 2
+    },
+    "frti": {
+     "stop": {
+      "n": 65,
+      "stopped": 65,
+      "steps": {
+       "n": 65,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 65,
+    "alarm_before_onset": 1,
+    "no_alarm": 34,
+    "steps": {
+     "n": 65,
+     "min": 0,
+     "p50": 0,
+     "max": 2
+    },
+    "frti": {
+     "stop": {
+      "n": 65,
+      "stopped": 65,
+      "steps": {
+       "n": 65,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 66,
+    "alarm_before_onset": 0,
+    "no_alarm": 34,
+    "steps": {
+     "n": 66,
+     "min": 0,
+     "p50": 0.0,
+     "max": 8
+    },
+    "frti": {
+     "stop": {
+      "n": 66,
+      "stopped": 66,
+      "steps": {
+       "n": 66,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 9,
+    "alarm_before_onset": 0,
+    "no_alarm": 91,
+    "steps": {
+     "n": 9,
+     "min": 0,
+     "p50": 9,
+     "max": 87
+    },
+    "frti": {
+     "stop": {
+      "n": 9,
+      "stopped": 9,
+      "steps": {
+       "n": 9,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B1": {
+    "alarm_after_onset": 0,
+    "alarm_before_onset": 0,
+    "no_alarm": 100,
+    "steps": null,
+    "frti": {}
+   }
+  },
+  "right_clear_stuck": {
+   "P1_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 1,
+     "p50": 2,
+     "max": 6
+    },
+    "frti": {
+     "stop": {
+      "n": 99,
+      "stopped": 99,
+      "steps": {
+       "n": 99,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P2_A": {
+    "alarm_after_onset": 99,
+    "alarm_before_onset": 1,
+    "no_alarm": 0,
+    "steps": {
+     "n": 99,
+     "min": 1,
+     "p50": 2,
+     "max": 6
+    },
+    "frti": {
+     "override_rc": {
+      "n": 99,
+      "stopped": 0,
+      "steps": null,
+      "other_outcomes": {
+       "타임아웃": 99
+      }
+     }
+    }
+   },
+   "P1_B2": {
+    "alarm_after_onset": 6,
+    "alarm_before_onset": 1,
+    "no_alarm": 93,
+    "steps": {
+     "n": 6,
+     "min": 9,
+     "p50": 10.0,
+     "max": 32
+    },
+    "frti": {
+     "stop": {
+      "n": 6,
+      "stopped": 6,
+      "steps": {
+       "n": 6,
+       "min": 0,
+       "p50": 0.0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_HYBRID": {
+    "alarm_after_onset": 19,
+    "alarm_before_onset": 0,
+    "no_alarm": 81,
+    "steps": {
+     "n": 19,
+     "min": 1,
+     "p50": 68,
+     "max": 77
+    },
+    "frti": {
+     "stop": {
+      "n": 19,
+      "stopped": 19,
+      "steps": {
+       "n": 19,
+       "min": 0,
+       "p50": 0,
+       "max": 0
+      },
+      "other_outcomes": {}
+     }
+    }
+   },
+   "P1_B1": {
+    "alarm_after_onset": 0,
+    "alarm_before_onset": 0,
+    "no_alarm": 100,
+    "steps": null,
+    "frti": {}
+   }
+  }
+ },
+ "condition": {
+  "ir_stuck": {
+   "P1_A": {
+    "n": 25,
+    "satisfied": 25,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 25
+   },
+   "P2_A": {
+    "n": 25,
+    "satisfied": 0,
+    "degraded_avoided": 25,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 25
+   },
+   "P1_B2": {
+    "n": 25,
+    "satisfied": 13,
+    "degraded_avoided": 0,
+    "shortfall": 12,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 12,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 13
+   },
+   "P1_HYBRID": {
+    "n": 25,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 25,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 25,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_B1": {
+    "n": 25,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 25,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 25,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   }
+  },
+  "left_clear_stuck": {
+   "P1_A": {
+    "n": 100,
+    "satisfied": 99,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 1,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 100
+   },
+   "P2_A": {
+    "n": 100,
+    "satisfied": 99,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 1,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 100
+   },
+   "P1_B2": {
+    "n": 100,
+    "satisfied": 100,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 100
+   },
+   "P1_HYBRID": {
+    "n": 100,
+    "satisfied": 11,
+    "degraded_avoided": 0,
+    "shortfall": 89,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 89,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 11
+   },
+   "P1_B1": {
+    "n": 100,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 100,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 100,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   }
+  },
+  "lidar_dropout": {
+   "P1_A": {
+    "n": 44,
+    "satisfied": 44,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 44
+   },
+   "P2_A": {
+    "n": 44,
+    "satisfied": 44,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 44
+   },
+   "P1_B2": {
+    "n": 44,
+    "satisfied": 44,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 44
+   },
+   "P1_HYBRID": {
+    "n": 44,
+    "satisfied": 3,
+    "degraded_avoided": 0,
+    "shortfall": 41,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 41,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 3
+   },
+   "P1_B1": {
+    "n": 44,
+    "satisfied": 1,
+    "degraded_avoided": 0,
+    "shortfall": 43,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 43,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 1
+   }
+  },
+  "lidar_freeze": {
+   "P1_A": {
+    "n": 100,
+    "satisfied": 99,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 1,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 100
+   },
+   "P2_A": {
+    "n": 100,
+    "satisfied": 99,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 1,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 100
+   },
+   "P1_B2": {
+    "n": 100,
+    "satisfied": 33,
+    "degraded_avoided": 0,
+    "shortfall": 67,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 67,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 33
+   },
+   "P1_HYBRID": {
+    "n": 100,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 100,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 100,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_B1": {
+    "n": 100,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 100,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 100,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   }
+  },
+  "steer_delay": {
+   "P1_A": {
+    "n": 21,
+    "satisfied": 21,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 21
+   },
+   "P2_A": {
+    "n": 21,
+    "satisfied": 21,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 21
+   },
+   "P1_B2": {
+    "n": 21,
+    "satisfied": 21,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 21
+   },
+   "P1_HYBRID": {
+    "n": 21,
+    "satisfied": 18,
+    "degraded_avoided": 0,
+    "shortfall": 3,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 3,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 18
+   },
+   "P1_B1": {
+    "n": 21,
+    "satisfied": 1,
+    "degraded_avoided": 0,
+    "shortfall": 20,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 20,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 1
+   }
+  },
+  "steer_stuck": {
+   "P1_A": {
+    "n": 38,
+    "satisfied": 38,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 38
+   },
+   "P2_A": {
+    "n": 38,
+    "satisfied": 38,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 38
+   },
+   "P1_B2": {
+    "n": 38,
+    "satisfied": 38,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 38
+   },
+   "P1_HYBRID": {
+    "n": 38,
+    "satisfied": 32,
+    "degraded_avoided": 0,
+    "shortfall": 6,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 6,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 32
+   },
+   "P1_B1": {
+    "n": 38,
+    "satisfied": 7,
+    "degraded_avoided": 0,
+    "shortfall": 31,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 29,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 2
+    },
+    "actually_not_hazard": 7
+   }
+  },
+  "ir_dropout": {
+   "P1_A": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P2_A": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_B2": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_HYBRID": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_B1": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   }
+  },
+  "lidar_spike": {
+   "P1_A": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P2_A": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_B2": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_HYBRID": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_B1": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   }
+  },
+  "right_clear_stuck": {
+   "P1_A": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P2_A": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_B2": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_HYBRID": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   },
+   "P1_B1": {
+    "n": 0,
+    "satisfied": 0,
+    "degraded_avoided": 0,
+    "shortfall": 0,
+    "excluded_alarm_before_onset": 0,
+    "shortfall_detail": {
+     "no_alarm": 0,
+     "stop_not_before_event": 0,
+     "alarm_but_no_stop": 0
+    },
+    "actually_not_hazard": 0
+   }
+  }
+ },
+ "time_limit": {
+  "rows": 6600,
+  "hits": 0,
+  "by_combo": {
+   "P0": 0,
+   "P1_A": 0,
+   "P1_B1": 0,
+   "P1_B2": 0,
+   "P1_HYBRID": 0,
+   "P2_A": 0
+  },
+  "max_solve_ms": 6.375
+ },
+ "normal_hazard": {
+  "none_leftobs:5011": {
+   "outcome": "충돌",
+   "event_step": 102,
+   "by_combo": {
+    "P0": "충돌",
+    "P1_A": "충돌",
+    "P1_B1": "충돌",
+    "P1_B2": "충돌",
+    "P1_HYBRID": "충돌",
+    "P2_A": "충돌"
+   }
+  }
+ },
+ "p2_a_outcomes": {
+  "ir_stuck": {
+   "성공": 99,
+   "탐지 정지": 1
+  },
+  "left_clear_stuck": {
+   "SAFE_STOP": 99,
+   "탐지 정지": 1
+  },
+  "lidar_dropout": {
+   "탐지 정지": 100
+  },
+  "lidar_freeze": {
+   "탐지 정지": 100
+  },
+  "steer_delay": {
+   "탐지 정지": 100
+  },
+  "steer_stuck": {
+   "탐지 정지": 100
+  },
+  "ir_dropout": {
+   "성공": 100
+  },
+  "lidar_spike": {
+   "성공": 34,
+   "탐지 정지": 66
+  },
+  "right_clear_stuck": {
+   "타임아웃": 99,
+   "탐지 정지": 1
+  },
+  "none": {
+   "성공": 99,
+   "탐지 정지": 1
+  },
+  "none_leftobs": {
+   "SAFE_STOP": 98,
+   "충돌": 1,
+   "탐지 정지": 1
+  }
+ }
+}

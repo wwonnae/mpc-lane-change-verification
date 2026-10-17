@@ -1,0 +1,70 @@
+{
+  "teacher": {
+    "path": "results/teacher/metrics.npz",
+    "label": "teacher",
+    "has_left_clear_key": false,
+    "n_transitions_total": 400,
+    "transition_summary": {
+      "KEEP_L2->EVADE_L": {
+        "n": 100,
+        "min_interval_s": 1.8,
+        "mean_interval_s": 2.3055000000000003,
+        "n_under_0.3s": 0
+      },
+      "EVADE_L->KEEP_L1": {
+        "n": 100,
+        "min_interval_s": 0.2,
+        "mean_interval_s": 0.19999999999999996,
+        "n_under_0.3s": 100
+      },
+      "KEEP_L1->RETURN_TO_L2": {
+        "n": 100,
+        "min_interval_s": 0.6000000000000001,
+        "mean_interval_s": 0.6280000000000001,
+        "n_under_0.3s": 0
+      },
+      "RETURN_TO_L2->KEEP_L2": {
+        "n": 100,
+        "min_interval_s": 2.9000000000000004,
+        "mean_interval_s": 3.4090000000000003,
+        "n_under_0.3s": 0
+      }
+    },
+    "safe_stop_sample_count": 0,
+    "evade_L_rows_with_front_gap_lt_0.20": 0
+  },
+  "student": {
+    "path": "results/student/metrics.npz",
+    "label": "student",
+    "has_left_clear_key": false,
+    "n_transitions_total": 400,
+    "transition_summary": {
+      "KEEP_L2->EVADE_L": {
+        "n": 100,
+        "min_interval_s": 1.8,
+        "mean_interval_s": 2.3250000000000006,
+        "n_under_0.3s": 0
+      },
+      "EVADE_L->KEEP_L1": {
+        "n": 100,
+        "min_interval_s": 0.2,
+        "mean_interval_s": 0.19999999999999996,
+        "n_under_0.3s": 100
+      },
+      "KEEP_L1->RETURN_TO_L2": {
+        "n": 100,
+        "min_interval_s": 0.6000000000000001,
+        "mean_interval_s": 0.63,
+        "n_under_0.3s": 0
+      },
+      "RETURN_TO_L2->KEEP_L2": {
+        "n": 100,
+        "min_interval_s": 2.85,
+        "mean_interval_s": 3.3900000000000006,
+        "n_under_0.3s": 0
+      }
+    },
+    "safe_stop_sample_count": 0,
+    "evade_L_rows_with_front_gap_lt_0.20": 0
+  }
+}

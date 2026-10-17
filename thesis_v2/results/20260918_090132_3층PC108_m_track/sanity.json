@@ -1,0 +1,41 @@
+{
+  "checkpoint": "C:\\Users\\SSAFY\\Desktop\\MPC_LINETRACING\\models\\policy_best.pth",
+  "eval_mode_applied": true,
+  "normalization_stats_feature_order_ok": true,
+  "expected_feature_order": [
+    "v",
+    "ey_line",
+    "front_gap",
+    "left_clear",
+    "state_KEEP_L2",
+    "state_EVADE_L",
+    "state_KEEP_L1",
+    "state_RETURN_TO_L2",
+    "state_SAFE_STOP"
+  ],
+  "mapping_table": [
+    {
+      "student_feature": "v",
+      "source": "steps.v (baseline logger, m/s)"
+    },
+    {
+      "student_feature": "ey_line",
+      "source": "steps.ey_line (m); NaN(라인 미검출) 시 y - target_line_y(state)로 대체(code_backup/final_hierarchical_backup.py:1874 fallback 규칙과 동일)"
+    },
+    {
+      "student_feature": "front_gap",
+      "source": "steps.front_gap (m)"
+    },
+    {
+      "student_feature": "left_clear",
+      "source": "steps.left_clear (bool -> 0/1)"
+    },
+    {
+      "student_feature": "state_one_hot(5)",
+      "source": "steps.state (문자열) -> one-hot, 순서=['KEEP_L2', 'EVADE_L', 'KEEP_L1', 'RETURN_TO_L2', 'SAFE_STOP']"
+    }
+  ],
+  "input_pool_size": 12016,
+  "ey_fallback_fraction": 0.7481691078561917,
+  "blocked": false
+}

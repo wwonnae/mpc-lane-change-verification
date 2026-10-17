@@ -1,0 +1,1 @@
+[make_trace_matrix --check] 일치: TRACE_MATRIX.md, trace_matrix.json (REQ 59, 테스트 없는 REQ 15, REQ 없는 테스트 166)

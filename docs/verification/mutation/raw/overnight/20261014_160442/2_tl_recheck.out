@@ -1,0 +1,1598 @@
+[usage] tl_on_i5=False n_i5=0 rc=4 ::thesis_v2.tests.test_mpc
+[usage] tl_on_i5=False n_i5=1 rc=0 thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[False-3200-False]
+[usage] tl_on_i5=False n_i5=1 rc=0 thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[True-3200-False]
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_closed_loop::test_p1_stops_immediately_on_first_alarm
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_closed_loop::test_p2_ir_stuck_overrides_ey_without_stopping
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_closed_loop::test_p2_left_clear_stuck_overrides_lc_without_stopping
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_closed_loop::test_p2_right_clear_stuck_overrides_rc_without_stopping
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_closed_loop::test_p2_steer_delay_stops_like_p1
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_closed_loop::test_timing_diag_recorded_but_not_in_episode_row
+[usage] tl_on_i5=False n_i5=2 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_detector_a_with_gyro_does_not_change_control[0]
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4]
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_gyro_without_noise_is_finite_difference
+[usage] tl_on_i5=True n_i5=3 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_normal_noise_residuals_are_standardized
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_normal_residuals_are_zero_without_noise[False]
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_right_clear_stuck_raises_rc
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_tracker_error_bounded_during_50_step_freeze_with_noise
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_tracker_keeps_obstacles_per_lane
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_detector_a::test_tracker_not_contaminated_by_frozen_lidar
+[usage] tl_on_i5=True n_i5=1 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_on_first_step_is_detection_stop[True]
+[usage] tl_on_i5=True n_i5=2 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_step_collision_is_classified_as_collision
+[usage] tl_on_i5=True n_i5=2 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_step_departure_is_classified_as_departure
+[usage] tl_on_i5=True n_i5=2 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_step_departure_without_termination_is_detection_stop
+[usage] tl_on_i5=True n_i5=3 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p2_override_feeds_controller_the_overridden_value[ey-ir_dropout-None]
+[usage] tl_on_i5=True n_i5=3 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p2_override_feeds_controller_the_overridden_value[lc-left_clear_stuck-False]
+[usage] tl_on_i5=True n_i5=3 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p2_override_feeds_controller_the_overridden_value[rc-right_clear_stuck-False]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmful_fault_boundary[49-before_onset]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmful_fault_boundary[50-None]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmless_fault[ir_dropout]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_normal_episode[none]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_alarm_requires_score_strictly_above_threshold
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_ignores_tracks_beyond_lidar_range
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_is_vehicle_width_around_y[-0.2-False]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_is_vehicle_width_around_y[0.1-True]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_longitudinal_margin_near_obstacle_end
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_range_uses_distance_ahead_of_front
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_dead_reckoning_and_front_point_match_plant_while_heading_is_nonzero
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_fg_residual_valid_only_if_previous_gap_positive
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_front_gap_without_obstacle_info_does_not_create_track
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_l1_obstacle_is_evaluated_in_l1_window_only
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_no_return_measurement_does_not_create_track
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_psi_residual_masked_when_previous_speed_is_zero
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_track_position_is_mean_of_accepted_measurements
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_window_extends_g_safe_min_behind_rear_axle
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_any_state_to_safe_stop_positive
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_cooldown_blocks_evade_to_keep_l1
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_cooldown_blocks_keep_l1_to_return
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_cooldown_blocks_keep_l2_to_evade
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_cooldown_blocks_return_to_keep_l2
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_cooldown_blocks_safe_stop
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_evade_l_to_keep_l1_negative_far_from_l1
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_evade_l_to_keep_l1_positive
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_initial_fsm_cooldown_pre_expired
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_keep_l1_to_return_negative_right_not_clear
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_keep_l1_to_return_positive
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_keep_l2_to_evade_l_negative_not_left_clear
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_keep_l2_to_evade_l_positive
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_return_to_keep_l2_negative_psi_too_large
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_return_to_keep_l2_positive
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm::test_safe_stop_condition_negative_left_clear_true
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm_mcdc::test_mcdc_d1_front_gap_lt_g_trig
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm_mcdc::test_mcdc_d3_elapsed_gt_t_keep_l1_min_reachable_form
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_fsm_mcdc::test_mcdc_d4_abs_y_le_near_l2
+[usage] tl_on_i5=False n_i5=2 rc=0 thesis_v2.tests.test_i4_student::test_i4_recorder_does_not_change_episode
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_i4_student::test_req_stu_02_feature_order_and_fallback
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_improved_equivalence::test_improved_runner_matches_golden_when_flags_off[paper-0]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_improved_equivalence::test_single_call_matches_baseline_when_flags_off[-0.1-5.0-0.5-0.0-KEEP_L2]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_improved_equivalence::test_single_call_matches_baseline_when_flags_off[0.05--10.0-0.3-0.3-EVADE_L]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_improved_equivalence::test_single_call_matches_baseline_when_flags_off[0.2-15.0-0.4-0.3-KEEP_L1]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mpc::test_fallback_unit_is_rad_per_meter
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mpc::test_heading_and_steering_bound_constants
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mpc::test_hessian_has_offdiagonal_rddelta_terms
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mpc::test_position_constraints_per_state[KEEP_L1]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mpc::test_position_constraints_per_state[KEEP_L2]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mpc::test_sign_convention_steers_toward_negative_target
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mpc::test_sign_convention_steers_toward_positive_target
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mutation_gaps_fsm::test_keep_l1_return_requires_elapsed_strictly_above_t_keep_l1_min
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mutation_gaps_fsm::test_return_to_keep_l2_accepts_psi_exactly_limit
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mutation_gaps_fsm::test_return_to_keep_l2_accepts_y_exactly_near_l2
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mutation_gaps_fsm::test_safe_stop_requires_front_gap_strictly_below_g_safe_min
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mutation_gaps_mpc::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds[fallback]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mutation_gaps_mpc::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds[solved]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mutation_gaps_mpc::test_delta0_matches_independent_spec_qp[0.4-0.05-0.0-KEEP_L1]
+[usage] tl_on_i5=False n_i5=0 rc=0 thesis_v2.tests.test_mutation_gaps_mpc::test_heading_constraint_binds_when_optimum_would_exceed_limit
+[recheck_tl_kills] kill 531개 중 대상 127개(재확인 127개)
+[clean orig] #0 pass test_p1_stops_immediately_on_first_alarm
+[clean orig] #1 pass test_p1_stops_immediately_on_first_alarm
+[clean orig] #2 pass test_p1_stops_immediately_on_first_alarm
+[clean orig] #3 pass test_p1_stops_immediately_on_first_alarm
+[clean orig] #4 pass test_p1_stops_immediately_on_first_alarm
+[clean A] #0 pass test_p1_stops_immediately_on_first_alarm
+[clean A] #1 pass test_p1_stops_immediately_on_first_alarm
+[clean A] #2 pass test_p1_stops_immediately_on_first_alarm
+[clean A] #3 pass test_p1_stops_immediately_on_first_alarm
+[clean A] #4 pass test_p1_stops_immediately_on_first_alarm
+[clean orig] #0 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean orig] #1 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean orig] #2 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean orig] #3 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean orig] #4 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean A] #0 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean A] #1 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean A] #2 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean A] #3 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean A] #4 pass test_p2_ir_stuck_overrides_ey_without_stopping
+[clean orig] #0 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean orig] #1 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean orig] #2 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean orig] #3 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean orig] #4 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean A] #0 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean A] #1 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean A] #2 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean A] #3 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean A] #4 pass test_p2_left_clear_stuck_overrides_lc_without_stopping
+[clean orig] #0 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean orig] #1 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean orig] #2 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean orig] #3 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean orig] #4 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean A] #0 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean A] #1 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean A] #2 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean A] #3 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean A] #4 pass test_p2_right_clear_stuck_overrides_rc_without_stopping
+[clean orig] #0 pass test_p2_steer_delay_stops_like_p1
+[clean orig] #1 pass test_p2_steer_delay_stops_like_p1
+[clean orig] #2 pass test_p2_steer_delay_stops_like_p1
+[clean orig] #3 pass test_p2_steer_delay_stops_like_p1
+[clean orig] #4 pass test_p2_steer_delay_stops_like_p1
+[clean A] #0 pass test_p2_steer_delay_stops_like_p1
+[clean A] #1 pass test_p2_steer_delay_stops_like_p1
+[clean A] #2 pass test_p2_steer_delay_stops_like_p1
+[clean A] #3 pass test_p2_steer_delay_stops_like_p1
+[clean A] #4 pass test_p2_steer_delay_stops_like_p1
+[clean orig] #0 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean orig] #1 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean orig] #2 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean orig] #3 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean orig] #4 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean A] #0 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean A] #1 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean A] #2 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean A] #3 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean A] #4 pass test_timing_diag_recorded_but_not_in_episode_row
+[clean orig] #0 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean orig] #1 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean orig] #2 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean orig] #3 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean orig] #4 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean A] #0 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean A] #1 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean A] #2 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean A] #3 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean A] #4 pass test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4
+[clean orig] #0 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean orig] #1 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean orig] #2 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean orig] #3 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean orig] #4 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean A] #0 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean A] #1 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean A] #2 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean A] #3 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean A] #4 pass test_fault_raises_expected_channel[ir_stuck-ey-extra2]
+[clean orig] #0 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean orig] #1 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean orig] #2 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean orig] #3 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean orig] #4 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean A] #0 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean A] #1 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean A] #2 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean A] #3 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean A] #4 pass test_fault_raises_expected_channel[lidar_dropout-trk-extra1]
+[clean orig] #0 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean orig] #1 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean orig] #2 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean orig] #3 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean orig] #4 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean A] #0 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean A] #1 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean A] #2 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean A] #3 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean A] #4 pass test_fault_raises_expected_channel[lidar_freeze-fg-extra0]
+[clean orig] #0 pass test_gyro_without_noise_is_finite_difference
+[clean orig] #1 pass test_gyro_without_noise_is_finite_difference
+[clean orig] #2 pass test_gyro_without_noise_is_finite_difference
+[clean orig] #3 pass test_gyro_without_noise_is_finite_difference
+[clean orig] #4 pass test_gyro_without_noise_is_finite_difference
+[clean A] #0 pass test_gyro_without_noise_is_finite_difference
+[clean A] #1 pass test_gyro_without_noise_is_finite_difference
+[clean A] #2 pass test_gyro_without_noise_is_finite_difference
+[clean A] #3 pass test_gyro_without_noise_is_finite_difference
+[clean A] #4 pass test_gyro_without_noise_is_finite_difference
+[clean orig] #0 pass test_normal_noise_residuals_are_standardized
+[clean orig] #1 pass test_normal_noise_residuals_are_standardized
+[clean orig] #2 pass test_normal_noise_residuals_are_standardized
+[clean orig] #3 pass test_normal_noise_residuals_are_standardized
+[clean orig] #4 pass test_normal_noise_residuals_are_standardized
+[clean A] #0 pass test_normal_noise_residuals_are_standardized
+[clean A] #1 pass test_normal_noise_residuals_are_standardized
+[clean A] #2 pass test_normal_noise_residuals_are_standardized
+[clean A] #3 pass test_normal_noise_residuals_are_standardized
+[clean A] #4 pass test_normal_noise_residuals_are_standardized
+[clean orig] #0 pass test_normal_residuals_are_zero_without_noise[False]
+[clean orig] #1 pass test_normal_residuals_are_zero_without_noise[False]
+[clean orig] #2 pass test_normal_residuals_are_zero_without_noise[False]
+[clean orig] #3 pass test_normal_residuals_are_zero_without_noise[False]
+[clean orig] #4 pass test_normal_residuals_are_zero_without_noise[False]
+[clean A] #0 pass test_normal_residuals_are_zero_without_noise[False]
+[clean A] #1 pass test_normal_residuals_are_zero_without_noise[False]
+[clean A] #2 pass test_normal_residuals_are_zero_without_noise[False]
+[clean A] #3 pass test_normal_residuals_are_zero_without_noise[False]
+[clean A] #4 pass test_normal_residuals_are_zero_without_noise[False]
+[clean orig] #0 pass test_right_clear_stuck_raises_rc
+[clean orig] #1 pass test_right_clear_stuck_raises_rc
+[clean orig] #2 pass test_right_clear_stuck_raises_rc
+[clean orig] #3 pass test_right_clear_stuck_raises_rc
+[clean orig] #4 pass test_right_clear_stuck_raises_rc
+[clean A] #0 pass test_right_clear_stuck_raises_rc
+[clean A] #1 pass test_right_clear_stuck_raises_rc
+[clean A] #2 pass test_right_clear_stuck_raises_rc
+[clean A] #3 pass test_right_clear_stuck_raises_rc
+[clean A] #4 pass test_right_clear_stuck_raises_rc
+[clean orig] #0 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean orig] #1 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean orig] #2 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean orig] #3 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean orig] #4 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean A] #0 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean A] #1 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean A] #2 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean A] #3 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean A] #4 pass test_tracker_error_bounded_during_50_step_freeze_with_noise
+[clean orig] #0 pass test_tracker_keeps_obstacles_per_lane
+[clean orig] #1 pass test_tracker_keeps_obstacles_per_lane
+[clean orig] #2 pass test_tracker_keeps_obstacles_per_lane
+[clean orig] #3 pass test_tracker_keeps_obstacles_per_lane
+[clean orig] #4 pass test_tracker_keeps_obstacles_per_lane
+[clean A] #0 pass test_tracker_keeps_obstacles_per_lane
+[clean A] #1 pass test_tracker_keeps_obstacles_per_lane
+[clean A] #2 pass test_tracker_keeps_obstacles_per_lane
+[clean A] #3 pass test_tracker_keeps_obstacles_per_lane
+[clean A] #4 pass test_tracker_keeps_obstacles_per_lane
+[clean orig] #0 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean orig] #1 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean orig] #2 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean orig] #3 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean orig] #4 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean A] #0 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean A] #1 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean A] #2 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean A] #3 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean A] #4 pass test_tracker_not_contaminated_by_frozen_lidar
+[clean orig] #0 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean orig] #1 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean orig] #2 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean orig] #3 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean orig] #4 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean A] #0 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean A] #1 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean A] #2 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean A] #3 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean A] #4 pass test_p1_stop_on_first_step_is_detection_stop[True]
+[clean orig] #0 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean orig] #1 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean orig] #2 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean orig] #3 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean orig] #4 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean A] #0 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean A] #1 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean A] #2 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean A] #3 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean A] #4 pass test_p1_stop_step_collision_is_classified_as_collision
+[clean orig] #0 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean orig] #1 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean orig] #2 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean orig] #3 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean orig] #4 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean A] #0 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean A] #1 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean A] #2 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean A] #3 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean A] #4 pass test_p1_stop_step_departure_is_classified_as_departure
+[clean orig] #0 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean orig] #1 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean orig] #2 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean orig] #3 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean orig] #4 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean A] #0 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean A] #1 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean A] #2 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean A] #3 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean A] #4 pass test_p1_stop_step_departure_without_termination_is_detection
+[clean orig] #0 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean orig] #1 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean orig] #2 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean orig] #3 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean orig] #4 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean A] #0 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean A] #1 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean A] #2 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean A] #3 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean A] #4 pass test_p2_override_feeds_controller_the_overridden_value[ey-ir
+[clean orig] #0 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean orig] #1 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean orig] #2 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean orig] #3 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean orig] #4 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean A] #0 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean A] #1 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean A] #2 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean A] #3 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean A] #4 pass test_p2_override_feeds_controller_the_overridden_value[lc-le
+[clean orig] #0 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean orig] #1 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean orig] #2 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean orig] #3 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean orig] #4 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean A] #0 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean A] #1 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean A] #2 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean A] #3 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[clean A] #4 pass test_p2_override_feeds_controller_the_overridden_value[rc-ri
+[detector_a:001 orig] #0 assert
+[detector_a:001 orig] #1 assert
+[detector_a:001 orig] #2 assert
+[detector_a:001 orig] #3 assert
+[detector_a:001 orig] #4 assert
+[detector_a:001 A] #0 assert
+[detector_a:001 A] #1 assert
+[detector_a:001 A] #2 assert
+[detector_a:001 A] #3 assert
+[detector_a:001 A] #4 assert
+[detector_a:002 orig] #0 assert
+[detector_a:002 orig] #1 assert
+[detector_a:002 orig] #2 assert
+[detector_a:002 orig] #3 assert
+[detector_a:002 orig] #4 assert
+[detector_a:002 A] #0 assert
+[detector_a:002 A] #1 assert
+[detector_a:002 A] #2 assert
+[detector_a:002 A] #3 assert
+[detector_a:002 A] #4 assert
+[detector_a:003 orig] #0 assert
+[detector_a:003 orig] #1 assert
+[detector_a:003 orig] #2 assert
+[detector_a:003 orig] #3 assert
+[detector_a:003 orig] #4 assert
+[detector_a:003 A] #0 assert
+[detector_a:003 A] #1 assert
+[detector_a:003 A] #2 assert
+[detector_a:003 A] #3 assert
+[detector_a:003 A] #4 assert
+[detector_a:006 orig] #0 assert
+[detector_a:006 orig] #1 assert
+[detector_a:006 orig] #2 assert
+[detector_a:006 orig] #3 assert
+[detector_a:006 orig] #4 assert
+[detector_a:006 A] #0 assert
+[detector_a:006 A] #1 assert
+[detector_a:006 A] #2 assert
+[detector_a:006 A] #3 assert
+[detector_a:006 A] #4 assert
+[detector_a:008 orig] #0 assert
+[detector_a:008 orig] #1 assert
+[detector_a:008 orig] #2 assert
+[detector_a:008 orig] #3 assert
+[detector_a:008 orig] #4 assert
+[detector_a:008 A] #0 assert
+[detector_a:008 A] #1 assert
+[detector_a:008 A] #2 assert
+[detector_a:008 A] #3 assert
+[detector_a:008 A] #4 assert
+[detector_a:010 orig] #0 assert
+[detector_a:010 orig] #1 assert
+[detector_a:010 orig] #2 assert
+[detector_a:010 orig] #3 assert
+[detector_a:010 orig] #4 assert
+[detector_a:010 A] #0 assert
+[detector_a:010 A] #1 assert
+[detector_a:010 A] #2 assert
+[detector_a:010 A] #3 assert
+[detector_a:010 A] #4 assert
+[detector_a:015 orig] #0 assert
+[detector_a:015 orig] #1 assert
+[detector_a:015 orig] #2 assert
+[detector_a:015 orig] #3 assert
+[detector_a:015 orig] #4 assert
+[detector_a:015 A] #0 assert
+[detector_a:015 A] #1 assert
+[detector_a:015 A] #2 assert
+[detector_a:015 A] #3 assert
+[detector_a:015 A] #4 assert
+[detector_a:018 orig] #0 assert
+[detector_a:018 orig] #1 assert
+[detector_a:018 orig] #2 assert
+[detector_a:018 orig] #3 assert
+[detector_a:018 orig] #4 assert
+[detector_a:018 A] #0 assert
+[detector_a:018 A] #1 assert
+[detector_a:018 A] #2 assert
+[detector_a:018 A] #3 assert
+[detector_a:018 A] #4 assert
+[detector_a:020 orig] #0 assert
+[detector_a:020 orig] #1 assert
+[detector_a:020 orig] #2 assert
+[detector_a:020 orig] #3 assert
+[detector_a:020 orig] #4 assert
+[detector_a:020 A] #0 assert
+[detector_a:020 A] #1 assert
+[detector_a:020 A] #2 assert
+[detector_a:020 A] #3 assert
+[detector_a:020 A] #4 assert
+[detector_a:022 orig] #0 assert
+[detector_a:022 orig] #1 assert
+[detector_a:022 orig] #2 assert
+[detector_a:022 orig] #3 assert
+[detector_a:022 orig] #4 assert
+[detector_a:022 A] #0 assert
+[detector_a:022 A] #1 assert
+[detector_a:022 A] #2 assert
+[detector_a:022 A] #3 assert
+[detector_a:022 A] #4 assert
+[detector_a:025 orig] #0 assert
+[detector_a:025 orig] #1 assert
+[detector_a:025 orig] #2 assert
+[detector_a:025 orig] #3 assert
+[detector_a:025 orig] #4 assert
+[detector_a:025 A] #0 assert
+[detector_a:025 A] #1 assert
+[detector_a:025 A] #2 assert
+[detector_a:025 A] #3 assert
+[detector_a:025 A] #4 assert
+[detector_a:030 orig] #0 assert
+[detector_a:030 orig] #1 assert
+[detector_a:030 orig] #2 assert
+[detector_a:030 orig] #3 assert
+[detector_a:030 orig] #4 assert
+[detector_a:030 A] #0 assert
+[detector_a:030 A] #1 assert
+[detector_a:030 A] #2 assert
+[detector_a:030 A] #3 assert
+[detector_a:030 A] #4 assert
+[detector_a:035 orig] #0 assert
+[detector_a:035 orig] #1 assert
+[detector_a:035 orig] #2 assert
+[detector_a:035 orig] #3 assert
+[detector_a:035 orig] #4 assert
+[detector_a:035 A] #0 assert
+[detector_a:035 A] #1 assert
+[detector_a:035 A] #2 assert
+[detector_a:035 A] #3 assert
+[detector_a:035 A] #4 assert
+[detector_a:037 orig] #0 assert
+[detector_a:037 orig] #1 assert
+[detector_a:037 orig] #2 assert
+[detector_a:037 orig] #3 assert
+[detector_a:037 orig] #4 assert
+[detector_a:037 A] #0 assert
+[detector_a:037 A] #1 assert
+[detector_a:037 A] #2 assert
+[detector_a:037 A] #3 assert
+[detector_a:037 A] #4 assert
+[detector_a:038 orig] #0 assert
+[detector_a:038 orig] #1 assert
+[detector_a:038 orig] #2 assert
+[detector_a:038 orig] #3 assert
+[detector_a:038 orig] #4 assert
+[detector_a:038 A] #0 assert
+[detector_a:038 A] #1 assert
+[detector_a:038 A] #2 assert
+[detector_a:038 A] #3 assert
+[detector_a:038 A] #4 assert
+[detector_a:040 orig] #0 assert
+[detector_a:040 orig] #1 assert
+[detector_a:040 orig] #2 assert
+[detector_a:040 orig] #3 assert
+[detector_a:040 orig] #4 assert
+[detector_a:040 A] #0 assert
+[detector_a:040 A] #1 assert
+[detector_a:040 A] #2 assert
+[detector_a:040 A] #3 assert
+[detector_a:040 A] #4 assert
+[detector_a:042 orig] #0 assert
+[detector_a:042 orig] #1 assert
+[detector_a:042 orig] #2 assert
+[detector_a:042 orig] #3 assert
+[detector_a:042 orig] #4 assert
+[detector_a:042 A] #0 assert
+[detector_a:042 A] #1 assert
+[detector_a:042 A] #2 assert
+[detector_a:042 A] #3 assert
+[detector_a:042 A] #4 assert
+[detector_a:043 orig] #0 assert
+[detector_a:043 orig] #1 assert
+[detector_a:043 orig] #2 assert
+[detector_a:043 orig] #3 assert
+[detector_a:043 orig] #4 assert
+[detector_a:043 A] #0 assert
+[detector_a:043 A] #1 assert
+[detector_a:043 A] #2 assert
+[detector_a:043 A] #3 assert
+[detector_a:043 A] #4 assert
+[detector_a:045 orig] #0 assert
+[detector_a:045 orig] #1 assert
+[detector_a:045 orig] #2 assert
+[detector_a:045 orig] #3 assert
+[detector_a:045 orig] #4 assert
+[detector_a:045 A] #0 assert
+[detector_a:045 A] #1 assert
+[detector_a:045 A] #2 assert
+[detector_a:045 A] #3 assert
+[detector_a:045 A] #4 assert
+[detector_a:047 orig] #0 assert
+[detector_a:047 orig] #1 assert
+[detector_a:047 orig] #2 assert
+[detector_a:047 orig] #3 assert
+[detector_a:047 orig] #4 assert
+[detector_a:047 A] #0 assert
+[detector_a:047 A] #1 assert
+[detector_a:047 A] #2 assert
+[detector_a:047 A] #3 assert
+[detector_a:047 A] #4 assert
+[detector_a:049 orig] #0 assert
+[detector_a:049 orig] #1 assert
+[detector_a:049 orig] #2 assert
+[detector_a:049 orig] #3 assert
+[detector_a:049 orig] #4 assert
+[detector_a:049 A] #0 assert
+[detector_a:049 A] #1 assert
+[detector_a:049 A] #2 assert
+[detector_a:049 A] #3 assert
+[detector_a:049 A] #4 assert
+[detector_a:050 orig] #0 assert
+[detector_a:050 orig] #1 assert
+[detector_a:050 orig] #2 assert
+[detector_a:050 orig] #3 assert
+[detector_a:050 orig] #4 assert
+[detector_a:050 A] #0 assert
+[detector_a:050 A] #1 assert
+[detector_a:050 A] #2 assert
+[detector_a:050 A] #3 assert
+[detector_a:050 A] #4 assert
+[detector_a:051 orig] #0 assert
+[detector_a:051 orig] #1 assert
+[detector_a:051 orig] #2 assert
+[detector_a:051 orig] #3 assert
+[detector_a:051 orig] #4 assert
+[detector_a:051 A] #0 assert
+[detector_a:051 A] #1 assert
+[detector_a:051 A] #2 assert
+[detector_a:051 A] #3 assert
+[detector_a:051 A] #4 assert
+[detector_a:054 orig] #0 assert
+[detector_a:054 orig] #1 assert
+[detector_a:054 orig] #2 assert
+[detector_a:054 orig] #3 assert
+[detector_a:054 orig] #4 assert
+[detector_a:054 A] #0 assert
+[detector_a:054 A] #1 assert
+[detector_a:054 A] #2 assert
+[detector_a:054 A] #3 assert
+[detector_a:054 A] #4 assert
+[detector_a:056 orig] #0 assert
+[detector_a:056 orig] #1 assert
+[detector_a:056 orig] #2 assert
+[detector_a:056 orig] #3 assert
+[detector_a:056 orig] #4 assert
+[detector_a:056 A] #0 assert
+[detector_a:056 A] #1 assert
+[detector_a:056 A] #2 assert
+[detector_a:056 A] #3 assert
+[detector_a:056 A] #4 assert
+[detector_a:061 orig] #0 assert
+[detector_a:061 orig] #1 assert
+[detector_a:061 orig] #2 assert
+[detector_a:061 orig] #3 assert
+[detector_a:061 orig] #4 assert
+[detector_a:061 A] #0 assert
+[detector_a:061 A] #1 assert
+[detector_a:061 A] #2 assert
+[detector_a:061 A] #3 assert
+[detector_a:061 A] #4 assert
+[detector_a:063 orig] #0 assert
+[detector_a:063 orig] #1 assert
+[detector_a:063 orig] #2 assert
+[detector_a:063 orig] #3 assert
+[detector_a:063 orig] #4 assert
+[detector_a:063 A] #0 assert
+[detector_a:063 A] #1 assert
+[detector_a:063 A] #2 assert
+[detector_a:063 A] #3 assert
+[detector_a:063 A] #4 assert
+[detector_a:064 orig] #0 assert
+[detector_a:064 orig] #1 assert
+[detector_a:064 orig] #2 assert
+[detector_a:064 orig] #3 assert
+[detector_a:064 orig] #4 assert
+[detector_a:064 A] #0 assert
+[detector_a:064 A] #1 assert
+[detector_a:064 A] #2 assert
+[detector_a:064 A] #3 assert
+[detector_a:064 A] #4 assert
+[detector_a:066 orig] #0 assert
+[detector_a:066 orig] #1 assert
+[detector_a:066 orig] #2 assert
+[detector_a:066 orig] #3 assert
+[detector_a:066 orig] #4 assert
+[detector_a:066 A] #0 assert
+[detector_a:066 A] #1 assert
+[detector_a:066 A] #2 assert
+[detector_a:066 A] #3 assert
+[detector_a:066 A] #4 assert
+[detector_a:067 orig] #0 assert
+[detector_a:067 orig] #1 assert
+[detector_a:067 orig] #2 assert
+[detector_a:067 orig] #3 assert
+[detector_a:067 orig] #4 assert
+[detector_a:067 A] #0 assert
+[detector_a:067 A] #1 assert
+[detector_a:067 A] #2 assert
+[detector_a:067 A] #3 assert
+[detector_a:067 A] #4 assert
+[detector_a:068 orig] #0 assert
+[detector_a:068 orig] #1 assert
+[detector_a:068 orig] #2 assert
+[detector_a:068 orig] #3 assert
+[detector_a:068 orig] #4 assert
+[detector_a:068 A] #0 assert
+[detector_a:068 A] #1 assert
+[detector_a:068 A] #2 assert
+[detector_a:068 A] #3 assert
+[detector_a:068 A] #4 assert
+[detector_a:070 orig] #0 assert
+[detector_a:070 orig] #1 assert
+[detector_a:070 orig] #2 assert
+[detector_a:070 orig] #3 assert
+[detector_a:070 orig] #4 assert
+[detector_a:070 A] #0 assert
+[detector_a:070 A] #1 assert
+[detector_a:070 A] #2 assert
+[detector_a:070 A] #3 assert
+[detector_a:070 A] #4 assert
+[detector_a:071 orig] #0 assert
+[detector_a:071 orig] #1 assert
+[detector_a:071 orig] #2 assert
+[detector_a:071 orig] #3 assert
+[detector_a:071 orig] #4 assert
+[detector_a:071 A] #0 assert
+[detector_a:071 A] #1 assert
+[detector_a:071 A] #2 assert
+[detector_a:071 A] #3 assert
+[detector_a:071 A] #4 assert
+[detector_a:084 orig] #0 assert
+[detector_a:084 orig] #1 assert
+[detector_a:084 orig] #2 assert
+[detector_a:084 orig] #3 assert
+[detector_a:084 orig] #4 assert
+[detector_a:084 A] #0 assert
+[detector_a:084 A] #1 assert
+[detector_a:084 A] #2 assert
+[detector_a:084 A] #3 assert
+[detector_a:084 A] #4 assert
+[detector_a:086 orig] #0 assert
+[detector_a:086 orig] #1 assert
+[detector_a:086 orig] #2 assert
+[detector_a:086 orig] #3 assert
+[detector_a:086 orig] #4 assert
+[detector_a:086 A] #0 assert
+[detector_a:086 A] #1 assert
+[detector_a:086 A] #2 assert
+[detector_a:086 A] #3 assert
+[detector_a:086 A] #4 assert
+[detector_a:090 orig] #0 assert
+[detector_a:090 orig] #1 assert
+[detector_a:090 orig] #2 assert
+[detector_a:090 orig] #3 assert
+[detector_a:090 orig] #4 assert
+[detector_a:090 A] #0 assert
+[detector_a:090 A] #1 assert
+[detector_a:090 A] #2 assert
+[detector_a:090 A] #3 assert
+[detector_a:090 A] #4 assert
+[detector_a:091 orig] #0 assert
+[detector_a:091 orig] #1 assert
+[detector_a:091 orig] #2 assert
+[detector_a:091 orig] #3 assert
+[detector_a:091 orig] #4 assert
+[detector_a:091 A] #0 assert
+[detector_a:091 A] #1 assert
+[detector_a:091 A] #2 assert
+[detector_a:091 A] #3 assert
+[detector_a:091 A] #4 assert
+[detector_a:095 orig] #0 assert
+[detector_a:095 orig] #1 assert
+[detector_a:095 orig] #2 assert
+[detector_a:095 orig] #3 assert
+[detector_a:095 orig] #4 assert
+[detector_a:095 A] #0 assert
+[detector_a:095 A] #1 assert
+[detector_a:095 A] #2 assert
+[detector_a:095 A] #3 assert
+[detector_a:095 A] #4 assert
+[detector_a:099 orig] #0 assert
+[detector_a:099 orig] #1 assert
+[detector_a:099 orig] #2 assert
+[detector_a:099 orig] #3 assert
+[detector_a:099 orig] #4 assert
+[detector_a:099 A] #0 assert
+[detector_a:099 A] #1 assert
+[detector_a:099 A] #2 assert
+[detector_a:099 A] #3 assert
+[detector_a:099 A] #4 assert
+[detector_a:110 orig] #0 assert
+[detector_a:110 orig] #1 assert
+[detector_a:110 orig] #2 assert
+[detector_a:110 orig] #3 assert
+[detector_a:110 orig] #4 assert
+[detector_a:110 A] #0 assert
+[detector_a:110 A] #1 assert
+[detector_a:110 A] #2 assert
+[detector_a:110 A] #3 assert
+[detector_a:110 A] #4 assert
+[detector_a:111 orig] #0 assert
+[detector_a:111 orig] #1 assert
+[detector_a:111 orig] #2 assert
+[detector_a:111 orig] #3 assert
+[detector_a:111 orig] #4 assert
+[detector_a:111 A] #0 assert
+[detector_a:111 A] #1 assert
+[detector_a:111 A] #2 assert
+[detector_a:111 A] #3 assert
+[detector_a:111 A] #4 assert
+[detector_a:112 orig] #0 assert
+[detector_a:112 orig] #1 assert
+[detector_a:112 orig] #2 assert
+[detector_a:112 orig] #3 assert
+[detector_a:112 orig] #4 assert
+[detector_a:112 A] #0 assert
+[detector_a:112 A] #1 assert
+[detector_a:112 A] #2 assert
+[detector_a:112 A] #3 assert
+[detector_a:112 A] #4 assert
+[detector_a:113 orig] #0 assert
+[detector_a:113 orig] #1 assert
+[detector_a:113 orig] #2 assert
+[detector_a:113 orig] #3 assert
+[detector_a:113 orig] #4 assert
+[detector_a:113 A] #0 assert
+[detector_a:113 A] #1 assert
+[detector_a:113 A] #2 assert
+[detector_a:113 A] #3 assert
+[detector_a:113 A] #4 assert
+[detector_a:118 orig] #0 assert
+[detector_a:118 orig] #1 assert
+[detector_a:118 orig] #2 assert
+[detector_a:118 orig] #3 assert
+[detector_a:118 orig] #4 assert
+[detector_a:118 A] #0 assert
+[detector_a:118 A] #1 assert
+[detector_a:118 A] #2 assert
+[detector_a:118 A] #3 assert
+[detector_a:118 A] #4 assert
+[detector_a:119 orig] #0 assert
+[detector_a:119 orig] #1 assert
+[detector_a:119 orig] #2 assert
+[detector_a:119 orig] #3 assert
+[detector_a:119 orig] #4 assert
+[detector_a:119 A] #0 assert
+[detector_a:119 A] #1 assert
+[detector_a:119 A] #2 assert
+[detector_a:119 A] #3 assert
+[detector_a:119 A] #4 assert
+[detector_a:120 orig] #0 assert
+[detector_a:120 orig] #1 assert
+[detector_a:120 orig] #2 assert
+[detector_a:120 orig] #3 assert
+[detector_a:120 orig] #4 assert
+[detector_a:120 A] #0 assert
+[detector_a:120 A] #1 assert
+[detector_a:120 A] #2 assert
+[detector_a:120 A] #3 assert
+[detector_a:120 A] #4 assert
+[detector_a:121 orig] #0 assert
+[detector_a:121 orig] #1 assert
+[detector_a:121 orig] #2 assert
+[detector_a:121 orig] #3 assert
+[detector_a:121 orig] #4 assert
+[detector_a:121 A] #0 assert
+[detector_a:121 A] #1 assert
+[detector_a:121 A] #2 assert
+[detector_a:121 A] #3 assert
+[detector_a:121 A] #4 assert
+[detector_a:122 orig] #0 exception
+[detector_a:122 orig] #1 exception
+[detector_a:122 orig] #2 exception
+[detector_a:122 orig] #3 exception
+[detector_a:122 orig] #4 exception
+[detector_a:122 A] #0 exception
+[detector_a:122 A] #1 exception
+[detector_a:122 A] #2 exception
+[detector_a:122 A] #3 exception
+[detector_a:122 A] #4 exception
+[detector_a:123 orig] #0 assert
+[detector_a:123 orig] #1 assert
+[detector_a:123 orig] #2 assert
+[detector_a:123 orig] #3 assert
+[detector_a:123 orig] #4 assert
+[detector_a:123 A] #0 assert
+[detector_a:123 A] #1 assert
+[detector_a:123 A] #2 assert
+[detector_a:123 A] #3 assert
+[detector_a:123 A] #4 assert
+[detector_a:124 orig] #0 assert
+[detector_a:124 orig] #1 assert
+[detector_a:124 orig] #2 assert
+[detector_a:124 orig] #3 assert
+[detector_a:124 orig] #4 assert
+[detector_a:124 A] #0 assert
+[detector_a:124 A] #1 assert
+[detector_a:124 A] #2 assert
+[detector_a:124 A] #3 assert
+[detector_a:124 A] #4 assert
+[detector_a:125 orig] #0 assert
+[detector_a:125 orig] #1 assert
+[detector_a:125 orig] #2 assert
+[detector_a:125 orig] #3 assert
+[detector_a:125 orig] #4 assert
+[detector_a:125 A] #0 assert
+[detector_a:125 A] #1 assert
+[detector_a:125 A] #2 assert
+[detector_a:125 A] #3 assert
+[detector_a:125 A] #4 assert
+[detector_a:126 orig] #0 assert
+[detector_a:126 orig] #1 assert
+[detector_a:126 orig] #2 assert
+[detector_a:126 orig] #3 assert
+[detector_a:126 orig] #4 assert
+[detector_a:126 A] #0 assert
+[detector_a:126 A] #1 assert
+[detector_a:126 A] #2 assert
+[detector_a:126 A] #3 assert
+[detector_a:126 A] #4 assert
+[detector_a:131 orig] #0 assert
+[detector_a:131 orig] #1 assert
+[detector_a:131 orig] #2 assert
+[detector_a:131 orig] #3 assert
+[detector_a:131 orig] #4 assert
+[detector_a:131 A] #0 assert
+[detector_a:131 A] #1 assert
+[detector_a:131 A] #2 assert
+[detector_a:131 A] #3 assert
+[detector_a:131 A] #4 assert
+[detector_a:132 orig] #0 assert
+[detector_a:132 orig] #1 assert
+[detector_a:132 orig] #2 assert
+[detector_a:132 orig] #3 assert
+[detector_a:132 orig] #4 assert
+[detector_a:132 A] #0 assert
+[detector_a:132 A] #1 assert
+[detector_a:132 A] #2 assert
+[detector_a:132 A] #3 assert
+[detector_a:132 A] #4 assert
+[detector_a:133 orig] #0 assert
+[detector_a:133 orig] #1 assert
+[detector_a:133 orig] #2 assert
+[detector_a:133 orig] #3 assert
+[detector_a:133 orig] #4 assert
+[detector_a:133 A] #0 assert
+[detector_a:133 A] #1 assert
+[detector_a:133 A] #2 assert
+[detector_a:133 A] #3 assert
+[detector_a:133 A] #4 assert
+[detector_a:134 orig] #0 assert
+[detector_a:134 orig] #1 assert
+[detector_a:134 orig] #2 assert
+[detector_a:134 orig] #3 assert
+[detector_a:134 orig] #4 assert
+[detector_a:134 A] #0 assert
+[detector_a:134 A] #1 assert
+[detector_a:134 A] #2 assert
+[detector_a:134 A] #3 assert
+[detector_a:134 A] #4 assert
+[detector_a:135 orig] #0 assert
+[detector_a:135 orig] #1 assert
+[detector_a:135 orig] #2 assert
+[detector_a:135 orig] #3 assert
+[detector_a:135 orig] #4 assert
+[detector_a:135 A] #0 assert
+[detector_a:135 A] #1 assert
+[detector_a:135 A] #2 assert
+[detector_a:135 A] #3 assert
+[detector_a:135 A] #4 assert
+[detector_a:136 orig] #0 assert
+[detector_a:136 orig] #1 assert
+[detector_a:136 orig] #2 assert
+[detector_a:136 orig] #3 assert
+[detector_a:136 orig] #4 assert
+[detector_a:136 A] #0 assert
+[detector_a:136 A] #1 assert
+[detector_a:136 A] #2 assert
+[detector_a:136 A] #3 assert
+[detector_a:136 A] #4 assert
+[detector_a:137 orig] #0 assert
+[detector_a:137 orig] #1 assert
+[detector_a:137 orig] #2 assert
+[detector_a:137 orig] #3 assert
+[detector_a:137 orig] #4 assert
+[detector_a:137 A] #0 assert
+[detector_a:137 A] #1 assert
+[detector_a:137 A] #2 assert
+[detector_a:137 A] #3 assert
+[detector_a:137 A] #4 assert
+[detector_a:138 orig] #0 assert
+[detector_a:138 orig] #1 assert
+[detector_a:138 orig] #2 assert
+[detector_a:138 orig] #3 assert
+[detector_a:138 orig] #4 assert
+[detector_a:138 A] #0 assert
+[detector_a:138 A] #1 assert
+[detector_a:138 A] #2 assert
+[detector_a:138 A] #3 assert
+[detector_a:138 A] #4 assert
+[detector_a:139 orig] #0 assert
+[detector_a:139 orig] #1 assert
+[detector_a:139 orig] #2 assert
+[detector_a:139 orig] #3 assert
+[detector_a:139 orig] #4 assert
+[detector_a:139 A] #0 assert
+[detector_a:139 A] #1 assert
+[detector_a:139 A] #2 assert
+[detector_a:139 A] #3 assert
+[detector_a:139 A] #4 assert
+[detector_a:141 orig] #0 assert
+[detector_a:141 orig] #1 assert
+[detector_a:141 orig] #2 assert
+[detector_a:141 orig] #3 assert
+[detector_a:141 orig] #4 assert
+[detector_a:141 A] #0 assert
+[detector_a:141 A] #1 assert
+[detector_a:141 A] #2 assert
+[detector_a:141 A] #3 assert
+[detector_a:141 A] #4 assert
+[detector_a:144 orig] #0 assert
+[detector_a:144 orig] #1 assert
+[detector_a:144 orig] #2 assert
+[detector_a:144 orig] #3 assert
+[detector_a:144 orig] #4 assert
+[detector_a:144 A] #0 assert
+[detector_a:144 A] #1 assert
+[detector_a:144 A] #2 assert
+[detector_a:144 A] #3 assert
+[detector_a:144 A] #4 assert
+[detector_a:147 orig] #0 assert
+[detector_a:147 orig] #1 assert
+[detector_a:147 orig] #2 assert
+[detector_a:147 orig] #3 assert
+[detector_a:147 orig] #4 assert
+[detector_a:147 A] #0 assert
+[detector_a:147 A] #1 assert
+[detector_a:147 A] #2 assert
+[detector_a:147 A] #3 assert
+[detector_a:147 A] #4 assert
+[detector_a:149 orig] #0 assert
+[detector_a:149 orig] #1 assert
+[detector_a:149 orig] #2 assert
+[detector_a:149 orig] #3 assert
+[detector_a:149 orig] #4 assert
+[detector_a:149 A] #0 assert
+[detector_a:149 A] #1 assert
+[detector_a:149 A] #2 assert
+[detector_a:149 A] #3 assert
+[detector_a:149 A] #4 assert
+[detector_a:150 orig] #0 exception
+[detector_a:150 orig] #1 exception
+[detector_a:150 orig] #2 exception
+[detector_a:150 orig] #3 exception
+[detector_a:150 orig] #4 exception
+[detector_a:150 A] #0 exception
+[detector_a:150 A] #1 exception
+[detector_a:150 A] #2 exception
+[detector_a:150 A] #3 exception
+[detector_a:150 A] #4 exception
+[detector_a:151 orig] #0 assert
+[detector_a:151 orig] #1 assert
+[detector_a:151 orig] #2 assert
+[detector_a:151 orig] #3 assert
+[detector_a:151 orig] #4 assert
+[detector_a:151 A] #0 assert
+[detector_a:151 A] #1 assert
+[detector_a:151 A] #2 assert
+[detector_a:151 A] #3 assert
+[detector_a:151 A] #4 assert
+[detector_a:152 orig] #0 assert
+[detector_a:152 orig] #1 assert
+[detector_a:152 orig] #2 assert
+[detector_a:152 orig] #3 assert
+[detector_a:152 orig] #4 assert
+[detector_a:152 A] #0 assert
+[detector_a:152 A] #1 assert
+[detector_a:152 A] #2 assert
+[detector_a:152 A] #3 assert
+[detector_a:152 A] #4 assert
+[detector_a:153 orig] #0 assert
+[detector_a:153 orig] #1 assert
+[detector_a:153 orig] #2 assert
+[detector_a:153 orig] #3 assert
+[detector_a:153 orig] #4 assert
+[detector_a:153 A] #0 assert
+[detector_a:153 A] #1 assert
+[detector_a:153 A] #2 assert
+[detector_a:153 A] #3 assert
+[detector_a:153 A] #4 assert
+[detector_a:155 orig] #0 assert
+[detector_a:155 orig] #1 assert
+[detector_a:155 orig] #2 assert
+[detector_a:155 orig] #3 assert
+[detector_a:155 orig] #4 assert
+[detector_a:155 A] #0 assert
+[detector_a:155 A] #1 assert
+[detector_a:155 A] #2 assert
+[detector_a:155 A] #3 assert
+[detector_a:155 A] #4 assert
+[detector_a:156 orig] #0 assert
+[detector_a:156 orig] #1 assert
+[detector_a:156 orig] #2 assert
+[detector_a:156 orig] #3 assert
+[detector_a:156 orig] #4 assert
+[detector_a:156 A] #0 assert
+[detector_a:156 A] #1 assert
+[detector_a:156 A] #2 assert
+[detector_a:156 A] #3 assert
+[detector_a:156 A] #4 assert
+[detector_a:157 orig] #0 assert
+[detector_a:157 orig] #1 assert
+[detector_a:157 orig] #2 assert
+[detector_a:157 orig] #3 assert
+[detector_a:157 orig] #4 assert
+[detector_a:157 A] #0 assert
+[detector_a:157 A] #1 assert
+[detector_a:157 A] #2 assert
+[detector_a:157 A] #3 assert
+[detector_a:157 A] #4 assert
+[detector_a:158 orig] #0 assert
+[detector_a:158 orig] #1 assert
+[detector_a:158 orig] #2 assert
+[detector_a:158 orig] #3 assert
+[detector_a:158 orig] #4 assert
+[detector_a:158 A] #0 assert
+[detector_a:158 A] #1 assert
+[detector_a:158 A] #2 assert
+[detector_a:158 A] #3 assert
+[detector_a:158 A] #4 assert
+[detector_a:159 orig] #0 assert
+[detector_a:159 orig] #1 assert
+[detector_a:159 orig] #2 assert
+[detector_a:159 orig] #3 assert
+[detector_a:159 orig] #4 assert
+[detector_a:159 A] #0 assert
+[detector_a:159 A] #1 assert
+[detector_a:159 A] #2 assert
+[detector_a:159 A] #3 assert
+[detector_a:159 A] #4 assert
+[detector_a:160 orig] #0 assert
+[detector_a:160 orig] #1 assert
+[detector_a:160 orig] #2 assert
+[detector_a:160 orig] #3 assert
+[detector_a:160 orig] #4 assert
+[detector_a:160 A] #0 assert
+[detector_a:160 A] #1 assert
+[detector_a:160 A] #2 assert
+[detector_a:160 A] #3 assert
+[detector_a:160 A] #4 assert
+[detector_a:161 orig] #0 assert
+[detector_a:161 orig] #1 assert
+[detector_a:161 orig] #2 assert
+[detector_a:161 orig] #3 assert
+[detector_a:161 orig] #4 assert
+[detector_a:161 A] #0 assert
+[detector_a:161 A] #1 assert
+[detector_a:161 A] #2 assert
+[detector_a:161 A] #3 assert
+[detector_a:161 A] #4 assert
+[detector_a:162 orig] #0 assert
+[detector_a:162 orig] #1 assert
+[detector_a:162 orig] #2 assert
+[detector_a:162 orig] #3 assert
+[detector_a:162 orig] #4 assert
+[detector_a:162 A] #0 assert
+[detector_a:162 A] #1 assert
+[detector_a:162 A] #2 assert
+[detector_a:162 A] #3 assert
+[detector_a:162 A] #4 assert
+[detector_a:163 orig] #0 assert
+[detector_a:163 orig] #1 assert
+[detector_a:163 orig] #2 assert
+[detector_a:163 orig] #3 assert
+[detector_a:163 orig] #4 assert
+[detector_a:163 A] #0 assert
+[detector_a:163 A] #1 assert
+[detector_a:163 A] #2 assert
+[detector_a:163 A] #3 assert
+[detector_a:163 A] #4 assert
+[detector_a:164 orig] #0 assert
+[detector_a:164 orig] #1 assert
+[detector_a:164 orig] #2 assert
+[detector_a:164 orig] #3 assert
+[detector_a:164 orig] #4 assert
+[detector_a:164 A] #0 assert
+[detector_a:164 A] #1 assert
+[detector_a:164 A] #2 assert
+[detector_a:164 A] #3 assert
+[detector_a:164 A] #4 assert
+[detector_a:165 orig] #0 assert
+[detector_a:165 orig] #1 assert
+[detector_a:165 orig] #2 assert
+[detector_a:165 orig] #3 assert
+[detector_a:165 orig] #4 assert
+[detector_a:165 A] #0 assert
+[detector_a:165 A] #1 assert
+[detector_a:165 A] #2 assert
+[detector_a:165 A] #3 assert
+[detector_a:165 A] #4 assert
+[detector_a:170 orig] #0 assert
+[detector_a:170 orig] #1 assert
+[detector_a:170 orig] #2 assert
+[detector_a:170 orig] #3 assert
+[detector_a:170 orig] #4 assert
+[detector_a:170 A] #0 assert
+[detector_a:170 A] #1 assert
+[detector_a:170 A] #2 assert
+[detector_a:170 A] #3 assert
+[detector_a:170 A] #4 assert
+[detector_a:171 orig] #0 assert
+[detector_a:171 orig] #1 assert
+[detector_a:171 orig] #2 assert
+[detector_a:171 orig] #3 assert
+[detector_a:171 orig] #4 assert
+[detector_a:171 A] #0 assert
+[detector_a:171 A] #1 assert
+[detector_a:171 A] #2 assert
+[detector_a:171 A] #3 assert
+[detector_a:171 A] #4 assert
+[detector_a:173 orig] #0 assert
+[detector_a:173 orig] #1 assert
+[detector_a:173 orig] #2 assert
+[detector_a:173 orig] #3 assert
+[detector_a:173 orig] #4 assert
+[detector_a:173 A] #0 assert
+[detector_a:173 A] #1 assert
+[detector_a:173 A] #2 assert
+[detector_a:173 A] #3 assert
+[detector_a:173 A] #4 assert
+[detector_a:177 orig] #0 assert
+[detector_a:177 orig] #1 assert
+[detector_a:177 orig] #2 assert
+[detector_a:177 orig] #3 assert
+[detector_a:177 orig] #4 assert
+[detector_a:177 A] #0 assert
+[detector_a:177 A] #1 assert
+[detector_a:177 A] #2 assert
+[detector_a:177 A] #3 assert
+[detector_a:177 A] #4 assert
+[detector_a:178 orig] #0 assert
+[detector_a:178 orig] #1 assert
+[detector_a:178 orig] #2 assert
+[detector_a:178 orig] #3 assert
+[detector_a:178 orig] #4 assert
+[detector_a:178 A] #0 assert
+[detector_a:178 A] #1 assert
+[detector_a:178 A] #2 assert
+[detector_a:178 A] #3 assert
+[detector_a:178 A] #4 assert
+[detector_a:179 orig] #0 assert
+[detector_a:179 orig] #1 assert
+[detector_a:179 orig] #2 assert
+[detector_a:179 orig] #3 assert
+[detector_a:179 orig] #4 assert
+[detector_a:179 A] #0 assert
+[detector_a:179 A] #1 assert
+[detector_a:179 A] #2 assert
+[detector_a:179 A] #3 assert
+[detector_a:179 A] #4 assert
+[detector_a:180 orig] #0 assert
+[detector_a:180 orig] #1 assert
+[detector_a:180 orig] #2 assert
+[detector_a:180 orig] #3 assert
+[detector_a:180 orig] #4 assert
+[detector_a:180 A] #0 assert
+[detector_a:180 A] #1 assert
+[detector_a:180 A] #2 assert
+[detector_a:180 A] #3 assert
+[detector_a:180 A] #4 assert
+[detector_a:181 orig] #0 assert
+[detector_a:181 orig] #1 assert
+[detector_a:181 orig] #2 assert
+[detector_a:181 orig] #3 assert
+[detector_a:181 orig] #4 assert
+[detector_a:181 A] #0 assert
+[detector_a:181 A] #1 assert
+[detector_a:181 A] #2 assert
+[detector_a:181 A] #3 assert
+[detector_a:181 A] #4 assert
+[detector_a:182 orig] #0 assert
+[detector_a:182 orig] #1 assert
+[detector_a:182 orig] #2 assert
+[detector_a:182 orig] #3 assert
+[detector_a:182 orig] #4 assert
+[detector_a:182 A] #0 assert
+[detector_a:182 A] #1 assert
+[detector_a:182 A] #2 assert
+[detector_a:182 A] #3 assert
+[detector_a:182 A] #4 assert
+[detector_a:183 orig] #0 assert
+[detector_a:183 orig] #1 assert
+[detector_a:183 orig] #2 assert
+[detector_a:183 orig] #3 assert
+[detector_a:183 orig] #4 assert
+[detector_a:183 A] #0 assert
+[detector_a:183 A] #1 assert
+[detector_a:183 A] #2 assert
+[detector_a:183 A] #3 assert
+[detector_a:183 A] #4 assert
+[detector_a:184 orig] #0 assert
+[detector_a:184 orig] #1 assert
+[detector_a:184 orig] #2 assert
+[detector_a:184 orig] #3 assert
+[detector_a:184 orig] #4 assert
+[detector_a:184 A] #0 assert
+[detector_a:184 A] #1 assert
+[detector_a:184 A] #2 assert
+[detector_a:184 A] #3 assert
+[detector_a:184 A] #4 assert
+[detector_a:187 orig] #0 assert
+[detector_a:187 orig] #1 assert
+[detector_a:187 orig] #2 assert
+[detector_a:187 orig] #3 assert
+[detector_a:187 orig] #4 assert
+[detector_a:187 A] #0 assert
+[detector_a:187 A] #1 assert
+[detector_a:187 A] #2 assert
+[detector_a:187 A] #3 assert
+[detector_a:187 A] #4 assert
+[detector_a:188 orig] #0 assert
+[detector_a:188 orig] #1 assert
+[detector_a:188 orig] #2 assert
+[detector_a:188 orig] #3 assert
+[detector_a:188 orig] #4 assert
+[detector_a:188 A] #0 assert
+[detector_a:188 A] #1 assert
+[detector_a:188 A] #2 assert
+[detector_a:188 A] #3 assert
+[detector_a:188 A] #4 assert
+[detector_a:189 orig] #0 assert
+[detector_a:189 orig] #1 assert
+[detector_a:189 orig] #2 assert
+[detector_a:189 orig] #3 assert
+[detector_a:189 orig] #4 assert
+[detector_a:189 A] #0 assert
+[detector_a:189 A] #1 assert
+[detector_a:189 A] #2 assert
+[detector_a:189 A] #3 assert
+[detector_a:189 A] #4 assert
+[detector_a:192 orig] #0 assert
+[detector_a:192 orig] #1 assert
+[detector_a:192 orig] #2 assert
+[detector_a:192 orig] #3 assert
+[detector_a:192 orig] #4 assert
+[detector_a:192 A] #0 assert
+[detector_a:192 A] #1 assert
+[detector_a:192 A] #2 assert
+[detector_a:192 A] #3 assert
+[detector_a:192 A] #4 assert
+[closed_loop:009 orig] #0 assert
+[closed_loop:009 orig] #1 assert
+[closed_loop:009 orig] #2 assert
+[closed_loop:009 orig] #3 assert
+[closed_loop:009 orig] #4 assert
+[closed_loop:009 A] #0 assert
+[closed_loop:009 A] #1 assert
+[closed_loop:009 A] #2 assert
+[closed_loop:009 A] #3 assert
+[closed_loop:009 A] #4 assert
+[closed_loop:010 orig] #0 assert
+[closed_loop:010 orig] #1 assert
+[closed_loop:010 orig] #2 assert
+[closed_loop:010 orig] #3 assert
+[closed_loop:010 orig] #4 assert
+[closed_loop:010 A] #0 assert
+[closed_loop:010 A] #1 assert
+[closed_loop:010 A] #2 assert
+[closed_loop:010 A] #3 assert
+[closed_loop:010 A] #4 assert
+[closed_loop:012 orig] #0 assert
+[closed_loop:012 orig] #1 assert
+[closed_loop:012 orig] #2 assert
+[closed_loop:012 orig] #3 assert
+[closed_loop:012 orig] #4 assert
+[closed_loop:012 A] #0 assert
+[closed_loop:012 A] #1 assert
+[closed_loop:012 A] #2 assert
+[closed_loop:012 A] #3 assert
+[closed_loop:012 A] #4 assert
+[closed_loop:014 orig] #0 assert
+[closed_loop:014 orig] #1 assert
+[closed_loop:014 orig] #2 assert
+[closed_loop:014 orig] #3 assert
+[closed_loop:014 orig] #4 assert
+[closed_loop:014 A] #0 assert
+[closed_loop:014 A] #1 assert
+[closed_loop:014 A] #2 assert
+[closed_loop:014 A] #3 assert
+[closed_loop:014 A] #4 assert
+[closed_loop:016 orig] #0 exception
+[closed_loop:016 orig] #1 exception
+[closed_loop:016 orig] #2 exception
+[closed_loop:016 orig] #3 exception
+[closed_loop:016 orig] #4 exception
+[closed_loop:016 A] #0 exception
+[closed_loop:016 A] #1 exception
+[closed_loop:016 A] #2 exception
+[closed_loop:016 A] #3 exception
+[closed_loop:016 A] #4 exception
+[closed_loop:017 orig] #0 assert
+[closed_loop:017 orig] #1 assert
+[closed_loop:017 orig] #2 assert
+[closed_loop:017 orig] #3 assert
+[closed_loop:017 orig] #4 assert
+[closed_loop:017 A] #0 assert
+[closed_loop:017 A] #1 assert
+[closed_loop:017 A] #2 assert
+[closed_loop:017 A] #3 assert
+[closed_loop:017 A] #4 assert
+[closed_loop:018 orig] #0 assert
+[closed_loop:018 orig] #1 assert
+[closed_loop:018 orig] #2 assert
+[closed_loop:018 orig] #3 assert
+[closed_loop:018 orig] #4 assert
+[closed_loop:018 A] #0 assert
+[closed_loop:018 A] #1 assert
+[closed_loop:018 A] #2 assert
+[closed_loop:018 A] #3 assert
+[closed_loop:018 A] #4 assert
+[closed_loop:019 orig] #0 assert
+[closed_loop:019 orig] #1 assert
+[closed_loop:019 orig] #2 assert
+[closed_loop:019 orig] #3 assert
+[closed_loop:019 orig] #4 assert
+[closed_loop:019 A] #0 assert
+[closed_loop:019 A] #1 assert
+[closed_loop:019 A] #2 assert
+[closed_loop:019 A] #3 assert
+[closed_loop:019 A] #4 assert
+[closed_loop:020 orig] #0 assert
+[closed_loop:020 orig] #1 assert
+[closed_loop:020 orig] #2 assert
+[closed_loop:020 orig] #3 assert
+[closed_loop:020 orig] #4 assert
+[closed_loop:020 A] #0 assert
+[closed_loop:020 A] #1 assert
+[closed_loop:020 A] #2 assert
+[closed_loop:020 A] #3 assert
+[closed_loop:020 A] #4 assert
+[closed_loop:021 orig] #0 assert
+[closed_loop:021 orig] #1 assert
+[closed_loop:021 orig] #2 assert
+[closed_loop:021 orig] #3 assert
+[closed_loop:021 orig] #4 assert
+[closed_loop:021 A] #0 assert
+[closed_loop:021 A] #1 assert
+[closed_loop:021 A] #2 assert
+[closed_loop:021 A] #3 assert
+[closed_loop:021 A] #4 assert
+[closed_loop:022 orig] #0 assert
+[closed_loop:022 orig] #1 assert
+[closed_loop:022 orig] #2 assert
+[closed_loop:022 orig] #3 assert
+[closed_loop:022 orig] #4 assert
+[closed_loop:022 A] #0 assert
+[closed_loop:022 A] #1 assert
+[closed_loop:022 A] #2 assert
+[closed_loop:022 A] #3 assert
+[closed_loop:022 A] #4 assert
+[closed_loop:023 orig] #0 assert
+[closed_loop:023 orig] #1 assert
+[closed_loop:023 orig] #2 assert
+[closed_loop:023 orig] #3 assert
+[closed_loop:023 orig] #4 assert
+[closed_loop:023 A] #0 assert
+[closed_loop:023 A] #1 assert
+[closed_loop:023 A] #2 assert
+[closed_loop:023 A] #3 assert
+[closed_loop:023 A] #4 assert
+[closed_loop:024 orig] #0 assert
+[closed_loop:024 orig] #1 assert
+[closed_loop:024 orig] #2 assert
+[closed_loop:024 orig] #3 assert
+[closed_loop:024 orig] #4 assert
+[closed_loop:024 A] #0 assert
+[closed_loop:024 A] #1 assert
+[closed_loop:024 A] #2 assert
+[closed_loop:024 A] #3 assert
+[closed_loop:024 A] #4 assert
+[closed_loop:025 orig] #0 assert
+[closed_loop:025 orig] #1 assert
+[closed_loop:025 orig] #2 assert
+[closed_loop:025 orig] #3 assert
+[closed_loop:025 orig] #4 assert
+[closed_loop:025 A] #0 assert
+[closed_loop:025 A] #1 assert
+[closed_loop:025 A] #2 assert
+[closed_loop:025 A] #3 assert
+[closed_loop:025 A] #4 assert
+[closed_loop:026 orig] #0 assert
+[closed_loop:026 orig] #1 assert
+[closed_loop:026 orig] #2 assert
+[closed_loop:026 orig] #3 assert
+[closed_loop:026 orig] #4 assert
+[closed_loop:026 A] #0 assert
+[closed_loop:026 A] #1 assert
+[closed_loop:026 A] #2 assert
+[closed_loop:026 A] #3 assert
+[closed_loop:026 A] #4 assert
+[closed_loop:028 orig] #0 exception
+[closed_loop:028 orig] #1 exception
+[closed_loop:028 orig] #2 exception
+[closed_loop:028 orig] #3 exception
+[closed_loop:028 orig] #4 exception
+[closed_loop:028 A] #0 exception
+[closed_loop:028 A] #1 exception
+[closed_loop:028 A] #2 exception
+[closed_loop:028 A] #3 exception
+[closed_loop:028 A] #4 exception
+[closed_loop:030 orig] #0 exception
+[closed_loop:030 orig] #1 exception
+[closed_loop:030 orig] #2 exception
+[closed_loop:030 orig] #3 exception
+[closed_loop:030 orig] #4 exception
+[closed_loop:030 A] #0 exception
+[closed_loop:030 A] #1 exception
+[closed_loop:030 A] #2 exception
+[closed_loop:030 A] #3 exception
+[closed_loop:030 A] #4 exception
+[closed_loop:031 orig] #0 exception
+[closed_loop:031 orig] #1 exception
+[closed_loop:031 orig] #2 exception
+[closed_loop:031 orig] #3 exception
+[closed_loop:031 orig] #4 exception
+[closed_loop:031 A] #0 exception
+[closed_loop:031 A] #1 exception
+[closed_loop:031 A] #2 exception
+[closed_loop:031 A] #3 exception
+[closed_loop:031 A] #4 exception
+[closed_loop:032 orig] #0 exception
+[closed_loop:032 orig] #1 exception
+[closed_loop:032 orig] #2 exception
+[closed_loop:032 orig] #3 exception
+[closed_loop:032 orig] #4 exception
+[closed_loop:032 A] #0 exception
+[closed_loop:032 A] #1 exception
+[closed_loop:032 A] #2 exception
+[closed_loop:032 A] #3 exception
+[closed_loop:032 A] #4 exception
+[closed_loop:033 orig] #0 exception
+[closed_loop:033 orig] #1 exception
+[closed_loop:033 orig] #2 exception
+[closed_loop:033 orig] #3 exception
+[closed_loop:033 orig] #4 exception
+[closed_loop:033 A] #0 exception
+[closed_loop:033 A] #1 exception
+[closed_loop:033 A] #2 exception
+[closed_loop:033 A] #3 exception
+[closed_loop:033 A] #4 exception
+[closed_loop:035 orig] #0 assert
+[closed_loop:035 orig] #1 assert
+[closed_loop:035 orig] #2 assert
+[closed_loop:035 orig] #3 assert
+[closed_loop:035 orig] #4 assert
+[closed_loop:035 A] #0 assert
+[closed_loop:035 A] #1 assert
+[closed_loop:035 A] #2 assert
+[closed_loop:035 A] #3 assert
+[closed_loop:035 A] #4 assert
+[closed_loop:036 orig] #0 assert
+[closed_loop:036 orig] #1 assert
+[closed_loop:036 orig] #2 assert
+[closed_loop:036 orig] #3 assert
+[closed_loop:036 orig] #4 assert
+[closed_loop:036 A] #0 assert
+[closed_loop:036 A] #1 assert
+[closed_loop:036 A] #2 assert
+[closed_loop:036 A] #3 assert
+[closed_loop:036 A] #4 assert
+[closed_loop:037 orig] #0 assert
+[closed_loop:037 orig] #1 assert
+[closed_loop:037 orig] #2 assert
+[closed_loop:037 orig] #3 assert
+[closed_loop:037 orig] #4 assert
+[closed_loop:037 A] #0 assert
+[closed_loop:037 A] #1 assert
+[closed_loop:037 A] #2 assert
+[closed_loop:037 A] #3 assert
+[closed_loop:037 A] #4 assert
+[closed_loop:038 orig] #0 assert
+[closed_loop:038 orig] #1 assert
+[closed_loop:038 orig] #2 assert
+[closed_loop:038 orig] #3 assert
+[closed_loop:038 orig] #4 assert
+[closed_loop:038 A] #0 assert
+[closed_loop:038 A] #1 assert
+[closed_loop:038 A] #2 assert
+[closed_loop:038 A] #3 assert
+[closed_loop:038 A] #4 assert
+[closed_loop:039 orig] #0 assert
+[closed_loop:039 orig] #1 assert
+[closed_loop:039 orig] #2 assert
+[closed_loop:039 orig] #3 assert
+[closed_loop:039 orig] #4 assert
+[closed_loop:039 A] #0 assert
+[closed_loop:039 A] #1 assert
+[closed_loop:039 A] #2 assert
+[closed_loop:039 A] #3 assert
+[closed_loop:039 A] #4 assert
+[closed_loop:040 orig] #0 assert
+[closed_loop:040 orig] #1 assert
+[closed_loop:040 orig] #2 assert
+[closed_loop:040 orig] #3 assert
+[closed_loop:040 orig] #4 assert
+[closed_loop:040 A] #0 assert
+[closed_loop:040 A] #1 assert
+[closed_loop:040 A] #2 assert
+[closed_loop:040 A] #3 assert
+[closed_loop:040 A] #4 assert
+[closed_loop:041 orig] #0 assert
+[closed_loop:041 orig] #1 assert
+[closed_loop:041 orig] #2 assert
+[closed_loop:041 orig] #3 assert
+[closed_loop:041 orig] #4 assert
+[closed_loop:041 A] #0 assert
+[closed_loop:041 A] #1 assert
+[closed_loop:041 A] #2 assert
+[closed_loop:041 A] #3 assert
+[closed_loop:041 A] #4 assert
+[closed_loop:045 orig] #0 exception
+[closed_loop:045 orig] #1 exception
+[closed_loop:045 orig] #2 exception
+[closed_loop:045 orig] #3 exception
+[closed_loop:045 orig] #4 exception
+[closed_loop:045 A] #0 exception
+[closed_loop:045 A] #1 exception
+[closed_loop:045 A] #2 exception
+[closed_loop:045 A] #3 exception
+[closed_loop:045 A] #4 exception
+[closed_loop:046 orig] #0 exception
+[closed_loop:046 orig] #1 exception
+[closed_loop:046 orig] #2 exception
+[closed_loop:046 orig] #3 exception
+[closed_loop:046 orig] #4 exception
+[closed_loop:046 A] #0 exception
+[closed_loop:046 A] #1 exception
+[closed_loop:046 A] #2 exception
+[closed_loop:046 A] #3 exception
+[closed_loop:046 A] #4 exception
+[closed_loop:047 orig] #0 exception
+[closed_loop:047 orig] #1 exception
+[closed_loop:047 orig] #2 exception
+[closed_loop:047 orig] #3 exception
+[closed_loop:047 orig] #4 exception
+[closed_loop:047 A] #0 exception
+[closed_loop:047 A] #1 exception
+[closed_loop:047 A] #2 exception
+[closed_loop:047 A] #3 exception
+[closed_loop:047 A] #4 exception
+[closed_loop:050 orig] #0 exception
+[closed_loop:050 orig] #1 exception
+[closed_loop:050 orig] #2 exception
+[closed_loop:050 orig] #3 exception
+[closed_loop:050 orig] #4 exception
+[closed_loop:050 A] #0 exception
+[closed_loop:050 A] #1 exception
+[closed_loop:050 A] #2 exception
+[closed_loop:050 A] #3 exception
+[closed_loop:050 A] #4 exception
+[closed_loop:063 orig] #0 exception
+[closed_loop:063 orig] #1 exception
+[closed_loop:063 orig] #2 exception
+[closed_loop:063 orig] #3 exception
+[closed_loop:063 orig] #4 exception
+[closed_loop:063 A] #0 exception
+[closed_loop:063 A] #1 exception
+[closed_loop:063 A] #2 exception
+[closed_loop:063 A] #3 exception
+[closed_loop:063 A] #4 exception
+[recheck_tl_kills] 재확인 127개: kill 유지 127, 재검토 0

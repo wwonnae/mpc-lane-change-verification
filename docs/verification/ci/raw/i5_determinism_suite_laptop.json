@@ -1,0 +1,451 @@
+{
+ "purpose": "CI run #6 비결정 실패 — 전체 suite 반복",
+ "started": "2026-10-13T18:46:53",
+ "host": "DESKTOP-MDCKRJS",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "python": "3.9.12",
+ "cpu_count": 22,
+ "git": "4c0c503797fd5ee6f4f1bf8bf152186a149fd581",
+ "dirty": false,
+ "results": [
+  {
+   "load": "idle",
+   "n_trials": 30,
+   "n_target_failed": 0,
+   "n_any_failed": 0,
+   "seconds": 397.9,
+   "runs": [
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.67s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.41s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.78s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.68s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.08s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.41s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.67s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.13s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.47s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.52s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.46s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.51s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.48s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.33s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.37s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.40s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.54s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.47s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.19s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.85s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.14s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.52s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.84s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.55s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.48s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.93s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.30s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.58s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.82s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.70s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    }
+   ]
+  },
+  {
+   "load": "cpu",
+   "n_trials": 30,
+   "n_target_failed": 0,
+   "n_any_failed": 0,
+   "seconds": 397.4,
+   "runs": [
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.81s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.98s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.97s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.21s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.06s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.17s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.04s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.10s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.26s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.09s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.96s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.83s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.03s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.90s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.90s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.27s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.25s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.02s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.97s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.93s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.87s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.96s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.83s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.82s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.82s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.78s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.92s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.80s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 11.84s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 12.03s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    }
+   ]
+  }
+ ],
+ "finished": "2026-10-13T19:00:10"
+}

@@ -1,0 +1,159 @@
+{
+  "scenario_name": "paper",
+  "n_episodes": 100,
+  "outcome_counts": {
+    "성공": 99,
+    "충돌": 1
+  },
+  "collision_count": 1,
+  "collision_rate": 0.01,
+  "collision_rate_ci95": {
+    "point": 0.01,
+    "lo": 0.0017673865655472645,
+    "hi": 0.0544875247609346,
+    "z": 1.96
+  },
+  "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+  "safe_stop_count": 0,
+  "success_rate": 0.99,
+  "success_rate_ci95": {
+    "point": 0.99,
+    "lo": 0.9455124752390653,
+    "hi": 0.9982326134344526,
+    "z": 1.96
+  },
+  "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+  "expected_outcome": "성공",
+  "expected_outcome_achievement_rate": 0.99,
+  "expected_outcome_achievement_rate_ci95": {
+    "point": 0.99,
+    "lo": 0.9455124752390653,
+    "hi": 0.9982326134344526,
+    "z": 1.96
+  },
+  "expected_outcome_achievement_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+  "success_rate_note": "success_rate는 항상 outcome=='성공' 라벨 기준. 시나리오별 '기대 결과'는 다를 수 있음(paper=성공, left_obstacle=SAFE_STOP -- REQ-FSM-02b 검증 목적) -- expected_outcome_achievement_rate가 시나리오 기대 결과 기준 지표. 모든 비율은 Wilson 95% 신뢰구간과 함께 보고한다(단독 % 표기 금지, MEASURE_PLAN.md 보고 규칙).",
+  "solver_fail_total": 0,
+  "fallback_total": 0,
+  "constraint_satisfaction": {
+    "delta_within_tolerance_rate": 1.0,
+    "psi_within_tolerance_rate": 1.0,
+    "y_within_tolerance_rate": 1.0,
+    "delta_checked_steps": 15433,
+    "delta_violation_steps": 0,
+    "psi_violation_steps": 0,
+    "y_checked_steps": 15433,
+    "y_violation_steps": 0,
+    "note": "허용오차 = OSQP eps_abs(SETTINGS_DECISION.md §18). y는 SAFE_STOP 스텝 제외(REQ-LAT-05, 위치제약 미정의)"
+  },
+  "clip_breakdown": {
+    "clip_total": 187,
+    "clip_numerical": 187,
+    "clip_violation": 0,
+    "note": "clip_numerical=eps_abs 이내 초과(솔버 수치오차), clip_violation=eps_abs 초과(버그 후보, §16 판정 기준과 동일)"
+  },
+  "saturation_ratio_by_state": {
+    "KEEP_L2": 0.0,
+    "EVADE_L": 0.02486135016255498,
+    "KEEP_L1": 0.0,
+    "RETURN_TO_L2": 0.07241766467065869,
+    "SAFE_STOP": null
+  },
+  "state_duration_steps_total": {
+    "KEEP_L2": 3079,
+    "EVADE_L": 5229,
+    "KEEP_L1": 1781,
+    "RETURN_TO_L2": 5344,
+    "SAFE_STOP": 0
+  },
+  "mpc_solve_time_ms": {
+    "mean": 0.11638959726223039,
+    "max": 0.576800000089861,
+    "stdev": 0.021038080943980603,
+    "p50": 0.1083999995898921,
+    "p95": 0.1499549999152804,
+    "p99": 0.18948599988107132,
+    "max_call_info": {
+      "t_mpc_solve_ms": 0.576800000089861,
+      "seed": 16,
+      "step": 16,
+      "t": 0.8,
+      "state": "EVADE_L",
+      "is_first_mpc_call_of_episode": false
+    },
+    "max_excluding_first_call": 0.576800000089861,
+    "max_call_info_excluding_first_call": {
+      "t_mpc_solve_ms": 0.576800000089861,
+      "seed": 16,
+      "step": 16,
+      "t": 0.8,
+      "state": "EVADE_L",
+      "is_first_mpc_call_of_episode": false
+    },
+    "n_calls": 11670,
+    "budget_ms_20hz": 50.0,
+    "mean_pct_of_budget": 0.2327791945244608,
+    "measurement_status": "참고(3층PC104)",
+    "note": "MEASURE_PLAN.md 공통 원칙(2026-09-17 변경): 공식 측정 환경은 노트북(hostname DESKTOP-MDCKRJS) + AC 전원 + Windows 최고 성능 모드. 그 외(SSAFY PC, 배터리 구동 등)는 참고용으로만 보고(절대수치는 하드웨어 종속)."
+  },
+  "step_time_ms": {
+    "mean": 0.11271842804380224,
+    "max": 0.81,
+    "stdev": 0.05849258267193607,
+    "p50": 0.1322,
+    "p95": 0.17483999999999997,
+    "p99": 0.21853600000000006,
+    "max_call_info": {
+      "t_step_ms": 0.81,
+      "seed": 62,
+      "step": 56,
+      "t": 2.8000000000000003,
+      "state": "EVADE_L",
+      "is_first_mpc_call_of_episode": false
+    },
+    "max_excluding_first_call": 0.81,
+    "max_call_info_excluding_first_call": {
+      "t_step_ms": 0.81,
+      "seed": 62,
+      "step": 56,
+      "t": 2.8000000000000003,
+      "state": "EVADE_L",
+      "is_first_mpc_call_of_episode": false
+    },
+    "n_steps": 15433,
+    "budget_ms_20hz": 50.0,
+    "mean_pct_of_budget": 0.2254368560876045,
+    "note": "스텝 1개 전체 소요시간(센서~종료판정, runner.py 1~8번). MPC solve 시간(mpc_solve_time_ms)을 포함한다 -- t_step_ms >= t_mpc_solve_ms. \"첫 호출 제외 max\"는 그 episode의 첫 MPC 호출이 일어난 step을 제외.",
+    "measurement_status": "참고(3층PC104)"
+  },
+  "env": {
+    "timestamp": "2026-09-22T02:52:42.065520+00:00",
+    "hostname": "3층PC104",
+    "is_official_measurement_host": false,
+    "executable": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "osqp": "1.1.3",
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "power": {
+      "ac_status": "AC",
+      "power_plan": "최고의 성능",
+      "power_mode_overlay": "감지 불가(ActiveOverlayAcPowerScheme 값 없음 -- 이 기기는 Windows 전원 모드 슬라이더를 registry overlay로 노출하지 않을 수 있음)",
+      "power_mode_overlay_confirms_best_performance": false,
+      "power_mode_user_confirmed": false,
+      "power_mode_user_confirmed_at": null,
+      "meets_official_condition": false,
+      "meets_official_condition_note": "ac_status=='AC' AND (power_mode_overlay가 최고 성능 GUID를 가리키거나 OR power_mode_user_confirmed==true). MEASURE_PLAN.md 공통 원칙 참고."
+    },
+    "osqp_settings": {
+      "eps_abs": 0.0001,
+      "eps_rel": 0.0001,
+      "max_iter": 4000,
+      "polishing": false,
+      "warm_starting": true,
+      "raise_error": false
+    }
+  }
+}

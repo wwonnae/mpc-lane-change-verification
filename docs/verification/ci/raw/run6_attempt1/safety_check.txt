@@ -1,0 +1,1 @@
+[make_safety_tables --check] 일치: SAFETY_TABLES.md, safety_numbers.json

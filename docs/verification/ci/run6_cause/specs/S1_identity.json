@@ -1,0 +1,3 @@
+{"exp": "S1_identity", "out_dir": "C:/Users/SSAFY/Desktop/MPC_LINETRACING/docs/verification/ci/run6_cause/raw/S1_identity", "batch_size": 10, "block": 1, "settle_s": 12,
+ "arms": [{"name": "probe_off", "root": "C:/Users/SSAFY/AppData/Local/Temp/run6_cause/copies/orig", "targets": ["i5","i4","base"], "probe": false, "load_k": 0, "trials": 50},
+          {"name": "probe_on",  "root": "C:/Users/SSAFY/AppData/Local/Temp/run6_cause/copies/orig", "targets": ["i5","i4","base"], "probe": true,  "load_k": 0, "trials": 50}]}

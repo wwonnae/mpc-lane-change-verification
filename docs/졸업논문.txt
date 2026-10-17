@@ -1,0 +1,1001 @@
+2025  ()
+   
+
+      MPC    
+                       
+
+                
+                     (20226115)
+                         2025. 12. 04
+                                                          
+
+I.  ..................................................................................................................3
+    1.    ......................................................................................3
+    2.     .....................................................................................3
+
+II.  .........................................................................................................4
+    1.    ..........................................................................4
+    2.    ..........................................................................................5
+    3.    ....................................................................................5
+
+III.   ....................................................................................................6
+    1.    .......................................................................................6
+    2.  .........................................................................................6
+    3.  .........................................................................................7
+
+IV.    ....................................................................................8
+    1.   .......................................................................8
+    2. MPC     ......................................................................9
+    3.     .....................................................................10
+    4.    ........................................................................................10
+
+V.     ...............................................................................11
+    1.    .....................................................................................11
+    2.    .....................................................................................11
+    3.   ..........................................................................................12
+
+VI.     ........................................................................................13
+    1.     .............................................................................13
+    2. Teacher  ..................................................................................13
+    3.    .....................................................................................15
+    4. Student     ......................................................................17
+    5. .........................................................................................................20
+
+VII.  ............................................................................................................20
+ .............................................................................................................21
+I. 
+
+1.    
+
+   ,   ,       
+    .        
+ , ,       ,   ,  
+,       .      
+          
+    ,       
+ .
+
+     (perception), (decision-making), 
+(control)   .   , ,     
+, ,   .       
+ ,  ,    .      
+       .     
+ ,     Hz      .
+
+  (Model Predictive Control, MPC)      
+     ,      
+   [1][2]. MPC  (prediction horizon)   
+ ,      .   , ,
+     ,         . 
+ MPC          ,   
+         .
+
+      (imitation learning)   
+ .   (expert policy)     
+   , MPC        
+       .  Behavioral Cloning   
+ Teacher -    ,    
+     .    forward propagation 
+   , MPC       , 
+       .
+
+       .    
+   ,       .  
+ expert         .  
+       ,    
+         . MPC   
+,       .    
+    .
+
+2.    
+
+           , MPC  
+ (Teacher)    (Student)    . 
+ MPC     ,     
+     .
+
+     . ,   (Finite State
+Machine, FSM) . FSM  (KEEP_L2),  (EVADE_L),   
+(KEEP_L1),  (RETURN_TO_L2),  (SAFE_STOP) 5  ,
+     .        
+   .
+
+, MPC     .  kinematic bicycle model  
+  ,  (y) ()    2-state MPC 
+.    ,  ,      
+ ,        . OSQP(Operator
+Splitting Quadratic Program) solver  Quadratic Programming   
+.
+
+,      .   (front_gap) 
+   ,       .  
+      MPC      .
+
+,    .   MPC    
+ ,  (Multi-Layer Perceptron, MLP)    
+    .    ,  , FSM  
+,    . Behavioral Cloning   MPC -
+ .
+
+,    .     Teacher Student
+  ,  ,    .  MPC  , 
+ ,          . Student
+         .
+
+    ,       .
+     ,      . 
+   ,      .
+
+II.  
+
+1.   
+
+    ,  ,      
+. Schwarting [1]        
+,       .    
+    ,   ,  ,     
+   .
+
+     (rule-based)   (learning-based) 
+ .          
+  .  ,        ,  
+        .    
+     .        
+,    .       
+,         .
+
+(FSM)        . FSM
+             
+  .    ,  ,  , 
+   ,       . FSM  
+     .      
+     ,        .  
+ FSM   ,  ,     ,   
+   .
+
+         .
+     ,      
+  .        
+ ,         .  
+      .
+
+2.   
+
+              
+. MPC          , 
+        .    
+       ,       
+  .  receding horizon       
+ .
+
+MPC     ,    . ,
+,      ,       
+    . Katriniok [2] MPC      
+    ,        .
+
+ MPC          . 
+Quadratic Programming(QP)  Nonlinear Programming(NLP)    
+ ,     .         
+   .
+
+      .     
+           
+[3]. Kim [3]   MPC,       
+,      .      
+ (y) ()    2-state MPC .
+
+3.   
+
+(imitation learning)      , 
+       end-to-end   . 
+    Behavioral Cloning    -
+  .
+
+Pomerleau[4] 1980  ALVINN  Behavioral Cloning   
+ . Bojarski [5] NVIDIA   CNN   
+   end-to-end  .
+
+ Behavioral Cloning  (distribution mismatch)  .  
+     ,       
+     . DAgger[6]        
+.
+
+MPC     Teacher   expert demonstration 
+  . MPC       ,
+         .  
+   MPC  Teacher     ,
+MLP       Student  .
+III.  
+
+1.   
+
+       (Environment), (Decision-
+Making), (Control), (Policy)  .
+
+  2   ,  (x, y), (), (v) 
+ . Kinematic bicycle model    ,  
+       .
+
+  (FSM)        
+. FSM 5 (KEEP_L2, EVADE_L, KEEP_L1, RETURN_TO_L2, SAFE_STOP) 
+,      .
+
+      .      
+    , MPC        
+.     ,        
+.
+
+  Teacher  Student  . Teacher  MPC  
+ ,       . Student  
+  MPC    .
+
+  20Hz   ,   0.05.
+
+2.  
+
+(1)  
+
+  2   ,    0.30m. 2(L2) 
+y=0m, 1(L1)  y=0.30m .   0.30m RC (0.15m) 
+ .
+
+  2(L2)    .    , 
+  1(L1)    2   .
+
+   ,   0.5m 2.0m    .
+   0.3m/s 0.5m/s    .
+
+(2)  
+
+ RC ,    1 .
+
+                                                       1.  
+
+               
+
+ (L)  0.20  m  - 
+
+ (B)  0.15  m    
+                                        
+                          deg             
+                 ±25      m/s             
+                          deg/s           
+                 0.0~0.5
+
+   200
+
+  kinematic bicycle model ,    (1)~(3) :
+
+ = v cos() -(1)        = v sin() - (2)   = (v/L) tan() - (3)
+
+ x, y    ,  , v ,   , L 
+.
+
+(3)  
+
+     .
+
+IR     3   ,    
+  .   0.04m .      
+(ey_line) .
+
+LiDAR  2D        . LiDAR
+   (front_gap)    (left_clear) 
+.
+
+3.  
+
+ Python 3 ,       
+   .   NumPy( ), OSQP(), PyTorch(
+), Matplotlib()  .
+
+SimulatedEnvironment    ,  ,    
+. Kinematic bicycle model      , Euler  
+.
+
+StateMachine  FSM          
+.     (0.3)    .
+
+OSQPMPC  OSQP   Quadratic Programming  ,  
+  . 2-state MPC(y, ) ,   0.75(15 step at 20Hz)
+ .
+
+HierarchicalController      ,   MPC 
+   .
+
+StudentPolicy      .  9   
+,  2   .
+
+DataLogger  Teacher       ,  , 
+ , FSM     .
+IV.    
+
+1.   
+
+  5   (FSM) .
+
+(1)  
+
+KEEP_L2 (2 )    ,  2 (y=0m)  .
+    ,  (G_TRIG = 1.2m)  
+   .
+
+EVADE_L ( )  2 1  .   y=0.30m
+ , MPC   .  1  (|y - 0.30m|  0.08m)
+ KEEP_L1  .
+
+KEEP_L1 (1 )    ,      1
+ .   (T_KEEP_L1_MIN = 0.6)  RETURN_TO_L2 
+ .
+
+RETURN_TO_L2 ( )  1 2 .   y=0m 
+, MPC   .  2  (|y|  0.20m) , 
+  (||  20°) KEEP_L2  .
+
+SAFE_STOP ( )      .   0 ,
+   .
+(2)   
+    2  .
+
+                                                      2.   
+
+                                                                 
+
+KEEP_L2       EVADE_L       front_gap < 1.2m AND left_clear =    
+
+                            True                                 
+
+              SAFE_STOP front_gap < 0.20m AND left_clear =        
+                                                          False
+
+EVADE_L       KEEP_L1       |y - 0.30|  0.08m                    1  
+
+KEEP_L1       RETURN_TO_L2  t > 0.6s                                
+
+RETURN_TO_L2  KEEP_L2       |y|  0.20m AND ||  20° 2  
+
+(3)  
+
+      .     (0.3) 
+   .
+
+ Rate Limiting    .   
+(DELTA_RATE_MAX = 200 deg/s)  (dt = 0.05s)     10°
+ :
+
+_max = 200.0 deg/s × 0.05 s = 10.0 deg/step
+_cmd = clip(_desired, _prev - _max, _prev + _max)
+        .
+
+2. MPC    
+
+(1)   
+
+MPC kinematic bicycle model   .  (y) () 
+  , ()   .
+
+     (4)~(5) :
+
+y_{k+1} = y_k + v·t·_k - (4)  _{k+1} = _k + (v/L)·t·_k - (5)
+
+ t  (0.05).
+
+(2)  
+
+MPC    N step   ,  ,   
+.   (6)  :
+
+J = _{i=1}^{N} [q_y(y_i - y_ref)² + q_·_i²] + r_·_0² + _{i=1}^{N-1} r_(_i - 
+_{i-1})² - (6)
+
+    ,  3  .
+
+                               3. MPC  
+
+                              
+
+q_y     100.0                   
+
+q_      25.0                   
+
+r_      2.0                     
+
+r_      5.0                     
+
+N       15                      (0.75)
+
+q_y = 100.0       . q_ = 25.0  
+   . r_ = 2.0   , r_ = 5.0    
+.   N = 15 0.75 ,    .
+
+(3) 
+
+MPC       .
+
+ : -25°  _i  25°, i = 0, 1, ..., N-1
+
+  : L2 : -0.15      0.15,  = 1, ... , 
+                           L1 : 0.15      0.45,  = 1, ... , 
+                             : -0.15      0.45,  = 1, ... , 
+                            : -80°  _i  80°, i = 1, 2, ..., N
+(4)   
+MPC   Quadratic Programming(QP)  :
+minimize (1/2) z^T H z + f^T z
+subject to l  A_ineq z  u
+: - z = [y, , , ..., y_N, _N, _{N-1}]^T:   (   ) - H:
+Hessian  ( 2 ,   = qy, q, r, r) - f:    ( 
+ ) - A_ineq:   ( +  ) - l, u:  /
+(, ,  )
+  OSQP(Operator Splitting Quadratic Program) solver . OSQP 
+    QP solver,       warm-start
+.
+  ,    fallback  :
+_fallback = -K_p·(y - y_ref) - (7)
+ K_p   1.0 .
+
+3.     
+
+    (front_gap)    .
+(1)   
+   v_ref = 0.5 m/s , FSM   .
+KEEP_L2, EVADE_L, KEEP_L1, RETURN_TO_L2  v_ref .  
+    .
+SAFE_STOP  v = 0   .
+(2)   
+G_TRIG = 1.2m    .      , FSM 
+      .
+G_SAFE_MIN = 0.20m   .         
+,  SAFE_STOP    .
+
+4.   
+
+      .
+   KEEP_L2      .  :
+ = -K_ey · ey_line - (8)
+ K_ey = 1.5  .
+MPC       (EVADE_L, RETURN_TO_L2) .
+V.    
+
+1.   
+
+(1)   
+
+  III    . Teacher (MPC) 
+   ,       .
+
+     (0.5~2.0m),  (0.3~0.5 m/s),  
+(±0.05m Gaussian)  .
+
+   10(200 step at 20Hz) ,      
+ SAFE_STOP   .
+
+(2) Teacher 
+
+Teacher  IV  FSM + MPC . MPC    
+       .
+
+Teacher    ,  , . MPC   
+ ,          
+ .
+
+(3)   
+
+  (0.05)   .
+
+  9  :
+
+     1. v:   (m/s)
+
+     2. ey:   (m). IR     (ey_line)   
+          ,    (y)     
+
+     3. front_gap:    (m)
+
+     4. left_clear:    (0 or 1)
+
+     5-9. state_one_hot: FSM  5 one-hot  . [KEEP_L2,
+     EVADE_L, KEEP_L1, RETURN_TO_L2, SAFE_STOP] 5   [1,0,0,0,0],
+     [0,1,0,0,0], ..., [0,0,0,0,1] 
+
+  2  :
+
+     1. : MPC   (deg)
+
+     2. v_target:      (m/s)
+
+ 100    .    191 step 
+,  19,129  .
+
+2.   
+
+Student   (MLP)  .     
+ feedforward  .
+(1)  
+
+  4  3 hidden layer .
+
+                 4. Student Policy  
+
+Layer   Type    Input  Output  Activation  Regularization
+
+Input   -       9      -       -           -
+
+FC1     Linear  9      256     ReLU        BatchNorm + Dropout(0.15)
+
+FC2     Linear  256    256     ReLU        BatchNorm + Dropout(0.15)
+                               ReLU        BatchNorm + Dropout(0.15)
+FC3     Linear  256    128
+                                  -                           -
+Output  Linear  128    2
+
+ 9   .   (FC1) 9  256 
+.   (FC2) 256 .   (FC3) 256 128
+ .  128 2(, ) .
+ (256-256-128)   .     135,000
+.
+(2) 
+      .
+Batch Normalization  hidden layer  .    
+   0,  1 .
+Dropout       . Dropout  p=0.15
+  15%   .
+       0,  1 :
+
+3.  
+
+(1)  
+Behavioral Cloning    (MSE)   :
+L = (1/N) _{i=1}^{N} [(_pred^i - _teacher^i)² + (v_pred^i - v_teacher^i)²] - (9)
+        .
+(2)  
+   5  .
+ 5.  
+                                                
+   Optimizer            Adam     ,  
+Learning Rate           1e-3
+  Batch Size             256                
+                                          
+     Epochs               50            
+Train/Val Split         85/15      /  
+
+(3)  
+
+     Gaussian     .  
+ N(0, 0.01²)    .
+
+  FSM     .     
+ ,       .
+
+VI.    
+
+1.    
+
+    .    Teacher      
+. 100   MPC  Teacher  ,   
+   .
+
+   Student    .     
+,     .
+
+    .     ,  ,  ,
+   .    ,  ,    
+.      ,   ,    
+.
+
+2. Teacher  
+
+(1)  
+
+Teacher  100    ,     
+   .  6 FSM    .
+
+                                                 6. FSM   
+
+FSM        (m) Mean   (deg)  (deg) Mean  
+
+                 ± Std          Mean ± Std   ± Std         (%)
+
+KEEP_L2          0.035 ± 0.028  27.3 ± 22.1  -0.82 ± 3.45  56.3
+
+EVADE_L          0.110 ± 0.065  29.5 ± 18.4  5.23 ± 7.12   2.1
+
+KEEP_L1          0.289 ± 0.041  35.4 ± 14.2  -1.45 ± 4.89  6.6
+
+RETURN_TO_L2 0.255 ± 0.096      15.8 ± 12.7  -8.91 ± 6.34  35.0
+KEEP_L2     56.3% ,    0.035m  
+. EVADE_L  2.1%       . RETURN_TO_L2
+ 35.0%       .
+
+ 7      .
+
+             7.   
+
+                                
+
+            0.458 ± 0.048  m/s    
+
+            0.301          m/s    
+
+            0.500          m/s   
+
+ front_gap  0.648          m      
+
+            0                   100  
+
+            100.0          %     
+
+  0.458 m/s  (0.5 m/s) ,  front_gap 0.648m  
+(0.20m)  .   0   100% Teacher   
+ .
+
+                                      1. Teacher    
+
+ 1     .  2 , 
+ 1  ,     2 .  
+ ,            0°
+. Student  Teacher   ,     
+ .       ,  MAE
+1.20°    .      , 
+  2 .    Student  Teacher  
+(approximate)  ,     .
+
+(2)  
+
+ 8 3,000 MPC       .
+          8. Teacher    ( 3,000)
+
+           (ms)        
+
+         1.091          
+
+         1.035         50% 
+
+         0.152         
+
+         0.823          
+
+         5.747          
+
+95       1.312          5% 
+
+99       1.524          1% 
+
+PC  (Intel Core i7, 16GB RAM)      3.23ms 
+.  MPC solver  (1.091ms)    ,   , 
+     .     (EVADE_L,
+KEEP_L1, RETURN_TO_L2)  3.71ms ,   
+EVADE_L  5.64ms 20Hz  (50ms) 11.3% .  
+ MPC    PC      . 
+ Raspberry Pi 3          
+  ,          
+.
+
+3.   
+
+(1)  
+
+100   19,129  .  9    
+.
+
+          9.   
+
+                                  
+
+         100            
+
+         19,129          
+
+         191.3            9.6
+
+         142             
+
+         267             
+
+ 10 FSM    .
+
+          10. FSM   
+
+FSM               (%)             
+
+KEEP_L2  10,770  56.3    ( )
+
+EVADE_L  402     2.1     ( )
+
+KEEP_L1  1,263   6.6     
+RETURN_TO_L2         6,694          35.0             
+
+  SAFE_STOP               0         0.0               
+
+KEEP_L2 56.3%  , EVADE_L 2.1%  . SAFE_STOP  0
+     .
+
+(2)   
+
+ 11 MPC     .
+
+                      11. MPC   
+
+                                                    
+
+ (deg)       -2.73           6.79           -12.44  24.99
+
+ (m/s)       0.458           0.048          0.301   0.500
+
+  -2.73°    .  -12.44°  24.99° 
+ (±25°)  , MPC   .
+(3)  
+ 12 MPC   .
+
+                                                    12. MPC  
+
+                                    (%)             (%)
+
+               ±25°                 0.00            100.00
+
+               0~1.5 m/s            0.00            100.00
+
+               L2: ­0.15~0.15 m     0.2143          99.7857
+               L1: 0.15~0.45 m
+
+               ±80°                 0.00            100.00
+
+, ,         100% 
+.
+
+       RC    (2: ­0.15~0.15
+m, 1: 0.15~0.45 m)   ,  19,129   41 (0.2143%)
+     .   0.21%    ,
+  99.7857%    .
+
+ MPC           
+, RC             
+   .
+
+(4)  
+ 13      .
+                                                    13.   
+
+                                                            
+
+              1.483      1.827         0.000                10.000
+(deg/step)
+
+              0.001      0.002         0.000                0.015
+(m/s/step)
+
+              0          -             0                    0
+
+   1.483 deg/step    .  10.000
+deg/step rate limiter   .
+
+ 14 MPC    FSM  .
+
+                                            14. FSM    
+
+FSM               y (m)           (m)                       RMS  (m)
+
+KEEP_L2          0.00           0.029                       0.037
+
+EVADE_L          0.30           0.104                       0.128
+
+KEEP_L1          0.30           0.026                       0.032
+
+RETURN_TO_L2     0.00           0.245                       0.263
+
+KEEP_L2 KEEP_L1    0.029m, 0.026m  ,    
+    .
+             2. MPC   
+
+ 2 MPC   8  . (a)   KEEP_L2
+56.3%    . (b)    -2.73°,  6.79°
+   . (c)   0.46 m/s   . (d) front_gap
+  0.5m ,  0.65m    . (e)  
+ 0m(2) 0.30m(1)    . (f)   EVADE_L
+  , RETURN_TO_L2   . (g)     
+0% . (h)   0°   .
+
+4. Student    
+
+(1)  
+
+V       Student  . 
+85:15   (16,360 )  (2,769 ) .  15 
+       .
+
+             15. Student   
+
+            MSE  ()       MAE (, deg)  MAE (, m/s)
+
+Training    0.082         1.15         0.014
+
+Validation  0.095         1.24         0.016
+
+Test ()     0.091         1.20         0.015
+
+Training  0.082 Validation  0.095  ,    
+.  MAE 1.20° Student   Teacher  1.2°  
+ .
+
+(2)  
+
+ 16 6,000     .
+
+ 16. Student    ( 6,000)
+                        (ms)   Teacher 
+
+                      0.206    5.30 
+
+                      0.189    -
+
+                      0.055    2.76 
+
+                      0.152    -
+
+                      1.557    3.69 
+
+95                    0.287    -
+
+99                    0.354    -
+
+Student     0.206ms, Teacher(1.091ms) 5.30 . 
+0.055ms Teacher(0.152ms) 2.76 , Student      
+.
+
+(3) Teacher-Student 
+
+      17.    (  )
+
+                      Teacher  Student   
+
+  (deg/step)          1.483    1.484     -0.1%
+
+  (m/s/step)          0.004    0.004     0.0%
+
+ Jerk (deg/step²)     0.935    0.905     +3.2%
+
+  Teacher 1.483 deg/step, Student 1.484 deg/step  . Jerk
+3.2%         .
+
+                            3. Teacher Student   (  )
+ 3 Teacher Student   4  . (a)   
+    . (b)   0.46 m/s    
+ . (c)   0m 0.30m     . (d) 
+ RMSE  FSM     .
+
+(4)  
+
+ 18 Teacher Student    .
+
+        18. Teacher vs Student   
+
+       Teacher (ms)  Student (ms)   
+
+       1.091         0.206         5.30
+
+       1.035         0.189         5.48
+
+       0.152         0.055         2.76
+
+       0.823         0.152         5.41
+
+       5.747         1.557         3.69
+
+95     1.312         0.287         4.57
+
+99     1.524         0.354         4.31
+
+   Student 5.30 ,        
+.
+
+(5)  
+
+Student       ,    
+     .        
+  .
+
+  MAE 1.2°,   MAE 0.015 m/s Teacher     
+  .   Teacher  (+0.1%),   
+      . 5.3      
+ .
+
+     ,   compounding error,
+domain gap,        .
+
+5. 
+
+(1) MPC 
+
+  MPC  expert demonstration     .
+MPC      . 19,129   ·· 
+100% ,    RC    (B) 99.79% 
+.
+
+  ,   2-state MPC  1.091ms  , 20Hz  
+  .        .
+
+(2)  
+
+Behavioral Cloning   Student  Teacher    
+.  MAE 1.2° Teacher  (6.79°)  18% .
+
+   Student Teacher 5.3 ,  2.8   
+ .      .
+
+        .    
+ , Student Teacher      .
+
+(3)   
+
+ (MPC)  ( )      
+    .     , , ,
+  .
+
+   - coupling     .
+
+(4)    
+
+    ,    .   
+     . Student      
+     .
+
+VII. 
+
+    MPC        
+    . FSM  , 2-state MPC  , 
+     Teacher  100  100%  , 0 ,
+   0.035m   .
+
+MPC       . , ,   100%
+,   99.79%  ,      
+    .
+
+Behavioral Cloning   Student  Teacher    
+.   MAE 1.2°,   MAE 0.015 m/s Teacher   ,
+    .
+
+   Student    0.206ms Teacher(1.091ms) 5.3 
+,  2.8    .
+
+     . ,     MPC   
+   . , MPC     100%  
+ . , Teacher-Student   MPC   
+ .
+
+     ,    . , Student  
+    . ,        
+   . ,  ,  ,     
+.
+
+      . , closed-loop   Student 
+       . ,  RC   
+  . ,  ,  ,       
+. , DAgger           .
+
+,   MPC        
+ . MPC        , 
+     .
+
+ø
+
+[1] Schwarting, W., Alonso-Mora, J., & Rus, D. (2018). Planning and decision-making for
+autonomous vehicles. Annual Review of Control, Robotics, and Autonomous Systems, 1, 187-
+210.
+
+[2] Katriniok, A., Maschuw, J. P., Christen, F., Eckstein, L., & Abel, D. (2013). Optimal
+vehicle dynamics control for combined longitudinal and lateral autonomous vehicle guidance.
+European Control Conference (ECC), 974-979.
+
+[3] Kim, E., Kim, J., & Sunwoo, M. (2014). Model predictive control strategy for smooth path
+tracking of autonomous vehicles with steering actuator dynamics. International Journal of
+Automotive Technology, 15(7), 1155-1164.
+
+[4] Pomerleau, D. A. (1988). ALVINN: An autonomous land vehicle in a neural network.
+Advances in Neural Information Processing Systems, 1, 305-313.
+
+[5] Bojarski, M., Del Testa, D., Dworakowski, D., Firner, B., Flepp, B., Goyal, P., ... & Zieba,
+K. (2016). End to end learning for self-driving cars. arXiv preprint arXiv:1604.07316.
+
+[6] Ross, S., Gordon, G., & Bagnell, D. (2011). A reduction of imitation learning and
+structured prediction to no-regret online learning. Proceedings of the International
+Conference on Artificial Intelligence and Statistics, 627-635.
+

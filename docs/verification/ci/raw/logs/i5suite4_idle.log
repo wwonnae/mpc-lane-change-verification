@@ -1,0 +1,6 @@
+idle trial  0 340 passed, 6 warnings in 14.57s target_failed=False [] tl_hits=0 hidden=0
+idle trial  1 340 passed, 6 warnings in 13.48s target_failed=False [] tl_hits=0 hidden=0
+idle trial  2 340 passed, 6 warnings in 16.18s target_failed=False [] tl_hits=0 hidden=0
+idle trial  3 340 passed, 6 warnings in 13.72s target_failed=False [] tl_hits=0 hidden=0
+idle trial  4 340 passed, 6 warnings in 13.71s target_failed=False [] tl_hits=0 hidden=0
+SUMMARY idle target_failed 0/5 any_failed 0 83.0 s

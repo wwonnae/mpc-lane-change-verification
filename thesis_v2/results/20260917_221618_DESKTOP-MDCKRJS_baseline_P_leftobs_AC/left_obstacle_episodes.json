@@ -1,0 +1,2902 @@
+[
+  {
+    "seed": 0,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 52,
+    "total_steps": 52,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@52"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 51,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 1,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 44,
+    "total_steps": 44,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@44"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 43,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 2,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 30,
+    "total_steps": 30,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@30"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 29,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 3,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 19,
+    "total_steps": 19,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@19"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 18,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 4,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 71,
+    "total_steps": 71,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@71"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 70,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.11132000000000919,
+    "mpc_solve_ms_max": 0.2902000000000182,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 5,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 62,
+    "total_steps": 62,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@62"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 61,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 6,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 47,
+    "total_steps": 47,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@47"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 46,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.13723076923076555,
+    "mpc_solve_ms_max": 0.5208999999999353,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 7,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 51,
+    "total_steps": 51,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@51"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 50,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 8,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 33,
+    "total_steps": 33,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@33"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 32,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 9,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 67,
+    "total_steps": 67,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@67"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 66,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.14029500000000694,
+    "mpc_solve_ms_max": 0.30479999999999396,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 10,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 71,
+    "total_steps": 71,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@71"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 70,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 11,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 22,
+    "total_steps": 22,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@22"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 21,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 12,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 29,
+    "total_steps": 29,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@29"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 28,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 13,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 66,
+    "total_steps": 66,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@66"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 65,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 14,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 64,
+    "total_steps": 64,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@64"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 63,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.12046666666665823,
+    "mpc_solve_ms_max": 0.2526999999999946,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 15,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 56,
+    "total_steps": 56,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@56"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 55,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.1565833333333396,
+    "mpc_solve_ms_max": 0.40039999999996745,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 16,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 48,
+    "total_steps": 48,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@48"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 47,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 17,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 65,
+    "total_steps": 65,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@65"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 64,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 18,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 38,
+    "total_steps": 38,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@38"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 37,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 19,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 39,
+    "total_steps": 39,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@39"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 38,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 20,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 31,
+    "total_steps": 31,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@31"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 30,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 21,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 61,
+    "total_steps": 61,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@61"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 60,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 2,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.13970454545454827,
+    "mpc_solve_ms_max": 0.4423000000000066,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 22,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 36,
+    "total_steps": 36,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@36"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 35,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 23,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 55,
+    "total_steps": 55,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@55"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 54,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 24,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 34,
+    "total_steps": 34,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@34"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 33,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 25,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 24,
+    "total_steps": 24,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@24"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 23,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 26,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 44,
+    "total_steps": 44,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@44"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 43,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 27,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 56,
+    "total_steps": 56,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@56"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 55,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 28,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 65,
+    "total_steps": 65,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@65"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 64,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 29,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 17,
+    "total_steps": 17,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@17"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 16,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 30,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 28,
+    "total_steps": 28,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@28"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 27,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 31,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 68,
+    "total_steps": 68,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@68"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 67,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 32,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 23,
+    "total_steps": 23,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@23"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 22,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 33,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 40,
+    "total_steps": 40,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@40"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 39,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 34,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 14,
+    "total_steps": 14,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@14"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 13,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.11325384615382769,
+    "mpc_solve_ms_max": 0.2405999999999242,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 35,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 34,
+    "total_steps": 34,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@34"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 33,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 36,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 25,
+    "total_steps": 25,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@25"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 24,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 37,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 56,
+    "total_steps": 56,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@56"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 55,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.20098000000001726,
+    "mpc_solve_ms_max": 0.3991000000000966,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 38,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 43,
+    "total_steps": 43,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@43"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 42,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 39,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 44,
+    "total_steps": 44,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@44"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 43,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 40,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 58,
+    "total_steps": 58,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@58"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 57,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 41,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 71,
+    "total_steps": 71,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@71"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 70,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 42,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 60,
+    "total_steps": 60,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@60"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 59,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 43,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 53,
+    "total_steps": 53,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@53"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 52,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 44,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 21,
+    "total_steps": 21,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@21"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 20,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 45,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 48,
+    "total_steps": 48,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@48"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 47,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 46,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 68,
+    "total_steps": 68,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@68"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 67,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 47,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 59,
+    "total_steps": 59,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@59"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 58,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 2,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.12267500000000542,
+    "mpc_solve_ms_max": 0.2539000000000291,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 48,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 37,
+    "total_steps": 37,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@37"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 36,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 49,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 35,
+    "total_steps": 35,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@35"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 34,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 50,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 61,
+    "total_steps": 61,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@61"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 60,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 51,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 70,
+    "total_steps": 70,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@70"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 69,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 52,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 51,
+    "total_steps": 51,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@51"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 50,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 53,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 14,
+    "total_steps": 14,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@14"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 13,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 54,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 27,
+    "total_steps": 27,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@27"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 26,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 55,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 64,
+    "total_steps": 64,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@64"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 63,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 56,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 58,
+    "total_steps": 58,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@58"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 57,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.1847157894736843,
+    "mpc_solve_ms_max": 0.42949999999997157,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 57,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 55,
+    "total_steps": 55,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@55"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 54,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.16411999999999724,
+    "mpc_solve_ms_max": 0.46200000000007346,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 58,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 32,
+    "total_steps": 32,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@32"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 31,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.10979473684211588,
+    "mpc_solve_ms_max": 0.1804000000000805,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 59,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 49,
+    "total_steps": 49,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@49"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 48,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.13689374999999865,
+    "mpc_solve_ms_max": 0.4499000000000031,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 60,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 34,
+    "total_steps": 34,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@34"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 33,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 61,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 36,
+    "total_steps": 36,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@36"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 35,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 62,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 50,
+    "total_steps": 50,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@50"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 49,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 63,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 48,
+    "total_steps": 48,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@48"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 47,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.14599999999999058,
+    "mpc_solve_ms_max": 0.32160000000003297,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 64,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 71,
+    "total_steps": 71,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@71"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 70,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.12236666666666969,
+    "mpc_solve_ms_max": 0.2489999999999437,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 65,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 17,
+    "total_steps": 17,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@17"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 16,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 66,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 69,
+    "total_steps": 69,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@69"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 68,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 67,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 39,
+    "total_steps": 39,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@39"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 38,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 68,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 43,
+    "total_steps": 43,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@43"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 42,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 69,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 49,
+    "total_steps": 49,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@49"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 48,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.12742857142856406,
+    "mpc_solve_ms_max": 0.23469999999992108,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 70,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 37,
+    "total_steps": 37,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@37"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 36,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 71,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 29,
+    "total_steps": 29,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@29"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 28,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 72,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 64,
+    "total_steps": 64,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@64"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 63,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 73,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 43,
+    "total_steps": 43,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@43"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 42,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 74,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 68,
+    "total_steps": 68,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@68"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 67,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 75,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 27,
+    "total_steps": 27,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@27"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 26,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 76,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 62,
+    "total_steps": 62,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@62"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 61,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 77,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 61,
+    "total_steps": 61,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@61"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 60,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.11899642857143052,
+    "mpc_solve_ms_max": 0.2874999999999961,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 78,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 39,
+    "total_steps": 39,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@39"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 38,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 79,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 69,
+    "total_steps": 69,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@69"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 68,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 80,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 58,
+    "total_steps": 58,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@58"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 57,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 81,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 40,
+    "total_steps": 40,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@40"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 39,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 82,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 74,
+    "total_steps": 74,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@74"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 73,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 83,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 33,
+    "total_steps": 33,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@33"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 32,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 84,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 58,
+    "total_steps": 58,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@58"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 57,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.13381666666667513,
+    "mpc_solve_ms_max": 0.4603000000000801,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 85,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 16,
+    "total_steps": 16,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@16"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 15,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 86,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 51,
+    "total_steps": 51,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@51"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 50,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 87,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 48,
+    "total_steps": 48,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@48"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 47,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 88,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 26,
+    "total_steps": 26,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@26"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 25,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 89,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 48,
+    "total_steps": 48,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@48"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 47,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 90,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 36,
+    "total_steps": 36,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@36"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 35,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 91,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 31,
+    "total_steps": 31,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@31"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 30,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 92,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 50,
+    "total_steps": 50,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@50"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 49,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 93,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 73,
+    "total_steps": 73,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@73"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 72,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 94,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 28,
+    "total_steps": 28,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@28"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 27,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 95,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 47,
+    "total_steps": 47,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@47"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 46,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 1,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.1602842105263379,
+    "mpc_solve_ms_max": 0.3429999999999822,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 96,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 58,
+    "total_steps": 58,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@58"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 57,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 97,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 54,
+    "total_steps": 54,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@54"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 53,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 98,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 70,
+    "total_steps": 70,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@70"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 69,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  },
+  {
+    "seed": 99,
+    "scenario_name": "left_obstacle",
+    "outcome": "SAFE_STOP",
+    "finish_step": 44,
+    "total_steps": 44,
+    "transitions": [
+      "KEEP_L2->SAFE_STOP@44"
+    ],
+    "state_duration_steps": {
+      "KEEP_L2": 43,
+      "EVADE_L": 0,
+      "KEEP_L1": 0,
+      "RETURN_TO_L2": 0,
+      "SAFE_STOP": 1
+    },
+    "solver_fail_count": 0,
+    "fallback_count": 0,
+    "rate_limit_count": 0,
+    "clip_count": 0,
+    "clip_numerical_count": 0,
+    "clip_violation_count": 0,
+    "delta_violation_count": 0,
+    "psi_violation_count": 0,
+    "y_violation_count": 0,
+    "mpc_solve_ms_mean": 0.0,
+    "mpc_solve_ms_max": 0.0,
+    "observed_settle_violation": false
+  }
+]

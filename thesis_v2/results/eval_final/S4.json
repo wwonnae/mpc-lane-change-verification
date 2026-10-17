@@ -1,0 +1,230 @@
+{
+  "low": {
+    "baseline": {
+      "n_episodes": 100,
+      "n_success": 98,
+      "n_collision": 1,
+      "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+      "success_rate_formatted": "98/100 (95% CI 93.0~99.4%)",
+      "safe_stop_count": 1,
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "solver_fail_count": 0,
+      "fallback_count": 0
+    },
+    "improved": {
+      "n_episodes": 100,
+      "n_success": 100,
+      "n_collision": 0,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "safe_stop_count": 0,
+      "delta_within_tolerance_rate": 0.9999352750809062,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "solver_fail_count": 0,
+      "fallback_count": 0,
+      "warm_start_shift_count": 0,
+      "max_iter_count": 17,
+      "max_iter_rejected_count": 0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 1,
+          "max": 0.0059602726856802235,
+          "cum": 0.0059602726856802235,
+          "episodes": 1
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      }
+    },
+    "paired": {
+      "n": 100,
+      "baseline_fail_improved_success": 2,
+      "baseline_success_improved_fail": 0,
+      "both_success": 98,
+      "both_fail": 0
+    }
+  },
+  "medium": {
+    "baseline": {
+      "n_episodes": 100,
+      "n_success": 96,
+      "n_collision": 1,
+      "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+      "success_rate_formatted": "96/100 (95% CI 90.2~98.4%)",
+      "safe_stop_count": 3,
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "solver_fail_count": 0,
+      "fallback_count": 0
+    },
+    "improved": {
+      "n_episodes": 100,
+      "n_success": 99,
+      "n_collision": 0,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+      "safe_stop_count": 1,
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "solver_fail_count": 0,
+      "fallback_count": 0,
+      "warm_start_shift_count": 0,
+      "max_iter_count": 15,
+      "max_iter_rejected_count": 0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 1,
+          "max": 0.005849392195342418,
+          "cum": 0.005849392195342418,
+          "episodes": 1
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      }
+    },
+    "paired": {
+      "n": 100,
+      "baseline_fail_improved_success": 3,
+      "baseline_success_improved_fail": 0,
+      "both_success": 96,
+      "both_fail": 1
+    }
+  },
+  "high": {
+    "baseline": {
+      "n_episodes": 100,
+      "n_success": 91,
+      "n_collision": 1,
+      "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+      "success_rate_formatted": "91/100 (95% CI 83.8~95.2%)",
+      "safe_stop_count": 8,
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "solver_fail_count": 0,
+      "fallback_count": 0
+    },
+    "improved": {
+      "n_episodes": 100,
+      "n_success": 100,
+      "n_collision": 0,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "safe_stop_count": 0,
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "solver_fail_count": 0,
+      "fallback_count": 0,
+      "warm_start_shift_count": 0,
+      "max_iter_count": 14,
+      "max_iter_rejected_count": 0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      }
+    },
+    "paired": {
+      "n": 100,
+      "baseline_fail_improved_success": 9,
+      "baseline_success_improved_fail": 0,
+      "both_success": 91,
+      "both_fail": 0
+    }
+  }
+}

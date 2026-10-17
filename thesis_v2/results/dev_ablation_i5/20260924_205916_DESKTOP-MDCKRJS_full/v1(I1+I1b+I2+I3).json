@@ -1,0 +1,5643 @@
+{
+  "paper": {
+    "n_episodes": 100,
+    "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+    "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+    "delta_within_tolerance_rate": 1.0,
+    "psi_within_tolerance_rate": 1.0,
+    "y_within_tolerance_rate": 1.0,
+    "n_mpc_calls": 11306,
+    "mpc_solve_ms_mean": 0.350306279851405,
+    "mpc_solve_ms_p99": 5.868109999999747,
+    "mpc_solve_ms_max": 27.912099999999995,
+    "max_iter_count": 38,
+    "max_iter_rejected_count": 2,
+    "max_iter_hit_rate": 0.0033610472315584645,
+    "time_limit_count": 0,
+    "time_limit_rejected_count": 0,
+    "warm_start_shift_count": 2,
+    "i3_activation_rate_among_cap_hits": 0.05263157894736842,
+    "violation_breakdown": {
+      "lane": {
+        "count": 0,
+        "max": 0.0,
+        "cum": 0.0,
+        "episodes": 0
+      },
+      "heading": {
+        "count": 0,
+        "max": 0.0,
+        "cum": 0.0,
+        "episodes": 0
+      },
+      "steering_angle": {
+        "count": 0,
+        "max": 0.0,
+        "cum": 0.0,
+        "episodes": 0
+      },
+      "steering_rate": {
+        "count": 0,
+        "max": 0.0,
+        "cum": 0.0,
+        "episodes": 0
+      },
+      "i2_y_deficit": {
+        "count": 0,
+        "max": 0.0,
+        "cum": 0.0,
+        "episodes": 0
+      },
+      "i2_psi_deficit": {
+        "count": 0,
+        "max": 0.0,
+        "cum": 0.0,
+        "episodes": 0
+      }
+    },
+    "notable_step_sample": [
+      [
+        {
+          "step": 16,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 6.523125048119027e-05,
+          "rate_excess_deg": 0.0,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        }
+      ],
+      [
+        {
+          "step": 15,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 1.240206227137719e-05,
+          "rate_excess_deg": 0.0,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        },
+        {
+          "step": 16,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 6.50287860217702e-05,
+          "rate_excess_deg": 0.0,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        }
+      ],
+      [
+        {
+          "step": 7,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 0.0,
+          "rate_excess_deg": 9.593492310422391e-05,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        },
+        {
+          "step": 8,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 0.00016481117810229762,
+          "rate_excess_deg": 0.0,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        },
+        {
+          "step": 9,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 5.5010669779420596e-05,
+          "rate_excess_deg": 0.0,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        },
+        {
+          "step": 11,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 4.670054039834781e-05,
+          "rate_excess_deg": 0.0,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        },
+        {
+          "step": 12,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": true,
+          "fallback_used": true,
+          "warm_start_shift_used": true,
+          "angle_excess_deg": 3.52591100174493e-05,
+          "rate_excess_deg": 0.0,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        }
+      ],
+      [
+        {
+          "step": 31,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 0.0,
+          "rate_excess_deg": 5.4104551686862123e-05,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        }
+      ],
+      [
+        {
+          "step": 35,
+          "state": "EVADE_L",
+          "solver_status": "maximum iterations reached",
+          "iterations": 20000,
+          "time_limit_hit": false,
+          "approx_rejected": false,
+          "fallback_used": false,
+          "warm_start_shift_used": false,
+          "angle_excess_deg": 0.0,
+          "rate_excess_deg": 0.0,
+          "lane_excess_m": 0.0,
+          "heading_excess_deg": 0.0
+        }
+      ]
+    ]
+  },
+  "S3": {
+    "n_total": 900,
+    "n_fail": 0,
+    "fail_ratio": 0.0
+  },
+  "S4": {
+    "low": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11211,
+      "mpc_solve_ms_mean": 0.34900431718849806,
+      "mpc_solve_ms_p99": 5.634640000001667,
+      "mpc_solve_ms_max": 32.05480000000449,
+      "max_iter_count": 32,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0028543394880028543,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "medium": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "98/100 (95% CI 93.0~99.4%)",
+      "delta_within_tolerance_rate": 0.9999330297347977,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11060,
+      "mpc_solve_ms_mean": 0.4086601356238977,
+      "mpc_solve_ms_p99": 7.500300999999322,
+      "mpc_solve_ms_max": 33.1475999999995,
+      "max_iter_count": 35,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0031645569620253164,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 1,
+          "max": 0.005802573658101551,
+          "cum": 0.005802573658101551,
+          "episodes": 1
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00011295538391209448,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 3.089009939927223e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.838084170368575e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "high": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11219,
+      "mpc_solve_ms_mean": 0.3687341830822423,
+      "mpc_solve_ms_p99": 6.26513000000002,
+      "mpc_solve_ms_max": 27.945899999998858,
+      "max_iter_count": 39,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0034762456546929316,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.8797358886076836e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 5.099909344608022e-06,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 2.2819740268076316e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.9906433006866564e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.4804175499326675e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    }
+  },
+  "S5": {
+    "delay_1step": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11358,
+      "mpc_solve_ms_mean": 0.3815810794154551,
+      "mpc_solve_ms_p99": 6.515716999999851,
+      "mpc_solve_ms_max": 30.221199999999726,
+      "max_iter_count": 43,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.003785877795386512,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 45,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 24,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.799360932063792e-07,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 5.608196432760337e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.00015665335053682838,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00011033629208512252,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 17,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.1577717362598605e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "delay_2step": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 0.9987159732922445,
+      "n_mpc_calls": 11473,
+      "mpc_solve_ms_mean": 0.446488006624276,
+      "mpc_solve_ms_p99": 8.812851999995846,
+      "mpc_solve_ms_max": 28.220099999998638,
+      "max_iter_count": 68,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.005926958947093175,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 20,
+          "max": 0.02108806898828125,
+          "cum": 0.23734422234027402,
+          "episodes": 2
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 45,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 20,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.936165915125912e-06,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0003295833664225256,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 23,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 24,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 25,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 26,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 27,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.0827277100419224e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0006771914228878018,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0006201908642111675,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.002234519112395361,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0005826427661013156,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00027892520724037695,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 17,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 18,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 19,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    }
+  },
+  "S6": {
+    "psi0_-15deg": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 0.9999348915945049,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 0.9983722898626213,
+      "n_mpc_calls": 11867,
+      "mpc_solve_ms_mean": 0.5497523215639145,
+      "mpc_solve_ms_p99": 10.97764800000052,
+      "mpc_solve_ms_max": 29.036300000001347,
+      "max_iter_count": 65,
+      "max_iter_rejected_count": 1,
+      "max_iter_hit_rate": 0.005477374231060925,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 1,
+      "i3_activation_rate_among_cap_hits": 0.015384615384615385,
+      "violation_breakdown": {
+        "lane": {
+          "count": 25,
+          "max": 0.022712324618133495,
+          "cum": 0.256869310986746,
+          "episodes": 3
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 1,
+          "max": 0.005954389234613444,
+          "cum": 0.005954389234613444,
+          "episodes": 1
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 19,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.000229576966814804,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 23,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00019847183740751007,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00044652697537017616,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 9.054030346078434e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.004028812483152677,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0005468261831715893,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 17,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 18,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.814392705019486e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 44,
+            "state": "KEEP_L1",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 3.758644500351238e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0011938226190655876,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 45,
+            "state": "KEEP_L1",
+            "solver_status": "solved",
+            "iterations": 1425,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.005648820255260201,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 46,
+            "state": "KEEP_L1",
+            "solver_status": "solved",
+            "iterations": 675,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.4981600919838911e-06,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.008663176203664691,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 47,
+            "state": "KEEP_L1",
+            "solver_status": "solved",
+            "iterations": 550,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 7.750926474869857e-06,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.010226651822048682,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 48,
+            "state": "KEEP_L1",
+            "solver_status": "solved",
+            "iterations": 525,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.191002804645791e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.01033393663661658,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 49,
+            "state": "KEEP_L1",
+            "solver_status": "solved",
+            "iterations": 550,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.4586424335050197e-06,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.008984666245653583,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 50,
+            "state": "KEEP_L1",
+            "solver_status": "solved",
+            "iterations": 475,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00024622582882116717,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.006183423557246048,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 51,
+            "state": "KEEP_L1",
+            "solver_status": "solved",
+            "iterations": 350,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 1.313590235696438e-06,
+            "lane_excess_m": 0.001939723223056744,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.337129050493218e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 28,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.00011175491014370209,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00011757162966574697,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.911595063385789e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.8290237199211106e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 7.047143159866209e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "psi0_-10deg": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11582,
+      "mpc_solve_ms_mean": 0.4942698238645542,
+      "mpc_solve_ms_p99": 9.677691000005838,
+      "mpc_solve_ms_max": 30.474400000002788,
+      "max_iter_count": 52,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0044897254360214125,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 20,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 2.0497400079477757e-06,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 3.0092073911802686e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0002599891429255763,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.1092706373005967e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 28,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0005610442244474712,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.002108147105332e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "psi0_-5deg": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11375,
+      "mpc_solve_ms_mean": 0.44496603956045316,
+      "mpc_solve_ms_p99": 8.53490000000395,
+      "mpc_solve_ms_max": 31.22290000000305,
+      "max_iter_count": 48,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.004219780219780219,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 20,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.563607202991761e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.1289973311789936e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 3.783941149748671e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.00029285466877837507,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 27,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "psi0_0deg": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11288,
+      "mpc_solve_ms_mean": 0.37841848866038846,
+      "mpc_solve_ms_p99": 6.5608910000051015,
+      "mpc_solve_ms_max": 30.692900000005352,
+      "max_iter_count": 40,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.003543586109142452,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 45,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.6454997652081147e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00010512070529244966,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.696239845283003e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "psi0_5deg": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11205,
+      "mpc_solve_ms_mean": 0.32059058456044537,
+      "mpc_solve_ms_p99": 5.416643999999987,
+      "mpc_solve_ms_max": 33.272199999998975,
+      "max_iter_count": 19,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0016956715751896474,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.674782568590217e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 3.083195242226111e-06,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 1.100581048518734e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 3.640618697531295e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00020494729758979702,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 27,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "psi0_10deg": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11244,
+      "mpc_solve_ms_mean": 0.31769303628612316,
+      "mpc_solve_ms_p99": 5.7267500000014575,
+      "mpc_solve_ms_max": 32.82629999999642,
+      "max_iter_count": 17,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.001511917467093561,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.8756351316540076e-06,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.412941175502283e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 23,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 34,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 4.4322666639118324e-06,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 35,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "psi0_15deg": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11407,
+      "mpc_solve_ms_mean": 0.28489387218378887,
+      "mpc_solve_ms_p99": 4.528991999995927,
+      "mpc_solve_ms_max": 32.961399999990704,
+      "max_iter_count": 12,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0010519856228631541,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 17,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 8.89163987682906e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.627295605809991e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    }
+  },
+  "S7a": {
+    "length_0.10m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11020,
+      "mpc_solve_ms_mean": 0.3828008529945282,
+      "mpc_solve_ms_p99": 6.407846000000879,
+      "mpc_solve_ms_max": 32.15600000000052,
+      "max_iter_count": 42,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.003811252268602541,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 1,
+          "max": 0.005811285562710822,
+          "cum": 0.005811285562710822,
+          "episodes": 1
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 45,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.2597500418441996e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 2.5762851777244578e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00014593833773801634,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "length_0.15m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11165,
+      "mpc_solve_ms_mean": 0.37952319749219066,
+      "mpc_solve_ms_p99": 6.4168399999977135,
+      "mpc_solve_ms_max": 28.77310000000932,
+      "max_iter_count": 41,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.003672189879086431,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 45,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 3.247228473668429e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.034904078054069e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 3.98317942540416e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00021196501326059547,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 2.7832405773864366e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "length_0.20m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11288,
+      "mpc_solve_ms_mean": 0.3779081502480438,
+      "mpc_solve_ms_p99": 6.353365999993882,
+      "mpc_solve_ms_max": 30.207900000007726,
+      "max_iter_count": 40,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.003543586109142452,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 45,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.6454997652081147e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00010512070529244966,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.696239845283003e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "length_0.30m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11540,
+      "mpc_solve_ms_mean": 0.36924908145584306,
+      "mpc_solve_ms_p99": 6.14623200000042,
+      "mpc_solve_ms_max": 30.36230000000728,
+      "max_iter_count": 35,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0030329289428076256,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 5.572051425062341e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 5.652732926897386e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 28,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "length_0.40m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11729,
+      "mpc_solve_ms_mean": 0.36223132406866304,
+      "mpc_solve_ms_p99": 5.856215999997388,
+      "mpc_solve_ms_max": 29.650200000020277,
+      "max_iter_count": 39,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.003325091653167363,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 45,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00011027684244524494,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.000186743128043787,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.377671959090776e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 2.9461687763188138e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 6.815399869708472e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 9.486683999249124e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "width_0.075m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11455,
+      "mpc_solve_ms_mean": 0.24747333915299785,
+      "mpc_solve_ms_p99": 3.788542000008837,
+      "mpc_solve_ms_max": 27.66100000002325,
+      "max_iter_count": 17,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0014840680925360104,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.00025491709067182455,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 17,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 7.340801925792562e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 3.585732795841068e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 27,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 28,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "width_0.100m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11376,
+      "mpc_solve_ms_mean": 0.25429058544289684,
+      "mpc_solve_ms_p99": 4.000024999974983,
+      "mpc_solve_ms_max": 38.16399999999476,
+      "max_iter_count": 14,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0012306610407876231,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 17,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.097613777176434e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 10,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 4.4062504265696134e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 24,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 32,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "width_0.200m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11207,
+      "mpc_solve_ms_mean": 0.5200758097617241,
+      "mpc_solve_ms_p99": 9.177973999986195,
+      "mpc_solve_ms_max": 29.334299999987934,
+      "max_iter_count": 47,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.004193807441777461,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 19,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 5.987705881693728e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 20,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 21,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.1091796536865104e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 23,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 24,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 7,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 8,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 9,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 11,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 3.4733974771938847e-06,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 17,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 12,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 5.0817417442061696e-05,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 14,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 15,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.1798021471397533e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 16,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.9337771398019186e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 17,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 2.3789600959389645e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "width_0.300m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "delta_within_tolerance_rate": 1.0,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 315,
+      "mpc_solve_ms_mean": 0.9788279365075538,
+      "mpc_solve_ms_p99": 26.558022000010062,
+      "mpc_solve_ms_max": 27.415599999983442,
+      "max_iter_count": 9,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.02857142857142857,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 20,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 1.5416862513717433e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 21,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 22,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 7.21142866737523e-05,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 23,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 12,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0012821483582108328,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 13,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 14,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0009348751540123601,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 52,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          },
+          {
+            "step": 54,
+            "state": "KEEP_L2",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0020730338842938068,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    }
+  },
+  "S7b": {
+    "rear_gap_0.1m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 0.9999291483633272,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11127,
+      "mpc_solve_ms_mean": 0.3601769929002093,
+      "mpc_solve_ms_p99": 6.7428160000031285,
+      "mpc_solve_ms_max": 29.734700000005887,
+      "max_iter_count": 19,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0017075581917857464,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 1,
+          "max": 0.005858475448263789,
+          "cum": 0.005858475448263789,
+          "episodes": 1
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 27,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 28,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "rear_gap_0.3m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 0.9999291483633272,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11127,
+      "mpc_solve_ms_mean": 0.36291528713940985,
+      "mpc_solve_ms_p99": 7.014283999984052,
+      "mpc_solve_ms_max": 27.537200000011808,
+      "max_iter_count": 19,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0017075581917857464,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 1,
+          "max": 0.005858475448263789,
+          "cum": 0.005858475448263789,
+          "episodes": 1
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 27,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 28,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "rear_gap_0.5m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 0.9999291483633272,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11127,
+      "mpc_solve_ms_mean": 0.3581464186213807,
+      "mpc_solve_ms_p99": 6.804594000001882,
+      "mpc_solve_ms_max": 28.08850000002394,
+      "max_iter_count": 19,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0017075581917857464,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 1,
+          "max": 0.005858475448263789,
+          "cum": 0.005858475448263789,
+          "episodes": 1
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 27,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 28,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    },
+    "rear_gap_1.0m": {
+      "n_episodes": 100,
+      "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+      "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+      "delta_within_tolerance_rate": 0.9999291483633272,
+      "psi_within_tolerance_rate": 1.0,
+      "y_within_tolerance_rate": 1.0,
+      "n_mpc_calls": 11127,
+      "mpc_solve_ms_mean": 0.35973299182175833,
+      "mpc_solve_ms_p99": 6.705513999996238,
+      "mpc_solve_ms_max": 27.586600000006456,
+      "max_iter_count": 19,
+      "max_iter_rejected_count": 0,
+      "max_iter_hit_rate": 0.0017075581917857464,
+      "time_limit_count": 0,
+      "time_limit_rejected_count": 0,
+      "warm_start_shift_count": 0,
+      "i3_activation_rate_among_cap_hits": 0.0,
+      "violation_breakdown": {
+        "lane": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "heading": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "steering_angle": {
+          "count": 1,
+          "max": 0.005858475448263789,
+          "cum": 0.005858475448263789,
+          "episodes": 1
+        },
+        "steering_rate": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_y_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        },
+        "i2_psi_deficit": {
+          "count": 0,
+          "max": 0.0,
+          "cum": 0.0,
+          "episodes": 0
+        }
+      },
+      "notable_step_sample": [
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 27,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 29,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ],
+        [
+          {
+            "step": 28,
+            "state": "EVADE_L",
+            "solver_status": "maximum iterations reached",
+            "iterations": 20000,
+            "time_limit_hit": false,
+            "approx_rejected": false,
+            "fallback_used": false,
+            "warm_start_shift_used": false,
+            "angle_excess_deg": 0.0,
+            "rate_excess_deg": 0.0,
+            "lane_excess_m": 0.0,
+            "heading_excess_deg": 0.0
+          }
+        ]
+      ]
+    }
+  }
+}

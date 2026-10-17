@@ -1,0 +1,58 @@
+{
+  "purpose": "하이브리드 탐지기 학습(B1 특징 + A 잔차, 정상 데이터만, §20)",
+  "iteration": 3,
+  "scenarios": [
+    "far",
+    "leftobs"
+  ],
+  "seeds_train": [
+    3300,
+    3379
+  ],
+  "seeds_identity": [
+    3200,
+    3209
+  ],
+  "n_windows": {
+    "train": 22247,
+    "identity": 1877
+  },
+  "window": 10,
+  "channels": [
+    "fg",
+    "fg_noret",
+    "dfg",
+    "ey",
+    "ey_none",
+    "left_clear",
+    "right_clear",
+    "delta_prev_cmd_deg",
+    "yaw_rate_meas",
+    "v",
+    "fsm_KEEP_L2",
+    "fsm_EVADE_L",
+    "fsm_KEEP_L1",
+    "fsm_RETURN_TO_L2",
+    "fsm_SAFE_STOP",
+    "fg",
+    "ey",
+    "psi",
+    "trk",
+    "rc",
+    "lc",
+    "ir_miss"
+  ],
+  "train_windows_sha256": "7dec76f8b7a59fdabdd255078da7abff1e5db65ea4e3fcc96ef65269c2b34051",
+  "sigma_gyro_deg": 1.0,
+  "if_params": {
+    "n_estimators": 200,
+    "max_samples": "auto",
+    "max_features": 1.0,
+    "bootstrap": false,
+    "random_state": 0,
+    "n_jobs": 1
+  },
+  "if_model_sha256": "ebc9ad214efaea8600fcc308d2548fd5864f1d7f75684579ed061319b335b3e8",
+  "if_train_seconds": 1.2185680866241455,
+  "norm_sha256": "119998f630b8912b0fc91eb700e37bd0ea6cbc40693b0094ebd2e985c4db7534"
+}

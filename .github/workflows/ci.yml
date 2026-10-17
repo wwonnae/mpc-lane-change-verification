@@ -1,0 +1,106 @@
+# 전체 단위 테스트 + golden(폐루프 SIL 회귀) — docs/verification/CI.md
+# - OS 매트릭스(러너 이미지 고정 ubuntu-24.04·windows-2025): golden 기준값은 Windows(노트북, Python 3.9.12)에서 생성됨. ubuntu만 실패하면 OS·수치 라이브러리 차이,
+#   두 OS 모두 실패하면 코드 변경을 먼저 의심한다(판정 절차는 CI.md).
+# - golden 기준값(thesis_v2/tests/golden/*.json)은 읽기만 한다. 이 워크플로는 generate_golden을 실행하지 않는다.
+# - 패키지 버전은 thesis_v2/requirements-py39.txt·anomaly/requirements-anomaly.txt(노트북 고정 조합)와
+#   torch 2.8.0+cpu(DESIGN §24 기록 버전)를 그대로 쓴다.
+# - 제외: 계산 시간 측정(benchmark_* 스크립트, 공식 조건 = 노트북 AC+최고 성능에서만 유효)은 테스트가 아니라
+#   스크립트이므로 실행하지 않는다. 수집되는 pytest 테스트는 하나도 빼지 않는다(계산 시간 절대값을 판정하는 테스트 없음 —
+#   CI.md "제외 판단").
+# - docs/verification/aspice: 추적 매트릭스 --check(바이트 비교)와 UML ↔ 코드 대조를 두 OS 모두에서 실행한다.
+# - docs/verification/safety: 저장된 평가 CSV로 FMEA·FTTI 수치표를 다시 계산해 대조한다(평가 재실행 없음).
+# - docs/verification/mutation: 변이 도구 자체 테스트(test_mutate.py)와 저장된 원자료 → MUTATION_TABLES.md 대조(--check)만 한다.
+#   전체 변이 실행은 하지 않는다(PREREGISTRATION §9: 약 1시간, 타임아웃 판정이 러너 부하에 묶임).
+# - improved v2의 OSQP time_limit(벽시계 안전망) 발동은 time_limit_monitor 플러그인이 테스트별로 기록한다.
+#   테스트 결과는 바꾸지 않는다(실패는 실패로 남고, 발동 여부가 로그·artifact에 남는다).
+name: tests-and-golden
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: ${{ matrix.os }} / py${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false          # 한 OS가 실패해도 다른 OS 결과를 끝까지 얻는다(OS 차이 구분용)
+      matrix:
+        # 이미지 고정(CI.md "러너 이미지 고정"): run #1(b3d2ead) Set up job 로그의 Runner Image는 ubuntu-24.04·windows-2025-vs2026.
+        # windows는 임시 라벨일 수 있어 정식 라벨 windows-2025로 고정(같은 이미지인지는 run #2 Runner Image 줄로 확인).
+        # *-latest는 가리키는 이미지가 바뀌고(ubuntu-latest → Ubuntu 26 예정), 새 이미지의 Python 3.9 제공 여부를 확인할 수 없다.
+        os: [ubuntu-24.04, windows-2025]
+        python-version: ["3.9"]
+    env:
+      PYTHONUTF8: "1"                     # 요구사항 파일 한글 주석·한글 출력(Windows 기본 코드페이지 회피)
+      PYTHONIOENCODING: utf-8
+      PYTHONPATH: docs/verification/ci    # time_limit_monitor 플러그인 위치(저장소 루트는 python -m 이 추가)
+      TIME_LIMIT_LOG: ci-out/time_limit_log.json
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: |
+            thesis_v2/requirements-py39.txt
+            thesis_v2/anomaly/requirements-anomaly.txt
+
+      - name: Install (pinned, torch CPU)
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r thesis_v2/requirements-py39.txt -r thesis_v2/anomaly/requirements-anomaly.txt
+          python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Record environment
+        run: |
+          mkdir -p ci-out
+          python -c "import platform,sys;print(platform.platform(), sys.version)" | tee ci-out/env.txt
+          python -m pip freeze | tee -a ci-out/env.txt
+
+      - name: Unit tests (all collected) + time_limit monitor
+        run: |
+          python -m pytest thesis_v2/tests thesis_v2/anomaly/tests -q -rfEs -p time_limit_monitor \
+            -p no:cacheprovider --junitxml=ci-out/junit.xml
+
+      - name: Golden (closed-loop SIL regression, baseline v1.1, tolerance 1e-3 rad)
+        if: ${{ always() }}       # 단위 테스트가 실패해도 golden 결과를 따로 남긴다
+        run: python -m thesis_v2.tests.check_golden 2>&1 | tee ci-out/golden.txt; exit ${PIPESTATUS[0]}
+
+      - name: Traceability matrix --check (docs/verification/aspice)
+        if: ${{ always() }}       # 생성물(LF, POSIX 경로)이 이 OS에서 다시 생성한 것과 바이트 단위로 같은지
+        run: python docs/verification/aspice/make_trace_matrix.py --check 2>&1 | tee ci-out/trace_check.txt; exit ${PIPESTATUS[0]}
+
+      - name: UML vs code check (docs/verification/aspice)
+        if: ${{ always() }}
+        run: python docs/verification/aspice/check_uml.py 2>&1 | tee ci-out/uml_check.txt; exit ${PIPESTATUS[0]}
+
+      - name: Safety tables --check (docs/verification/safety, FMEA/FTTI from stored results)
+        if: ${{ always() }}       # 저장된 평가 CSV(git 추적)로 다시 계산해 바이트 비교 — 평가 재실행 아님
+        run: python docs/verification/safety/make_safety_tables.py --check 2>&1 | tee ci-out/safety_check.txt; exit ${PIPESTATUS[0]}
+
+      - name: Mutation tool self-test (docs/verification/mutation/test_mutate.py)
+        if: ${{ always() }}       # 변이 생성·적용·층 실행기 자체 테스트(PREREGISTRATION §6). 제품 테스트 수에는 들어가지 않음
+        run: python -m pytest docs/verification/mutation/test_mutate.py -q -p no:cacheprovider 2>&1 | tee ci-out/mutate_selftest.txt; exit ${PIPESTATUS[0]}
+
+      - name: Mutation tables --check (docs/verification/mutation, from stored raw results)
+        if: ${{ always() }}       # 저장된 raw/*.json·equivalence.json으로 MUTATION_TABLES.md를 다시 만들어 바이트 비교 — 변이 재실행 아님
+        run: python docs/verification/mutation/make_mutation_tables.py --check 2>&1 | tee ci-out/mutation_tables_check.txt; exit ${PIPESTATUS[0]}
+
+      - name: Upload logs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-out-${{ matrix.os }}-py${{ matrix.python-version }}
+          path: ci-out/

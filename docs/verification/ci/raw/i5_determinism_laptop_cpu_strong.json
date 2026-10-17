@@ -1,0 +1,128 @@
+{
+ "purpose": "CI run #6 test_i5_golden_determinism_three_runs 비결정 재현",
+ "started": "2026-10-13T19:01:38",
+ "host": "DESKTOP-MDCKRJS",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "python": "3.9.12",
+ "cpu_count": 22,
+ "git": "4c0c503797fd5ee6f4f1bf8bf152186a149fd581",
+ "dirty": false,
+ "trials": 30,
+ "results": [
+  {
+   "variant": "none",
+   "load": "cpu_strong",
+   "pc_state_start": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "n_trials": 30,
+   "n_mismatch": 0,
+   "time_limit_hits": 0,
+   "max_iter_status_count": 0,
+   "osqp_settings": {
+    "adaptive_rho": 1,
+    "adaptive_rho_interval": 50,
+    "time_limit": 0.045,
+    "max_iter": 1944
+   },
+   "seconds": 141.4,
+   "mismatches": []
+  },
+  {
+   "variant": "rho_interval_50",
+   "load": "cpu_strong",
+   "pc_state_start": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "n_trials": 30,
+   "n_mismatch": 0,
+   "time_limit_hits": 0,
+   "max_iter_status_count": 0,
+   "osqp_settings": {
+    "adaptive_rho": 1,
+    "adaptive_rho_interval": 50,
+    "time_limit": 0.045,
+    "max_iter": 1944
+   },
+   "seconds": 141.5,
+   "mismatches": []
+  },
+  {
+   "variant": "adaptive_rho_off",
+   "load": "cpu_strong",
+   "pc_state_start": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "n_trials": 30,
+   "n_mismatch": 1,
+   "time_limit_hits": 0,
+   "max_iter_status_count": 360,
+   "osqp_settings": {
+    "adaptive_rho": 0,
+    "adaptive_rho_interval": 50,
+    "time_limit": 0.045,
+    "max_iter": 1944
+   },
+   "seconds": 171.4,
+   "mismatches": [
+    {
+     "pair": [
+      0,
+      2
+     ],
+     "index": 121,
+     "values": [
+      1.925075811535397,
+      1.9238843454167702
+     ],
+     "solve_at_index": [
+      null,
+      null
+     ],
+     "first_solve_diff": 93,
+     "trial": 28
+    }
+   ]
+  },
+  {
+   "variant": "no_time_limit",
+   "load": "cpu_strong",
+   "pc_state_start": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "n_trials": 30,
+   "n_mismatch": 0,
+   "time_limit_hits": 0,
+   "max_iter_status_count": 0,
+   "osqp_settings": {
+    "adaptive_rho": 1,
+    "adaptive_rho_interval": 50,
+    "time_limit": 10000000000.0,
+    "max_iter": 1944
+   },
+   "seconds": 135.5,
+   "mismatches": []
+  }
+ ],
+ "finished": "2026-10-13T19:11:55"
+}

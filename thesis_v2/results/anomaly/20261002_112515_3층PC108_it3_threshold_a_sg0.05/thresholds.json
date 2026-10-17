@@ -1,0 +1,86 @@
+{
+  "detector": "A",
+  "h": 557.5326205013454,
+  "quantile": 0.98,
+  "quantile_method": "higher",
+  "alarm_rule": "score > h",
+  "sigma_gyro_deg": 0.05,
+  "seeds": [
+    3000,
+    3199
+  ],
+  "n_episodes": 400,
+  "train_episodes_over_h": 7,
+  "outcomes": {
+    "SAFE_STOP": 199,
+    "성공": 200,
+    "충돌": 1
+  },
+  "per_channel": {
+    "fg": {
+      "q98_higher": 3.1135552929407586,
+      "max": 3.5674924170654414,
+      "median": 2.1148875880518623,
+      "n_positive": 400,
+      "n_episodes_argmax": 0
+    },
+    "ey": {
+      "q98_higher": 7.144362455295793,
+      "max": 9.538691001399076,
+      "median": 3.9304630774269356,
+      "n_positive": 400,
+      "n_episodes_argmax": 0
+    },
+    "psi": {
+      "q98_higher": 557.5326205013454,
+      "max": 703.0933562103236,
+      "median": 294.3447041624834,
+      "n_positive": 400,
+      "n_episodes_argmax": 400
+    },
+    "trk": {
+      "q98_higher": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "n_positive": 0,
+      "n_episodes_argmax": 0
+    },
+    "rc": {
+      "q98_higher": 6.457852321443404,
+      "max": 7.824046010856292,
+      "median": 0.0,
+      "n_positive": 179,
+      "n_episodes_argmax": 0
+    },
+    "lc": {
+      "q98_higher": 0.0,
+      "max": 3.912023005428146,
+      "median": 0.0,
+      "n_positive": 4,
+      "n_episodes_argmax": 0
+    },
+    "ir_miss": {
+      "q98_higher": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "n_positive": 0,
+      "n_episodes_argmax": 0
+    }
+  },
+  "per_scenario": {
+    "far": {
+      "n": 200,
+      "over_h": 7
+    },
+    "leftobs": {
+      "n": 200,
+      "over_h": 0
+    }
+  },
+  "note": "정상 seed만 사용. 모든 고장은 시뮬레이션 주입 고장(이 파일에는 고장 없음).",
+  "iteration": 3,
+  "scenarios": [
+    "far",
+    "leftobs"
+  ]
+}

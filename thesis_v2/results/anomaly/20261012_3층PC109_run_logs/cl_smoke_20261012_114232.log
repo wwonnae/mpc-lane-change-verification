@@ -1,0 +1,5 @@
+  부분 확인: P0 (전체 --check를 대신하지 않음, §24-2)
+  episodes_P0.csv: 일치
+  summary.json[P0]: 일치
+[진단] MPC time_limit_hit 총합 0, 최대 solve 29.275 ms (비교 대상 아님, §24-2)
+--check thesis_v2\results\anomaly\20261002_173407_3층PC108_it3_closed_loop_dev (부분 확인 P0): 선택 조합 일치

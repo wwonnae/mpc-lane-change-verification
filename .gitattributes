@@ -1,0 +1,8 @@
+# 자동 생성물은 OS와 무관하게 LF로 체크아웃한다(make_trace_matrix.py·make_safety_tables.py --check가 바이트 단위로 비교 — Windows의 core.autocrlf=true에서도 같게).
+docs/verification/aspice/TRACE_MATRIX.md text eol=lf
+docs/verification/aspice/trace_matrix.json text eol=lf
+docs/verification/safety/SAFETY_TABLES.md text eol=lf
+docs/verification/safety/safety_numbers.json text eol=lf
+# 셸 스크립트는 Git Bash에서 실행하므로 LF로 체크아웃한다(CRLF면 bash가 $'\r' 오류).
+docs/verification/mutation/overnight_run.sh text eol=lf
+docs/verification/mutation/MUTATION_TABLES.md text eol=lf

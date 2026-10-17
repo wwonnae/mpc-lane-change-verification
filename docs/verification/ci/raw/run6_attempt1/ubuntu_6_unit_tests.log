@@ -1,0 +1,26 @@
+﻿2026-10-13T09:21:48.8168153Z ##[group]Run python -m pytest thesis_v2/tests thesis_v2/anomaly/tests -q -rfEs -p time_limit_monitor \
+2026-10-13T09:21:48.8168966Z [36;1mpython -m pytest thesis_v2/tests thesis_v2/anomaly/tests -q -rfEs -p time_limit_monitor \[0m
+2026-10-13T09:21:48.8169535Z [36;1m  -p no:cacheprovider --junitxml=ci-out/junit.xml[0m
+2026-10-13T09:21:48.8238996Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T09:21:48.8239363Z env:
+2026-10-13T09:21:48.8260171Z   PYTHONUTF8: 1
+2026-10-13T09:21:48.8260534Z   PYTHONIOENCODING: utf-8
+2026-10-13T09:21:48.8260928Z   PYTHONPATH: docs/verification/ci
+2026-10-13T09:21:48.8261349Z   TIME_LIMIT_LOG: ci-out/time_limit_log.json
+2026-10-13T09:21:48.8261860Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+2026-10-13T09:21:48.8262636Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+2026-10-13T09:21:48.8263127Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+2026-10-13T09:21:48.8263549Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+2026-10-13T09:21:48.8264254Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+2026-10-13T09:21:48.8264649Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+2026-10-13T09:21:48.8264995Z ##[endgroup]
+2026-10-13T09:21:52.2333272Z ........................................................................ [ 21%]
+2026-10-13T09:21:52.7207364Z ........................................................................ [ 42%]
+2026-10-13T09:21:53.9324758Z ........................................................................ [ 63%]
+2026-10-13T09:22:01.5443565Z ........................................................................ [ 84%]
+2026-10-13T09:22:04.2731375Z ....................................................                     [100%]
+2026-10-13T09:22:04.2733513Z [time_limit_monitor] improved MPC solve 14038회, time_limit 발동 0회(테스트 0개), 실패 테스트 0개 [별도: 테스트가 time_limit 설정을 바꿔 의도적으로 발동 1회]
+2026-10-13T09:22:04.2735644Z [time_limit_monitor]   (의도적, 설정 변경) 발동 1회 — 결과: passed — thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable
+2026-10-13T09:22:04.2736738Z 
+2026-10-13T09:22:04.2737342Z - generated xml file: /home/runner/work/MPC_LINETRACING/MPC_LINETRACING/ci-out/junit.xml -
+2026-10-13T09:22:04.2738222Z 340 passed in 14.48s

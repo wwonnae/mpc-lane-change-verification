@@ -1,0 +1,64 @@
+{
+ "purpose": "baseline_mpc 생성 단계 변이: 생성 결과·solve 출력 비트 비교",
+ "started": "2026-10-13T17:26:06",
+ "host": "DESKTOP-MDCKRJS",
+ "python": "3.9.12",
+ "packages": {
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "osqp": "1.1.1"
+ },
+ "n_solves": 444,
+ "solver_statuses": [
+  "primal infeasible",
+  "solved"
+ ],
+ "n_fallback": 186,
+ "mutants": [
+  {
+   "id": "baseline_mpc:142",
+   "line": 159,
+   "operator": "assign_del",
+   "A_same": true,
+   "l_same": true,
+   "u_same": true,
+   "solve_mismatches": 0
+  },
+  {
+   "id": "baseline_mpc:147",
+   "line": 167,
+   "operator": "assign_del",
+   "A_same": true,
+   "l_same": true,
+   "u_same": true,
+   "solve_mismatches": 0
+  },
+  {
+   "id": "baseline_mpc:194",
+   "line": 196,
+   "operator": "assign_del",
+   "A_same": true,
+   "l_same": false,
+   "u_same": false,
+   "solve_mismatches": 0
+  },
+  {
+   "id": "baseline_mpc:196",
+   "line": 197,
+   "operator": "assign_del",
+   "A_same": true,
+   "l_same": false,
+   "u_same": false,
+   "solve_mismatches": 0
+  },
+  {
+   "id": "baseline_mpc:205",
+   "line": 200,
+   "operator": "assign_del",
+   "A_same": true,
+   "l_same": true,
+   "u_same": true,
+   "solve_mismatches": 0
+  }
+ ]
+}

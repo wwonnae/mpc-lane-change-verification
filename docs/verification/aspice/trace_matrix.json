@@ -1,0 +1,3846 @@
+{
+ "inputs": {
+  "spec": "repro/docs/SPEC.md",
+  "decision": "repro/docs/SETTINGS_DECISION.md",
+  "design": [
+   "repro/docs/SETTINGS_DECISION.md",
+   "repro/docs/DESIGN_BASELINE.md"
+  ],
+  "trace_table": "thesis_v2/tests/TRACEABILITY.md",
+  "code_dirs": [
+   "thesis_v2/baseline",
+   "thesis_v2/improved",
+   "thesis_v2/anomaly"
+  ],
+  "test_dirs": [
+   "thesis_v2/tests",
+   "thesis_v2/anomaly/tests"
+  ],
+  "eval_docs": [
+   "repro/docs/MEASURE_PLAN.md",
+   "repro/docs/ROBUSTNESS_PLAN.md",
+   "repro/docs/RESULT_BASELINE.md",
+   "repro/docs/RESULT_ROBUSTNESS.md",
+   "repro/docs/RESULT_IMPROVED.md",
+   "repro/docs/RESULT_STUDENT.md",
+   "repro/docs/RESULT_I4.md",
+   "repro/docs/STAGE3_SUMMARY.md"
+  ]
+ },
+ "counts": {
+  "req_total": 59,
+  "req_by_status": {
+   "SETTINGS_DECISION 정의(SPEC 표 없음)": 1,
+   "SPEC 정의": 57,
+   "정의 없음": 1
+  },
+  "req_with_tests": 44,
+  "req_without_tests": 15,
+  "req_without_code": 5,
+  "test_functions": 241,
+  "test_items_with_params": 359,
+  "tests_with_req": 69,
+  "tests_without_req": 172,
+  "tests_without_req_by_category": {
+   "이상탐지(REQ 체계 밖)": 94,
+   "improved(SPEC에 REQ 없음)": 39,
+   "인프라·도구(요구사항 수준 아님)": 34,
+   "기타": 5
+  },
+  "unresolved_trace_tokens": 0,
+  "nonreq_trace_rows": 12
+ },
+ "reqs": {
+  "REQ-CTRL-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:92",
+   "summary": "횡방향(REQ-LAT, 라인추종 또는 MPC) + 종방향(REQ-SPD, 규칙기반) 계층 통합",
+   "design": [],
+   "code": [
+    "thesis_v2/baseline/runner.py:run_episode (추적표 43행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_runner.py::test_collision_has_priority_over_safe_stop_same_step (추적표·파일 단위)",
+    "thesis_v2/tests/test_runner.py::test_metrics_counts_are_internally_consistent (추적표·파일 단위)",
+    "thesis_v2/tests/test_runner.py::test_safe_stop_holds_last_steering_and_does_not_crash (추적표·파일 단위)",
+    "thesis_v2/tests/test_runner.py::test_seed_reproducibility (추적표·파일 단위)"
+   ],
+   "evals": []
+  },
+  "REQ-EVAL-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:113",
+   "summary": "제어 성능 지표: 횡방향 오차, 헤딩각 오차, 조향각 변화율, 목표 추종 오차",
+   "design": [],
+   "code": [],
+   "tests": [],
+   "evals": []
+  },
+  "REQ-EVAL-02": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:114",
+   "summary": "안전성 지표: 제약 만족률, 충돌 횟수, 최소 장애물 거리",
+   "design": [],
+   "code": [],
+   "tests": [],
+   "evals": []
+  },
+  "REQ-EVAL-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:115",
+   "summary": "계산 효율성 지표: 평균 계산시간, 최대 계산시간, 계산시간 표준편차(+ 백분위수는 Table 8에서만 등장)",
+   "design": [
+    "DESIGN_BASELINE.md §4 (행 133, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/summary.py:_step_time_stats (행 100, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds (테스트 내 인용)"
+   ],
+   "evals": []
+  },
+  "REQ-EVAL-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:116",
+   "summary": "회피 성공률: 정의 문장 자체는 없고 Table 7 \"회피 성공률(%) — 설명: 전체 성공\"으로만 등장",
+   "design": [
+    "SETTINGS_DECISION.md §10 (행 256, 절 제목)",
+    "SETTINGS_DECISION.md §6 (행 88, 본문 인용)"
+   ],
+   "code": [],
+   "tests": [],
+   "evals": [
+    "RESULT_BASELINE.md:45"
+   ]
+  },
+  "REQ-FSM-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:32",
+   "summary": "5개 상태: KEEP_L2, EVADE_L, KEEP_L1, RETURN_TO_L2, SAFE_STOP",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md 확정된 (행 597, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:FSMState (추적표 14행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_initial_fsm_cooldown_pre_expired (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-FSM-02a": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:33",
+   "summary": "KEEP_L2→EVADE_L: front_gap<1.2 AND left_clear=True",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §12 (행 289, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 16, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (추적표 15행)",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:step (행 54, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_negative_not_left_clear (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_positive (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d1_front_gap_lt_g_trig (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d1_front_gap_lt_g_trig (테스트 내 인용)"
+   ],
+   "evals": []
+  },
+  "REQ-FSM-02b": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:34",
+   "summary": "모든 상태→SAFE_STOP: front_gap<0.20 AND left_clear=False, 예외 없음",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md left_clear (행 225, 본문 인용)",
+    "SETTINGS_DECISION.md §12 (행 289, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 17, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (추적표 16행)",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (행 50, 주석·직접)",
+    "thesis_v2/baseline/summary.py:<module> (행 41, 주석·직접)",
+    "thesis_v2/baseline/summary.py:build_summary (행 225, 주석·직접)",
+    "thesis_v2/baseline/world.py:generate_left_obstacle_scenario (행 115, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_any_state_to_safe_stop_positive (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_safe_stop_condition_negative_left_clear_true (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_safe_stop_from_every_state (추적표·함수 명시)",
+    "thesis_v2/tests/test_mutation_gaps_fsm.py::test_safe_stop_requires_front_gap_strictly_below_g_safe_min (테스트 내 인용)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:113",
+    "RESULT_BASELINE.md:59",
+    "ROBUSTNESS_PLAN.md:6,16"
+   ]
+  },
+  "REQ-FSM-02c": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:35",
+   "summary": "EVADE_L→KEEP_L1: \\",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 25, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (추적표 17행)",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (행 58, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_evade_l_to_keep_l1_negative_far_from_l1 (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_evade_l_to_keep_l1_positive (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-FSM-02d": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:36",
+   "summary": "KEEP_L1→RETURN_TO_L2: right_clear(REQ-SEN-04) AND t>0.6s",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §14 (행 349, 절 제목)",
+    "SETTINGS_DECISION.md §6 (행 88, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 24, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:FSM (행 30, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:step (추적표 18행)",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (행 62, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:right_clear (추적표 18행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_keep_l1_to_return_negative_right_not_clear (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_keep_l1_to_return_positive (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d3_elapsed_gt_t_keep_l1_min_reachable_form (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d3_elapsed_gt_t_keep_l1_min_reachable_form (테스트 내 인용)",
+    "thesis_v2/tests/test_mutation_gaps_fsm.py::test_keep_l1_return_requires_elapsed_strictly_above_t_keep_l1_min (테스트 내 인용)"
+   ],
+   "evals": []
+  },
+  "REQ-FSM-02e": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:38",
+   "summary": "RETURN_TO_L2→KEEP_L2: \\",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §2 (행 27, 본문 인용)",
+    "SETTINGS_DECISION.md §20 (행 658, 본문 인용)",
+    "SETTINGS_DECISION.md §6 (행 88, 본문 인용)",
+    "SETTINGS_DECISION.md 확정된 (행 597, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 26, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 27, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (추적표 19행)",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (행 67, 주석·직접)",
+    "thesis_v2/improved/config.py:<module> (행 59, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_return_to_keep_l2_negative_psi_too_large (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_return_to_keep_l2_positive (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d4_abs_y_le_near_l2 (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d4_abs_y_le_near_l2 (테스트 내 인용)",
+    "thesis_v2/tests/test_mutation_gaps_fsm.py::test_return_to_keep_l2_accepts_psi_exactly_limit (테스트 내 인용)",
+    "thesis_v2/tests/test_mutation_gaps_fsm.py::test_return_to_keep_l2_accepts_y_exactly_near_l2 (테스트 내 인용)"
+   ],
+   "evals": [
+    "RESULT_I4.md:172"
+   ]
+  },
+  "REQ-FSM-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:39",
+   "summary": "상태 전이 쿨다운 0.3초: 상태 변경 후 0.3초 내 추가 전이 차단",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §13 (행 329, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 18, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 4, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:FSM (행 29, 주석·직접)",
+    "thesis_v2/baseline/fsm.py:step (추적표 20행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_evade_to_keep_l1 (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l1_to_return (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l2_to_evade (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_return_to_keep_l2 (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_safe_stop (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-FSM-03a": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:40",
+   "summary": "쿨다운 적용 범위: PDF (3)번은 \"상태가 변경된 후... 추가 전이가 차단된다\"고 전이 종류를 한정하지 않음 → 5개 전…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (추적표 20행)",
+    "thesis_v2/baseline/fsm.py:step (행 46, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_evade_to_keep_l1 (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l1_to_return (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l2_to_evade (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_return_to_keep_l2 (추적표·함수 명시)",
+    "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_safe_stop (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-FSM-03b": {
+   "status": "SETTINGS_DECISION 정의(SPEC 표 없음)",
+   "where": "repro/docs/SETTINGS_DECISION.md:329 (§13)",
+   "summary": "",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §13 (행 329, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:initial_fsm (추적표 21행)",
+    "thesis_v2/baseline/fsm.py:initial_fsm (행 34, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_initial_fsm_cooldown_pre_expired (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-FSM-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:41",
+   "summary": "SAFE_STOP 진입 시 회복 조건·재진입 로직",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §1 (행 12, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/fsm.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/fsm.py:step (추적표 22행)",
+    "thesis_v2/baseline/fsm.py:step (행 71, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_fsm.py::test_safe_stop_is_terminal_no_recovery (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-LAT-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:82",
+   "summary": "라인추종: δ=−K_ey·ey_line, K_ey=1.5 — KEEP_L2에서 라인이 명확히 감지될 때 사용",
+   "design": [
+    "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §4 (행 133, 본문 인용)",
+    "SETTINGS_DECISION.md §11 (행 271, 본문 인용)",
+    "SETTINGS_DECISION.md §16 (행 394, 본문 인용)",
+    "SETTINGS_DECISION.md §17 (행 432, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 29, 주석·직접)",
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/lateral.py:compute_lateral (추적표 38행)",
+    "thesis_v2/baseline/lateral.py:compute_lateral (행 47, 주석·직접)",
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_lateral.py::test_keep_state_line_follow_when_detected (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-LAT-02": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:83",
+   "summary": "MPC 모드: 라인이 감지되지 않거나 차선 변경 중(EVADE_L, RETURN_TO_L2)에 사용 — EVADE_L·RETU…",
+   "design": [
+    "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §16 (행 394, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/lateral.py:<module> (행 4, 주석·직접)",
+    "thesis_v2/baseline/lateral.py:compute_lateral (추적표 39행)",
+    "thesis_v2/baseline/lateral.py:compute_lateral (행 53, 주석·직접)",
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(~))",
+    "thesis_v2/improved/student_i4/features.py:<module> (행 50, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_lateral.py::test_evade_return_always_mpc_when_detected (추적표·함수 명시)",
+    "thesis_v2/tests/test_lateral.py::test_evade_return_always_mpc_when_not_detected (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-LAT-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:84",
+   "summary": "\"라인이 감지되지 않음\"의 판정 기준(센서 유효성 타임아웃 등 구체값)",
+   "design": [
+    "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §16 (행 394, 본문 인용)",
+    "SETTINGS_DECISION.md §4 (행 60, 절 제목)",
+    "SETTINGS_DECISION.md §9 (행 191, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/lateral.py:compute_lateral (추적표 40행)",
+    "thesis_v2/baseline/lateral.py:compute_lateral (행 53, 주석·연속(/))",
+    "thesis_v2/baseline/sensors.py:ey_line (행 94, 주석·직접)",
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(~))",
+    "thesis_v2/improved/student_i4/features.py:<module> (행 50, 주석·연속(/))"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_lateral.py::test_keep_state_mpc_when_not_detected (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-LAT-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:85",
+   "summary": "KEEP_L1 상태에서의 횡방향 제어 모드",
+   "design": [
+    "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §16 (행 394, 본문 인용)",
+    "SETTINGS_DECISION.md §5 (행 74, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/lateral.py:compute_lateral (추적표 41행)",
+    "thesis_v2/baseline/lateral.py:compute_lateral (행 53, 주석·연속(/))",
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(~))"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_lateral.py::test_keep_state_line_follow_when_detected (추적표·함수 명시)",
+    "thesis_v2/tests/test_lateral.py::test_keep_state_mpc_when_not_detected (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-LAT-05": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:86",
+   "summary": "SAFE_STOP 상태의 횡방향 제어(조향)",
+   "design": [
+    "SETTINGS_DECISION.md §16 (행 394, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/lateral.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/lateral.py:<module> (행 6, 주석·직접)",
+    "thesis_v2/baseline/lateral.py:compute_lateral (추적표 42행)",
+    "thesis_v2/baseline/lateral.py:compute_lateral (행 38, 주석·직접)",
+    "thesis_v2/baseline/metrics.py:y_within_tolerance (행 45, 주석·직접)",
+    "thesis_v2/baseline/runner.py:run_episode (행 146, 주석·직접)",
+    "thesis_v2/baseline/summary.py:build_summary (행 240, 주석·직접)",
+    "thesis_v2/improved/lateral.py:<module> (행 2, 주석·범위(~))",
+    "thesis_v2/improved/student_i4/features.py:<module> (행 50, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_lateral.py::test_safe_stop_does_not_call_mpc (추적표·함수 명시)",
+    "thesis_v2/tests/test_lateral.py::test_safe_stop_holds_last_delta_regardless_of_ey (추적표·함수 명시)",
+    "thesis_v2/tests/test_metrics.py::test_y_within_tolerance_safe_stop_is_not_applicable (테스트 내 인용)",
+    "thesis_v2/tests/test_runner.py::test_safe_stop_holds_last_steering_and_does_not_crash (추적표·함수 명시)",
+    "thesis_v2/tests/test_runner.py::test_safe_stop_holds_last_steering_and_does_not_crash (테스트 내 인용)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:109",
+    "RESULT_STUDENT.md:41"
+   ]
+  },
+  "REQ-MPC-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:47",
+   "summary": "이산 선형 모델(2-state, y·ψ): y_{k+1}=y_k+v·dt·ψ_k, ψ_{k+1}=ψ_k+(v/L)·dt·δ_k",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "SETTINGS_DECISION.md §11 (행 271, 본문 인용)",
+    "SETTINGS_DECISION.md §17 (행 432, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)",
+    "SETTINGS_DECISION.md §20 (행 658, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:_build_A_template (추적표 23행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_negative_target (추적표·함수 명시)",
+    "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_positive_target (추적표·함수 명시)",
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_delta0_matches_independent_spec_qp (테스트 내 인용)",
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_heading_constraint_binds_when_optimum_would_exceed_limit (테스트 내 인용)"
+   ],
+   "evals": []
+  },
+  "REQ-MPC-02": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:48",
+   "summary": "비용함수: J=Σ_{i=1}^N[qy(y_i−y_ref)²+qψ·ψ_i²] + rδ·δ_0² + Σ_{i=1}^{N-1} rΔ…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §11 (행 271, 본문 인용)",
+    "SETTINGS_DECISION.md §17 (행 432, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)",
+    "SETTINGS_DECISION.md §20 (행 658, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:OSQPMPC._build_P (행 80, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:_build_P (추적표 24행)",
+    "thesis_v2/improved/mpc.py:ImprovedMPC._build_P (행 207, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_hessian_has_offdiagonal_rddelta_terms (추적표·함수 명시)",
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_delta0_matches_independent_spec_qp (테스트 내 인용)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:174",
+    "RESULT_BASELINE.md:90,106",
+    "RESULT_STUDENT.md:127"
+   ]
+  },
+  "REQ-MPC-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:49",
+   "summary": "가중치: qy=100, qψ=25, rδ=2, rΔδ=5, N=15(0.75s)",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py (추적표 25행)",
+    "thesis_v2/baseline/config.py:<module> (행 10, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 11, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 12, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 13, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 4, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 8, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_config.py::test_fixed_params_match_claude_md (추적표·함수 명시)",
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_delta0_matches_independent_spec_qp (테스트 내 인용)"
+   ],
+   "evals": []
+  },
+  "REQ-MPC-03a": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:50",
+   "summary": "rδ는 첫 제어입력의 크기(δ_0²)에만 곱해지고, rΔδ는 연속 제어입력의 차분(δ_i−δ_{i-1})²에 곱해진다 — 식(…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:OSQPMPC._build_P (행 80, 주석·연속(/))",
+    "thesis_v2/baseline/mpc.py:_build_P (추적표 26행)",
+    "thesis_v2/improved/mpc.py:ImprovedMPC._build_P (행 207, 주석·연속(/))"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_hessian_has_offdiagonal_rddelta_terms (추적표·함수 명시)",
+    "thesis_v2/tests/test_mpc.py::test_hessian_has_offdiagonal_rddelta_terms (테스트 내 인용)",
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_delta0_matches_independent_spec_qp (테스트 내 인용)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:174"
+   ]
+  },
+  "REQ-MPC-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:51",
+   "summary": "제약: −25°≤δ_i≤25°; 헤딩 −80°≤ψ_i≤80°; 횡방향 위치 — L2주행 −0.15≤y≤0.15, L1주행 0.…",
+   "design": [
+    "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md left_clear (행 225, 본문 인용)",
+    "SETTINGS_DECISION.md §14 (행 349, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)",
+    "SETTINGS_DECISION.md §6 (행 88, 본문 인용)",
+    "SETTINGS_DECISION.md 확정된 (행 597, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 33, 주석·직접)",
+    "thesis_v2/baseline/metrics.py:delta_within_tolerance (행 34, 주석·직접)",
+    "thesis_v2/baseline/metrics.py:psi_within_tolerance (행 39, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:OSQPMPC._build_A_template (행 147, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:OSQPMPC._build_A_template (행 152, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:_build_A_template (추적표 27행)",
+    "thesis_v2/baseline/runner.py:run_episode (행 172, 주석·직접)",
+    "thesis_v2/improved/config.py:<module> (행 53, 주석·직접)",
+    "thesis_v2/improved/runner.py:run_episode (행 263, 주석·직접)",
+    "thesis_v2/improved/runner.py:run_episode (행 282, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_heading_and_steering_bound_constants (추적표·함수 명시)",
+    "thesis_v2/tests/test_mpc.py::test_heading_and_steering_bound_constants (테스트 내 인용)",
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_delta0_matches_independent_spec_qp (테스트 내 인용)",
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_heading_constraint_binds_when_optimum_would_exceed_limit (테스트 내 인용)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:109,260,264,265,270,274,277",
+    "RESULT_BASELINE.md:28",
+    "RESULT_IMPROVED.md:53,416",
+    "RESULT_ROBUSTNESS.md:54",
+    "ROBUSTNESS_PLAN.md:6,102"
+   ]
+  },
+  "REQ-MPC-04a": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:52",
+   "summary": "조향 변화율(Δδ) 제약의 위치는 QP가 아니라 후처리 클리핑이다 — p.9-10의 \"(3) 제약조건\" QP 목록엔 δ,ψ,y…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/postprocess.py:apply (추적표 28행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_postprocess.py::test_order_is_rate_limit_then_clip (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-MPC-05": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:53",
+   "summary": "횡방향 위치 제약의 상태별 매핑: KEEP_L2→\"L2주행\" 제약, KEEP_L1→\"L1주행\" 제약, EVADE_L·RETUR…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)",
+    "SETTINGS_DECISION.md §2 (행 27, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 36, 주석·직접)",
+    "thesis_v2/baseline/config.py:POSITION_CONSTRAINTS (추적표 29행)",
+    "thesis_v2/baseline/metrics.py:y_within_tolerance (행 44, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·연속(/))",
+    "thesis_v2/baseline/mpc.py:solve (추적표 29행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_position_constraints_per_state (추적표·함수 명시)",
+    "thesis_v2/tests/test_mpc.py::test_position_constraints_per_state (테스트 내 인용)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:109,139",
+    "RESULT_BASELINE.md:28",
+    "RESULT_IMPROVED.md:416",
+    "ROBUSTNESS_PLAN.md:6,85"
+   ]
+  },
+  "REQ-MPC-06": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:54",
+   "summary": "QP 정식화: minimize (1/2)zᵀHz+fᵀz s.t. l≤A_ineq·z≤u, z=[y1,ψ1,δ0,...,yN,ψ…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §8 (행 215, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)",
+    "SETTINGS_DECISION.md §20 (행 658, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 7, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:OSQPMPC.__init__ (추적표 30행)"
+   ],
+   "tests": [],
+   "evals": [
+    "RESULT_BASELINE.md:65",
+    "RESULT_ROBUSTNESS.md:77"
+   ]
+  },
+  "REQ-MPC-07": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:55",
+   "summary": "Fallback: 최적화 실패 시 δ_fallback=−K_p·(y−y_ref), K_p=1.0",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §11 (행 271, 본문 인용)",
+    "SETTINGS_DECISION.md §18 (행 455, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 28, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 70, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 4, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:OSQPMPC.solve (행 257, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:solve (추적표 31행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_fallback_unit_is_rad_per_meter (추적표·함수 명시)",
+    "thesis_v2/tests/test_mpc.py::test_fallback_unit_is_rad_per_meter (테스트 내 인용)",
+    "thesis_v2/tests/test_mutation_gaps_mpc.py::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds (테스트 내 인용)"
+   ],
+   "evals": [
+    "RESULT_BASELINE.md:66",
+    "RESULT_ROBUSTNESS.md:54,77",
+    "ROBUSTNESS_PLAN.md:102"
+   ]
+  },
+  "REQ-MPC-07a": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:56",
+   "summary": "식(7) 단위 확정: K_p=1.0은 rad/m(δ_fallback_rad=−K_p·(y−y_ref), 이후 deg로 변환)",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "SETTINGS_DECISION.md §11 (행 271, 절 제목)",
+    "SETTINGS_DECISION.md §17 (행 432, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/lateral.py:compute_lateral (행 47, 주석·직접)",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 4, 주석·연속(/))",
+    "thesis_v2/baseline/mpc.py:OSQPMPC.solve (행 257, 주석·연속(/))",
+    "thesis_v2/baseline/mpc.py:solve (추적표 31행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_fallback_unit_is_rad_per_meter (추적표·함수 명시)",
+    "thesis_v2/tests/test_mpc.py::test_fallback_unit_is_rad_per_meter (테스트 내 인용)"
+   ],
+   "evals": []
+  },
+  "REQ-MPC-07b": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:57",
+   "summary": "부호 규약: +y = 좌측(L1 방향), +ψ = 좌회전(반시계, 헤딩 증가), +δ = 좌회전(전륜을 좌측으로) — eq(1…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §11 (행 271, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/mpc.py:<module> (행 4, 주석·연속(/))",
+    "thesis_v2/baseline/mpc.py:solve (추적표 32행)",
+    "thesis_v2/baseline/vehicle.py:<module> (행 4, 주석·직접)",
+    "thesis_v2/baseline/vehicle.py:step (추적표 32행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_negative_target (추적표·함수 명시)",
+    "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_positive_target (추적표·함수 명시)",
+    "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_positive_target (테스트 내 인용)"
+   ],
+   "evals": []
+  },
+  "REQ-MPC-08": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:58",
+   "summary": "MPC는 속도를 결정하지 않음(z벡터에 v 없음, 비용함수에 속도 항 없음)",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/mpc.py (추적표 33행)",
+    "thesis_v2/baseline/mpc.py:<module> (행 3, 주석·범위(~))"
+   ],
+   "tests": [],
+   "evals": [
+    "RESULT_BASELINE.md:91"
+   ]
+  },
+  "REQ-SEN-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:74",
+   "summary": "front_gap 계산: LiDAR가 \"전방 장애물까지의 거리\"를 측정 — 구체적 기하 공식(장애물 통과 후 처리 등)",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §12 (행 289, 본문 인용)",
+    "SETTINGS_DECISION.md §6 (행 88, 본문 인용)",
+    "SETTINGS_DECISION.md §7 (행 130, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 32, 주석·직접)",
+    "thesis_v2/baseline/runner.py:<module> (행 11, 주석·직접)",
+    "thesis_v2/baseline/runner.py:<module> (행 9, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:<module> (행 9, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:front_gap (추적표 34행)",
+    "thesis_v2/baseline/sensors.py:front_gap (행 32, 주석·직접)",
+    "thesis_v2/improved/sensors.py:front_obstacle_info (행 34, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_corridor_is_vehicle_width_around_y (테스트 내 인용)",
+    "thesis_v2/tests/test_improved_sensors.py::test_front_obstacle_info_excludes_passed_obstacle (테스트 내 인용)",
+    "thesis_v2/tests/test_sensors.py::test_front_gap_obstacle_in_corridor (추적표·함수 명시)",
+    "thesis_v2/tests/test_sensors.py::test_front_gap_obstacle_outside_corridor_ignored (추적표·함수 명시)",
+    "thesis_v2/tests/test_sensors.py::test_front_gap_picks_nearest_of_multiple (추적표·함수 명시)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:24,26,171",
+    "RESULT_ROBUSTNESS.md:5",
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SEN-02": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:75",
+   "summary": "left_clear 계산: \"좌측 차선의 장애물 유무\"",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md left_clear (행 225, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/anomaly/detector_a.py:<module> (행 65, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/sensors.py:_window_clear (행 48, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:left_clear (추적표 35행)",
+    "thesis_v2/baseline/sensors.py:left_clear (행 62, 주석·직접)",
+    "thesis_v2/baseline/world.py:generate_left_obstacle_scenario (행 115, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_l1_obstacle_is_evaluated_in_l1_window_only (테스트 내 인용)",
+    "thesis_v2/tests/test_sensors.py::test_left_clear_blocked_by_obstacle_in_l1 (추적표·함수 명시)",
+    "thesis_v2/tests/test_sensors.py::test_left_clear_unaffected_by_obstacle_in_l2_only (추적표·함수 명시)"
+   ],
+   "evals": [
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SEN-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:76",
+   "summary": "IR 3개(0.04m 간격, 이진패턴) → ey_line 변환 공식",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §9 (행 191, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 30, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 31, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/sensors.py:ey_line (행 94, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:ir_pattern (추적표 36행)",
+    "thesis_v2/baseline/sensors.py:ir_pattern (행 72, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_sensors.py::test_ir_pattern_to_ey_line (추적표·함수 명시)"
+   ],
+   "evals": [
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SEN-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:37",
+   "summary": "right_clear(신규, left_clear와 대칭): L2 범위[−0.15,0.15] AND x∈[차체 후단−G_SAFE…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §14 (행 349, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/anomaly/detector_a.py:<module> (행 64, 주석·직접)",
+    "thesis_v2/baseline/sensors.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/sensors.py:_window_clear (행 48, 주석·연속(/))",
+    "thesis_v2/baseline/sensors.py:right_clear (추적표 37행)",
+    "thesis_v2/baseline/sensors.py:right_clear (행 67, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_l1_obstacle_is_evaluated_in_l1_window_only (테스트 내 인용)",
+    "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_window_extends_g_safe_min_behind_rear_axle (테스트 내 인용)",
+    "thesis_v2/tests/test_sensors.py::test_right_clear_blocked_by_obstacle_in_l2 (추적표·함수 명시)",
+    "thesis_v2/tests/test_sensors.py::test_right_clear_unaffected_by_obstacle_in_l1_only (추적표·함수 명시)"
+   ],
+   "evals": [
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SIM-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:101",
+   "summary": "도로: 2차선, 차선폭 W=0.30m, L2 중심 y=0, L1 중심 y=0.30",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 19, 주석·직접)",
+    "thesis_v2/baseline/config.py:W (추적표 48행)",
+    "thesis_v2/baseline/world.py (추적표 48행)",
+    "thesis_v2/baseline/world.py:<module> (행 3, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_config.py::test_fixed_params_match_claude_md (추적표·파일 단위)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:102",
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SIM-02": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:102",
+   "summary": "장애물: L2 차선에 정지 장애물 1개(크기 L×B, 차량과 동일 풋프린트로 가정), 위치 X_obs~U(0.5,2.0)m",
+   "design": [
+    "SETTINGS_DECISION.md left_clear (행 225, 본문 인용)",
+    "SETTINGS_DECISION.md §12 (행 289, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 44, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 45, 주석·직접)",
+    "thesis_v2/baseline/world.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/world.py:generate_scenario (추적표 49행)",
+    "thesis_v2/baseline/world.py:generate_scenario (행 59, 주석·직접)"
+   ],
+   "tests": [],
+   "evals": [
+    "MEASURE_PLAN.md:102",
+    "ROBUSTNESS_PLAN.md:6,34,122"
+   ]
+  },
+  "REQ-SIM-02a": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:103",
+   "summary": "\"장애물 위치\"의 측정 기준점: 차량 후륜(kinematic model 원점) 기준인지, 차체 전단(LiDAR가 실제로 있을 …",
+   "design": [
+    "SETTINGS_DECISION.md §12 (행 289, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/anomaly/scenarios.py:generate_anomaly_scenario (행 22, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 44, 주석·연속(/))",
+    "thesis_v2/baseline/world.py:<module> (행 3, 주석·연속(/))",
+    "thesis_v2/baseline/world.py:generate_front_rear_scenario (행 103, 주석·직접)",
+    "thesis_v2/baseline/world.py:generate_scenario (추적표 49행)"
+   ],
+   "tests": [],
+   "evals": [
+    "MEASURE_PLAN.md:102",
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SIM-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:104",
+   "summary": "초기 조건: v0~U(0.3,0.5)m/s, y0~TruncatedNormal(0, 0.05², [−0.15,0.15])(원문…",
+   "design": [
+    "SETTINGS_DECISION.md 확정된 (행 597, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 44, 주석·연속(/))",
+    "thesis_v2/baseline/config.py:<module> (행 46, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 47, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 48, 주석·직접)",
+    "thesis_v2/baseline/world.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/world.py:_sample_truncated_y0 (추적표 50행)",
+    "thesis_v2/baseline/world.py:_sample_truncated_y0 (행 49, 주석·직접)",
+    "thesis_v2/baseline/world.py:generate_scenario (행 60, 주석·직접)"
+   ],
+   "tests": [],
+   "evals": [
+    "MEASURE_PLAN.md:102",
+    "RESULT_BASELINE.md:61",
+    "RESULT_IMPROVED.md:165",
+    "RESULT_ROBUSTNESS.md:54,78",
+    "ROBUSTNESS_PLAN.md:6,35,37,102"
+   ]
+  },
+  "REQ-SIM-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:105",
+   "summary": "에피소드: 최대 200 step(10s at 20Hz), \"안전하게 회피 및 복귀를 완료\" 또는 SAFE_STOP 도달 시 종…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §6 (행 88, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 52, 주석·직접)",
+    "thesis_v2/baseline/runner.py:<module> (행 4, 주석·직접)",
+    "thesis_v2/baseline/runner.py:run_episode (추적표 51행)"
+   ],
+   "tests": [],
+   "evals": [
+    "MEASURE_PLAN.md:102",
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SIM-05": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:106",
+   "summary": "\"완료\" 트리거 정의",
+   "design": [
+    "SETTINGS_DECISION.md §10 (행 256, 본문 인용)",
+    "SETTINGS_DECISION.md §6 (행 88, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 52, 주석·연속(/))",
+    "thesis_v2/baseline/runner.py:<module> (행 4, 주석·연속(/))",
+    "thesis_v2/baseline/runner.py:run_episode (추적표 52행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_runner.py::test_seed_reproducibility (추적표·함수 명시)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:102",
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SIM-07": {
+   "status": "정의 없음",
+   "where": "SPEC.md·SETTINGS_DECISION.md에 정의 행 없음",
+   "summary": "",
+   "design": [],
+   "code": [
+    "thesis_v2/baseline/summary.py:<module> (행 40, 주석·직접)"
+   ],
+   "tests": [],
+   "evals": [
+    "MEASURE_PLAN.md:102,113",
+    "ROBUSTNESS_PLAN.md:6"
+   ]
+  },
+  "REQ-SIM-08": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:107",
+   "summary": "충돌(collision) 판정: 실거리 기반 기하 판정 — front_gap(종방향)만으로는 차선변경 중 옆면·모서리 접촉을 …",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)",
+    "SETTINGS_DECISION.md §10 (행 256, 본문 인용)",
+    "SETTINGS_DECISION.md §8 (행 167, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/collision.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/collision.py:check_collision (추적표 53행)",
+    "thesis_v2/baseline/config.py:<module> (행 49, 주석·직접)",
+    "thesis_v2/baseline/world.py:<module> (행 4, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_collision.py::test_full_overlap_same_footprint (추적표·파일 단위)",
+    "thesis_v2/tests/test_collision.py::test_no_overlap_far_obstacle (추적표·파일 단위)",
+    "thesis_v2/tests/test_collision.py::test_partial_overlap (추적표·파일 단위)",
+    "thesis_v2/tests/test_collision.py::test_rotated_vehicle_corner_pokes_into_obstacle (추적표·파일 단위)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:102,112",
+    "ROBUSTNESS_PLAN.md:6,147"
+   ]
+  },
+  "REQ-SPD-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:64",
+   "summary": "v_ref=0.5m/s, KEEP_L2·EVADE_L·KEEP_L1·RETURN_TO_L2 상태에서 유지",
+   "design": [
+    "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 56, 주석·직접)",
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/longitudinal.py:compute_v_cmd (추적표 44행)",
+    "thesis_v2/baseline/longitudinal.py:compute_v_cmd (행 12, 주석·직접)",
+    "thesis_v2/improved/student_i4/features.py:v_target_label (행 68, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_longitudinal.py::test_v_cmd_per_state (추적표·함수 명시)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:116",
+    "RESULT_BASELINE.md:29",
+    "RESULT_ROBUSTNESS.md:71",
+    "ROBUSTNESS_PLAN.md:94"
+   ]
+  },
+  "REQ-SPD-02": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:65",
+   "summary": "SAFE_STOP: v=0으로 설정",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §16 (행 394, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/longitudinal.py:compute_v_cmd (추적표 44행)",
+    "thesis_v2/baseline/longitudinal.py:compute_v_cmd (행 11, 주석·직접)",
+    "thesis_v2/improved/student_i4/features.py:v_target_label (행 68, 주석·연속(/))"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_longitudinal.py::test_v_cmd_per_state (추적표·함수 명시)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:116",
+    "RESULT_BASELINE.md:29"
+   ]
+  },
+  "REQ-SPD-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:66",
+   "summary": "SAFE_STOP 감속 방식: \"가능한 한 빠르게 감속\"",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §16 (행 394, 본문 인용)",
+    "SETTINGS_DECISION.md §3 (행 45, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/longitudinal.py:compute_v_cmd (추적표 45행)",
+    "thesis_v2/baseline/longitudinal.py:compute_v_cmd (행 11, 주석·연속(/))"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_longitudinal.py::test_v_cmd_per_state (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-SPD-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:67",
+   "summary": "G_TRIG=1.2m(회피 시작), G_SAFE_MIN=0.20m(비상정지)",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:G_SAFE_MIN (추적표 46행)",
+    "thesis_v2/baseline/config.py:G_TRIG (추적표 46행)",
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(~))"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_config.py::test_fixed_params_match_claude_md (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-SPD-05": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:68",
+   "summary": "front_gap은 속도를 직접(연속적으로) 결정하지 않는다 — 속도는 FSM 상태에 의해서만 결정되고(REQ-SPD-01/0…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/longitudinal.py:<module> (행 3, 주석·범위(~))",
+    "thesis_v2/baseline/longitudinal.py:compute_v_cmd (추적표 47행)"
+   ],
+   "tests": [],
+   "evals": []
+  },
+  "REQ-STU-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:122",
+   "summary": "신경망 구조: 입력9→FC1(256)→FC2(256)→FC3(128)→출력2, ReLU, BatchNorm+Dropout(0.…",
+   "design": [],
+   "code": [
+    "thesis_v2/improved/student_i4/config.py:<module> (행 62, 주석·직접)",
+    "thesis_v2/improved/student_i4/config.py:<module> (행 63, 주석·직접)",
+    "thesis_v2/improved/student_i4/model.py:<module> (행 2, 주석·직접)",
+    "thesis_v2/improved/student_i4/model.py:StudentPolicy (추적표 76행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_i4_student.py::test_req_stu_01_structure (추적표·함수 명시)"
+   ],
+   "evals": []
+  },
+  "REQ-STU-02": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:123",
+   "summary": "입력 특징(9차원): v, ey, front_gap, left_clear, state_one_hot(5)",
+   "design": [
+    "SETTINGS_DECISION.md §20 (행 658, 절 제목)"
+   ],
+   "code": [
+    "thesis_v2/improved/student_i4/features.py:<module> (행 2, 주석·직접)",
+    "thesis_v2/improved/student_i4/features.py:<module> (행 25, 주석·직접)",
+    "thesis_v2/improved/student_i4/features.py:build_feature_vector (추적표 77행)",
+    "thesis_v2/improved/student_i4/features.py:build_feature_vector (행 56, 주석·직접)",
+    "thesis_v2/improved/student_i4/train.py:main (행 35, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback (추적표·함수 명시)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:162,172,190",
+    "RESULT_I4.md:136,201",
+    "RESULT_STUDENT.md:23,37,203,323",
+    "STAGE3_SUMMARY.md:33"
+   ]
+  },
+  "REQ-STU-02r": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:126",
+   "summary": "(3단계 Student v2 전용) 입력 11차원 = REQ-STU-02의 9차원 + ψ(차량 헤딩) + δ_prev(직전 최…",
+   "design": [],
+   "code": [],
+   "tests": [],
+   "evals": []
+  },
+  "REQ-STU-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:124",
+   "summary": "출력(2차원): δ(deg), v_target(m/s)",
+   "design": [],
+   "code": [
+    "thesis_v2/improved/student_i4/features.py:<module> (행 2, 주석·직접)",
+    "thesis_v2/improved/student_i4/features.py:v_target_label (추적표 78행)",
+    "thesis_v2/improved/student_i4/features.py:v_target_label (행 68, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_i4_student.py::test_req_stu_03_v_target_is_rule_based (추적표·함수 명시)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:162"
+   ]
+  },
+  "REQ-STU-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:125",
+   "summary": "정규화 통계",
+   "design": [],
+   "code": [],
+   "tests": [],
+   "evals": []
+  },
+  "REQ-VEH-01": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:22",
+   "summary": "Kinematic bicycle model(후륜 중심 기준): ẋ=v·cos(ψ), ẏ=v·sin(ψ), ψ̇=(v/L)·ta…",
+   "design": [
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §16 (행 394, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 9, 주석·직접)",
+    "thesis_v2/baseline/vehicle.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/vehicle.py:step (추적표 9행)",
+    "thesis_v2/baseline/vehicle.py:step (행 21, 주석·직접)"
+   ],
+   "tests": [],
+   "evals": []
+  },
+  "REQ-VEH-02": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:23",
+   "summary": "차량 파라미터: L=0.20m(축간거리), B=0.15m(차폭), δ_max=±25°, 속도범위 0.0~0.5 m/s, δ_r…",
+   "design": [
+    "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §5 (행 143, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py (추적표 10행)",
+    "thesis_v2/baseline/config.py:<module> (행 14, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 15, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 20, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 21, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 4, 주석·직접)",
+    "thesis_v2/baseline/config.py:<module> (행 56, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_config.py::test_fixed_params_match_claude_md (추적표·함수 명시)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:266"
+   ]
+  },
+  "REQ-VEH-03": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:24",
+   "summary": "조향각 rate limiting: Δδ_max = 200deg/s × dt(0.05s) = 10°/step, `δ_cmd=cl…",
+   "design": [
+    "DESIGN_BASELINE.md B-1 (행 238, 본문 인용)",
+    "DESIGN_BASELINE.md §1 (행 8, 본문 인용)",
+    "DESIGN_BASELINE.md §2 (행 32, 본문 인용)",
+    "SETTINGS_DECISION.md §15 (행 386, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/baseline/config.py:<module> (행 34, 주석·직접)",
+    "thesis_v2/baseline/postprocess.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/postprocess.py:apply (추적표 11행)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_postprocess.py::test_rate_limit_boundary_exact_not_active (추적표·함수 명시)",
+    "thesis_v2/tests/test_postprocess.py::test_rate_limit_boundary_just_over_active (추적표·함수 명시)"
+   ],
+   "evals": [
+    "MEASURE_PLAN.md:266"
+   ]
+  },
+  "REQ-VEH-04": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:25",
+   "summary": "시뮬레이션 적분법: Euler 적분",
+   "design": [],
+   "code": [
+    "thesis_v2/baseline/vehicle.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/vehicle.py:step (추적표 12행)",
+    "thesis_v2/baseline/vehicle.py:step (행 22, 주석·직접)"
+   ],
+   "tests": [],
+   "evals": []
+  },
+  "REQ-VEH-05": {
+   "status": "SPEC 정의",
+   "where": "repro/docs/SPEC.md:26",
+   "summary": "속도(v)에 대한 별도 동역학(가속도/관성) 방정식 없음 — v는 매 스텝 직접 지정되는 입력으로 취급",
+   "design": [
+    "SETTINGS_DECISION.md §16 (행 394, 본문 인용)",
+    "SETTINGS_DECISION.md §3 (행 45, 본문 인용)"
+   ],
+   "code": [
+    "thesis_v2/anomaly/scenarios.py:estimated_trigger_step (행 39, 주석·직접)",
+    "thesis_v2/baseline/longitudinal.py (추적표 13행)",
+    "thesis_v2/baseline/vehicle.py:<module> (행 3, 주석·직접)",
+    "thesis_v2/baseline/vehicle.py:step (추적표 13행)",
+    "thesis_v2/baseline/vehicle.py:step (행 22, 주석·직접)"
+   ],
+   "tests": [
+    "thesis_v2/tests/test_longitudinal.py::test_v_cmd_per_state (추적표·함수 명시)"
+   ],
+   "evals": []
+  }
+ },
+ "orphan_reqs": [
+  "REQ-EVAL-01",
+  "REQ-EVAL-02",
+  "REQ-EVAL-04",
+  "REQ-MPC-06",
+  "REQ-MPC-08",
+  "REQ-SIM-02",
+  "REQ-SIM-02a",
+  "REQ-SIM-03",
+  "REQ-SIM-04",
+  "REQ-SIM-07",
+  "REQ-SPD-05",
+  "REQ-STU-02r",
+  "REQ-STU-04",
+  "REQ-VEH-01",
+  "REQ-VEH-04"
+ ],
+ "reqs_without_code": [
+  "REQ-EVAL-01",
+  "REQ-EVAL-02",
+  "REQ-EVAL-04",
+  "REQ-STU-02r",
+  "REQ-STU-04"
+ ],
+ "tests": [
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_check_match_removes_tmp_and_ignores_diag",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_check_mismatch_keeps_tmp_and_prints_diff",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_check_only_subset_compares_selected",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_check_only_subset_mismatch",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_check_only_without_p0_uses_saved_p0_baseline",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_compute_runs_only_selected_combos",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_determinism",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_diff_csv_text_reports_row_column_values",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_freeze_ok_requires_clean_and_cl_tag",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_main_check_only_argument_errors",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_main_refuses_eval_seeds_without_freeze",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner",
+   "variants": 8,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p1_stops_immediately_on_first_alarm",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_ir_stuck_overrides_ey_without_stopping",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_left_clear_stuck_overrides_lc_without_stopping",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_requires_detector",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_right_clear_stuck_overrides_rc_without_stopping",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_steer_delay_stops_like_p1",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_parse_check_only",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_summarize_timing_flags_hit_episodes",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_timing_diag_recorded_but_not_in_episode_row",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_channel_scores_cover_all_channels",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control",
+   "variants": 3,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel",
+   "variants": 5,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_gyro_without_noise_is_finite_difference",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_ir_dropout_masks_ey_but_not_ir_miss",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_llr_constants",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_normal_noise_residuals_are_standardized",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_normal_residuals_are_zero_without_noise",
+   "variants": 2,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_right_clear_stuck_raises_rc",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_threshold_quantile_higher",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_tracker_error_bounded_by_gate_under_slow_drift",
+   "variants": 6,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_tracker_error_bounded_during_50_step_freeze_with_noise",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_tracker_keeps_obstacles_per_lane",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_tracker_not_contaminated_by_frozen_lidar",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_b.py::test_detector_b_does_not_change_control",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_b.py::test_features_reflect_dropout_flag",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_b.py::test_norm_zero_std_safe",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_b.py::test_online_equals_offline",
+   "variants": 2,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_b.py::test_step_features_shape_and_onehot",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_b.py::test_windows_and_stats",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_timing.py::test_stats_budget_ratio",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_detector_timing.py::test_timed_loop_matches_observational_runner",
+   "variants": 4,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_ap_no_positive_is_none",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_ap_perfect_ranking",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_auc_perfect_separation",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_auc_ties_are_half",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_bootstrap_episode_stat_deterministic",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_expected_fine_spike_direction",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_freeze_ok_requires_clean_and_tagged",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_label_array_permanent_and_bounded",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_main_refuses_eval_seeds_without_freeze",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_run_record_decouples_inject_and_assumed_sigma",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_step_prf1_basic",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_wilson_matches_module",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_freeze_holds_last_good_value_including_obstacle_info",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_identity_without_spec",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_ir_and_clear_faults",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_label_window",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_off_road_definition",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_runner_labels_match_spec",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_sample_fault_deterministic_and_after_warmup",
+   "variants": 9,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_scenario_range_and_determinism",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_spike_and_dropout_keep_obstacle_info_consistent",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_faults.py::test_steer_delay_and_stuck",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2",
+   "variants": 18,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_with_s4_low_noise",
+   "variants": 2,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_channel_names_are_b_then_a",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_detector_hybrid_does_not_change_control",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_detector_hybrid_online_equals_offline",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_hybrid_recorder_does_not_change_control",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_norm_round_trips_and_rejects_wrong_channels",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_score_episode_deterministic_and_masked_prefix_zero",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_step_matrix_shape_and_a_columns_match_residuals",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_p1_stop_on_first_step_is_detection_stop",
+   "variants": 2,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_p1_stop_step_collision_is_classified_as_collision",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_p1_stop_step_departure_is_classified_as_departure",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_p1_stop_step_departure_without_termination_is_detection_stop",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_p2_override_feeds_controller_the_overridden_value",
+   "variants": 3,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_unnecessary_stop_harmful_fault_boundary",
+   "variants": 3,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_unnecessary_stop_harmless_fault",
+   "variants": 3,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_unnecessary_stop_normal_episode",
+   "variants": 2,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_unnecessary_stop_requires_detection_stop_outcome",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_alarm_requires_score_strictly_above_threshold",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_corridor_ignores_tracks_beyond_lidar_range",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_corridor_is_vehicle_width_around_y",
+   "variants": 2,
+   "reqs": [
+    "REQ-SEN-01"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_corridor_longitudinal_margin_near_obstacle_end",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_corridor_range_uses_distance_ahead_of_front",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_dead_reckoning_and_front_point_match_plant_while_heading_is_nonzero",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_fg_residual_valid_only_if_previous_gap_positive",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_front_gap_without_obstacle_info_does_not_create_track",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_l1_obstacle_is_evaluated_in_l1_window_only",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-02",
+    "REQ-SEN-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_no_return_measurement_does_not_create_track",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_psi_residual_masked_when_previous_speed_is_zero",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_track_position_is_mean_of_accepted_measurements",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "이상탐지(REQ 체계 밖)"
+  },
+  {
+   "test": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py::test_window_extends_g_safe_min_behind_rear_axle",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_check_golden.py::test_matches_golden",
+   "variants": 6,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 교차 환경 재현성(golden)"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_collision.py::test_full_overlap_same_footprint",
+   "variants": 1,
+   "reqs": [
+    "REQ-SIM-08"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_collision.py::test_no_overlap_far_obstacle",
+   "variants": 1,
+   "reqs": [
+    "REQ-SIM-08"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_collision.py::test_partial_overlap",
+   "variants": 1,
+   "reqs": [
+    "REQ-SIM-08"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_collision.py::test_rotated_vehicle_corner_pokes_into_obstacle",
+   "variants": 1,
+   "reqs": [
+    "REQ-SIM-08"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_config.py::test_fixed_params_match_claude_md",
+   "variants": 1,
+   "reqs": [
+    "REQ-MPC-03",
+    "REQ-SIM-01",
+    "REQ-SPD-04",
+    "REQ-VEH-02"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_envinfo.py::test_collect_env_info_does_not_crash_and_has_power_fields",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_envinfo.py::test_meets_official_condition_with_user_confirmation_equals_ac_status",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_envinfo.py::test_meets_official_condition_without_confirmation_requires_overlay",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_envinfo.py::test_overlay_guid_matcher",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_envinfo.py::test_power_mode_confirmed_flag_recorded_with_timestamp",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_any_state_to_safe_stop_positive",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02b"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_evade_to_keep_l1",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-03",
+    "REQ-FSM-03a"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l1_to_return",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-03",
+    "REQ-FSM-03a"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l2_to_evade",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-03",
+    "REQ-FSM-03a"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_return_to_keep_l2",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-03",
+    "REQ-FSM-03a"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_safe_stop",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-03",
+    "REQ-FSM-03a"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_evade_l_to_keep_l1_negative_far_from_l1",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02c"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_evade_l_to_keep_l1_positive",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02c"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_initial_fsm_cooldown_pre_expired",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-01",
+    "REQ-FSM-03b"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_keep_l1_to_return_negative_right_not_clear",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02d"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_keep_l1_to_return_positive",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02d"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_negative_not_left_clear",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02a"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_positive",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02a"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_return_to_keep_l2_negative_psi_too_large",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02e"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_return_to_keep_l2_positive",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02e"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_condition_negative_left_clear_true",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02b"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_from_every_state",
+   "variants": 5,
+   "reqs": [
+    "REQ-FSM-02b"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_is_terminal_no_recovery",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d1_front_gap_lt_g_trig",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02a"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d3_elapsed_gt_t_keep_l1_min_reachable_form",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02d"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_fsm_mcdc.py::test_mcdc_d4_abs_y_le_near_l2",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02e"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc",
+   "variants": 2,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 폐루프 루프 = improved.runner(§3-2)"
+   ],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_norm_stats_zero_std_safe",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) std=0 정규화 가드(§1-3)"
+   ],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 입력 캡처가 주행을 바꾸지 않음(§1-3)"
+   ],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_stratified_split_fixed_seed_deterministic",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 계층 분할·고정 seed(§1-5)"
+   ],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_01_structure",
+   "variants": 1,
+   "reqs": [
+    "REQ-STU-01"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "variants": 1,
+   "reqs": [
+    "REQ-STU-02"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02r_captured_delta_prev_is_previous_final",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02r_variant_order_and_dims",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_03_v_target_is_rule_based",
+   "variants": 1,
+   "reqs": [
+    "REQ-STU-03"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_equivalence.py::test_improved_runner_matches_golden_when_flags_off",
+   "variants": 6,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_equivalence.py::test_single_call_matches_baseline_when_flags_off",
+   "variants": 5,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_max_iter_default_is_972",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_off_setup_kwargs_identical_to_v1",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_on_requires_max_iter",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_on_uses_972_by_default",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_product_instance_keeps_time_limit_safety_net",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_fingerprint_table",
+   "variants": 14,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_fingerprint_without_check_termination",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_hit_false_without_cut",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_hit_set_for_any_reported_status",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_off_fixture_reaches_osqp_settings",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_tiny_iter_cap_triggers_max_iter_status_and_hard_check",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_norm_logging_fields_present_and_consistent",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i1_off_allows_immediate_large_jump",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i1_on_clamps_relative_to_nonzero_delta_prev",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i1_on_clamps_to_rate_from_delta_prev",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i1b_off_reports_infeasible_on_known_hard_case",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i1b_on_solves_the_same_known_hard_case",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i1b_zero_violation_when_feasible",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i2_no_effect_when_obstacle_far_away",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i2_prime_narrow_variant_raises_psi_lower_bound_and_uses_smaller_margin",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i2_raises_lower_bound_within_obstacle_window",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i2_solve_pushes_higher_than_without_i2_when_obstacle_adjacent",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i3_off_never_sets_warm_start_shift_used",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i3_shifts_previous_successful_solution_on_failure",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_i3_uses_proportional_fallback_when_no_prior_solution",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_mpc.py::test_margin_i2_value",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_sensors.py::test_front_obstacle_info_excludes_passed_obstacle",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-01"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_sensors.py::test_front_obstacle_info_matches_front_gap_and_reports_bounds",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_sensors.py::test_front_obstacle_info_none_when_out_of_corridor",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_improved_sensors.py::test_front_obstacle_info_picks_nearest",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "improved(SPEC에 REQ 없음)"
+  },
+  {
+   "test": "thesis_v2/tests/test_lateral.py::test_evade_return_always_mpc_when_detected",
+   "variants": 2,
+   "reqs": [
+    "REQ-LAT-02"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_lateral.py::test_evade_return_always_mpc_when_not_detected",
+   "variants": 2,
+   "reqs": [
+    "REQ-LAT-02"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_lateral.py::test_keep_state_line_follow_when_detected",
+   "variants": 2,
+   "reqs": [
+    "REQ-LAT-01",
+    "REQ-LAT-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_lateral.py::test_keep_state_mpc_when_not_detected",
+   "variants": 2,
+   "reqs": [
+    "REQ-LAT-03",
+    "REQ-LAT-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_lateral.py::test_safe_stop_does_not_call_mpc",
+   "variants": 1,
+   "reqs": [
+    "REQ-LAT-05"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_lateral.py::test_safe_stop_holds_last_delta_regardless_of_ey",
+   "variants": 3,
+   "reqs": [
+    "REQ-LAT-05"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_logger.py::test_logger_save_npz_roundtrip",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 로거 스키마(§3)"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_logger.py::test_logger_schema_has_all_fields",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 로거 스키마(§3)"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_longitudinal.py::test_v_cmd_per_state",
+   "variants": 5,
+   "reqs": [
+    "REQ-SPD-01",
+    "REQ-SPD-02",
+    "REQ-SPD-03",
+    "REQ-VEH-05"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_metrics.py::test_classify_clip_none_when_within_bound",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_metrics.py::test_classify_clip_numerical_within_eps",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_metrics.py::test_classify_clip_violation_beyond_eps",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_metrics.py::test_delta_within_tolerance_boundary",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_metrics.py::test_is_saturated_boundary",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_metrics.py::test_psi_within_tolerance_boundary",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_metrics.py::test_y_within_tolerance_per_state",
+   "variants": 4,
+   "reqs": [],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_metrics.py::test_y_within_tolerance_safe_stop_is_not_applicable",
+   "variants": 1,
+   "reqs": [
+    "REQ-LAT-05"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_mpc.py::test_fallback_unit_is_rad_per_meter",
+   "variants": 1,
+   "reqs": [
+    "REQ-MPC-07",
+    "REQ-MPC-07a"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) OSQP 솔버 설정(§18)"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_mpc.py::test_heading_and_steering_bound_constants",
+   "variants": 1,
+   "reqs": [
+    "REQ-MPC-04"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) OSQP 솔버 설정(§18)"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_mpc.py::test_hessian_has_offdiagonal_rddelta_terms",
+   "variants": 1,
+   "reqs": [
+    "REQ-MPC-02",
+    "REQ-MPC-03a"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) OSQP 솔버 설정(§18)"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_mpc.py::test_position_constraints_per_state",
+   "variants": 4,
+   "reqs": [
+    "REQ-MPC-05"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) OSQP 솔버 설정(§18)"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_negative_target",
+   "variants": 1,
+   "reqs": [
+    "REQ-MPC-01",
+    "REQ-MPC-07b"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) OSQP 솔버 설정(§18)"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_positive_target",
+   "variants": 1,
+   "reqs": [
+    "REQ-MPC-01",
+    "REQ-MPC-07b"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) OSQP 솔버 설정(§18)"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_mutation_gaps_fsm.py::test_keep_l1_return_requires_elapsed_strictly_above_t_keep_l1_min",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02d"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_mutation_gaps_fsm.py::test_return_to_keep_l2_accepts_psi_exactly_limit",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02e"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_mutation_gaps_fsm.py::test_return_to_keep_l2_accepts_y_exactly_near_l2",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02e"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_mutation_gaps_fsm.py::test_safe_stop_requires_front_gap_strictly_below_g_safe_min",
+   "variants": 1,
+   "reqs": [
+    "REQ-FSM-02b"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_mutation_gaps_mpc.py::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds",
+   "variants": 2,
+   "reqs": [
+    "REQ-EVAL-03",
+    "REQ-MPC-07"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_mutation_gaps_mpc.py::test_delta0_matches_independent_spec_qp",
+   "variants": 7,
+   "reqs": [
+    "REQ-MPC-01",
+    "REQ-MPC-02",
+    "REQ-MPC-03",
+    "REQ-MPC-03a",
+    "REQ-MPC-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_mutation_gaps_mpc.py::test_heading_constraint_binds_when_optimum_would_exceed_limit",
+   "variants": 1,
+   "reqs": [
+    "REQ-MPC-01",
+    "REQ-MPC-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_postprocess.py::test_clip_boundary_exact_not_active",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "기타"
+  },
+  {
+   "test": "thesis_v2/tests/test_postprocess.py::test_clip_boundary_just_over_active",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "기타"
+  },
+  {
+   "test": "thesis_v2/tests/test_postprocess.py::test_order_is_rate_limit_then_clip",
+   "variants": 1,
+   "reqs": [
+    "REQ-MPC-04a"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) 후처리 순서(§15)"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_postprocess.py::test_rate_limit_boundary_exact_not_active",
+   "variants": 1,
+   "reqs": [
+    "REQ-VEH-03"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_postprocess.py::test_rate_limit_boundary_just_over_active",
+   "variants": 1,
+   "reqs": [
+    "REQ-VEH-03"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_run_cli.py::test_power_mode_confirmed_flag_reaches_env_json",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_run_cli.py::test_without_flag_defaults_to_not_confirmed",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_runner.py::test_collision_has_priority_over_safe_stop_same_step",
+   "variants": 1,
+   "reqs": [
+    "REQ-CTRL-01"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) 스텝순서(충돌 우선)"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_runner.py::test_metrics_counts_are_internally_consistent",
+   "variants": 1,
+   "reqs": [
+    "REQ-CTRL-01"
+   ],
+   "nonreq_rows": [
+    "(비-REQ 행) 제약 만족/위반, clip 세분류, 조향 포화(MEAS"
+   ]
+  },
+  {
+   "test": "thesis_v2/tests/test_runner.py::test_safe_stop_holds_last_steering_and_does_not_crash",
+   "variants": 1,
+   "reqs": [
+    "REQ-CTRL-01",
+    "REQ-LAT-05"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_runner.py::test_seed_reproducibility",
+   "variants": 1,
+   "reqs": [
+    "REQ-CTRL-01",
+    "REQ-SIM-05"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_s7b_precheck_front_gap.py::test_front_gap_obstacle_directly_ahead_is_normal_positive_gap",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "기타"
+  },
+  {
+   "test": "thesis_v2/tests/test_s7b_precheck_front_gap.py::test_front_gap_obstacle_fully_behind_rear_is_excluded",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "기타"
+  },
+  {
+   "test": "thesis_v2/tests/test_s7b_precheck_front_gap.py::test_front_gap_obstacle_overlapping_vehicle_body_is_zero",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "기타"
+  },
+  {
+   "test": "thesis_v2/tests/test_sensors.py::test_front_gap_obstacle_in_corridor",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-01"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_sensors.py::test_front_gap_obstacle_outside_corridor_ignored",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-01"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_sensors.py::test_front_gap_picks_nearest_of_multiple",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-01"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_sensors.py::test_ir_pattern_to_ey_line",
+   "variants": 6,
+   "reqs": [
+    "REQ-SEN-03"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_sensors.py::test_left_clear_blocked_by_obstacle_in_l1",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-02"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_sensors.py::test_left_clear_unaffected_by_obstacle_in_l2_only",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-02"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_sensors.py::test_right_clear_blocked_by_obstacle_in_l2",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_sensors.py::test_right_clear_unaffected_by_obstacle_in_l1_only",
+   "variants": 1,
+   "reqs": [
+    "REQ-SEN-04"
+   ],
+   "nonreq_rows": []
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_empty_results_do_not_crash",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_expected_outcome_left_obstacle_is_safe_stop",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_expected_outcome_paper_is_success",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_max_call_info_excluding_first_call_is_never_first",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_max_call_info_matches_actual_max",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_max_excluding_first_call_le_max",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_percentiles_present_and_ordered",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_solver_fail_and_fallback_totals_present",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_step_time_ms_has_budget_pct",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_step_time_ms_is_at_least_mpc_solve_time",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_step_time_ms_max_excluding_first_call_le_max",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_step_time_ms_present_and_ordered",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_summary_success_and_collision_ci_present_and_formatted",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_wilson_ci_bounds_contain_point_estimate",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_wilson_ci_known_reference_p50_n100",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_wilson_ci_none_for_zero_n",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  },
+  {
+   "test": "thesis_v2/tests/test_summary.py::test_wilson_ci_zero_successes_lower_bound_is_zero",
+   "variants": 1,
+   "reqs": [],
+   "nonreq_rows": [],
+   "category": "인프라·도구(요구사항 수준 아님)"
+  }
+ ],
+ "code": [
+  {
+   "location": "thesis_v2/anomaly/detector_a.py:<module>",
+   "reqs": [
+    "REQ-SEN-02",
+    "REQ-SEN-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/anomaly/scenarios.py:estimated_trigger_step",
+   "reqs": [
+    "REQ-VEH-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/anomaly/scenarios.py:generate_anomaly_scenario",
+   "reqs": [
+    "REQ-SIM-02a"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/collision.py:<module>",
+   "reqs": [
+    "REQ-SIM-08"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/config.py:<module>",
+   "reqs": [
+    "REQ-FSM-02a",
+    "REQ-FSM-02b",
+    "REQ-FSM-02c",
+    "REQ-FSM-02d",
+    "REQ-FSM-02e",
+    "REQ-FSM-03",
+    "REQ-LAT-01",
+    "REQ-MPC-03",
+    "REQ-MPC-04",
+    "REQ-MPC-05",
+    "REQ-MPC-07",
+    "REQ-SEN-01",
+    "REQ-SEN-03",
+    "REQ-SIM-01",
+    "REQ-SIM-02",
+    "REQ-SIM-02a",
+    "REQ-SIM-03",
+    "REQ-SIM-04",
+    "REQ-SIM-05",
+    "REQ-SIM-08",
+    "REQ-SPD-01",
+    "REQ-VEH-01",
+    "REQ-VEH-02",
+    "REQ-VEH-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/fsm.py:<module>",
+   "reqs": [
+    "REQ-FSM-01",
+    "REQ-FSM-02a",
+    "REQ-FSM-02b",
+    "REQ-FSM-02c",
+    "REQ-FSM-02d",
+    "REQ-FSM-02e",
+    "REQ-FSM-03",
+    "REQ-FSM-03a",
+    "REQ-FSM-03b",
+    "REQ-FSM-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/fsm.py:FSM",
+   "reqs": [
+    "REQ-FSM-02d",
+    "REQ-FSM-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/fsm.py:initial_fsm",
+   "reqs": [
+    "REQ-FSM-03b"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/fsm.py:step",
+   "reqs": [
+    "REQ-FSM-02a",
+    "REQ-FSM-02b",
+    "REQ-FSM-02c",
+    "REQ-FSM-02d",
+    "REQ-FSM-02e",
+    "REQ-FSM-03a",
+    "REQ-FSM-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/lateral.py:<module>",
+   "reqs": [
+    "REQ-LAT-01",
+    "REQ-LAT-02",
+    "REQ-LAT-03",
+    "REQ-LAT-04",
+    "REQ-LAT-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/lateral.py:compute_lateral",
+   "reqs": [
+    "REQ-LAT-01",
+    "REQ-LAT-02",
+    "REQ-LAT-03",
+    "REQ-LAT-04",
+    "REQ-LAT-05",
+    "REQ-MPC-07a"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/longitudinal.py:<module>",
+   "reqs": [
+    "REQ-SPD-01",
+    "REQ-SPD-02",
+    "REQ-SPD-03",
+    "REQ-SPD-04",
+    "REQ-SPD-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/longitudinal.py:compute_v_cmd",
+   "reqs": [
+    "REQ-SPD-01",
+    "REQ-SPD-02",
+    "REQ-SPD-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/metrics.py:delta_within_tolerance",
+   "reqs": [
+    "REQ-MPC-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/metrics.py:psi_within_tolerance",
+   "reqs": [
+    "REQ-MPC-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/metrics.py:y_within_tolerance",
+   "reqs": [
+    "REQ-LAT-05",
+    "REQ-MPC-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/mpc.py:<module>",
+   "reqs": [
+    "REQ-MPC-01",
+    "REQ-MPC-02",
+    "REQ-MPC-03",
+    "REQ-MPC-03a",
+    "REQ-MPC-04",
+    "REQ-MPC-04a",
+    "REQ-MPC-05",
+    "REQ-MPC-06",
+    "REQ-MPC-07",
+    "REQ-MPC-07a",
+    "REQ-MPC-07b",
+    "REQ-MPC-08"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/mpc.py:OSQPMPC._build_A_template",
+   "reqs": [
+    "REQ-MPC-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/mpc.py:OSQPMPC._build_P",
+   "reqs": [
+    "REQ-MPC-02",
+    "REQ-MPC-03a"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/mpc.py:OSQPMPC.solve",
+   "reqs": [
+    "REQ-MPC-07",
+    "REQ-MPC-07a"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/postprocess.py:<module>",
+   "reqs": [
+    "REQ-VEH-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/runner.py:<module>",
+   "reqs": [
+    "REQ-SEN-01",
+    "REQ-SIM-04",
+    "REQ-SIM-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/runner.py:run_episode",
+   "reqs": [
+    "REQ-LAT-05",
+    "REQ-MPC-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/sensors.py:<module>",
+   "reqs": [
+    "REQ-SEN-01",
+    "REQ-SEN-02",
+    "REQ-SEN-03",
+    "REQ-SEN-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/sensors.py:_window_clear",
+   "reqs": [
+    "REQ-SEN-02",
+    "REQ-SEN-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/sensors.py:ey_line",
+   "reqs": [
+    "REQ-LAT-03",
+    "REQ-SEN-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/sensors.py:front_gap",
+   "reqs": [
+    "REQ-SEN-01"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/sensors.py:ir_pattern",
+   "reqs": [
+    "REQ-SEN-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/sensors.py:left_clear",
+   "reqs": [
+    "REQ-SEN-02"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/sensors.py:right_clear",
+   "reqs": [
+    "REQ-SEN-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/summary.py:<module>",
+   "reqs": [
+    "REQ-FSM-02b",
+    "REQ-SIM-07"
+   ],
+   "undefined": [
+    "REQ-SIM-07"
+   ]
+  },
+  {
+   "location": "thesis_v2/baseline/summary.py:_step_time_stats",
+   "reqs": [
+    "REQ-EVAL-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/summary.py:build_summary",
+   "reqs": [
+    "REQ-FSM-02b",
+    "REQ-LAT-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/vehicle.py:<module>",
+   "reqs": [
+    "REQ-MPC-07b",
+    "REQ-VEH-01",
+    "REQ-VEH-04",
+    "REQ-VEH-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/vehicle.py:step",
+   "reqs": [
+    "REQ-VEH-01",
+    "REQ-VEH-04",
+    "REQ-VEH-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/world.py:<module>",
+   "reqs": [
+    "REQ-SIM-01",
+    "REQ-SIM-02",
+    "REQ-SIM-02a",
+    "REQ-SIM-03",
+    "REQ-SIM-08"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/world.py:_sample_truncated_y0",
+   "reqs": [
+    "REQ-SIM-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/world.py:generate_front_rear_scenario",
+   "reqs": [
+    "REQ-SIM-02a"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/world.py:generate_left_obstacle_scenario",
+   "reqs": [
+    "REQ-FSM-02b",
+    "REQ-SEN-02"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/baseline/world.py:generate_scenario",
+   "reqs": [
+    "REQ-SIM-02",
+    "REQ-SIM-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/config.py:<module>",
+   "reqs": [
+    "REQ-FSM-02e",
+    "REQ-MPC-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/lateral.py:<module>",
+   "reqs": [
+    "REQ-LAT-01",
+    "REQ-LAT-02",
+    "REQ-LAT-03",
+    "REQ-LAT-04",
+    "REQ-LAT-05"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/mpc.py:ImprovedMPC._build_P",
+   "reqs": [
+    "REQ-MPC-02",
+    "REQ-MPC-03a"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/runner.py:run_episode",
+   "reqs": [
+    "REQ-MPC-04"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/sensors.py:front_obstacle_info",
+   "reqs": [
+    "REQ-SEN-01"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/student_i4/config.py:<module>",
+   "reqs": [
+    "REQ-STU-01"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/student_i4/features.py:<module>",
+   "reqs": [
+    "REQ-LAT-02",
+    "REQ-LAT-03",
+    "REQ-LAT-05",
+    "REQ-STU-02",
+    "REQ-STU-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/student_i4/features.py:build_feature_vector",
+   "reqs": [
+    "REQ-STU-02"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/student_i4/features.py:v_target_label",
+   "reqs": [
+    "REQ-SPD-01",
+    "REQ-SPD-02",
+    "REQ-STU-03"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/student_i4/model.py:<module>",
+   "reqs": [
+    "REQ-STU-01"
+   ],
+   "undefined": []
+  },
+  {
+   "location": "thesis_v2/improved/student_i4/train.py:main",
+   "reqs": [
+    "REQ-STU-02"
+   ],
+   "undefined": []
+  }
+ ],
+ "nonreq_trace_rows": [
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:54",
+   "label": "스텝순서(충돌 우선)",
+   "tests": [
+    "thesis_v2/tests/test_runner.py::test_collision_has_priority_over_safe_stop_same_step"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:55",
+   "label": "로거 스키마(§3)",
+   "tests": [
+    "thesis_v2/tests/test_logger.py::test_logger_save_npz_roundtrip",
+    "thesis_v2/tests/test_logger.py::test_logger_schema_has_all_fields"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:56",
+   "label": "후처리 순서(§15)",
+   "tests": [
+    "thesis_v2/tests/test_postprocess.py::test_order_is_rate_limit_then_clip"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:57",
+   "label": "OSQP 솔버 설정(§18)",
+   "tests": [
+    "thesis_v2/tests/test_mpc.py::test_fallback_unit_is_rad_per_meter",
+    "thesis_v2/tests/test_mpc.py::test_heading_and_steering_bound_constants",
+    "thesis_v2/tests/test_mpc.py::test_hessian_has_offdiagonal_rddelta_terms",
+    "thesis_v2/tests/test_mpc.py::test_position_constraints_per_state",
+    "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_negative_target",
+    "thesis_v2/tests/test_mpc.py::test_sign_convention_steers_toward_positive_target"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:58",
+   "label": "제약 만족/위반, clip 세분류, 조향 포화(MEASURE_PLAN.md §18 원칙)",
+   "tests": [
+    "thesis_v2/tests/test_metrics.py::test_classify_clip_none_when_within_bound",
+    "thesis_v2/tests/test_metrics.py::test_classify_clip_numerical_within_eps",
+    "thesis_v2/tests/test_metrics.py::test_classify_clip_violation_beyond_eps",
+    "thesis_v2/tests/test_metrics.py::test_delta_within_tolerance_boundary",
+    "thesis_v2/tests/test_metrics.py::test_is_saturated_boundary",
+    "thesis_v2/tests/test_metrics.py::test_psi_within_tolerance_boundary",
+    "thesis_v2/tests/test_metrics.py::test_y_within_tolerance_per_state",
+    "thesis_v2/tests/test_metrics.py::test_y_within_tolerance_safe_stop_is_not_applicable",
+    "thesis_v2/tests/test_runner.py::test_metrics_counts_are_internally_consistent"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:59",
+   "label": "summary.json 집계",
+   "tests": []
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:60",
+   "label": "env.json 기록",
+   "tests": []
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:61",
+   "label": "교차 환경 재현성(golden)",
+   "tests": [
+    "thesis_v2/tests/test_check_golden.py::test_matches_golden"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:79",
+   "label": "입력 캡처가 주행을 바꾸지 않음(§1-3)",
+   "tests": [
+    "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:80",
+   "label": "계층 분할·고정 seed(§1-5)",
+   "tests": [
+    "thesis_v2/tests/test_i4_student.py::test_i4_stratified_split_fixed_seed_deterministic"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:81",
+   "label": "std=0 정규화 가드(§1-3)",
+   "tests": [
+    "thesis_v2/tests/test_i4_student.py::test_i4_norm_stats_zero_std_safe"
+   ]
+  },
+  {
+   "where": "thesis_v2/tests/TRACEABILITY.md:82",
+   "label": "폐루프 루프 = improved.runner(§3-2)",
+   "tests": [
+    "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc"
+   ]
+  }
+ ],
+ "unresolved_trace_tokens": [],
+ "anomaly_chain": [
+  {
+   "item": "탐지기 A 임계값(iteration 3)",
+   "design": [
+    "§13(행 198)",
+    "§18(행 500)"
+   ],
+   "script": "thesis_v2/anomaly/calibrate_a.py",
+   "result": "thesis_v2/results/anomaly/20261002_104706_3층PC108_it3_threshold_a",
+   "tag_checked": true
+  },
+  {
+   "item": "탐지기 B1·B2 학습(iteration 2)",
+   "design": [
+    "§15(행 378)",
+    "§17(행 423)"
+   ],
+   "script": "thesis_v2/anomaly/train_b.py",
+   "result": "thesis_v2/results/anomaly/20261002_001009_DESKTOP-MDCKRJS_it2_train_b",
+   "tag_checked": true
+  },
+  {
+   "item": "하이브리드 학습(iteration 3)",
+   "design": [
+    "§20(행 606)"
+   ],
+   "script": "thesis_v2/anomaly/train_hybrid.py",
+   "result": "thesis_v2/results/anomaly/20261002_111909_3층PC108_it3_train_hybrid",
+   "tag_checked": true
+  },
+  {
+   "item": "오프라인 평가(seed 4000~4099)",
+   "design": [
+    "§13(행 198)",
+    "§19(행 560)",
+    "§21(행 688)"
+   ],
+   "script": "thesis_v2/anomaly/eval_offline.py",
+   "result": "thesis_v2/results/anomaly/20261002_145638_3층PC108_it3_eval_offline_eval",
+   "tag_checked": true
+  },
+  {
+   "item": "오프라인 평가 재현 확인(--check)",
+   "design": [
+    "§27(행 1346)"
+   ],
+   "script": "thesis_v2/anomaly/eval_offline.py",
+   "result": "thesis_v2/results/anomaly/20261012_3층PC109_run_logs",
+   "tag_checked": false
+  },
+  {
+   "item": "폐루프 평가(seed 5000~5099, 6조합 = 11 run × 100 seed = 1,100회)",
+   "design": [
+    "§24(행 885)"
+   ],
+   "script": "thesis_v2/anomaly/closed_loop.py",
+   "result": "thesis_v2/results/anomaly/20261012_142758_3층PC109_it3_closed_loop_eval",
+   "tag_checked": true
+  },
+  {
+   "item": "폐루프 평가 재현 확인(--check)",
+   "design": [
+    "§28(행 1372)"
+   ],
+   "script": "thesis_v2/anomaly/closed_loop.py",
+   "result": "thesis_v2/results/anomaly/20261012_3층PC109_run_logs",
+   "tag_checked": false
+  },
+  {
+   "item": "탐지기 계산 시간(공식 조건)",
+   "design": [
+    "§29(행 1402)"
+   ],
+   "script": "thesis_v2/anomaly/benchmark_detector_timing.py",
+   "result": "thesis_v2/results/anomaly/20261012_232824_DESKTOP-MDCKRJS_detector_timing",
+   "tag_checked": true
+  }
+ ]
+}

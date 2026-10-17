@@ -1,0 +1,469 @@
+{
+ "note": "LLM(Claude Code, claude-opus-5-5) 제안 테스트 기록. PREREGISTRATION.md §8. 수락 기준 ①~③은 check_gap_tests.py로 자동 확인, ④는 사용자 검토.",
+ "entries": [
+  {
+   "module": "closed_loop",
+   "file": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py",
+   "file_sha256": "3c168b02851be3080a1140d2863d583103113580d9f0cb7d86aae31734e92dab",
+   "proposed": "2026-10-13",
+   "proposer": "Claude Code (claude-opus-5-5)",
+   "criteria_auto": {
+    "source": "raw/gap_tests_closed_loop_check.json",
+    "criterion1_pass": true,
+    "criterion3_all": true,
+    "n_targets": 25,
+    "n_killed": 25,
+    "survived": [],
+    "independent_check": "raw/gap_tests_closed_loop_check_without_first_step.json (첫 step 테스트를 뺀 재확인)",
+    "note": "수락본(17개) 기준 재확인. 대상은 closed_loop 테스트 공백 25개(011 등가 재분류 뒤)."
+   },
+   "tests": [
+    {
+     "name": "test_p1_stop_on_first_step_is_detection_stop",
+     "targets": [
+      "closed_loop:028",
+      "closed_loop:030",
+      "closed_loop:031",
+      "closed_loop:032",
+      "closed_loop:033",
+      "closed_loop:037",
+      "closed_loop:038"
+     ],
+     "observable": "첫 step 경보에서도 P1 정지가 예외 없이 '탐지 정지'로 끝나고 step 수가 1",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_p1_stop_step_collision_is_classified_as_collision",
+     "targets": [
+      "closed_loop:031",
+      "closed_loop:032",
+      "closed_loop:035"
+     ],
+     "observable": "정지 step의 한 번 갱신으로 생긴 충돌이 결과 '충돌'로 분류됨",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_p1_stop_step_departure_is_classified_as_departure",
+     "targets": [
+      "closed_loop:033",
+      "closed_loop:039"
+     ],
+     "observable": "정지 step에 처음 이탈하면(terminate_on_departure=True) 결과 '이탈'",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_p1_stop_step_departure_without_termination_is_detection_stop",
+     "targets": [
+      "closed_loop:036",
+      "closed_loop:038"
+     ],
+     "observable": "이탈 종료를 끈 실행에서는 정지 step 이탈도 '탐지 정지'",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_p1_stop_step_holds_previous_command",
+     "targets": [
+      "closed_loop:030",
+      "closed_loop:037"
+     ],
+     "observable": "정지 step이 직전 조향 명령으로 갱신됨(steer_stuck 중 P0 이탈 step에서 P1은 이탈하지 않음)",
+     "decision": "rejected"
+    },
+    {
+     "name": "test_p2_override_feeds_controller_the_overridden_value",
+     "targets": [
+      "closed_loop:018",
+      "closed_loop:021",
+      "closed_loop:024"
+     ],
+     "observable": "P2 덮어쓰기 결과 = 같은 값을 센서에 주입한 P0 결과(결과·전이·step 수)",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_unnecessary_stop_normal_episode",
+     "targets": [
+      "closed_loop:048",
+      "closed_loop:049",
+      "closed_loop:051",
+      "closed_loop:052"
+     ],
+     "observable": "episode_row의 unnecessary_stop: 정상 run 탐지 정지 → 'normal', 다른 결과 → None",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_unnecessary_stop_harmless_fault",
+     "targets": [
+      "closed_loop:053",
+      "closed_loop:054"
+     ],
+     "observable": "무해 고장 run 탐지 정지 → 'harmless'",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_unnecessary_stop_harmful_fault_boundary",
+     "targets": [
+      "closed_loop:056",
+      "closed_loop:057",
+      "closed_loop:059",
+      "closed_loop:060",
+      "closed_loop:061",
+      "closed_loop:062"
+     ],
+     "observable": "유해 고장: 경보 < onset → 'before_onset', = onset·> onset → None",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_unnecessary_stop_requires_detection_stop_outcome",
+     "targets": [],
+     "observable": "탐지 정지가 아닌 결과는 onset 전 경보라도 None(다른 테스트와 함께 051 등 보강)",
+     "decision": "accepted"
+    }
+   ],
+   "not_proposed": [
+    {
+     "id": "closed_loop:011",
+     "reason": "제안하지 않음. 사용자 확인 요청(2026-10-13)에 따라 메모리 집계 여부를 확인한 뒤 등가(코드)로 재분류했다. equivalence.json 참조."
+    }
+   ],
+   "criterion4_review": {
+    "status": "done",
+    "date": "2026-10-13",
+    "method": "사용자 일괄 검토(요약표 기준, 별도 Claude 채팅 세션의 검토 보조)",
+    "reviewer": "사용자"
+   },
+   "accepted": [
+    "test_p1_stop_on_first_step_is_detection_stop",
+    "test_p1_stop_step_collision_is_classified_as_collision",
+    "test_p1_stop_step_departure_is_classified_as_departure",
+    "test_p1_stop_step_departure_without_termination_is_detection_stop",
+    "test_p2_override_feeds_controller_the_overridden_value",
+    "test_unnecessary_stop_normal_episode",
+    "test_unnecessary_stop_harmless_fault",
+    "test_unnecessary_stop_harmful_fault_boundary",
+    "test_unnecessary_stop_requires_detection_stop_outcome"
+   ],
+   "rejected": [
+    {
+     "name": "test_p1_stop_step_holds_previous_command",
+     "reason": "DESIGN.md §24에 명시되지 않은 모델링(정지 step이 apply_actuator를 거치지 않아 steer 고장 중에도 명령 δ_{k−1}로 갱신)을 테스트로 고정하게 된다. 대신 RESULTS.md 발견 사항과 IMPROVEMENT_BACKLOG.md 후보로 기록한다(사용자 결정).",
+     "effect": "closed_loop:030은 첫 step 정지 테스트(NameError)로만 잡힌다. 정지 step 조향의 의미는 테스트하지 않는다."
+    }
+   ],
+   "human_edits": "사용자가 테스트 1개를 거절했고, 파일에서 그 함수만 삭제했다(나머지 17개는 제안 그대로).",
+   "accepted_test_count": 17
+  },
+  {
+   "module": "fsm",
+   "file": "thesis_v2/tests/test_mutation_gaps_fsm.py",
+   "file_sha256": "611c6df204e17e7f34fb1564c79934a08df6ffd83e8f7a6906fba5661ca45487",
+   "proposed": "2026-10-13",
+   "proposer": "Claude Code (claude-opus-5-5)",
+   "criteria_auto": {
+    "source": "raw/gap_tests_fsm_check.json",
+    "criterion1_pass": true,
+    "criterion3_all": true,
+    "n_targets": 4,
+    "n_killed": 4,
+    "survived": []
+   },
+   "tests": [
+    {
+     "name": "test_safe_stop_requires_front_gap_strictly_below_g_safe_min",
+     "targets": [
+      "fsm:014"
+     ],
+     "observable": "front_gap = 0.20, left_clear=False → SAFE_STOP 아님(REQ-FSM-02b <)",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_keep_l1_return_requires_elapsed_strictly_above_t_keep_l1_min",
+     "targets": [
+      "fsm:038"
+     ],
+     "observable": "KEEP_L1 진입 뒤 정확히 0.6 s → 전이 없음(REQ-FSM-02d >)",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_return_to_keep_l2_accepts_y_exactly_near_l2",
+     "targets": [
+      "fsm:045"
+     ],
+     "observable": "|y| = 0.08 → KEEP_L2(REQ-FSM-02e ≤)",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_return_to_keep_l2_accepts_psi_exactly_limit",
+     "targets": [
+      "fsm:047"
+     ],
+     "observable": "|ψ| = 20° → KEEP_L2(REQ-FSM-02e ≤)",
+     "decision": "accepted"
+    }
+   ],
+   "not_proposed": [
+    {
+     "id": "fsm:030",
+     "reason": "테스트 불가. 사용자 요청으로 y 입력 범위(호출 경로·클리핑 없음)를 확인한 뒤 등가(수치·부동소수점 근거)로 재분류했다. equivalence.json 참조."
+    }
+   ],
+   "criterion4_review": {
+    "status": "done",
+    "date": "2026-10-13",
+    "method": "사용자 일괄 검토(요약표 기준, 별도 Claude 채팅 세션의 검토 보조)",
+    "reviewer": "사용자",
+    "conditions": null
+   },
+   "accepted": [
+    "test_safe_stop_requires_front_gap_strictly_below_g_safe_min",
+    "test_keep_l1_return_requires_elapsed_strictly_above_t_keep_l1_min",
+    "test_return_to_keep_l2_accepts_y_exactly_near_l2",
+    "test_return_to_keep_l2_accepts_psi_exactly_limit"
+   ],
+   "rejected": [],
+   "human_edits": "없음"
+  },
+  {
+   "module": "baseline_mpc",
+   "file": "thesis_v2/tests/test_mutation_gaps_mpc.py",
+   "file_sha256": "d038ba5718ca2da81748543c7a403142f8ee42ef1068ea7392286a9f32860603",
+   "proposed": "2026-10-13",
+   "proposer": "Claude Code (claude-opus-5-5)",
+   "criteria_auto": {
+    "source": "raw/gap_tests_mpc_check.json",
+    "criterion1_pass": true,
+    "criterion3_all": true,
+    "n_targets": 12,
+    "n_killed": 9,
+    "survived": [
+     "baseline_mpc:155",
+     "baseline_mpc:209",
+     "baseline_mpc:283"
+    ]
+   },
+   "tests": [
+    {
+     "name": "test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds",
+     "targets": [
+      "baseline_mpc:272",
+      "baseline_mpc:273",
+      "baseline_mpc:285",
+      "baseline_mpc:286",
+      "baseline_mpc:287"
+     ],
+     "observable": "compute_time_ms = solve() 앞뒤 perf_counter 차이 × 1000(성공·fallback 경로, 가짜 시계)",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_heading_constraint_binds_when_optimum_would_exceed_limit",
+     "targets": [
+      "baseline_mpc:133"
+     ],
+     "observable": "ψ0 = 79°에서 예측 ψ_1 ≤ 80°(REQ-MPC-04)",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_delta0_matches_independent_spec_qp",
+     "targets": [
+      "baseline_mpc:165",
+      "baseline_mpc:198",
+      "baseline_mpc:246"
+     ],
+     "observable": "δ_0 = SPEC QP(REQ-MPC-01~04) 독립 구현의 최적 δ_0(±0.05°)",
+     "decision": "accepted"
+    }
+   ],
+   "not_proposed": [
+    {
+     "id": "baseline_mpc:283",
+     "reason": "fallback ±25° 클램프는 SPEC(REQ-MPC-07/07a)·SETTINGS_DECISION §11에 없다. 테스트하면 명세에 없는 동작을 고정한다 — 사용자에게 먼저 보고.",
+     "decision": "테스트 안 함 — REQ-VEH-02의 ±25°는 후처리 단계(SETTINGS_DECISION §15)에 정해져 있어 MPC fallback 단계 요구사항이 아님. 발견 사항 4·백로그 후보 16"
+    },
+    {
+     "id": "baseline_mpc:209",
+     "reason": "v 하한 max(0.05, …)(mpc.py:208 '수치안정')은 SPEC·SETTINGS_DECISION에 없다. 테스트하면 명세에 없는 동작을 고정한다 — 사용자에게 먼저 보고.",
+     "decision": "테스트 안 함 — 명세에 없는 동작(파생 요구사항 누락). 발견 사항 4·백로그 후보 16"
+    },
+    {
+     "id": "baseline_mpc:155",
+     "reason": "격자 560개 + 저속 64개 입력에서 δ_0 차이가 0(소수 5자리)으로, 관찰 가능한 출력(delta_deg)으로는 구분되지 않았다. 행렬을 직접 읽는 테스트는 내부 값 확인이라 제안하지 않음.",
+     "decision": "테스트 안 함 — 사전 선언대로 측정값 분류 유지"
+    }
+   ],
+   "criterion4_review": {
+    "status": "done",
+    "date": "2026-10-13",
+    "method": "사용자 일괄 검토(요약표 기준, 별도 Claude 채팅 세션의 검토 보조)",
+    "reviewer": "사용자",
+    "conditions": null
+   },
+   "accepted": [
+    "test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds",
+    "test_heading_constraint_binds_when_optimum_would_exceed_limit",
+    "test_delta0_matches_independent_spec_qp"
+   ],
+   "rejected": [],
+   "human_edits": "없음"
+  },
+  {
+   "module": "detector_a",
+   "file": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py",
+   "file_sha256": "0daf6cbb95443f6d33c09e208b96591b84b2520a3beadba93a6e7a6f9f91e81b",
+   "proposed": "2026-10-13",
+   "proposer": "Claude Code (claude-opus-5-5)",
+   "criteria_auto": {
+    "source": "raw/gap_tests_detector_a_check.json",
+    "criterion1_pass": true,
+    "criterion3_all": true,
+    "n_targets": 22,
+    "n_killed": 22,
+    "survived": []
+   },
+   "tests": [
+    {
+     "name": "test_l1_obstacle_is_evaluated_in_l1_window_only",
+     "targets": [
+      "detector_a:005",
+      "detector_a:166"
+     ],
+     "observable": "L1 장애물: r_rc None, r_lc 0.0",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_window_extends_g_safe_min_behind_rear_axle",
+     "targets": [
+      "detector_a:060"
+     ],
+     "observable": "후단 뒤 0.1 m의 L2 장애물: r_rc 평가(0.0)",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_corridor_is_vehicle_width_around_y",
+     "targets": [
+      "detector_a:083",
+      "detector_a:087"
+     ],
+     "observable": "통로 [y ± B/2]: y=0.1 → r_trk 0.0, y=−0.2 → None",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_corridor_longitudinal_margin_near_obstacle_end",
+     "targets": [
+      "detector_a:093"
+     ],
+     "observable": "x_far − 전단 < 0.05 m → r_trk None, 그 전 1.0",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_corridor_ignores_tracks_beyond_lidar_range",
+     "targets": [
+      "detector_a:094",
+      "detector_a:098",
+      "detector_a:026"
+     ],
+     "observable": "거리 ≥ 9.95 m 추적 → r_trk None",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_corridor_range_uses_distance_ahead_of_front",
+     "targets": [
+      "detector_a:096"
+     ],
+     "observable": "9.5 m 주행 뒤 1 m 앞 장애물 → r_trk 0.0",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_front_gap_without_obstacle_info_does_not_create_track",
+     "targets": [
+      "detector_a:029",
+      "detector_a:032"
+     ],
+     "observable": "info 없는 front_gap → 예외 없음, 추적 없음, r_trk None",
+     "decision": "accepted",
+     "criterion4": "④ 부분 충족(내부 상태 확인: 추적 위치가 출력에 없음, 기존 test_detector_a.py:144-219와 같은 방식). 대상 변이 029·032는 예외로 잡히며, r_trk(None) 확인은 출력이다"
+    },
+    {
+     "name": "test_no_return_measurement_does_not_create_track",
+     "targets": [
+      "detector_a:031"
+     ],
+     "observable": "front_gap ≥ 9.95 m 측정 → 추적 없음(det.tracks)",
+     "decision": "accepted",
+     "criterion4": "④ 부분 충족(내부 상태 확인: 추적 위치가 출력에 없음, 기존 test_detector_a.py:144-219와 같은 방식)"
+    },
+    {
+     "name": "test_track_position_is_mean_of_accepted_measurements",
+     "targets": [
+      "detector_a:048",
+      "detector_a:053"
+     ],
+     "observable": "추적 위치 = 수용 측정 평균(det.tracks)",
+     "decision": "accepted",
+     "criterion4": "④ 부분 충족(내부 상태 확인: 추적 위치가 출력에 없음, 기존 test_detector_a.py:144-219와 같은 방식)"
+    },
+    {
+     "name": "test_dead_reckoning_and_front_point_match_plant_while_heading_is_nonzero",
+     "targets": [
+      "detector_a:172",
+      "detector_a:026"
+     ],
+     "observable": "ψ=0.3 노이즈 없는 접근: 전부 수용, 추적 위치 = 실제(det.tracks)",
+     "decision": "accepted",
+     "criterion4": "④ 부분 충족(내부 상태 확인: 추적 위치가 출력에 없음, 기존 test_detector_a.py:144-219와 같은 방식)"
+    },
+    {
+     "name": "test_fg_residual_valid_only_if_previous_gap_positive",
+     "targets": [
+      "detector_a:114",
+      "detector_a:115",
+      "detector_a:116"
+     ],
+     "observable": "직전 fg 0 → r_fg None, 0.8 → 계산",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_psi_residual_masked_when_previous_speed_is_zero",
+     "targets": [
+      "detector_a:145",
+      "detector_a:146"
+     ],
+     "observable": "직전 v 0 → r_ψ None, 0.5 → 계산",
+     "decision": "accepted"
+    },
+    {
+     "name": "test_alarm_requires_score_strictly_above_threshold",
+     "targets": [
+      "detector_a:197"
+     ],
+     "observable": "score = h → alarm False, 초과 → True",
+     "decision": "accepted"
+    }
+   ],
+   "not_proposed": [],
+   "criterion4_review": {
+    "status": "done",
+    "date": "2026-10-13",
+    "method": "사용자 일괄 검토(요약표 기준, 별도 Claude 채팅 세션의 검토 보조)",
+    "reviewer": "사용자",
+    "conditions": "det.tracks 직접 확인 테스트는 ④ 부분 충족으로 표시, 합성 입력 사용 사실을 docstring에 명시"
+   },
+   "accepted": [
+    "test_l1_obstacle_is_evaluated_in_l1_window_only",
+    "test_window_extends_g_safe_min_behind_rear_axle",
+    "test_corridor_is_vehicle_width_around_y",
+    "test_corridor_longitudinal_margin_near_obstacle_end",
+    "test_corridor_ignores_tracks_beyond_lidar_range",
+    "test_corridor_range_uses_distance_ahead_of_front",
+    "test_front_gap_without_obstacle_info_does_not_create_track",
+    "test_no_return_measurement_does_not_create_track",
+    "test_track_position_is_mean_of_accepted_measurements",
+    "test_dead_reckoning_and_front_point_match_plant_while_heading_is_nonzero",
+    "test_fg_residual_valid_only_if_previous_gap_positive",
+    "test_psi_residual_masked_when_previous_speed_is_zero",
+    "test_alarm_requires_score_strictly_above_threshold"
+   ],
+   "rejected": [],
+   "human_edits": "사용자 조건에 따라 합성 입력(순간이동·정지 중 회전·갑작스러운 장애물 출현·주입한 측정 오차·장애물 통과) 사용 사실을 docstring 6곳에 추가했다(LLM이 수정, 동작 변경 없음).",
+   "criterion4_partial_count": 4
+  }
+ ]
+}

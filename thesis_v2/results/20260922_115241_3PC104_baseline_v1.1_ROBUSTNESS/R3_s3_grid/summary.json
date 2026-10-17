@@ -1,0 +1,7 @@
+{
+  "n_cells": 961,
+  "n_fail": 86,
+  "fail_ratio": 0.08949011446409989,
+  "heatmap_path": "thesis_v2\\results\\20260922_115241_3PC104_baseline_v1.1_ROBUSTNESS\\R3_s3_grid\\s3_heatmap.png",
+  "grid_json_path": "thesis_v2\\results\\20260922_115241_3PC104_baseline_v1.1_ROBUSTNESS\\R3_s3_grid\\s3_grid.json"
+}

@@ -1,0 +1,31 @@
+cpu_strong trial  0 340 passed, 6 warnings in 53.73s target_failed=False [] tl_hits=1
+cpu_strong trial  1 340 passed, 6 warnings in 58.21s target_failed=False [] tl_hits=1
+cpu_strong trial  2 1 failed, 339 passed, 6 warnings in 60.64s (0:01:00) target_failed=False [('106', '-3.6986460892168593', '-3.952018384175463')] tl_hits=3
+cpu_strong trial  3 340 passed, 6 warnings in 52.71s target_failed=False [] tl_hits=0
+cpu_strong trial  4 1 failed, 339 passed, 6 warnings in 71.02s (0:01:11) target_failed=False [] tl_hits=4
+cpu_strong trial  5 3 failed, 337 passed, 6 warnings in 59.02s target_failed=False [] tl_hits=4
+cpu_strong trial  6 1 failed, 339 passed, 6 warnings in 55.43s target_failed=True [('91', '-18.59484058363793', '-18.594840583248835')] tl_hits=2
+cpu_strong trial  7 340 passed, 6 warnings in 65.65s (0:01:05) target_failed=False [] tl_hits=0
+cpu_strong trial  8 340 passed, 6 warnings in 54.03s target_failed=False [] tl_hits=1
+cpu_strong trial  9 3 failed, 337 passed, 6 warnings in 72.09s (0:01:12) target_failed=False [] tl_hits=8
+cpu_strong trial 10 1 failed, 339 passed, 6 warnings in 63.90s (0:01:03) target_failed=False [] tl_hits=9
+cpu_strong trial 11 340 passed, 6 warnings in 49.66s target_failed=False [] tl_hits=0
+cpu_strong trial 12 1 failed, 339 passed, 6 warnings in 59.97s target_failed=False [] tl_hits=3
+cpu_strong trial 13 2 failed, 338 passed, 6 warnings in 57.65s target_failed=False [] tl_hits=2
+cpu_strong trial 14 1 failed, 339 passed, 6 warnings in 65.25s (0:01:05) target_failed=False [('122', '0.16550897989381586', '0.16550691921974767')] tl_hits=1
+cpu_strong trial 15 1 failed, 339 passed, 6 warnings in 65.04s (0:01:05) target_failed=False [] tl_hits=1
+cpu_strong trial 16 340 passed, 6 warnings in 67.08s (0:01:07) target_failed=False [] tl_hits=3
+cpu_strong trial 17 1 failed, 339 passed, 6 warnings in 65.52s (0:01:05) target_failed=True [('11', '8.28112661460753', '8.28112555298103')] tl_hits=5
+cpu_strong trial 18 2 failed, 338 passed, 6 warnings in 54.86s target_failed=True [('14', '25.0', '24.99898336360489')] tl_hits=3
+cpu_strong trial 19 340 passed, 6 warnings in 62.71s (0:01:02) target_failed=False [] tl_hits=0
+cpu_strong trial 20 3 failed, 337 passed, 6 warnings in 66.40s (0:01:06) target_failed=True [('47', '-2.600748267264864', '-2.600822583691878')] tl_hits=5
+cpu_strong trial 21 340 passed, 6 warnings in 56.11s target_failed=False [] tl_hits=0
+cpu_strong trial 22 340 passed, 6 warnings in 64.28s (0:01:04) target_failed=False [] tl_hits=8
+cpu_strong trial 23 2 failed, 338 passed, 6 warnings in 63.23s (0:01:03) target_failed=False [] tl_hits=7
+cpu_strong trial 24 340 passed, 6 warnings in 60.30s (0:01:00) target_failed=False [] tl_hits=0
+cpu_strong trial 25 1 failed, 339 passed, 6 warnings in 68.89s (0:01:08) target_failed=False [] tl_hits=2
+cpu_strong trial 26 340 passed, 6 warnings in 60.29s (0:01:00) target_failed=False [] tl_hits=1
+cpu_strong trial 27 1 failed, 339 passed, 6 warnings in 60.65s (0:01:00) target_failed=False [] tl_hits=1
+cpu_strong trial 28 340 passed, 6 warnings in 57.01s target_failed=False [] tl_hits=0
+cpu_strong trial 29 340 passed, 6 warnings in 62.65s (0:01:02) target_failed=False [] tl_hits=0
+SUMMARY cpu_strong target_failed 4/30 any_failed 16 2209.8 s

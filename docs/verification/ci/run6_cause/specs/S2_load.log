@@ -1,0 +1,723 @@
+[harness] 2026-10-14T10:25:07.033+09:00 start exp=S2_load
+[harness] 2026-10-14T10:25:12.137+09:00 schedule total_batches=300 already_done=0
+[harness] 2026-10-14T10:25:12.167+09:00 load_set k=8 pids=[15152, 2504, 13384, 6872, 3064, 6700, 11776, 16520] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:25:24.174+09:00 batch_start batch=L8_000 trials=10 load_k=8
+[harness] 2026-10-14T10:25:37.731+09:00 batch_end batch=L8_000 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:25:37.731+09:00 batch_start batch=L8_001 trials=10 load_k=8
+[harness] 2026-10-14T10:25:52.172+09:00 batch_end batch=L8_001 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:25:52.174+09:00 batch_start batch=L8_002 trials=10 load_k=8
+[harness] 2026-10-14T10:26:06.183+09:00 batch_end batch=L8_002 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:26:06.184+09:00 batch_start batch=L8_003 trials=10 load_k=8
+[harness] 2026-10-14T10:26:20.426+09:00 batch_end batch=L8_003 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:26:20.426+09:00 batch_start batch=L8_004 trials=10 load_k=8
+[harness] 2026-10-14T10:26:39.426+09:00 batch_end batch=L8_004 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:26:39.432+09:00 load_stop k=8
+[harness] 2026-10-14T10:26:39.487+09:00 load_set k=16 pids=[4172, 18156, 13772, 6588, 4288, 5080, 2016, 14192, 7124, 9828, 14788, 12080, 9032, 18192, 10700, 11732] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:26:51.501+09:00 batch_start batch=L16_000 trials=10 load_k=16
+[harness] 2026-10-14T10:27:09.077+09:00 batch_end batch=L16_000 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:27:09.077+09:00 batch_start batch=L16_001 trials=10 load_k=16
+[harness] 2026-10-14T10:27:27.668+09:00 batch_end batch=L16_001 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:27:27.668+09:00 batch_start batch=L16_002 trials=10 load_k=16
+[harness] 2026-10-14T10:27:45.559+09:00 batch_end batch=L16_002 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:27:45.560+09:00 batch_start batch=L16_003 trials=10 load_k=16
+[harness] 2026-10-14T10:28:03.951+09:00 batch_end batch=L16_003 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:28:03.951+09:00 batch_start batch=L16_004 trials=10 load_k=16
+[harness] 2026-10-14T10:28:22.451+09:00 batch_end batch=L16_004 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:28:22.459+09:00 load_stop k=16
+[harness] 2026-10-14T10:28:22.590+09:00 load_set k=32 pids=[1724, 2360, 6476, 18276, 7876, 6924, 8792, 16232, 13208, 4968, 5208, 9164, 2460, 17632, 14016, 15340, 14028, 14812, 9600, 11688, 15056, 15716, 17500, 17936, 14560, 11532, 13668, 16352, 4932, 11424, 9172, 17124] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:28:34.603+09:00 batch_start batch=L32_000 trials=10 load_k=32
+[harness] 2026-10-14T10:28:57.277+09:00 batch_end batch=L32_000 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:28:57.279+09:00 batch_start batch=L32_001 trials=10 load_k=32
+[harness] 2026-10-14T10:29:19.398+09:00 batch_end batch=L32_001 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:29:19.398+09:00 batch_start batch=L32_002 trials=10 load_k=32
+[harness] 2026-10-14T10:29:41.449+09:00 batch_end batch=L32_002 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:29:41.451+09:00 batch_start batch=L32_003 trials=10 load_k=32
+[harness] 2026-10-14T10:30:03.976+09:00 batch_end batch=L32_003 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:30:03.978+09:00 batch_start batch=L32_004 trials=10 load_k=32
+[harness] 2026-10-14T10:30:25.671+09:00 batch_end batch=L32_004 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:30:25.683+09:00 load_stop k=32
+[harness] 2026-10-14T10:30:25.719+09:00 load_set k=8 pids=[2900, 8616, 11272, 15884, 17872, 14732, 17624, 9260] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:30:37.729+09:00 batch_start batch=L8_005 trials=10 load_k=8
+[harness] 2026-10-14T10:30:54.744+09:00 batch_end batch=L8_005 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:30:54.746+09:00 batch_start batch=L8_006 trials=10 load_k=8
+[harness] 2026-10-14T10:31:08.367+09:00 batch_end batch=L8_006 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:31:08.367+09:00 batch_start batch=L8_007 trials=10 load_k=8
+[harness] 2026-10-14T10:31:28.002+09:00 batch_end batch=L8_007 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:31:28.003+09:00 batch_start batch=L8_008 trials=10 load_k=8
+[harness] 2026-10-14T10:31:41.668+09:00 batch_end batch=L8_008 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:31:41.669+09:00 batch_start batch=L8_009 trials=10 load_k=8
+[harness] 2026-10-14T10:31:58.194+09:00 batch_end batch=L8_009 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:31:58.202+09:00 load_stop k=8
+[harness] 2026-10-14T10:31:58.278+09:00 load_set k=16 pids=[6368, 16576, 16988, 17852, 15836, 11824, 11464, 6260, 17692, 15852, 17264, 2316, 18372, 3100, 6920, 1496] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:32:10.282+09:00 batch_start batch=L16_005 trials=10 load_k=16
+[harness] 2026-10-14T10:32:28.116+09:00 batch_end batch=L16_005 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:32:28.118+09:00 batch_start batch=L16_006 trials=10 load_k=16
+[harness] 2026-10-14T10:32:46.511+09:00 batch_end batch=L16_006 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:32:46.512+09:00 batch_start batch=L16_007 trials=10 load_k=16
+[harness] 2026-10-14T10:33:04.329+09:00 batch_end batch=L16_007 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:33:04.329+09:00 batch_start batch=L16_008 trials=10 load_k=16
+[harness] 2026-10-14T10:33:20.326+09:00 batch_end batch=L16_008 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:33:20.328+09:00 batch_start batch=L16_009 trials=10 load_k=16
+[harness] 2026-10-14T10:33:37.874+09:00 batch_end batch=L16_009 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:33:37.883+09:00 load_stop k=16
+[harness] 2026-10-14T10:33:37.992+09:00 load_set k=32 pids=[13484, 11688, 15952, 15556, 8240, 7924, 8912, 15720, 8776, 13388, 17800, 9704, 4988, 12800, 4792, 11988, 14756, 10328, 17484, 11648, 6948, 14292, 4868, 3636, 11788, 15936, 14132, 4288, 10008, 8124, 14392, 1996] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:33:50.003+09:00 batch_start batch=L32_005 trials=10 load_k=32
+[harness] 2026-10-14T10:34:13.917+09:00 batch_end batch=L32_005 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:34:13.917+09:00 batch_start batch=L32_006 trials=10 load_k=32
+[harness] 2026-10-14T10:34:34.785+09:00 batch_end batch=L32_006 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:34:34.787+09:00 batch_start batch=L32_007 trials=10 load_k=32
+[harness] 2026-10-14T10:34:57.136+09:00 batch_end batch=L32_007 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:34:57.136+09:00 batch_start batch=L32_008 trials=10 load_k=32
+[harness] 2026-10-14T10:35:21.986+09:00 batch_end batch=L32_008 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:35:21.986+09:00 batch_start batch=L32_009 trials=10 load_k=32
+[harness] 2026-10-14T10:35:41.776+09:00 batch_end batch=L32_009 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:35:41.790+09:00 load_stop k=32
+[harness] 2026-10-14T10:35:41.823+09:00 load_set k=8 pids=[8944, 2324, 13944, 6700, 1516, 15632, 7952, 14348] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:35:53.839+09:00 batch_start batch=L8_010 trials=10 load_k=8
+[harness] 2026-10-14T10:36:08.157+09:00 batch_end batch=L8_010 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:36:08.159+09:00 batch_start batch=L8_011 trials=10 load_k=8
+[harness] 2026-10-14T10:36:23.734+09:00 batch_end batch=L8_011 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:36:23.736+09:00 batch_start batch=L8_012 trials=10 load_k=8
+[harness] 2026-10-14T10:36:41.495+09:00 batch_end batch=L8_012 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:36:41.496+09:00 batch_start batch=L8_013 trials=10 load_k=8
+[harness] 2026-10-14T10:36:55.982+09:00 batch_end batch=L8_013 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:36:55.982+09:00 batch_start batch=L8_014 trials=10 load_k=8
+[harness] 2026-10-14T10:37:09.488+09:00 batch_end batch=L8_014 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:37:09.495+09:00 load_stop k=8
+[harness] 2026-10-14T10:37:09.571+09:00 load_set k=16 pids=[4644, 17212, 17968, 15420, 18072, 17516, 14444, 2500, 11956, 17568, 14968, 17936, 15728, 2652, 12308, 8724] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:37:21.575+09:00 batch_start batch=L16_010 trials=10 load_k=16
+[harness] 2026-10-14T10:37:40.047+09:00 batch_end batch=L16_010 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:37:40.047+09:00 batch_start batch=L16_011 trials=10 load_k=16
+[harness] 2026-10-14T10:37:57.725+09:00 batch_end batch=L16_011 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:37:57.726+09:00 batch_start batch=L16_012 trials=10 load_k=16
+[harness] 2026-10-14T10:38:15.617+09:00 batch_end batch=L16_012 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:38:15.618+09:00 batch_start batch=L16_013 trials=10 load_k=16
+[harness] 2026-10-14T10:38:35.355+09:00 batch_end batch=L16_013 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:38:35.356+09:00 batch_start batch=L16_014 trials=10 load_k=16
+[harness] 2026-10-14T10:38:58.124+09:00 batch_end batch=L16_014 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:38:58.131+09:00 load_stop k=16
+[harness] 2026-10-14T10:38:58.242+09:00 load_set k=32 pids=[17496, 13436, 17928, 1176, 16540, 10456, 2928, 6056, 7060, 10584, 6780, 10520, 5552, 2080, 6312, 11732, 7584, 1708, 13960, 8588, 3696, 17712, 14552, 11736, 3784, 3276, 5908, 8656, 18408, 11568, 12584, 18392] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:39:10.244+09:00 batch_start batch=L32_010 trials=10 load_k=32
+[harness] 2026-10-14T10:39:31.964+09:00 batch_end batch=L32_010 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:39:31.965+09:00 batch_start batch=L32_011 trials=10 load_k=32
+[harness] 2026-10-14T10:39:54.696+09:00 batch_end batch=L32_011 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:39:54.696+09:00 batch_start batch=L32_012 trials=10 load_k=32
+[harness] 2026-10-14T10:40:14.586+09:00 batch_end batch=L32_012 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:40:14.586+09:00 batch_start batch=L32_013 trials=10 load_k=32
+[harness] 2026-10-14T10:40:34.992+09:00 batch_end batch=L32_013 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:40:34.994+09:00 batch_start batch=L32_014 trials=10 load_k=32
+[harness] 2026-10-14T10:40:57.851+09:00 batch_end batch=L32_014 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:40:57.863+09:00 load_stop k=32
+[harness] 2026-10-14T10:40:57.896+09:00 load_set k=8 pids=[7056, 13452, 5336, 8900, 9556, 8752, 12596, 5324] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:41:09.902+09:00 batch_start batch=L8_015 trials=10 load_k=8
+[harness] 2026-10-14T10:41:24.507+09:00 batch_end batch=L8_015 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:41:24.508+09:00 batch_start batch=L8_016 trials=10 load_k=8
+[harness] 2026-10-14T10:41:39.188+09:00 batch_end batch=L8_016 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:41:39.189+09:00 batch_start batch=L8_017 trials=10 load_k=8
+[harness] 2026-10-14T10:41:54.599+09:00 batch_end batch=L8_017 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:41:54.599+09:00 batch_start batch=L8_018 trials=10 load_k=8
+[harness] 2026-10-14T10:42:08.781+09:00 batch_end batch=L8_018 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:42:08.782+09:00 batch_start batch=L8_019 trials=10 load_k=8
+[harness] 2026-10-14T10:42:22.391+09:00 batch_end batch=L8_019 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:42:22.395+09:00 load_stop k=8
+[harness] 2026-10-14T10:42:22.454+09:00 load_set k=16 pids=[15060, 10440, 13180, 5908, 12552, 12584, 10720, 3432, 11832, 14796, 12156, 5596, 11972, 14596, 6748, 7060] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:42:34.467+09:00 batch_start batch=L16_015 trials=10 load_k=16
+[harness] 2026-10-14T10:42:52.843+09:00 batch_end batch=L16_015 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:42:52.843+09:00 batch_start batch=L16_016 trials=10 load_k=16
+[harness] 2026-10-14T10:43:09.129+09:00 batch_end batch=L16_016 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:43:09.130+09:00 batch_start batch=L16_017 trials=10 load_k=16
+[harness] 2026-10-14T10:43:28.672+09:00 batch_end batch=L16_017 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:43:28.673+09:00 batch_start batch=L16_018 trials=10 load_k=16
+[harness] 2026-10-14T10:43:47.540+09:00 batch_end batch=L16_018 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:43:47.540+09:00 batch_start batch=L16_019 trials=10 load_k=16
+[harness] 2026-10-14T10:44:06.247+09:00 batch_end batch=L16_019 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:44:06.257+09:00 load_stop k=16
+[harness] 2026-10-14T10:44:06.449+09:00 load_set k=32 pids=[11392, 3064, 15584, 16328, 14608, 14300, 8200, 1804, 11884, 10180, 3696, 13884, 14004, 4908, 17024, 18228, 8324, 15244, 17580, 9940, 13256, 4212, 17128, 14344, 15680, 1948, 6960, 4956, 3144, 9664, 17108, 8280] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:44:18.456+09:00 batch_start batch=L32_015 trials=10 load_k=32
+[harness] 2026-10-14T10:44:40.767+09:00 batch_end batch=L32_015 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:44:40.767+09:00 batch_start batch=L32_016 trials=10 load_k=32
+[harness] 2026-10-14T10:45:03.808+09:00 batch_end batch=L32_016 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:45:03.809+09:00 batch_start batch=L32_017 trials=10 load_k=32
+[harness] 2026-10-14T10:45:23.334+09:00 batch_end batch=L32_017 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:45:23.335+09:00 batch_start batch=L32_018 trials=10 load_k=32
+[harness] 2026-10-14T10:45:42.993+09:00 batch_end batch=L32_018 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:45:42.993+09:00 batch_start batch=L32_019 trials=10 load_k=32
+[harness] 2026-10-14T10:46:01.551+09:00 batch_end batch=L32_019 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:46:01.564+09:00 load_stop k=32
+[harness] 2026-10-14T10:46:01.598+09:00 load_set k=8 pids=[4844, 15756, 6552, 13264, 15788, 14876, 13660, 8540] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:46:13.608+09:00 batch_start batch=L8_020 trials=10 load_k=8
+[harness] 2026-10-14T10:46:26.717+09:00 batch_end batch=L8_020 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:46:26.717+09:00 batch_start batch=L8_021 trials=10 load_k=8
+[harness] 2026-10-14T10:46:43.091+09:00 batch_end batch=L8_021 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:46:43.091+09:00 batch_start batch=L8_022 trials=10 load_k=8
+[harness] 2026-10-14T10:46:58.554+09:00 batch_end batch=L8_022 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:46:58.556+09:00 batch_start batch=L8_023 trials=10 load_k=8
+[harness] 2026-10-14T10:47:14.891+09:00 batch_end batch=L8_023 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:47:14.893+09:00 batch_start batch=L8_024 trials=10 load_k=8
+[harness] 2026-10-14T10:47:30.055+09:00 batch_end batch=L8_024 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:47:30.061+09:00 load_stop k=8
+[harness] 2026-10-14T10:47:30.122+09:00 load_set k=16 pids=[9160, 17520, 11736, 4748, 14644, 11724, 4516, 13668, 10408, 9336, 1656, 5968, 11648, 9200, 13104, 6700] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:47:42.127+09:00 batch_start batch=L16_020 trials=10 load_k=16
+[harness] 2026-10-14T10:47:59.296+09:00 batch_end batch=L16_020 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:47:59.296+09:00 batch_start batch=L16_021 trials=10 load_k=16
+[harness] 2026-10-14T10:48:15.144+09:00 batch_end batch=L16_021 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:48:15.144+09:00 batch_start batch=L16_022 trials=10 load_k=16
+[harness] 2026-10-14T10:48:32.695+09:00 batch_end batch=L16_022 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:48:32.696+09:00 batch_start batch=L16_023 trials=10 load_k=16
+[harness] 2026-10-14T10:48:48.179+09:00 batch_end batch=L16_023 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:48:48.180+09:00 batch_start batch=L16_024 trials=10 load_k=16
+[harness] 2026-10-14T10:49:03.331+09:00 batch_end batch=L16_024 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:49:03.340+09:00 load_stop k=16
+[harness] 2026-10-14T10:49:03.489+09:00 load_set k=32 pids=[8056, 7684, 12144, 12580, 15088, 2476, 532, 18392, 10936, 7124, 10452, 13408, 17116, 3496, 15936, 3248, 7544, 7260, 1072, 2364, 2976, 11240, 6016, 13208, 9232, 9816, 3084, 17420, 13504, 2892, 2972, 14340] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:49:15.500+09:00 batch_start batch=L32_020 trials=10 load_k=32
+[harness] 2026-10-14T10:49:34.717+09:00 batch_end batch=L32_020 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:49:34.717+09:00 batch_start batch=L32_021 trials=10 load_k=32
+[harness] 2026-10-14T10:49:53.697+09:00 batch_end batch=L32_021 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:49:53.697+09:00 batch_start batch=L32_022 trials=10 load_k=32
+[harness] 2026-10-14T10:50:14.716+09:00 batch_end batch=L32_022 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:50:14.716+09:00 batch_start batch=L32_023 trials=10 load_k=32
+[harness] 2026-10-14T10:50:33.556+09:00 batch_end batch=L32_023 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:50:33.557+09:00 batch_start batch=L32_024 trials=10 load_k=32
+[harness] 2026-10-14T10:50:53.618+09:00 batch_end batch=L32_024 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:50:53.636+09:00 load_stop k=32
+[harness] 2026-10-14T10:50:53.673+09:00 load_set k=8 pids=[1420, 11988, 16944, 7024, 8744, 11160, 14392, 13244] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:51:05.679+09:00 batch_start batch=L8_025 trials=10 load_k=8
+[harness] 2026-10-14T10:51:21.463+09:00 batch_end batch=L8_025 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:51:21.463+09:00 batch_start batch=L8_026 trials=10 load_k=8
+[harness] 2026-10-14T10:51:35.914+09:00 batch_end batch=L8_026 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:51:35.914+09:00 batch_start batch=L8_027 trials=10 load_k=8
+[harness] 2026-10-14T10:51:51.750+09:00 batch_end batch=L8_027 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:51:51.752+09:00 batch_start batch=L8_028 trials=10 load_k=8
+[harness] 2026-10-14T10:52:07.608+09:00 batch_end batch=L8_028 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:52:07.610+09:00 batch_start batch=L8_029 trials=10 load_k=8
+[harness] 2026-10-14T10:52:21.104+09:00 batch_end batch=L8_029 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:52:21.109+09:00 load_stop k=8
+[harness] 2026-10-14T10:52:21.166+09:00 load_set k=16 pids=[9016, 9656, 13264, 10556, 9920, 14244, 16932, 9872, 18084, 14228, 6460, 7108, 11596, 2360, 13196, 8656] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:52:33.182+09:00 batch_start batch=L16_025 trials=10 load_k=16
+[harness] 2026-10-14T10:52:51.269+09:00 batch_end batch=L16_025 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:52:51.269+09:00 batch_start batch=L16_026 trials=10 load_k=16
+[harness] 2026-10-14T10:53:09.495+09:00 batch_end batch=L16_026 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:53:09.495+09:00 batch_start batch=L16_027 trials=10 load_k=16
+[harness] 2026-10-14T10:53:27.764+09:00 batch_end batch=L16_027 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:53:27.764+09:00 batch_start batch=L16_028 trials=10 load_k=16
+[harness] 2026-10-14T10:53:45.588+09:00 batch_end batch=L16_028 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:53:45.588+09:00 batch_start batch=L16_029 trials=10 load_k=16
+[harness] 2026-10-14T10:54:03.121+09:00 batch_end batch=L16_029 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:54:03.131+09:00 load_stop k=16
+[harness] 2026-10-14T10:54:03.293+09:00 load_set k=32 pids=[11128, 14732, 468, 10464, 7180, 12496, 7380, 12768, 7520, 12636, 3688, 16872, 12452, 3676, 7596, 7996, 18152, 10500, 2136, 12596, 11424, 8532, 13208, 11272, 10456, 7776, 532, 10164, 6036, 5516, 16364, 4016] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:54:15.314+09:00 batch_start batch=L32_025 trials=10 load_k=32
+[harness] 2026-10-14T10:54:40.535+09:00 batch_end batch=L32_025 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:54:40.535+09:00 batch_start batch=L32_026 trials=10 load_k=32
+[harness] 2026-10-14T10:55:06.713+09:00 batch_end batch=L32_026 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:55:06.713+09:00 batch_start batch=L32_027 trials=10 load_k=32
+[harness] 2026-10-14T10:55:31.113+09:00 batch_end batch=L32_027 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:55:31.113+09:00 batch_start batch=L32_028 trials=10 load_k=32
+[harness] 2026-10-14T10:55:58.113+09:00 batch_end batch=L32_028 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:55:58.115+09:00 batch_start batch=L32_029 trials=10 load_k=32
+[harness] 2026-10-14T10:56:23.842+09:00 batch_end batch=L32_029 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:56:23.855+09:00 load_stop k=32
+[harness] 2026-10-14T10:56:23.887+09:00 load_set k=8 pids=[7052, 10472, 5336, 11448, 8004, 9468, 3152, 6040] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:56:35.899+09:00 batch_start batch=L8_030 trials=10 load_k=8
+[harness] 2026-10-14T10:56:51.968+09:00 batch_end batch=L8_030 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:56:51.968+09:00 batch_start batch=L8_031 trials=10 load_k=8
+[harness] 2026-10-14T10:57:07.530+09:00 batch_end batch=L8_031 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:57:07.531+09:00 batch_start batch=L8_032 trials=10 load_k=8
+[harness] 2026-10-14T10:57:23.516+09:00 batch_end batch=L8_032 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:57:23.516+09:00 batch_start batch=L8_033 trials=10 load_k=8
+[harness] 2026-10-14T10:57:38.949+09:00 batch_end batch=L8_033 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:57:38.949+09:00 batch_start batch=L8_034 trials=10 load_k=8
+[harness] 2026-10-14T10:57:54.566+09:00 batch_end batch=L8_034 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:57:54.574+09:00 load_stop k=8
+[harness] 2026-10-14T10:57:54.658+09:00 load_set k=16 pids=[2900, 6960, 4956, 17692, 9416, 9440, 2192, 5924, 12652, 7456, 5552, 7584, 17484, 16124, 17128, 6192] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:58:06.668+09:00 batch_start batch=L16_030 trials=10 load_k=16
+[harness] 2026-10-14T10:58:24.333+09:00 batch_end batch=L16_030 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:58:24.333+09:00 batch_start batch=L16_031 trials=10 load_k=16
+[harness] 2026-10-14T10:58:42.630+09:00 batch_end batch=L16_031 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:58:42.630+09:00 batch_start batch=L16_032 trials=10 load_k=16
+[harness] 2026-10-14T10:59:01.658+09:00 batch_end batch=L16_032 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:59:01.660+09:00 batch_start batch=L16_033 trials=10 load_k=16
+[harness] 2026-10-14T10:59:21.194+09:00 batch_end batch=L16_033 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:59:21.196+09:00 batch_start batch=L16_034 trials=10 load_k=16
+[harness] 2026-10-14T10:59:40.250+09:00 batch_end batch=L16_034 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:59:40.256+09:00 load_stop k=16
+[harness] 2026-10-14T10:59:40.366+09:00 load_set k=32 pids=[5324, 5732, 11464, 12740, 2080, 13392, 18036, 17464, 14800, 9852, 11904, 5996, 15884, 14708, 6768, 1504, 15768, 6616, 2828, 15400, 10788, 16608, 3168, 18080, 992, 17380, 11408, 12752, 1636, 7208, 5600, 8468] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:59:52.396+09:00 batch_start batch=L32_030 trials=10 load_k=32
+[harness] 2026-10-14T11:00:17.203+09:00 batch_end batch=L32_030 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:00:17.203+09:00 batch_start batch=L32_031 trials=10 load_k=32
+[harness] 2026-10-14T11:00:39.970+09:00 batch_end batch=L32_031 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:00:39.970+09:00 batch_start batch=L32_032 trials=10 load_k=32
+[harness] 2026-10-14T11:01:02.867+09:00 batch_end batch=L32_032 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:01:02.964+09:00 batch_start batch=L32_033 trials=10 load_k=32
+[harness] 2026-10-14T11:01:25.586+09:00 batch_end batch=L32_033 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:01:25.588+09:00 batch_start batch=L32_034 trials=10 load_k=32
+[harness] 2026-10-14T11:01:47.569+09:00 batch_end batch=L32_034 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:01:47.587+09:00 load_stop k=32
+[harness] 2026-10-14T11:01:47.632+09:00 load_set k=8 pids=[4808, 10816, 13044, 6512, 8356, 18220, 9052, 6696] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:01:59.652+09:00 batch_start batch=L8_035 trials=10 load_k=8
+[harness] 2026-10-14T11:02:16.929+09:00 batch_end batch=L8_035 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:02:16.929+09:00 batch_start batch=L8_036 trials=10 load_k=8
+[harness] 2026-10-14T11:02:33.108+09:00 batch_end batch=L8_036 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:02:33.108+09:00 batch_start batch=L8_037 trials=10 load_k=8
+[harness] 2026-10-14T11:02:48.508+09:00 batch_end batch=L8_037 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:02:48.510+09:00 batch_start batch=L8_038 trials=10 load_k=8
+[harness] 2026-10-14T11:03:04.688+09:00 batch_end batch=L8_038 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:03:04.688+09:00 batch_start batch=L8_039 trials=10 load_k=8
+[harness] 2026-10-14T11:03:23.427+09:00 batch_end batch=L8_039 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:03:23.435+09:00 load_stop k=8
+[harness] 2026-10-14T11:03:23.508+09:00 load_set k=16 pids=[12012, 11036, 10392, 11868, 4908, 17600, 17072, 16984, 8708, 12896, 11392, 17476, 14988, 9940, 2316, 18052] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:03:35.514+09:00 batch_start batch=L16_035 trials=10 load_k=16
+[harness] 2026-10-14T11:03:53.436+09:00 batch_end batch=L16_035 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:03:53.436+09:00 batch_start batch=L16_036 trials=10 load_k=16
+[harness] 2026-10-14T11:04:11.804+09:00 batch_end batch=L16_036 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:04:11.804+09:00 batch_start batch=L16_037 trials=10 load_k=16
+[harness] 2026-10-14T11:04:29.718+09:00 batch_end batch=L16_037 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:04:29.718+09:00 batch_start batch=L16_038 trials=10 load_k=16
+[harness] 2026-10-14T11:04:47.953+09:00 batch_end batch=L16_038 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:04:47.954+09:00 batch_start batch=L16_039 trials=10 load_k=16
+[harness] 2026-10-14T11:05:06.397+09:00 batch_end batch=L16_039 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:05:06.406+09:00 load_stop k=16
+[harness] 2026-10-14T11:05:06.508+09:00 load_set k=32 pids=[3268, 15924, 15476, 4516, 16140, 17792, 13404, 7660, 1156, 12256, 12908, 2852, 14936, 13608, 14028, 7956, 13916, 9516, 8772, 3248, 16812, 17548, 8228, 14544, 18316, 18076, 11308, 7280, 9960, 11880, 14852, 18212] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:05:18.521+09:00 batch_start batch=L32_035 trials=10 load_k=32
+[harness] 2026-10-14T11:05:43.172+09:00 batch_end batch=L32_035 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:05:43.172+09:00 batch_start batch=L32_036 trials=10 load_k=32
+[harness] 2026-10-14T11:06:05.020+09:00 batch_end batch=L32_036 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:06:05.020+09:00 batch_start batch=L32_037 trials=10 load_k=32
+[harness] 2026-10-14T11:06:26.574+09:00 batch_end batch=L32_037 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:06:26.574+09:00 batch_start batch=L32_038 trials=10 load_k=32
+[harness] 2026-10-14T11:06:48.256+09:00 batch_end batch=L32_038 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:06:48.256+09:00 batch_start batch=L32_039 trials=10 load_k=32
+[harness] 2026-10-14T11:07:10.210+09:00 batch_end batch=L32_039 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:07:10.230+09:00 load_stop k=32
+[harness] 2026-10-14T11:07:10.273+09:00 load_set k=8 pids=[14472, 9576, 1656, 11592, 6676, 9148, 10976, 2204] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:07:22.277+09:00 batch_start batch=L8_040 trials=10 load_k=8
+[harness] 2026-10-14T11:07:38.046+09:00 batch_end batch=L8_040 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:07:38.046+09:00 batch_start batch=L8_041 trials=10 load_k=8
+[harness] 2026-10-14T11:07:57.741+09:00 batch_end batch=L8_041 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:07:57.743+09:00 batch_start batch=L8_042 trials=10 load_k=8
+[harness] 2026-10-14T11:08:10.713+09:00 batch_end batch=L8_042 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:08:10.713+09:00 batch_start batch=L8_043 trials=10 load_k=8
+[harness] 2026-10-14T11:08:26.236+09:00 batch_end batch=L8_043 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:08:26.236+09:00 batch_start batch=L8_044 trials=10 load_k=8
+[harness] 2026-10-14T11:08:42.568+09:00 batch_end batch=L8_044 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:08:42.574+09:00 load_stop k=8
+[harness] 2026-10-14T11:08:42.633+09:00 load_set k=16 pids=[15024, 16616, 8020, 17748, 15768, 11160, 5604, 15372, 16704, 12372, 15224, 7124, 15028, 2596, 12304, 1800] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:08:54.649+09:00 batch_start batch=L16_040 trials=10 load_k=16
+[harness] 2026-10-14T11:09:16.113+09:00 batch_end batch=L16_040 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:09:16.113+09:00 batch_start batch=L16_041 trials=10 load_k=16
+[harness] 2026-10-14T11:09:34.186+09:00 batch_end batch=L16_041 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:09:34.188+09:00 batch_start batch=L16_042 trials=10 load_k=16
+[harness] 2026-10-14T11:09:51.915+09:00 batch_end batch=L16_042 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:09:51.915+09:00 batch_start batch=L16_043 trials=10 load_k=16
+[harness] 2026-10-14T11:10:10.094+09:00 batch_end batch=L16_043 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:10:10.096+09:00 batch_start batch=L16_044 trials=10 load_k=16
+[harness] 2026-10-14T11:10:26.829+09:00 batch_end batch=L16_044 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:10:26.839+09:00 load_stop k=16
+[harness] 2026-10-14T11:10:26.982+09:00 load_set k=32 pids=[18220, 7924, 14044, 2136, 2268, 5716, 9100, 11360, 13244, 1452, 16932, 16052, 13388, 14332, 11272, 2400, 4932, 15844, 18192, 1684, 2080, 4792, 3276, 13452, 17112, 14352, 17672, 16224, 3596, 18332, 11192, 5908] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:10:38.985+09:00 batch_start batch=L32_040 trials=10 load_k=32
+[harness] 2026-10-14T11:11:00.370+09:00 batch_end batch=L32_040 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:11:00.370+09:00 batch_start batch=L32_041 trials=10 load_k=32
+[harness] 2026-10-14T11:11:20.169+09:00 batch_end batch=L32_041 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:11:20.169+09:00 batch_start batch=L32_042 trials=10 load_k=32
+[harness] 2026-10-14T11:11:39.195+09:00 batch_end batch=L32_042 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:11:39.197+09:00 batch_start batch=L32_043 trials=10 load_k=32
+[harness] 2026-10-14T11:11:58.504+09:00 batch_end batch=L32_043 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:11:58.506+09:00 batch_start batch=L32_044 trials=10 load_k=32
+[harness] 2026-10-14T11:12:19.078+09:00 batch_end batch=L32_044 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:12:19.091+09:00 load_stop k=32
+[harness] 2026-10-14T11:12:19.126+09:00 load_set k=8 pids=[7380, 8252, 16192, 7420, 4296, 11988, 17224, 10264] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:12:31.131+09:00 batch_start batch=L8_045 trials=10 load_k=8
+[harness] 2026-10-14T11:12:46.940+09:00 batch_end batch=L8_045 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:12:46.942+09:00 batch_start batch=L8_046 trials=10 load_k=8
+[harness] 2026-10-14T11:13:06.488+09:00 batch_end batch=L8_046 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:13:06.490+09:00 batch_start batch=L8_047 trials=10 load_k=8
+[harness] 2026-10-14T11:13:22.200+09:00 batch_end batch=L8_047 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:13:22.200+09:00 batch_start batch=L8_048 trials=10 load_k=8
+[harness] 2026-10-14T11:13:39.740+09:00 batch_end batch=L8_048 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:13:39.740+09:00 batch_start batch=L8_049 trials=10 load_k=8
+[harness] 2026-10-14T11:13:55.296+09:00 batch_end batch=L8_049 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:13:55.300+09:00 load_stop k=8
+[harness] 2026-10-14T11:13:55.375+09:00 load_set k=16 pids=[12920, 12908, 3040, 12400, 5312, 14696, 4928, 10904, 14112, 11832, 17568, 17680, 7004, 6876, 1492, 7656] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:14:07.377+09:00 batch_start batch=L16_045 trials=10 load_k=16
+[harness] 2026-10-14T11:14:23.633+09:00 batch_end batch=L16_045 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:14:23.633+09:00 batch_start batch=L16_046 trials=10 load_k=16
+[harness] 2026-10-14T11:14:40.423+09:00 batch_end batch=L16_046 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:14:40.423+09:00 batch_start batch=L16_047 trials=10 load_k=16
+[harness] 2026-10-14T11:14:56.702+09:00 batch_end batch=L16_047 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:14:56.702+09:00 batch_start batch=L16_048 trials=10 load_k=16
+[harness] 2026-10-14T11:15:13.722+09:00 batch_end batch=L16_048 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:15:13.723+09:00 batch_start batch=L16_049 trials=10 load_k=16
+[harness] 2026-10-14T11:15:30.181+09:00 batch_end batch=L16_049 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:15:30.189+09:00 load_stop k=16
+[harness] 2026-10-14T11:15:30.332+09:00 load_set k=32 pids=[3200, 15676, 18316, 14272, 11592, 6884, 5028, 15700, 13696, 16364, 2596, 7060, 12032, 17368, 11916, 17764, 10280, 8692, 7088, 15864, 13856, 10304, 16000, 9256, 8488, 13768, 16960, 15920, 9440, 1044, 14832, 5720] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:15:42.345+09:00 batch_start batch=L32_045 trials=10 load_k=32
+[harness] 2026-10-14T11:16:01.352+09:00 batch_end batch=L32_045 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:16:01.352+09:00 batch_start batch=L32_046 trials=10 load_k=32
+[harness] 2026-10-14T11:16:20.880+09:00 batch_end batch=L32_046 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:16:20.880+09:00 batch_start batch=L32_047 trials=10 load_k=32
+[harness] 2026-10-14T11:16:40.966+09:00 batch_end batch=L32_047 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:16:40.968+09:00 batch_start batch=L32_048 trials=10 load_k=32
+[harness] 2026-10-14T11:17:00.350+09:00 batch_end batch=L32_048 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:17:00.351+09:00 batch_start batch=L32_049 trials=10 load_k=32
+[harness] 2026-10-14T11:17:19.492+09:00 batch_end batch=L32_049 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:17:19.508+09:00 load_stop k=32
+[harness] 2026-10-14T11:17:19.550+09:00 load_set k=8 pids=[15964, 15216, 11688, 6332, 16996, 11420, 4908, 5896] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:17:31.556+09:00 batch_start batch=L8_050 trials=10 load_k=8
+[harness] 2026-10-14T11:17:46.970+09:00 batch_end batch=L8_050 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:17:46.970+09:00 batch_start batch=L8_051 trials=10 load_k=8
+[harness] 2026-10-14T11:18:03.003+09:00 batch_end batch=L8_051 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:18:03.005+09:00 batch_start batch=L8_052 trials=10 load_k=8
+[harness] 2026-10-14T11:18:18.443+09:00 batch_end batch=L8_052 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:18:18.443+09:00 batch_start batch=L8_053 trials=10 load_k=8
+[harness] 2026-10-14T11:18:33.898+09:00 batch_end batch=L8_053 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:18:33.899+09:00 batch_start batch=L8_054 trials=10 load_k=8
+[harness] 2026-10-14T11:18:49.328+09:00 batch_end batch=L8_054 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:18:49.336+09:00 load_stop k=8
+[harness] 2026-10-14T11:18:49.411+09:00 load_set k=16 pids=[7996, 17224, 16192, 3944, 12796, 10344, 10800, 4916, 16536, 10024, 8528, 3096, 2156, 16220, 17532, 2460] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:19:01.417+09:00 batch_start batch=L16_050 trials=10 load_k=16
+[harness] 2026-10-14T11:19:18.999+09:00 batch_end batch=L16_050 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:19:19.000+09:00 batch_start batch=L16_051 trials=10 load_k=16
+[harness] 2026-10-14T11:19:37.592+09:00 batch_end batch=L16_051 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:19:37.592+09:00 batch_start batch=L16_052 trials=10 load_k=16
+[harness] 2026-10-14T11:19:55.672+09:00 batch_end batch=L16_052 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:19:55.674+09:00 batch_start batch=L16_053 trials=10 load_k=16
+[harness] 2026-10-14T11:20:12.249+09:00 batch_end batch=L16_053 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:20:12.249+09:00 batch_start batch=L16_054 trials=10 load_k=16
+[harness] 2026-10-14T11:20:34.177+09:00 batch_end batch=L16_054 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:20:34.183+09:00 load_stop k=16
+[harness] 2026-10-14T11:20:34.293+09:00 load_set k=32 pids=[14460, 15836, 15224, 12912, 14880, 13088, 9616, 3784, 7328, 15076, 18144, 5552, 6544, 8236, 8860, 6588, 12652, 13468, 4840, 17580, 6160, 12552, 18424, 11192, 6312, 7956, 16400, 10056, 5396, 13972, 15892, 15900] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:20:46.303+09:00 batch_start batch=L32_050 trials=10 load_k=32
+[harness] 2026-10-14T11:21:06.319+09:00 batch_end batch=L32_050 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:21:06.319+09:00 batch_start batch=L32_051 trials=10 load_k=32
+[harness] 2026-10-14T11:21:28.839+09:00 batch_end batch=L32_051 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:21:28.839+09:00 batch_start batch=L32_052 trials=10 load_k=32
+[harness] 2026-10-14T11:21:51.403+09:00 batch_end batch=L32_052 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:21:51.403+09:00 batch_start batch=L32_053 trials=10 load_k=32
+[harness] 2026-10-14T11:22:13.987+09:00 batch_end batch=L32_053 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:22:13.989+09:00 batch_start batch=L32_054 trials=10 load_k=32
+[harness] 2026-10-14T11:22:36.692+09:00 batch_end batch=L32_054 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:22:36.709+09:00 load_stop k=32
+[harness] 2026-10-14T11:22:36.755+09:00 load_set k=8 pids=[13080, 8248, 6744, 5980, 4736, 13200, 10476, 2076] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:22:48.782+09:00 batch_start batch=L8_055 trials=10 load_k=8
+[harness] 2026-10-14T11:23:04.841+09:00 batch_end batch=L8_055 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:23:04.841+09:00 batch_start batch=L8_056 trials=10 load_k=8
+[harness] 2026-10-14T11:23:25.177+09:00 batch_end batch=L8_056 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:23:25.177+09:00 batch_start batch=L8_057 trials=10 load_k=8
+[harness] 2026-10-14T11:23:44.175+09:00 batch_end batch=L8_057 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:23:44.177+09:00 batch_start batch=L8_058 trials=10 load_k=8
+[harness] 2026-10-14T11:24:00.050+09:00 batch_end batch=L8_058 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:24:00.050+09:00 batch_start batch=L8_059 trials=10 load_k=8
+[harness] 2026-10-14T11:24:16.142+09:00 batch_end batch=L8_059 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:24:16.148+09:00 load_stop k=8
+[harness] 2026-10-14T11:24:16.228+09:00 load_set k=16 pids=[11364, 8056, 7684, 4792, 1580, 9516, 4956, 8936, 16224, 5092, 6460, 6780, 15844, 5968, 11036, 3812] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:24:28.238+09:00 batch_start batch=L16_055 trials=10 load_k=16
+[harness] 2026-10-14T11:24:45.817+09:00 batch_end batch=L16_055 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:24:45.817+09:00 batch_start batch=L16_056 trials=10 load_k=16
+[harness] 2026-10-14T11:25:04.337+09:00 batch_end batch=L16_056 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:25:04.340+09:00 batch_start batch=L16_057 trials=10 load_k=16
+[harness] 2026-10-14T11:25:21.692+09:00 batch_end batch=L16_057 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:25:21.692+09:00 batch_start batch=L16_058 trials=10 load_k=16
+[harness] 2026-10-14T11:25:39.592+09:00 batch_end batch=L16_058 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:25:39.592+09:00 batch_start batch=L16_059 trials=10 load_k=16
+[harness] 2026-10-14T11:25:59.550+09:00 batch_end batch=L16_059 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:25:59.558+09:00 load_stop k=16
+[harness] 2026-10-14T11:25:59.746+09:00 load_set k=32 pids=[16340, 3764, 15112, 7672, 12584, 11904, 15004, 4992, 10012, 1552, 9420, 15752, 12784, 12504, 10652, 7440, 14072, 1996, 10576, 6844, 4784, 18276, 17564, 15536, 12904, 8280, 11612, 3104, 15348, 18080, 8296, 17548] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:26:11.748+09:00 batch_start batch=L32_055 trials=10 load_k=32
+[harness] 2026-10-14T11:26:34.099+09:00 batch_end batch=L32_055 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:26:34.099+09:00 batch_start batch=L32_056 trials=10 load_k=32
+[harness] 2026-10-14T11:26:56.560+09:00 batch_end batch=L32_056 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:26:56.560+09:00 batch_start batch=L32_057 trials=10 load_k=32
+[harness] 2026-10-14T11:27:18.902+09:00 batch_end batch=L32_057 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:27:18.902+09:00 batch_start batch=L32_058 trials=10 load_k=32
+[harness] 2026-10-14T11:27:44.072+09:00 batch_end batch=L32_058 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:27:44.072+09:00 batch_start batch=L32_059 trials=10 load_k=32
+[harness] 2026-10-14T11:28:06.389+09:00 batch_end batch=L32_059 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:28:06.401+09:00 load_stop k=32
+[harness] 2026-10-14T11:28:06.434+09:00 load_set k=8 pids=[17912, 3384, 5068, 5196, 10276, 15400, 16932, 13356] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:28:18.446+09:00 batch_start batch=L8_060 trials=10 load_k=8
+[harness] 2026-10-14T11:28:35.133+09:00 batch_end batch=L8_060 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:28:35.133+09:00 batch_start batch=L8_061 trials=10 load_k=8
+[harness] 2026-10-14T11:28:50.825+09:00 batch_end batch=L8_061 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:28:50.825+09:00 batch_start batch=L8_062 trials=10 load_k=8
+[harness] 2026-10-14T11:29:06.938+09:00 batch_end batch=L8_062 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:29:06.938+09:00 batch_start batch=L8_063 trials=10 load_k=8
+[harness] 2026-10-14T11:29:22.841+09:00 batch_end batch=L8_063 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:29:22.841+09:00 batch_start batch=L8_064 trials=10 load_k=8
+[harness] 2026-10-14T11:29:41.618+09:00 batch_end batch=L8_064 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:29:41.623+09:00 load_stop k=8
+[harness] 2026-10-14T11:29:41.684+09:00 load_set k=16 pids=[13240, 6948, 18184, 6696, 8532, 7212, 8848, 10480, 14684, 2364, 7588, 4996, 12972, 4320, 15164, 10976] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:29:53.695+09:00 batch_start batch=L16_060 trials=10 load_k=16
+[harness] 2026-10-14T11:30:12.199+09:00 batch_end batch=L16_060 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:30:12.201+09:00 batch_start batch=L16_061 trials=10 load_k=16
+[harness] 2026-10-14T11:30:29.847+09:00 batch_end batch=L16_061 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:30:29.847+09:00 batch_start batch=L16_062 trials=10 load_k=16
+[harness] 2026-10-14T11:30:50.490+09:00 batch_end batch=L16_062 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:30:50.490+09:00 batch_start batch=L16_063 trials=10 load_k=16
+[harness] 2026-10-14T11:31:09.496+09:00 batch_end batch=L16_063 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:31:09.496+09:00 batch_start batch=L16_064 trials=10 load_k=16
+[harness] 2026-10-14T11:31:27.936+09:00 batch_end batch=L16_064 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:31:27.946+09:00 load_stop k=16
+[harness] 2026-10-14T11:31:28.096+09:00 load_set k=32 pids=[7104, 10944, 6544, 11840, 18424, 608, 10852, 15056, 2116, 15452, 16836, 10512, 18396, 9828, 16960, 8892, 5720, 17800, 11996, 16440, 9468, 18360, 16588, 11084, 15864, 1468, 14392, 12980, 8152, 13172, 15172, 15340] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:31:40.108+09:00 batch_start batch=L32_060 trials=10 load_k=32
+[harness] 2026-10-14T11:32:02.926+09:00 batch_end batch=L32_060 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:32:02.928+09:00 batch_start batch=L32_061 trials=10 load_k=32
+[harness] 2026-10-14T11:32:24.769+09:00 batch_end batch=L32_061 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:32:24.769+09:00 batch_start batch=L32_062 trials=10 load_k=32
+[harness] 2026-10-14T11:32:47.383+09:00 batch_end batch=L32_062 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:32:47.384+09:00 batch_start batch=L32_063 trials=10 load_k=32
+[harness] 2026-10-14T11:33:10.245+09:00 batch_end batch=L32_063 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:33:10.247+09:00 batch_start batch=L32_064 trials=10 load_k=32
+[harness] 2026-10-14T11:33:33.086+09:00 batch_end batch=L32_064 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:33:33.096+09:00 load_stop k=32
+[harness] 2026-10-14T11:33:33.128+09:00 load_set k=8 pids=[14444, 2588, 17516, 17792, 13388, 5600, 15024, 11684] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:33:45.131+09:00 batch_start batch=L8_065 trials=10 load_k=8
+[harness] 2026-10-14T11:34:01.518+09:00 batch_end batch=L8_065 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:34:01.518+09:00 batch_start batch=L8_066 trials=10 load_k=8
+[harness] 2026-10-14T11:34:20.676+09:00 batch_end batch=L8_066 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:34:20.677+09:00 batch_start batch=L8_067 trials=10 load_k=8
+[harness] 2026-10-14T11:34:39.676+09:00 batch_end batch=L8_067 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:34:39.676+09:00 batch_start batch=L8_068 trials=10 load_k=8
+[harness] 2026-10-14T11:34:55.882+09:00 batch_end batch=L8_068 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:34:55.884+09:00 batch_start batch=L8_069 trials=10 load_k=8
+[harness] 2026-10-14T11:35:11.786+09:00 batch_end batch=L8_069 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:35:11.790+09:00 load_stop k=8
+[harness] 2026-10-14T11:35:11.851+09:00 load_set k=16 pids=[10672, 6536, 14272, 12156, 11884, 12060, 18420, 11736, 3268, 9704, 5320, 10440, 13080, 11904, 18124, 8176] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:35:23.856+09:00 batch_start batch=L16_065 trials=10 load_k=16
+[harness] 2026-10-14T11:35:45.208+09:00 batch_end batch=L16_065 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:35:45.210+09:00 batch_start batch=L16_066 trials=10 load_k=16
+[harness] 2026-10-14T11:36:06.438+09:00 batch_end batch=L16_066 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:36:06.438+09:00 batch_start batch=L16_067 trials=10 load_k=16
+[harness] 2026-10-14T11:36:27.746+09:00 batch_end batch=L16_067 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:36:27.746+09:00 batch_start batch=L16_068 trials=10 load_k=16
+[harness] 2026-10-14T11:36:45.423+09:00 batch_end batch=L16_068 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:36:45.425+09:00 batch_start batch=L16_069 trials=10 load_k=16
+[harness] 2026-10-14T11:37:03.866+09:00 batch_end batch=L16_069 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:37:03.873+09:00 load_stop k=16
+[harness] 2026-10-14T11:37:04.292+09:00 load_set k=32 pids=[9728, 14236, 16904, 17440, 12168, 17992, 3676, 7704, 2008, 13696, 4792, 6868, 10328, 16540, 10492, 7004, 1768, 7544, 14452, 13032, 6512, 12180, 17708, 13332, 11192, 17504, 14552, 6856, 13500, 16264, 12764, 12432] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:37:16.318+09:00 batch_start batch=L32_065 trials=10 load_k=32
+[harness] 2026-10-14T11:37:41.721+09:00 batch_end batch=L32_065 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:37:41.721+09:00 batch_start batch=L32_066 trials=10 load_k=32
+[harness] 2026-10-14T11:38:05.969+09:00 batch_end batch=L32_066 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:38:05.971+09:00 batch_start batch=L32_067 trials=10 load_k=32
+[harness] 2026-10-14T11:38:29.964+09:00 batch_end batch=L32_067 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:38:29.964+09:00 batch_start batch=L32_068 trials=10 load_k=32
+[harness] 2026-10-14T11:38:54.828+09:00 batch_end batch=L32_068 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:38:54.828+09:00 batch_start batch=L32_069 trials=10 load_k=32
+[harness] 2026-10-14T11:39:17.856+09:00 batch_end batch=L32_069 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:39:17.870+09:00 load_stop k=32
+[harness] 2026-10-14T11:39:17.915+09:00 load_set k=8 pids=[5020, 10596, 4400, 10472, 17596, 11156, 6264, 2016] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:39:29.920+09:00 batch_start batch=L8_070 trials=10 load_k=8
+[harness] 2026-10-14T11:39:45.256+09:00 batch_end batch=L8_070 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:39:45.258+09:00 batch_start batch=L8_071 trials=10 load_k=8
+[harness] 2026-10-14T11:40:00.580+09:00 batch_end batch=L8_071 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:40:00.580+09:00 batch_start batch=L8_072 trials=10 load_k=8
+[harness] 2026-10-14T11:40:16.424+09:00 batch_end batch=L8_072 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:40:16.424+09:00 batch_start batch=L8_073 trials=10 load_k=8
+[harness] 2026-10-14T11:40:32.367+09:00 batch_end batch=L8_073 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:40:32.367+09:00 batch_start batch=L8_074 trials=10 load_k=8
+[harness] 2026-10-14T11:40:48.217+09:00 batch_end batch=L8_074 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:40:48.223+09:00 load_stop k=8
+[harness] 2026-10-14T11:40:48.287+09:00 load_set k=16 pids=[6468, 9484, 13376, 17704, 6616, 4816, 6780, 17732, 4392, 16544, 13088, 14068, 11364, 2396, 4844, 12680] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:41:00.298+09:00 batch_start batch=L16_070 trials=10 load_k=16
+[harness] 2026-10-14T11:41:22.361+09:00 batch_end batch=L16_070 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:41:22.361+09:00 batch_start batch=L16_071 trials=10 load_k=16
+[harness] 2026-10-14T11:41:42.034+09:00 batch_end batch=L16_071 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:41:42.036+09:00 batch_start batch=L16_072 trials=10 load_k=16
+[harness] 2026-10-14T11:41:59.991+09:00 batch_end batch=L16_072 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:41:59.991+09:00 batch_start batch=L16_073 trials=10 load_k=16
+[harness] 2026-10-14T11:42:16.937+09:00 batch_end batch=L16_073 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:42:16.937+09:00 batch_start batch=L16_074 trials=10 load_k=16
+[harness] 2026-10-14T11:42:33.626+09:00 batch_end batch=L16_074 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:42:33.635+09:00 load_stop k=16
+[harness] 2026-10-14T11:42:33.786+09:00 load_set k=32 pids=[9616, 17416, 5752, 2804, 12468, 3384, 15672, 14028, 12920, 12452, 17424, 8580, 3268, 14988, 17016, 6948, 16872, 8056, 7052, 6392, 6136, 15024, 13388, 14172, 16220, 12768, 16868, 14000, 17552, 17836, 3592, 16400] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:42:45.790+09:00 batch_start batch=L32_070 trials=10 load_k=32
+[harness] 2026-10-14T11:43:05.225+09:00 batch_end batch=L32_070 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:43:05.225+09:00 batch_start batch=L32_071 trials=10 load_k=32
+[harness] 2026-10-14T11:43:24.650+09:00 batch_end batch=L32_071 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:43:24.650+09:00 batch_start batch=L32_072 trials=10 load_k=32
+[harness] 2026-10-14T11:43:44.565+09:00 batch_end batch=L32_072 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:43:44.567+09:00 batch_start batch=L32_073 trials=10 load_k=32
+[harness] 2026-10-14T11:44:04.800+09:00 batch_end batch=L32_073 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:44:04.802+09:00 batch_start batch=L32_074 trials=10 load_k=32
+[harness] 2026-10-14T11:44:24.982+09:00 batch_end batch=L32_074 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:44:24.992+09:00 load_stop k=32
+[harness] 2026-10-14T11:44:25.026+09:00 load_set k=8 pids=[9724, 16960, 15972, 13216, 12480, 13284, 13856, 12980] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:44:37.037+09:00 batch_start batch=L8_075 trials=10 load_k=8
+[harness] 2026-10-14T11:44:52.288+09:00 batch_end batch=L8_075 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:44:52.288+09:00 batch_start batch=L8_076 trials=10 load_k=8
+[harness] 2026-10-14T11:45:08.169+09:00 batch_end batch=L8_076 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:45:08.169+09:00 batch_start batch=L8_077 trials=10 load_k=8
+[harness] 2026-10-14T11:45:26.865+09:00 batch_end batch=L8_077 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:45:26.867+09:00 batch_start batch=L8_078 trials=10 load_k=8
+[harness] 2026-10-14T11:45:40.406+09:00 batch_end batch=L8_078 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:45:40.406+09:00 batch_start batch=L8_079 trials=10 load_k=8
+[harness] 2026-10-14T11:45:54.059+09:00 batch_end batch=L8_079 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:45:54.063+09:00 load_stop k=8
+[harness] 2026-10-14T11:45:54.126+09:00 load_set k=16 pids=[13972, 6004, 5460, 10576, 6264, 12584, 3160, 12308, 11156, 9428, 10540, 11540, 8776, 4788, 7056, 4908] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:46:06.136+09:00 batch_start batch=L16_075 trials=10 load_k=16
+[harness] 2026-10-14T11:46:23.705+09:00 batch_end batch=L16_075 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:46:23.707+09:00 batch_start batch=L16_076 trials=10 load_k=16
+[harness] 2026-10-14T11:46:40.922+09:00 batch_end batch=L16_076 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:46:40.922+09:00 batch_start batch=L16_077 trials=10 load_k=16
+[harness] 2026-10-14T11:46:57.330+09:00 batch_end batch=L16_077 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:46:57.332+09:00 batch_start batch=L16_078 trials=10 load_k=16
+[harness] 2026-10-14T11:47:14.538+09:00 batch_end batch=L16_078 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:47:14.540+09:00 batch_start batch=L16_079 trials=10 load_k=16
+[harness] 2026-10-14T11:47:30.855+09:00 batch_end batch=L16_079 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:47:30.867+09:00 load_stop k=16
+[harness] 2026-10-14T11:47:31.059+09:00 load_set k=32 pids=[6112, 15768, 4232, 12432, 7212, 15364, 6696, 6744, 6252, 10880, 11696, 2852, 3128, 8228, 16364, 2068, 4948, 12588, 9200, 14472, 13960, 15416, 16340, 1860, 13612, 9736, 14620, 15512, 11856, 18296, 2296, 11848] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:47:43.068+09:00 batch_start batch=L32_075 trials=10 load_k=32
+[harness] 2026-10-14T11:48:02.745+09:00 batch_end batch=L32_075 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:48:02.745+09:00 batch_start batch=L32_076 trials=10 load_k=32
+[harness] 2026-10-14T11:48:22.604+09:00 batch_end batch=L32_076 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:48:22.604+09:00 batch_start batch=L32_077 trials=10 load_k=32
+[harness] 2026-10-14T11:48:42.745+09:00 batch_end batch=L32_077 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:48:42.745+09:00 batch_start batch=L32_078 trials=10 load_k=32
+[harness] 2026-10-14T11:49:01.900+09:00 batch_end batch=L32_078 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:49:01.900+09:00 batch_start batch=L32_079 trials=10 load_k=32
+[harness] 2026-10-14T11:49:24.364+09:00 batch_end batch=L32_079 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:49:24.382+09:00 load_stop k=32
+[harness] 2026-10-14T11:49:24.415+09:00 load_set k=8 pids=[18024, 11092, 2040, 2452, 5624, 2280, 2016, 4808] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:49:36.426+09:00 batch_start batch=L8_080 trials=10 load_k=8
+[harness] 2026-10-14T11:49:52.867+09:00 batch_end batch=L8_080 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:49:52.867+09:00 batch_start batch=L8_081 trials=10 load_k=8
+[harness] 2026-10-14T11:50:08.143+09:00 batch_end batch=L8_081 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:50:08.143+09:00 batch_start batch=L8_082 trials=10 load_k=8
+[harness] 2026-10-14T11:50:23.660+09:00 batch_end batch=L8_082 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:50:23.660+09:00 batch_start batch=L8_083 trials=10 load_k=8
+[harness] 2026-10-14T11:50:39.405+09:00 batch_end batch=L8_083 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:50:39.407+09:00 batch_start batch=L8_084 trials=10 load_k=8
+[harness] 2026-10-14T11:50:54.591+09:00 batch_end batch=L8_084 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:50:54.599+09:00 load_stop k=8
+[harness] 2026-10-14T11:50:54.680+09:00 load_set k=16 pids=[6164, 15632, 4868, 17772, 8692, 12496, 13636, 3168, 15700, 7060, 15788, 6792, 10448, 8704, 13396, 10368] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:51:06.685+09:00 batch_start batch=L16_080 trials=10 load_k=16
+[harness] 2026-10-14T11:51:23.477+09:00 batch_end batch=L16_080 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:51:23.479+09:00 batch_start batch=L16_081 trials=10 load_k=16
+[harness] 2026-10-14T11:51:40.363+09:00 batch_end batch=L16_081 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:51:40.363+09:00 batch_start batch=L16_082 trials=10 load_k=16
+[harness] 2026-10-14T11:51:57.069+09:00 batch_end batch=L16_082 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:51:57.071+09:00 batch_start batch=L16_083 trials=10 load_k=16
+[harness] 2026-10-14T11:52:14.402+09:00 batch_end batch=L16_083 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:52:14.404+09:00 batch_start batch=L16_084 trials=10 load_k=16
+[harness] 2026-10-14T11:52:32.390+09:00 batch_end batch=L16_084 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:52:32.396+09:00 load_stop k=16
+[harness] 2026-10-14T11:52:32.507+09:00 load_set k=32 pids=[17672, 8444, 14236, 9136, 5440, 900, 9892, 13324, 13808, 14988, 14968, 15112, 10664, 11824, 7776, 10636, 6292, 12584, 6264, 17520, 8776, 10540, 18240, 8944, 10500, 17592, 2360, 10476, 6636, 7144, 11840, 15680] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:52:44.511+09:00 batch_start batch=L32_080 trials=10 load_k=32
+[harness] 2026-10-14T11:53:06.895+09:00 batch_end batch=L32_080 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:53:06.895+09:00 batch_start batch=L32_081 trials=10 load_k=32
+[harness] 2026-10-14T11:53:29.187+09:00 batch_end batch=L32_081 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:53:29.187+09:00 batch_start batch=L32_082 trials=10 load_k=32
+[harness] 2026-10-14T11:53:49.905+09:00 batch_end batch=L32_082 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:53:49.907+09:00 batch_start batch=L32_083 trials=10 load_k=32
+[harness] 2026-10-14T11:54:12.360+09:00 batch_end batch=L32_083 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:54:12.360+09:00 batch_start batch=L32_084 trials=10 load_k=32
+[harness] 2026-10-14T11:54:34.626+09:00 batch_end batch=L32_084 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:54:34.643+09:00 load_stop k=32
+[harness] 2026-10-14T11:54:34.687+09:00 load_set k=8 pids=[10204, 17760, 7416, 7656, 14176, 1636, 4980, 9352] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:54:46.699+09:00 batch_start batch=L8_085 trials=10 load_k=8
+[harness] 2026-10-14T11:55:03.155+09:00 batch_end batch=L8_085 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:55:03.155+09:00 batch_start batch=L8_086 trials=10 load_k=8
+[harness] 2026-10-14T11:55:19.115+09:00 batch_end batch=L8_086 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:55:19.115+09:00 batch_start batch=L8_087 trials=10 load_k=8
+[harness] 2026-10-14T11:55:35.810+09:00 batch_end batch=L8_087 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:55:35.810+09:00 batch_start batch=L8_088 trials=10 load_k=8
+[harness] 2026-10-14T11:55:51.384+09:00 batch_end batch=L8_088 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:55:51.384+09:00 batch_start batch=L8_089 trials=10 load_k=8
+[harness] 2026-10-14T11:56:08.037+09:00 batch_end batch=L8_089 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:56:08.045+09:00 load_stop k=8
+[harness] 2026-10-14T11:56:08.122+09:00 load_set k=16 pids=[12580, 12304, 12272, 16248, 13864, 15668, 13020, 15864, 14392, 7108, 16588, 12528, 6536, 2816, 11972, 6380] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:56:20.125+09:00 batch_start batch=L16_085 trials=10 load_k=16
+[harness] 2026-10-14T11:56:38.357+09:00 batch_end batch=L16_085 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:56:38.357+09:00 batch_start batch=L16_086 trials=10 load_k=16
+[harness] 2026-10-14T11:56:56.723+09:00 batch_end batch=L16_086 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:56:56.725+09:00 batch_start batch=L16_087 trials=10 load_k=16
+[harness] 2026-10-14T11:57:16.021+09:00 batch_end batch=L16_087 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:57:16.021+09:00 batch_start batch=L16_088 trials=10 load_k=16
+[harness] 2026-10-14T11:57:38.366+09:00 batch_end batch=L16_088 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:57:38.366+09:00 batch_start batch=L16_089 trials=10 load_k=16
+[harness] 2026-10-14T11:57:56.516+09:00 batch_end batch=L16_089 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:57:56.526+09:00 load_stop k=16
+[harness] 2026-10-14T11:57:56.673+09:00 load_set k=32 pids=[9960, 12928, 12204, 17100, 4548, 15476, 14684, 18116, 11740, 8296, 3056, 8588, 612, 13404, 15812, 6112, 4172, 8452, 18236, 10916, 16216, 11596, 13452, 2364, 17776, 9312, 13920, 16600, 4104, 14696, 9168, 4296] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T11:58:08.682+09:00 batch_start batch=L32_085 trials=10 load_k=32
+[harness] 2026-10-14T11:58:30.829+09:00 batch_end batch=L32_085 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:58:30.829+09:00 batch_start batch=L32_086 trials=10 load_k=32
+[harness] 2026-10-14T11:58:53.457+09:00 batch_end batch=L32_086 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:58:53.457+09:00 batch_start batch=L32_087 trials=10 load_k=32
+[harness] 2026-10-14T11:59:21.621+09:00 batch_end batch=L32_087 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:59:21.621+09:00 batch_start batch=L32_088 trials=10 load_k=32
+[harness] 2026-10-14T11:59:45.431+09:00 batch_end batch=L32_088 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T11:59:45.433+09:00 batch_start batch=L32_089 trials=10 load_k=32
+[harness] 2026-10-14T12:00:07.628+09:00 batch_end batch=L32_089 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:00:07.645+09:00 load_stop k=32
+[harness] 2026-10-14T12:00:07.689+09:00 load_set k=8 pids=[6252, 18076, 7832, 15488, 1496, 4996, 6124, 13284] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T12:00:19.698+09:00 batch_start batch=L8_090 trials=10 load_k=8
+[harness] 2026-10-14T12:00:35.859+09:00 batch_end batch=L8_090 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:00:35.859+09:00 batch_start batch=L8_091 trials=10 load_k=8
+[harness] 2026-10-14T12:00:52.193+09:00 batch_end batch=L8_091 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:00:52.193+09:00 batch_start batch=L8_092 trials=10 load_k=8
+[harness] 2026-10-14T12:01:09.967+09:00 batch_end batch=L8_092 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 1, 'base': 0}
+[harness] 2026-10-14T12:01:09.967+09:00 batch_start batch=L8_093 trials=10 load_k=8
+[harness] 2026-10-14T12:01:26.484+09:00 batch_end batch=L8_093 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:01:26.484+09:00 batch_start batch=L8_094 trials=10 load_k=8
+[harness] 2026-10-14T12:01:42.891+09:00 batch_end batch=L8_094 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:01:42.899+09:00 load_stop k=8
+[harness] 2026-10-14T12:01:42.948+09:00 load_set k=16 pids=[10180, 16500, 17772, 12528, 17380, 10540, 10000, 9896, 8872, 4720, 2836, 9172, 4760, 12732, 10468, 1032] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T12:01:54.959+09:00 batch_start batch=L16_090 trials=10 load_k=16
+[harness] 2026-10-14T12:02:16.239+09:00 batch_end batch=L16_090 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:02:16.239+09:00 batch_start batch=L16_091 trials=10 load_k=16
+[harness] 2026-10-14T12:02:34.796+09:00 batch_end batch=L16_091 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:02:34.798+09:00 batch_start batch=L16_092 trials=10 load_k=16
+[harness] 2026-10-14T12:02:52.973+09:00 batch_end batch=L16_092 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:02:52.973+09:00 batch_start batch=L16_093 trials=10 load_k=16
+[harness] 2026-10-14T12:04:01.510+09:00 batch_end batch=L16_093 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:04:01.512+09:00 batch_start batch=L16_094 trials=10 load_k=16
+[harness] 2026-10-14T12:04:19.014+09:00 batch_end batch=L16_094 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:04:19.024+09:00 load_stop k=16
+[harness] 2026-10-14T12:04:19.164+09:00 load_set k=32 pids=[4544, 17920, 10480, 10484, 17480, 18184, 6392, 7864, 10024, 12940, 12908, 6368, 18060, 13080, 12120, 10196, 9452, 10700, 4400, 15076, 13180, 6792, 13788, 2196, 7380, 7456, 6544, 1480, 10012, 9240, 11732, 8340] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T12:04:31.171+09:00 batch_start batch=L32_090 trials=10 load_k=32
+[harness] 2026-10-14T12:04:52.996+09:00 batch_end batch=L32_090 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:04:52.997+09:00 batch_start batch=L32_091 trials=10 load_k=32
+[harness] 2026-10-14T12:05:14.596+09:00 batch_end batch=L32_091 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:05:14.596+09:00 batch_start batch=L32_092 trials=10 load_k=32
+[harness] 2026-10-14T12:05:37.767+09:00 batch_end batch=L32_092 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:05:37.767+09:00 batch_start batch=L32_093 trials=10 load_k=32
+[harness] 2026-10-14T12:06:01.055+09:00 batch_end batch=L32_093 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:06:01.055+09:00 batch_start batch=L32_094 trials=10 load_k=32
+[harness] 2026-10-14T12:06:24.012+09:00 batch_end batch=L32_094 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:06:24.026+09:00 load_stop k=32
+[harness] 2026-10-14T12:06:24.068+09:00 load_set k=8 pids=[9724, 6908, 12428, 10028, 15412, 17016, 15804, 8936] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T12:06:36.077+09:00 batch_start batch=L8_095 trials=10 load_k=8
+[harness] 2026-10-14T12:06:51.697+09:00 batch_end batch=L8_095 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:06:51.697+09:00 batch_start batch=L8_096 trials=10 load_k=8
+[harness] 2026-10-14T12:07:08.436+09:00 batch_end batch=L8_096 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:07:08.436+09:00 batch_start batch=L8_097 trials=10 load_k=8
+[harness] 2026-10-14T12:07:22.048+09:00 batch_end batch=L8_097 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:07:22.050+09:00 batch_start batch=L8_098 trials=10 load_k=8
+[harness] 2026-10-14T12:07:38.466+09:00 batch_end batch=L8_098 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:07:38.467+09:00 batch_start batch=L8_099 trials=10 load_k=8
+[harness] 2026-10-14T12:07:54.839+09:00 batch_end batch=L8_099 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:07:54.843+09:00 load_stop k=8
+[harness] 2026-10-14T12:07:54.904+09:00 load_set k=16 pids=[17160, 6492, 14168, 8720, 2892, 8452, 3592, 6152, 6896, 12212, 6924, 17844, 13192, 9968, 1028, 16500] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T12:08:06.913+09:00 batch_start batch=L16_095 trials=10 load_k=16
+[harness] 2026-10-14T12:08:25.369+09:00 batch_end batch=L16_095 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:08:25.369+09:00 batch_start batch=L16_096 trials=10 load_k=16
+[harness] 2026-10-14T12:08:43.132+09:00 batch_end batch=L16_096 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:08:43.132+09:00 batch_start batch=L16_097 trials=10 load_k=16
+[harness] 2026-10-14T12:09:01.453+09:00 batch_end batch=L16_097 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:09:01.453+09:00 batch_start batch=L16_098 trials=10 load_k=16
+[harness] 2026-10-14T12:09:20.414+09:00 batch_end batch=L16_098 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:09:20.414+09:00 batch_start batch=L16_099 trials=10 load_k=16
+[harness] 2026-10-14T12:09:38.574+09:00 batch_end batch=L16_099 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:09:38.582+09:00 load_stop k=16
+[harness] 2026-10-14T12:09:38.921+09:00 load_set k=32 pids=[15484, 3000, 5388, 10332, 18404, 10500, 5020, 14176, 10304, 5980, 12856, 17684, 14936, 10008, 4068, 11560, 2816, 12460, 13436, 16440, 14260, 11356, 13884, 18188, 4524, 8616, 9828, 15400, 15288, 9200, 1032, 10180] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T12:09:50.925+09:00 batch_start batch=L32_095 trials=10 load_k=32
+[harness] 2026-10-14T12:10:17.177+09:00 batch_end batch=L32_095 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:10:17.177+09:00 batch_start batch=L32_096 trials=10 load_k=32
+[harness] 2026-10-14T12:10:41.149+09:00 batch_end batch=L32_096 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:10:41.149+09:00 batch_start batch=L32_097 trials=10 load_k=32
+[harness] 2026-10-14T12:11:03.984+09:00 batch_end batch=L32_097 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:11:03.986+09:00 batch_start batch=L32_098 trials=10 load_k=32
+[harness] 2026-10-14T12:11:25.780+09:00 batch_end batch=L32_098 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:11:25.780+09:00 batch_start batch=L32_099 trials=10 load_k=32
+[harness] 2026-10-14T12:11:48.902+09:00 batch_end batch=L32_099 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T12:11:48.923+09:00 load_stop k=32
+[harness] 2026-10-14T12:11:54.100+09:00 end 

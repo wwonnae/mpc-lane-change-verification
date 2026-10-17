@@ -1,0 +1,106 @@
+{"time": "2026-10-14T04:25:43.126+00:00", "event": "start", "exp": "ci_orig_none"}
+{"time": "2026-10-14T04:25:43.126+00:00", "event": "loadavg", "tag": "session_start", "loadavg": [1.4638671875, 0.6591796875, 0.2490234375]}
+{"time": "2026-10-14T04:25:43.128+00:00", "event": "schedule", "total_batches": 50, "already_done": 0}
+{"time": "2026-10-14T04:25:43.128+00:00", "event": "load_set", "k": 0, "pids": [], "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal", "exe": "/opt/hostedtoolcache/Python/3.9.25/x64/bin/python", "settle_s": 0.0}
+{"time": "2026-10-14T04:25:43.129+00:00", "event": "batch_start", "batch": "orig_000", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:25:52.335+00:00", "event": "batch_end", "batch": "orig_000", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:25:52.336+00:00", "event": "batch_start", "batch": "orig_001", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:26:01.282+00:00", "event": "batch_end", "batch": "orig_001", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:26:01.283+00:00", "event": "batch_start", "batch": "orig_002", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:26:10.186+00:00", "event": "batch_end", "batch": "orig_002", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:26:10.186+00:00", "event": "batch_start", "batch": "orig_003", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:26:19.204+00:00", "event": "batch_end", "batch": "orig_003", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:26:19.204+00:00", "event": "batch_start", "batch": "orig_004", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:26:28.175+00:00", "event": "batch_end", "batch": "orig_004", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:26:28.176+00:00", "event": "batch_start", "batch": "orig_005", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:26:37.144+00:00", "event": "batch_end", "batch": "orig_005", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:26:37.144+00:00", "event": "batch_start", "batch": "orig_006", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:26:46.088+00:00", "event": "batch_end", "batch": "orig_006", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:26:46.089+00:00", "event": "batch_start", "batch": "orig_007", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:26:55.003+00:00", "event": "batch_end", "batch": "orig_007", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:26:55.004+00:00", "event": "batch_start", "batch": "orig_008", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:27:03.893+00:00", "event": "batch_end", "batch": "orig_008", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:27:03.894+00:00", "event": "batch_start", "batch": "orig_009", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:27:12.812+00:00", "event": "batch_end", "batch": "orig_009", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:27:12.813+00:00", "event": "batch_start", "batch": "orig_010", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:27:21.538+00:00", "event": "batch_end", "batch": "orig_010", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:27:21.539+00:00", "event": "batch_start", "batch": "orig_011", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:27:30.386+00:00", "event": "batch_end", "batch": "orig_011", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:27:30.386+00:00", "event": "batch_start", "batch": "orig_012", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:27:39.193+00:00", "event": "batch_end", "batch": "orig_012", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:27:39.193+00:00", "event": "batch_start", "batch": "orig_013", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:27:48.072+00:00", "event": "batch_end", "batch": "orig_013", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:27:48.073+00:00", "event": "batch_start", "batch": "orig_014", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:27:56.967+00:00", "event": "batch_end", "batch": "orig_014", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:27:56.968+00:00", "event": "batch_start", "batch": "orig_015", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:28:05.861+00:00", "event": "batch_end", "batch": "orig_015", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:28:05.862+00:00", "event": "batch_start", "batch": "orig_016", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:28:14.726+00:00", "event": "batch_end", "batch": "orig_016", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:28:14.727+00:00", "event": "batch_start", "batch": "orig_017", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:28:23.511+00:00", "event": "batch_end", "batch": "orig_017", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:28:23.511+00:00", "event": "batch_start", "batch": "orig_018", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:28:32.464+00:00", "event": "batch_end", "batch": "orig_018", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:28:32.464+00:00", "event": "batch_start", "batch": "orig_019", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:28:41.359+00:00", "event": "batch_end", "batch": "orig_019", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:28:41.360+00:00", "event": "batch_start", "batch": "orig_020", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:28:50.155+00:00", "event": "batch_end", "batch": "orig_020", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:28:50.156+00:00", "event": "batch_start", "batch": "orig_021", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:28:58.947+00:00", "event": "batch_end", "batch": "orig_021", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:28:58.948+00:00", "event": "batch_start", "batch": "orig_022", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:29:07.854+00:00", "event": "batch_end", "batch": "orig_022", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:29:07.855+00:00", "event": "batch_start", "batch": "orig_023", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:29:16.847+00:00", "event": "batch_end", "batch": "orig_023", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:29:16.848+00:00", "event": "batch_start", "batch": "orig_024", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:29:25.751+00:00", "event": "batch_end", "batch": "orig_024", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:29:25.751+00:00", "event": "batch_start", "batch": "orig_025", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:29:34.800+00:00", "event": "batch_end", "batch": "orig_025", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:29:34.800+00:00", "event": "batch_start", "batch": "orig_026", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:29:43.652+00:00", "event": "batch_end", "batch": "orig_026", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:29:43.653+00:00", "event": "batch_start", "batch": "orig_027", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:29:52.535+00:00", "event": "batch_end", "batch": "orig_027", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:29:52.536+00:00", "event": "batch_start", "batch": "orig_028", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:30:01.395+00:00", "event": "batch_end", "batch": "orig_028", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:30:01.395+00:00", "event": "batch_start", "batch": "orig_029", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:30:10.219+00:00", "event": "batch_end", "batch": "orig_029", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:30:10.220+00:00", "event": "batch_start", "batch": "orig_030", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:30:19.121+00:00", "event": "batch_end", "batch": "orig_030", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:30:19.122+00:00", "event": "batch_start", "batch": "orig_031", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:30:28.043+00:00", "event": "batch_end", "batch": "orig_031", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:30:28.043+00:00", "event": "batch_start", "batch": "orig_032", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:30:36.889+00:00", "event": "batch_end", "batch": "orig_032", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:30:36.890+00:00", "event": "batch_start", "batch": "orig_033", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:30:45.841+00:00", "event": "batch_end", "batch": "orig_033", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:30:45.842+00:00", "event": "batch_start", "batch": "orig_034", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:30:54.760+00:00", "event": "batch_end", "batch": "orig_034", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:30:54.761+00:00", "event": "batch_start", "batch": "orig_035", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:31:03.646+00:00", "event": "batch_end", "batch": "orig_035", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:31:03.647+00:00", "event": "batch_start", "batch": "orig_036", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:31:12.479+00:00", "event": "batch_end", "batch": "orig_036", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:31:12.480+00:00", "event": "batch_start", "batch": "orig_037", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:31:21.384+00:00", "event": "batch_end", "batch": "orig_037", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:31:21.384+00:00", "event": "batch_start", "batch": "orig_038", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:31:30.349+00:00", "event": "batch_end", "batch": "orig_038", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:31:30.350+00:00", "event": "batch_start", "batch": "orig_039", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:31:39.301+00:00", "event": "batch_end", "batch": "orig_039", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:31:39.302+00:00", "event": "batch_start", "batch": "orig_040", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:31:48.201+00:00", "event": "batch_end", "batch": "orig_040", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:31:48.201+00:00", "event": "batch_start", "batch": "orig_041", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:31:57.134+00:00", "event": "batch_end", "batch": "orig_041", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:31:57.135+00:00", "event": "batch_start", "batch": "orig_042", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:32:06.009+00:00", "event": "batch_end", "batch": "orig_042", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:32:06.010+00:00", "event": "batch_start", "batch": "orig_043", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:32:14.777+00:00", "event": "batch_end", "batch": "orig_043", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:32:14.778+00:00", "event": "batch_start", "batch": "orig_044", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:32:23.635+00:00", "event": "batch_end", "batch": "orig_044", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:32:23.636+00:00", "event": "batch_start", "batch": "orig_045", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:32:32.363+00:00", "event": "batch_end", "batch": "orig_045", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:32:32.363+00:00", "event": "batch_start", "batch": "orig_046", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:32:41.118+00:00", "event": "batch_end", "batch": "orig_046", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:32:41.118+00:00", "event": "batch_start", "batch": "orig_047", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:32:49.949+00:00", "event": "batch_end", "batch": "orig_047", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:32:49.950+00:00", "event": "batch_start", "batch": "orig_048", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:32:58.727+00:00", "event": "batch_end", "batch": "orig_048", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:32:58.728+00:00", "event": "batch_start", "batch": "orig_049", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T04:33:07.496+00:00", "event": "batch_end", "batch": "orig_049", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T04:33:07.497+00:00", "event": "loadavg", "tag": "session_end", "loadavg": [1.0322265625, 0.97802734375, 0.57421875]}
+{"time": "2026-10-14T04:33:07.497+00:00", "event": "end"}

@@ -1,0 +1,233 @@
+[mutant_recheck] 대상 16개 (commit 78e0936)
+  fsm:003 L40 'in'->'not in' | L2 test_req_stu_02_feature_order_and_fallback | killed | 사용자 지목
+  fsm:005 L41 '0.0'->'None' | L2 test_i4_recorder_does_not_change_episode | killed_exception | 비결정성 후보 테스트에서 처음 실패, 사용자 지목
+  fsm:006 L42 'config.W'->'None' | L2 test_req_stu_02_feature_order_and_fallback | killed_exception | 사용자 지목
+  closed_loop:002 L171 'is not'->'is' | L1 test_p0_matches_observational_runner[True-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:003 L172 'det_out = detector.update(Dete'->'pass' | L1 test_p0_matches_observational_runner[False-3200-False] | killed_exception | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:004 L176 'det_out.alarm and'->'' | L1 test_p0_matches_observational_runner[False-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:005 L176 'and first_alarm_step is None'->'' | L1 test_p0_matches_observational_runner[True-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:006 L176 'and'->'or' | L1 test_p0_matches_observational_runner[False-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:007 L176 'is'->'is not' | L1 test_p0_matches_observational_runner[True-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:008 L177 'first_alarm_step = step_idx'->'pass' | L1 test_p0_matches_observational_runner[True-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:013 L179 '=='->'!=' | L1 test_p0_matches_observational_runner[True-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:015 L181 '=='->'!=' | L1 test_p0_matches_observational_runner[True-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:027 L197 '=='->'!=' | L1 test_p0_matches_observational_runner[False-3200-False] | killed | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:042 L214 'ctrl_ey = None if override_ey '->'pass' | L1 test_p0_matches_observational_runner[False-3200-False] | killed_exception | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:043 L215 'ctrl_rc = False if override_rc'->'pass' | L1 test_p0_matches_observational_runner[False-3200-False] | killed_exception | 비결정성 후보 테스트에서 처음 실패
+  closed_loop:044 L216 'ctrl_lc = False if override_lc'->'pass' | L1 test_p0_matches_observational_runner[False-3200-False] | killed_exception | 비결정성 후보 테스트에서 처음 실패
+[clean orig] test_p0_matches_observational_runner[False-3200-Fa #0: pass
+[clean orig] test_p0_matches_observational_runner[False-3200-Fa #1: pass
+[clean orig] test_p0_matches_observational_runner[False-3200-Fa #2: pass
+[clean orig] test_p0_matches_observational_runner[False-3200-Fa #3: pass
+[clean orig] test_p0_matches_observational_runner[False-3200-Fa #4: pass
+[clean A] test_p0_matches_observational_runner[False-3200-Fa #0: pass
+[clean A] test_p0_matches_observational_runner[False-3200-Fa #1: pass
+[clean A] test_p0_matches_observational_runner[False-3200-Fa #2: pass
+[clean A] test_p0_matches_observational_runner[False-3200-Fa #3: pass
+[clean A] test_p0_matches_observational_runner[False-3200-Fa #4: pass
+[clean orig] test_p0_matches_observational_runner[True-3200-Fal #0: pass
+[clean orig] test_p0_matches_observational_runner[True-3200-Fal #1: pass
+[clean orig] test_p0_matches_observational_runner[True-3200-Fal #2: pass
+[clean orig] test_p0_matches_observational_runner[True-3200-Fal #3: pass
+[clean orig] test_p0_matches_observational_runner[True-3200-Fal #4: pass
+[clean A] test_p0_matches_observational_runner[True-3200-Fal #0: pass
+[clean A] test_p0_matches_observational_runner[True-3200-Fal #1: pass
+[clean A] test_p0_matches_observational_runner[True-3200-Fal #2: pass
+[clean A] test_p0_matches_observational_runner[True-3200-Fal #3: pass
+[clean A] test_p0_matches_observational_runner[True-3200-Fal #4: pass
+[clean orig] test_i4_recorder_does_not_change_episode #0: pass
+[clean orig] test_i4_recorder_does_not_change_episode #1: pass
+[clean orig] test_i4_recorder_does_not_change_episode #2: pass
+[clean orig] test_i4_recorder_does_not_change_episode #3: pass
+[clean orig] test_i4_recorder_does_not_change_episode #4: pass
+[clean A] test_i4_recorder_does_not_change_episode #0: pass
+[clean A] test_i4_recorder_does_not_change_episode #1: pass
+[clean A] test_i4_recorder_does_not_change_episode #2: pass
+[clean A] test_i4_recorder_does_not_change_episode #3: pass
+[clean A] test_i4_recorder_does_not_change_episode #4: pass
+[clean orig] test_req_stu_02_feature_order_and_fallback #0: pass
+[clean orig] test_req_stu_02_feature_order_and_fallback #1: pass
+[clean orig] test_req_stu_02_feature_order_and_fallback #2: pass
+[clean orig] test_req_stu_02_feature_order_and_fallback #3: pass
+[clean orig] test_req_stu_02_feature_order_and_fallback #4: pass
+[clean A] test_req_stu_02_feature_order_and_fallback #0: pass
+[clean A] test_req_stu_02_feature_order_and_fallback #1: pass
+[clean A] test_req_stu_02_feature_order_and_fallback #2: pass
+[clean A] test_req_stu_02_feature_order_and_fallback #3: pass
+[clean A] test_req_stu_02_feature_order_and_fallback #4: pass
+[fsm:003 orig] #0: assert
+[fsm:003 orig] #1: assert
+[fsm:003 orig] #2: assert
+[fsm:003 orig] #3: assert
+[fsm:003 orig] #4: assert
+[fsm:003 A] #0: assert
+[fsm:003 A] #1: assert
+[fsm:003 A] #2: assert
+[fsm:003 A] #3: assert
+[fsm:003 A] #4: assert
+[fsm:005 orig] #0: exception
+[fsm:005 orig] #1: exception
+[fsm:005 orig] #2: exception
+[fsm:005 orig] #3: exception
+[fsm:005 orig] #4: exception
+[fsm:005 A] #0: exception
+[fsm:005 A] #1: exception
+[fsm:005 A] #2: exception
+[fsm:005 A] #3: exception
+[fsm:005 A] #4: exception
+[fsm:006 orig] #0: exception
+[fsm:006 orig] #1: exception
+[fsm:006 orig] #2: exception
+[fsm:006 orig] #3: exception
+[fsm:006 orig] #4: exception
+[fsm:006 A] #0: exception
+[fsm:006 A] #1: exception
+[fsm:006 A] #2: exception
+[fsm:006 A] #3: exception
+[fsm:006 A] #4: exception
+[closed_loop:002 orig] #0: assert
+[closed_loop:002 orig] #1: assert
+[closed_loop:002 orig] #2: assert
+[closed_loop:002 orig] #3: assert
+[closed_loop:002 orig] #4: assert
+[closed_loop:002 A] #0: assert
+[closed_loop:002 A] #1: assert
+[closed_loop:002 A] #2: assert
+[closed_loop:002 A] #3: assert
+[closed_loop:002 A] #4: assert
+[closed_loop:003 orig] #0: exception
+[closed_loop:003 orig] #1: exception
+[closed_loop:003 orig] #2: exception
+[closed_loop:003 orig] #3: exception
+[closed_loop:003 orig] #4: exception
+[closed_loop:003 A] #0: exception
+[closed_loop:003 A] #1: exception
+[closed_loop:003 A] #2: exception
+[closed_loop:003 A] #3: exception
+[closed_loop:003 A] #4: exception
+[closed_loop:004 orig] #0: assert
+[closed_loop:004 orig] #1: assert
+[closed_loop:004 orig] #2: assert
+[closed_loop:004 orig] #3: assert
+[closed_loop:004 orig] #4: assert
+[closed_loop:004 A] #0: assert
+[closed_loop:004 A] #1: assert
+[closed_loop:004 A] #2: assert
+[closed_loop:004 A] #3: assert
+[closed_loop:004 A] #4: assert
+[closed_loop:005 orig] #0: assert
+[closed_loop:005 orig] #1: assert
+[closed_loop:005 orig] #2: assert
+[closed_loop:005 orig] #3: assert
+[closed_loop:005 orig] #4: assert
+[closed_loop:005 A] #0: assert
+[closed_loop:005 A] #1: assert
+[closed_loop:005 A] #2: assert
+[closed_loop:005 A] #3: assert
+[closed_loop:005 A] #4: assert
+[closed_loop:006 orig] #0: assert
+[closed_loop:006 orig] #1: assert
+[closed_loop:006 orig] #2: assert
+[closed_loop:006 orig] #3: assert
+[closed_loop:006 orig] #4: assert
+[closed_loop:006 A] #0: assert
+[closed_loop:006 A] #1: assert
+[closed_loop:006 A] #2: assert
+[closed_loop:006 A] #3: assert
+[closed_loop:006 A] #4: assert
+[closed_loop:007 orig] #0: assert
+[closed_loop:007 orig] #1: assert
+[closed_loop:007 orig] #2: assert
+[closed_loop:007 orig] #3: assert
+[closed_loop:007 orig] #4: assert
+[closed_loop:007 A] #0: assert
+[closed_loop:007 A] #1: assert
+[closed_loop:007 A] #2: assert
+[closed_loop:007 A] #3: assert
+[closed_loop:007 A] #4: assert
+[closed_loop:008 orig] #0: assert
+[closed_loop:008 orig] #1: assert
+[closed_loop:008 orig] #2: assert
+[closed_loop:008 orig] #3: assert
+[closed_loop:008 orig] #4: assert
+[closed_loop:008 A] #0: assert
+[closed_loop:008 A] #1: assert
+[closed_loop:008 A] #2: assert
+[closed_loop:008 A] #3: assert
+[closed_loop:008 A] #4: assert
+[closed_loop:013 orig] #0: assert
+[closed_loop:013 orig] #1: assert
+[closed_loop:013 orig] #2: assert
+[closed_loop:013 orig] #3: assert
+[closed_loop:013 orig] #4: assert
+[closed_loop:013 A] #0: assert
+[closed_loop:013 A] #1: assert
+[closed_loop:013 A] #2: assert
+[closed_loop:013 A] #3: assert
+[closed_loop:013 A] #4: assert
+[closed_loop:015 orig] #0: assert
+[closed_loop:015 orig] #1: assert
+[closed_loop:015 orig] #2: assert
+[closed_loop:015 orig] #3: assert
+[closed_loop:015 orig] #4: assert
+[closed_loop:015 A] #0: assert
+[closed_loop:015 A] #1: assert
+[closed_loop:015 A] #2: assert
+[closed_loop:015 A] #3: assert
+[closed_loop:015 A] #4: assert
+[closed_loop:027 orig] #0: assert
+[closed_loop:027 orig] #1: assert
+[closed_loop:027 orig] #2: assert
+[closed_loop:027 orig] #3: assert
+[closed_loop:027 orig] #4: assert
+[closed_loop:027 A] #0: assert
+[closed_loop:027 A] #1: assert
+[closed_loop:027 A] #2: assert
+[closed_loop:027 A] #3: assert
+[closed_loop:027 A] #4: assert
+[closed_loop:042 orig] #0: exception
+[closed_loop:042 orig] #1: exception
+[closed_loop:042 orig] #2: exception
+[closed_loop:042 orig] #3: exception
+[closed_loop:042 orig] #4: exception
+[closed_loop:042 A] #0: exception
+[closed_loop:042 A] #1: exception
+[closed_loop:042 A] #2: exception
+[closed_loop:042 A] #3: exception
+[closed_loop:042 A] #4: exception
+[closed_loop:043 orig] #0: exception
+[closed_loop:043 orig] #1: exception
+[closed_loop:043 orig] #2: exception
+[closed_loop:043 orig] #3: exception
+[closed_loop:043 orig] #4: exception
+[closed_loop:043 A] #0: exception
+[closed_loop:043 A] #1: exception
+[closed_loop:043 A] #2: exception
+[closed_loop:043 A] #3: exception
+[closed_loop:043 A] #4: exception
+[closed_loop:044 orig] #0: exception
+[closed_loop:044 orig] #1: exception
+[closed_loop:044 orig] #2: exception
+[closed_loop:044 orig] #3: exception
+[closed_loop:044 orig] #4: exception
+[closed_loop:044 A] #0: exception
+[closed_loop:044 A] #1: exception
+[closed_loop:044 A] #2: exception
+[closed_loop:044 A] #3: exception
+[closed_loop:044 A] #4: exception
+fsm:003 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+fsm:005 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['exception'], 'verdict': 'kill 유지(비결정성과 무관)'}
+fsm:006 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['exception'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:002 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:003 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['exception'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:004 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:005 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:006 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:007 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:008 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:013 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:015 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:027 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['assert'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:042 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['exception'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:043 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['exception'], 'verdict': 'kill 유지(비결정성과 무관)'}
+closed_loop:044 {'mutant_fail': {'orig': 5, 'A': 5}, 'control_pass': {'orig': 5, 'A': 5}, 'kinds': ['exception'], 'verdict': 'kill 유지(비결정성과 무관)'}

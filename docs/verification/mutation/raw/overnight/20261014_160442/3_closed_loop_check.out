@@ -1,0 +1,9 @@
+  episodes_P0.csv: 일치
+  episodes_P1_A.csv: 일치
+  episodes_P1_B1.csv: 일치
+  episodes_P1_B2.csv: 일치
+  episodes_P1_HYBRID.csv: 일치
+  episodes_P2_A.csv: 일치
+  summary.json: 일치
+[진단] MPC time_limit_hit 총합 0, 최대 solve 3.019 ms (비교 대상 아님, §24-2)
+--check thesis_v2\results\anomaly\20261012_142758_3층PC109_it3_closed_loop_eval: 전체 일치

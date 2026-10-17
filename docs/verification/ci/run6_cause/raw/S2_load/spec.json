@@ -1,0 +1,45 @@
+{
+ "exp": "S2_load",
+ "out_dir": "C:/Users/SSAFY/Desktop/MPC_LINETRACING/docs/verification/ci/run6_cause/raw/S2_load",
+ "batch_size": 10,
+ "block": 5,
+ "settle_s": 12,
+ "arms": [
+  {
+   "name": "L8",
+   "root": "C:/Users/SSAFY/AppData/Local/Temp/run6_cause/copies/orig",
+   "targets": [
+    "i5",
+    "i4",
+    "base"
+   ],
+   "probe": true,
+   "load_k": 8,
+   "trials": 1000
+  },
+  {
+   "name": "L16",
+   "root": "C:/Users/SSAFY/AppData/Local/Temp/run6_cause/copies/orig",
+   "targets": [
+    "i5",
+    "i4",
+    "base"
+   ],
+   "probe": true,
+   "load_k": 16,
+   "trials": 1000
+  },
+  {
+   "name": "L32",
+   "root": "C:/Users/SSAFY/AppData/Local/Temp/run6_cause/copies/orig",
+   "targets": [
+    "i5",
+    "i4",
+    "base"
+   ],
+   "probe": true,
+   "load_k": 32,
+   "trials": 1000
+  }
+ ]
+}

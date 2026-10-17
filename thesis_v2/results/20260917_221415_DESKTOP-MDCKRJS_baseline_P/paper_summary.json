@@ -1,0 +1,76 @@
+{
+  "scenario_name": "paper",
+  "n_episodes": 100,
+  "outcome_counts": {
+    "성공": 99,
+    "충돌": 1
+  },
+  "collision_count": 1,
+  "safe_stop_count": 0,
+  "success_rate": 0.99,
+  "constraint_satisfaction": {
+    "delta_within_tolerance_rate": 1.0,
+    "psi_within_tolerance_rate": 1.0,
+    "y_within_tolerance_rate": 1.0,
+    "delta_checked_steps": 15433,
+    "delta_violation_steps": 0,
+    "psi_violation_steps": 0,
+    "y_checked_steps": 15433,
+    "y_violation_steps": 0,
+    "note": "허용오차 = OSQP eps_abs(SETTINGS_DECISION.md §18). y는 SAFE_STOP 스텝 제외(REQ-LAT-05, 위치제약 미정의)"
+  },
+  "clip_breakdown": {
+    "clip_total": 187,
+    "clip_numerical": 187,
+    "clip_violation": 0,
+    "note": "clip_numerical=eps_abs 이내 초과(솔버 수치오차), clip_violation=eps_abs 초과(버그 후보, §16 판정 기준과 동일)"
+  },
+  "saturation_ratio_by_state": {
+    "KEEP_L2": 0.0,
+    "EVADE_L": 0.02486135016255498,
+    "KEEP_L1": 0.0,
+    "RETURN_TO_L2": 0.07241766467065869,
+    "SAFE_STOP": null
+  },
+  "state_duration_steps_total": {
+    "KEEP_L2": 3079,
+    "EVADE_L": 5229,
+    "KEEP_L1": 1781,
+    "RETURN_TO_L2": 5344,
+    "SAFE_STOP": 0
+  },
+  "mpc_solve_time_ms": {
+    "mean": 0.13558387317909032,
+    "max": 15.6864000000001,
+    "stdev": 0.28015517272125945,
+    "n_calls": 11670,
+    "budget_ms_20hz": 50.0,
+    "mean_pct_of_budget": 0.27116774635818064,
+    "measurement_status": "참고(DESKTOP-MDCKRJS, 배터리 구동 -- 공식 호스트지만 AC 조건 미충족)",
+    "note": "MEASURE_PLAN.md 공통 원칙(2026-09-17 변경): 공식 측정 환경은 노트북(hostname DESKTOP-MDCKRJS) + AC 전원 + Windows 최고 성능 모드. 그 외(SSAFY PC, 배터리 구동 등)는 참고용으로만 보고(절대수치는 하드웨어 종속)."
+  },
+  "env": {
+    "timestamp": "2026-09-17T13:14:15.820879+00:00",
+    "hostname": "DESKTOP-MDCKRJS",
+    "is_official_measurement_host": true,
+    "executable": "C:\\Users\\user\\MPC_LINETRACING\\.venv\\Scripts\\python.exe",
+    "python": "3.9.12 (tags/v3.9.12:b28265d, Mar 23 2022, 23:52:46) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "osqp": "1.1.1",
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+    "power": {
+      "ac_status": "battery",
+      "power_plan": "균형 조정"
+    },
+    "osqp_settings": {
+      "eps_abs": 0.0001,
+      "eps_rel": 0.0001,
+      "max_iter": 4000,
+      "polishing": false,
+      "warm_starting": true,
+      "raise_error": false
+    }
+  }
+}

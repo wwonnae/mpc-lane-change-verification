@@ -1,0 +1,7 @@
+{
+  "reference": "thesis_v2\\results\\anomaly\\20261002_111909_3층PC108_it3_train_hybrid",
+  "same_train_windows": true,
+  "n": 1877,
+  "max_abs_diff": 0.0,
+  "identical": true
+}

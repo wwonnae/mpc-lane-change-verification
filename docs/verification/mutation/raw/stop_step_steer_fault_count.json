@@ -1,0 +1,5766 @@
+{
+ "source": "thesis_v2/results/anomaly/20261012_142758_3층PC109_it3_closed_loop_eval",
+ "combos": {
+  "P1_A": {
+   "n_episodes": 1100,
+   "n_stop": 868,
+   "n_steer_runs": 200,
+   "n_stop_with_steer_fault_active": 199,
+   "by_run": {
+    "steer_delay": 100,
+    "steer_stuck": 99
+   },
+   "stop_outcomes": {
+    "탐지 정지": 199
+   },
+   "p0_ends_same_step_with_collision_or_departure": 0,
+   "p0_outcomes": {
+    "성공": 137,
+    "이탈": 48,
+    "충돌": 11,
+    "SAFE_STOP": 2,
+    "미정착": 1
+   },
+   "episodes": [
+    {
+     "run": "steer_delay",
+     "seed": 5000,
+     "stop_step": 32,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5001,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5002,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5003,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5004,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5005,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5006,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 135
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5007,
+     "stop_step": 34,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 208
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5008,
+     "stop_step": 25,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 194
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5009,
+     "stop_step": 16,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5010,
+     "stop_step": 37,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5011,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5012,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5013,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5014,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 109
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5015,
+     "stop_step": 37,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5016,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5017,
+     "stop_step": 23,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5018,
+     "stop_step": 30,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 126
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5019,
+     "stop_step": 30,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 200
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5020,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5021,
+     "stop_step": 24,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5022,
+     "stop_step": 29,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5023,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5024,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5025,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 200
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5026,
+     "stop_step": 24,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 185
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5027,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 100
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5028,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5029,
+     "stop_step": 33,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5030,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 109
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5031,
+     "stop_step": 32,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5032,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5033,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5034,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 115
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5035,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5036,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5037,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 122
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5038,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 208
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5039,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 96
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5040,
+     "stop_step": 23,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5041,
+     "stop_step": 21,
+     "outcome": "탐지 정지",
+     "p0_outcome": "SAFE_STOP",
+     "p0_finish_step": 78
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5042,
+     "stop_step": 25,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 95
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5043,
+     "stop_step": 29,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5044,
+     "stop_step": 36,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 115
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5045,
+     "stop_step": 35,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5046,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5047,
+     "stop_step": 23,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5048,
+     "stop_step": 35,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 94
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5049,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5050,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 181
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5051,
+     "stop_step": 32,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 100
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5052,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5053,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 177
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5054,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5055,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5056,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5057,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 157
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5058,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5059,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 123
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5060,
+     "stop_step": 31,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5061,
+     "stop_step": 32,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 167
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5062,
+     "stop_step": 31,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5063,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 136
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5064,
+     "stop_step": 46,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 116
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5065,
+     "stop_step": 24,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5066,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5067,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 196
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5068,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5069,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5070,
+     "stop_step": 35,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5071,
+     "stop_step": 19,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5072,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5073,
+     "stop_step": 33,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5074,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5075,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 191
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5076,
+     "stop_step": 41,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 120
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5077,
+     "stop_step": 41,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5078,
+     "stop_step": 26,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5079,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5080,
+     "stop_step": 34,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5081,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 141
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5082,
+     "stop_step": 26,
+     "outcome": "탐지 정지",
+     "p0_outcome": "미정착",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5083,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5084,
+     "stop_step": 19,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 106
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5085,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5086,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5087,
+     "stop_step": 24,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 118
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5088,
+     "stop_step": 30,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 161
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5089,
+     "stop_step": 28,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 165
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5090,
+     "stop_step": 17,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 147
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5091,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5092,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 166
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5093,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5094,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5095,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5096,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5097,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5098,
+     "stop_step": 20,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5099,
+     "stop_step": 36,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5000,
+     "stop_step": 37,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 163
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5001,
+     "stop_step": 43,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 169
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5002,
+     "stop_step": 57,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 77
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5003,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 84
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5004,
+     "stop_step": 46,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5005,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5006,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5007,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5008,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5009,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 72
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5010,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5011,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 82
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5012,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5013,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5014,
+     "stop_step": 68,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 192
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5015,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5016,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5017,
+     "stop_step": 36,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5018,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5019,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5020,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 91
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5021,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5022,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 97
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5023,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "SAFE_STOP",
+     "p0_finish_step": 120
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5024,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 132
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5025,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 92
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5026,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5027,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5028,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 99
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5029,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 166
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5030,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 75
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5031,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 73
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5032,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 101
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5033,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5034,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5035,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5036,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 191
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5037,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 99
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5038,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 98
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5039,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 80
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5040,
+     "stop_step": 40,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 173
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5041,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5042,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 74
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5043,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 86
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5044,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 173
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5045,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5046,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5047,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 67
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5048,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 72
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5049,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5050,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 93
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5051,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 66
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5052,
+     "stop_step": 85,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5053,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5054,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 83
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5055,
+     "stop_step": 43,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5056,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5057,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 65
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5058,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5059,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 202
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5060,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5061,
+     "stop_step": 43,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 67
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5062,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 196
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5063,
+     "stop_step": 81,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 111
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5065,
+     "stop_step": 75,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 204
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5066,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5067,
+     "stop_step": 78,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 101
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5068,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5069,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 84
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5070,
+     "stop_step": 35,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 161
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5071,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 82
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5072,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 202
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5073,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 70
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5074,
+     "stop_step": 78,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5075,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 83
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5076,
+     "stop_step": 75,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 96
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5077,
+     "stop_step": 75,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5078,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5079,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5080,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5081,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 201
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5082,
+     "stop_step": 68,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5083,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 206
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5084,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 79
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5085,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 68
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5086,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5087,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5088,
+     "stop_step": 37,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5089,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5090,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5091,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 165
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5092,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5093,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 104
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5094,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5095,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 98
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5096,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5097,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5098,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5099,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    }
+   ]
+  },
+  "P1_B1": {
+   "n_episodes": 1100,
+   "n_stop": 20,
+   "n_steer_runs": 200,
+   "n_stop_with_steer_fault_active": 6,
+   "by_run": {
+    "steer_delay": 2,
+    "steer_stuck": 4
+   },
+   "stop_outcomes": {
+    "탐지 정지": 5,
+    "이탈": 1
+   },
+   "p0_ends_same_step_with_collision_or_departure": 1,
+   "p0_outcomes": {
+    "성공": 1,
+    "이탈": 5
+   },
+   "episodes": [
+    {
+     "run": "steer_delay",
+     "seed": 5020,
+     "stop_step": 106,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5084,
+     "stop_step": 99,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 106
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5037,
+     "stop_step": 98,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 99
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5048,
+     "stop_step": 72,
+     "outcome": "이탈",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 72
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5069,
+     "stop_step": 82,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 84
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5085,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 68
+    }
+   ]
+  },
+  "P1_B2": {
+   "n_episodes": 1100,
+   "n_stop": 691,
+   "n_steer_runs": 200,
+   "n_stop_with_steer_fault_active": 187,
+   "by_run": {
+    "steer_delay": 100,
+    "steer_stuck": 87
+   },
+   "stop_outcomes": {
+    "탐지 정지": 187
+   },
+   "p0_ends_same_step_with_collision_or_departure": 0,
+   "p0_outcomes": {
+    "성공": 125,
+    "이탈": 48,
+    "충돌": 11,
+    "SAFE_STOP": 2,
+    "미정착": 1
+   },
+   "episodes": [
+    {
+     "run": "steer_delay",
+     "seed": 5000,
+     "stop_step": 43,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5001,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5002,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5003,
+     "stop_step": 57,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5004,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5005,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5006,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 135
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5007,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 208
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5008,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 194
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5009,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5010,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5011,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5012,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5013,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5014,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 109
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5015,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5016,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5017,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5018,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 126
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5019,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 200
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5020,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5021,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5022,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5023,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5024,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5025,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 200
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5026,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 185
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5027,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 100
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5028,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5029,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5030,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 109
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5031,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5032,
+     "stop_step": 68,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5033,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5034,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 115
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5035,
+     "stop_step": 64,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5036,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5037,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 122
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5038,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 208
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5039,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 96
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5040,
+     "stop_step": 115,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5041,
+     "stop_step": 43,
+     "outcome": "탐지 정지",
+     "p0_outcome": "SAFE_STOP",
+     "p0_finish_step": 78
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5042,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 95
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5043,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5044,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 115
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5045,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5046,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5047,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5048,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 94
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5049,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5050,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 181
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5051,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 100
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5052,
+     "stop_step": 86,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5053,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 177
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5054,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5055,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5056,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5057,
+     "stop_step": 41,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 157
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5058,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5059,
+     "stop_step": 80,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 123
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5060,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5061,
+     "stop_step": 46,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 167
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5062,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5063,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 136
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5064,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 116
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5065,
+     "stop_step": 78,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5066,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5067,
+     "stop_step": 79,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 196
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5068,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5069,
+     "stop_step": 64,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5070,
+     "stop_step": 40,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5071,
+     "stop_step": 46,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5072,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5073,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5074,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5075,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 191
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5076,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 120
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5077,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5078,
+     "stop_step": 41,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5079,
+     "stop_step": 62,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5080,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5081,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 141
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5082,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "미정착",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5083,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5084,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 106
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5085,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5086,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5087,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 118
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5088,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 161
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5089,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 165
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5090,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 147
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5091,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5092,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 166
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5093,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5094,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5095,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5096,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5097,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5098,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5099,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5000,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 163
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5001,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 169
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5002,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 77
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5003,
+     "stop_step": 64,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 84
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5005,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5006,
+     "stop_step": 80,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5007,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5008,
+     "stop_step": 62,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5009,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 72
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5010,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5011,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 82
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5013,
+     "stop_step": 93,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5014,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 192
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5017,
+     "stop_step": 41,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5018,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5019,
+     "stop_step": 85,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5020,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 91
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5022,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 97
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5023,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "SAFE_STOP",
+     "p0_finish_step": 120
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5024,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 132
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5025,
+     "stop_step": 75,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 92
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5026,
+     "stop_step": 75,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5027,
+     "stop_step": 57,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5028,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 99
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5029,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 166
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5030,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 75
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5031,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 73
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5032,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 101
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5033,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5034,
+     "stop_step": 62,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5036,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 191
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5037,
+     "stop_step": 82,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 99
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5038,
+     "stop_step": 81,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 98
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5039,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 80
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5040,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 173
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5042,
+     "stop_step": 57,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 74
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5043,
+     "stop_step": 68,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 86
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5045,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5047,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 67
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5048,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 72
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5049,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5050,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 93
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5051,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 66
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5053,
+     "stop_step": 87,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5054,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 83
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5055,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5056,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5057,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 65
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5058,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5059,
+     "stop_step": 80,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 202
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5060,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5061,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 67
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5062,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 196
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5063,
+     "stop_step": 88,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 111
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5065,
+     "stop_step": 82,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 204
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5066,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5067,
+     "stop_step": 84,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 101
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5068,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5069,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 84
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5070,
+     "stop_step": 40,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 161
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5071,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 82
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5072,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 202
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5073,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 70
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5074,
+     "stop_step": 85,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5075,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 83
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5076,
+     "stop_step": 79,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 96
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5077,
+     "stop_step": 84,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5079,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5080,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5081,
+     "stop_step": 86,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 201
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5082,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5083,
+     "stop_step": 85,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 206
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5084,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 79
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5085,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 68
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5086,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5087,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5088,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5089,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5090,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5091,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 165
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5092,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5093,
+     "stop_step": 82,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 104
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5094,
+     "stop_step": 80,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5095,
+     "stop_step": 80,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 98
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5096,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5097,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5098,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    }
+   ]
+  },
+  "P1_HYBRID": {
+   "n_episodes": 1100,
+   "n_stop": 191,
+   "n_steer_runs": 200,
+   "n_stop_with_steer_fault_active": 115,
+   "by_run": {
+    "steer_delay": 89,
+    "steer_stuck": 26
+   },
+   "stop_outcomes": {
+    "탐지 정지": 115
+   },
+   "p0_ends_same_step_with_collision_or_departure": 0,
+   "p0_outcomes": {
+    "성공": 71,
+    "이탈": 34,
+    "충돌": 8,
+    "SAFE_STOP": 1,
+    "미정착": 1
+   },
+   "episodes": [
+    {
+     "run": "steer_delay",
+     "seed": 5000,
+     "stop_step": 94,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5002,
+     "stop_step": 106,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5003,
+     "stop_step": 98,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5004,
+     "stop_step": 92,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5005,
+     "stop_step": 100,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5006,
+     "stop_step": 89,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 135
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5007,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 208
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5008,
+     "stop_step": 64,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 194
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5009,
+     "stop_step": 99,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5010,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5011,
+     "stop_step": 104,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5012,
+     "stop_step": 100,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5013,
+     "stop_step": 105,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5014,
+     "stop_step": 91,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 109
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5015,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5016,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5017,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5018,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 126
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5020,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5021,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5022,
+     "stop_step": 64,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5023,
+     "stop_step": 100,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5024,
+     "stop_step": 92,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5025,
+     "stop_step": 109,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 200
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5026,
+     "stop_step": 103,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 185
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5028,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5029,
+     "stop_step": 68,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5030,
+     "stop_step": 64,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 109
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5031,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5032,
+     "stop_step": 87,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5034,
+     "stop_step": 111,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 115
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5036,
+     "stop_step": 90,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5037,
+     "stop_step": 100,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 122
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5038,
+     "stop_step": 98,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 208
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5039,
+     "stop_step": 78,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 96
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5040,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5041,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "SAFE_STOP",
+     "p0_finish_step": 78
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5043,
+     "stop_step": 84,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5044,
+     "stop_step": 98,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 115
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5045,
+     "stop_step": 102,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5046,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5047,
+     "stop_step": 94,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5048,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 94
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5050,
+     "stop_step": 104,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 181
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5051,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 100
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5052,
+     "stop_step": 117,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5053,
+     "stop_step": 84,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 177
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5054,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5055,
+     "stop_step": 102,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5056,
+     "stop_step": 95,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5057,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 157
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5058,
+     "stop_step": 83,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5059,
+     "stop_step": 98,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 123
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5060,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5061,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 167
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5062,
+     "stop_step": 85,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5063,
+     "stop_step": 133,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 136
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5064,
+     "stop_step": 96,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 116
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5065,
+     "stop_step": 112,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5066,
+     "stop_step": 102,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5067,
+     "stop_step": 120,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 196
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5068,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5069,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5070,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5071,
+     "stop_step": 87,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5072,
+     "stop_step": 96,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5074,
+     "stop_step": 105,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5075,
+     "stop_step": 92,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 191
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5077,
+     "stop_step": 90,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5078,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5080,
+     "stop_step": 94,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5081,
+     "stop_step": 124,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 141
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5082,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "미정착",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5083,
+     "stop_step": 85,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5084,
+     "stop_step": 97,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 106
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5085,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5086,
+     "stop_step": 96,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5087,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 118
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5088,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 161
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5089,
+     "stop_step": 91,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 165
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5090,
+     "stop_step": 57,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 147
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5091,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5092,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 166
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5093,
+     "stop_step": 113,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5094,
+     "stop_step": 95,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5096,
+     "stop_step": 64,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5097,
+     "stop_step": 111,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5098,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5099,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5002,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 77
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5011,
+     "stop_step": 80,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 82
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5020,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 91
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5030,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 75
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5031,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 73
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5037,
+     "stop_step": 95,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 99
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5038,
+     "stop_step": 94,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 98
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5042,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 74
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5043,
+     "stop_step": 81,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 86
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5045,
+     "stop_step": 62,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5047,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 67
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5048,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 72
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5050,
+     "stop_step": 87,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 93
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5054,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 83
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5056,
+     "stop_step": 68,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5057,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 65
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5066,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5067,
+     "stop_step": 98,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 101
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5069,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 84
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5071,
+     "stop_step": 81,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 82
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5073,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 70
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5075,
+     "stop_step": 79,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 83
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5077,
+     "stop_step": 91,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5084,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 79
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5085,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 68
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5089,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    }
+   ]
+  },
+  "P2_A": {
+   "n_episodes": 1100,
+   "n_stop": 471,
+   "n_steer_runs": 200,
+   "n_stop_with_steer_fault_active": 199,
+   "by_run": {
+    "steer_delay": 100,
+    "steer_stuck": 99
+   },
+   "stop_outcomes": {
+    "탐지 정지": 199
+   },
+   "p0_ends_same_step_with_collision_or_departure": 0,
+   "p0_outcomes": {
+    "성공": 137,
+    "이탈": 48,
+    "충돌": 11,
+    "SAFE_STOP": 2,
+    "미정착": 1
+   },
+   "episodes": [
+    {
+     "run": "steer_delay",
+     "seed": 5000,
+     "stop_step": 32,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5001,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5002,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5003,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5004,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5005,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5006,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 135
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5007,
+     "stop_step": 34,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 208
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5008,
+     "stop_step": 25,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 194
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5009,
+     "stop_step": 16,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5010,
+     "stop_step": 37,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5011,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5012,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5013,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5014,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 109
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5015,
+     "stop_step": 37,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5016,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5017,
+     "stop_step": 23,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5018,
+     "stop_step": 30,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 126
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5019,
+     "stop_step": 30,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 200
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5020,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5021,
+     "stop_step": 24,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5022,
+     "stop_step": 29,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5023,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5024,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5025,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 200
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5026,
+     "stop_step": 24,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 185
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5027,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 100
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5028,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5029,
+     "stop_step": 33,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5030,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 109
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5031,
+     "stop_step": 32,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5032,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5033,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5034,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 115
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5035,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5036,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 110
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5037,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 122
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5038,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 208
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5039,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 96
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5040,
+     "stop_step": 23,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5041,
+     "stop_step": 21,
+     "outcome": "탐지 정지",
+     "p0_outcome": "SAFE_STOP",
+     "p0_finish_step": 78
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5042,
+     "stop_step": 25,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 95
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5043,
+     "stop_step": 29,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5044,
+     "stop_step": 36,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 115
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5045,
+     "stop_step": 35,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5046,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5047,
+     "stop_step": 23,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5048,
+     "stop_step": 35,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 94
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5049,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5050,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 181
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5051,
+     "stop_step": 32,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 100
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5052,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5053,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 177
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5054,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5055,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5056,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5057,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 157
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5058,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5059,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 123
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5060,
+     "stop_step": 31,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5061,
+     "stop_step": 32,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 167
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5062,
+     "stop_step": 31,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5063,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 136
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5064,
+     "stop_step": 46,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 116
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5065,
+     "stop_step": 24,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5066,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5067,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 196
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5068,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5069,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5070,
+     "stop_step": 35,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5071,
+     "stop_step": 19,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5072,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5073,
+     "stop_step": 33,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5074,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5075,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 191
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5076,
+     "stop_step": 41,
+     "outcome": "탐지 정지",
+     "p0_outcome": "충돌",
+     "p0_finish_step": 120
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5077,
+     "stop_step": 41,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5078,
+     "stop_step": 26,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5079,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5080,
+     "stop_step": 34,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5081,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 141
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5082,
+     "stop_step": 26,
+     "outcome": "탐지 정지",
+     "p0_outcome": "미정착",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5083,
+     "stop_step": 38,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5084,
+     "stop_step": 19,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 106
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5085,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5086,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5087,
+     "stop_step": 24,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 118
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5088,
+     "stop_step": 30,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 161
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5089,
+     "stop_step": 28,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 165
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5090,
+     "stop_step": 17,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 147
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5091,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5092,
+     "stop_step": 22,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 166
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5093,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5094,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5095,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5096,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5097,
+     "stop_step": 54,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5098,
+     "stop_step": 20,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_delay",
+     "seed": 5099,
+     "stop_step": 36,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 179
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5000,
+     "stop_step": 37,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 163
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5001,
+     "stop_step": 43,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 169
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5002,
+     "stop_step": 57,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 77
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5003,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 84
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5004,
+     "stop_step": 46,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5005,
+     "stop_step": 44,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5006,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5007,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5008,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5009,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 72
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5010,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5011,
+     "stop_step": 58,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 82
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5012,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 195
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5013,
+     "stop_step": 77,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 199
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5014,
+     "stop_step": 68,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 192
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5015,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5016,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 189
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5017,
+     "stop_step": 36,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5018,
+     "stop_step": 50,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5019,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5020,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 91
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5021,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5022,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 97
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5023,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "SAFE_STOP",
+     "p0_finish_step": 120
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5024,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 132
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5025,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 92
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5026,
+     "stop_step": 67,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 174
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5027,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5028,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 99
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5029,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 166
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5030,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 75
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5031,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 73
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5032,
+     "stop_step": 70,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 101
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5033,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 178
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5034,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5035,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5036,
+     "stop_step": 66,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 191
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5037,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 99
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5038,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 98
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5039,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 80
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5040,
+     "stop_step": 40,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 173
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5041,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 168
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5042,
+     "stop_step": 53,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 74
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5043,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 86
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5044,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 173
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5045,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5046,
+     "stop_step": 49,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5047,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 67
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5048,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 72
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5049,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 164
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5050,
+     "stop_step": 65,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 93
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5051,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 66
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5052,
+     "stop_step": 85,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 205
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5053,
+     "stop_step": 73,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5054,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 83
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5055,
+     "stop_step": 43,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5056,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5057,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 65
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5058,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5059,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 202
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5060,
+     "stop_step": 52,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 180
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5061,
+     "stop_step": 43,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 67
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5062,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 196
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5063,
+     "stop_step": 81,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 111
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5065,
+     "stop_step": 75,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 204
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5066,
+     "stop_step": 61,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 184
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5067,
+     "stop_step": 78,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 101
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5068,
+     "stop_step": 56,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 183
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5069,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 84
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5070,
+     "stop_step": 35,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 161
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5071,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 82
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5072,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 202
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5073,
+     "stop_step": 51,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 70
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5074,
+     "stop_step": 78,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5075,
+     "stop_step": 63,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 83
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5076,
+     "stop_step": 75,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 96
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5077,
+     "stop_step": 75,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 203
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5078,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 171
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5079,
+     "stop_step": 60,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 187
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5080,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5081,
+     "stop_step": 71,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 201
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5082,
+     "stop_step": 68,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 193
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5083,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 206
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5084,
+     "stop_step": 55,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 79
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5085,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 68
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5086,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 186
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5087,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 176
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5088,
+     "stop_step": 37,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 162
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5089,
+     "stop_step": 47,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 71
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5090,
+     "stop_step": 42,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 170
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5091,
+     "stop_step": 39,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 165
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5092,
+     "stop_step": 48,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 172
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5093,
+     "stop_step": 74,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 104
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5094,
+     "stop_step": 72,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 198
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5095,
+     "stop_step": 76,
+     "outcome": "탐지 정지",
+     "p0_outcome": "이탈",
+     "p0_finish_step": 98
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5096,
+     "stop_step": 69,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 190
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5097,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 188
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5098,
+     "stop_step": 59,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 182
+    },
+    {
+     "run": "steer_stuck",
+     "seed": 5099,
+     "stop_step": 45,
+     "outcome": "탐지 정지",
+     "p0_outcome": "성공",
+     "p0_finish_step": 175
+    }
+   ]
+  }
+ }
+}

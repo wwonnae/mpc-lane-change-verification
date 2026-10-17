@@ -1,0 +1,2429 @@
+{
+  "track": "eval3_paper",
+  "policy": "student",
+  "n_episodes": 100,
+  "wall_time_sec": 3.5850741,
+  "outcomes": {
+    "타임아웃": 67,
+    "충돌": 24,
+    "성공": 9
+  },
+  "collision": {
+    "k": 24,
+    "n": 100,
+    "rate": 0.24,
+    "ci95": [
+      0.16691211265459965,
+      0.3323251872329213
+    ]
+  },
+  "success": {
+    "k": 9,
+    "n": 100,
+    "rate": 0.09,
+    "ci95": [
+      0.04807199516388488,
+      0.16226374696643667
+    ]
+  },
+  "fail_non_success": {
+    "k": 91,
+    "n": 100,
+    "rate": 0.91,
+    "ci95": [
+      0.8377362530335634,
+      0.9519280048361151
+    ]
+  },
+  "nonfinite_delta_total": 0,
+  "n_policy_calls": 13234,
+  "clip_rate_per_policy_call": 0.015414840562188304,
+  "clip_rate_per_step": 0.012849584278155708,
+  "clip_violation_total": 204,
+  "rate_limit_rate_per_step": 0.034958427815570674,
+  "y_within_tolerance_rate": 0.8156966490299824,
+  "y_max_abs_violation_m": 0.42899871285284064,
+  "psi_violation_total": 0,
+  "per_episode": [
+    {
+      "key": 2000,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 165,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          8,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          48,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          82,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2001,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 168,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          31,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          72,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2002,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 145,
+      "clip_count": 0,
+      "y_violation": 54,
+      "transitions": [
+        [
+          27,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          68,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          100,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2003,
+      "outcome": "충돌",
+      "finish_step": 43,
+      "total_steps": 43,
+      "n_policy_calls": 43,
+      "clip_count": 4,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2004,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 177,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          12,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          181,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          194,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2005,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 173,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          17,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          177,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          189,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2006,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 176,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          26,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          65,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          101,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2007,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 157,
+      "clip_count": 9,
+      "y_violation": 66,
+      "transitions": [
+        [
+          19,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          44,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          99,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2008,
+      "outcome": "충돌",
+      "finish_step": 75,
+      "total_steps": 75,
+      "n_policy_calls": 48,
+      "clip_count": 1,
+      "y_violation": 0,
+      "transitions": [
+        [
+          28,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2009,
+      "outcome": "충돌",
+      "finish_step": 33,
+      "total_steps": 33,
+      "n_policy_calls": 33,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2010,
+      "outcome": "충돌",
+      "finish_step": 39,
+      "total_steps": 39,
+      "n_policy_calls": 39,
+      "clip_count": 3,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2011,
+      "outcome": "충돌",
+      "finish_step": 66,
+      "total_steps": 66,
+      "n_policy_calls": 48,
+      "clip_count": 1,
+      "y_violation": 0,
+      "transitions": [
+        [
+          19,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2012,
+      "outcome": "성공",
+      "finish_step": 108,
+      "total_steps": 128,
+      "n_policy_calls": 99,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          50,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          62,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          108,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2013,
+      "outcome": "충돌",
+      "finish_step": 46,
+      "total_steps": 46,
+      "n_policy_calls": 46,
+      "clip_count": 5,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2014,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 145,
+      "clip_count": 0,
+      "y_violation": 52,
+      "transitions": [
+        [
+          29,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          71,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          102,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2015,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 166,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          4,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          44,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          78,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2016,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 142,
+      "clip_count": 0,
+      "y_violation": 48,
+      "transitions": [
+        [
+          32,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          75,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          105,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2017,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 171,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          30,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2018,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 172,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          3,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          43,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          77,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2019,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 185,
+      "clip_count": 3,
+      "y_violation": 61,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          39,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          58,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2020,
+      "outcome": "성공",
+      "finish_step": 98,
+      "total_steps": 118,
+      "n_policy_calls": 68,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          2,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          30,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          76,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          98,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2021,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 157,
+      "clip_count": 3,
+      "y_violation": 61,
+      "transitions": [
+        [
+          19,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          46,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          97,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2022,
+      "outcome": "충돌",
+      "finish_step": 36,
+      "total_steps": 36,
+      "n_policy_calls": 36,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2023,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 189,
+      "clip_count": 26,
+      "y_violation": 76,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          36,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          56,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2024,
+      "outcome": "충돌",
+      "finish_step": 68,
+      "total_steps": 68,
+      "n_policy_calls": 55,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          14,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2025,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 140,
+      "clip_count": 0,
+      "y_violation": 58,
+      "transitions": [
+        [
+          33,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          60,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          111,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2026,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 189,
+      "clip_count": 24,
+      "y_violation": 73,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          37,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          62,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2027,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 185,
+      "clip_count": 12,
+      "y_violation": 68,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          34,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          50,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2028,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 183,
+      "clip_count": 0,
+      "y_violation": 61,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          47,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          72,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2029,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 153,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          22,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          49,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          100,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2030,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 183,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          48,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          72,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2031,
+      "outcome": "충돌",
+      "finish_step": 44,
+      "total_steps": 44,
+      "n_policy_calls": 44,
+      "clip_count": 1,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2032,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 185,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          5,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          162,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          174,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2033,
+      "outcome": "성공",
+      "finish_step": 111,
+      "total_steps": 131,
+      "n_policy_calls": 106,
+      "clip_count": 2,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          44,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          56,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          111,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2034,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 187,
+      "clip_count": 2,
+      "y_violation": 59,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          36,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          51,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2035,
+      "outcome": "충돌",
+      "finish_step": 33,
+      "total_steps": 33,
+      "n_policy_calls": 33,
+      "clip_count": 1,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2036,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 142,
+      "clip_count": 0,
+      "y_violation": 57,
+      "transitions": [
+        [
+          32,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          70,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          106,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2037,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 142,
+      "clip_count": 0,
+      "y_violation": 57,
+      "transitions": [
+        [
+          28,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          57,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          104,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2038,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 165,
+      "clip_count": 0,
+      "y_violation": 58,
+      "transitions": [
+        [
+          13,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          40,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          87,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2039,
+      "outcome": "충돌",
+      "finish_step": 63,
+      "total_steps": 63,
+      "n_policy_calls": 53,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          11,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2040,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 158,
+      "clip_count": 0,
+      "y_violation": 57,
+      "transitions": [
+        [
+          15,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          48,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          90,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2041,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 176,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          8,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          52,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          83,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2042,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 172,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          6,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          47,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          80,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2043,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 166,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          24,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          183,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          196,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2044,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 176,
+      "clip_count": 0,
+      "y_violation": 57,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          46,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          74,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2045,
+      "outcome": "충돌",
+      "finish_step": 93,
+      "total_steps": 93,
+      "n_policy_calls": 55,
+      "clip_count": 10,
+      "y_violation": 0,
+      "transitions": [
+        [
+          29,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          54,
+          "EVADE_L",
+          "KEEP_L1"
+        ]
+      ]
+    },
+    {
+      "key": 2046,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 188,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          164,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          177,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2047,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 166,
+      "clip_count": 0,
+      "y_violation": 57,
+      "transitions": [
+        [
+          3,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          33,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          77,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2048,
+      "outcome": "성공",
+      "finish_step": 132,
+      "total_steps": 152,
+      "n_policy_calls": 95,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          20,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          67,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          93,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          132,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2049,
+      "outcome": "충돌",
+      "finish_step": 44,
+      "total_steps": 44,
+      "n_policy_calls": 44,
+      "clip_count": 2,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2050,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 149,
+      "clip_count": 0,
+      "y_violation": 58,
+      "transitions": [
+        [
+          24,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          52,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          101,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2051,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 170,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          8,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          47,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          83,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2052,
+      "outcome": "성공",
+      "finish_step": 137,
+      "total_steps": 157,
+      "n_policy_calls": 136,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          57,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          69,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          137,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2053,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 152,
+      "clip_count": 0,
+      "y_violation": 57,
+      "transitions": [
+        [
+          20,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          52,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          95,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2054,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 168,
+      "clip_count": 0,
+      "y_violation": 58,
+      "transitions": [
+        [
+          4,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          44,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          77,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2055,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 172,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          18,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          172,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          184,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2056,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 151,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          24,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          60,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          98,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2057,
+      "outcome": "충돌",
+      "finish_step": 93,
+      "total_steps": 93,
+      "n_policy_calls": 57,
+      "clip_count": 12,
+      "y_violation": 0,
+      "transitions": [
+        [
+          31,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          54,
+          "EVADE_L",
+          "KEEP_L1"
+        ]
+      ]
+    },
+    {
+      "key": 2058,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 177,
+      "clip_count": 10,
+      "y_violation": 59,
+      "transitions": [
+        [
+          9,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          43,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          89,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2059,
+      "outcome": "충돌",
+      "finish_step": 50,
+      "total_steps": 50,
+      "n_policy_calls": 50,
+      "clip_count": 3,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2060,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 143,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          32,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          69,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          107,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2061,
+      "outcome": "충돌",
+      "finish_step": 35,
+      "total_steps": 35,
+      "n_policy_calls": 35,
+      "clip_count": 5,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2062,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 169,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          27,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          195,
+          "EVADE_L",
+          "KEEP_L1"
+        ]
+      ]
+    },
+    {
+      "key": 2063,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 190,
+      "clip_count": 2,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          159,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          171,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2064,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 177,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          13,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          167,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          179,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2065,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 158,
+      "clip_count": 6,
+      "y_violation": 63,
+      "transitions": [
+        [
+          19,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          46,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          98,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2066,
+      "outcome": "충돌",
+      "finish_step": 28,
+      "total_steps": 28,
+      "n_policy_calls": 28,
+      "clip_count": 5,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2067,
+      "outcome": "충돌",
+      "finish_step": 88,
+      "total_steps": 88,
+      "n_policy_calls": 44,
+      "clip_count": 11,
+      "y_violation": 0,
+      "transitions": [
+        [
+          24,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          48,
+          "EVADE_L",
+          "KEEP_L1"
+        ]
+      ]
+    },
+    {
+      "key": 2068,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 152,
+      "clip_count": 0,
+      "y_violation": 57,
+      "transitions": [
+        [
+          21,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          50,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          98,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2069,
+      "outcome": "충돌",
+      "finish_step": 41,
+      "total_steps": 41,
+      "n_policy_calls": 41,
+      "clip_count": 1,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2070,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 189,
+      "clip_count": 2,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          159,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          171,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2071,
+      "outcome": "성공",
+      "finish_step": 141,
+      "total_steps": 161,
+      "n_policy_calls": 95,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          29,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          75,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          102,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          141,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2072,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 183,
+      "clip_count": 0,
+      "y_violation": 61,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          46,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          66,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2073,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 166,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          33,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          198,
+          "EVADE_L",
+          "KEEP_L1"
+        ]
+      ]
+    },
+    {
+      "key": 2074,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 189,
+      "clip_count": 23,
+      "y_violation": 74,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          37,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          61,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2075,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 161,
+      "clip_count": 0,
+      "y_violation": 56,
+      "transitions": [
+        [
+          12,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          45,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          88,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2076,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 188,
+      "clip_count": 2,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          155,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          168,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2077,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 168,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          33,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2078,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 171,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          3,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          38,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          77,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2079,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 172,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          5,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          44,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          79,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2080,
+      "outcome": "성공",
+      "finish_step": 101,
+      "total_steps": 121,
+      "n_policy_calls": 91,
+      "clip_count": 2,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          43,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          55,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          101,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2081,
+      "outcome": "충돌",
+      "finish_step": 45,
+      "total_steps": 45,
+      "n_policy_calls": 45,
+      "clip_count": 3,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2082,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 174,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          46,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          75,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2083,
+      "outcome": "성공",
+      "finish_step": 166,
+      "total_steps": 186,
+      "n_policy_calls": 129,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          32,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          92,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          105,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          166,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2084,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 145,
+      "clip_count": 0,
+      "y_violation": 57,
+      "transitions": [
+        [
+          26,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          57,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          101,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2085,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 163,
+      "clip_count": 0,
+      "y_violation": 60,
+      "transitions": [
+        [
+          10,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          50,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          84,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2086,
+      "outcome": "충돌",
+      "finish_step": 26,
+      "total_steps": 26,
+      "n_policy_calls": 26,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2087,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 188,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          160,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          173,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2088,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 183,
+      "clip_count": 0,
+      "y_violation": 61,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          47,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          66,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2089,
+      "outcome": "충돌",
+      "finish_step": 39,
+      "total_steps": 39,
+      "n_policy_calls": 39,
+      "clip_count": 4,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2090,
+      "outcome": "성공",
+      "finish_step": 116,
+      "total_steps": 136,
+      "n_policy_calls": 93,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          4,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          47,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          77,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ],
+        [
+          116,
+          "RETURN_TO_L2",
+          "KEEP_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2091,
+      "outcome": "충돌",
+      "finish_step": 31,
+      "total_steps": 31,
+      "n_policy_calls": 31,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2092,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 154,
+      "clip_count": 0,
+      "y_violation": 56,
+      "transitions": [
+        [
+          18,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          50,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          93,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2093,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 169,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          32,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2094,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 188,
+      "clip_count": 2,
+      "y_violation": 58,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          38,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          51,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2095,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 148,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          27,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          64,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          102,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2096,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 194,
+      "clip_count": 2,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          51,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          63,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2097,
+      "outcome": "충돌",
+      "finish_step": 27,
+      "total_steps": 27,
+      "n_policy_calls": 27,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ]
+      ]
+    },
+    {
+      "key": 2098,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 189,
+      "clip_count": 0,
+      "y_violation": 0,
+      "transitions": [
+        [
+          1,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          156,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          169,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    },
+    {
+      "key": 2099,
+      "outcome": "타임아웃",
+      "finish_step": null,
+      "total_steps": 200,
+      "n_policy_calls": 168,
+      "clip_count": 0,
+      "y_violation": 59,
+      "transitions": [
+        [
+          8,
+          "KEEP_L2",
+          "EVADE_L"
+        ],
+        [
+          45,
+          "EVADE_L",
+          "KEEP_L1"
+        ],
+        [
+          84,
+          "KEEP_L1",
+          "RETURN_TO_L2"
+        ]
+      ]
+    }
+  ]
+}

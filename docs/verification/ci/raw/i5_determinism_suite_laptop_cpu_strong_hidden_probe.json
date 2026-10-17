@@ -1,0 +1,873 @@
+{
+ "purpose": "CI run #6 비결정 실패 — 전체 suite 반복",
+ "started": "2026-10-13T21:04:40",
+ "host": "DESKTOP-MDCKRJS",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "python": "3.9.12",
+ "cpu_count": 22,
+ "git": "4c0c503797fd5ee6f4f1bf8bf152186a149fd581",
+ "dirty": false,
+ "variant": "none",
+ "hidden_probe": true,
+ "results": [
+  {
+   "load": "cpu_strong",
+   "pc_state_start": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "n_trials": 30,
+   "n_target_failed": 0,
+   "n_any_failed": 2,
+   "seconds": 1970.9,
+   "runs": [
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 66.15s (0:01:06)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 61.55s (0:01:01)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 65.30s (0:01:05)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]",
+        "time_limit_hits": 0
+       }
+      ]
+     },
+     "hidden_time_limit": {
+      "n_hidden": 1,
+      "n_explicit": 1,
+      "tests_with_hidden": {
+       "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]": {
+        "hidden": 1,
+        "outcome": "failed"
+       }
+      },
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]",
+        "hidden": 1,
+        "explicit": 0
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 60.97s (0:01:00)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14039,
+      "n_hits": 2,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "hits": 2,
+        "solve_calls": 3069,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 3,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "explicit": 2,
+        "outcome": "passed"
+       },
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 66.44s (0:01:06)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 1,
+      "n_explicit": 1,
+      "tests_with_hidden": {
+       "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_ir_stuck_overrides_ey_without_stopping": {
+        "hidden": 1,
+        "outcome": "passed"
+       }
+      },
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 68.26s (0:01:08)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 56.85s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 58.68s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 50.22s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 61.37s (0:01:01)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 73.06s (0:01:13)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_eval_offline.py::test_run_record_decouples_inject_and_assumed_sigma"
+     ],
+     "target_failed": false,
+     "diff": [
+      [
+       "154",
+       "1.774249613577001",
+       "1.7742496135775254"
+      ]
+     ],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 3,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "hits": 2,
+        "solve_calls": 3068,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_run_record_decouples_inject_and_assumed_sigma": {
+        "hits": 1,
+        "solve_calls": 354,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_run_record_decouples_inject_and_assumed_sigma",
+        "time_limit_hits": 1
+       }
+      ]
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 4,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "explicit": 2,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_run_record_decouples_inject_and_assumed_sigma": {
+        "explicit": 1,
+        "outcome": "failed"
+       },
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_eval_offline.py::test_run_record_decouples_inject_and_assumed_sigma",
+        "hidden": 0,
+        "explicit": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 59.35s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_channel_scores_cover_all_channels": {
+        "hits": 1,
+        "solve_calls": 118,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 2,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_channel_scores_cover_all_channels": {
+        "explicit": 1,
+        "outcome": "passed"
+       },
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 50.97s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 73.46s (0:01:13)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 46.66s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 55.17s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 45.65s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 51.24s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 51.25s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 50.44s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 56.27s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_p2_override_feeds_controller_the_overridden_value[ey-ir_dropout-None]": {
+        "hits": 1,
+        "solve_calls": 514,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 2,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py::test_p2_override_feeds_controller_the_overridden_value[ey-ir_dropout-None]": {
+        "explicit": 1,
+        "outcome": "passed"
+       },
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 64.29s (0:01:04)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 53.07s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 48.81s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 34.56s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 34.78s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 49.22s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 34.00s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 45.78s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 48.77s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    }
+   ]
+  }
+ ],
+ "finished": "2026-10-13T21:37:38"
+}

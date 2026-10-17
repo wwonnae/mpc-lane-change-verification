@@ -1,0 +1,286 @@
+{
+ "tests": "thesis_v2/anomaly/tests/test_mutation_gaps_closed_loop.py",
+ "deselect_k": null,
+ "tests_sha256": "3c168b02851be3080a1140d2863d583103113580d9f0cb7d86aae31734e92dab",
+ "module": "closed_loop",
+ "started": "2026-10-13T17:39:37",
+ "git": {
+  "commit": "9c165e2969a46b5f570bc550d8dc0739ca2b9b88",
+  "dirty": true
+ },
+ "python": "3.9.12",
+ "criterion3_docstring": {
+  "test_p1_stop_on_first_step_is_detection_stop": true,
+  "test_p1_stop_step_collision_is_classified_as_collision": true,
+  "test_p1_stop_step_departure_is_classified_as_departure": true,
+  "test_p1_stop_step_departure_without_termination_is_detection_stop": true,
+  "test_p2_override_feeds_controller_the_overridden_value": true,
+  "test_unnecessary_stop_normal_episode": true,
+  "test_unnecessary_stop_harmless_fault": true,
+  "test_unnecessary_stop_harmful_fault_boundary": true,
+  "test_unnecessary_stop_requires_detection_stop_outcome": true
+ },
+ "mutants": [
+  {
+   "id": "closed_loop:018",
+   "line": 184,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.15,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p2_override_feeds_controller_the_overridden_value[ey-ir_dropout-None]"
+  },
+  {
+   "id": "closed_loop:021",
+   "line": 187,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.24,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p2_override_feeds_controller_the_overridden_value[rc-right_clear_stuck-False]"
+  },
+  {
+   "id": "closed_loop:024",
+   "line": 190,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.32,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p2_override_feeds_controller_the_overridden_value[lc-left_clear_stuck-False]"
+  },
+  {
+   "id": "closed_loop:028",
+   "line": 198,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed_exception",
+   "seconds": 1.05,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_on_first_step_is_detection_stop[True]"
+  },
+  {
+   "id": "closed_loop:030",
+   "line": 199,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed_exception",
+   "seconds": 1.06,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_on_first_step_is_detection_stop[True]"
+  },
+  {
+   "id": "closed_loop:031",
+   "line": 200,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed_exception",
+   "seconds": 1.05,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_on_first_step_is_detection_stop[True]"
+  },
+  {
+   "id": "closed_loop:032",
+   "line": 201,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed_exception",
+   "seconds": 1.03,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_on_first_step_is_detection_stop[True]"
+  },
+  {
+   "id": "closed_loop:033",
+   "line": 202,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed_exception",
+   "seconds": 1.0,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_on_first_step_is_detection_stop[True]"
+  },
+  {
+   "id": "closed_loop:035",
+   "line": 205,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.04,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_step_collision_is_classified_as_collision"
+  },
+  {
+   "id": "closed_loop:036",
+   "line": 206,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.03,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_step_departure_without_termination_is_detection_stop"
+  },
+  {
+   "id": "closed_loop:037",
+   "line": 206,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.0,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_on_first_step_is_detection_stop[True]"
+  },
+  {
+   "id": "closed_loop:038",
+   "line": 206,
+   "operator": "bool",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.0,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_on_first_step_is_detection_stop[True]"
+  },
+  {
+   "id": "closed_loop:039",
+   "line": 207,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.01,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_p1_stop_step_departure_is_classified_as_departure"
+  },
+  {
+   "id": "closed_loop:048",
+   "line": 348,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed_exception",
+   "seconds": 1.27,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_normal_episode[none]"
+  },
+  {
+   "id": "closed_loop:049",
+   "line": 348,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.27,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_normal_episode[none]"
+  },
+  {
+   "id": "closed_loop:051",
+   "line": 350,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.26,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_normal_episode[none]"
+  },
+  {
+   "id": "closed_loop:052",
+   "line": 352,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.27,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_normal_episode[none]"
+  },
+  {
+   "id": "closed_loop:053",
+   "line": 353,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.29,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmless_fault[ir_dropout]"
+  },
+  {
+   "id": "closed_loop:054",
+   "line": 354,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.27,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmless_fault[ir_dropout]"
+  },
+  {
+   "id": "closed_loop:056",
+   "line": 355,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.29,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmful_fault_boundary[49-before_onset]"
+  },
+  {
+   "id": "closed_loop:057",
+   "line": 355,
+   "operator": "bool",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.28,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmful_fault_boundary[50-None]"
+  },
+  {
+   "id": "closed_loop:059",
+   "line": 355,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.31,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmful_fault_boundary[49-before_onset]"
+  },
+  {
+   "id": "closed_loop:060",
+   "line": 355,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.31,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmful_fault_boundary[50-None]"
+  },
+  {
+   "id": "closed_loop:061",
+   "line": 355,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.27,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmful_fault_boundary[50-None]"
+  },
+  {
+   "id": "closed_loop:062",
+   "line": 356,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.29,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_closed_loop::test_unnecessary_stop_harmful_fault_boundary[49-before_onset]"
+  }
+ ],
+ "criterion1_original": {
+  "status": "pass",
+  "seconds": 1.27
+ },
+ "summary": {
+  "criterion1_pass": true,
+  "criterion3_all": true,
+  "n_targets": 25,
+  "n_killed": 25,
+  "survived": []
+ }
+}

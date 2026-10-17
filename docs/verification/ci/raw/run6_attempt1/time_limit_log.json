@@ -1,0 +1,19 @@
+{
+ "time_limit_sec_config": 0.045,
+ "n_solve_calls": 14038,
+ "n_time_limit_hits": 0,
+ "n_time_limit_hits_altered_config": 1,
+ "tests_with_altered_config_hits": {
+  "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+   "hits": 1,
+   "outcome": "passed"
+  }
+ },
+ "tests_with_hits": {},
+ "failed_tests": [
+  {
+   "test": "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+   "time_limit_hits": 0
+  }
+ ]
+}

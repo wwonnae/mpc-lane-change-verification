@@ -1,0 +1,35 @@
+time: 2026-10-14T16:04:47.1049106+09:00
+host: 3층PC109
+uptime_since: 2026-10-14T16:03:20.5000000+09:00
+cpu_load_percent(3 samples, 2s): 29,58,14
+free_mem_mb: 26160
+top_processes_by_cpu_seconds:
+
+Name                  Id cpu_s ws_mb
+----                  -- ----- -----
+MSPCManager        12688  14.3   266
+chrome             13848   9.9   428
+explorer            7588   6.6   263
+chrome              3056   4.2   223
+Mattermost         12284   3.8   400
+MSPCManagerCore    14936   3.7   154
+sihost              3104   2.8    49
+SearchHost          8844   2.7   148
+MSPCManagerService  5640   2.7   119
+powershell         13584   2.5    83
+Mattermost         14612   2.3   112
+CiscoCollabHost    11980   1.9   211
+
+
+
+power_scheme:
+전원 구성표 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (균형 조정)sleep_standby_idle(AC/DC):
+    현재 AC 전원 설정 색인: 0x00000000
+    현재 DC 전원 설정 색인: 0x00000258
+
+hibernate_idle(AC/DC):
+    현재 AC 전원 설정 색인: 0x00000000
+    현재 DC 전원 설정 색인: 0x00000000
+
+reboot_pending(WindowsUpdate RebootRequired key): False
+reboot_pending(CBS RebootPending key): False

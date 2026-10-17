@@ -1,0 +1,1101 @@
+run,seed,outcome,total_steps,finish_step,onset,duration,first_alarm_step,first_alarm_channel,policy_action,unnecessary_stop
+none,3200,성공,215,195,,,,,,
+none,3201,성공,183,163,,,,,,
+none,3202,성공,191,171,,,,,,
+none,3203,성공,207,187,,,,,,
+none,3204,성공,192,172,,,,,,
+none,3205,성공,198,178,,,,,,
+none,3206,성공,188,168,,,,,,
+none,3207,성공,188,168,,,,,,
+none,3208,성공,206,186,,,,,,
+none,3209,성공,199,179,,,,,,
+none,3210,성공,211,191,,,,,,
+none,3211,성공,210,190,,,,,,
+none,3212,성공,214,194,,,,,,
+none,3213,성공,201,181,,,,,,
+none,3214,성공,206,186,,,,,,
+none,3215,성공,200,180,,,,,,
+none,3216,성공,190,170,,,,,,
+none,3217,성공,191,171,,,,,,
+none,3218,성공,208,188,,,,,,
+none,3219,성공,214,194,,,,,,
+none,3220,성공,188,168,,,,,,
+none,3221,성공,201,181,,,,,,
+none,3222,성공,213,193,,,,,,
+none,3223,성공,215,195,,,,,,
+none,3224,성공,185,165,,,,,,
+none,3225,성공,219,199,,,,,,
+none,3226,성공,196,176,,,,,,
+none,3227,성공,200,180,,,,,,
+none,3228,성공,198,178,,,,,,
+none,3229,성공,206,186,,,,,,
+none,3230,성공,201,181,,,,,,
+none,3231,성공,186,166,,,,,,
+none,3232,성공,192,172,,,,,,
+none,3233,성공,195,175,,,,,,
+none,3234,성공,209,189,,,,,,
+none,3235,성공,197,177,,,,,,
+none,3236,성공,195,175,,,,,,
+none,3237,성공,203,183,,,,,,
+none,3238,성공,184,164,,,,,,
+none,3239,성공,213,193,,,,,,
+none,3240,성공,187,167,,,,,,
+none,3241,성공,204,184,,,,,,
+none,3242,성공,205,185,,,,,,
+none,3243,성공,195,175,,,,,,
+none,3244,성공,211,191,,,,,,
+none,3245,성공,206,186,,,,,,
+none,3246,성공,200,180,,,,,,
+none,3247,성공,211,191,,,,,,
+none,3248,성공,192,172,,,,,,
+none,3249,성공,202,182,,,,,,
+none,3250,성공,204,184,,,,,,
+none,3251,성공,205,185,,,,,,
+none,3252,성공,188,168,,,,,,
+none,3253,성공,194,174,,,,,,
+none,3254,성공,190,170,,,,,,
+none,3255,성공,202,182,,,,,,
+none,3256,성공,184,164,,,,,,
+none,3257,성공,193,173,,,,,,
+none,3258,성공,194,174,,,,,,
+none,3259,성공,197,177,,,,,,
+none,3260,성공,196,176,,,,,,
+none,3261,성공,184,164,,,,,,
+none,3262,성공,211,191,,,,,,
+none,3263,성공,185,165,,,,,,
+none,3264,탐지 정지,208,208,,,208,ey,stop,normal
+none,3265,성공,214,194,,,,,,
+none,3266,성공,200,180,,,,,,
+none,3267,성공,208,188,,,,,,
+none,3268,성공,209,189,,,,,,
+none,3269,성공,215,195,,,,,,
+none,3270,성공,193,173,,,,,,
+none,3271,성공,194,174,,,,,,
+none,3272,성공,208,188,,,,,,
+none,3273,성공,210,190,,,,,,
+none,3274,성공,216,196,,,,,,
+none,3275,성공,190,170,,,,,,
+none,3276,성공,218,198,,,,,,
+none,3277,성공,201,181,,,,,,
+none,3278,성공,206,186,,,,,,
+none,3279,성공,222,202,,,,,,
+none,3280,성공,193,173,,,,,,
+none,3281,성공,181,161,,,,,,
+none,3282,성공,206,186,,,,,,
+none,3283,성공,181,161,,,,,,
+none,3284,성공,217,197,,,,,,
+none,3285,성공,208,188,,,,,,
+none,3286,성공,212,192,,,,,,
+none,3287,성공,211,191,,,,,,
+none,3288,성공,180,160,,,,,,
+none,3289,성공,214,194,,,,,,
+none,3290,성공,213,193,,,,,,
+none,3291,성공,197,177,,,,,,
+none,3292,성공,218,198,,,,,,
+none,3293,성공,189,169,,,,,,
+none,3294,성공,188,168,,,,,,
+none,3295,성공,194,174,,,,,,
+none,3296,성공,205,185,,,,,,
+none,3297,성공,203,183,,,,,,
+none,3298,성공,209,189,,,,,,
+none,3299,성공,206,186,,,,,,
+none_leftobs,3200,SAFE_STOP,106,106,,,,,,
+none_leftobs,3201,SAFE_STOP,75,75,,,,,,
+none_leftobs,3202,SAFE_STOP,85,85,,,,,,
+none_leftobs,3203,SAFE_STOP,103,103,,,,,,
+none_leftobs,3204,SAFE_STOP,92,92,,,,,,
+none_leftobs,3205,SAFE_STOP,95,95,,,,,,
+none_leftobs,3206,SAFE_STOP,78,78,,,,,,
+none_leftobs,3207,SAFE_STOP,78,78,,,,,,
+none_leftobs,3208,SAFE_STOP,104,104,,,,,,
+none_leftobs,3209,SAFE_STOP,93,93,,,,,,
+none_leftobs,3210,SAFE_STOP,106,106,,,,,,
+none_leftobs,3211,SAFE_STOP,101,101,,,,,,
+none_leftobs,3212,SAFE_STOP,108,108,,,,,,
+none_leftobs,3213,SAFE_STOP,102,102,,,,,,
+none_leftobs,3214,SAFE_STOP,99,99,,,,,,
+none_leftobs,3215,SAFE_STOP,94,94,,,,,,
+none_leftobs,3216,SAFE_STOP,86,86,,,,,,
+none_leftobs,3217,SAFE_STOP,87,87,,,,,,
+none_leftobs,3218,SAFE_STOP,99,99,,,,,,
+none_leftobs,3219,SAFE_STOP,107,107,,,,,,
+none_leftobs,3220,SAFE_STOP,83,83,,,,,,
+none_leftobs,3221,SAFE_STOP,93,93,,,,,,
+none_leftobs,3222,SAFE_STOP,104,104,,,,,,
+none_leftobs,3223,SAFE_STOP,108,108,,,,,,
+none_leftobs,3224,SAFE_STOP,80,80,,,,,,
+none_leftobs,3225,SAFE_STOP,111,111,,,,,,
+none_leftobs,3226,SAFE_STOP,86,86,,,,,,
+none_leftobs,3227,SAFE_STOP,87,87,,,,,,
+none_leftobs,3228,SAFE_STOP,87,87,,,,,,
+none_leftobs,3229,SAFE_STOP,99,99,,,,,,
+none_leftobs,3230,SAFE_STOP,91,91,,,,,,
+none_leftobs,3231,SAFE_STOP,79,79,,,,,,
+none_leftobs,3232,SAFE_STOP,85,85,,,,,,
+none_leftobs,3233,SAFE_STOP,86,86,,,,,,
+none_leftobs,3234,SAFE_STOP,102,102,,,,,,
+none_leftobs,3235,SAFE_STOP,91,91,,,,,,
+none_leftobs,3236,SAFE_STOP,82,82,,,,,,
+none_leftobs,3237,SAFE_STOP,95,95,,,,,,
+none_leftobs,3238,SAFE_STOP,80,80,,,,,,
+none_leftobs,3239,SAFE_STOP,107,107,,,,,,
+none_leftobs,3240,SAFE_STOP,84,84,,,,,,
+none_leftobs,3241,SAFE_STOP,93,93,,,,,,
+none_leftobs,3242,SAFE_STOP,97,97,,,,,,
+none_leftobs,3243,SAFE_STOP,91,91,,,,,,
+none_leftobs,3244,SAFE_STOP,103,103,,,,,,
+none_leftobs,3245,SAFE_STOP,100,100,,,,,,
+none_leftobs,3246,SAFE_STOP,113,113,,,,,,
+none_leftobs,3247,SAFE_STOP,102,102,,,,,,
+none_leftobs,3248,SAFE_STOP,86,86,,,,,,
+none_leftobs,3249,SAFE_STOP,96,96,,,,,,
+none_leftobs,3250,SAFE_STOP,94,94,,,,,,
+none_leftobs,3251,SAFE_STOP,104,104,,,,,,
+none_leftobs,3252,SAFE_STOP,81,81,,,,,,
+none_leftobs,3253,SAFE_STOP,88,88,,,,,,
+none_leftobs,3254,SAFE_STOP,80,80,,,,,,
+none_leftobs,3255,SAFE_STOP,91,91,,,,,,
+none_leftobs,3256,SAFE_STOP,78,78,,,,,,
+none_leftobs,3257,SAFE_STOP,84,84,,,,,,
+none_leftobs,3258,SAFE_STOP,89,89,,,,,,
+none_leftobs,3259,SAFE_STOP,88,88,,,,,,
+none_leftobs,3260,SAFE_STOP,85,85,,,,,,
+none_leftobs,3261,SAFE_STOP,78,78,,,,,,
+none_leftobs,3262,SAFE_STOP,101,101,,,,,,
+none_leftobs,3263,SAFE_STOP,80,80,,,,,,
+none_leftobs,3264,SAFE_STOP,116,116,,,,,,
+none_leftobs,3265,SAFE_STOP,108,108,,,,,,
+none_leftobs,3266,SAFE_STOP,94,94,,,,,,
+none_leftobs,3267,SAFE_STOP,101,101,,,,,,
+none_leftobs,3268,SAFE_STOP,105,105,,,,,,
+none_leftobs,3269,SAFE_STOP,115,115,,,,,,
+none_leftobs,3270,SAFE_STOP,87,87,,,,,,
+none_leftobs,3271,SAFE_STOP,89,89,,,,,,
+none_leftobs,3272,SAFE_STOP,100,100,,,,,,
+none_leftobs,3273,SAFE_STOP,99,99,,,,,,
+none_leftobs,3274,SAFE_STOP,107,107,,,,,,
+none_leftobs,3275,SAFE_STOP,80,80,,,,,,
+none_leftobs,3276,SAFE_STOP,114,114,,,,,,
+none_leftobs,3277,SAFE_STOP,96,96,,,,,,
+none_leftobs,3278,SAFE_STOP,96,96,,,,,,
+none_leftobs,3279,SAFE_STOP,113,113,,,,,,
+none_leftobs,3280,SAFE_STOP,84,84,,,,,,
+none_leftobs,3281,SAFE_STOP,77,77,,,,,,
+none_leftobs,3282,SAFE_STOP,95,95,,,,,,
+none_leftobs,3283,SAFE_STOP,74,74,,,,,,
+none_leftobs,3284,SAFE_STOP,111,111,,,,,,
+none_leftobs,3285,SAFE_STOP,98,98,,,,,,
+none_leftobs,3286,SAFE_STOP,102,102,,,,,,
+none_leftobs,3287,SAFE_STOP,98,98,,,,,,
+none_leftobs,3288,SAFE_STOP,79,79,,,,,,
+none_leftobs,3289,SAFE_STOP,107,107,,,,,,
+none_leftobs,3290,SAFE_STOP,100,100,,,,,,
+none_leftobs,3291,SAFE_STOP,86,86,,,,,,
+none_leftobs,3292,SAFE_STOP,110,110,,,,,,
+none_leftobs,3293,SAFE_STOP,85,85,,,,,,
+none_leftobs,3294,SAFE_STOP,80,80,,,,,,
+none_leftobs,3295,SAFE_STOP,90,90,,,,,,
+none_leftobs,3296,SAFE_STOP,96,96,,,,,,
+none_leftobs,3297,SAFE_STOP,95,95,,,,,,
+none_leftobs,3298,SAFE_STOP,100,100,,,,,,
+none_leftobs,3299,SAFE_STOP,103,103,,,,,,
+lidar_freeze,3200,탐지 정지,30,30,23,,30,fg,stop,
+lidar_freeze,3201,탐지 정지,31,31,26,,31,fg,stop,
+lidar_freeze,3202,탐지 정지,23,23,17,,23,fg,stop,
+lidar_freeze,3203,탐지 정지,48,48,41,,48,fg,stop,
+lidar_freeze,3204,탐지 정지,39,39,33,,39,fg,stop,
+lidar_freeze,3205,탐지 정지,43,43,37,,43,fg,stop,
+lidar_freeze,3206,탐지 정지,32,32,25,,32,fg,stop,
+lidar_freeze,3207,탐지 정지,29,29,22,,29,fg,stop,
+lidar_freeze,3208,탐지 정지,39,39,32,,39,fg,stop,
+lidar_freeze,3209,탐지 정지,28,28,21,,28,fg,stop,
+lidar_freeze,3210,탐지 정지,37,37,30,,37,fg,stop,
+lidar_freeze,3211,탐지 정지,30,30,23,,30,fg,stop,
+lidar_freeze,3212,탐지 정지,60,60,53,,60,fg,stop,
+lidar_freeze,3213,탐지 정지,39,39,32,,39,fg,stop,
+lidar_freeze,3214,탐지 정지,28,28,21,,28,fg,stop,
+lidar_freeze,3215,탐지 정지,43,43,36,,43,fg,stop,
+lidar_freeze,3216,탐지 정지,43,43,36,,43,fg,stop,
+lidar_freeze,3217,탐지 정지,39,39,32,,39,fg,stop,
+lidar_freeze,3218,탐지 정지,36,36,29,,36,fg,stop,
+lidar_freeze,3219,탐지 정지,32,32,25,,32,fg,stop,
+lidar_freeze,3220,탐지 정지,23,23,16,,23,fg,stop,
+lidar_freeze,3221,탐지 정지,48,48,42,,48,fg,stop,
+lidar_freeze,3222,탐지 정지,26,26,19,,26,fg,stop,
+lidar_freeze,3223,탐지 정지,44,44,37,,44,fg,stop,
+lidar_freeze,3224,탐지 정지,40,40,33,,40,fg,stop,
+lidar_freeze,3225,탐지 정지,25,25,18,,25,fg,stop,
+lidar_freeze,3226,탐지 정지,34,34,28,,34,fg,stop,
+lidar_freeze,3227,탐지 정지,35,35,28,,35,fg,stop,
+lidar_freeze,3228,탐지 정지,34,34,27,,34,fg,stop,
+lidar_freeze,3229,탐지 정지,29,29,23,,29,fg,stop,
+lidar_freeze,3230,탐지 정지,35,35,28,,35,fg,stop,
+lidar_freeze,3231,탐지 정지,37,37,30,,37,fg,stop,
+lidar_freeze,3232,탐지 정지,22,22,15,,22,fg,stop,
+lidar_freeze,3233,탐지 정지,26,26,20,,26,fg,stop,
+lidar_freeze,3234,탐지 정지,44,44,38,,44,fg,stop,
+lidar_freeze,3235,탐지 정지,44,44,38,,44,fg,stop,
+lidar_freeze,3236,탐지 정지,32,32,25,,32,fg,stop,
+lidar_freeze,3237,탐지 정지,41,41,35,,41,fg,stop,
+lidar_freeze,3238,탐지 정지,38,38,31,,38,fg,stop,
+lidar_freeze,3239,탐지 정지,36,36,29,,36,fg,stop,
+lidar_freeze,3240,탐지 정지,42,42,35,,42,fg,stop,
+lidar_freeze,3241,탐지 정지,23,23,16,,23,fg,stop,
+lidar_freeze,3242,탐지 정지,49,49,42,,49,fg,stop,
+lidar_freeze,3243,탐지 정지,29,29,22,,29,fg,stop,
+lidar_freeze,3244,탐지 정지,31,31,24,,31,fg,stop,
+lidar_freeze,3245,탐지 정지,35,35,29,,35,fg,stop,
+lidar_freeze,3246,탐지 정지,35,35,28,,35,fg,stop,
+lidar_freeze,3247,탐지 정지,49,49,42,,49,fg,stop,
+lidar_freeze,3248,탐지 정지,41,41,34,,41,fg,stop,
+lidar_freeze,3249,탐지 정지,21,21,16,,21,fg,stop,
+lidar_freeze,3250,탐지 정지,34,34,27,,34,fg,stop,
+lidar_freeze,3251,탐지 정지,64,64,57,,64,fg,stop,
+lidar_freeze,3252,탐지 정지,38,38,31,,38,fg,stop,
+lidar_freeze,3253,탐지 정지,35,35,28,,35,fg,stop,
+lidar_freeze,3254,탐지 정지,31,31,25,,31,fg,stop,
+lidar_freeze,3255,탐지 정지,29,29,22,,29,fg,stop,
+lidar_freeze,3256,탐지 정지,23,23,16,,23,fg,stop,
+lidar_freeze,3257,탐지 정지,23,23,16,,23,fg,stop,
+lidar_freeze,3258,탐지 정지,47,47,40,,47,fg,stop,
+lidar_freeze,3259,탐지 정지,35,35,28,,35,fg,stop,
+lidar_freeze,3260,탐지 정지,28,28,21,,28,fg,stop,
+lidar_freeze,3261,탐지 정지,25,25,18,,25,fg,stop,
+lidar_freeze,3262,탐지 정지,24,24,17,,24,fg,stop,
+lidar_freeze,3263,탐지 정지,23,23,16,,23,fg,stop,
+lidar_freeze,3264,탐지 정지,47,47,40,,47,fg,stop,
+lidar_freeze,3265,탐지 정지,64,64,58,,64,fg,stop,
+lidar_freeze,3266,탐지 정지,41,41,34,,41,fg,stop,
+lidar_freeze,3267,탐지 정지,44,44,37,,44,fg,stop,
+lidar_freeze,3268,탐지 정지,40,40,33,,40,fg,stop,
+lidar_freeze,3269,탐지 정지,58,58,51,,58,fg,stop,
+lidar_freeze,3270,탐지 정지,29,29,22,,29,fg,stop,
+lidar_freeze,3271,탐지 정지,38,38,31,,38,fg,stop,
+lidar_freeze,3272,탐지 정지,24,24,17,,24,fg,stop,
+lidar_freeze,3273,탐지 정지,59,59,52,,59,fg,stop,
+lidar_freeze,3274,탐지 정지,34,34,28,,34,fg,stop,
+lidar_freeze,3275,탐지 정지,22,22,15,,22,fg,stop,
+lidar_freeze,3276,탐지 정지,36,36,29,,36,fg,stop,
+lidar_freeze,3277,탐지 정지,25,25,18,,25,fg,stop,
+lidar_freeze,3278,탐지 정지,42,42,35,,42,fg,stop,
+lidar_freeze,3279,탐지 정지,68,68,61,,68,fg,stop,
+lidar_freeze,3280,탐지 정지,38,38,31,,38,fg,stop,
+lidar_freeze,3281,탐지 정지,32,32,25,,32,fg,stop,
+lidar_freeze,3282,탐지 정지,50,50,45,,50,fg,stop,
+lidar_freeze,3283,탐지 정지,30,30,24,,30,fg,stop,
+lidar_freeze,3284,탐지 정지,31,31,24,,31,fg,stop,
+lidar_freeze,3285,탐지 정지,47,47,40,,47,fg,stop,
+lidar_freeze,3286,탐지 정지,62,62,55,,62,fg,stop,
+lidar_freeze,3287,탐지 정지,29,29,22,,29,fg,stop,
+lidar_freeze,3288,탐지 정지,35,35,28,,35,fg,stop,
+lidar_freeze,3289,탐지 정지,50,50,43,,50,fg,stop,
+lidar_freeze,3290,탐지 정지,29,29,22,,29,fg,stop,
+lidar_freeze,3291,탐지 정지,41,41,34,,41,fg,stop,
+lidar_freeze,3292,탐지 정지,37,37,30,,37,fg,stop,
+lidar_freeze,3293,탐지 정지,23,23,16,,23,fg,stop,
+lidar_freeze,3294,탐지 정지,22,22,15,,22,fg,stop,
+lidar_freeze,3295,탐지 정지,50,50,43,,50,fg,stop,
+lidar_freeze,3296,탐지 정지,31,31,24,,31,fg,stop,
+lidar_freeze,3297,탐지 정지,33,33,26,,33,fg,stop,
+lidar_freeze,3298,탐지 정지,34,34,28,,34,fg,stop,
+lidar_freeze,3299,탐지 정지,60,60,53,,60,fg,stop,
+lidar_spike,3200,탐지 정지,63,63,63,3,63,fg,stop,harmless
+lidar_spike,3201,성공,183,163,41,2,,,,
+lidar_spike,3202,탐지 정지,62,62,62,2,62,fg,stop,harmless
+lidar_spike,3203,탐지 정지,43,43,41,3,43,trk,stop,harmless
+lidar_spike,3204,성공,192,172,22,2,,,,
+lidar_spike,3205,탐지 정지,42,42,42,3,42,fg,stop,harmless
+lidar_spike,3206,탐지 정지,23,23,23,3,23,fg,stop,harmless
+lidar_spike,3207,탐지 정지,56,56,56,3,56,fg,stop,harmless
+lidar_spike,3208,성공,206,186,43,2,,,,
+lidar_spike,3209,탐지 정지,43,43,41,3,43,trk,stop,harmless
+lidar_spike,3210,탐지 정지,41,41,41,1,41,fg,stop,harmless
+lidar_spike,3211,성공,210,190,74,1,,,,
+lidar_spike,3212,성공,214,194,20,2,,,,
+lidar_spike,3213,탐지 정지,68,68,68,1,68,fg,stop,harmless
+lidar_spike,3214,탐지 정지,24,24,24,1,24,fg,stop,harmless
+lidar_spike,3215,탐지 정지,48,48,48,2,48,fg,stop,harmless
+lidar_spike,3216,탐지 정지,39,39,39,1,39,fg,stop,harmless
+lidar_spike,3217,탐지 정지,22,22,22,3,22,fg,stop,harmless
+lidar_spike,3218,탐지 정지,58,58,58,2,58,fg,stop,harmless
+lidar_spike,3219,탐지 정지,65,65,63,3,65,trk,stop,harmless
+lidar_spike,3220,탐지 정지,55,55,55,1,55,fg,stop,harmless
+lidar_spike,3221,탐지 정지,30,30,30,2,30,fg,stop,harmless
+lidar_spike,3222,성공,213,193,27,1,,,,
+lidar_spike,3223,성공,215,195,25,2,,,,
+lidar_spike,3224,성공,185,165,26,1,,,,
+lidar_spike,3225,탐지 정지,68,68,68,3,68,fg,stop,harmless
+lidar_spike,3226,성공,196,176,29,2,,,,
+lidar_spike,3227,탐지 정지,34,34,34,2,34,fg,stop,harmless
+lidar_spike,3228,탐지 정지,62,62,60,3,62,trk,stop,harmless
+lidar_spike,3229,탐지 정지,46,46,44,3,46,trk,stop,harmless
+lidar_spike,3230,탐지 정지,25,25,25,2,25,fg,stop,harmless
+lidar_spike,3231,성공,186,166,17,1,,,,
+lidar_spike,3232,탐지 정지,45,45,43,3,45,trk,stop,harmless
+lidar_spike,3233,성공,195,175,54,1,,,,
+lidar_spike,3234,탐지 정지,24,24,24,1,24,fg,stop,harmless
+lidar_spike,3235,탐지 정지,16,16,16,1,16,fg,stop,harmless
+lidar_spike,3236,성공,195,175,46,1,,,,
+lidar_spike,3237,탐지 정지,42,42,40,3,42,trk,stop,harmless
+lidar_spike,3238,탐지 정지,56,56,56,2,56,fg,stop,harmless
+lidar_spike,3239,성공,213,193,27,2,,,,
+lidar_spike,3240,탐지 정지,48,48,46,3,48,trk,stop,harmless
+lidar_spike,3241,탐지 정지,52,52,52,1,52,fg,stop,harmless
+lidar_spike,3242,탐지 정지,68,68,68,3,68,fg,stop,harmless
+lidar_spike,3243,탐지 정지,54,54,54,3,54,fg,stop,harmless
+lidar_spike,3244,탐지 정지,47,47,45,3,47,trk,stop,harmless
+lidar_spike,3245,탐지 정지,33,33,31,3,33,trk,stop,harmless
+lidar_spike,3246,탐지 정지,16,16,16,3,16,fg,stop,harmless
+lidar_spike,3247,성공,211,191,69,1,,,,
+lidar_spike,3248,성공,192,172,55,1,,,,
+lidar_spike,3249,탐지 정지,22,22,22,2,22,fg,stop,harmless
+lidar_spike,3250,성공,204,184,15,1,,,,
+lidar_spike,3251,성공,205,185,41,1,,,,
+lidar_spike,3252,성공,188,168,31,2,,,,
+lidar_spike,3253,탐지 정지,17,17,17,3,17,fg,stop,harmless
+lidar_spike,3254,탐지 정지,37,37,37,3,37,fg,stop,harmless
+lidar_spike,3255,탐지 정지,35,35,33,3,35,trk,stop,harmless
+lidar_spike,3256,탐지 정지,41,41,41,2,41,fg,stop,harmless
+lidar_spike,3257,탐지 정지,22,22,22,2,22,fg,stop,harmless
+lidar_spike,3258,탐지 정지,44,44,44,3,44,fg,stop,harmless
+lidar_spike,3259,성공,197,177,44,1,,,,
+lidar_spike,3260,성공,196,176,40,2,,,,
+lidar_spike,3261,탐지 정지,34,34,34,2,34,fg,stop,harmless
+lidar_spike,3262,성공,211,191,26,2,,,,
+lidar_spike,3263,탐지 정지,21,21,19,3,21,trk,stop,harmless
+lidar_spike,3264,탐지 정지,15,15,15,3,15,fg,stop,harmless
+lidar_spike,3265,성공,214,194,39,1,,,,
+lidar_spike,3266,탐지 정지,20,20,18,3,20,trk,stop,harmless
+lidar_spike,3267,탐지 정지,78,78,78,2,78,fg,stop,harmless
+lidar_spike,3268,성공,209,189,67,2,,,,
+lidar_spike,3269,탐지 정지,39,39,37,3,39,trk,stop,harmless
+lidar_spike,3270,탐지 정지,41,41,41,3,41,fg,stop,harmless
+lidar_spike,3271,탐지 정지,57,57,57,3,57,fg,stop,harmless
+lidar_spike,3272,탐지 정지,69,69,69,2,69,fg,stop,harmless
+lidar_spike,3273,탐지 정지,68,68,66,3,68,trk,stop,harmless
+lidar_spike,3274,탐지 정지,53,53,53,1,53,fg,stop,harmless
+lidar_spike,3275,탐지 정지,15,15,15,3,15,fg,stop,harmless
+lidar_spike,3276,탐지 정지,65,65,65,1,65,fg,stop,harmless
+lidar_spike,3277,탐지 정지,22,22,22,1,22,fg,stop,harmless
+lidar_spike,3278,성공,206,186,25,1,,,,
+lidar_spike,3279,탐지 정지,70,70,70,1,70,fg,stop,harmless
+lidar_spike,3280,성공,193,173,28,2,,,,
+lidar_spike,3281,탐지 정지,33,33,33,2,33,fg,stop,harmless
+lidar_spike,3282,탐지 정지,16,16,16,2,16,fg,stop,harmless
+lidar_spike,3283,탐지 정지,55,55,53,3,55,trk,stop,harmless
+lidar_spike,3284,탐지 정지,42,42,42,2,42,fg,stop,harmless
+lidar_spike,3285,성공,208,188,24,1,,,,
+lidar_spike,3286,탐지 정지,54,54,54,1,54,fg,stop,harmless
+lidar_spike,3287,성공,209,189,58,2,,,,
+lidar_spike,3288,탐지 정지,46,46,44,3,46,trk,stop,harmless
+lidar_spike,3289,성공,214,194,33,1,,,,
+lidar_spike,3290,탐지 정지,79,79,77,3,79,trk,stop,harmless
+lidar_spike,3291,탐지 정지,47,47,47,1,47,fg,stop,harmless
+lidar_spike,3292,탐지 정지,36,36,36,1,36,fg,stop,harmless
+lidar_spike,3293,성공,189,169,32,2,,,,
+lidar_spike,3294,성공,188,168,52,2,,,,
+lidar_spike,3295,탐지 정지,52,52,50,3,52,trk,stop,harmless
+lidar_spike,3296,탐지 정지,27,27,27,3,27,fg,stop,harmless
+lidar_spike,3297,성공,203,183,61,2,,,,
+lidar_spike,3298,탐지 정지,39,39,37,3,39,trk,stop,harmless
+lidar_spike,3299,탐지 정지,69,69,69,2,69,fg,stop,harmless
+lidar_dropout,3200,탐지 정지,57,57,55,27,57,trk,stop,
+lidar_dropout,3201,탐지 정지,30,30,28,33,30,trk,stop,
+lidar_dropout,3202,탐지 정지,38,38,36,52,38,trk,stop,
+lidar_dropout,3203,탐지 정지,51,51,49,22,51,trk,stop,
+lidar_dropout,3204,탐지 정지,38,38,36,32,38,trk,stop,
+lidar_dropout,3205,탐지 정지,48,48,46,56,48,trk,stop,
+lidar_dropout,3206,탐지 정지,33,33,31,28,33,trk,stop,
+lidar_dropout,3207,탐지 정지,29,29,27,53,29,trk,stop,
+lidar_dropout,3208,탐지 정지,51,51,49,36,51,trk,stop,
+lidar_dropout,3209,탐지 정지,46,46,44,52,46,trk,stop,
+lidar_dropout,3210,탐지 정지,56,56,54,24,56,trk,stop,
+lidar_dropout,3211,탐지 정지,53,53,51,38,53,trk,stop,
+lidar_dropout,3212,탐지 정지,61,61,59,24,61,trk,stop,
+lidar_dropout,3213,탐지 정지,55,55,53,27,55,trk,stop,
+lidar_dropout,3214,탐지 정지,53,53,51,21,53,trk,stop,
+lidar_dropout,3215,탐지 정지,46,46,44,39,46,trk,stop,
+lidar_dropout,3216,탐지 정지,38,38,36,21,38,trk,stop,
+lidar_dropout,3217,탐지 정지,39,39,37,52,39,trk,stop,
+lidar_dropout,3218,탐지 정지,53,53,51,57,53,trk,stop,
+lidar_dropout,3219,탐지 정지,56,56,54,52,56,trk,stop,
+lidar_dropout,3220,탐지 정지,35,35,33,21,35,trk,stop,
+lidar_dropout,3221,탐지 정지,44,44,42,39,44,trk,stop,
+lidar_dropout,3222,탐지 정지,57,57,55,53,57,trk,stop,
+lidar_dropout,3223,탐지 정지,63,63,61,24,63,trk,stop,
+lidar_dropout,3224,탐지 정지,33,33,31,45,33,trk,stop,
+lidar_dropout,3225,탐지 정지,64,64,62,35,64,trk,stop,
+lidar_dropout,3226,탐지 정지,37,37,35,46,37,trk,stop,
+lidar_dropout,3227,탐지 정지,37,37,35,55,37,trk,stop,
+lidar_dropout,3228,탐지 정지,38,38,36,46,38,trk,stop,
+lidar_dropout,3229,탐지 정지,50,50,48,37,50,trk,stop,
+lidar_dropout,3230,탐지 정지,45,45,43,33,45,trk,stop,
+lidar_dropout,3231,탐지 정지,35,35,33,34,35,trk,stop,
+lidar_dropout,3232,탐지 정지,33,33,31,36,33,trk,stop,
+lidar_dropout,3233,탐지 정지,41,41,39,39,41,trk,stop,
+lidar_dropout,3234,탐지 정지,55,55,53,37,55,trk,stop,
+lidar_dropout,3235,탐지 정지,35,35,33,48,35,trk,stop,
+lidar_dropout,3236,탐지 정지,37,37,35,44,37,trk,stop,
+lidar_dropout,3237,탐지 정지,49,49,47,44,49,trk,stop,
+lidar_dropout,3238,탐지 정지,30,30,28,26,30,trk,stop,
+lidar_dropout,3239,탐지 정지,58,58,56,35,58,trk,stop,
+lidar_dropout,3240,탐지 정지,35,35,33,56,35,trk,stop,
+lidar_dropout,3241,탐지 정지,46,46,44,41,46,trk,stop,
+lidar_dropout,3242,탐지 정지,52,52,50,31,52,trk,stop,
+lidar_dropout,3243,탐지 정지,34,34,32,52,34,trk,stop,
+lidar_dropout,3244,탐지 정지,55,55,53,54,55,trk,stop,
+lidar_dropout,3245,탐지 정지,54,54,52,40,54,trk,stop,
+lidar_dropout,3246,탐지 정지,60,60,58,49,60,trk,stop,
+lidar_dropout,3247,탐지 정지,54,54,52,39,54,trk,stop,
+lidar_dropout,3248,탐지 정지,39,39,37,47,39,trk,stop,
+lidar_dropout,3249,탐지 정지,50,50,48,44,50,trk,stop,
+lidar_dropout,3250,탐지 정지,49,49,47,21,49,trk,stop,
+lidar_dropout,3251,탐지 정지,54,54,52,42,54,trk,stop,
+lidar_dropout,3252,탐지 정지,32,32,30,32,32,trk,stop,
+lidar_dropout,3253,탐지 정지,40,40,38,46,40,trk,stop,
+lidar_dropout,3254,탐지 정지,32,32,30,35,32,trk,stop,
+lidar_dropout,3255,탐지 정지,43,43,41,56,43,trk,stop,
+lidar_dropout,3256,탐지 정지,30,30,28,37,30,trk,stop,
+lidar_dropout,3257,탐지 정지,39,39,37,44,39,trk,stop,
+lidar_dropout,3258,탐지 정지,40,40,38,42,40,trk,stop,
+lidar_dropout,3259,탐지 정지,41,41,39,30,41,trk,stop,
+lidar_dropout,3260,탐지 정지,41,41,39,26,41,trk,stop,
+lidar_dropout,3261,탐지 정지,31,31,29,57,31,trk,stop,
+lidar_dropout,3262,탐지 정지,54,54,52,20,54,trk,stop,
+lidar_dropout,3263,탐지 정지,30,30,28,60,30,trk,stop,
+lidar_dropout,3264,탐지 정지,63,63,61,56,63,trk,stop,
+lidar_dropout,3265,탐지 정지,58,58,56,20,58,trk,stop,
+lidar_dropout,3266,탐지 정지,47,47,45,40,47,trk,stop,
+lidar_dropout,3267,탐지 정지,52,52,50,31,52,trk,stop,
+lidar_dropout,3268,탐지 정지,57,57,55,41,57,trk,stop,
+lidar_dropout,3269,탐지 정지,64,64,62,45,64,trk,stop,
+lidar_dropout,3270,탐지 정지,33,33,31,51,33,trk,stop,
+lidar_dropout,3271,탐지 정지,40,40,38,36,40,trk,stop,
+lidar_dropout,3272,탐지 정지,51,51,49,59,51,trk,stop,
+lidar_dropout,3273,탐지 정지,49,49,47,22,49,trk,stop,
+lidar_dropout,3274,탐지 정지,64,64,62,41,64,trk,stop,
+lidar_dropout,3275,탐지 정지,30,30,28,58,30,trk,stop,
+lidar_dropout,3276,탐지 정지,65,65,63,49,65,trk,stop,
+lidar_dropout,3277,탐지 정지,46,46,44,33,46,trk,stop,
+lidar_dropout,3278,탐지 정지,47,47,45,25,47,trk,stop,
+lidar_dropout,3279,탐지 정지,67,67,65,50,67,trk,stop,
+lidar_dropout,3280,탐지 정지,36,36,34,22,36,trk,stop,
+lidar_dropout,3281,탐지 정지,28,28,26,48,28,trk,stop,
+lidar_dropout,3282,탐지 정지,49,49,47,24,49,trk,stop,
+lidar_dropout,3283,탐지 정지,26,26,24,23,26,trk,stop,
+lidar_dropout,3284,탐지 정지,61,61,59,51,61,trk,stop,
+lidar_dropout,3285,탐지 정지,54,54,52,59,54,trk,stop,
+lidar_dropout,3286,탐지 정지,55,55,53,41,55,trk,stop,
+lidar_dropout,3287,탐지 정지,53,53,51,34,53,trk,stop,
+lidar_dropout,3288,탐지 정지,33,33,31,36,33,trk,stop,
+lidar_dropout,3289,탐지 정지,59,59,57,33,59,trk,stop,
+lidar_dropout,3290,탐지 정지,51,51,49,41,51,trk,stop,
+lidar_dropout,3291,탐지 정지,42,42,40,55,42,trk,stop,
+lidar_dropout,3292,탐지 정지,63,63,61,26,63,trk,stop,
+lidar_dropout,3293,탐지 정지,34,34,32,53,34,trk,stop,
+lidar_dropout,3294,탐지 정지,32,32,30,48,32,trk,stop,
+lidar_dropout,3295,탐지 정지,41,41,39,31,41,trk,stop,
+lidar_dropout,3296,탐지 정지,47,47,45,43,47,trk,stop,
+lidar_dropout,3297,탐지 정지,49,49,47,30,49,trk,stop,
+lidar_dropout,3298,탐지 정지,51,51,49,32,51,trk,stop,
+lidar_dropout,3299,탐지 정지,53,53,51,58,53,trk,stop,
+ir_stuck,3200,탐지 정지,30,30,29,,30,ey,stop,
+ir_stuck,3201,탐지 정지,27,27,26,,27,ey,stop,
+ir_stuck,3202,탐지 정지,35,35,35,,35,ey,stop,
+ir_stuck,3203,탐지 정지,31,31,30,,31,ey,stop,
+ir_stuck,3204,탐지 정지,30,30,29,,30,ey,stop,
+ir_stuck,3205,탐지 정지,25,25,24,,25,ey,stop,
+ir_stuck,3206,탐지 정지,20,20,19,,20,ey,stop,
+ir_stuck,3207,탐지 정지,26,26,25,,26,ey,stop,
+ir_stuck,3208,탐지 정지,21,21,20,,21,ey,stop,
+ir_stuck,3209,탐지 정지,42,42,42,,42,ey,stop,
+ir_stuck,3210,탐지 정지,58,58,47,,58,ey,stop,
+ir_stuck,3211,탐지 정지,35,35,35,,35,ey,stop,
+ir_stuck,3212,탐지 정지,22,22,21,,22,ey,stop,
+ir_stuck,3213,탐지 정지,44,44,44,,44,ey,stop,
+ir_stuck,3214,탐지 정지,35,35,34,,35,ey,stop,
+ir_stuck,3215,탐지 정지,32,32,32,,32,ey,stop,
+ir_stuck,3216,탐지 정지,32,32,32,,32,ey,stop,
+ir_stuck,3217,탐지 정지,19,19,18,,19,ey,stop,
+ir_stuck,3218,탐지 정지,22,22,21,,22,ey,stop,
+ir_stuck,3219,탐지 정지,39,39,38,,39,ey,stop,
+ir_stuck,3220,탐지 정지,33,33,33,,33,ey,stop,
+ir_stuck,3221,탐지 정지,27,27,27,,27,ey,stop,
+ir_stuck,3222,탐지 정지,26,26,25,,26,ey,stop,
+ir_stuck,3223,탐지 정지,20,20,18,,20,ey,stop,
+ir_stuck,3224,탐지 정지,19,19,19,,19,ey,stop,
+ir_stuck,3225,탐지 정지,35,35,33,,35,ey,stop,
+ir_stuck,3226,탐지 정지,26,26,25,,26,ey,stop,
+ir_stuck,3227,탐지 정지,38,38,38,,38,ey,stop,
+ir_stuck,3228,탐지 정지,26,26,26,,26,ey,stop,
+ir_stuck,3229,탐지 정지,22,22,20,,22,ey,stop,
+ir_stuck,3230,탐지 정지,33,33,31,,33,ey,stop,
+ir_stuck,3231,탐지 정지,17,17,17,,17,ey,stop,
+ir_stuck,3232,탐지 정지,29,29,28,,29,ey,stop,
+ir_stuck,3233,탐지 정지,16,16,15,,16,ey,stop,
+ir_stuck,3234,탐지 정지,58,58,55,,58,ey,stop,
+ir_stuck,3235,탐지 정지,27,27,26,,27,ey,stop,
+ir_stuck,3236,탐지 정지,34,34,32,,34,ey,stop,
+ir_stuck,3237,탐지 정지,35,35,35,,35,ey,stop,
+ir_stuck,3238,탐지 정지,31,31,31,,31,ey,stop,
+ir_stuck,3239,탐지 정지,28,28,27,,28,ey,stop,
+ir_stuck,3240,탐지 정지,30,30,29,,30,ey,stop,
+ir_stuck,3241,탐지 정지,43,43,43,,43,ey,stop,
+ir_stuck,3242,탐지 정지,40,40,40,,40,ey,stop,
+ir_stuck,3243,탐지 정지,30,30,29,,30,ey,stop,
+ir_stuck,3244,탐지 정지,45,45,43,,45,ey,stop,
+ir_stuck,3245,탐지 정지,63,63,35,,63,ey,stop,
+ir_stuck,3246,탐지 정지,114,114,46,,114,ey,stop,
+ir_stuck,3247,탐지 정지,37,37,37,,37,ey,stop,
+ir_stuck,3248,탐지 정지,21,21,20,,21,ey,stop,
+ir_stuck,3249,탐지 정지,30,30,30,,30,ey,stop,
+ir_stuck,3250,탐지 정지,34,34,32,,34,ey,stop,
+ir_stuck,3251,탐지 정지,24,24,20,,24,ey,stop,
+ir_stuck,3252,탐지 정지,18,18,17,,18,ey,stop,
+ir_stuck,3253,탐지 정지,18,18,18,,18,ey,stop,
+ir_stuck,3254,탐지 정지,23,23,22,,23,ey,stop,
+ir_stuck,3255,탐지 정지,19,19,19,,19,ey,stop,
+ir_stuck,3256,탐지 정지,23,23,22,,23,ey,stop,
+ir_stuck,3257,탐지 정지,16,16,15,,16,ey,stop,
+ir_stuck,3258,탐지 정지,15,15,15,,15,ey,stop,
+ir_stuck,3259,탐지 정지,23,23,22,,23,ey,stop,
+ir_stuck,3260,탐지 정지,26,26,25,,26,ey,stop,
+ir_stuck,3261,탐지 정지,21,21,20,,21,ey,stop,
+ir_stuck,3262,탐지 정지,49,49,49,,49,ey,stop,
+ir_stuck,3263,탐지 정지,23,23,22,,23,ey,stop,
+ir_stuck,3264,탐지 정지,58,58,57,,58,ey,stop,
+ir_stuck,3265,탐지 정지,25,25,24,,25,ey,stop,
+ir_stuck,3266,탐지 정지,49,49,48,,49,ey,stop,
+ir_stuck,3267,탐지 정지,46,46,45,,46,ey,stop,
+ir_stuck,3268,탐지 정지,21,21,20,,21,ey,stop,
+ir_stuck,3269,탐지 정지,51,51,50,,51,ey,stop,
+ir_stuck,3270,탐지 정지,33,33,33,,33,ey,stop,
+ir_stuck,3271,탐지 정지,21,21,19,,21,ey,stop,
+ir_stuck,3272,탐지 정지,36,36,36,,36,ey,stop,
+ir_stuck,3273,탐지 정지,52,52,52,,52,ey,stop,
+ir_stuck,3274,탐지 정지,45,45,43,,45,ey,stop,
+ir_stuck,3275,탐지 정지,33,33,28,,33,ey,stop,
+ir_stuck,3276,탐지 정지,33,33,31,,33,ey,stop,
+ir_stuck,3277,탐지 정지,26,26,25,,26,ey,stop,
+ir_stuck,3278,탐지 정지,51,51,49,,51,ey,stop,
+ir_stuck,3279,탐지 정지,48,48,47,,48,ey,stop,
+ir_stuck,3280,탐지 정지,33,33,33,,33,ey,stop,
+ir_stuck,3281,탐지 정지,19,19,17,,19,ey,stop,
+ir_stuck,3282,탐지 정지,48,48,48,,48,ey,stop,
+ir_stuck,3283,탐지 정지,27,27,26,,27,ey,stop,
+ir_stuck,3284,탐지 정지,47,47,47,,47,ey,stop,
+ir_stuck,3285,탐지 정지,37,37,36,,37,ey,stop,
+ir_stuck,3286,탐지 정지,24,24,23,,24,ey,stop,
+ir_stuck,3287,탐지 정지,42,42,42,,42,ey,stop,
+ir_stuck,3288,탐지 정지,26,26,26,,26,ey,stop,
+ir_stuck,3289,탐지 정지,27,27,26,,27,ey,stop,
+ir_stuck,3290,탐지 정지,37,37,37,,37,ey,stop,
+ir_stuck,3291,탐지 정지,25,25,25,,25,ey,stop,
+ir_stuck,3292,탐지 정지,16,16,16,,16,ey,stop,
+ir_stuck,3293,탐지 정지,22,22,21,,22,ey,stop,
+ir_stuck,3294,탐지 정지,17,17,16,,17,ey,stop,
+ir_stuck,3295,탐지 정지,26,26,25,,26,ey,stop,
+ir_stuck,3296,탐지 정지,26,26,25,,26,ey,stop,
+ir_stuck,3297,탐지 정지,36,36,35,,36,ey,stop,
+ir_stuck,3298,탐지 정지,46,46,46,,46,ey,stop,
+ir_stuck,3299,탐지 정지,30,30,30,,30,ey,stop,
+ir_dropout,3200,탐지 정지,42,42,40,,42,ir_miss,stop,harmless
+ir_dropout,3201,탐지 정지,31,31,29,,31,ir_miss,stop,harmless
+ir_dropout,3202,탐지 정지,37,37,35,,37,ir_miss,stop,harmless
+ir_dropout,3203,탐지 정지,21,21,19,,21,ir_miss,stop,harmless
+ir_dropout,3204,탐지 정지,26,26,24,,26,ir_miss,stop,harmless
+ir_dropout,3205,탐지 정지,20,20,18,,20,ir_miss,stop,harmless
+ir_dropout,3206,탐지 정지,34,34,32,,34,ir_miss,stop,harmless
+ir_dropout,3207,탐지 정지,20,20,18,,20,ir_miss,stop,harmless
+ir_dropout,3208,탐지 정지,31,31,29,,31,ir_miss,stop,harmless
+ir_dropout,3209,탐지 정지,26,26,24,,26,ir_miss,stop,harmless
+ir_dropout,3210,탐지 정지,25,25,23,,25,ir_miss,stop,harmless
+ir_dropout,3211,탐지 정지,27,27,25,,27,ir_miss,stop,harmless
+ir_dropout,3212,탐지 정지,35,35,33,,35,ir_miss,stop,harmless
+ir_dropout,3213,탐지 정지,34,34,32,,34,ir_miss,stop,harmless
+ir_dropout,3214,탐지 정지,44,44,42,,44,ir_miss,stop,harmless
+ir_dropout,3215,탐지 정지,29,29,27,,29,ir_miss,stop,harmless
+ir_dropout,3216,탐지 정지,33,33,31,,33,ir_miss,stop,harmless
+ir_dropout,3217,탐지 정지,27,27,25,,27,ir_miss,stop,harmless
+ir_dropout,3218,탐지 정지,37,37,35,,37,ir_miss,stop,harmless
+ir_dropout,3219,탐지 정지,48,48,46,,48,ir_miss,stop,harmless
+ir_dropout,3220,탐지 정지,28,28,26,,28,ir_miss,stop,harmless
+ir_dropout,3221,탐지 정지,18,18,16,,18,ir_miss,stop,harmless
+ir_dropout,3222,탐지 정지,24,24,22,,24,ir_miss,stop,harmless
+ir_dropout,3223,탐지 정지,36,36,34,,36,ir_miss,stop,harmless
+ir_dropout,3224,탐지 정지,33,33,31,,33,ir_miss,stop,harmless
+ir_dropout,3225,탐지 정지,17,17,15,,17,ir_miss,stop,harmless
+ir_dropout,3226,탐지 정지,35,35,33,,35,ir_miss,stop,harmless
+ir_dropout,3227,탐지 정지,25,25,23,,25,ir_miss,stop,harmless
+ir_dropout,3228,탐지 정지,31,31,29,,31,ir_miss,stop,harmless
+ir_dropout,3229,탐지 정지,23,23,21,,23,ir_miss,stop,harmless
+ir_dropout,3230,탐지 정지,19,19,17,,19,ir_miss,stop,harmless
+ir_dropout,3231,탐지 정지,29,29,27,,29,ir_miss,stop,harmless
+ir_dropout,3232,탐지 정지,38,38,36,,38,ir_miss,stop,harmless
+ir_dropout,3233,탐지 정지,24,24,22,,24,ir_miss,stop,harmless
+ir_dropout,3234,탐지 정지,48,48,46,,48,ir_miss,stop,harmless
+ir_dropout,3235,탐지 정지,31,31,29,,31,ir_miss,stop,harmless
+ir_dropout,3236,탐지 정지,34,34,32,,34,ir_miss,stop,harmless
+ir_dropout,3237,탐지 정지,36,36,34,,36,ir_miss,stop,harmless
+ir_dropout,3238,탐지 정지,30,30,28,,30,ir_miss,stop,harmless
+ir_dropout,3239,탐지 정지,41,41,39,,41,ir_miss,stop,harmless
+ir_dropout,3240,탐지 정지,37,37,35,,37,ir_miss,stop,harmless
+ir_dropout,3241,탐지 정지,36,36,34,,36,ir_miss,stop,harmless
+ir_dropout,3242,탐지 정지,53,53,51,,53,ir_miss,stop,harmless
+ir_dropout,3243,탐지 정지,33,33,31,,33,ir_miss,stop,harmless
+ir_dropout,3244,탐지 정지,40,40,38,,40,ir_miss,stop,harmless
+ir_dropout,3245,탐지 정지,40,40,38,,40,ir_miss,stop,harmless
+ir_dropout,3246,탐지 정지,21,21,19,,21,ir_miss,stop,harmless
+ir_dropout,3247,탐지 정지,54,54,52,,54,ir_miss,stop,harmless
+ir_dropout,3248,탐지 정지,18,18,16,,18,ir_miss,stop,harmless
+ir_dropout,3249,탐지 정지,21,21,19,,21,ir_miss,stop,harmless
+ir_dropout,3250,탐지 정지,28,28,26,,28,ir_miss,stop,harmless
+ir_dropout,3251,탐지 정지,53,53,49,,53,ir_miss,stop,harmless
+ir_dropout,3252,탐지 정지,37,37,35,,37,ir_miss,stop,harmless
+ir_dropout,3253,탐지 정지,29,29,27,,29,ir_miss,stop,harmless
+ir_dropout,3254,탐지 정지,21,21,19,,21,ir_miss,stop,harmless
+ir_dropout,3255,탐지 정지,42,42,40,,42,ir_miss,stop,harmless
+ir_dropout,3256,탐지 정지,21,21,19,,21,ir_miss,stop,harmless
+ir_dropout,3257,탐지 정지,28,28,26,,28,ir_miss,stop,harmless
+ir_dropout,3258,탐지 정지,27,27,25,,27,ir_miss,stop,harmless
+ir_dropout,3259,탐지 정지,26,26,24,,26,ir_miss,stop,harmless
+ir_dropout,3260,탐지 정지,33,33,31,,33,ir_miss,stop,harmless
+ir_dropout,3261,탐지 정지,17,17,15,,17,ir_miss,stop,harmless
+ir_dropout,3262,탐지 정지,42,42,40,,42,ir_miss,stop,harmless
+ir_dropout,3263,탐지 정지,21,21,19,,21,ir_miss,stop,harmless
+ir_dropout,3264,탐지 정지,30,30,28,,30,ir_miss,stop,harmless
+ir_dropout,3265,탐지 정지,44,44,42,,44,ir_miss,stop,harmless
+ir_dropout,3266,탐지 정지,31,31,29,,31,ir_miss,stop,harmless
+ir_dropout,3267,탐지 정지,24,24,22,,24,ir_miss,stop,harmless
+ir_dropout,3268,탐지 정지,41,41,39,,41,ir_miss,stop,harmless
+ir_dropout,3269,탐지 정지,48,48,46,,48,ir_miss,stop,harmless
+ir_dropout,3270,탐지 정지,34,34,32,,34,ir_miss,stop,harmless
+ir_dropout,3271,탐지 정지,23,23,21,,23,ir_miss,stop,harmless
+ir_dropout,3272,탐지 정지,26,26,24,,26,ir_miss,stop,harmless
+ir_dropout,3273,탐지 정지,21,21,19,,21,ir_miss,stop,harmless
+ir_dropout,3274,탐지 정지,50,50,48,,50,ir_miss,stop,harmless
+ir_dropout,3275,탐지 정지,30,30,28,,30,ir_miss,stop,harmless
+ir_dropout,3276,탐지 정지,20,20,18,,20,ir_miss,stop,harmless
+ir_dropout,3277,탐지 정지,31,31,29,,31,ir_miss,stop,harmless
+ir_dropout,3278,탐지 정지,47,47,45,,47,ir_miss,stop,harmless
+ir_dropout,3279,탐지 정지,54,54,52,,54,ir_miss,stop,harmless
+ir_dropout,3280,탐지 정지,21,21,19,,21,ir_miss,stop,harmless
+ir_dropout,3281,탐지 정지,20,20,18,,20,ir_miss,stop,harmless
+ir_dropout,3282,탐지 정지,23,23,21,,23,ir_miss,stop,harmless
+ir_dropout,3283,탐지 정지,17,17,15,,17,ir_miss,stop,harmless
+ir_dropout,3284,탐지 정지,27,27,25,,27,ir_miss,stop,harmless
+ir_dropout,3285,탐지 정지,40,40,38,,40,ir_miss,stop,harmless
+ir_dropout,3286,탐지 정지,37,37,35,,37,ir_miss,stop,harmless
+ir_dropout,3287,탐지 정지,49,49,47,,49,ir_miss,stop,harmless
+ir_dropout,3288,탐지 정지,26,26,20,,26,ir_miss,stop,harmless
+ir_dropout,3289,탐지 정지,60,60,58,,60,ir_miss,stop,harmless
+ir_dropout,3290,탐지 정지,27,27,25,,27,ir_miss,stop,harmless
+ir_dropout,3291,탐지 정지,27,27,25,,27,ir_miss,stop,harmless
+ir_dropout,3292,탐지 정지,47,47,45,,47,ir_miss,stop,harmless
+ir_dropout,3293,탐지 정지,30,30,28,,30,ir_miss,stop,harmless
+ir_dropout,3294,탐지 정지,22,22,20,,22,ir_miss,stop,harmless
+ir_dropout,3295,탐지 정지,44,44,42,,44,ir_miss,stop,harmless
+ir_dropout,3296,탐지 정지,36,36,34,,36,ir_miss,stop,harmless
+ir_dropout,3297,탐지 정지,31,31,29,,31,ir_miss,stop,harmless
+ir_dropout,3298,탐지 정지,29,29,27,,29,ir_miss,stop,harmless
+ir_dropout,3299,탐지 정지,51,51,49,,51,ir_miss,stop,harmless
+right_clear_stuck,3200,탐지 정지,77,77,75,,77,rc,stop,harmless
+right_clear_stuck,3201,탐지 정지,46,46,44,,46,rc,stop,harmless
+right_clear_stuck,3202,탐지 정지,53,53,51,,53,rc,stop,harmless
+right_clear_stuck,3203,탐지 정지,67,67,66,,67,rc,stop,harmless
+right_clear_stuck,3204,탐지 정지,48,48,46,,48,rc,stop,harmless
+right_clear_stuck,3205,탐지 정지,57,57,52,,57,rc,stop,harmless
+right_clear_stuck,3206,탐지 정지,45,45,43,,45,rc,stop,harmless
+right_clear_stuck,3207,탐지 정지,44,44,43,,44,rc,stop,harmless
+right_clear_stuck,3208,탐지 정지,62,62,60,,62,rc,stop,harmless
+right_clear_stuck,3209,탐지 정지,55,55,53,,55,rc,stop,harmless
+right_clear_stuck,3210,탐지 정지,66,66,64,,66,rc,stop,harmless
+right_clear_stuck,3211,탐지 정지,72,72,70,,72,rc,stop,harmless
+right_clear_stuck,3212,탐지 정지,70,70,66,,70,rc,stop,harmless
+right_clear_stuck,3213,탐지 정지,65,65,59,,65,rc,stop,harmless
+right_clear_stuck,3214,탐지 정지,62,62,60,,62,rc,stop,harmless
+right_clear_stuck,3215,탐지 정지,57,57,52,,57,rc,stop,harmless
+right_clear_stuck,3216,탐지 정지,47,47,44,,47,rc,stop,harmless
+right_clear_stuck,3217,탐지 정지,54,54,52,,54,rc,stop,harmless
+right_clear_stuck,3218,탐지 정지,65,65,63,,65,rc,stop,harmless
+right_clear_stuck,3219,탐지 정지,72,72,70,,72,rc,stop,harmless
+right_clear_stuck,3220,탐지 정지,51,51,49,,51,rc,stop,harmless
+right_clear_stuck,3221,탐지 정지,58,58,56,,58,rc,stop,harmless
+right_clear_stuck,3222,탐지 정지,75,75,73,,75,rc,stop,harmless
+right_clear_stuck,3223,탐지 정지,74,74,72,,74,rc,stop,harmless
+right_clear_stuck,3224,탐지 정지,45,45,43,,45,rc,stop,harmless
+right_clear_stuck,3225,탐지 정지,79,79,77,,79,rc,stop,harmless
+right_clear_stuck,3226,탐지 정지,50,50,46,,50,rc,stop,harmless
+right_clear_stuck,3227,탐지 정지,50,50,47,,50,rc,stop,harmless
+right_clear_stuck,3228,탐지 정지,52,52,50,,52,rc,stop,harmless
+right_clear_stuck,3229,탐지 정지,66,66,64,,66,rc,stop,harmless
+right_clear_stuck,3230,탐지 정지,60,60,58,,60,rc,stop,harmless
+right_clear_stuck,3231,탐지 정지,43,43,40,,43,rc,stop,harmless
+right_clear_stuck,3232,탐지 정지,46,46,44,,46,rc,stop,harmless
+right_clear_stuck,3233,탐지 정지,51,51,49,,51,rc,stop,harmless
+right_clear_stuck,3234,탐지 정지,72,72,70,,72,rc,stop,harmless
+right_clear_stuck,3235,탐지 정지,48,48,45,,48,rc,stop,harmless
+right_clear_stuck,3236,탐지 정지,48,48,46,,48,rc,stop,harmless
+right_clear_stuck,3237,탐지 정지,59,59,55,,59,rc,stop,harmless
+right_clear_stuck,3238,탐지 정지,42,42,37,,42,rc,stop,harmless
+right_clear_stuck,3239,탐지 정지,71,71,67,,71,rc,stop,harmless
+right_clear_stuck,3240,탐지 정지,52,52,50,,52,rc,stop,harmless
+right_clear_stuck,3241,탐지 정지,63,63,61,,63,rc,stop,harmless
+right_clear_stuck,3242,탐지 정지,62,62,60,,62,rc,stop,harmless
+right_clear_stuck,3243,탐지 정지,47,47,45,,47,rc,stop,harmless
+right_clear_stuck,3244,탐지 정지,66,66,63,,66,rc,stop,harmless
+right_clear_stuck,3245,탐지 정지,63,63,59,,63,rc,stop,harmless
+right_clear_stuck,3246,탐지 정지,71,71,69,,71,rc,stop,harmless
+right_clear_stuck,3247,탐지 정지,66,66,62,,66,rc,stop,harmless
+right_clear_stuck,3248,탐지 정지,48,48,45,,48,rc,stop,harmless
+right_clear_stuck,3249,탐지 정지,60,60,54,,60,rc,stop,harmless
+right_clear_stuck,3250,탐지 정지,59,59,57,,59,rc,stop,harmless
+right_clear_stuck,3251,탐지 정지,68,68,66,,68,rc,stop,harmless
+right_clear_stuck,3252,탐지 정지,48,48,46,,48,rc,stop,harmless
+right_clear_stuck,3253,탐지 정지,50,50,47,,50,rc,stop,harmless
+right_clear_stuck,3254,탐지 정지,47,47,45,,47,rc,stop,harmless
+right_clear_stuck,3255,탐지 정지,60,60,58,,60,rc,stop,harmless
+right_clear_stuck,3256,탐지 정지,40,40,35,,40,rc,stop,harmless
+right_clear_stuck,3257,탐지 정지,49,49,47,,49,rc,stop,harmless
+right_clear_stuck,3258,탐지 정지,50,50,46,,50,rc,stop,harmless
+right_clear_stuck,3259,탐지 정지,55,55,53,,55,rc,stop,harmless
+right_clear_stuck,3260,탐지 정지,49,49,47,,49,rc,stop,harmless
+right_clear_stuck,3261,탐지 정지,48,48,46,,48,rc,stop,harmless
+right_clear_stuck,3262,탐지 정지,66,66,61,,66,rc,stop,harmless
+right_clear_stuck,3263,탐지 정지,42,42,38,,42,rc,stop,harmless
+right_clear_stuck,3264,탐지 정지,80,80,78,,80,rc,stop,harmless
+right_clear_stuck,3265,탐지 정지,71,71,67,,71,rc,stop,harmless
+right_clear_stuck,3266,탐지 정지,64,64,62,,64,rc,stop,harmless
+right_clear_stuck,3267,탐지 정지,64,64,61,,64,rc,stop,harmless
+right_clear_stuck,3268,탐지 정지,66,66,64,,66,rc,stop,harmless
+right_clear_stuck,3269,탐지 정지,77,77,74,,77,rc,stop,harmless
+right_clear_stuck,3270,탐지 정지,44,44,41,,44,rc,stop,harmless
+right_clear_stuck,3271,탐지 정지,52,52,47,,52,rc,stop,harmless
+right_clear_stuck,3272,탐지 정지,67,67,65,,67,rc,stop,harmless
+right_clear_stuck,3273,탐지 정지,62,62,60,,62,rc,stop,harmless
+right_clear_stuck,3274,탐지 정지,79,79,77,,79,rc,stop,harmless
+right_clear_stuck,3275,탐지 정지,42,42,37,,42,rc,stop,harmless
+right_clear_stuck,3276,탐지 정지,82,82,80,,82,rc,stop,harmless
+right_clear_stuck,3277,탐지 정지,60,60,58,,60,rc,stop,harmless
+right_clear_stuck,3278,탐지 정지,60,60,56,,60,rc,stop,harmless
+right_clear_stuck,3279,탐지 정지,77,77,72,,77,rc,stop,harmless
+right_clear_stuck,3280,탐지 정지,53,53,51,,53,rc,stop,harmless
+right_clear_stuck,3281,탐지 정지,39,39,37,,39,rc,stop,harmless
+right_clear_stuck,3282,탐지 정지,58,58,53,,58,rc,stop,harmless
+right_clear_stuck,3283,탐지 정지,38,38,36,,38,rc,stop,harmless
+right_clear_stuck,3284,탐지 정지,76,76,74,,76,rc,stop,harmless
+right_clear_stuck,3285,탐지 정지,66,66,64,,66,rc,stop,harmless
+right_clear_stuck,3286,탐지 정지,66,66,64,,66,rc,stop,harmless
+right_clear_stuck,3287,탐지 정지,62,62,59,,62,rc,stop,harmless
+right_clear_stuck,3288,탐지 정지,44,44,42,,44,rc,stop,harmless
+right_clear_stuck,3289,탐지 정지,70,70,66,,70,rc,stop,harmless
+right_clear_stuck,3290,탐지 정지,67,67,65,,67,rc,stop,harmless
+right_clear_stuck,3291,탐지 정지,54,54,52,,54,rc,stop,harmless
+right_clear_stuck,3292,탐지 정지,77,77,76,,77,rc,stop,harmless
+right_clear_stuck,3293,탐지 정지,49,49,47,,49,rc,stop,harmless
+right_clear_stuck,3294,탐지 정지,43,43,38,,43,rc,stop,harmless
+right_clear_stuck,3295,탐지 정지,54,54,49,,54,rc,stop,harmless
+right_clear_stuck,3296,탐지 정지,60,60,56,,60,rc,stop,harmless
+right_clear_stuck,3297,탐지 정지,59,59,54,,59,rc,stop,harmless
+right_clear_stuck,3298,탐지 정지,64,64,61,,64,rc,stop,harmless
+right_clear_stuck,3299,탐지 정지,65,65,63,,65,rc,stop,harmless
+steer_delay,3200,탐지 정지,67,67,57,,67,psi,stop,
+steer_delay,3201,탐지 정지,36,36,28,,36,psi,stop,
+steer_delay,3202,탐지 정지,23,23,20,,23,psi,stop,
+steer_delay,3203,탐지 정지,34,34,31,,34,psi,stop,
+steer_delay,3204,탐지 정지,43,43,16,,43,psi,stop,
+steer_delay,3205,탐지 정지,40,40,37,,40,psi,stop,
+steer_delay,3206,탐지 정지,23,23,21,,23,psi,stop,
+steer_delay,3207,탐지 정지,35,35,26,,35,psi,stop,
+steer_delay,3208,탐지 정지,56,56,44,,56,psi,stop,
+steer_delay,3209,탐지 정지,36,36,29,,36,psi,stop,
+steer_delay,3210,탐지 정지,44,44,41,,44,psi,stop,
+steer_delay,3211,탐지 정지,36,36,32,,36,psi,stop,
+steer_delay,3212,탐지 정지,67,67,28,,67,psi,stop,
+steer_delay,3213,탐지 정지,24,24,23,,24,psi,stop,
+steer_delay,3214,탐지 정지,57,57,30,,57,psi,stop,
+steer_delay,3215,탐지 정지,23,23,21,,23,psi,stop,
+steer_delay,3216,탐지 정지,29,29,27,,29,psi,stop,
+steer_delay,3217,탐지 정지,32,32,25,,32,psi,stop,
+steer_delay,3218,탐지 정지,35,35,27,,35,psi,stop,
+steer_delay,3219,탐지 정지,66,66,24,,66,psi,stop,
+steer_delay,3220,탐지 정지,25,25,23,,25,psi,stop,
+steer_delay,3221,탐지 정지,41,41,38,,41,psi,stop,
+steer_delay,3222,탐지 정지,61,61,55,,61,psi,stop,
+steer_delay,3223,탐지 정지,24,24,17,,24,psi,stop,
+steer_delay,3224,탐지 정지,35,35,30,,35,psi,stop,
+steer_delay,3225,탐지 정지,65,65,45,,65,psi,stop,
+steer_delay,3226,탐지 정지,32,32,20,,32,psi,stop,
+steer_delay,3227,탐지 정지,22,22,20,,22,psi,stop,
+steer_delay,3228,탐지 정지,41,41,37,,41,psi,stop,
+steer_delay,3229,탐지 정지,53,53,48,,53,psi,stop,
+steer_delay,3230,탐지 정지,51,51,38,,51,psi,stop,
+steer_delay,3231,탐지 정지,23,23,19,,23,psi,stop,
+steer_delay,3232,탐지 정지,22,22,19,,22,psi,stop,
+steer_delay,3233,탐지 정지,47,47,24,,47,psi,stop,
+steer_delay,3234,탐지 정지,56,56,44,,56,psi,stop,
+steer_delay,3235,탐지 정지,20,20,18,,20,psi,stop,
+steer_delay,3236,탐지 정지,27,27,25,,27,psi,stop,
+steer_delay,3237,탐지 정지,38,38,21,,38,psi,stop,
+steer_delay,3238,탐지 정지,33,33,30,,33,psi,stop,
+steer_delay,3239,탐지 정지,65,65,55,,65,psi,stop,
+steer_delay,3240,탐지 정지,31,31,23,,31,psi,stop,
+steer_delay,3241,탐지 정지,54,54,42,,54,psi,stop,
+steer_delay,3242,탐지 정지,55,55,48,,55,psi,stop,
+steer_delay,3243,탐지 정지,36,36,31,,36,psi,stop,
+steer_delay,3244,탐지 정지,42,42,33,,42,psi,stop,
+steer_delay,3245,탐지 정지,25,25,23,,25,psi,stop,
+steer_delay,3246,탐지 정지,37,37,34,,37,psi,stop,
+steer_delay,3247,탐지 정지,59,59,46,,59,psi,stop,
+steer_delay,3248,탐지 정지,45,45,17,,45,psi,stop,
+steer_delay,3249,탐지 정지,19,19,17,,19,psi,stop,
+steer_delay,3250,탐지 정지,33,33,26,,33,psi,stop,
+steer_delay,3251,탐지 정지,54,54,53,,54,psi,stop,
+steer_delay,3252,탐지 정지,33,33,29,,33,psi,stop,
+steer_delay,3253,탐지 정지,36,36,32,,36,psi,stop,
+steer_delay,3254,탐지 정지,41,41,34,,41,psi,stop,
+steer_delay,3255,탐지 정지,33,33,31,,33,psi,stop,
+steer_delay,3256,탐지 정지,37,37,18,,37,psi,stop,
+steer_delay,3257,탐지 정지,45,45,15,,45,psi,stop,
+steer_delay,3258,탐지 정지,21,21,19,,21,psi,stop,
+steer_delay,3259,탐지 정지,40,40,21,,40,psi,stop,
+steer_delay,3260,탐지 정지,35,35,33,,35,psi,stop,
+steer_delay,3261,탐지 정지,35,35,31,,35,psi,stop,
+steer_delay,3262,탐지 정지,63,63,49,,63,psi,stop,
+steer_delay,3263,탐지 정지,33,33,31,,33,psi,stop,
+steer_delay,3264,탐지 정지,58,58,47,,58,psi,stop,
+steer_delay,3265,탐지 정지,37,37,24,,37,psi,stop,
+steer_delay,3266,탐지 정지,43,43,33,,43,psi,stop,
+steer_delay,3267,탐지 정지,61,61,17,,61,psi,stop,
+steer_delay,3268,탐지 정지,58,58,42,,58,psi,stop,
+steer_delay,3269,탐지 정지,74,74,52,,74,psi,stop,
+steer_delay,3270,탐지 정지,25,25,21,,25,psi,stop,
+steer_delay,3271,탐지 정지,27,27,25,,27,psi,stop,
+steer_delay,3272,탐지 정지,23,23,17,,23,psi,stop,
+steer_delay,3273,탐지 정지,29,29,26,,29,psi,stop,
+steer_delay,3274,탐지 정지,69,69,50,,69,psi,stop,
+steer_delay,3275,탐지 정지,34,34,26,,34,psi,stop,
+steer_delay,3276,탐지 정지,22,22,18,,22,psi,stop,
+steer_delay,3277,탐지 정지,35,35,33,,35,psi,stop,
+steer_delay,3278,탐지 정지,32,32,29,,32,psi,stop,
+steer_delay,3279,탐지 정지,51,51,27,,51,psi,stop,
+steer_delay,3280,탐지 정지,44,44,36,,44,psi,stop,
+steer_delay,3281,탐지 정지,26,26,23,,26,psi,stop,
+steer_delay,3282,탐지 정지,29,29,28,,29,psi,stop,
+steer_delay,3283,탐지 정지,33,33,28,,33,psi,stop,
+steer_delay,3284,탐지 정지,71,71,51,,71,psi,stop,
+steer_delay,3285,탐지 정지,59,59,41,,59,psi,stop,
+steer_delay,3286,탐지 정지,50,50,44,,50,psi,stop,
+steer_delay,3287,탐지 정지,34,34,26,,34,psi,stop,
+steer_delay,3288,탐지 정지,26,26,22,,26,psi,stop,
+steer_delay,3289,탐지 정지,66,66,39,,66,psi,stop,
+steer_delay,3290,탐지 정지,25,25,22,,25,psi,stop,
+steer_delay,3291,탐지 정지,24,24,17,,24,psi,stop,
+steer_delay,3292,탐지 정지,42,42,40,,42,psi,stop,
+steer_delay,3293,탐지 정지,33,33,30,,33,psi,stop,
+steer_delay,3294,탐지 정지,41,41,25,,41,psi,stop,
+steer_delay,3295,탐지 정지,51,51,43,,51,psi,stop,
+steer_delay,3296,탐지 정지,57,57,48,,57,psi,stop,
+steer_delay,3297,탐지 정지,56,56,23,,56,psi,stop,
+steer_delay,3298,탐지 정지,42,42,23,,42,psi,stop,
+steer_delay,3299,탐지 정지,44,44,42,,44,psi,stop,
+steer_stuck,3200,탐지 정지,74,74,72,15,74,psi,stop,
+steer_stuck,3201,탐지 정지,44,44,42,16,44,psi,stop,
+steer_stuck,3202,탐지 정지,53,53,52,19,53,psi,stop,
+steer_stuck,3203,탐지 정지,61,61,59,24,61,psi,stop,
+steer_stuck,3204,탐지 정지,47,47,45,15,47,psi,stop,
+steer_stuck,3205,탐지 정지,53,53,52,25,53,psi,stop,
+steer_stuck,3206,탐지 정지,43,43,42,19,43,psi,stop,
+steer_stuck,3207,탐지 정지,39,39,38,24,39,psi,stop,
+steer_stuck,3208,탐지 정지,65,65,63,15,65,psi,stop,
+steer_stuck,3209,탐지 정지,53,53,52,22,53,psi,stop,
+steer_stuck,3210,탐지 정지,68,68,65,14,68,psi,stop,
+steer_stuck,3211,탐지 정지,67,67,66,14,67,psi,stop,
+steer_stuck,3212,탐지 정지,77,77,75,25,77,psi,stop,
+steer_stuck,3213,탐지 정지,69,69,67,18,69,psi,stop,
+steer_stuck,3214,탐지 정지,66,66,64,28,66,psi,stop,
+steer_stuck,3215,탐지 정지,57,57,56,17,57,psi,stop,
+steer_stuck,3216,탐지 정지,50,50,47,29,50,psi,stop,
+steer_stuck,3217,탐지 정지,48,48,45,15,48,psi,stop,
+steer_stuck,3218,탐지 정지,67,67,65,16,67,psi,stop,
+steer_stuck,3219,탐지 정지,77,77,74,15,77,psi,stop,
+steer_stuck,3220,탐지 정지,48,48,46,13,48,psi,stop,
+steer_stuck,3221,탐지 정지,55,55,53,26,55,psi,stop,
+steer_stuck,3222,탐지 정지,71,71,70,16,71,psi,stop,
+steer_stuck,3223,탐지 정지,71,71,69,30,71,psi,stop,
+steer_stuck,3224,탐지 정지,43,43,42,23,43,psi,stop,
+steer_stuck,3225,탐지 정지,75,75,72,21,75,psi,stop,
+steer_stuck,3226,탐지 정지,56,56,54,23,56,psi,stop,
+steer_stuck,3227,탐지 정지,47,47,45,11,47,psi,stop,
+steer_stuck,3228,탐지 정지,55,55,52,24,55,psi,stop,
+steer_stuck,3229,탐지 정지,65,65,64,15,65,psi,stop,
+steer_stuck,3230,탐지 정지,57,57,56,14,57,psi,stop,
+steer_stuck,3231,탐지 정지,46,46,45,22,46,psi,stop,
+steer_stuck,3232,탐지 정지,47,47,46,23,47,psi,stop,
+steer_stuck,3233,탐지 정지,52,52,51,21,52,psi,stop,
+steer_stuck,3234,탐지 정지,65,65,64,22,65,psi,stop,
+steer_stuck,3235,탐지 정지,51,51,49,23,51,psi,stop,
+steer_stuck,3236,탐지 정지,49,49,47,21,49,psi,stop,
+steer_stuck,3237,탐지 정지,56,56,55,19,56,psi,stop,
+steer_stuck,3238,탐지 정지,43,43,40,15,43,psi,stop,
+steer_stuck,3239,탐지 정지,77,77,75,13,77,psi,stop,
+steer_stuck,3240,탐지 정지,47,47,45,23,47,psi,stop,
+steer_stuck,3241,탐지 정지,60,60,59,30,60,psi,stop,
+steer_stuck,3242,탐지 정지,64,64,63,10,64,psi,stop,
+steer_stuck,3243,탐지 정지,50,50,48,18,50,psi,stop,
+steer_stuck,3244,탐지 정지,64,64,63,27,64,psi,stop,
+steer_stuck,3245,탐지 정지,67,67,65,14,67,psi,stop,
+steer_stuck,3246,탐지 정지,72,72,71,16,72,psi,stop,
+steer_stuck,3247,탐지 정지,68,68,67,30,68,psi,stop,
+steer_stuck,3248,탐지 정지,49,49,47,16,49,psi,stop,
+steer_stuck,3249,탐지 정지,66,66,64,18,66,psi,stop,
+steer_stuck,3250,탐지 정지,62,62,60,11,62,psi,stop,
+steer_stuck,3251,탐지 정지,67,67,66,29,67,psi,stop,
+steer_stuck,3252,탐지 정지,47,47,46,18,47,psi,stop,
+steer_stuck,3253,탐지 정지,56,56,54,28,56,psi,stop,
+steer_stuck,3254,탐지 정지,41,41,39,13,41,psi,stop,
+steer_stuck,3255,탐지 정지,54,54,53,24,54,psi,stop,
+steer_stuck,3256,탐지 정지,38,38,37,24,38,psi,stop,
+steer_stuck,3257,탐지 정지,55,55,53,23,55,psi,stop,
+steer_stuck,3258,탐지 정지,52,52,50,26,52,psi,stop,
+steer_stuck,3259,탐지 정지,57,57,55,25,57,psi,stop,
+steer_stuck,3260,탐지 정지,53,53,51,27,53,psi,stop,
+steer_stuck,3261,탐지 정지,40,40,39,12,40,psi,stop,
+steer_stuck,3262,탐지 정지,68,68,65,15,68,psi,stop,
+steer_stuck,3263,탐지 정지,38,38,37,11,38,psi,stop,
+steer_stuck,3264,탐지 정지,71,71,70,30,71,psi,stop,
+steer_stuck,3265,탐지 정지,76,76,75,22,76,psi,stop,
+steer_stuck,3266,탐지 정지,62,62,57,13,62,psi,stop,
+steer_stuck,3267,탐지 정지,67,67,66,24,67,psi,stop,
+steer_stuck,3268,탐지 정지,64,64,63,21,64,psi,stop,
+steer_stuck,3269,탐지 정지,78,78,76,29,78,psi,stop,
+steer_stuck,3270,탐지 정지,44,44,43,27,44,psi,stop,
+steer_stuck,3271,탐지 정지,50,50,49,11,50,psi,stop,
+steer_stuck,3272,탐지 정지,71,71,68,19,71,psi,stop,
+steer_stuck,3273,탐지 정지,63,63,62,10,63,psi,stop,
+steer_stuck,3274,탐지 정지,78,78,76,20,78,psi,stop,
+steer_stuck,3275,탐지 정지,45,45,43,22,45,psi,stop,
+steer_stuck,3276,탐지 정지,80,80,79,28,80,psi,stop,
+steer_stuck,3277,탐지 정지,61,61,59,20,61,psi,stop,
+steer_stuck,3278,탐지 정지,66,66,64,28,66,psi,stop,
+steer_stuck,3279,탐지 정지,74,74,72,26,74,psi,stop,
+steer_stuck,3280,탐지 정지,51,51,49,12,51,psi,stop,
+steer_stuck,3281,탐지 정지,36,36,35,14,36,psi,stop,
+steer_stuck,3282,탐지 정지,59,59,58,21,59,psi,stop,
+steer_stuck,3283,탐지 정지,41,41,39,20,41,psi,stop,
+steer_stuck,3284,탐지 정지,80,80,77,15,80,psi,stop,
+steer_stuck,3285,탐지 정지,68,68,66,16,68,psi,stop,
+steer_stuck,3286,탐지 정지,68,68,67,30,68,psi,stop,
+steer_stuck,3287,탐지 정지,60,60,59,23,60,psi,stop,
+steer_stuck,3288,탐지 정지,49,49,46,21,49,psi,stop,
+steer_stuck,3289,탐지 정지,76,76,74,19,76,psi,stop,
+steer_stuck,3290,탐지 정지,66,66,65,24,66,psi,stop,
+steer_stuck,3291,탐지 정지,50,50,49,24,50,psi,stop,
+steer_stuck,3292,탐지 정지,74,74,72,12,74,psi,stop,
+steer_stuck,3293,탐지 정지,46,46,44,13,46,psi,stop,
+steer_stuck,3294,탐지 정지,45,45,44,25,45,psi,stop,
+steer_stuck,3295,탐지 정지,56,56,55,15,56,psi,stop,
+steer_stuck,3296,탐지 정지,59,59,58,12,59,psi,stop,
+steer_stuck,3297,탐지 정지,60,60,59,26,60,psi,stop,
+steer_stuck,3298,탐지 정지,62,62,61,24,62,psi,stop,
+steer_stuck,3299,탐지 정지,66,66,65,14,66,psi,stop,
+left_clear_stuck,3200,탐지 정지,99,99,56,,99,lc,stop,
+left_clear_stuck,3201,탐지 정지,69,69,26,,69,lc,stop,
+left_clear_stuck,3202,탐지 정지,86,86,17,,86,lc,stop,
+left_clear_stuck,3203,탐지 정지,93,93,25,,93,lc,stop,
+left_clear_stuck,3204,탐지 정지,76,76,34,,76,lc,stop,
+left_clear_stuck,3205,탐지 정지,92,92,18,,92,lc,stop,
+left_clear_stuck,3206,탐지 정지,68,68,26,,68,lc,stop,
+left_clear_stuck,3207,탐지 정지,67,67,20,,67,lc,stop,
+left_clear_stuck,3208,탐지 정지,88,88,47,,88,lc,stop,
+left_clear_stuck,3209,탐지 정지,83,83,36,,83,lc,stop,
+left_clear_stuck,3210,탐지 정지,96,96,26,,96,lc,stop,
+left_clear_stuck,3211,탐지 정지,94,94,21,,94,lc,stop,
+left_clear_stuck,3212,탐지 정지,100,100,54,,100,lc,stop,
+left_clear_stuck,3213,탐지 정지,101,101,46,,101,lc,stop,
+left_clear_stuck,3214,탐지 정지,90,90,27,,90,lc,stop,
+left_clear_stuck,3215,탐지 정지,89,89,21,,89,lc,stop,
+left_clear_stuck,3216,탐지 정지,85,85,18,,85,lc,stop,
+left_clear_stuck,3217,탐지 정지,81,81,17,,81,lc,stop,
+left_clear_stuck,3218,탐지 정지,91,91,35,,91,lc,stop,
+left_clear_stuck,3219,탐지 정지,97,97,41,,97,lc,stop,
+left_clear_stuck,3220,탐지 정지,81,81,35,,81,lc,stop,
+left_clear_stuck,3221,탐지 정지,83,83,45,,83,lc,stop,
+left_clear_stuck,3222,탐지 정지,100,100,16,,100,lc,stop,
+left_clear_stuck,3223,탐지 정지,102,102,41,,102,lc,stop,
+left_clear_stuck,3224,탐지 정지,76,76,20,,76,lc,stop,
+left_clear_stuck,3225,탐지 정지,104,104,15,,104,lc,stop,
+left_clear_stuck,3226,탐지 정지,77,77,21,,77,lc,stop,
+left_clear_stuck,3227,탐지 정지,71,71,19,,71,lc,stop,
+left_clear_stuck,3228,탐지 정지,68,68,23,,68,lc,stop,
+left_clear_stuck,3229,탐지 정지,95,95,40,,95,lc,stop,
+left_clear_stuck,3230,탐지 정지,80,80,33,,80,lc,stop,
+left_clear_stuck,3231,탐지 정지,78,78,15,,78,lc,stop,
+left_clear_stuck,3232,탐지 정지,73,73,17,,73,lc,stop,
+left_clear_stuck,3233,탐지 정지,79,79,25,,79,lc,stop,
+left_clear_stuck,3234,탐지 정지,96,96,35,,96,lc,stop,
+left_clear_stuck,3235,탐지 정지,69,69,26,,69,lc,stop,
+left_clear_stuck,3236,탐지 정지,67,67,32,,67,lc,stop,
+left_clear_stuck,3237,탐지 정지,89,89,17,,89,lc,stop,
+left_clear_stuck,3238,탐지 정지,77,77,26,,77,lc,stop,
+left_clear_stuck,3239,탐지 정지,102,102,56,,102,lc,stop,
+left_clear_stuck,3240,탐지 정지,79,79,17,,79,lc,stop,
+left_clear_stuck,3241,탐지 정지,83,83,17,,83,lc,stop,
+left_clear_stuck,3242,탐지 정지,97,97,33,,97,lc,stop,
+left_clear_stuck,3243,탐지 정지,72,72,29,,72,lc,stop,
+left_clear_stuck,3244,탐지 정지,95,95,48,,95,lc,stop,
+left_clear_stuck,3245,탐지 정지,95,95,35,,95,lc,stop,
+left_clear_stuck,3246,탐지 정지,96,96,51,,96,lc,stop,
+left_clear_stuck,3247,탐지 정지,95,95,17,,95,lc,stop,
+left_clear_stuck,3248,탐지 정지,78,78,19,,78,lc,stop,
+left_clear_stuck,3249,탐지 정지,94,94,28,,94,lc,stop,
+left_clear_stuck,3250,탐지 정지,85,85,38,,85,lc,stop,
+left_clear_stuck,3251,탐지 정지,101,101,30,,101,lc,stop,
+left_clear_stuck,3252,탐지 정지,79,79,20,,79,lc,stop,
+left_clear_stuck,3253,탐지 정지,86,86,39,,86,lc,stop,
+left_clear_stuck,3254,탐지 정지,72,72,19,,72,lc,stop,
+left_clear_stuck,3255,탐지 정지,81,81,31,,81,lc,stop,
+left_clear_stuck,3256,탐지 정지,71,71,20,,71,lc,stop,
+left_clear_stuck,3257,탐지 정지,77,77,22,,77,lc,stop,
+left_clear_stuck,3258,탐지 정지,86,86,34,,86,lc,stop,
+left_clear_stuck,3259,탐지 정지,79,79,26,,79,lc,stop,
+left_clear_stuck,3260,탐지 정지,74,74,37,,74,lc,stop,
+left_clear_stuck,3261,탐지 정지,76,76,26,,76,lc,stop,
+left_clear_stuck,3262,탐지 정지,95,95,47,,95,lc,stop,
+left_clear_stuck,3263,탐지 정지,73,73,30,,73,lc,stop,
+left_clear_stuck,3264,탐지 정지,100,100,54,,100,lc,stop,
+left_clear_stuck,3265,탐지 정지,103,103,34,,103,lc,stop,
+left_clear_stuck,3266,탐지 정지,95,95,48,,95,lc,stop,
+left_clear_stuck,3267,탐지 정지,95,95,52,,95,lc,stop,
+left_clear_stuck,3268,탐지 정지,98,98,32,,98,lc,stop,
+left_clear_stuck,3269,탐지 정지,107,107,48,,107,lc,stop,
+left_clear_stuck,3270,탐지 정지,66,66,26,,66,lc,stop,
+left_clear_stuck,3271,탐지 정지,88,88,23,,88,lc,stop,
+left_clear_stuck,3272,탐지 정지,95,95,31,,95,lc,stop,
+left_clear_stuck,3273,탐지 정지,84,84,35,,84,lc,stop,
+left_clear_stuck,3274,탐지 정지,102,102,53,,102,lc,stop,
+left_clear_stuck,3275,탐지 정지,67,67,26,,67,lc,stop,
+left_clear_stuck,3276,탐지 정지,108,108,28,,108,lc,stop,
+left_clear_stuck,3277,탐지 정지,90,90,29,,90,lc,stop,
+left_clear_stuck,3278,탐지 정지,88,88,37,,88,lc,stop,
+left_clear_stuck,3279,탐지 정지,106,106,21,,106,lc,stop,
+left_clear_stuck,3280,탐지 정지,73,73,19,,73,lc,stop,
+left_clear_stuck,3281,탐지 정지,74,74,18,,74,lc,stop,
+left_clear_stuck,3282,탐지 정지,82,82,44,,82,lc,stop,
+left_clear_stuck,3283,탐지 정지,73,73,23,,73,lc,stop,
+left_clear_stuck,3284,탐지 정지,105,105,28,,105,lc,stop,
+left_clear_stuck,3285,탐지 정지,90,90,43,,90,lc,stop,
+left_clear_stuck,3286,탐지 정지,92,92,22,,92,lc,stop,
+left_clear_stuck,3287,탐지 정지,81,81,34,,81,lc,stop,
+left_clear_stuck,3288,탐지 정지,72,72,27,,72,lc,stop,
+left_clear_stuck,3289,탐지 정지,98,98,17,,98,lc,stop,
+left_clear_stuck,3290,탐지 정지,87,87,21,,87,lc,stop,
+left_clear_stuck,3291,탐지 정지,75,75,31,,75,lc,stop,
+left_clear_stuck,3292,탐지 정지,100,100,38,,100,lc,stop,
+left_clear_stuck,3293,탐지 정지,68,68,32,,68,lc,stop,
+left_clear_stuck,3294,탐지 정지,73,73,18,,73,lc,stop,
+left_clear_stuck,3295,탐지 정지,83,83,40,,83,lc,stop,
+left_clear_stuck,3296,탐지 정지,88,88,35,,88,lc,stop,
+left_clear_stuck,3297,탐지 정지,89,89,26,,89,lc,stop,
+left_clear_stuck,3298,탐지 정지,94,94,33,,94,lc,stop,
+left_clear_stuck,3299,탐지 정지,101,101,48,,101,lc,stop,

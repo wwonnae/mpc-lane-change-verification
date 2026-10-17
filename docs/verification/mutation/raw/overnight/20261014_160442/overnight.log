@@ -1,0 +1,25 @@
+[2026-10-14T16:04:42+09:00] overnight_run 시작 (dry-run=0), 저장소 /c/Users/SSAFY/Desktop/MPC_LINETRACING, 로그 docs/verification/mutation/raw/overnight/20261014_160442
+[2026-10-14T16:04:44+09:00] git fetch 종료 코드 0, HEAD=6971d6481983fdadf8cee7d9d13eb56b3e14bedc, origin/main=6971d6481983fdadf8cee7d9d13eb56b3e14bedc
+[2026-10-14T16:04:57+09:00] PC 상태 기록(before): docs/verification/mutation/raw/overnight/20261014_160442/pc_before.txt
+[2026-10-14T16:04:57+09:00] 단계 시작: 1_mutation — /c/Users/SSAFY/Desktop/MPC_LINETRACING/.venv/Scripts/python.exe docs/verification/mutation/mutate.py run --out docs/verification/mutation/raw/run_after.json
+[2026-10-14T16:51:09+09:00] 단계 끝: 1_mutation — 종료 코드 0 (2026-10-14T16:04:57+09:00 → 2026-10-14T16:51:09+09:00)
+[2026-10-14T16:51:09+09:00] 단계 시작: 2_tl_recheck — /c/Users/SSAFY/Desktop/MPC_LINETRACING/.venv/Scripts/python.exe docs/verification/mutation/recheck_tl_kills.py --run docs/verification/mutation/raw/run_after.json --out docs/verification/mutation/raw/run_after_tl_recheck.json
+[2026-10-14T17:15:08+09:00] 단계 끝: 2_tl_recheck — 종료 코드 0 (2026-10-14T16:51:09+09:00 → 2026-10-14T17:15:08+09:00)
+[2026-10-14T17:15:08+09:00] 단계 시작: 3_closed_loop_check — /c/Users/SSAFY/Desktop/MPC_LINETRACING/.venv/Scripts/python.exe -m thesis_v2.anomaly.closed_loop --check thesis_v2/results/anomaly/20261012_142758_3층PC109_it3_closed_loop_eval
+[2026-10-14T18:18:02+09:00] 단계 끝: 3_closed_loop_check — 종료 코드 0 (2026-10-14T17:15:08+09:00 → 2026-10-14T18:18:02+09:00)
+[2026-10-14T18:18:13+09:00] PC 상태 기록(after): docs/verification/mutation/raw/overnight/20261014_160442/pc_after.txt
+[2026-10-14T18:18:13+09:00] 커밋 대상:
+thesis_v2/results/anomaly/20261012_142758_3층PC109_it3_closed_loop_eval/_check_diag_timing.csv
+docs/verification/mutation/raw/overnight/20261014_160442/1_mutation.err
+docs/verification/mutation/raw/overnight/20261014_160442/1_mutation.out
+docs/verification/mutation/raw/overnight/20261014_160442/2_tl_recheck.err
+docs/verification/mutation/raw/overnight/20261014_160442/2_tl_recheck.out
+docs/verification/mutation/raw/overnight/20261014_160442/3_closed_loop_check.err
+docs/verification/mutation/raw/overnight/20261014_160442/3_closed_loop_check.out
+docs/verification/mutation/raw/overnight/20261014_160442/overnight.log
+docs/verification/mutation/raw/overnight/20261014_160442/pc_after.txt
+docs/verification/mutation/raw/overnight/20261014_160442/pc_before.txt
+docs/verification/mutation/raw/overnight/20261014_160442/steps.tsv
+docs/verification/mutation/raw/run_after.json
+docs/verification/mutation/raw/run_after_tl_recheck.json
+[2026-10-14T18:18:14+09:00] 커밋 시도 — 커밋·푸시 결과 로그: C:/Users/SSAFY/AppData/Local/Temp/overnight_post_20261014_160442.log

@@ -1,0 +1,29 @@
+{
+  "detectors": {
+    "B1": {
+      "h": 0.6314774954541714,
+      "train_episodes_over_h": 3,
+      "max": 0.6522430001989813,
+      "median": 0.5850688494506207
+    },
+    "B2": {
+      "h": 1.7379237413406372,
+      "train_episodes_over_h": 3,
+      "max": 2.4953644275665283,
+      "median": 0.8671091794967651
+    }
+  },
+  "quantile": 0.98,
+  "quantile_method": "higher",
+  "alarm_rule": "score > h",
+  "seeds": [
+    3000,
+    3199
+  ],
+  "n_episodes": 200,
+  "model_dir": "thesis_v2\\results\\anomaly\\20261001_234706_DESKTOP-MDCKRJS_stage3_train_b",
+  "if_model_sha256": "0bd6672f06cb7fa70457a7b1bb51f507127837d9e83a2e739ce74620aaeb39c3",
+  "ae_model_sha256": "ae3e01213a2b5323ffc9d3378a14e11dddf6a1d957b836a56cafca629cf2d735",
+  "norm_sha256": "c19a4c84708603bedab2a80b6dd4c5d0ce770db8c0649b6df169682f6afd26a1",
+  "sigma_gyro_deg": 1.0
+}

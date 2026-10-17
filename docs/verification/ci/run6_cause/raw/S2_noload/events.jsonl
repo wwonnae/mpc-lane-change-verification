@@ -1,0 +1,204 @@
+{"time": "2026-10-14T10:04:02.826+09:00", "event": "start", "exp": "S2_noload"}
+{"time": "2026-10-14T10:04:07.448+09:00", "event": "schedule", "total_batches": 100, "already_done": 0}
+{"time": "2026-10-14T10:04:07.450+09:00", "event": "load_set", "k": 0, "pids": [], "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal", "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe", "settle_s": 12.0}
+{"time": "2026-10-14T10:04:19.451+09:00", "event": "batch_start", "batch": "noload_000", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:04:28.613+09:00", "event": "batch_end", "batch": "noload_000", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:04:28.613+09:00", "event": "batch_start", "batch": "noload_001", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:04:37.571+09:00", "event": "batch_end", "batch": "noload_001", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:04:37.571+09:00", "event": "batch_start", "batch": "noload_002", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:04:46.958+09:00", "event": "batch_end", "batch": "noload_002", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:04:46.958+09:00", "event": "batch_start", "batch": "noload_003", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:04:56.328+09:00", "event": "batch_end", "batch": "noload_003", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:04:56.328+09:00", "event": "batch_start", "batch": "noload_004", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:05:05.865+09:00", "event": "batch_end", "batch": "noload_004", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:05:05.865+09:00", "event": "batch_start", "batch": "noload_005", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:05:15.062+09:00", "event": "batch_end", "batch": "noload_005", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:05:15.062+09:00", "event": "batch_start", "batch": "noload_006", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:05:24.284+09:00", "event": "batch_end", "batch": "noload_006", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:05:24.284+09:00", "event": "batch_start", "batch": "noload_007", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:05:33.412+09:00", "event": "batch_end", "batch": "noload_007", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:05:33.427+09:00", "event": "batch_start", "batch": "noload_008", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:05:42.358+09:00", "event": "batch_end", "batch": "noload_008", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:05:42.358+09:00", "event": "batch_start", "batch": "noload_009", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:05:51.361+09:00", "event": "batch_end", "batch": "noload_009", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:05:51.361+09:00", "event": "batch_start", "batch": "noload_010", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:06:00.259+09:00", "event": "batch_end", "batch": "noload_010", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:06:00.259+09:00", "event": "batch_start", "batch": "noload_011", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:06:09.253+09:00", "event": "batch_end", "batch": "noload_011", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:06:09.253+09:00", "event": "batch_start", "batch": "noload_012", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:06:18.218+09:00", "event": "batch_end", "batch": "noload_012", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:06:18.218+09:00", "event": "batch_start", "batch": "noload_013", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:06:27.167+09:00", "event": "batch_end", "batch": "noload_013", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:06:27.167+09:00", "event": "batch_start", "batch": "noload_014", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:06:36.135+09:00", "event": "batch_end", "batch": "noload_014", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:06:36.135+09:00", "event": "batch_start", "batch": "noload_015", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:06:45.073+09:00", "event": "batch_end", "batch": "noload_015", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:06:45.073+09:00", "event": "batch_start", "batch": "noload_016", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:06:53.963+09:00", "event": "batch_end", "batch": "noload_016", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:06:53.963+09:00", "event": "batch_start", "batch": "noload_017", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:07:02.867+09:00", "event": "batch_end", "batch": "noload_017", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:07:02.867+09:00", "event": "batch_start", "batch": "noload_018", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:07:11.813+09:00", "event": "batch_end", "batch": "noload_018", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:07:11.813+09:00", "event": "batch_start", "batch": "noload_019", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:07:20.699+09:00", "event": "batch_end", "batch": "noload_019", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:07:20.702+09:00", "event": "batch_start", "batch": "noload_020", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:07:29.671+09:00", "event": "batch_end", "batch": "noload_020", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:07:29.671+09:00", "event": "batch_start", "batch": "noload_021", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:07:38.540+09:00", "event": "batch_end", "batch": "noload_021", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:07:38.540+09:00", "event": "batch_start", "batch": "noload_022", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:07:47.426+09:00", "event": "batch_end", "batch": "noload_022", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:07:47.426+09:00", "event": "batch_start", "batch": "noload_023", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:07:56.338+09:00", "event": "batch_end", "batch": "noload_023", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:07:56.338+09:00", "event": "batch_start", "batch": "noload_024", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:08:05.339+09:00", "event": "batch_end", "batch": "noload_024", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:08:05.339+09:00", "event": "batch_start", "batch": "noload_025", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:08:14.284+09:00", "event": "batch_end", "batch": "noload_025", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:08:14.284+09:00", "event": "batch_start", "batch": "noload_026", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:08:23.173+09:00", "event": "batch_end", "batch": "noload_026", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:08:23.173+09:00", "event": "batch_start", "batch": "noload_027", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:08:32.040+09:00", "event": "batch_end", "batch": "noload_027", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:08:32.040+09:00", "event": "batch_start", "batch": "noload_028", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:08:40.968+09:00", "event": "batch_end", "batch": "noload_028", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:08:40.968+09:00", "event": "batch_start", "batch": "noload_029", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:08:49.872+09:00", "event": "batch_end", "batch": "noload_029", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:08:49.872+09:00", "event": "batch_start", "batch": "noload_030", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:08:58.771+09:00", "event": "batch_end", "batch": "noload_030", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:08:58.771+09:00", "event": "batch_start", "batch": "noload_031", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:09:07.693+09:00", "event": "batch_end", "batch": "noload_031", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:09:07.693+09:00", "event": "batch_start", "batch": "noload_032", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:09:16.582+09:00", "event": "batch_end", "batch": "noload_032", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:09:16.582+09:00", "event": "batch_start", "batch": "noload_033", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:09:25.486+09:00", "event": "batch_end", "batch": "noload_033", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:09:25.486+09:00", "event": "batch_start", "batch": "noload_034", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:09:34.439+09:00", "event": "batch_end", "batch": "noload_034", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:09:34.439+09:00", "event": "batch_start", "batch": "noload_035", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:09:43.391+09:00", "event": "batch_end", "batch": "noload_035", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:09:43.391+09:00", "event": "batch_start", "batch": "noload_036", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:09:52.324+09:00", "event": "batch_end", "batch": "noload_036", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:09:52.324+09:00", "event": "batch_start", "batch": "noload_037", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:10:01.363+09:00", "event": "batch_end", "batch": "noload_037", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:10:01.365+09:00", "event": "batch_start", "batch": "noload_038", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:10:10.297+09:00", "event": "batch_end", "batch": "noload_038", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:10:10.297+09:00", "event": "batch_start", "batch": "noload_039", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:10:19.166+09:00", "event": "batch_end", "batch": "noload_039", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:10:19.166+09:00", "event": "batch_start", "batch": "noload_040", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:10:28.062+09:00", "event": "batch_end", "batch": "noload_040", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:10:28.062+09:00", "event": "batch_start", "batch": "noload_041", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:10:36.946+09:00", "event": "batch_end", "batch": "noload_041", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:10:36.946+09:00", "event": "batch_start", "batch": "noload_042", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:10:45.859+09:00", "event": "batch_end", "batch": "noload_042", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:10:45.859+09:00", "event": "batch_start", "batch": "noload_043", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:10:54.730+09:00", "event": "batch_end", "batch": "noload_043", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:10:54.730+09:00", "event": "batch_start", "batch": "noload_044", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:11:03.687+09:00", "event": "batch_end", "batch": "noload_044", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:11:03.687+09:00", "event": "batch_start", "batch": "noload_045", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:11:12.603+09:00", "event": "batch_end", "batch": "noload_045", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:11:12.619+09:00", "event": "batch_start", "batch": "noload_046", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:11:21.590+09:00", "event": "batch_end", "batch": "noload_046", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:11:21.590+09:00", "event": "batch_start", "batch": "noload_047", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:11:30.431+09:00", "event": "batch_end", "batch": "noload_047", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:11:30.431+09:00", "event": "batch_start", "batch": "noload_048", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:11:39.247+09:00", "event": "batch_end", "batch": "noload_048", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:11:39.247+09:00", "event": "batch_start", "batch": "noload_049", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:11:48.070+09:00", "event": "batch_end", "batch": "noload_049", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:11:48.073+09:00", "event": "batch_start", "batch": "noload_050", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:11:56.972+09:00", "event": "batch_end", "batch": "noload_050", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:11:56.972+09:00", "event": "batch_start", "batch": "noload_051", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:12:05.974+09:00", "event": "batch_end", "batch": "noload_051", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:12:05.976+09:00", "event": "batch_start", "batch": "noload_052", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:12:14.829+09:00", "event": "batch_end", "batch": "noload_052", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:12:14.829+09:00", "event": "batch_start", "batch": "noload_053", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:12:23.699+09:00", "event": "batch_end", "batch": "noload_053", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:12:23.699+09:00", "event": "batch_start", "batch": "noload_054", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:12:32.722+09:00", "event": "batch_end", "batch": "noload_054", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:12:32.722+09:00", "event": "batch_start", "batch": "noload_055", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:12:41.638+09:00", "event": "batch_end", "batch": "noload_055", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:12:41.642+09:00", "event": "batch_start", "batch": "noload_056", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:12:50.544+09:00", "event": "batch_end", "batch": "noload_056", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:12:50.544+09:00", "event": "batch_start", "batch": "noload_057", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:12:59.465+09:00", "event": "batch_end", "batch": "noload_057", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:12:59.465+09:00", "event": "batch_start", "batch": "noload_058", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:13:08.466+09:00", "event": "batch_end", "batch": "noload_058", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:13:08.466+09:00", "event": "batch_start", "batch": "noload_059", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:13:17.426+09:00", "event": "batch_end", "batch": "noload_059", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:13:17.442+09:00", "event": "batch_start", "batch": "noload_060", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:13:26.304+09:00", "event": "batch_end", "batch": "noload_060", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:13:26.304+09:00", "event": "batch_start", "batch": "noload_061", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:13:35.208+09:00", "event": "batch_end", "batch": "noload_061", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:13:35.215+09:00", "event": "batch_start", "batch": "noload_062", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:13:44.114+09:00", "event": "batch_end", "batch": "noload_062", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:13:44.114+09:00", "event": "batch_start", "batch": "noload_063", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:13:52.962+09:00", "event": "batch_end", "batch": "noload_063", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:13:52.962+09:00", "event": "batch_start", "batch": "noload_064", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:14:01.811+09:00", "event": "batch_end", "batch": "noload_064", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:14:01.811+09:00", "event": "batch_start", "batch": "noload_065", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:14:10.694+09:00", "event": "batch_end", "batch": "noload_065", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:14:10.694+09:00", "event": "batch_start", "batch": "noload_066", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:14:19.548+09:00", "event": "batch_end", "batch": "noload_066", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:14:19.548+09:00", "event": "batch_start", "batch": "noload_067", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:14:28.420+09:00", "event": "batch_end", "batch": "noload_067", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:14:28.420+09:00", "event": "batch_start", "batch": "noload_068", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:14:37.372+09:00", "event": "batch_end", "batch": "noload_068", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:14:37.375+09:00", "event": "batch_start", "batch": "noload_069", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:14:46.290+09:00", "event": "batch_end", "batch": "noload_069", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:14:46.290+09:00", "event": "batch_start", "batch": "noload_070", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:14:55.191+09:00", "event": "batch_end", "batch": "noload_070", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:14:55.191+09:00", "event": "batch_start", "batch": "noload_071", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:15:04.131+09:00", "event": "batch_end", "batch": "noload_071", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:15:04.131+09:00", "event": "batch_start", "batch": "noload_072", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:15:12.957+09:00", "event": "batch_end", "batch": "noload_072", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:15:12.957+09:00", "event": "batch_start", "batch": "noload_073", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:15:21.894+09:00", "event": "batch_end", "batch": "noload_073", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:15:21.894+09:00", "event": "batch_start", "batch": "noload_074", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:15:30.734+09:00", "event": "batch_end", "batch": "noload_074", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:15:30.739+09:00", "event": "batch_start", "batch": "noload_075", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:15:39.680+09:00", "event": "batch_end", "batch": "noload_075", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:15:39.680+09:00", "event": "batch_start", "batch": "noload_076", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:15:48.600+09:00", "event": "batch_end", "batch": "noload_076", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:15:48.600+09:00", "event": "batch_start", "batch": "noload_077", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:15:57.467+09:00", "event": "batch_end", "batch": "noload_077", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:15:57.467+09:00", "event": "batch_start", "batch": "noload_078", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:16:06.388+09:00", "event": "batch_end", "batch": "noload_078", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:16:06.388+09:00", "event": "batch_start", "batch": "noload_079", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:16:15.394+09:00", "event": "batch_end", "batch": "noload_079", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:16:15.394+09:00", "event": "batch_start", "batch": "noload_080", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:16:24.343+09:00", "event": "batch_end", "batch": "noload_080", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:16:24.343+09:00", "event": "batch_start", "batch": "noload_081", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:16:33.294+09:00", "event": "batch_end", "batch": "noload_081", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:16:33.294+09:00", "event": "batch_start", "batch": "noload_082", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:16:42.215+09:00", "event": "batch_end", "batch": "noload_082", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:16:42.215+09:00", "event": "batch_start", "batch": "noload_083", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:16:51.120+09:00", "event": "batch_end", "batch": "noload_083", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:16:51.133+09:00", "event": "batch_start", "batch": "noload_084", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:17:00.065+09:00", "event": "batch_end", "batch": "noload_084", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:17:00.065+09:00", "event": "batch_start", "batch": "noload_085", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:17:08.986+09:00", "event": "batch_end", "batch": "noload_085", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:17:08.986+09:00", "event": "batch_start", "batch": "noload_086", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:17:17.881+09:00", "event": "batch_end", "batch": "noload_086", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:17:17.881+09:00", "event": "batch_start", "batch": "noload_087", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:17:26.759+09:00", "event": "batch_end", "batch": "noload_087", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:17:26.759+09:00", "event": "batch_start", "batch": "noload_088", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:17:35.638+09:00", "event": "batch_end", "batch": "noload_088", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:17:35.638+09:00", "event": "batch_start", "batch": "noload_089", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:17:44.542+09:00", "event": "batch_end", "batch": "noload_089", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:17:44.542+09:00", "event": "batch_start", "batch": "noload_090", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:17:53.467+09:00", "event": "batch_end", "batch": "noload_090", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:17:53.467+09:00", "event": "batch_start", "batch": "noload_091", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:18:02.260+09:00", "event": "batch_end", "batch": "noload_091", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:18:02.260+09:00", "event": "batch_start", "batch": "noload_092", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:18:11.235+09:00", "event": "batch_end", "batch": "noload_092", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:18:11.235+09:00", "event": "batch_start", "batch": "noload_093", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:18:20.156+09:00", "event": "batch_end", "batch": "noload_093", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:18:20.156+09:00", "event": "batch_start", "batch": "noload_094", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:18:29.037+09:00", "event": "batch_end", "batch": "noload_094", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:18:29.037+09:00", "event": "batch_start", "batch": "noload_095", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:18:37.863+09:00", "event": "batch_end", "batch": "noload_095", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:18:37.863+09:00", "event": "batch_start", "batch": "noload_096", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:18:46.786+09:00", "event": "batch_end", "batch": "noload_096", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:18:46.786+09:00", "event": "batch_start", "batch": "noload_097", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:18:55.738+09:00", "event": "batch_end", "batch": "noload_097", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:18:55.738+09:00", "event": "batch_start", "batch": "noload_098", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:19:04.576+09:00", "event": "batch_end", "batch": "noload_098", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:19:04.580+09:00", "event": "batch_start", "batch": "noload_099", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T10:19:13.477+09:00", "event": "batch_end", "batch": "noload_099", "mismatches": {"i5": 0, "i4_rec": 0, "i4_cl100": 0, "i4_cl101": 0, "base": 0}}
+{"time": "2026-10-14T10:19:18.500+09:00", "event": "end"}

@@ -1,0 +1,4116 @@
+{
+ "purpose": "1차 생존 변이 재실행(2차 실행 전, 새 테스트 넣기 전 테스트로)",
+ "tool_version": "1",
+ "driver_sha256": "772b11dca67304b3ccc06f9992462d379bc93a26f66df2544d666e8c4328a153",
+ "mutate_py_sha256": "76b4bd1749e5e4aaab7c58718355e69b7d11dc76a3d598a430af4fecd2ae5304",
+ "before_file": "run_before.json",
+ "before_git": {
+  "commit": "78e0936fc356bf32cbd31262907b4de1c436cf6e",
+  "dirty": false
+ },
+ "before_started": "2026-10-13T11:32:48",
+ "started": "2026-10-13T16:22:22",
+ "git": {
+  "commit": "0b14fa9d4f01671519fc6a887c0870cf1e4a93fe",
+  "dirty": false
+ },
+ "python": "3.9.12",
+ "packages": {
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "osqp": "1.1.1",
+  "pytest": "8.4.2"
+ },
+ "pc_load_before": {
+  "host": "DESKTOP-MDCKRJS",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "logical_cpus": 22,
+  "cpu_load_percent": 18,
+  "top_by_cpu_time": [
+   {
+    "Name": "audiodg",
+    "cpu_s": 178.2,
+    "ws_mb": 20
+   },
+   {
+    "Name": "Creative Cloud UI Helper",
+    "cpu_s": 59.6,
+    "ws_mb": 490
+   },
+   {
+    "Name": "cpptools",
+    "cpu_s": 40.1,
+    "ws_mb": 153
+   },
+   {
+    "Name": "explorer",
+    "cpu_s": 40,
+    "ws_mb": 421
+   },
+   {
+    "Name": "claude",
+    "cpu_s": 36.9,
+    "ws_mb": 535
+   },
+   {
+    "Name": "claude",
+    "cpu_s": 28.3,
+    "ws_mb": 231
+   },
+   {
+    "Name": "Mattermost",
+    "cpu_s": 28.1,
+    "ws_mb": 298
+   },
+   {
+    "Name": "Code",
+    "cpu_s": 21.4,
+    "ws_mb": 393
+   }
+  ]
+ },
+ "n_targets": 129,
+ "mutants": [
+  {
+   "id": "fsm:002",
+   "module": "fsm",
+   "path": "thesis_v2/baseline/fsm.py",
+   "line": 35,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.46
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.75
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.52,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "fsm:014",
+   "module": "fsm",
+   "path": "thesis_v2/baseline/fsm.py",
+   "line": 51,
+   "operator": "rel",
+   "original": "<",
+   "replacement": "<=",
+   "description": "관계 < → <=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.48
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.02
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.52,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "fsm:030",
+   "module": "fsm",
+   "path": "thesis_v2/baseline/fsm.py",
+   "line": 59,
+   "operator": "rel",
+   "original": "<=",
+   "replacement": "<",
+   "description": "관계 <= → <",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.45
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.89
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.58,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "fsm:038",
+   "module": "fsm",
+   "path": "thesis_v2/baseline/fsm.py",
+   "line": 64,
+   "operator": "rel",
+   "original": ">",
+   "replacement": ">=",
+   "description": "관계 > → >=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.53
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.74
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.5,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "fsm:045",
+   "module": "fsm",
+   "path": "thesis_v2/baseline/fsm.py",
+   "line": 68,
+   "operator": "rel",
+   "original": "<=",
+   "replacement": "<",
+   "description": "관계 <= → <",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.47
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.35
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.49,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "fsm:047",
+   "module": "fsm",
+   "path": "thesis_v2/baseline/fsm.py",
+   "line": 68,
+   "operator": "rel",
+   "original": "<=",
+   "replacement": "<",
+   "description": "관계 <= → <",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.44
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.31
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.54,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "fsm:049",
+   "module": "fsm",
+   "path": "thesis_v2/baseline/fsm.py",
+   "line": 70,
+   "operator": "rel",
+   "original": "==",
+   "replacement": "!=",
+   "description": "관계 == → !=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.44
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.0
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.51,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:004",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 87,
+   "operator": "rel",
+   "original": "<",
+   "replacement": "<=",
+   "description": "관계 < → <=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.69
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.82
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:005",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 87,
+   "operator": "operand_drop",
+   "original": "or a_lo > b_hi",
+   "replacement": "",
+   "description": "피연산자 제거 #2/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.65
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.83
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:007",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 87,
+   "operator": "rel",
+   "original": ">",
+   "replacement": ">=",
+   "description": "관계 > → >=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.74
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.41
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:009",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 91,
+   "operator": "rel",
+   "original": ">=",
+   "replacement": ">",
+   "description": "관계 >= → >",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.84
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.06
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:026",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 112,
+   "operator": "arith",
+   "original": "*",
+   "replacement": "/",
+   "description": "산술 * → /",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.67
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.39
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:029",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 117,
+   "operator": "operand_drop",
+   "original": "info is None or",
+   "replacement": "",
+   "description": "피연산자 제거 #1/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.63
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.95
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:031",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 117,
+   "operator": "operand_drop",
+   "original": "or _no_return(fg)",
+   "replacement": "",
+   "description": "피연산자 제거 #2/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.64
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.93
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:032",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 117,
+   "operator": "bool",
+   "original": "or",
+   "replacement": "and",
+   "description": "논리 or → and",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.6
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.65
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:044",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 124,
+   "operator": "rel",
+   "original": "<",
+   "replacement": "<=",
+   "description": "관계 < → <=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.67
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.71
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:046",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 125,
+   "operator": "rel",
+   "original": "<=",
+   "replacement": "<",
+   "description": "관계 <= → <",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.69
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.3
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:048",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 126,
+   "operator": "assign_del",
+   "original": "tr.x_near += (x_near_m - tr.x_near) / (tr.n + 1)",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.69
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.9
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:053",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 126,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.61
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.13
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:060",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 135,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.75
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.61
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:065",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 141,
+   "operator": "rel",
+   "original": ">=",
+   "replacement": ">",
+   "description": "관계 >= → >",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.66
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.45
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:069",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 141,
+   "operator": "rel",
+   "original": "<=",
+   "replacement": "<",
+   "description": "관계 <= → <",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.62
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.43
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:072",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 143,
+   "operator": "operand_drop",
+   "original": "tr.x_far >= lo - BOUNDARY_MARGIN and",
+   "replacement": "",
+   "description": "피연산자 제거 #1/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.63
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.76
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:073",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 143,
+   "operator": "rel",
+   "original": ">=",
+   "replacement": ">",
+   "description": "관계 >= → >",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.82
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.97
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:074",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 143,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.68
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.25
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:075",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 143,
+   "operator": "operand_drop",
+   "original": "and tr.x_near <= hi + BOUNDARY_MARGIN",
+   "replacement": "",
+   "description": "피연산자 제거 #2/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.77
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.37
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:076",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 143,
+   "operator": "bool",
+   "original": "and",
+   "replacement": "or",
+   "description": "논리 and → or",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 3.18
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 18.41
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:077",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 143,
+   "operator": "rel",
+   "original": "<=",
+   "replacement": "<",
+   "description": "관계 <= → <",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.65
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.81
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:078",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 143,
+   "operator": "arith",
+   "original": "+",
+   "replacement": "-",
+   "description": "산술 + → -",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.66
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.41
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:079",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 144,
+   "operator": "assign_del",
+   "original": "any_ambiguous = True",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.65
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.34
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:080",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 145,
+   "operator": "return_none",
+   "original": "None if any_ambiguous else False",
+   "replacement": "None",
+   "description": "return 값 → None",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.66
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.91
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:083",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 150,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.66
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.04
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:087",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 150,
+   "operator": "arith",
+   "original": "/",
+   "replacement": "*",
+   "description": "산술 / → *",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.61
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.06
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:092",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 155,
+   "operator": "rel",
+   "original": ">=",
+   "replacement": ">",
+   "description": "관계 >= → >",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.62
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.92
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:093",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 155,
+   "operator": "arith",
+   "original": "+",
+   "replacement": "-",
+   "description": "산술 + → -",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.61
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.74
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:094",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 155,
+   "operator": "operand_drop",
+   "original": "and tr.x_near - fx < base_config.LIDAR_MAX_RANGE - NO_RETURN_MARGIN",
+   "replacement": "",
+   "description": "피연산자 제거 #2/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.58
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.11
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:096",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 155,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.63
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.12
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:097",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 155,
+   "operator": "rel",
+   "original": "<",
+   "replacement": "<=",
+   "description": "관계 < → <=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.92
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.79
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:098",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 155,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.91
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 17.18
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:100",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 157,
+   "operator": "rel",
+   "original": ">=",
+   "replacement": ">",
+   "description": "관계 >= → >",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.71
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.67
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:101",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 157,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.89
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.97
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:102",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 158,
+   "operator": "assign_del",
+   "original": "any_ambiguous = True",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.97
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.46
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:103",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 159,
+   "operator": "return_none",
+   "original": "None if any_ambiguous else False",
+   "replacement": "None",
+   "description": "return 값 → None",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.78
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.32
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:114",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 168,
+   "operator": "rel",
+   "original": ">",
+   "replacement": ">=",
+   "description": "관계 > → >=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 2.24
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 18.15
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:115",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 168,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 2.01
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.22
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:116",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 168,
+   "operator": "operand_drop",
+   "original": "\\\n                and p.frame.front_gap > 0.0",
+   "replacement": "",
+   "description": "피연산자 제거 #4/4",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.91
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.58
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:128",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 174,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.82
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.15
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:129",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 174,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.68
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.36
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:130",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 174,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.81
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.21
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:140",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 180,
+   "operator": "operand_drop",
+   "original": "p is not None and",
+   "replacement": "",
+   "description": "피연산자 제거 #1/3",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.84
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.42
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:143",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 180,
+   "operator": "operand_drop",
+   "original": "obs.yaw_rate_meas is not None and",
+   "replacement": "",
+   "description": "피연산자 제거 #2/3",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.86
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.78
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:145",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 180,
+   "operator": "operand_drop",
+   "original": "and p.v > 0.0",
+   "replacement": "",
+   "description": "피연산자 제거 #3/3",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.73
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.17
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:146",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 180,
+   "operator": "rel",
+   "original": ">",
+   "replacement": ">=",
+   "description": "관계 > → >=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.76
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.34
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:166",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 190,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.69
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.3
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:172",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 197,
+   "operator": "arith",
+   "original": "*",
+   "replacement": "/",
+   "description": "산술 * → /",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.69
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.98
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:190",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 207,
+   "operator": "rel",
+   "original": ">",
+   "replacement": ">=",
+   "description": "관계 > → >=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.73
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.19
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:191",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 207,
+   "operator": "const",
+   "original": "0.5",
+   "replacement": "0.0",
+   "description": "상수 0.5 → 0.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.65
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.11
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "detector_a:197",
+   "module": "detector_a",
+   "path": "thesis_v2/anomaly/detector_a.py",
+   "line": 214,
+   "operator": "rel",
+   "original": ">",
+   "replacement": ">=",
+   "description": "관계 > → >=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.66
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.12
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:001",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 170,
+   "operator": "assign_del",
+   "original": "det_out = None",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.57
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.68
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:011",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 178,
+   "operator": "operand_drop",
+   "original": "or None",
+   "replacement": "",
+   "description": "피연산자 제거 #2/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.59
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.2
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:018",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 184,
+   "operator": "assign_del",
+   "original": "override_ey = True",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.49
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.4
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:021",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 187,
+   "operator": "assign_del",
+   "original": "override_rc = True",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.47
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.2
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:024",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 190,
+   "operator": "assign_del",
+   "original": "override_lc = True",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.46
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.73
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:028",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 198,
+   "operator": "assign_del",
+   "original": "v_cmd = 0.0",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.46
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.63
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:029",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 198,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.44
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.19
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:030",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 199,
+   "operator": "assign_del",
+   "original": "delta_to_vehicle = delta_prev",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.52
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.2
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:031",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 200,
+   "operator": "assign_del",
+   "original": "vehicle_new = vehicle_step(vehicle, delta_to_vehicle, v_cmd,",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.49
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.67
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:032",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 201,
+   "operator": "assign_del",
+   "original": "collided = collision.check_collision(vehicle_new, scenario.o",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.56
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.41
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:033",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 202,
+   "operator": "assign_del",
+   "original": "off_road = vehicle_off_road(vehicle_new)",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.52
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.32
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:034",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 203,
+   "operator": "assign_del",
+   "original": "vehicle = vehicle_new",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.55
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.46
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:035",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 205,
+   "operator": "assign_del",
+   "original": "outcome = \"충돌\"",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.59
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.25
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:036",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 206,
+   "operator": "operand_drop",
+   "original": "terminate_on_departure and",
+   "replacement": "",
+   "description": "피연산자 제거 #1/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.53
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.0
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:037",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 206,
+   "operator": "operand_drop",
+   "original": "and off_road",
+   "replacement": "",
+   "description": "피연산자 제거 #2/2",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.52
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.83
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:038",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 206,
+   "operator": "bool",
+   "original": "and",
+   "replacement": "or",
+   "description": "논리 and → or",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.5
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.68
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:039",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 207,
+   "operator": "assign_del",
+   "original": "outcome = \"이탈\"",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.75
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.42
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:048",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 348,
+   "operator": "assign_del",
+   "original": "is_normal = run in (\"none\", \"none_leftobs\")",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.64
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.08
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:049",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 348,
+   "operator": "rel",
+   "original": "in",
+   "replacement": "not in",
+   "description": "관계 in → not in",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.89
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.37
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:051",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 350,
+   "operator": "rel",
+   "original": "==",
+   "replacement": "!=",
+   "description": "관계 == → !=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.94
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.74
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:052",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 352,
+   "operator": "assign_del",
+   "original": "unnecessary_stop = \"normal\"",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.72
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.52
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:053",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 353,
+   "operator": "rel",
+   "original": "in",
+   "replacement": "not in",
+   "description": "관계 in → not in",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.68
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.35
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:054",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 354,
+   "operator": "assign_del",
+   "original": "unnecessary_stop = \"harmless\"",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.75
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.91
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:055",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 355,
+   "operator": "operand_drop",
+   "original": "onset is not None and",
+   "replacement": "",
+   "description": "피연산자 제거 #1/3",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.58
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.45
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:056",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 355,
+   "operator": "rel",
+   "original": "is not",
+   "replacement": "is",
+   "description": "관계 is not → is",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.54
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.25
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:057",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 355,
+   "operator": "bool",
+   "original": "and",
+   "replacement": "or",
+   "description": "논리 and → or",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.61
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.79
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:058",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 355,
+   "operator": "operand_drop",
+   "original": "res.first_alarm_step is not None and",
+   "replacement": "",
+   "description": "피연산자 제거 #2/3",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.72
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.64
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:059",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 355,
+   "operator": "rel",
+   "original": "is not",
+   "replacement": "is",
+   "description": "관계 is not → is",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.59
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.43
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:060",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 355,
+   "operator": "operand_drop",
+   "original": "and res.first_alarm_step < onset",
+   "replacement": "",
+   "description": "피연산자 제거 #3/3",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.56
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.2
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:061",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 355,
+   "operator": "rel",
+   "original": "<",
+   "replacement": "<=",
+   "description": "관계 < → <=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.61
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.14
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "closed_loop:062",
+   "module": "closed_loop",
+   "path": "thesis_v2/anomaly/closed_loop.py",
+   "line": 356,
+   "operator": "assign_del",
+   "original": "unnecessary_stop = \"before_onset\"",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.54
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.01
+    },
+    "L3": {
+     "status": "not_applicable"
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": null,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:038",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 75,
+   "operator": "const",
+   "original": "0",
+   "replacement": "1",
+   "description": "상수 0 → 1",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.86
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.12
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.6,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:084",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 117,
+   "operator": "assign_del",
+   "original": "c_idx = len(rows)",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.9
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.42
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.64,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:086",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 118,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.04
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.46
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.61,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:087",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 119,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.02
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.08
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.56,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:088",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 119,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.83
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.22
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.53,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:103",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 129,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.84
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.27
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.55,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:104",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 130,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.9
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.73
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.63,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:105",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 130,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.99
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.38
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.57,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:115",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 135,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.86
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.12
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.55,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:116",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 136,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.82
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 11.96
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.56,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:117",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 136,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.81
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.44
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.56,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:133",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 149,
+   "operator": "const",
+   "original": "1.0",
+   "replacement": "0.0",
+   "description": "상수 1.0 → 0.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.87
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.3
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.57,
+     "max_diff_rad": 8e-06,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 8e-06,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:142",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 159,
+   "operator": "assign_del",
+   "original": "self.A = sp.csc_matrix((vals, (rows, cols)), shape=(self.n_r",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.9
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.35
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.56,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:144",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 164,
+   "operator": "assign_del",
+   "original": "self._A_coo_rows = np.array(rows)",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.87
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.52
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.57,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:145",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 165,
+   "operator": "assign_del",
+   "original": "self._A_coo_cols = np.array(cols)",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.9
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.02
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.56,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:147",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 167,
+   "operator": "assign_del",
+   "original": "self.A = csc",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.86
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.12
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.54,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:155",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 178,
+   "operator": "const",
+   "original": "2",
+   "replacement": "0",
+   "description": "상수 2 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.82
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.74
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.54,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:165",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 180,
+   "operator": "arith",
+   "original": "+",
+   "replacement": "-",
+   "description": "산술 + → -",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.82
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.5
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.57,
+     "max_diff_rad": 1.2e-05,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 1.2e-05,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:175",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 186,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.84
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.22
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.53,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:194",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 196,
+   "operator": "assign_del",
+   "original": "self.l[self._row_y1] = self.u[self._row_y1] = 0.0",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.83
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.01
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.53,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:195",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 196,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.8
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.21
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.6,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:196",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 197,
+   "operator": "assign_del",
+   "original": "self.l[self._row_psi1] = self.u[self._row_psi1] = 0.0",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.87
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.65
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.55,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:197",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 197,
+   "operator": "const",
+   "original": "0.0",
+   "replacement": "1.0",
+   "description": "상수 0.0 → 1.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.89
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.58
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.59,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:198",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 198,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.84
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.6
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.69,
+     "max_diff_rad": 1.2e-05,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 1.2e-05,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:199",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 198,
+   "operator": "arith",
+   "original": "+",
+   "replacement": "-",
+   "description": "산술 + → -",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.92
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.97
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.57,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:200",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 198,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.8
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.5
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.55,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:205",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 200,
+   "operator": "assign_del",
+   "original": "self.l[row], self.u[row] = -np.inf, np.inf",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.89
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.45
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.56,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:209",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 208,
+   "operator": "const",
+   "original": "0.05",
+   "replacement": "0.0",
+   "description": "상수 0.05 → 0.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.82
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.63
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.58,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:212",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 213,
+   "operator": "assign_del",
+   "original": "vi = 0",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.86
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.09
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.55,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:213",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 213,
+   "operator": "const",
+   "original": "0",
+   "replacement": "1",
+   "description": "상수 0 → 1",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.86
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.76
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.59,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:246",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 234,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.96
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.19
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.66,
+     "max_diff_rad": 0.000152,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.000152,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:272",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 253,
+   "operator": "arith",
+   "original": "*",
+   "replacement": "/",
+   "description": "산술 * → /",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.85
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.85
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.6,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:273",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 253,
+   "operator": "const",
+   "original": "1000.0",
+   "replacement": "0.0",
+   "description": "상수 1000.0 → 0.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.0
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.46
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.61,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:275",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 258,
+   "operator": "assign_del",
+   "original": "self._fail_count += 1",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.89
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 15.08
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.71,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:276",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 258,
+   "operator": "arith",
+   "original": "+=",
+   "replacement": "-=",
+   "description": "산술 += → -=",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.0
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 16.15
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.62,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:277",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 258,
+   "operator": "const",
+   "original": "1",
+   "replacement": "0",
+   "description": "상수 1 → 0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.91
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.46
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.55,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:283",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 261,
+   "operator": "assign_del",
+   "original": "delta_fallback_deg = max(-config.DELTA_MAX_DEG, min(config.D",
+   "replacement": "pass",
+   "description": "대입문 삭제",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.83
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.3
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.63,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:285",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 262,
+   "operator": "arith",
+   "original": "-",
+   "replacement": "+",
+   "description": "산술 - → +",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.95
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 12.7
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.66,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:286",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 262,
+   "operator": "arith",
+   "original": "*",
+   "replacement": "/",
+   "description": "산술 * → /",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 1.01
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 14.95
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.65,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  },
+  {
+   "id": "baseline_mpc:287",
+   "module": "baseline_mpc",
+   "path": "thesis_v2/baseline/mpc.py",
+   "line": 262,
+   "operator": "const",
+   "original": "1000.0",
+   "replacement": "0.0",
+   "description": "상수 1000.0 → 0.0",
+   "status": "survived",
+   "first_layer": null,
+   "layers": {
+    "L1": {
+     "status": "pass",
+     "seconds": 0.97
+    },
+    "L2": {
+     "status": "pass",
+     "seconds": 13.32
+    },
+    "L3": {
+     "status": "pass",
+     "seconds": 0.6,
+     "max_diff_rad": 0.0,
+     "n_scenarios_with_diff": 6,
+     "n_fail": 0
+    }
+   },
+   "before_status": "survived",
+   "same_status": true,
+   "before_l3_max_diff_rad": 0.0,
+   "same_l3_max_diff": true
+  }
+ ],
+ "clean_run": {
+  "per_module_l1": {
+   "fsm": {
+    "status": "pass",
+    "seconds": 0.53
+   },
+   "detector_a": {
+    "status": "pass",
+    "seconds": 2.15
+   },
+   "closed_loop": {
+    "status": "pass",
+    "seconds": 1.55
+   },
+   "baseline_mpc": {
+    "status": "pass",
+    "seconds": 0.88
+   }
+  },
+  "l2": {
+   "status": "pass",
+   "seconds": 17.44
+  },
+  "l3": {
+   "status": "pass",
+   "seconds": 0.54,
+   "max_diff_rad": 0.0,
+   "n_scenarios_with_diff": 6,
+   "n_fail": 0
+  }
+ },
+ "timeouts": {
+  "fsm": {
+   "l1": 10.0,
+   "l2": 87.2,
+   "l3": 10.0
+  },
+  "detector_a": {
+   "l1": 10.75,
+   "l2": 87.2,
+   "l3": 10.0
+  },
+  "closed_loop": {
+   "l1": 10.0,
+   "l2": 87.2,
+   "l3": 10.0
+  },
+  "baseline_mpc": {
+   "l1": 10.0,
+   "l2": 87.2,
+   "l3": 10.0
+  }
+ },
+ "pc_load_after": {
+  "host": "DESKTOP-MDCKRJS",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "logical_cpus": 22,
+  "cpu_load_percent": 5,
+  "top_by_cpu_time": [
+   {
+    "Name": "Creative Cloud UI Helper",
+    "cpu_s": 196.6,
+    "ws_mb": 453
+   },
+   {
+    "Name": "audiodg",
+    "cpu_s": 178.7,
+    "ws_mb": 26
+   },
+   {
+    "Name": "Creative Cloud UI Helper",
+    "cpu_s": 100.8,
+    "ws_mb": 416
+   },
+   {
+    "Name": "chrome",
+    "cpu_s": 97.6,
+    "ws_mb": 301
+   },
+   {
+    "Name": "explorer",
+    "cpu_s": 92.2,
+    "ws_mb": 635
+   },
+   {
+    "Name": "Code",
+    "cpu_s": 86.2,
+    "ws_mb": 283
+   },
+   {
+    "Name": "iCloudHome",
+    "cpu_s": 55.4,
+    "ws_mb": 171
+   },
+   {
+    "Name": "claude",
+    "cpu_s": 54.7,
+    "ws_mb": 231
+   }
+  ]
+ },
+ "finished": "2026-10-13T16:55:11",
+ "git_after": {
+  "commit": "0b14fa9d4f01671519fc6a887c0870cf1e4a93fe",
+  "dirty": false
+ },
+ "summary": {
+  "n": 129,
+  "same_status": 129,
+  "different": [],
+  "l3_max_diff_different": []
+ }
+}

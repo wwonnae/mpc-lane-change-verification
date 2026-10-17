@@ -1,0 +1,792 @@
+{
+  "P0": {
+    "n": 1100,
+    "outcome_counts": {
+      "충돌": 160,
+      "이탈": 169,
+      "탐지 정지": 0,
+      "SAFE_STOP": 102,
+      "성공": 668,
+      "타임아웃": 0
+    },
+    "unexpected_outcomes": [
+      "미정착"
+    ],
+    "collisions": 160,
+    "collisions_ci95": [
+      0.12585327771386368,
+      0.1675235980987529
+    ],
+    "completion_rate": 0.7,
+    "unnecessary_stops": {
+      "normal": 0,
+      "harmless": 0,
+      "before_onset": 0,
+      "total": 0
+    },
+    "vs_p0": {
+      "collisions_p0": 160,
+      "collision_delta": 0,
+      "completed_p0": 770,
+      "completion_delta": 0
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 100,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "lidar_spike": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 100,
+          "타임아웃": 0
+        }
+      },
+      "lidar_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 34,
+          "이탈": 10,
+          "탐지 정지": 0,
+          "SAFE_STOP": 1,
+          "성공": 55,
+          "타임아웃": 0
+        }
+      },
+      "ir_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 25,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 75,
+          "타임아웃": 0
+        }
+      },
+      "ir_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 100,
+          "타임아웃": 0
+        }
+      },
+      "right_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 100,
+          "타임아웃": 0
+        }
+      },
+      "steer_delay": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 11,
+          "이탈": 10,
+          "탐지 정지": 0,
+          "SAFE_STOP": 1,
+          "성공": 77,
+          "타임아웃": 0
+        }
+      },
+      "steer_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 38,
+          "탐지 정지": 0,
+          "SAFE_STOP": 1,
+          "성공": 61,
+          "타임아웃": 0
+        }
+      },
+      "left_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 14,
+          "이탈": 86,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      }
+    }
+  },
+  "P1_A": {
+    "n": 1100,
+    "outcome_counts": {
+      "충돌": 1,
+      "이탈": 0,
+      "탐지 정지": 868,
+      "SAFE_STOP": 98,
+      "성공": 133,
+      "타임아웃": 0
+    },
+    "unexpected_outcomes": [],
+    "collisions": 1,
+    "collisions_ci95": [
+      0.00016049076858479054,
+      0.005131572875329335
+    ],
+    "completion_rate": 0.21,
+    "unnecessary_stops": {
+      "normal": 2,
+      "harmless": 266,
+      "before_onset": 4,
+      "total": 272
+    },
+    "vs_p0": {
+      "collisions_p0": 160,
+      "collision_delta": -159,
+      "completed_p0": 770,
+      "completion_delta": -539
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "lidar_spike": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 66,
+          "SAFE_STOP": 0,
+          "성공": 34,
+          "타임아웃": 0
+        }
+      },
+      "lidar_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "ir_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "ir_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "right_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "steer_delay": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "steer_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "left_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      }
+    }
+  },
+  "P1_B1": {
+    "n": 1100,
+    "outcome_counts": {
+      "충돌": 160,
+      "이탈": 160,
+      "탐지 정지": 18,
+      "SAFE_STOP": 99,
+      "성공": 662,
+      "타임아웃": 0
+    },
+    "unexpected_outcomes": [
+      "미정착"
+    ],
+    "collisions": 160,
+    "collisions_ci95": [
+      0.12585327771386368,
+      0.1675235980987529
+    ],
+    "completion_rate": 0.6918181818181818,
+    "unnecessary_stops": {
+      "normal": 3,
+      "harmless": 0,
+      "before_onset": 0,
+      "total": 3
+    },
+    "vs_p0": {
+      "collisions_p0": 160,
+      "collision_delta": 0,
+      "completed_p0": 770,
+      "completion_delta": -9
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 100,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "lidar_spike": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 100,
+          "타임아웃": 0
+        }
+      },
+      "lidar_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 34,
+          "이탈": 9,
+          "탐지 정지": 2,
+          "SAFE_STOP": 1,
+          "성공": 54,
+          "타임아웃": 0
+        }
+      },
+      "ir_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 25,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 75,
+          "타임아웃": 0
+        }
+      },
+      "ir_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 100,
+          "타임아웃": 0
+        }
+      },
+      "right_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 100,
+          "타임아웃": 0
+        }
+      },
+      "steer_delay": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 11,
+          "이탈": 9,
+          "탐지 정지": 2,
+          "SAFE_STOP": 1,
+          "성공": 76,
+          "타임아웃": 0
+        }
+      },
+      "steer_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 31,
+          "탐지 정지": 11,
+          "SAFE_STOP": 1,
+          "성공": 57,
+          "타임아웃": 0
+        }
+      },
+      "left_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 14,
+          "이탈": 86,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      }
+    }
+  },
+  "P1_B2": {
+    "n": 1100,
+    "outcome_counts": {
+      "충돌": 68,
+      "이탈": 12,
+      "탐지 정지": 691,
+      "SAFE_STOP": 96,
+      "성공": 233,
+      "타임아웃": 0
+    },
+    "unexpected_outcomes": [],
+    "collisions": 68,
+    "collisions_ci95": [
+      0.04905447383747395,
+      0.07763181883350347
+    ],
+    "completion_rate": 0.2990909090909091,
+    "unnecessary_stops": {
+      "normal": 4,
+      "harmless": 173,
+      "before_onset": 0,
+      "total": 177
+    },
+    "vs_p0": {
+      "collisions_p0": 160,
+      "collision_delta": -92,
+      "completed_p0": 770,
+      "completion_delta": -441
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 67,
+          "이탈": 0,
+          "탐지 정지": 33,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "lidar_spike": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 66,
+          "SAFE_STOP": 0,
+          "성공": 34,
+          "타임아웃": 0
+        }
+      },
+      "lidar_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "ir_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 12,
+          "탐지 정지": 88,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "ir_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "right_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 7,
+          "SAFE_STOP": 0,
+          "성공": 93,
+          "타임아웃": 0
+        }
+      },
+      "steer_delay": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "steer_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 93,
+          "SAFE_STOP": 0,
+          "성공": 7,
+          "타임아웃": 0
+        }
+      },
+      "left_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      }
+    }
+  },
+  "P1_HYBRID": {
+    "n": 1100,
+    "outcome_counts": {
+      "충돌": 150,
+      "이탈": 115,
+      "탐지 정지": 191,
+      "SAFE_STOP": 99,
+      "성공": 545,
+      "타임아웃": 0
+    },
+    "unexpected_outcomes": [],
+    "collisions": 150,
+    "collisions_ci95": [
+      0.11734466687182854,
+      0.15791366729495765
+    ],
+    "completion_rate": 0.5854545454545454,
+    "unnecessary_stops": {
+      "normal": 2,
+      "harmless": 29,
+      "before_onset": 0,
+      "total": 31
+    },
+    "vs_p0": {
+      "collisions_p0": 160,
+      "collision_delta": -10,
+      "completed_p0": 770,
+      "completion_delta": -126
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 100,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "lidar_spike": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 9,
+          "SAFE_STOP": 0,
+          "성공": 91,
+          "타임아웃": 0
+        }
+      },
+      "lidar_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 34,
+          "이탈": 7,
+          "탐지 정지": 7,
+          "SAFE_STOP": 1,
+          "성공": 51,
+          "타임아웃": 0
+        }
+      },
+      "ir_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 25,
+          "탐지 정지": 6,
+          "SAFE_STOP": 0,
+          "성공": 69,
+          "타임아웃": 0
+        }
+      },
+      "ir_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 1,
+          "SAFE_STOP": 0,
+          "성공": 99,
+          "타임아웃": 0
+        }
+      },
+      "right_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 19,
+          "SAFE_STOP": 0,
+          "성공": 81,
+          "타임아웃": 0
+        }
+      },
+      "steer_delay": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 3,
+          "이탈": 0,
+          "탐지 정지": 89,
+          "SAFE_STOP": 0,
+          "성공": 8,
+          "타임아웃": 0
+        }
+      },
+      "steer_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 6,
+          "탐지 정지": 47,
+          "SAFE_STOP": 1,
+          "성공": 46,
+          "타임아웃": 0
+        }
+      },
+      "left_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 12,
+          "이탈": 77,
+          "탐지 정지": 11,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      }
+    }
+  },
+  "P2_A": {
+    "n": 1100,
+    "outcome_counts": {
+      "충돌": 1,
+      "이탈": 0,
+      "탐지 정지": 471,
+      "SAFE_STOP": 197,
+      "성공": 332,
+      "타임아웃": 99
+    },
+    "unexpected_outcomes": [],
+    "collisions": 1,
+    "collisions_ci95": [
+      0.00016049076858479054,
+      0.005131572875329335
+    ],
+    "completion_rate": 0.4809090909090909,
+    "unnecessary_stops": {
+      "normal": 2,
+      "harmless": 67,
+      "before_onset": 4,
+      "total": 73
+    },
+    "vs_p0": {
+      "collisions_p0": 160,
+      "collision_delta": -159,
+      "completed_p0": 770,
+      "completion_delta": -241
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "lidar_spike": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 66,
+          "SAFE_STOP": 0,
+          "성공": 34,
+          "타임아웃": 0
+        }
+      },
+      "lidar_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "ir_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 1,
+          "SAFE_STOP": 0,
+          "성공": 99,
+          "타임아웃": 0
+        }
+      },
+      "ir_dropout": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 0,
+          "SAFE_STOP": 0,
+          "성공": 100,
+          "타임아웃": 0
+        }
+      },
+      "right_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 1,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 99
+        }
+      },
+      "steer_delay": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "steer_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 100,
+          "SAFE_STOP": 0,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      },
+      "left_clear_stuck": {
+        "n": 100,
+        "outcome_counts": {
+          "충돌": 0,
+          "이탈": 0,
+          "탐지 정지": 1,
+          "SAFE_STOP": 99,
+          "성공": 0,
+          "타임아웃": 0
+        }
+      }
+    }
+  }
+}

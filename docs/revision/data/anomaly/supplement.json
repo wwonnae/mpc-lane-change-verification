@@ -1,0 +1,206 @@
+{
+ "purpose": "이상탐지 확장 보고서 보충 재현(DESIGN.md §25) — 평가 seed 미사용",
+ "git": {
+  "commit": "52eb68bfe3f99b777582d3bff6f621b8d222825d",
+  "dirty": true,
+  "tag": null
+ },
+ "thresholds_from": "thesis_v2/results/anomaly/20261012_142758_3층PC109_it3_closed_loop_eval",
+ "leftobs_survey": {
+  "seeds": [
+   3000,
+   3399
+  ],
+  "n": 400,
+  "outcomes": {
+   "SAFE_STOP": 399,
+   "충돌": 1
+  },
+  "paths": {
+   "SAFE_STOP|KEEP_L2->SAFE_STOP|-": 237,
+   "SAFE_STOP|KEEP_L2->EVADE_L->KEEP_L1->SAFE_STOP|fg_noise": 29,
+   "SAFE_STOP|KEEP_L2->EVADE_L->SAFE_STOP|lc_flip": 92,
+   "SAFE_STOP|KEEP_L2->EVADE_L->SAFE_STOP|fg_noise": 37,
+   "SAFE_STOP|KEEP_L2->EVADE_L->KEEP_L1->SAFE_STOP|lc_flip": 4,
+   "충돌|KEEP_L2->EVADE_L->SAFE_STOP|lc_flip": 1
+  },
+  "evaded": 163,
+  "collision_seeds": [
+   3173
+  ]
+ },
+ "factor": {
+  "far_noisefree": {
+   "n": 400,
+   "outcomes": {
+    "SAFE_STOP": 400
+   },
+   "evaded": 0
+  },
+  "near_noisefree": {
+   "n": 400,
+   "outcomes": {
+    "SAFE_STOP": 400
+   },
+   "evaded": 0
+  },
+  "near_s4low": {
+   "n": 400,
+   "outcomes": {
+    "SAFE_STOP": 396,
+    "충돌": 4
+   },
+   "evaded": 133
+  }
+ },
+ "seed3173": {
+  "seed": 3173,
+  "outcome": "충돌",
+  "total_steps": 89,
+  "transitions": [
+   [
+    82,
+    "KEEP_L2",
+    "EVADE_L"
+   ],
+   [
+    89,
+    "EVADE_L",
+    "SAFE_STOP"
+   ]
+  ],
+  "steps": [
+   {
+    "step": 81,
+    "before": "KEEP_L2",
+    "after": "KEEP_L2",
+    "fg": 0.225,
+    "fg_clean": 0.223,
+    "lc": 0,
+    "lc_clean": 0
+   },
+   {
+    "step": 82,
+    "before": "KEEP_L2",
+    "after": "EVADE_L",
+    "fg": 0.201,
+    "fg_clean": 0.198,
+    "lc": 1,
+    "lc_clean": 0
+   },
+   {
+    "step": 83,
+    "before": "EVADE_L",
+    "after": "EVADE_L",
+    "fg": 0.178,
+    "fg_clean": 0.174,
+    "lc": 0,
+    "lc_clean": 0
+   },
+   {
+    "step": 84,
+    "before": "EVADE_L",
+    "after": "EVADE_L",
+    "fg": 0.149,
+    "fg_clean": 0.149,
+    "lc": 0,
+    "lc_clean": 0
+   },
+   {
+    "step": 85,
+    "before": "EVADE_L",
+    "after": "EVADE_L",
+    "fg": 0.126,
+    "fg_clean": 0.125,
+    "lc": 0,
+    "lc_clean": 0
+   },
+   {
+    "step": 86,
+    "before": "EVADE_L",
+    "after": "EVADE_L",
+    "fg": 0.097,
+    "fg_clean": 0.102,
+    "lc": 0,
+    "lc_clean": 0
+   },
+   {
+    "step": 87,
+    "before": "EVADE_L",
+    "after": "EVADE_L",
+    "fg": 0.095,
+    "fg_clean": 0.08,
+    "lc": 0,
+    "lc_clean": 0
+   },
+   {
+    "step": 88,
+    "before": "EVADE_L",
+    "after": "EVADE_L",
+    "fg": 0.056,
+    "fg_clean": 0.059,
+    "lc": 0,
+    "lc_clean": 0
+   },
+   {
+    "step": 89,
+    "before": "EVADE_L",
+    "after": "SAFE_STOP",
+    "fg": 0.04,
+    "fg_clean": 0.039,
+    "lc": 0,
+    "lc_clean": 0
+   }
+  ],
+  "cooldown_s": 0.3,
+  "cooldown_steps": 6,
+  "last_step_v_cmd": 0.0,
+  "last_step_move_m": 0.025,
+  "last_step_psi_deg": [
+   20.6,
+   23.9
+  ]
+ },
+ "p2_lcs_dev": {
+  "seeds": [
+   3200,
+   3299
+  ],
+  "outcomes": {
+   "SAFE_STOP": 100
+  },
+  "safe_stop_from": {
+   "KEEP_L1": 46,
+   "EVADE_L": 54
+  },
+  "y_min_med_max": [
+   0.187,
+   0.243,
+   0.355
+  ],
+  "psi_deg_min_med_max": [
+   26.6,
+   35.2,
+   39.5
+  ],
+  "clean_gap_after_min_med_max": [
+   0.038,
+   0.17,
+   0.202
+  ],
+  "y_ge_015": 100,
+  "n_safe_stop": 100
+ },
+ "p2_rcs_dev": {
+  "seeds": [
+   3200,
+   3209
+  ],
+  "P0": {
+   "성공|KEEP_L2->EVADE_L->KEEP_L1->RETURN_TO_L2->KEEP_L2|": 10
+  },
+  "P2": {
+   "타임아웃|KEEP_L2->EVADE_L->KEEP_L1|300": 10
+  }
+ }
+}

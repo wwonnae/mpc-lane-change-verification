@@ -1,0 +1,6 @@
+# 이상탐지 확장(thesis_v2/anomaly) 추가 패키지 — 노트북 .venv(Python 3.9.12) 기준.
+# 기존 thesis_v2/requirements-py39.txt(numpy 2.0.2, scipy 1.13.1, osqp 1.1.1)를 바꾸지 않고 함께 설치된다
+# (cp39 win_amd64 wheel 존재 및 의존성 해석 확인, 2026-10-01).
+scikit-learn==1.6.1
+pandas==2.2.3
+# torch는 기존 .venv의 2.8.0+cpu를 그대로 사용(3단계 오토인코더)

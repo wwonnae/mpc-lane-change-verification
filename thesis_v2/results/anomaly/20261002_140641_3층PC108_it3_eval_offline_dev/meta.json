@@ -1,0 +1,30 @@
+{
+  "purpose": "오프라인 평가(DESIGN.md §7·§13-5, 핵심+확장) — dev 대역 테스트, 보고서 수치 아님",
+  "seeds_mode": "dev",
+  "seeds": [
+    3200,
+    3299
+  ],
+  "iteration": 3,
+  "threshold_dirs": {
+    "A": "thesis_v2/results/anomaly/20261002_104706_3층PC108_it3_threshold_a",
+    "A_sg0_05": "thesis_v2/results/anomaly/20261002_121655_3층PC108_it3_threshold_a_sg0.05",
+    "A_sg5": "thesis_v2/results/anomaly/20261002_121733_3층PC108_it3_threshold_a_sg5",
+    "B": "thesis_v2/results/anomaly/20261002_001119_DESKTOP-MDCKRJS_it2_threshold_b",
+    "HYBRID": "thesis_v2/results/anomaly/20261002_111959_3층PC108_it3_threshold_hybrid"
+  },
+  "model_dirs": {
+    "B": "thesis_v2\\results\\anomaly\\20261002_001009_DESKTOP-MDCKRJS_it2_train_b",
+    "HYBRID": "thesis_v2\\results\\anomaly\\20261002_111909_3층PC108_it3_train_hybrid"
+  },
+  "h_by_detector": {
+    "A": 9.210921221467048,
+    "B1": 0.6484835101813881,
+    "B2": 0.4636532962322235,
+    "HYBRID": 0.6062505529980149,
+    "A_sg0.05": 9.210921221467206,
+    "A_sg5": 9.210921221467045
+  },
+  "n_bootstrap": 2000,
+  "bootstrap_seed": 0
+}

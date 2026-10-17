@@ -1,0 +1,421 @@
+{
+ "purpose": "CI run #6 비결정 실패 — 전체 suite 반복",
+ "started": "2026-10-13T20:24:37",
+ "host": "DESKTOP-MDCKRJS",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "python": "3.9.12",
+ "cpu_count": 22,
+ "git": "4c0c503797fd5ee6f4f1bf8bf152186a149fd581",
+ "dirty": false,
+ "variant": "no_time_limit",
+ "results": [
+  {
+   "load": "cpu_strong",
+   "pc_state_start": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "n_trials": 30,
+   "n_target_failed": 0,
+   "n_any_failed": 0,
+   "seconds": 2216.0,
+   "runs": [
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 76.91s (0:01:16)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 68.27s (0:01:08)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 75.39s (0:01:15)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 68.29s (0:01:08)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 72.79s (0:01:12)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 73.22s (0:01:13)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 67.72s (0:01:07)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 67.47s (0:01:07)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 65.16s (0:01:05)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 62.47s (0:01:02)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 71.90s (0:01:11)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 62.80s (0:01:02)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 65.16s (0:01:05)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 68.24s (0:01:08)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 67.36s (0:01:07)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 68.93s (0:01:08)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 65.68s (0:01:05)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 61.42s (0:01:01)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 66.77s (0:01:06)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 53.46s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 57.44s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 55.33s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 53.93s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 52.75s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 51.68s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 43.42s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 48.89s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 57.27s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 56.29s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 52.67s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    }
+   ]
+  }
+ ],
+ "finished": "2026-10-13T21:01:40"
+}

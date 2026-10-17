@@ -1,0 +1,2 @@
+{"exp": "S2_noload", "out_dir": "C:/Users/SSAFY/Desktop/MPC_LINETRACING/docs/verification/ci/run6_cause/raw/S2_noload", "batch_size": 10, "block": 1, "settle_s": 12,
+ "arms": [{"name": "noload", "root": "C:/Users/SSAFY/AppData/Local/Temp/run6_cause/copies/orig", "targets": ["i5","i4","base"], "probe": true, "load_k": 0, "trials": 1000, "keep_full_first": 2}]}

@@ -1,0 +1,117 @@
+# run #6 비결정성 원인 확인용 — 수동 실행 전용(docs/verification/ci/run6_cause/PLAN.md, 4단계).
+# - ci.yml과 같은 러너 이미지(ubuntu-24.04, windows-2025), 같은 Python(3.9)과 같은 고정 의존성을 쓴다.
+# - 대상 테스트(test_i5 golden 3회 반복, test_i4 동일성 3개, baseline 대조군)를 run6_cause/harness.py로 반복 실행하고,
+#   OSQP 기록 래퍼(osqp_probe.py)로 solve마다 status·반복 수·시간·time_limit 지문을 남긴다.
+# - 조건(orig / A=time_limit 끔)은 apply_condition.py --ci로 **작업 공간 사본에만** 적용한다(커밋하지 않음).
+# - 원자료(회차별 결과, 이벤트, 러너 정보, 집계)는 artifact로 올린다. 이 워크플로는 테스트 결과로 실패 처리하지 않는다.
+name: flaky-probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      repeats:
+        description: "조건(job)당 반복 회차 수"
+        required: true
+        default: "500"
+      conditions:
+        description: "쉼표로 구분: orig, A (A = time_limit 끔)"
+        required: true
+        default: "orig,A"
+      load:
+        description: "러너 안 추가 부하: none / x1(코어 수만큼 바쁜 루프) / x2(코어 수 x2)"
+        required: true
+        default: "none"
+        type: choice
+        options: [none, x1, x2]
+
+permissions:
+  contents: read
+
+jobs:
+  matrix:
+    runs-on: ubuntu-24.04
+    outputs:
+      conds: ${{ steps.m.outputs.conds }}
+    steps:
+      - id: m
+        env:
+          CONDS: ${{ inputs.conditions }}
+        run: |
+          python3 -c "import json,os; c=[x.strip() for x in os.environ['CONDS'].split(',') if x.strip()]; assert c and all(x in ('orig','A') for x in c), c; print('conds='+json.dumps(c))" >> "$GITHUB_OUTPUT"
+
+  probe:
+    needs: matrix
+    name: ${{ matrix.os }} / ${{ matrix.cond }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2025]
+        cond: ${{ fromJSON(needs.matrix.outputs.conds) }}
+    env:
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: utf-8
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+          cache: pip
+          cache-dependency-path: |
+            thesis_v2/requirements-py39.txt
+            thesis_v2/anomaly/requirements-anomaly.txt
+
+      - name: Install (pinned, torch CPU) — ci.yml과 같음
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r thesis_v2/requirements-py39.txt -r thesis_v2/anomaly/requirements-anomaly.txt
+          python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Apply condition to workspace copy (not committed)
+        run: |
+          python docs/verification/ci/run6_cause/apply_condition.py apply --root . --cond "${{ matrix.cond }}" --ci
+          git status --short
+          git diff --stat
+
+      - name: Run harness
+        env:
+          REPEATS: ${{ inputs.repeats }}
+          LOAD: ${{ inputs.load }}
+          COND: ${{ matrix.cond }}
+        run: |
+          mkdir -p probe-out
+          python - <<'EOF'
+          import json, os
+          n = int(os.environ["REPEATS"])
+          mult = {"none": 0, "x1": 1, "x2": 2}[os.environ["LOAD"]]
+          k = mult * os.cpu_count()
+          spec = {"exp": f"ci_{os.environ['COND']}_{os.environ['LOAD']}", "out_dir": "probe-out/run",
+                  "batch_size": 10, "block": 1, "settle_s": 5 if k else 0,
+                  "arms": [{"name": os.environ["COND"], "root": ".", "targets": ["i5", "i4", "base"],
+                            "probe": True, "load_k": k, "trials": n, "keep_full_first": 2}]}
+          open("probe-out/spec.json", "w", encoding="utf-8").write(json.dumps(spec, indent=1))
+          print(spec)
+          EOF
+          python docs/verification/ci/run6_cause/harness.py run --spec probe-out/spec.json 2>&1 | tee probe-out/harness.log
+
+      - name: Summarize
+        if: ${{ always() }}
+        run: |
+          python docs/verification/ci/run6_cause/analyze.py --exp-dir probe-out/run \
+            --json probe-out/summary.json --md probe-out/summary.md > /dev/null || true
+          cat probe-out/summary.md >> "$GITHUB_STEP_SUMMARY" || true
+          python -m pip freeze > probe-out/pip_freeze.txt
+
+      - name: Upload raw
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: flaky-probe-${{ matrix.os }}-${{ matrix.cond }}-${{ inputs.load }}
+          path: |
+            probe-out/
+            _run6_condition.json

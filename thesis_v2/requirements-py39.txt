@@ -1,0 +1,15 @@
+# 노트북 환경(현재 세션) — 실제 설치·검증 완료 버전을 고정.
+# 생성: `.venv`(Python 3.9.12, host DESKTOP-MDCKRJS) 확인. 2026-09-17.
+# 참고: 프로젝트 공용 `requirements.txt`는 범위만 지정합니다(환경 충돌 최소화 목적).
+# 이 파일은 "이 노트북에서 재현 가능함이 확인된" 정확한 조합을 기록하는 용도입니다.
+# 대상 Python: 3.9.12 (pip requirements 파일은 인터프리터 버전을 직접 지정할 수 없어 주석으로만 기록)
+numpy==2.0.2
+scipy==1.13.1
+osqp==1.1.1
+pytest==8.4.2
+# torch: M트랙(신경망 임베디드 확인)에서만 필요, baseline P/C트랙 실행에는 불필요
+torch>=2.0; extra == "m-track"
+# I4(3단계, 2026-09-25): Student ONNX 변환·벤치마크용. 기존 .venv의 onnxruntime 1.23.0은 cp313
+# wheel이라 py3.9에서 로드 불가 -> py3.9 지원 마지막 계열 1.19.2로 재설치. onnx는 torch.onnx.export용.
+onnxruntime==1.19.2; extra == "m-track"
+onnx==1.19.1; extra == "m-track"

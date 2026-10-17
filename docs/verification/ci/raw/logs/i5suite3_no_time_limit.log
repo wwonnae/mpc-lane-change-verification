@@ -1,0 +1,31 @@
+cpu_strong trial  0 340 passed, 6 warnings in 76.91s (0:01:16) target_failed=False [] tl_hits=0
+cpu_strong trial  1 340 passed, 6 warnings in 68.27s (0:01:08) target_failed=False [] tl_hits=0
+cpu_strong trial  2 340 passed, 6 warnings in 75.39s (0:01:15) target_failed=False [] tl_hits=0
+cpu_strong trial  3 340 passed, 6 warnings in 68.29s (0:01:08) target_failed=False [] tl_hits=0
+cpu_strong trial  4 340 passed, 6 warnings in 72.79s (0:01:12) target_failed=False [] tl_hits=0
+cpu_strong trial  5 340 passed, 6 warnings in 73.22s (0:01:13) target_failed=False [] tl_hits=0
+cpu_strong trial  6 340 passed, 6 warnings in 67.72s (0:01:07) target_failed=False [] tl_hits=0
+cpu_strong trial  7 340 passed, 6 warnings in 67.47s (0:01:07) target_failed=False [] tl_hits=0
+cpu_strong trial  8 340 passed, 6 warnings in 65.16s (0:01:05) target_failed=False [] tl_hits=0
+cpu_strong trial  9 340 passed, 6 warnings in 62.47s (0:01:02) target_failed=False [] tl_hits=0
+cpu_strong trial 10 340 passed, 6 warnings in 71.90s (0:01:11) target_failed=False [] tl_hits=0
+cpu_strong trial 11 340 passed, 6 warnings in 62.80s (0:01:02) target_failed=False [] tl_hits=0
+cpu_strong trial 12 340 passed, 6 warnings in 65.16s (0:01:05) target_failed=False [] tl_hits=0
+cpu_strong trial 13 340 passed, 6 warnings in 68.24s (0:01:08) target_failed=False [] tl_hits=0
+cpu_strong trial 14 340 passed, 6 warnings in 67.36s (0:01:07) target_failed=False [] tl_hits=0
+cpu_strong trial 15 340 passed, 6 warnings in 68.93s (0:01:08) target_failed=False [] tl_hits=0
+cpu_strong trial 16 340 passed, 6 warnings in 65.68s (0:01:05) target_failed=False [] tl_hits=0
+cpu_strong trial 17 340 passed, 6 warnings in 61.42s (0:01:01) target_failed=False [] tl_hits=0
+cpu_strong trial 18 340 passed, 6 warnings in 66.77s (0:01:06) target_failed=False [] tl_hits=0
+cpu_strong trial 19 340 passed, 6 warnings in 53.46s target_failed=False [] tl_hits=0
+cpu_strong trial 20 340 passed, 6 warnings in 57.44s target_failed=False [] tl_hits=0
+cpu_strong trial 21 340 passed, 6 warnings in 55.33s target_failed=False [] tl_hits=0
+cpu_strong trial 22 340 passed, 6 warnings in 53.93s target_failed=False [] tl_hits=0
+cpu_strong trial 23 340 passed, 6 warnings in 52.75s target_failed=False [] tl_hits=0
+cpu_strong trial 24 340 passed, 6 warnings in 51.68s target_failed=False [] tl_hits=0
+cpu_strong trial 25 340 passed, 6 warnings in 43.42s target_failed=False [] tl_hits=0
+cpu_strong trial 26 340 passed, 6 warnings in 48.89s target_failed=False [] tl_hits=0
+cpu_strong trial 27 340 passed, 6 warnings in 57.27s target_failed=False [] tl_hits=0
+cpu_strong trial 28 340 passed, 6 warnings in 56.29s target_failed=False [] tl_hits=0
+cpu_strong trial 29 340 passed, 6 warnings in 52.67s target_failed=False [] tl_hits=0
+SUMMARY cpu_strong target_failed 0/30 any_failed 0 2216.0 s

@@ -1,0 +1,45 @@
+{
+ "exp": "pc_rt",
+ "out_dir": "C:/Users/SSAFY/AppData/Local/Temp/claude/C--Users-SSAFY-Desktop-MPC-LINETRACING/1919534f-8d69-4825-ad3b-f682e4083109/scratchpad/pc_rt",
+ "batch_size": 10,
+ "block": 1,
+ "settle_s": 0,
+ "arms": [
+  {
+   "name": "T0002",
+   "root": "C:/Users/SSAFY/AppData/Local/Temp/claude/C--Users-SSAFY-Desktop-MPC-LINETRACING/1919534f-8d69-4825-ad3b-f682e4083109/scratchpad/copies/T0.0002",
+   "targets": [
+    "i5",
+    "i4"
+   ],
+   "probe": true,
+   "load_k": 0,
+   "trials": 10,
+   "keep_full_first": 10
+  },
+  {
+   "name": "T0005",
+   "root": "C:/Users/SSAFY/AppData/Local/Temp/claude/C--Users-SSAFY-Desktop-MPC-LINETRACING/1919534f-8d69-4825-ad3b-f682e4083109/scratchpad/copies/T0005",
+   "targets": [
+    "i5",
+    "i4"
+   ],
+   "probe": true,
+   "load_k": 0,
+   "trials": 10,
+   "keep_full_first": 10
+  },
+  {
+   "name": "T001",
+   "root": "C:/Users/SSAFY/AppData/Local/Temp/claude/C--Users-SSAFY-Desktop-MPC-LINETRACING/1919534f-8d69-4825-ad3b-f682e4083109/scratchpad/copies/T0.001",
+   "targets": [
+    "i5",
+    "i4"
+   ],
+   "probe": true,
+   "load_k": 0,
+   "trials": 10,
+   "keep_full_first": 10
+  }
+ ]
+}

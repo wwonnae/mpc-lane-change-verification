@@ -1,0 +1,89 @@
+{
+  "onnxruntime_available": true,
+  "onnxruntime_version": "1.29.0",
+  "onnx_version": "1.22.0",
+  "export": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\MPC_LINETRACING\\thesis_v2\\results\\20260918_143649_3층PC108_onnx_benchmark\\policy_student.onnx",
+    "opset_version": 17,
+    "input_shape_used_for_export": [
+      1,
+      9
+    ],
+    "input_names": [
+      "input"
+    ],
+    "output_names": [
+      "output"
+    ],
+    "dynamic_batch_axis": true
+  },
+  "onnxruntime_providers_used": [
+    "CPUExecutionProvider"
+  ],
+  "onnxruntime_intra_op_num_threads": 1,
+  "onnxruntime_inter_op_num_threads": 1,
+  "validation": {
+    "n_samples": 1000,
+    "seed": 7,
+    "max_abs_diff_normalized_output": 5.9604644775390625e-06,
+    "max_abs_diff_delta_deg": 4.38690185546875e-05
+  },
+  "benchmark": {
+    "n_mpc": 3000,
+    "n_student": 6000,
+    "warmup_excluded": 50,
+    "timing_seed": 42,
+    "fixed_threads": 1,
+    "mpc_solve_ms": {
+      "mean": 0.14093908460581897,
+      "p50": 0.13889999536331743,
+      "p95": 0.1694650018180254,
+      "p99": 0.19625099550466982,
+      "max": 0.2834999904735014,
+      "min": 0.10830000974237919,
+      "count": 2950
+    },
+    "torch_infer_only_ms": {
+      "mean": 0.2014971260047917,
+      "p50": 0.195699991309084,
+      "p95": 0.2295550017151982,
+      "p99": 0.2785509964451194,
+      "max": 4.853500009630807,
+      "min": 0.1846999948611483,
+      "count": 5950
+    },
+    "torch_incl_normalization_ms": {
+      "mean": 0.22541603359624648,
+      "p50": 0.218700006371364,
+      "p95": 0.26290999376215046,
+      "p99": 0.3314239987230399,
+      "max": 0.7473000005120412,
+      "min": 0.20799999765586108,
+      "count": 5950
+    },
+    "onnx_infer_only_ms": {
+      "mean": 0.03823164696883442,
+      "p50": 0.036900004488416016,
+      "p95": 0.04169999738223851,
+      "p99": 0.06700600089970989,
+      "max": 0.2094000083161518,
+      "min": 0.03640000068116933,
+      "count": 5950
+    },
+    "onnx_incl_normalization_ms": {
+      "mean": 0.047106504224596876,
+      "p50": 0.045900000259280205,
+      "p95": 0.051099996198900044,
+      "p99": 0.07870000263210386,
+      "max": 0.1782000035746023,
+      "min": 0.04360001184977591,
+      "count": 5950
+    },
+    "speedup_mpc_over_torch_incl_norm": 0.6351165583756683,
+    "speedup_mpc_over_onnx_incl_norm": 3.0261436727385247,
+    "speedup_torch_over_onnx_incl_norm": 4.764705994247714,
+    "speedup_mpc_over_torch_infer_only": 0.7097598443116026,
+    "speedup_mpc_over_onnx_infer_only": 3.7642270587506887,
+    "speedup_torch_over_onnx_infer_only": 5.303522154598109
+  }
+}

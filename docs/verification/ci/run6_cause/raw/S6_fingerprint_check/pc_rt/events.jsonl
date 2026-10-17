@@ -1,0 +1,10 @@
+{"time": "2026-10-14T15:12:15.880+09:00", "event": "start", "exp": "pc_rt"}
+{"time": "2026-10-14T15:12:19.561+09:00", "event": "schedule", "total_batches": 3, "already_done": 0}
+{"time": "2026-10-14T15:12:19.562+09:00", "event": "load_set", "k": 0, "pids": [], "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal", "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe", "settle_s": 0.0}
+{"time": "2026-10-14T15:12:19.564+09:00", "event": "batch_start", "batch": "T0002_000", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T15:12:28.477+09:00", "event": "batch_end", "batch": "T0002_000", "mismatches": {"i5": 10, "i4_rec": 10, "i4_cl100": 10, "i4_cl101": 10}}
+{"time": "2026-10-14T15:12:28.477+09:00", "event": "batch_start", "batch": "T0005_000", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T15:12:37.053+09:00", "event": "batch_end", "batch": "T0005_000", "mismatches": {"i5": 10, "i4_rec": 10, "i4_cl100": 10, "i4_cl101": 10}}
+{"time": "2026-10-14T15:12:37.053+09:00", "event": "batch_start", "batch": "T001_000", "trials": 10, "load_k": 0}
+{"time": "2026-10-14T15:12:45.968+09:00", "event": "batch_end", "batch": "T001_000", "mismatches": {"i5": 10, "i4_rec": 10, "i4_cl100": 10, "i4_cl101": 10}}
+{"time": "2026-10-14T15:12:49.601+09:00", "event": "end"}

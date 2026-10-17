@@ -1,0 +1,2209 @@
+{
+  "A": {
+    "h": 9.210921221467048,
+    "normal_far": {
+      "episodes": {
+        "k": 0,
+        "n": 100,
+        "ci95": [
+          0.0,
+          0.03699480747600191
+        ]
+      },
+      "step_false_alarm_rate": 0.0,
+      "step_n": 20075
+    },
+    "normal_leftobs": {
+      "episodes": {
+        "k": 0,
+        "n": 100,
+        "ci95": [
+          0.0,
+          0.03699480747600191
+        ]
+      },
+      "step_false_alarm_rate": 0.0,
+      "step_n": 9388
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 7,
+        "delay_p90": 7,
+        "delay_median_ci95": [
+          7.0,
+          7.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 6380,
+          "fp": 0,
+          "fn": 665,
+          "precision": 1.0,
+          "recall": 0.9056068133427964,
+          "f1": 0.9504655493482309
+        },
+        "step_f1_ci95": [
+          0.9485454360834311,
+          0.9522705923496932
+        ],
+        "failures": 100,
+        "alarm_before_failure": 100,
+        "lead_time_steps": {
+          "n": 100,
+          "median": 60.0,
+          "min": 46.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 100,
+          "n": 100,
+          "ci95": [
+            0.9630051925239981,
+            0.9999999999999999
+          ]
+        }
+      },
+      "lidar_spike": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 69,
+        "detected_ci95": [
+          0.5937376052204429,
+          0.7722043679386762
+        ],
+        "delay_median": 0,
+        "delay_p90": 2,
+        "delay_median_ci95": [
+          0.0,
+          0.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 111,
+          "fp": 7771,
+          "fn": 90,
+          "precision": 0.014082720121796498,
+          "recall": 0.5522388059701493,
+          "f1": 0.027465050105158977
+        },
+        "step_f1_ci95": [
+          0.024137478682933228,
+          0.03141397553277554
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 69,
+          "n": 69,
+          "ci95": [
+            0.9472609058559944,
+            1.0
+          ]
+        }
+      },
+      "lidar_dropout": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 2,
+        "delay_p90": 2,
+        "delay_median_ci95": [
+          2.0,
+          2.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 3905,
+          "fp": 6528,
+          "fn": 200,
+          "precision": 0.37429310840601937,
+          "recall": 0.951278928136419,
+          "f1": 0.5372128215710552
+        },
+        "step_f1_ci95": [
+          0.4835257348754812,
+          0.5959989429318989
+        ],
+        "failures": 52,
+        "alarm_before_failure": 52,
+        "lead_time_steps": {
+          "n": 52,
+          "median": 55.0,
+          "min": 51.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 100,
+          "n": 100,
+          "ci95": [
+            0.9630051925239981,
+            0.9999999999999999
+          ]
+        }
+      },
+      "ir_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 1,
+        "delay_p90": 15,
+        "delay_median_ci95": [
+          1.0,
+          1.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 13234,
+          "fp": 0,
+          "fn": 598,
+          "precision": 1.0,
+          "recall": 0.956766917293233,
+          "f1": 0.9779058597502401
+        },
+        "step_f1_ci95": [
+          0.9655849730957964,
+          0.9883234910972805
+        ],
+        "failures": 23,
+        "alarm_before_failure": 23,
+        "lead_time_steps": {
+          "n": 23,
+          "median": 49.0,
+          "min": 16.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 100,
+          "n": 100,
+          "ci95": [
+            0.9630051925239981,
+            0.9999999999999999
+          ]
+        }
+      },
+      "ir_dropout": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 2,
+        "delay_p90": 2,
+        "delay_median_ci95": [
+          2.0,
+          2.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 16140,
+          "fp": 0,
+          "fn": 215,
+          "precision": 1.0,
+          "recall": 0.9868541730357688,
+          "f1": 0.9933835974765348
+        },
+        "step_f1_ci95": [
+          0.9924552534640545,
+          0.993882956675598
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 100,
+          "n": 100,
+          "ci95": [
+            0.9630051925239981,
+            0.9999999999999999
+          ]
+        }
+      },
+      "right_clear_stuck": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 2,
+        "delay_p90": 4,
+        "delay_median_ci95": [
+          2.0,
+          2.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 12956,
+          "fp": 0,
+          "fn": 245,
+          "precision": 1.0,
+          "recall": 0.9814407999393985,
+          "f1": 0.9906334824330008
+        },
+        "step_f1_ci95": [
+          0.9898989707188857,
+          0.9912930576406106
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 100,
+          "n": 100,
+          "ci95": [
+            0.9630051925239981,
+            0.9999999999999999
+          ]
+        }
+      },
+      "steer_delay": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 5,
+        "delay_p90": 17,
+        "delay_median_ci95": [
+          5.0,
+          7.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 14716,
+          "fp": 0,
+          "fn": 905,
+          "precision": 1.0,
+          "recall": 0.9420651686831829,
+          "f1": 0.97016844117744
+        },
+        "step_f1_ci95": [
+          0.9637724462296157,
+          0.9760314091028705
+        ],
+        "failures": 16,
+        "alarm_before_failure": 16,
+        "lead_time_steps": {
+          "n": 16,
+          "median": 72.0,
+          "min": 49.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 100,
+          "n": 100,
+          "ci95": [
+            0.9630051925239981,
+            0.9999999999999999
+          ]
+        }
+      },
+      "steer_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 2,
+        "delay_p90": 2,
+        "delay_median_ci95": [
+          1.0,
+          2.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 1847,
+          "fp": 8269,
+          "fn": 170,
+          "precision": 0.18258204824041124,
+          "recall": 0.9157164105106594,
+          "f1": 0.30445891370642053
+        },
+        "step_f1_ci95": [
+          0.26989970207719055,
+          0.34523161673079855
+        ],
+        "failures": 37,
+        "alarm_before_failure": 37,
+        "lead_time_steps": {
+          "n": 37,
+          "median": 24.0,
+          "min": 20.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 100,
+          "n": 100,
+          "ci95": [
+            0.9630051925239981,
+            0.9999999999999999
+          ]
+        }
+      },
+      "left_clear_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 56,
+        "delay_p90": 71,
+        "delay_median_ci95": [
+          51.0,
+          57.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 2010,
+          "fp": 0,
+          "fn": 5526,
+          "precision": 1.0,
+          "recall": 0.26671974522292996,
+          "f1": 0.4211187932118165
+        },
+        "step_f1_ci95": [
+          0.40451647587015327,
+          0.43723310594995496
+        ],
+        "failures": 100,
+        "alarm_before_failure": 100,
+        "lead_time_steps": {
+          "n": 100,
+          "median": 19.0,
+          "min": 13.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": {
+          "k": 100,
+          "n": 100,
+          "ci95": [
+            0.9630051925239981,
+            0.9999999999999999
+          ]
+        }
+      }
+    },
+    "harmful_detected": {
+      "k": 600,
+      "n": 600,
+      "ci95": [
+        0.9936380666717896,
+        1.0
+      ]
+    },
+    "harmless_detected": {
+      "k": 269,
+      "n": 300,
+      "ci95": [
+        0.8570590047878968,
+        0.9262438740805661
+      ]
+    },
+    "roc_pr": {
+      "episode_auc": 0.9933166666666666,
+      "episode_auc_ci95": [
+        0.9888898611111111,
+        0.9972197916666666
+      ],
+      "step_ap": 0.7150347435644806,
+      "step_ap_ci95": [
+        0.6778071454858539,
+        0.7549985575898324
+      ],
+      "n_pos_episodes": 900,
+      "n_neg_episodes": 200
+    },
+    "delay_by_magnitude": {
+      "steer_delay": {
+        "delay=4step": {
+          "n": 19,
+          "detected": 19,
+          "detected_ci95": [
+            0.8318156346315496,
+            1.0
+          ],
+          "delay_median": 6,
+          "delay_p90": 26
+        },
+        "delay=5step": {
+          "n": 20,
+          "detected": 20,
+          "detected_ci95": [
+            0.8388698745050667,
+            1.0
+          ],
+          "delay_median": 8,
+          "delay_p90": 14
+        },
+        "delay=6step": {
+          "n": 21,
+          "detected": 21,
+          "detected_ci95": [
+            0.8453561767357979,
+            0.9999999999999999
+          ],
+          "delay_median": 4,
+          "delay_p90": 17
+        },
+        "delay=7step": {
+          "n": 21,
+          "detected": 21,
+          "detected_ci95": [
+            0.8453561767357979,
+            0.9999999999999999
+          ],
+          "delay_median": 5,
+          "delay_p90": 11
+        },
+        "delay=8step": {
+          "n": 19,
+          "detected": 19,
+          "detected_ci95": [
+            0.8318156346315496,
+            1.0
+          ],
+          "delay_median": 5,
+          "delay_p90": 18
+        }
+      },
+      "steer_stuck": {
+        "dur10-19": {
+          "n": 40,
+          "detected": 40,
+          "detected_ci95": [
+            0.9123754607496077,
+            1.0
+          ],
+          "delay_median": 2,
+          "delay_p90": 2
+        },
+        "dur20-30": {
+          "n": 60,
+          "detected": 60,
+          "detected_ci95": [
+            0.9398260695220669,
+            0.9999999999999999
+          ],
+          "delay_median": 2,
+          "delay_p90": 3
+        }
+      },
+      "lidar_dropout": {
+        "dur20-33": {
+          "n": 32,
+          "detected": 32,
+          "detected_ci95": [
+            0.8928172849426366,
+            1.0
+          ],
+          "delay_median": 2,
+          "delay_p90": 2
+        },
+        "dur34-47": {
+          "n": 32,
+          "detected": 32,
+          "detected_ci95": [
+            0.8928172849426366,
+            1.0
+          ],
+          "delay_median": 2,
+          "delay_p90": 2
+        },
+        "dur48-60": {
+          "n": 36,
+          "detected": 36,
+          "detected_ci95": [
+            0.9035781695514236,
+            1.0
+          ],
+          "delay_median": 2,
+          "delay_p90": 2
+        }
+      },
+      "lidar_spike": {
+        "down": {
+          "n": 49,
+          "detected": 49,
+          "detected_ci95": [
+            0.9272997032640949,
+            0.9999999999999999
+          ],
+          "delay_median": 0,
+          "delay_p90": 0
+        },
+        "up": {
+          "n": 51,
+          "detected": 20,
+          "detected_ci95": [
+            0.27027144858027696,
+            0.5291508877483494
+          ],
+          "delay_median": 2,
+          "delay_p90": 2
+        }
+      }
+    }
+  },
+  "B1": {
+    "h": 0.6484835101813881,
+    "normal_far": {
+      "episodes": {
+        "k": 0,
+        "n": 100,
+        "ci95": [
+          0.0,
+          0.03699480747600191
+        ]
+      },
+      "step_false_alarm_rate": 0.0,
+      "step_n": 20075
+    },
+    "normal_leftobs": {
+      "episodes": {
+        "k": 4,
+        "n": 100,
+        "ci95": [
+          0.015663050551848016,
+          0.09837217232607373
+        ]
+      },
+      "step_false_alarm_rate": 0.0009586706433745207,
+      "step_n": 9388
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 0,
+        "detected_ci95": [
+          0.0,
+          0.03699480747600191
+        ],
+        "delay_median": null,
+        "delay_p90": null,
+        "delay_median_ci95": null,
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 7045,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 100,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 100
+        },
+        "separation_accuracy": null
+      },
+      "lidar_spike": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 1,
+        "detected_ci95": [
+          0.0017673865655472645,
+          0.0544875247609346
+        ],
+        "delay_median": 0,
+        "delay_p90": 0,
+        "delay_median_ci95": [
+          0.0,
+          0.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 200,
+          "precision": 1.0,
+          "recall": 0.004975124378109453,
+          "f1": 0.0099009900990099
+        },
+        "step_f1_ci95": [
+          0.009288329026701118,
+          0.03791469194312796
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "lidar_dropout": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 0,
+        "detected_ci95": [
+          0.0,
+          0.03699480747600191
+        ],
+        "delay_median": null,
+        "delay_p90": null,
+        "delay_median_ci95": null,
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 16,
+          "fn": 4105,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 52,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 52
+        },
+        "separation_accuracy": null
+      },
+      "ir_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 0,
+        "detected_ci95": [
+          0.0,
+          0.03699480747600191
+        ],
+        "delay_median": null,
+        "delay_p90": null,
+        "delay_median_ci95": null,
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 13832,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 23,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 23
+        },
+        "separation_accuracy": null
+      },
+      "ir_dropout": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 0,
+        "detected_ci95": [
+          0.0,
+          0.03699480747600191
+        ],
+        "delay_median": null,
+        "delay_p90": null,
+        "delay_median_ci95": null,
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 16355,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "right_clear_stuck": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 0,
+        "detected_ci95": [
+          0.0,
+          0.03699480747600191
+        ],
+        "delay_median": null,
+        "delay_p90": null,
+        "delay_median_ci95": null,
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 13201,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "steer_delay": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 3,
+        "detected_ci95": [
+          0.010254338223414816,
+          0.08452078080402699
+        ],
+        "delay_median": 77,
+        "delay_p90": 92,
+        "delay_median_ci95": [
+          40.0,
+          92.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 15618,
+          "precision": 1.0,
+          "recall": 0.00019204916458613405,
+          "f1": 0.00038402457757296467
+        },
+        "step_f1_ci95": [
+          0.00012467584379688936,
+          0.0008842184335171286
+        ],
+        "failures": 16,
+        "alarm_before_failure": 1,
+        "lead_time_steps": {
+          "n": 1,
+          "median": 6.0,
+          "min": 6.0,
+          "no_warning": 15
+        },
+        "separation_accuracy": null
+      },
+      "steer_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 4,
+        "detected_ci95": [
+          0.015663050551848016,
+          0.09837217232607373
+        ],
+        "delay_median": 20,
+        "delay_p90": 22,
+        "delay_median_ci95": [
+          18.0,
+          22.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 11,
+          "fn": 2017,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 37,
+        "alarm_before_failure": 2,
+        "lead_time_steps": {
+          "n": 2,
+          "median": 4.5,
+          "min": 4.0,
+          "no_warning": 35
+        },
+        "separation_accuracy": null
+      },
+      "left_clear_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 0,
+        "detected_ci95": [
+          0.0,
+          0.03699480747600191
+        ],
+        "delay_median": null,
+        "delay_p90": null,
+        "delay_median_ci95": null,
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 7536,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 100,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 100
+        },
+        "separation_accuracy": null
+      }
+    },
+    "harmful_detected": {
+      "k": 7,
+      "n": 600,
+      "ci95": [
+        0.005662511553023055,
+        0.02388430999752928
+      ]
+    },
+    "harmless_detected": {
+      "k": 1,
+      "n": 300,
+      "ci95": [
+        0.0005886425761407379,
+        0.018637164554943353
+      ]
+    },
+    "roc_pr": {
+      "episode_auc": 0.7002777777777778,
+      "episode_auc_ci95": [
+        0.6617434722222223,
+        0.7381363888888889
+      ],
+      "step_ap": 0.5965103129791387,
+      "step_ap_ci95": [
+        0.5671308494619006,
+        0.6272264651894576
+      ],
+      "n_pos_episodes": 900,
+      "n_neg_episodes": 200
+    },
+    "delay_by_magnitude": {
+      "steer_delay": {
+        "delay=4step": {
+          "n": 19,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.16818436536845052
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        },
+        "delay=5step": {
+          "n": 20,
+          "detected": 2,
+          "detected_ci95": [
+            0.027865893984153206,
+            0.30103820641179335
+          ],
+          "delay_median": 92,
+          "delay_p90": 92
+        },
+        "delay=6step": {
+          "n": 21,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.15464382326420195
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        },
+        "delay=7step": {
+          "n": 21,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.15464382326420195
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        },
+        "delay=8step": {
+          "n": 19,
+          "detected": 1,
+          "detected_ci95": [
+            0.009351752490529969,
+            0.2463921533654521
+          ],
+          "delay_median": 40,
+          "delay_p90": 40
+        }
+      },
+      "steer_stuck": {
+        "dur10-19": {
+          "n": 40,
+          "detected": 4,
+          "detected_ci95": [
+            0.03957888759557486,
+            0.23052074380473897
+          ],
+          "delay_median": 20,
+          "delay_p90": 22
+        },
+        "dur20-30": {
+          "n": 60,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.06017393047793289
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        }
+      },
+      "lidar_dropout": {
+        "dur20-33": {
+          "n": 32,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.1071827150573635
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        },
+        "dur34-47": {
+          "n": 32,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.1071827150573635
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        },
+        "dur48-60": {
+          "n": 36,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.09642183044857634
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        }
+      },
+      "lidar_spike": {
+        "down": {
+          "n": 49,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.07270029673590504
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        },
+        "up": {
+          "n": 51,
+          "detected": 1,
+          "detected_ci95": [
+            0.003469603253442241,
+            0.10304807675589372
+          ],
+          "delay_median": 0,
+          "delay_p90": 0
+        }
+      }
+    }
+  },
+  "B2": {
+    "h": 0.4636532962322235,
+    "normal_far": {
+      "episodes": {
+        "k": 0,
+        "n": 100,
+        "ci95": [
+          0.0,
+          0.03699480747600191
+        ]
+      },
+      "step_false_alarm_rate": 0.0,
+      "step_n": 20075
+    },
+    "normal_leftobs": {
+      "episodes": {
+        "k": 6,
+        "n": 100,
+        "ci95": [
+          0.02778574526665662,
+          0.12476968531222507
+        ]
+      },
+      "step_false_alarm_rate": 0.0010651896037494673,
+      "step_n": 9388
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 20,
+        "detected_ci95": [
+          0.1333659225590988,
+          0.28883096192650237
+        ],
+        "delay_median": 29,
+        "delay_p90": 73,
+        "delay_median_ci95": [
+          21.0,
+          44.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 191,
+          "fp": 0,
+          "fn": 6854,
+          "precision": 1.0,
+          "recall": 0.02711142654364798,
+          "f1": 0.052791597567716966
+        },
+        "step_f1_ci95": [
+          0.03156972373418839,
+          0.0756392676368875
+        ],
+        "failures": 100,
+        "alarm_before_failure": 20,
+        "lead_time_steps": {
+          "n": 20,
+          "median": 38.0,
+          "min": 1.0,
+          "no_warning": 80
+        },
+        "separation_accuracy": null
+      },
+      "lidar_spike": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 72,
+        "detected_ci95": [
+          0.6251178763865427,
+          0.7986044083240164
+        ],
+        "delay_median": 0,
+        "delay_p90": 2,
+        "delay_median_ci95": [
+          0.0,
+          0.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 105,
+          "fp": 682,
+          "fn": 96,
+          "precision": 0.13341804320203304,
+          "recall": 0.5223880597014925,
+          "f1": 0.21255060728744934
+        },
+        "step_f1_ci95": [
+          0.18850514533309262,
+          0.2354125263350832
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "lidar_dropout": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 2,
+        "delay_p90": 2,
+        "delay_median_ci95": [
+          2.0,
+          2.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 743,
+          "fp": 1200,
+          "fn": 3362,
+          "precision": 0.3823983530622748,
+          "recall": 0.1809987819732034,
+          "f1": 0.24570105820105817
+        },
+        "step_f1_ci95": [
+          0.2120611081297736,
+          0.2810015940768466
+        ],
+        "failures": 52,
+        "alarm_before_failure": 52,
+        "lead_time_steps": {
+          "n": 52,
+          "median": 55.0,
+          "min": 51.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "ir_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 91,
+        "detected_ci95": [
+          0.8377362530335634,
+          0.9519280048361151
+        ],
+        "delay_median": 48,
+        "delay_p90": 68,
+        "delay_median_ci95": [
+          42.0,
+          52.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 2413,
+          "fp": 0,
+          "fn": 11419,
+          "precision": 1.0,
+          "recall": 0.17445054945054944,
+          "f1": 0.2970760233918128
+        },
+        "step_f1_ci95": [
+          0.2828955633226663,
+          0.312151451034242
+        ],
+        "failures": 23,
+        "alarm_before_failure": 14,
+        "lead_time_steps": {
+          "n": 14,
+          "median": 54.5,
+          "min": 20.0,
+          "no_warning": 9
+        },
+        "separation_accuracy": null
+      },
+      "ir_dropout": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 97,
+        "delay_p90": 112,
+        "delay_median_ci95": [
+          95.0,
+          100.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 514,
+          "fp": 0,
+          "fn": 15841,
+          "precision": 1.0,
+          "recall": 0.031427697951696726,
+          "f1": 0.06094018614025727
+        },
+        "step_f1_ci95": [
+          0.05881637754882713,
+          0.06369932074208601
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "right_clear_stuck": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 6,
+        "detected_ci95": [
+          0.02778574526665662,
+          0.12476968531222507
+        ],
+        "delay_median": 8,
+        "delay_p90": 10,
+        "delay_median_ci95": [
+          6.0,
+          10.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 13186,
+          "precision": 1.0,
+          "recall": 0.0011362775547307021,
+          "f1": 0.0022699757869249393
+        },
+        "step_f1_ci95": [
+          0.00045359190838281004,
+          0.004552622009322217
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "steer_delay": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 23,
+        "delay_p90": 46,
+        "delay_median_ci95": [
+          21.0,
+          27.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 10000,
+          "fp": 0,
+          "fn": 5621,
+          "precision": 1.0,
+          "recall": 0.6401638819537802,
+          "f1": 0.7806096561414465
+        },
+        "step_f1_ci95": [
+          0.7519368890710186,
+          0.8081893962533089
+        ],
+        "failures": 16,
+        "alarm_before_failure": 16,
+        "lead_time_steps": {
+          "n": 16,
+          "median": 53.5,
+          "min": 43.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "steer_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 97,
+        "detected_ci95": [
+          0.915479219195973,
+          0.9897456617765851
+        ],
+        "delay_median": 9,
+        "delay_p90": 16,
+        "delay_median_ci95": [
+          8.0,
+          10.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 994,
+          "fp": 1071,
+          "fn": 1023,
+          "precision": 0.48135593220338985,
+          "recall": 0.4928111056023798,
+          "f1": 0.487016168544831
+        },
+        "step_f1_ci95": [
+          0.43919517577502687,
+          0.5350122703129525
+        ],
+        "failures": 37,
+        "alarm_before_failure": 37,
+        "lead_time_steps": {
+          "n": 37,
+          "median": 18.0,
+          "min": 15.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "left_clear_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 100,
+        "detected_ci95": [
+          0.9630051925239981,
+          0.9999999999999999
+        ],
+        "delay_median": 64,
+        "delay_p90": 80,
+        "delay_median_ci95": [
+          61.0,
+          67.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 1024,
+          "fp": 0,
+          "fn": 6512,
+          "precision": 1.0,
+          "recall": 0.13588110403397027,
+          "f1": 0.23925233644859814
+        },
+        "step_f1_ci95": [
+          0.23159322783334016,
+          0.24720775292272548
+        ],
+        "failures": 100,
+        "alarm_before_failure": 100,
+        "lead_time_steps": {
+          "n": 100,
+          "median": 9.0,
+          "min": 6.0,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      }
+    },
+    "harmful_detected": {
+      "k": 508,
+      "n": 600,
+      "ci95": [
+        0.8156378652509684,
+        0.8732845276414725
+      ]
+    },
+    "harmless_detected": {
+      "k": 178,
+      "n": 300,
+      "ci95": [
+        0.5369073596366767,
+        0.6473992000970794
+      ]
+    },
+    "roc_pr": {
+      "episode_auc": 0.967575,
+      "episode_auc_ci95": [
+        0.9570156249999999,
+        0.9777583333333334
+      ],
+      "step_ap": 0.7385567612156902,
+      "step_ap_ci95": [
+        0.7173259946917966,
+        0.7596235247861589
+      ],
+      "n_pos_episodes": 900,
+      "n_neg_episodes": 200
+    },
+    "delay_by_magnitude": {
+      "steer_delay": {
+        "delay=4step": {
+          "n": 19,
+          "detected": 19,
+          "detected_ci95": [
+            0.8318156346315496,
+            1.0
+          ],
+          "delay_median": 27,
+          "delay_p90": 57
+        },
+        "delay=5step": {
+          "n": 20,
+          "detected": 20,
+          "detected_ci95": [
+            0.8388698745050667,
+            1.0
+          ],
+          "delay_median": 28,
+          "delay_p90": 38
+        },
+        "delay=6step": {
+          "n": 21,
+          "detected": 21,
+          "detected_ci95": [
+            0.8453561767357979,
+            0.9999999999999999
+          ],
+          "delay_median": 27,
+          "delay_p90": 48
+        },
+        "delay=7step": {
+          "n": 21,
+          "detected": 21,
+          "detected_ci95": [
+            0.8453561767357979,
+            0.9999999999999999
+          ],
+          "delay_median": 22,
+          "delay_p90": 33
+        },
+        "delay=8step": {
+          "n": 19,
+          "detected": 19,
+          "detected_ci95": [
+            0.8318156346315496,
+            1.0
+          ],
+          "delay_median": 21,
+          "delay_p90": 32
+        }
+      },
+      "steer_stuck": {
+        "dur10-19": {
+          "n": 40,
+          "detected": 38,
+          "detected_ci95": [
+            0.834958291820748,
+            0.9861796228538989
+          ],
+          "delay_median": 9,
+          "delay_p90": 14
+        },
+        "dur20-30": {
+          "n": 60,
+          "detected": 59,
+          "detected_ci95": [
+            0.9114466177322051,
+            0.9970519161391262
+          ],
+          "delay_median": 8,
+          "delay_p90": 17
+        }
+      },
+      "lidar_dropout": {
+        "dur20-33": {
+          "n": 32,
+          "detected": 32,
+          "detected_ci95": [
+            0.8928172849426366,
+            1.0
+          ],
+          "delay_median": 2,
+          "delay_p90": 2
+        },
+        "dur34-47": {
+          "n": 32,
+          "detected": 32,
+          "detected_ci95": [
+            0.8928172849426366,
+            1.0
+          ],
+          "delay_median": 2,
+          "delay_p90": 3
+        },
+        "dur48-60": {
+          "n": 36,
+          "detected": 36,
+          "detected_ci95": [
+            0.9035781695514236,
+            1.0
+          ],
+          "delay_median": 2,
+          "delay_p90": 2
+        }
+      },
+      "lidar_spike": {
+        "down": {
+          "n": 49,
+          "detected": 49,
+          "detected_ci95": [
+            0.9272997032640949,
+            0.9999999999999999
+          ],
+          "delay_median": 0,
+          "delay_p90": 0
+        },
+        "up": {
+          "n": 51,
+          "detected": 23,
+          "detected_ci95": [
+            0.32267305011132247,
+            0.5861552845835076
+          ],
+          "delay_median": 2,
+          "delay_p90": 4
+        }
+      }
+    }
+  },
+  "HYBRID": {
+    "h": 0.6062505529980149,
+    "normal_far": {
+      "episodes": {
+        "k": 2,
+        "n": 100,
+        "ci95": [
+          0.005501852234968185,
+          0.07001316294199365
+        ]
+      },
+      "step_false_alarm_rate": 9.962640099626401e-05,
+      "step_n": 20075
+    },
+    "normal_leftobs": {
+      "episodes": {
+        "k": 5,
+        "n": 100,
+        "ci95": [
+          0.02154336145631356,
+          0.11175196527208817
+        ]
+      },
+      "step_false_alarm_rate": 0.0012782275244993609,
+      "step_n": 9388
+    },
+    "per_kind": {
+      "lidar_freeze": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 0,
+        "detected_ci95": [
+          0.0,
+          0.03699480747600191
+        ],
+        "delay_median": null,
+        "delay_p90": null,
+        "delay_median_ci95": null,
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 7045,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 100,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 100
+        },
+        "separation_accuracy": null
+      },
+      "lidar_spike": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 6,
+        "detected_ci95": [
+          0.02778574526665662,
+          0.12476968531222507
+        ],
+        "delay_median": 9,
+        "delay_p90": 12,
+        "delay_median_ci95": [
+          0.0,
+          12.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 3,
+          "fp": 4,
+          "fn": 198,
+          "precision": 0.42857142857142855,
+          "recall": 0.014925373134328358,
+          "f1": 0.028846153846153848
+        },
+        "step_f1_ci95": [
+          0.009418460448223935,
+          0.07668384247331612
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "lidar_dropout": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 1,
+        "detected_ci95": [
+          0.0017673865655472645,
+          0.0544875247609346
+        ],
+        "delay_median": 53,
+        "delay_p90": 53,
+        "delay_median_ci95": [
+          53.0,
+          53.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 0,
+          "fp": 36,
+          "fn": 4105,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": null
+        },
+        "step_f1_ci95": null,
+        "failures": 52,
+        "alarm_before_failure": 1,
+        "lead_time_steps": {
+          "n": 1,
+          "median": 3.0,
+          "min": 3.0,
+          "no_warning": 51
+        },
+        "separation_accuracy": null
+      },
+      "ir_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 10,
+        "detected_ci95": [
+          0.05522854161313613,
+          0.1743673043676654
+        ],
+        "delay_median": 82,
+        "delay_p90": 99,
+        "delay_median_ci95": [
+          23.0,
+          97.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 36,
+          "fp": 0,
+          "fn": 13796,
+          "precision": 1.0,
+          "recall": 0.0026026604973973396,
+          "f1": 0.00519180847995385
+        },
+        "step_f1_ci95": [
+          0.0019579387003046626,
+          0.008970124811150244
+        ],
+        "failures": 23,
+        "alarm_before_failure": 1,
+        "lead_time_steps": {
+          "n": 1,
+          "median": 53.0,
+          "min": 53.0,
+          "no_warning": 22
+        },
+        "separation_accuracy": null
+      },
+      "ir_dropout": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 2,
+        "detected_ci95": [
+          0.005501852234968185,
+          0.07001316294199365
+        ],
+        "delay_median": 56,
+        "delay_p90": 56,
+        "delay_median_ci95": [
+          22.0,
+          56.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 16349,
+          "precision": 1.0,
+          "recall": 0.00036686028737389177,
+          "f1": 0.0007334515005195281
+        },
+        "step_f1_ci95": [
+          0.0002430104138572629,
+          0.001971171794614971
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "right_clear_stuck": {
+        "harmful": false,
+        "fault_started": 100,
+        "detected": 20,
+        "detected_ci95": [
+          0.1333659225590988,
+          0.28883096192650237
+        ],
+        "delay_median": 67,
+        "delay_p90": 71,
+        "delay_median_ci95": [
+          4.0,
+          68.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 54,
+          "fp": 0,
+          "fn": 13147,
+          "precision": 1.0,
+          "recall": 0.004090599197030528,
+          "f1": 0.008147868728781591
+        },
+        "step_f1_ci95": [
+          0.004262234349445447,
+          0.012505744383153109
+        ],
+        "failures": 0,
+        "alarm_before_failure": 0,
+        "lead_time_steps": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "no_warning": 0
+        },
+        "separation_accuracy": null
+      },
+      "steer_delay": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 86,
+        "detected_ci95": [
+          0.7786263961619276,
+          0.914737342455351
+        ],
+        "delay_median": 50,
+        "delay_p90": 80,
+        "delay_median_ci95": [
+          43.0,
+          59.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 444,
+          "fp": 0,
+          "fn": 15177,
+          "precision": 1.0,
+          "recall": 0.028423276358747838,
+          "f1": 0.05527544351073763
+        },
+        "step_f1_ci95": [
+          0.04539422139887792,
+          0.06583743108296071
+        ],
+        "failures": 16,
+        "alarm_before_failure": 15,
+        "lead_time_steps": {
+          "n": 15,
+          "median": 19.0,
+          "min": 8.0,
+          "no_warning": 1
+        },
+        "separation_accuracy": null
+      },
+      "steer_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 52,
+        "detected_ci95": [
+          0.4231640509017654,
+          0.6153561567991945
+        ],
+        "delay_median": 18,
+        "delay_p90": 23,
+        "delay_median_ci95": [
+          15.0,
+          20.0
+        ],
+        "alarm_before_onset": 1,
+        "step_prf1": {
+          "tp": 116,
+          "fp": 111,
+          "fn": 1901,
+          "precision": 0.5110132158590308,
+          "recall": 0.05751115518096182,
+          "f1": 0.1033868092691622
+        },
+        "step_f1_ci95": [
+          0.0664371437167595,
+          0.14267851964622294
+        ],
+        "failures": 37,
+        "alarm_before_failure": 30,
+        "lead_time_steps": {
+          "n": 30,
+          "median": 7.5,
+          "min": 2.0,
+          "no_warning": 7
+        },
+        "separation_accuracy": null
+      },
+      "left_clear_stuck": {
+        "harmful": true,
+        "fault_started": 100,
+        "detected": 15,
+        "detected_ci95": [
+          0.09305903191162297,
+          0.23283733332157835
+        ],
+        "delay_median": 65,
+        "delay_p90": 76,
+        "delay_median_ci95": [
+          58.0,
+          72.0
+        ],
+        "alarm_before_onset": 0,
+        "step_prf1": {
+          "tp": 37,
+          "fp": 0,
+          "fn": 7499,
+          "precision": 1.0,
+          "recall": 0.004909766454352441,
+          "f1": 0.009771556846692194
+        },
+        "step_f1_ci95": [
+          0.004868715845443381,
+          0.016065897336094544
+        ],
+        "failures": 100,
+        "alarm_before_failure": 15,
+        "lead_time_steps": {
+          "n": 15,
+          "median": 7.0,
+          "min": 4.0,
+          "no_warning": 85
+        },
+        "separation_accuracy": null
+      }
+    },
+    "harmful_detected": {
+      "k": 164,
+      "n": 600,
+      "ci95": [
+        0.2391986824235913,
+        0.3103520606851975
+      ]
+    },
+    "harmless_detected": {
+      "k": 28,
+      "n": 300,
+      "ci95": [
+        0.06536379092760147,
+        0.13158619880389022
+      ]
+    },
+    "roc_pr": {
+      "episode_auc": 0.7506527777777777,
+      "episode_auc_ci95": [
+        0.7138184722222223,
+        0.7834290277777777
+      ],
+      "step_ap": 0.6556759940245942,
+      "step_ap_ci95": [
+        0.6272053701275958,
+        0.6854420337546966
+      ],
+      "n_pos_episodes": 900,
+      "n_neg_episodes": 200
+    },
+    "delay_by_magnitude": {
+      "steer_delay": {
+        "delay=4step": {
+          "n": 19,
+          "detected": 10,
+          "detected_ci95": [
+            0.31707482511825114,
+            0.7267049451255145
+          ],
+          "delay_median": 59,
+          "delay_p90": 81
+        },
+        "delay=5step": {
+          "n": 20,
+          "detected": 19,
+          "detected_ci95": [
+            0.7638641064874331,
+            0.9911187805671268
+          ],
+          "delay_median": 56,
+          "delay_p90": 77
+        },
+        "delay=6step": {
+          "n": 21,
+          "detected": 21,
+          "detected_ci95": [
+            0.8453561767357979,
+            0.9999999999999999
+          ],
+          "delay_median": 54,
+          "delay_p90": 90
+        },
+        "delay=7step": {
+          "n": 21,
+          "detected": 19,
+          "detected_ci95": [
+            0.7108541613925933,
+            0.9734817912030528
+          ],
+          "delay_median": 44,
+          "delay_p90": 77
+        },
+        "delay=8step": {
+          "n": 19,
+          "detected": 17,
+          "detected_ci95": [
+            0.686054495051583,
+            0.9706420586049034
+          ],
+          "delay_median": 42,
+          "delay_p90": 76
+        }
+      },
+      "steer_stuck": {
+        "dur10-19": {
+          "n": 40,
+          "detected": 20,
+          "detected_ci95": [
+            0.35199278797099753,
+            0.6480072120290025
+          ],
+          "delay_median": 17,
+          "delay_p90": 23
+        },
+        "dur20-30": {
+          "n": 60,
+          "detected": 32,
+          "detected_ci95": [
+            0.40893208671135106,
+            0.65372298459012
+          ],
+          "delay_median": 19,
+          "delay_p90": 23
+        }
+      },
+      "lidar_dropout": {
+        "dur20-33": {
+          "n": 32,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.1071827150573635
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        },
+        "dur34-47": {
+          "n": 32,
+          "detected": 0,
+          "detected_ci95": [
+            0.0,
+            0.1071827150573635
+          ],
+          "delay_median": null,
+          "delay_p90": null
+        },
+        "dur48-60": {
+          "n": 36,
+          "detected": 1,
+          "detected_ci95": [
+            0.004920280295569679,
+            0.141700337350308
+          ],
+          "delay_median": 53,
+          "delay_p90": 53
+        }
+      },
+      "lidar_spike": {
+        "down": {
+          "n": 49,
+          "detected": 5,
+          "detected_ci95": [
+            0.044378892487039884,
+            0.21756624164970087
+          ],
+          "delay_median": 9,
+          "delay_p90": 12
+        },
+        "up": {
+          "n": 51,
+          "detected": 1,
+          "detected_ci95": [
+            0.003469603253442241,
+            0.10304807675589372
+          ],
+          "delay_median": 0,
+          "delay_p90": 0
+        }
+      }
+    }
+  },
+  "A_sigma_sensitivity": {
+    "sg0.05": {
+      "normal_false_alarm": {
+        "k": 0,
+        "n": 200,
+        "ci95": [
+          0.0,
+          0.018846005918320894
+        ]
+      },
+      "fault_detected": {
+        "k": 869,
+        "n": 900,
+        "ci95": [
+          0.9515239154177835,
+          0.9756296920284768
+        ]
+      },
+      "delay_median": 2,
+      "delay_p90": 44
+    },
+    "sg5": {
+      "normal_false_alarm": {
+        "k": 0,
+        "n": 200,
+        "ci95": [
+          0.0,
+          0.018846005918320894
+        ]
+      },
+      "fault_detected": {
+        "k": 869,
+        "n": 900,
+        "ci95": [
+          0.9515239154177835,
+          0.9756296920284768
+        ]
+      },
+      "delay_median": 2,
+      "delay_p90": 45
+    }
+  },
+  "A_sigma_mismatch_sensitivity": {
+    "mismatch0.5": {
+      "normal_false_alarm": {
+        "k": 0,
+        "n": 200,
+        "ci95": [
+          0.0,
+          0.018846005918320894
+        ]
+      },
+      "fault_detected": {
+        "k": 869,
+        "n": 900,
+        "ci95": [
+          0.9515239154177835,
+          0.9756296920284768
+        ]
+      },
+      "delay_median": 2,
+      "delay_p90": 45
+    },
+    "mismatch2": {
+      "normal_false_alarm": {
+        "k": 180,
+        "n": 200,
+        "ci95": [
+          0.8505931364369146,
+          0.9343300588284289
+        ]
+      },
+      "fault_detected": {
+        "k": 875,
+        "n": 900,
+        "ci95": [
+          0.9593150067600135,
+          0.9811152633227088
+        ]
+      },
+      "delay_median": 2,
+      "delay_p90": 13
+    },
+    "mismatch5": {
+      "normal_false_alarm": {
+        "k": 200,
+        "n": 200,
+        "ci95": [
+          0.9811539940816791,
+          1.0
+        ]
+      },
+      "fault_detected": {
+        "k": 900,
+        "n": 900,
+        "ci95": [
+          0.9957496977346473,
+          0.9999999999999999
+        ]
+      },
+      "delay_median": 0,
+      "delay_p90": 1
+    }
+  }
+}

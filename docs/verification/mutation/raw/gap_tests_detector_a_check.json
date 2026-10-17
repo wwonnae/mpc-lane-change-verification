@@ -1,0 +1,260 @@
+{
+ "tests": "thesis_v2/anomaly/tests/test_mutation_gaps_detector_a.py",
+ "deselect_k": null,
+ "tests_sha256": "0daf6cbb95443f6d33c09e208b96591b84b2520a3beadba93a6e7a6f9f91e81b",
+ "module": "detector_a",
+ "started": "2026-10-13T18:15:22",
+ "git": {
+  "commit": "0b3f1af4f68f99d69d1dbd168e9143663eff4529",
+  "dirty": true
+ },
+ "python": "3.9.12",
+ "criterion3_docstring": {
+  "test_l1_obstacle_is_evaluated_in_l1_window_only": true,
+  "test_window_extends_g_safe_min_behind_rear_axle": true,
+  "test_corridor_is_vehicle_width_around_y": true,
+  "test_corridor_longitudinal_margin_near_obstacle_end": true,
+  "test_corridor_ignores_tracks_beyond_lidar_range": true,
+  "test_corridor_range_uses_distance_ahead_of_front": true,
+  "test_front_gap_without_obstacle_info_does_not_create_track": true,
+  "test_no_return_measurement_does_not_create_track": true,
+  "test_track_position_is_mean_of_accepted_measurements": true,
+  "test_dead_reckoning_and_front_point_match_plant_while_heading_is_nonzero": true,
+  "test_fg_residual_valid_only_if_previous_gap_positive": true,
+  "test_psi_residual_masked_when_previous_speed_is_zero": true,
+  "test_alarm_requires_score_strictly_above_threshold": true
+ },
+ "mutants": [
+  {
+   "id": "detector_a:005",
+   "line": 87,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.89,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_l1_obstacle_is_evaluated_in_l1_window_only"
+  },
+  {
+   "id": "detector_a:026",
+   "line": 112,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.07,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_ignores_tracks_beyond_lidar_range"
+  },
+  {
+   "id": "detector_a:029",
+   "line": 117,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed_exception",
+   "seconds": 1.01,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_front_gap_without_obstacle_info_does_not_create_track"
+  },
+  {
+   "id": "detector_a:031",
+   "line": 117,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.02,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_no_return_measurement_does_not_create_track"
+  },
+  {
+   "id": "detector_a:032",
+   "line": 117,
+   "operator": "bool",
+   "killed": true,
+   "status": "killed_exception",
+   "seconds": 1.06,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_front_gap_without_obstacle_info_does_not_create_track"
+  },
+  {
+   "id": "detector_a:048",
+   "line": 126,
+   "operator": "assign_del",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.0,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_track_position_is_mean_of_accepted_measurements"
+  },
+  {
+   "id": "detector_a:053",
+   "line": 126,
+   "operator": "const",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.94,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_track_position_is_mean_of_accepted_measurements"
+  },
+  {
+   "id": "detector_a:060",
+   "line": 135,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.96,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_window_extends_g_safe_min_behind_rear_axle"
+  },
+  {
+   "id": "detector_a:083",
+   "line": 150,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.95,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_is_vehicle_width_around_y[0.1-True]"
+  },
+  {
+   "id": "detector_a:087",
+   "line": 150,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.96,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_is_vehicle_width_around_y[-0.2-False]"
+  },
+  {
+   "id": "detector_a:093",
+   "line": 155,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.02,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_longitudinal_margin_near_obstacle_end"
+  },
+  {
+   "id": "detector_a:094",
+   "line": 155,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.98,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_ignores_tracks_beyond_lidar_range"
+  },
+  {
+   "id": "detector_a:096",
+   "line": 155,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.92,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_range_uses_distance_ahead_of_front"
+  },
+  {
+   "id": "detector_a:098",
+   "line": 155,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.02,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_corridor_ignores_tracks_beyond_lidar_range"
+  },
+  {
+   "id": "detector_a:114",
+   "line": 168,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.03,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_fg_residual_valid_only_if_previous_gap_positive"
+  },
+  {
+   "id": "detector_a:115",
+   "line": 168,
+   "operator": "const",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.12,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_fg_residual_valid_only_if_previous_gap_positive"
+  },
+  {
+   "id": "detector_a:116",
+   "line": 167,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.99,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_fg_residual_valid_only_if_previous_gap_positive"
+  },
+  {
+   "id": "detector_a:145",
+   "line": 180,
+   "operator": "operand_drop",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.97,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_psi_residual_masked_when_previous_speed_is_zero"
+  },
+  {
+   "id": "detector_a:146",
+   "line": 180,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.02,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_psi_residual_masked_when_previous_speed_is_zero"
+  },
+  {
+   "id": "detector_a:166",
+   "line": 190,
+   "operator": "const",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.97,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_l1_obstacle_is_evaluated_in_l1_window_only"
+  },
+  {
+   "id": "detector_a:172",
+   "line": 197,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.95,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_dead_reckoning_and_front_point_match_plant_while_heading_is_nonzero"
+  },
+  {
+   "id": "detector_a:197",
+   "line": 214,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.96,
+   "returncode": 1,
+   "first_failure": "thesis_v2.anomaly.tests.test_mutation_gaps_detector_a::test_alarm_requires_score_strictly_above_threshold"
+  }
+ ],
+ "criterion1_original": {
+  "status": "pass",
+  "seconds": 0.88
+ },
+ "summary": {
+  "criterion1_pass": true,
+  "criterion3_all": true,
+  "n_targets": 22,
+  "n_killed": 22,
+  "survived": []
+ }
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "folder": "20260917_221415_DESKTOP-MDCKRJS_baseline_P",
+    "scenario": "paper",
+    "n_episodes": 100,
+    "solver_fail_total": 0,
+    "fallback_total": 0,
+    "outcome_counts": {
+      "성공": 99,
+      "충돌": 1
+    },
+    "expected_outcome": "성공",
+    "expected_outcome_achievement_rate": 0.99,
+    "mpc_solve_time_ms": {
+      "mean": 0.13558387317909032,
+      "p50": 0.10820000000011376,
+      "p95": 0.23565499999992348,
+      "p99": 0.42181700000005284,
+      "max": 15.6864000000001,
+      "n_calls": 11670
+    },
+    "max_call_info": {
+      "t_mpc_solve_ms": 15.6864000000001,
+      "seed": 41,
+      "step": 77,
+      "t": 3.85,
+      "state": "EVADE_L",
+      "is_first_mpc_call_of_episode": false
+    }
+  },
+  {
+    "folder": "20260917_221418_DESKTOP-MDCKRJS_baseline_P_leftobs",
+    "scenario": "left_obstacle",
+    "n_episodes": 100,
+    "solver_fail_total": 0,
+    "fallback_total": 0,
+    "outcome_counts": {
+      "SAFE_STOP": 100
+    },
+    "expected_outcome": "SAFE_STOP",
+    "expected_outcome_achievement_rate": 1.0,
+    "mpc_solve_time_ms": {
+      "mean": 0.13260838150288776,
+      "p50": 0.11079999999996648,
+      "p95": 0.2515000000000295,
+      "p99": 0.31247500000001766,
+      "max": 0.47930000000007134,
+      "n_calls": 346
+    },
+    "max_call_info": {
+      "t_mpc_solve_ms": 0.47930000000007134,
+      "seed": 77,
+      "step": 3,
+      "t": 0.15000000000000002,
+      "state": "KEEP_L2",
+      "is_first_mpc_call_of_episode": false
+    }
+  },
+  {
+    "folder": "20260917_221615_DESKTOP-MDCKRJS_baseline_P_AC",
+    "scenario": "paper",
+    "n_episodes": 100,
+    "solver_fail_total": 0,
+    "fallback_total": 0,
+    "outcome_counts": {
+      "성공": 99,
+      "충돌": 1
+    },
+    "expected_outcome": "성공",
+    "expected_outcome_achievement_rate": 0.99,
+    "mpc_solve_time_ms": {
+      "mean": 0.14155652099400204,
+      "p50": 0.1074999999999271,
+      "p95": 0.2737550000000643,
+      "p99": 0.49561300000000913,
+      "max": 22.934500000000078,
+      "n_calls": 11670
+    },
+    "max_call_info": {
+      "t_mpc_solve_ms": 22.934500000000078,
+      "seed": 21,
+      "step": 54,
+      "t": 2.7,
+      "state": "EVADE_L",
+      "is_first_mpc_call_of_episode": false
+    }
+  },
+  {
+    "folder": "20260917_221618_DESKTOP-MDCKRJS_baseline_P_leftobs_AC",
+    "scenario": "left_obstacle",
+    "n_episodes": 100,
+    "solver_fail_total": 0,
+    "fallback_total": 0,
+    "outcome_counts": {
+      "SAFE_STOP": 100
+    },
+    "expected_outcome": "SAFE_STOP",
+    "expected_outcome_achievement_rate": 1.0,
+    "mpc_solve_time_ms": {
+      "mean": 0.13579479768786337,
+      "p50": 0.11130000000003637,
+      "p95": 0.2682999999999436,
+      "p99": 0.44648000000000476,
+      "max": 0.5208999999999353,
+      "n_calls": 346
+    },
+    "max_call_info": {
+      "t_mpc_solve_ms": 0.5208999999999353,
+      "seed": 6,
+      "step": 1,
+      "t": 0.05,
+      "state": "KEEP_L2",
+      "is_first_mpc_call_of_episode": true
+    }
+  }
+]

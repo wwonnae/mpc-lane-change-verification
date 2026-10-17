@@ -1,0 +1,157 @@
+{
+ "purpose": "CI run #6 비결정 실패 — 전체 suite 반복",
+ "started": "2026-10-13T21:03:14",
+ "host": "DESKTOP-MDCKRJS",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "python": "3.9.12",
+ "cpu_count": 22,
+ "git": "4c0c503797fd5ee6f4f1bf8bf152186a149fd581",
+ "dirty": false,
+ "variant": "none",
+ "hidden_probe": true,
+ "results": [
+  {
+   "load": "idle",
+   "pc_state_start": {
+    "cpu_load_percent": 28,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 26,
+    "battery_status": 2
+   },
+   "n_trials": 5,
+   "n_target_failed": 0,
+   "n_any_failed": 0,
+   "seconds": 83.0,
+   "runs": [
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 14.57s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.48s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 16.18s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.72s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 13.71s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     },
+     "hidden_time_limit": {
+      "n_hidden": 0,
+      "n_explicit": 1,
+      "tests_with_hidden": {},
+      "tests_with_explicit": {
+       "thesis_v2/tests/test_improved_i5.py::test_i5_time_limit_safety_net_reachable": {
+        "explicit": 1,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    }
+   ]
+  }
+ ],
+ "finished": "2026-10-13T21:04:39"
+}

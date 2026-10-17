@@ -1,0 +1,54 @@
+{
+  "detectors": {
+    "B1": {
+      "h": 0.6484835101813881,
+      "train_episodes_over_h": 7,
+      "max": 0.6581443984807941,
+      "median": 0.5813371180913185,
+      "per_scenario": {
+        "far": {
+          "n": 200,
+          "over_h": 0
+        },
+        "leftobs": {
+          "n": 200,
+          "over_h": 7
+        }
+      }
+    },
+    "B2": {
+      "h": 0.4636532962322235,
+      "train_episodes_over_h": 7,
+      "max": 0.663466215133667,
+      "median": 0.17387326061725616,
+      "per_scenario": {
+        "far": {
+          "n": 200,
+          "over_h": 2
+        },
+        "leftobs": {
+          "n": 200,
+          "over_h": 5
+        }
+      }
+    }
+  },
+  "quantile": 0.98,
+  "quantile_method": "higher",
+  "alarm_rule": "score > h",
+  "seeds": [
+    3000,
+    3199
+  ],
+  "n_episodes": 400,
+  "model_dir": "thesis_v2\\results\\anomaly\\20261002_001009_DESKTOP-MDCKRJS_it2_train_b",
+  "if_model_sha256": "728942fbb77de06c0db354af859fe3e00fadae2aaa8e12b3397798799b3d9cce",
+  "ae_model_sha256": "0cb6a7f9aee2494638519ffaf40dd71fabc7f80dcfcdcce3dfd435ed4e83d1e1",
+  "norm_sha256": "839a576a6396b040b7bda1eb64c9f6a216460e0b307421eea196301a52fe656d",
+  "sigma_gyro_deg": 1.0,
+  "iteration": 2,
+  "scenarios": [
+    "far",
+    "leftobs"
+  ]
+}

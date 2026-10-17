@@ -1,0 +1,2445 @@
+{
+ "started": "2026-10-14T14:16:43+09:00",
+ "commit": "78e0936fc356bf32cbd31262907b4de1c436cf6e",
+ "repeats": 5,
+ "targets": [
+  {
+   "id": "fsm:003",
+   "module": "fsm",
+   "line": 40,
+   "original": "in",
+   "replacement": "not in",
+   "first_layer": "L2",
+   "first_failure": "thesis_v2.tests.test_i4_student::test_req_stu_02_feature_order_and_fallback",
+   "recorded_status": "killed",
+   "why": [
+    "사용자 지목"
+   ]
+  },
+  {
+   "id": "fsm:005",
+   "module": "fsm",
+   "line": 41,
+   "original": "0.0",
+   "replacement": "None",
+   "first_layer": "L2",
+   "first_failure": "thesis_v2.tests.test_i4_student::test_i4_recorder_does_not_change_episode",
+   "recorded_status": "killed_exception",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패",
+    "사용자 지목"
+   ]
+  },
+  {
+   "id": "fsm:006",
+   "module": "fsm",
+   "line": 42,
+   "original": "config.W",
+   "replacement": "None",
+   "first_layer": "L2",
+   "first_failure": "thesis_v2.tests.test_i4_student::test_req_stu_02_feature_order_and_fallback",
+   "recorded_status": "killed_exception",
+   "why": [
+    "사용자 지목"
+   ]
+  },
+  {
+   "id": "closed_loop:002",
+   "module": "closed_loop",
+   "line": 171,
+   "original": "is not",
+   "replacement": "is",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[True-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:003",
+   "module": "closed_loop",
+   "line": 172,
+   "original": "det_out = detector.update(DetectorObs(",
+   "replacement": "pass",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[False-3200-False]",
+   "recorded_status": "killed_exception",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:004",
+   "module": "closed_loop",
+   "line": 176,
+   "original": "det_out.alarm and",
+   "replacement": "",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[False-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:005",
+   "module": "closed_loop",
+   "line": 176,
+   "original": "and first_alarm_step is None",
+   "replacement": "",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[True-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:006",
+   "module": "closed_loop",
+   "line": 176,
+   "original": "and",
+   "replacement": "or",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[False-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:007",
+   "module": "closed_loop",
+   "line": 176,
+   "original": "is",
+   "replacement": "is not",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[True-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:008",
+   "module": "closed_loop",
+   "line": 177,
+   "original": "first_alarm_step = step_idx",
+   "replacement": "pass",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[True-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:013",
+   "module": "closed_loop",
+   "line": 179,
+   "original": "==",
+   "replacement": "!=",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[True-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:015",
+   "module": "closed_loop",
+   "line": 181,
+   "original": "==",
+   "replacement": "!=",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[True-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:027",
+   "module": "closed_loop",
+   "line": 197,
+   "original": "==",
+   "replacement": "!=",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[False-3200-False]",
+   "recorded_status": "killed",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:042",
+   "module": "closed_loop",
+   "line": 214,
+   "original": "ctrl_ey = None if override_ey else ey",
+   "replacement": "pass",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[False-3200-False]",
+   "recorded_status": "killed_exception",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:043",
+   "module": "closed_loop",
+   "line": 215,
+   "original": "ctrl_rc = False if override_rc else rc",
+   "replacement": "pass",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[False-3200-False]",
+   "recorded_status": "killed_exception",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  },
+  {
+   "id": "closed_loop:044",
+   "module": "closed_loop",
+   "line": 216,
+   "original": "ctrl_lc = False if override_lc else lc",
+   "replacement": "pass",
+   "first_layer": "L1",
+   "first_failure": "thesis_v2.anomaly.tests.test_closed_loop::test_p0_matches_observational_runner[False-3200-False]",
+   "recorded_status": "killed_exception",
+   "why": [
+    "비결정성 후보 테스트에서 처음 실패"
+   ]
+  }
+ ],
+ "runs": [
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 1.04,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.96,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.89,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.89,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.89,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.9,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.93,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.9,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.88,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.88,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.8,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.79,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.81,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.8,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.8,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.79,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.81,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.79,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.83,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 0.77,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 0,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.43,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 1,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.38,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 2,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.38,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 3,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.38,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 4,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.38,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 0,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.37,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 1,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.36,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 2,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.38,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 3,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.38,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 4,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.37,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 0,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.27,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 1,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.26,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 2,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.27,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 3,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.31,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 4,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.32,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 0,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.3,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 1,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.28,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 2,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.3,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 3,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.27,
+   "tail": null
+  },
+  {
+   "mutant": null,
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 4,
+   "rc": 0,
+   "kind": "pass",
+   "secs": 2.26,
+   "tail": null
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.31,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.72s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.29,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.70s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.28,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.69s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.27,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.69s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.26,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.68s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.28,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.69s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.26,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.68s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.27,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.69s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.29,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.69s\n"
+  },
+  {
+   "mutant": "fsm:003",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 2.27,
+   "tail": "iled\nE         Obtained: 0.11999999731779099\nE         Expected: -0.18 ± 1.8e-07\n\nthesis_v2\\tests\\test_i4_student.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.68s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.37,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.78s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.37,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.78s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.35,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.77s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.36,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.78s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.34,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.76s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.38,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.79s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.39,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.79s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.37,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.78s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.37,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.79s\n"
+  },
+  {
+   "mutant": "fsm:005",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.35,
+   "tail": ".QY * target_y\nE           TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'\n\nthesis_v2\\improved\\mpc.py:400: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.77s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.33,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.74s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.32,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.73s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.31,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.73s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.31,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.73s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "orig",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.34,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.75s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.32,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.74s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.32,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.74s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.31,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.73s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.33,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.74s\n"
+  },
+  {
+   "mutant": "fsm:006",
+   "cond": "A",
+   "test": "thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 2.32,
+   "tail": "          TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\nthesis_v2\\improved\\student_i4\\features.py:59: TypeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/tests/test_i4_student.py::test_req_stu_02_feature_order_and_fallback\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 1.74s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.91,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.60s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:002",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.93,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.91,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.61s\n"
+  },
+  {
+   "mutant": "closed_loop:003",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "  AttributeError: 'NoneType' object has no attribute 'alarm'\n\nthesis_v2\\anomaly\\closed_loop.py:176: AttributeError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.66s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.66s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.66s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.66s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.66s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.66s\n"
+  },
+  {
+   "mutant": "closed_loop:004",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.99,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.68s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.91,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.9,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.91,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.91,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.60s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.9,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:005",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.68s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.68s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.97,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.67s\n"
+  },
+  {
+   "mutant": "closed_loop:006",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.98,
+   "tail": "e, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.68s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.9,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.9,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.91,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:007",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.91,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.9,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:008",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.9,
+   "tail": ".0, 'lc': None, 'ir_miss': 0.0}}]).first_alarm_step\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.57s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.9,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:013",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.89,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.59s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.87,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.56s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.9,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.57s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.88,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:015",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.87,
+   "tail": "== '충돌'\nE         \nE         - 충돌\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.58s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.93,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.93,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.92,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.93,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.93,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.93,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.93,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.93,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.92,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:027",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "assert",
+   "secs": 0.93,
+   "tail": "= '성공'\nE         \nE         - 성공\nE         + 탐지 정지\n\nthesis_v2\\anomaly\\tests\\test_closed_loop.py:35: AssertionError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:042",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "stacle_info)\nE           NameError: name 'ctrl_ey' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:229: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.96,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.93,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.95,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.93,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.93,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:043",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_rc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "orig",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 0,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 1,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 2,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.63s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 3,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  },
+  {
+   "mutant": "closed_loop:044",
+   "cond": "A",
+   "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]",
+   "rep": 4,
+   "rc": 1,
+   "kind": "exception",
+   "secs": 0.94,
+   "tail": "_RAD2DEG, t)\nE           NameError: name 'ctrl_lc' is not defined\n\nthesis_v2\\anomaly\\closed_loop.py:219: NameError\n=========================== short test summary info ===========================\nFAILED thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[False-3200-False]\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.64s\n"
+  }
+ ],
+ "verdict": {
+  "fsm:003": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "fsm:005": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "exception"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "fsm:006": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "exception"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:002": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:003": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "exception"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:004": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:005": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:006": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:007": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:008": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:013": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:015": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:027": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "assert"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:042": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "exception"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:043": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "exception"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  },
+  "closed_loop:044": {
+   "mutant_fail": {
+    "orig": 5,
+    "A": 5
+   },
+   "control_pass": {
+    "orig": 5,
+    "A": 5
+   },
+   "kinds": [
+    "exception"
+   ],
+   "verdict": "kill 유지(비결정성과 무관)"
+  }
+ },
+ "finished": "2026-10-14T14:21:03+09:00"
+}

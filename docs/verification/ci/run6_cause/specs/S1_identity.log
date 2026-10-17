@@ -1,0 +1,24 @@
+[harness] 2026-10-14T10:02:14.023+09:00 start exp=S1_identity
+[harness] 2026-10-14T10:02:19.063+09:00 schedule total_batches=10 already_done=0
+[harness] 2026-10-14T10:02:19.066+09:00 load_set k=0 pids=[] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\Users\SSAFY\AppData\Local\Programs\Python\Python39\python.exe settle_s=12.0
+[harness] 2026-10-14T10:02:31.067+09:00 batch_start batch=probe_off_000 trials=10 load_k=0
+[harness] 2026-10-14T10:02:38.730+09:00 batch_end batch=probe_off_000 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:02:38.730+09:00 batch_start batch=probe_on_000 trials=10 load_k=0
+[harness] 2026-10-14T10:02:47.694+09:00 batch_end batch=probe_on_000 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:02:47.694+09:00 batch_start batch=probe_off_001 trials=10 load_k=0
+[harness] 2026-10-14T10:02:55.211+09:00 batch_end batch=probe_off_001 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:02:55.211+09:00 batch_start batch=probe_on_001 trials=10 load_k=0
+[harness] 2026-10-14T10:03:04.096+09:00 batch_end batch=probe_on_001 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:03:04.096+09:00 batch_start batch=probe_off_002 trials=10 load_k=0
+[harness] 2026-10-14T10:03:11.624+09:00 batch_end batch=probe_off_002 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:03:11.624+09:00 batch_start batch=probe_on_002 trials=10 load_k=0
+[harness] 2026-10-14T10:03:20.502+09:00 batch_end batch=probe_on_002 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:03:20.502+09:00 batch_start batch=probe_off_003 trials=10 load_k=0
+[harness] 2026-10-14T10:03:28.093+09:00 batch_end batch=probe_off_003 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:03:28.093+09:00 batch_start batch=probe_on_003 trials=10 load_k=0
+[harness] 2026-10-14T10:03:36.949+09:00 batch_end batch=probe_on_003 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:03:36.949+09:00 batch_start batch=probe_off_004 trials=10 load_k=0
+[harness] 2026-10-14T10:03:44.478+09:00 batch_end batch=probe_off_004 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:03:44.478+09:00 batch_start batch=probe_on_004 trials=10 load_k=0
+[harness] 2026-10-14T10:03:53.416+09:00 batch_end batch=probe_on_004 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T10:03:57.783+09:00 end 

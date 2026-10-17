@@ -1,0 +1,12 @@
+  episodes_A.csv: 일치
+  episodes_B1.csv: 일치
+  episodes_B2.csv: 일치
+  episodes_HYBRID.csv: 일치
+  episodes_A_sg0.05.csv: 일치
+  episodes_A_sg5.csv: 일치
+  episodes_A_mismatch0.5.csv: 일치
+  episodes_A_mismatch2.csv: 일치
+  episodes_A_mismatch5.csv: 일치
+  summary.json: 일치
+--check thesis_v2\results\anomaly\20261002_145638_3층PC108_it3_eval_offline_eval: 전체 일치
+exit=0 start=2026-10-12 15:31:44 end=2026-10-12 15:41:32 elapsed=00:09:48.7866538

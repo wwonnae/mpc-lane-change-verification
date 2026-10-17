@@ -1,0 +1,148 @@
+{
+ "tests": "thesis_v2/tests/test_mutation_gaps_mpc.py",
+ "deselect_k": null,
+ "tests_sha256": "d038ba5718ca2da81748543c7a403142f8ee42ef1068ea7392286a9f32860603",
+ "module": "baseline_mpc",
+ "started": "2026-10-13T18:10:09",
+ "git": {
+  "commit": "0b3f1af4f68f99d69d1dbd168e9143663eff4529",
+  "dirty": true
+ },
+ "python": "3.9.12",
+ "criterion3_docstring": {
+  "test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds": true,
+  "test_heading_constraint_binds_when_optimum_would_exceed_limit": true,
+  "test_delta0_matches_independent_spec_qp": true
+ },
+ "mutants": [
+  {
+   "id": "baseline_mpc:133",
+   "line": 149,
+   "operator": "const",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.02,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_heading_constraint_binds_when_optimum_would_exceed_limit"
+  },
+  {
+   "id": "baseline_mpc:165",
+   "line": 180,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.11,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_delta0_matches_independent_spec_qp[0.4-0.05-0.0-KEEP_L1]"
+  },
+  {
+   "id": "baseline_mpc:198",
+   "line": 198,
+   "operator": "const",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.14,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_delta0_matches_independent_spec_qp[0.4-0.05-0.0-KEEP_L1]"
+  },
+  {
+   "id": "baseline_mpc:246",
+   "line": 234,
+   "operator": "const",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.07,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_delta0_matches_independent_spec_qp[0.4-0.05-0.0-KEEP_L1]"
+  },
+  {
+   "id": "baseline_mpc:272",
+   "line": 253,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.99,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds[solved]"
+  },
+  {
+   "id": "baseline_mpc:273",
+   "line": 253,
+   "operator": "const",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.95,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds[solved]"
+  },
+  {
+   "id": "baseline_mpc:285",
+   "line": 262,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.02,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds[fallback]"
+  },
+  {
+   "id": "baseline_mpc:286",
+   "line": 262,
+   "operator": "arith",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.0,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds[fallback]"
+  },
+  {
+   "id": "baseline_mpc:287",
+   "line": 262,
+   "operator": "const",
+   "killed": true,
+   "status": "killed",
+   "seconds": 1.08,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_mpc::test_compute_time_ms_is_elapsed_perf_counter_in_milliseconds[fallback]"
+  },
+  {
+   "id": "baseline_mpc:155",
+   "line": 178,
+   "operator": "const",
+   "killed": false,
+   "status": "pass",
+   "seconds": 1.18
+  },
+  {
+   "id": "baseline_mpc:209",
+   "line": 208,
+   "operator": "const",
+   "killed": false,
+   "status": "pass",
+   "seconds": 1.28
+  },
+  {
+   "id": "baseline_mpc:283",
+   "line": 261,
+   "operator": "assign_del",
+   "killed": false,
+   "status": "pass",
+   "seconds": 1.37
+  }
+ ],
+ "criterion1_original": {
+  "status": "pass",
+  "seconds": 1.17
+ },
+ "summary": {
+  "criterion1_pass": true,
+  "criterion3_all": true,
+  "n_targets": 12,
+  "n_killed": 9,
+  "survived": [
+   "baseline_mpc:155",
+   "baseline_mpc:209",
+   "baseline_mpc:283"
+  ]
+ }
+}

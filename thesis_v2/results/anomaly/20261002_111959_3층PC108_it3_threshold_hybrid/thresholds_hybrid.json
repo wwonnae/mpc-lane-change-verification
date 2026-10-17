@@ -1,0 +1,33 @@
+{
+  "h": 0.6062505529980149,
+  "train_episodes_over_h": 7,
+  "max": 0.6264657958486384,
+  "median": 0.5581213051927983,
+  "per_scenario": {
+    "far": {
+      "n": 200,
+      "over_h": 1
+    },
+    "leftobs": {
+      "n": 200,
+      "over_h": 6
+    }
+  },
+  "quantile": 0.98,
+  "quantile_method": "higher",
+  "alarm_rule": "score > h",
+  "seeds": [
+    3000,
+    3199
+  ],
+  "n_episodes": 400,
+  "model_dir": "thesis_v2\\results\\anomaly\\20261002_111909_3층PC108_it3_train_hybrid",
+  "if_model_sha256": "ebc9ad214efaea8600fcc308d2548fd5864f1d7f75684579ed061319b335b3e8",
+  "norm_sha256": "119998f630b8912b0fc91eb700e37bd0ea6cbc40693b0094ebd2e985c4db7534",
+  "sigma_gyro_deg": 1.0,
+  "iteration": 3,
+  "scenarios": [
+    "far",
+    "leftobs"
+  ]
+}

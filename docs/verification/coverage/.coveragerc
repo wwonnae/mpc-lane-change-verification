@@ -1,0 +1,18 @@
+# 구문·분기 커버리지 측정 설정 (docs/verification/COVERAGE.md)
+# 실행(저장소 루트): python -m coverage run --rcfile=docs/verification/coverage/.coveragerc -m pytest thesis_v2/tests thesis_v2/anomaly/tests -q
+[run]
+branch = True
+source = thesis_v2
+omit =
+    thesis_v2/tests/*
+    thesis_v2/anomaly/tests/*
+    thesis_v2/results/*
+
+[report]
+show_missing = True
+skip_empty = True
+precision = 1
+
+[json]
+pretty_print = True
+show_contexts = False

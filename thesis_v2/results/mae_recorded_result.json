@@ -1,0 +1,68 @@
+{
+  "teacher": {
+    "label": "results/teacher (옛 MPC 실제 실행, 학습 분포에 가까움)",
+    "source": "C:\\Users\\SSAFY\\Desktop\\MPC_LINETRACING\\results\\teacher\\metrics.npz",
+    "n_total": 18989,
+    "mae_deg": 10.433660226249344,
+    "ood_fraction_overall": 0.0,
+    "per_state": {
+      "KEEP_L2": {
+        "n": 10515,
+        "mae_deg": 5.675788665154225,
+        "ood_fraction": 0.0
+      },
+      "EVADE_L": {
+        "n": 400,
+        "mae_deg": 23.786345625144794,
+        "ood_fraction": 0.0
+      },
+      "KEEP_L1": {
+        "n": 1256,
+        "mae_deg": 8.814437276077047,
+        "ood_fraction": 0.0
+      },
+      "RETURN_TO_L2": {
+        "n": 6818,
+        "mae_deg": 17.286357400020844,
+        "ood_fraction": 0.0
+      }
+    },
+    "approximations": {
+      "ey_line": "y - target_line_y(state) (fallback 공식, ey_line 미저장)",
+      "left_clear": "True 고정(근사, 근거: normalization_stats X_mean[3]~=0.996)"
+    }
+  },
+  "student_self_consistency": {
+    "label": "results/student (Student 자신의 실제 실행, 파이프라인 자기 일관성 점검용)",
+    "source": "C:\\Users\\SSAFY\\Desktop\\MPC_LINETRACING\\results\\student\\metrics.npz",
+    "n_total": 18950,
+    "mae_deg": 8.887406948690025,
+    "ood_fraction_overall": 0.011398416886543536,
+    "per_state": {
+      "KEEP_L2": {
+        "n": 10510,
+        "mae_deg": 1.9671872441170353,
+        "ood_fraction": 0.0
+      },
+      "EVADE_L": {
+        "n": 400,
+        "mae_deg": 1.718166220235904,
+        "ood_fraction": 0.54
+      },
+      "KEEP_L1": {
+        "n": 1260,
+        "mae_deg": 0.9132757201405045,
+        "ood_fraction": 0.0
+      },
+      "RETURN_TO_L2": {
+        "n": 6780,
+        "mae_deg": 21.519650419842883,
+        "ood_fraction": 0.0
+      }
+    },
+    "approximations": {
+      "ey_line": "y - target_line_y(state) (fallback 공식, ey_line 미저장)",
+      "left_clear": "True 고정(근사, 근거: normalization_stats X_mean[3]~=0.996)"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "scenario": "paper",
+    "folder_a_battery": "20260917_221415_DESKTOP-MDCKRJS_baseline_P",
+    "folder_b_ac": "20260917_221615_DESKTOP-MDCKRJS_baseline_P_AC",
+    "n_common_seeds": 100,
+    "missing_in_a": [],
+    "missing_in_b": [],
+    "n_differences": 0,
+    "identical_control_results": true,
+    "first_difference": null,
+    "timing_battery": {
+      "mean": 0.13558387317909032,
+      "p50": 0.10820000000011376,
+      "p95": 0.23565499999992348,
+      "p99": 0.42181700000005284,
+      "max": 15.6864000000001,
+      "n": 11670
+    },
+    "timing_ac": {
+      "mean": 0.14155652099400204,
+      "p50": 0.1074999999999271,
+      "p95": 0.2737550000000643,
+      "p99": 0.49561300000000913,
+      "max": 22.934500000000078,
+      "n": 11670
+    },
+    "official_condition_a": {
+      "folder": "20260917_221415_DESKTOP-MDCKRJS_baseline_P",
+      "hostname": "DESKTOP-MDCKRJS",
+      "is_official_measurement_host": true,
+      "ac_status": "battery",
+      "power_plan": "균형 조정",
+      "meets_ac_condition": false,
+      "power_plan_looks_high_performance": false,
+      "meets_full_official_condition": false
+    },
+    "official_condition_b": {
+      "folder": "20260917_221615_DESKTOP-MDCKRJS_baseline_P_AC",
+      "hostname": "DESKTOP-MDCKRJS",
+      "is_official_measurement_host": true,
+      "ac_status": "battery",
+      "power_plan": "균형 조정",
+      "meets_ac_condition": false,
+      "power_plan_looks_high_performance": false,
+      "meets_full_official_condition": false
+    }
+  },
+  {
+    "scenario": "left_obstacle",
+    "folder_a_battery": "20260917_221418_DESKTOP-MDCKRJS_baseline_P_leftobs",
+    "folder_b_ac": "20260917_221618_DESKTOP-MDCKRJS_baseline_P_leftobs_AC",
+    "n_common_seeds": 100,
+    "missing_in_a": [],
+    "missing_in_b": [],
+    "n_differences": 0,
+    "identical_control_results": true,
+    "first_difference": null,
+    "timing_battery": {
+      "mean": 0.13260838150288776,
+      "p50": 0.11079999999996648,
+      "p95": 0.2515000000000295,
+      "p99": 0.31247500000001766,
+      "max": 0.47930000000007134,
+      "n": 346
+    },
+    "timing_ac": {
+      "mean": 0.13579479768786337,
+      "p50": 0.11130000000003637,
+      "p95": 0.2682999999999436,
+      "p99": 0.44648000000000476,
+      "max": 0.5208999999999353,
+      "n": 346
+    },
+    "official_condition_a": {
+      "folder": "20260917_221418_DESKTOP-MDCKRJS_baseline_P_leftobs",
+      "hostname": "DESKTOP-MDCKRJS",
+      "is_official_measurement_host": true,
+      "ac_status": "battery",
+      "power_plan": "균형 조정",
+      "meets_ac_condition": false,
+      "power_plan_looks_high_performance": false,
+      "meets_full_official_condition": false
+    },
+    "official_condition_b": {
+      "folder": "20260917_221618_DESKTOP-MDCKRJS_baseline_P_leftobs_AC",
+      "hostname": "DESKTOP-MDCKRJS",
+      "is_official_measurement_host": true,
+      "ac_status": "battery",
+      "power_plan": "균형 조정",
+      "meets_ac_condition": false,
+      "power_plan_looks_high_performance": false,
+      "meets_full_official_condition": false
+    }
+  }
+]

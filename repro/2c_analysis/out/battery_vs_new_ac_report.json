@@ -1,0 +1,132 @@
+[
+  {
+    "scenario": "paper",
+    "folder_battery": "20260917_221415_DESKTOP-MDCKRJS_baseline_P",
+    "folder_new_ac": "20260917_224259_DESKTOP-MDCKRJS_baseline_P_AC",
+    "n_common_seeds": 100,
+    "n_differences": 0,
+    "identical_control_results": true,
+    "first_difference": null,
+    "timing_battery": {
+      "mean": 0.13558387317909032,
+      "p50": 0.10820000000011376,
+      "p95": 0.23565499999992348,
+      "p99": 0.42181700000005284,
+      "max": 15.6864000000001,
+      "n": 11670,
+      "max_excluding_first_call": 15.6864000000001,
+      "max_call_info": {
+        "t_mpc_solve_ms": 15.6864000000001,
+        "seed": 41,
+        "step": 77,
+        "t": 3.85,
+        "state": "EVADE_L",
+        "is_first_mpc_call_of_episode": false
+      }
+    },
+    "timing_new_ac": {
+      "mean": 0.11237827763496042,
+      "p50": 0.09769999999997836,
+      "p95": 0.19015500000000288,
+      "p99": 0.3030619999999783,
+      "max": 10.59499999999991,
+      "n": 11670,
+      "max_excluding_first_call": 10.59499999999991,
+      "max_call_info": {
+        "t_mpc_solve_ms": 10.59499999999991,
+        "seed": 81,
+        "step": 8,
+        "t": 0.4,
+        "state": "EVADE_L",
+        "is_first_mpc_call_of_episode": false
+      }
+    },
+    "official_condition_battery": {
+      "folder": "20260917_221415_DESKTOP-MDCKRJS_baseline_P",
+      "hostname": "DESKTOP-MDCKRJS",
+      "is_official_measurement_host": true,
+      "ac_status": "battery",
+      "power_plan": "균형 조정",
+      "power_mode_overlay": null,
+      "meets_ac_condition": false,
+      "power_mode_overlay_recorded": false,
+      "meets_full_official_condition_determinable": false
+    },
+    "official_condition_new_ac": {
+      "folder": "20260917_224259_DESKTOP-MDCKRJS_baseline_P_AC",
+      "hostname": "DESKTOP-MDCKRJS",
+      "is_official_measurement_host": true,
+      "ac_status": "AC",
+      "power_plan": "균형 조정",
+      "power_mode_overlay": null,
+      "meets_ac_condition": true,
+      "power_mode_overlay_recorded": false,
+      "meets_full_official_condition_determinable": false
+    }
+  },
+  {
+    "scenario": "left_obstacle",
+    "folder_battery": "20260917_221418_DESKTOP-MDCKRJS_baseline_P_leftobs",
+    "folder_new_ac": "20260917_224302_DESKTOP-MDCKRJS_baseline_P_leftobs_AC",
+    "n_common_seeds": 100,
+    "n_differences": 0,
+    "identical_control_results": true,
+    "first_difference": null,
+    "timing_battery": {
+      "mean": 0.13260838150288776,
+      "p50": 0.11079999999996648,
+      "p95": 0.2515000000000295,
+      "p99": 0.31247500000001766,
+      "max": 0.47930000000007134,
+      "n": 346,
+      "max_excluding_first_call": 0.47930000000007134,
+      "max_call_info": {
+        "t_mpc_solve_ms": 0.47930000000007134,
+        "seed": 77,
+        "step": 3,
+        "t": 0.15000000000000002,
+        "state": "KEEP_L2",
+        "is_first_mpc_call_of_episode": false
+      }
+    },
+    "timing_new_ac": {
+      "mean": 0.13025317919075124,
+      "p50": 0.1054999999999251,
+      "p95": 0.25202500000000294,
+      "p99": 0.35533999999999294,
+      "max": 0.5870999999999515,
+      "n": 346,
+      "max_excluding_first_call": 0.35839999999998096,
+      "max_call_info": {
+        "t_mpc_solve_ms": 0.5870999999999515,
+        "seed": 47,
+        "step": 1,
+        "t": 0.05,
+        "state": "KEEP_L2",
+        "is_first_mpc_call_of_episode": true
+      }
+    },
+    "official_condition_battery": {
+      "folder": "20260917_221418_DESKTOP-MDCKRJS_baseline_P_leftobs",
+      "hostname": "DESKTOP-MDCKRJS",
+      "is_official_measurement_host": true,
+      "ac_status": "battery",
+      "power_plan": "균형 조정",
+      "power_mode_overlay": null,
+      "meets_ac_condition": false,
+      "power_mode_overlay_recorded": false,
+      "meets_full_official_condition_determinable": false
+    },
+    "official_condition_new_ac": {
+      "folder": "20260917_224302_DESKTOP-MDCKRJS_baseline_P_leftobs_AC",
+      "hostname": "DESKTOP-MDCKRJS",
+      "is_official_measurement_host": true,
+      "ac_status": "AC",
+      "power_plan": "균형 조정",
+      "power_mode_overlay": null,
+      "meets_ac_condition": true,
+      "power_mode_overlay_recorded": false,
+      "meets_full_official_condition_determinable": false
+    }
+  }
+]

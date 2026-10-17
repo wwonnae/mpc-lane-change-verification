@@ -1,0 +1,66 @@
+{
+  "rear_gap_0.1m": {
+    "n_episodes": 100,
+    "outcome_counts": {
+      "성공": 100
+    },
+    "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+    "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+    "safe_stop_count": 0,
+    "observed_transition_departure_count": 0,
+    "delta_within_tolerance_rate": 0.9993615209988649,
+    "psi_within_tolerance_rate": 1.0,
+    "y_within_tolerance_rate": 1.0,
+    "stop_gap_mean": null,
+    "stop_gap_min": null,
+    "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+  },
+  "rear_gap_0.3m": {
+    "n_episodes": 100,
+    "outcome_counts": {
+      "성공": 100
+    },
+    "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+    "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+    "safe_stop_count": 0,
+    "observed_transition_departure_count": 0,
+    "delta_within_tolerance_rate": 0.9993615209988649,
+    "psi_within_tolerance_rate": 1.0,
+    "y_within_tolerance_rate": 1.0,
+    "stop_gap_mean": null,
+    "stop_gap_min": null,
+    "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+  },
+  "rear_gap_0.5m": {
+    "n_episodes": 100,
+    "outcome_counts": {
+      "성공": 100
+    },
+    "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+    "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+    "safe_stop_count": 0,
+    "observed_transition_departure_count": 0,
+    "delta_within_tolerance_rate": 0.9993615209988649,
+    "psi_within_tolerance_rate": 1.0,
+    "y_within_tolerance_rate": 1.0,
+    "stop_gap_mean": null,
+    "stop_gap_min": null,
+    "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+  },
+  "rear_gap_1.0m": {
+    "n_episodes": 100,
+    "outcome_counts": {
+      "성공": 100
+    },
+    "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+    "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+    "safe_stop_count": 0,
+    "observed_transition_departure_count": 0,
+    "delta_within_tolerance_rate": 0.9993615209988649,
+    "psi_within_tolerance_rate": 1.0,
+    "y_within_tolerance_rate": 1.0,
+    "stop_gap_mean": null,
+    "stop_gap_min": null,
+    "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+  }
+}

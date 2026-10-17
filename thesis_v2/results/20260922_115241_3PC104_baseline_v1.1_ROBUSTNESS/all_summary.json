@@ -1,0 +1,450 @@
+{
+  "summary": {
+    "R3_s3_grid": {
+      "n_cells": 961,
+      "n_fail": 86,
+      "fail_ratio": 0.08949011446409989,
+      "heatmap_path": "thesis_v2\\results\\20260922_115241_3PC104_baseline_v1.1_ROBUSTNESS\\R3_s3_grid\\s3_heatmap.png",
+      "grid_json_path": "thesis_v2\\results\\20260922_115241_3PC104_baseline_v1.1_ROBUSTNESS\\R3_s3_grid\\s3_grid.json"
+    },
+    "R4_s4_noise": {
+      "low": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 98,
+          "SAFE_STOP": 1,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "98/100 (95% CI 93.0~99.4%)",
+        "safe_stop_count": 1,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": 0.06432040524474564,
+        "stop_gap_min": 0.06432040524474564,
+        "stop_gap_note": null
+      },
+      "medium": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 96,
+          "SAFE_STOP": 3,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "96/100 (95% CI 90.2~98.4%)",
+        "safe_stop_count": 3,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": 0.17069160478562684,
+        "stop_gap_min": 0.14340201000579858,
+        "stop_gap_note": null
+      },
+      "high": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 91,
+          "SAFE_STOP": 8,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "91/100 (95% CI 83.8~95.2%)",
+        "safe_stop_count": 8,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": 0.07624695777551671,
+        "stop_gap_min": 0.0,
+        "stop_gap_note": null
+      }
+    },
+    "R5_s5_delay": {
+      "delay_1step": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "delay_2step": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      }
+    },
+    "R6_s6_heading": {
+      "psi0_-15deg": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 92,
+          "충돌": 8
+        },
+        "collision_rate_formatted": "8/100 (95% CI 4.1~15.0%)",
+        "success_rate_formatted": "92/100 (95% CI 85.0~95.9%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 0.9989064315494498,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "psi0_-10deg": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 98,
+          "충돌": 2
+        },
+        "collision_rate_formatted": "2/100 (95% CI 0.6~7.0%)",
+        "success_rate_formatted": "98/100 (95% CI 93.0~99.4%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9998027613412229,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "psi0_-5deg": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 98,
+          "충돌": 2
+        },
+        "collision_rate_formatted": "2/100 (95% CI 0.6~7.0%)",
+        "success_rate_formatted": "98/100 (95% CI 93.0~99.4%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "psi0_0deg": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "psi0_5deg": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "psi0_10deg": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9999359836118046,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "psi0_15deg": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 0.9973852040816327,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      }
+    },
+    "R7_s7a_size": {
+      "length_0.10m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9995993054628022,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "length_0.15m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9991444554129648,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "length_0.20m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9985744832501782,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "length_0.30m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9966125086255567,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "length_0.40m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 99,
+          "충돌": 1
+        },
+        "collision_rate_formatted": "1/100 (95% CI 0.2~5.4%)",
+        "success_rate_formatted": "99/100 (95% CI 94.6~99.8%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9958047060254149,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "width_0.075m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 100
+        },
+        "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+        "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9985869355771083,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "width_0.100m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 100
+        },
+        "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+        "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.998586118251928,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "width_0.200m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 93,
+          "충돌": 7
+        },
+        "collision_rate_formatted": "7/100 (95% CI 3.4~13.7%)",
+        "success_rate_formatted": "93/100 (95% CI 86.3~96.6%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9985120054108895,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "width_0.300m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "SAFE_STOP": 100
+        },
+        "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+        "success_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+        "safe_stop_count": 100,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 1.0,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": 0.18703883450905362,
+        "stop_gap_min": 0.17545895466233108,
+        "stop_gap_note": null
+      }
+    },
+    "R7_s7b_frontrear": {
+      "rear_gap_0.1m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 100
+        },
+        "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+        "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9993615209988649,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "rear_gap_0.3m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 100
+        },
+        "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+        "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9993615209988649,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "rear_gap_0.5m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 100
+        },
+        "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+        "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9993615209988649,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      },
+      "rear_gap_1.0m": {
+        "n_episodes": 100,
+        "outcome_counts": {
+          "성공": 100
+        },
+        "collision_rate_formatted": "0/100 (95% CI 0.0~3.7%)",
+        "success_rate_formatted": "100/100 (95% CI 96.3~100.0%)",
+        "safe_stop_count": 0,
+        "observed_transition_departure_count": 0,
+        "delta_within_tolerance_rate": 0.9993615209988649,
+        "psi_within_tolerance_rate": 1.0,
+        "y_within_tolerance_rate": 1.0,
+        "stop_gap_mean": null,
+        "stop_gap_min": null,
+        "stop_gap_note": "해당없음(SAFE_STOP 미발생)"
+      }
+    }
+  },
+  "timings_sec": {
+    "R3_s3_grid": 17.076914100000067,
+    "R4_s4_noise": 6.2344992999996975,
+    "R5_s5_delay": 3.629218199999741,
+    "R6_s6_heading": 12.882994300000064,
+    "R7_s7a_size": 14.863756400000057,
+    "R7_s7b_frontrear": 7.315218200000345
+  }
+}

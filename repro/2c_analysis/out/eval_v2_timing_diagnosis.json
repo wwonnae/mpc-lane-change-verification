@@ -1,0 +1,432 @@
+{
+  "v1": {
+    "n_calls": 69561,
+    "corr_iterations_vs_time": 0.9960301917841916,
+    "top20": [
+      {
+        "subgroup": "paper",
+        "seed": 241,
+        "step_in_episode": 22,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 42.45359999999998
+      },
+      {
+        "subgroup": "S5/delay_2step",
+        "seed": 277,
+        "step_in_episode": 35,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 36.41059999999996
+      },
+      {
+        "subgroup": "paper",
+        "seed": 279,
+        "step_in_episode": 11,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 35.897400000000076
+      },
+      {
+        "subgroup": "S7a/length_0.20m",
+        "seed": 241,
+        "step_in_episode": 22,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 30.16150000000195
+      },
+      {
+        "subgroup": "S5/delay_2step",
+        "seed": 297,
+        "step_in_episode": 15,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 30.04080000000009
+      },
+      {
+        "subgroup": "S5/delay_2step",
+        "seed": 279,
+        "step_in_episode": 16,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 29.955900000000923
+      },
+      {
+        "subgroup": "S7a/length_0.20m",
+        "seed": 261,
+        "step_in_episode": 28,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 29.495799999999406
+      },
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 242,
+        "step_in_episode": 17,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 29.455499999997414
+      },
+      {
+        "subgroup": "S7b/rear_gap_0.3m",
+        "seed": 220,
+        "step_in_episode": 28,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 29.20040000000057
+      },
+      {
+        "subgroup": "S4/high",
+        "seed": 297,
+        "step_in_episode": 15,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 28.873100000000207
+      },
+      {
+        "subgroup": "S7a/length_0.20m",
+        "seed": 221,
+        "step_in_episode": 35,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 28.51700000000079
+      },
+      {
+        "subgroup": "S7a/length_0.20m",
+        "seed": 279,
+        "step_in_episode": 11,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 28.421100000002752
+      },
+      {
+        "subgroup": "left_obstacle",
+        "seed": 226,
+        "step_in_episode": 12,
+        "state": "KEEP_L2",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 28.308800000000467
+      },
+      {
+        "subgroup": "S5/delay_2step",
+        "seed": 244,
+        "step_in_episode": 22,
+        "state": "EVADE_L",
+        "iterations": 15350,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 28.210099999999017
+      },
+      {
+        "subgroup": "paper",
+        "seed": 211,
+        "step_in_episode": 35,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 28.148699999999916
+      },
+      {
+        "subgroup": "paper",
+        "seed": 279,
+        "step_in_episode": 14,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 28.141199999999866
+      },
+      {
+        "subgroup": "S5/delay_2step",
+        "seed": 273,
+        "step_in_episode": 23,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 28.085700000000102
+      },
+      {
+        "subgroup": "S5/delay_2step",
+        "seed": 250,
+        "step_in_episode": 23,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 27.949700000000632
+      },
+      {
+        "subgroup": "S5/delay_2step",
+        "seed": 260,
+        "step_in_episode": 34,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 27.896900000000002
+      },
+      {
+        "subgroup": "S5/delay_2step",
+        "seed": 242,
+        "step_in_episode": 20,
+        "state": "EVADE_L",
+        "iterations": 20000,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 27.788899999999117
+      }
+    ],
+    "cap_hit_count": 196,
+    "cap_hit_time_stats_ms": {
+      "mean": 26.305892346938723,
+      "p50": 25.76840000000047,
+      "p95": 28.606025000000646,
+      "max": 42.45359999999998
+    },
+    "overall_max_ms": 42.45359999999998,
+    "overall_p99_ms": 6.426980000000403
+  },
+  "v2": {
+    "n_calls": 80891,
+    "corr_iterations_vs_time": 0.9415288388454375,
+    "top20": [
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 210,
+        "step_in_episode": 10,
+        "state": "EVADE_L",
+        "iterations": 25,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 6.018099999998583
+      },
+      {
+        "subgroup": "paper",
+        "seed": 255,
+        "step_in_episode": 42,
+        "state": "EVADE_L",
+        "iterations": 25,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 5.668200000002344
+      },
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 260,
+        "step_in_episode": 112,
+        "state": "RETURN_TO_L2",
+        "iterations": 25,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 5.348099999999079
+      },
+      {
+        "subgroup": "S7b/rear_gap_0.5m",
+        "seed": 261,
+        "step_in_episode": 61,
+        "state": "RETURN_TO_L2",
+        "iterations": 25,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 5.25079999999889
+      },
+      {
+        "subgroup": "paper",
+        "seed": 202,
+        "step_in_episode": 33,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 4.402499999997644
+      },
+      {
+        "subgroup": "S5/delay_1step",
+        "seed": 235,
+        "step_in_episode": 96,
+        "state": "RETURN_TO_L2",
+        "iterations": 25,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 4.097299999997972
+      },
+      {
+        "subgroup": "S7a/width_0.075m",
+        "seed": 297,
+        "step_in_episode": 20,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 4.0386000000012245
+      },
+      {
+        "subgroup": "S6/psi0_0deg",
+        "seed": 273,
+        "step_in_episode": 19,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 3.533500000003187
+      },
+      {
+        "subgroup": "S7a/length_0.20m",
+        "seed": 254,
+        "step_in_episode": 3,
+        "state": "EVADE_L",
+        "iterations": 350,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 3.4819999999982088
+      },
+      {
+        "subgroup": "paper",
+        "seed": 202,
+        "step_in_episode": 34,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 3.2522999999997637
+      },
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 277,
+        "step_in_episode": 41,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 3.177200000003211
+      },
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 210,
+        "step_in_episode": 41,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 3.1187999999957583
+      },
+      {
+        "subgroup": "paper",
+        "seed": 202,
+        "step_in_episode": 32,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 3.104699999997962
+      },
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 210,
+        "step_in_episode": 36,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 3.0373999999966372
+      },
+      {
+        "subgroup": "S7a/length_0.20m",
+        "seed": 265,
+        "step_in_episode": 27,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 3.014700000001369
+      },
+      {
+        "subgroup": "S6/psi0_0deg",
+        "seed": 264,
+        "step_in_episode": 50,
+        "state": "RETURN_TO_L2",
+        "iterations": 750,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 2.8434999999973343
+      },
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 277,
+        "step_in_episode": 40,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 2.815800000000479
+      },
+      {
+        "subgroup": "S7b/rear_gap_0.5m",
+        "seed": 278,
+        "step_in_episode": 29,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 2.7637000000027
+      },
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 261,
+        "step_in_episode": 3,
+        "state": "EVADE_L",
+        "iterations": 900,
+        "solver_status": "solved",
+        "time_limit_hit": false,
+        "run_time_ms": 2.7558000000027505
+      },
+      {
+        "subgroup": "S6/psi0_-15deg",
+        "seed": 210,
+        "step_in_episode": 42,
+        "state": "EVADE_L",
+        "iterations": 972,
+        "solver_status": "maximum iterations reached",
+        "time_limit_hit": false,
+        "run_time_ms": 2.7541999999982636
+      }
+    ],
+    "cap_hit_count": 1680,
+    "cap_hit_time_stats_ms": {
+      "mean": 1.4565770238095497,
+      "p50": 1.3957999999973936,
+      "p95": 1.6682249999977472,
+      "max": 4.402499999997644
+    },
+    "overall_max_ms": 6.018099999998583,
+    "overall_p99_ms": 1.4016999999959978
+  }
+}

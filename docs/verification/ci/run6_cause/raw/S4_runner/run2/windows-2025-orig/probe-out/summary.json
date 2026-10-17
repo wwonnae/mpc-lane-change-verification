@@ -1,0 +1,2197 @@
+{
+ "exp_dir": "probe-out/run",
+ "arms": {
+  "orig": {
+   "n_trials": 1500,
+   "load_k": [
+    0
+   ],
+   "probe": [
+    true
+   ],
+   "cond": [
+    "orig"
+   ],
+   "targets": {
+    "i5": {
+     "n": 1500,
+     "mismatch": 5,
+     "test_failed": 5,
+     "rate": 0.0033333333333333335,
+     "ci95": [
+      0.0010831828329401047,
+      0.007761609956732375
+     ],
+     "upper95_if_zero": null,
+     "deviate_from_modal": 5,
+     "distinct_signatures": 6,
+     "signature_set": [
+      "374d25637b10be03",
+      "4382bec4bd7166fe",
+      "79a1d741aadb7024",
+      "8f6a1afb60309a81",
+      "a2f4fadaa42dea1a",
+      "f0e7e81814f7178d"
+     ],
+     "trials_with_tl_fp": 5,
+     "tl_fp_solves": 5,
+     "tl_status_solves": 4,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1495,
+      "mismatch=True,tl_fp_in_trial=True": 5
+     },
+     "first_diff_pairs": 10,
+     "first_diff_with_tl_fp": 10,
+     "first_diff_inputs_equal": 10,
+     "max_wall_ms": 106.0371,
+     "max_run_time_ms": 105.9357,
+     "mismatches_noviol": 0,
+     "n_noviol": 965,
+     "mismatch_other_adj_pct": [
+      43.27,
+      55.81,
+      55.01,
+      56.58,
+      54.08
+     ],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 1499,
+       "5": 1
+      },
+      "1": {
+       "8": 1500
+      },
+      "2": {
+       "8": 1500
+      }
+     },
+     "first_diffs": [
+      {
+       "batch": "orig_090",
+       "trial": 2,
+       "pair": [
+        0,
+        2
+       ],
+       "first_delta_row": 41,
+       "max_abs_delta_diff_deg": 0.052939232648930634,
+       "first_solve_diff": 30,
+       "first_solve_row": 41,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         27,
+         "solved",
+         25,
+         0.116,
+         false
+        ],
+        [
+         28,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         29,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         30,
+         "solved",
+         25,
+         0.117,
+         false
+        ],
+        [
+         31,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         32,
+         "solved",
+         25,
+         0.142,
+         false
+        ],
+        [
+         33,
+         "solved",
+         25,
+         0.121,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         27,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         28,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         29,
+         "solved",
+         25,
+         0.117,
+         false
+        ],
+        [
+         30,
+         "run time limit reached",
+         0,
+         51.385,
+         true
+        ],
+        [
+         31,
+         "solved",
+         25,
+         0.122,
+         false
+        ],
+        [
+         32,
+         "solved",
+         25,
+         0.119,
+         false
+        ],
+        [
+         33,
+         "solved",
+         25,
+         0.119,
+         false
+        ]
+       ],
+       "other_cpu": 43.26605710539136
+      },
+      {
+       "batch": "orig_090",
+       "trial": 2,
+       "pair": [
+        1,
+        2
+       ],
+       "first_delta_row": 41,
+       "max_abs_delta_diff_deg": 0.052939232648930634,
+       "first_solve_diff": 30,
+       "first_solve_row": 41,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         27,
+         "solved",
+         25,
+         0.117,
+         false
+        ],
+        [
+         28,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         29,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         30,
+         "solved",
+         25,
+         0.115,
+         false
+        ],
+        [
+         31,
+         "solved",
+         25,
+         0.115,
+         false
+        ],
+        [
+         32,
+         "solved",
+         25,
+         0.116,
+         false
+        ],
+        [
+         33,
+         "solved",
+         25,
+         0.117,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         27,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         28,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         29,
+         "solved",
+         25,
+         0.117,
+         false
+        ],
+        [
+         30,
+         "run time limit reached",
+         0,
+         51.385,
+         true
+        ],
+        [
+         31,
+         "solved",
+         25,
+         0.122,
+         false
+        ],
+        [
+         32,
+         "solved",
+         25,
+         0.119,
+         false
+        ],
+        [
+         33,
+         "solved",
+         25,
+         0.119,
+         false
+        ]
+       ],
+       "other_cpu": 43.26605710539136
+      },
+      {
+       "batch": "orig_090",
+       "trial": 7,
+       "pair": [
+        0,
+        2
+       ],
+       "first_delta_row": 96,
+       "max_abs_delta_diff_deg": 0.0011791713776305723,
+       "first_solve_diff": 68,
+       "first_solve_row": 96,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         65,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         66,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         67,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         68,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         69,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         70,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         71,
+         "solved",
+         25,
+         0.128,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         65,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         66,
+         "solved",
+         25,
+         0.213,
+         false
+        ],
+        [
+         67,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         68,
+         "run time limit reached",
+         14,
+         49.999,
+         true
+        ],
+        [
+         69,
+         "solved",
+         25,
+         0.144,
+         false
+        ],
+        [
+         70,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         71,
+         "solved",
+         25,
+         0.131,
+         false
+        ]
+       ],
+       "other_cpu": 55.813
+      },
+      {
+       "batch": "orig_090",
+       "trial": 7,
+       "pair": [
+        1,
+        2
+       ],
+       "first_delta_row": 96,
+       "max_abs_delta_diff_deg": 0.0011791713776305723,
+       "first_solve_diff": 68,
+       "first_solve_row": 96,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         65,
+         "solved",
+         25,
+         0.132,
+         false
+        ],
+        [
+         66,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         67,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         68,
+         "solved",
+         25,
+         0.127,
+         false
+        ],
+        [
+         69,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         70,
+         "solved",
+         25,
+         0.127,
+         false
+        ],
+        [
+         71,
+         "solved",
+         25,
+         0.128,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         65,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         66,
+         "solved",
+         25,
+         0.213,
+         false
+        ],
+        [
+         67,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         68,
+         "run time limit reached",
+         14,
+         49.999,
+         true
+        ],
+        [
+         69,
+         "solved",
+         25,
+         0.144,
+         false
+        ],
+        [
+         70,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         71,
+         "solved",
+         25,
+         0.131,
+         false
+        ]
+       ],
+       "other_cpu": 55.813
+      },
+      {
+       "batch": "orig_106",
+       "trial": 4,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 11,
+       "max_abs_delta_diff_deg": 0.005677131386764955,
+       "first_solve_diff": 0,
+       "first_solve_row": 11,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        true,
+        false
+       ],
+       "window_a": [
+        [
+         0,
+         "run time limit reached",
+         225,
+         47.329,
+         true
+        ],
+        [
+         1,
+         "solved",
+         100,
+         0.556,
+         false
+        ],
+        [
+         2,
+         "solved",
+         25,
+         0.132,
+         false
+        ],
+        [
+         3,
+         "solved",
+         25,
+         0.131,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         0,
+         "solved",
+         725,
+         2.318,
+         false
+        ],
+        [
+         1,
+         "solved",
+         500,
+         1.493,
+         false
+        ],
+        [
+         2,
+         "solved",
+         350,
+         1.091,
+         false
+        ],
+        [
+         3,
+         "solved",
+         250,
+         0.763,
+         false
+        ]
+       ],
+       "other_cpu": 55.009
+      },
+      {
+       "batch": "orig_106",
+       "trial": 4,
+       "pair": [
+        0,
+        2
+       ],
+       "first_delta_row": 11,
+       "max_abs_delta_diff_deg": 0.005677131386764955,
+       "first_solve_diff": 0,
+       "first_solve_row": 11,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        true,
+        false
+       ],
+       "window_a": [
+        [
+         0,
+         "run time limit reached",
+         225,
+         47.329,
+         true
+        ],
+        [
+         1,
+         "solved",
+         100,
+         0.556,
+         false
+        ],
+        [
+         2,
+         "solved",
+         25,
+         0.132,
+         false
+        ],
+        [
+         3,
+         "solved",
+         25,
+         0.131,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         0,
+         "solved",
+         725,
+         2.174,
+         false
+        ],
+        [
+         1,
+         "solved",
+         500,
+         1.49,
+         false
+        ],
+        [
+         2,
+         "solved",
+         350,
+         1.05,
+         false
+        ],
+        [
+         3,
+         "solved",
+         250,
+         0.751,
+         false
+        ]
+       ],
+       "other_cpu": 55.009
+      },
+      {
+       "batch": "orig_128",
+       "trial": 1,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 91,
+       "max_abs_delta_diff_deg": 2.9665159217984183e-12,
+       "first_solve_diff": 57,
+       "first_solve_row": 85,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         54,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         55,
+         "solved",
+         25,
+         0.127,
+         false
+        ],
+        [
+         56,
+         "solved",
+         125,
+         0.408,
+         false
+        ],
+        [
+         57,
+         "solved",
+         375,
+         1.15,
+         false
+        ],
+        [
+         58,
+         "solved",
+         350,
+         1.025,
+         false
+        ],
+        [
+         59,
+         "solved",
+         375,
+         1.124,
+         false
+        ],
+        [
+         60,
+         "solved",
+         325,
+         0.981,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         54,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         55,
+         "solved",
+         25,
+         0.126,
+         false
+        ],
+        [
+         56,
+         "solved",
+         125,
+         0.415,
+         false
+        ],
+        [
+         57,
+         "solved inaccurate",
+         222,
+         105.936,
+         true
+        ],
+        [
+         58,
+         "solved",
+         375,
+         1.109,
+         false
+        ],
+        [
+         59,
+         "solved",
+         375,
+         1.096,
+         false
+        ],
+        [
+         60,
+         "solved",
+         325,
+         0.961,
+         false
+        ]
+       ],
+       "other_cpu": 56.584
+      },
+      {
+       "batch": "orig_128",
+       "trial": 1,
+       "pair": [
+        1,
+        2
+       ],
+       "first_delta_row": 91,
+       "max_abs_delta_diff_deg": 2.9665159217984183e-12,
+       "first_solve_diff": 57,
+       "first_solve_row": 85,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        true,
+        false
+       ],
+       "window_a": [
+        [
+         54,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         55,
+         "solved",
+         25,
+         0.126,
+         false
+        ],
+        [
+         56,
+         "solved",
+         125,
+         0.415,
+         false
+        ],
+        [
+         57,
+         "solved inaccurate",
+         222,
+         105.936,
+         true
+        ],
+        [
+         58,
+         "solved",
+         375,
+         1.109,
+         false
+        ],
+        [
+         59,
+         "solved",
+         375,
+         1.096,
+         false
+        ],
+        [
+         60,
+         "solved",
+         325,
+         0.961,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         54,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         55,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         56,
+         "solved",
+         125,
+         0.406,
+         false
+        ],
+        [
+         57,
+         "solved",
+         375,
+         1.102,
+         false
+        ],
+        [
+         58,
+         "solved",
+         350,
+         1.027,
+         false
+        ],
+        [
+         59,
+         "solved",
+         375,
+         1.079,
+         false
+        ],
+        [
+         60,
+         "solved",
+         325,
+         1.014,
+         false
+        ]
+       ],
+       "other_cpu": 56.584
+      },
+      {
+       "batch": "orig_128",
+       "trial": 4,
+       "pair": [
+        0,
+        2
+       ],
+       "first_delta_row": 89,
+       "max_abs_delta_diff_deg": 0.005094013076742954,
+       "first_solve_diff": 61,
+       "first_solve_row": 89,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         58,
+         "solved",
+         350,
+         1.055,
+         false
+        ],
+        [
+         59,
+         "solved",
+         375,
+         1.262,
+         false
+        ],
+        [
+         60,
+         "solved",
+         325,
+         1.011,
+         false
+        ],
+        [
+         61,
+         "solved",
+         300,
+         0.898,
+         false
+        ],
+        [
+         62,
+         "solved",
+         75,
+         0.284,
+         false
+        ],
+        [
+         63,
+         "solved",
+         25,
+         0.131,
+         false
+        ],
+        [
+         64,
+         "solved",
+         25,
+         0.148,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         58,
+         "solved",
+         350,
+         1.027,
+         false
+        ],
+        [
+         59,
+         "solved",
+         375,
+         1.102,
+         false
+        ],
+        [
+         60,
+         "solved",
+         325,
+         1.013,
+         false
+        ],
+        [
+         61,
+         "run time limit reached",
+         50,
+         54.494,
+         true
+        ],
+        [
+         62,
+         "solved",
+         75,
+         0.296,
+         false
+        ],
+        [
+         63,
+         "solved",
+         25,
+         0.135,
+         false
+        ],
+        [
+         64,
+         "solved",
+         25,
+         0.126,
+         false
+        ]
+       ],
+       "other_cpu": 54.083
+      },
+      {
+       "batch": "orig_128",
+       "trial": 4,
+       "pair": [
+        1,
+        2
+       ],
+       "first_delta_row": 89,
+       "max_abs_delta_diff_deg": 0.005094013076742954,
+       "first_solve_diff": 61,
+       "first_solve_row": 89,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         58,
+         "solved",
+         350,
+         1.05,
+         false
+        ],
+        [
+         59,
+         "solved",
+         375,
+         1.153,
+         false
+        ],
+        [
+         60,
+         "solved",
+         325,
+         1.006,
+         false
+        ],
+        [
+         61,
+         "solved",
+         300,
+         0.905,
+         false
+        ],
+        [
+         62,
+         "solved",
+         75,
+         0.282,
+         false
+        ],
+        [
+         63,
+         "solved",
+         25,
+         0.127,
+         false
+        ],
+        [
+         64,
+         "solved",
+         25,
+         0.13,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         58,
+         "solved",
+         350,
+         1.027,
+         false
+        ],
+        [
+         59,
+         "solved",
+         375,
+         1.102,
+         false
+        ],
+        [
+         60,
+         "solved",
+         325,
+         1.013,
+         false
+        ],
+        [
+         61,
+         "run time limit reached",
+         50,
+         54.494,
+         true
+        ],
+        [
+         62,
+         "solved",
+         75,
+         0.296,
+         false
+        ],
+        [
+         63,
+         "solved",
+         25,
+         0.135,
+         false
+        ],
+        [
+         64,
+         "solved",
+         25,
+         0.126,
+         false
+        ]
+       ],
+       "other_cpu": 54.083
+      }
+     ]
+    },
+    "i4_rec": {
+     "n": 1500,
+     "mismatch": 1,
+     "test_failed": 1,
+     "rate": 0.0006666666666666666,
+     "ci95": [
+      1.687839621446107e-05,
+      0.0037087735206347604
+     ],
+     "upper95_if_zero": null,
+     "deviate_from_modal": 1,
+     "distinct_signatures": 2,
+     "signature_set": [
+      "56233495f795981a",
+      "577d9822e1be69cc"
+     ],
+     "trials_with_tl_fp": 1,
+     "tl_fp_solves": 1,
+     "tl_status_solves": 1,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1499,
+      "mismatch=True,tl_fp_in_trial=True": 1
+     },
+     "first_diff_pairs": 1,
+     "first_diff_with_tl_fp": 1,
+     "first_diff_inputs_equal": 1,
+     "max_wall_ms": 78.484,
+     "max_run_time_ms": 78.3876,
+     "mismatches_noviol": 0,
+     "n_noviol": 965,
+     "mismatch_other_adj_pct": [
+      45.84
+     ],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 1500
+      },
+      "1": {
+       "4": 1500
+      }
+     },
+     "first_diffs": [
+      {
+       "batch": "orig_012",
+       "trial": 9,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 105,
+       "max_abs_delta_diff_deg": 0.03164342855858848,
+       "first_solve_diff": 70,
+       "first_solve_row": 105,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        true,
+        false
+       ],
+       "window_a": [
+        [
+         67,
+         "solved",
+         25,
+         0.116,
+         false
+        ],
+        [
+         68,
+         "solved",
+         25,
+         0.117,
+         false
+        ],
+        [
+         69,
+         "solved",
+         25,
+         0.116,
+         false
+        ],
+        [
+         70,
+         "run time limit reached",
+         13,
+         78.388,
+         true
+        ],
+        [
+         71,
+         "solved",
+         25,
+         0.157,
+         false
+        ],
+        [
+         72,
+         "solved",
+         25,
+         0.126,
+         false
+        ],
+        [
+         73,
+         "solved",
+         25,
+         0.128,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         67,
+         "solved",
+         25,
+         0.117,
+         false
+        ],
+        [
+         68,
+         "solved",
+         25,
+         0.169,
+         false
+        ],
+        [
+         69,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         70,
+         "solved",
+         25,
+         0.115,
+         false
+        ],
+        [
+         71,
+         "solved",
+         25,
+         0.116,
+         false
+        ],
+        [
+         72,
+         "solved",
+         25,
+         0.114,
+         false
+        ],
+        [
+         73,
+         "solved",
+         25,
+         0.116,
+         false
+        ]
+       ],
+       "other_cpu": 45.836
+      }
+     ]
+    },
+    "i4_cl100": {
+     "n": 1500,
+     "mismatch": 2,
+     "test_failed": 2,
+     "rate": 0.0013333333333333333,
+     "ci95": [
+      0.00016151365956312066,
+      0.004808077576342875
+     ],
+     "upper95_if_zero": null,
+     "deviate_from_modal": 2,
+     "distinct_signatures": 3,
+     "signature_set": [
+      "697bf3580cb6cc5b",
+      "b0a7f115e4167a43",
+      "bae765c5fe6d3df9"
+     ],
+     "trials_with_tl_fp": 2,
+     "tl_fp_solves": 2,
+     "tl_status_solves": 1,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1498,
+      "mismatch=True,tl_fp_in_trial=True": 2
+     },
+     "first_diff_pairs": 2,
+     "first_diff_with_tl_fp": 2,
+     "first_diff_inputs_equal": 2,
+     "max_wall_ms": 56.2664,
+     "max_run_time_ms": 55.3105,
+     "mismatches_noviol": 0,
+     "n_noviol": 965,
+     "mismatch_other_adj_pct": [
+      31.41,
+      55.09
+     ],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 1500
+      },
+      "1": {
+       "4": 1500
+      }
+     },
+     "first_diffs": [
+      {
+       "batch": "orig_000",
+       "trial": 8,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 23,
+       "max_abs_delta_diff_deg": 0.0009711304811919064,
+       "first_solve_diff": 0,
+       "first_solve_row": 23,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        true,
+        false
+       ],
+       "window_a": [
+        [
+         0,
+         "run time limit reached",
+         592,
+         55.31,
+         true
+        ],
+        [
+         1,
+         "solved",
+         675,
+         2.904,
+         false
+        ],
+        [
+         2,
+         "solved",
+         525,
+         1.857,
+         false
+        ],
+        [
+         3,
+         "solved",
+         500,
+         1.405,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         0,
+         "solved",
+         825,
+         2.354,
+         false
+        ],
+        [
+         1,
+         "solved",
+         650,
+         1.82,
+         false
+        ],
+        [
+         2,
+         "solved",
+         500,
+         1.413,
+         false
+        ],
+        [
+         3,
+         "solved",
+         475,
+         1.342,
+         false
+        ]
+       ],
+       "other_cpu": 31.410817286896524
+      },
+      {
+       "batch": "orig_021",
+       "trial": 5,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 28,
+       "max_abs_delta_diff_deg": 6.6782741079407515e-06,
+       "first_solve_diff": 4,
+       "first_solve_row": 27,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         1,
+         "solved",
+         650,
+         1.823,
+         false
+        ],
+        [
+         2,
+         "solved",
+         500,
+         1.407,
+         false
+        ],
+        [
+         3,
+         "solved",
+         475,
+         1.339,
+         false
+        ],
+        [
+         4,
+         "solved",
+         425,
+         1.205,
+         false
+        ],
+        [
+         5,
+         "solved",
+         75,
+         0.298,
+         false
+        ],
+        [
+         6,
+         "solved",
+         25,
+         0.127,
+         false
+        ],
+        [
+         7,
+         "solved",
+         25,
+         0.125,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         1,
+         "solved",
+         650,
+         1.835,
+         false
+        ],
+        [
+         2,
+         "solved",
+         500,
+         1.42,
+         false
+        ],
+        [
+         3,
+         "solved",
+         475,
+         1.35,
+         false
+        ],
+        [
+         4,
+         "solved",
+         408,
+         53.913,
+         true
+        ],
+        [
+         5,
+         "solved",
+         75,
+         0.279,
+         false
+        ],
+        [
+         6,
+         "solved",
+         25,
+         0.126,
+         false
+        ],
+        [
+         7,
+         "solved",
+         25,
+         0.126,
+         false
+        ]
+       ],
+       "other_cpu": 55.08829922888333
+      }
+     ]
+    },
+    "i4_cl101": {
+     "n": 1500,
+     "mismatch": 3,
+     "test_failed": 3,
+     "rate": 0.002,
+     "ci95": [
+      0.00041263814290064927,
+      0.005833621858616911
+     ],
+     "upper95_if_zero": null,
+     "deviate_from_modal": 3,
+     "distinct_signatures": 4,
+     "signature_set": [
+      "5b83f8b97903eaf5",
+      "69e5d2ee04cae222",
+      "7a59731904868881",
+      "d375b9b1ef72c210"
+     ],
+     "trials_with_tl_fp": 3,
+     "tl_fp_solves": 3,
+     "tl_status_solves": 3,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1497,
+      "mismatch=True,tl_fp_in_trial=True": 3
+     },
+     "first_diff_pairs": 3,
+     "first_diff_with_tl_fp": 3,
+     "first_diff_inputs_equal": 3,
+     "max_wall_ms": 46.454,
+     "max_run_time_ms": 91.6579,
+     "mismatches_noviol": 0,
+     "n_noviol": 965,
+     "mismatch_other_adj_pct": [
+      55.78,
+      54.95,
+      55.01
+     ],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 1500
+      },
+      "1": {
+       "8": 1500
+      }
+     },
+     "first_diffs": [
+      {
+       "batch": "orig_021",
+       "trial": 1,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 139,
+       "max_abs_delta_diff_deg": 0.04854395928109789,
+       "first_solve_diff": 98,
+       "first_solve_row": 139,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        true,
+        false
+       ],
+       "window_a": [
+        [
+         95,
+         "solved",
+         25,
+         0.131,
+         false
+        ],
+        [
+         96,
+         "solved",
+         25,
+         0.124,
+         false
+        ],
+        [
+         97,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         98,
+         "run time limit reached",
+         0,
+         81.448,
+         true
+        ],
+        [
+         99,
+         "solved",
+         25,
+         0.135,
+         false
+        ],
+        [
+         100,
+         "solved",
+         25,
+         0.135,
+         false
+        ],
+        [
+         101,
+         "solved",
+         25,
+         0.132,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         95,
+         "solved",
+         25,
+         0.131,
+         false
+        ],
+        [
+         96,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         97,
+         "solved",
+         25,
+         0.124,
+         false
+        ],
+        [
+         98,
+         "solved",
+         25,
+         0.131,
+         false
+        ],
+        [
+         99,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         100,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         101,
+         "solved",
+         25,
+         0.129,
+         false
+        ]
+       ],
+       "other_cpu": 55.78099999999999
+      },
+      {
+       "batch": "orig_041",
+       "trial": 8,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 140,
+       "max_abs_delta_diff_deg": 0.04744519597951835,
+       "first_solve_diff": 99,
+       "first_solve_row": 140,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         96,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         97,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         98,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         99,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         100,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         101,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         102,
+         "solved",
+         25,
+         0.16,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         96,
+         "solved",
+         25,
+         0.128,
+         false
+        ],
+        [
+         97,
+         "solved",
+         25,
+         0.129,
+         false
+        ],
+        [
+         98,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         99,
+         "run time limit reached",
+         0,
+         91.658,
+         true
+        ],
+        [
+         100,
+         "solved",
+         25,
+         0.183,
+         false
+        ],
+        [
+         101,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         102,
+         "solved",
+         25,
+         0.13,
+         false
+        ]
+       ],
+       "other_cpu": 54.94799999999999
+      },
+      {
+       "batch": "orig_106",
+       "trial": 0,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 60,
+       "max_abs_delta_diff_deg": 0.2196411861373191,
+       "first_solve_diff": 31,
+       "first_solve_row": 60,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        true,
+        false
+       ],
+       "window_a": [
+        [
+         28,
+         "solved",
+         25,
+         0.148,
+         false
+        ],
+        [
+         29,
+         "solved",
+         25,
+         0.12,
+         false
+        ],
+        [
+         30,
+         "solved",
+         25,
+         0.118,
+         false
+        ],
+        [
+         31,
+         "run time limit reached",
+         3,
+         46.359,
+         true
+        ],
+        [
+         32,
+         "solved",
+         25,
+         0.13,
+         false
+        ],
+        [
+         33,
+         "solved",
+         25,
+         0.119,
+         false
+        ],
+        [
+         34,
+         "solved",
+         25,
+         0.117,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         28,
+         "solved",
+         25,
+         0.12,
+         false
+        ],
+        [
+         29,
+         "solved",
+         25,
+         0.12,
+         false
+        ],
+        [
+         30,
+         "solved",
+         25,
+         0.121,
+         false
+        ],
+        [
+         31,
+         "solved",
+         25,
+         0.123,
+         false
+        ],
+        [
+         32,
+         "solved",
+         25,
+         0.122,
+         false
+        ],
+        [
+         33,
+         "solved",
+         25,
+         0.121,
+         false
+        ],
+        [
+         34,
+         "solved",
+         25,
+         0.122,
+         false
+        ]
+       ],
+       "other_cpu": 55.009
+      }
+     ]
+    },
+    "base": {
+     "n": 1500,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.002456231484198528
+     ],
+     "upper95_if_zero": 0.0019951618622789935,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "534cd169893e3090"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1500
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 71.0154,
+     "max_run_time_ms": 70.9008,
+     "mismatches_noviol": 0,
+     "n_noviol": 965,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "1": 1500
+      },
+      "1": {
+       "1": 1500
+      },
+      "2": {
+       "1": 1500
+      }
+     },
+     "first_diffs": []
+    }
+   },
+   "cpu": {
+    "trials_with_cpu": 1500,
+    "other_gt_threshold": 535,
+    "violation_ide_only": 0,
+    "violation_even_excl_ide": 535,
+    "threshold": 10.0,
+    "violation_after_own_pid_reclass": 488,
+    "violation_top_processes_mean_pct": [
+     [
+      "CompatTelRunner",
+      38.358416371149104
+     ],
+     [
+      "WindowsTerminal",
+      3.280348664805006
+     ],
+     [
+      "System",
+      1.1190622684042526
+     ],
+     [
+      "python",
+      0.8550280373831777
+     ],
+     [
+      "svchost",
+      0.32411722618277083
+     ],
+     [
+      "provjobd.exe494248584",
+      0.15095461742867627
+     ],
+     [
+      "dwm",
+      0.09215192101353173
+     ],
+     [
+      "WmiPrvSE",
+      0.03319351086904541
+     ]
+    ],
+    "mean": {
+     "total_pct": 69.98180448183611,
+     "exp_pct": 21.396792476014987,
+     "load_pct": 0.0,
+     "other_pct": 19.205249308548492,
+     "ide_pct": 0.0,
+     "other_excl_ide_pct": 19.205249308548492,
+     "other_adj_pct": 17.946316378473593
+    },
+    "max_other": 99.637
+   }
+  }
+ },
+ "comparisons": [],
+ "signature_across_arms": {
+  "i5": {
+   "per_arm": {
+    "orig": [
+     "374d25637b10be03",
+     "4382bec4bd7166fe",
+     "79a1d741aadb7024",
+     "8f6a1afb60309a81",
+     "a2f4fadaa42dea1a",
+     "f0e7e81814f7178d"
+    ]
+   },
+   "identical_single": false
+  },
+  "i4_rec": {
+   "per_arm": {
+    "orig": [
+     "56233495f795981a",
+     "577d9822e1be69cc"
+    ]
+   },
+   "identical_single": false
+  },
+  "i4_cl100": {
+   "per_arm": {
+    "orig": [
+     "697bf3580cb6cc5b",
+     "b0a7f115e4167a43",
+     "bae765c5fe6d3df9"
+    ]
+   },
+   "identical_single": false
+  },
+  "i4_cl101": {
+   "per_arm": {
+    "orig": [
+     "5b83f8b97903eaf5",
+     "69e5d2ee04cae222",
+     "7a59731904868881",
+     "d375b9b1ef72c210"
+    ]
+   },
+   "identical_single": false
+  },
+  "base": {
+   "per_arm": {
+    "orig": [
+     "534cd169893e3090"
+    ]
+   },
+   "identical_single": true
+  }
+ },
+ "events": [
+  {
+   "time": "2026-10-14T05:28:08.927+00:00",
+   "event": "start",
+   "exp": "ci_orig_none"
+  },
+  {
+   "time": "2026-10-14T05:28:23.283+00:00",
+   "event": "schedule",
+   "total_batches": 150,
+   "already_done": 0
+  },
+  {
+   "time": "2026-10-14T05:28:23.285+00:00",
+   "event": "load_set",
+   "k": 0,
+   "pids": [],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64\\python.exe",
+   "settle_s": 0.0
+  },
+  {
+   "time": "2026-10-14T05:51:05.999+00:00",
+   "event": "end"
+  }
+ ]
+}

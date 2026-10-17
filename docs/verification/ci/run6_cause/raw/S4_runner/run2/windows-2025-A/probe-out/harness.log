@@ -1,0 +1,304 @@
+[harness] 2026-10-14T05:26:10.041+00:00 start exp=ci_A_none
+[harness] 2026-10-14T05:26:15.887+00:00 schedule total_batches=150 already_done=0
+[harness] 2026-10-14T05:26:15.887+00:00 load_set k=0 pids=[] method=기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal exe=C:\hostedtoolcache\windows\Python\3.9.13\x64\python.exe settle_s=0.0
+[harness] 2026-10-14T05:26:15.887+00:00 batch_start batch=A_000 trials=10 load_k=0
+[harness] 2026-10-14T05:26:21.839+00:00 batch_end batch=A_000 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:26:21.841+00:00 batch_start batch=A_001 trials=10 load_k=0
+[harness] 2026-10-14T05:26:27.225+00:00 batch_end batch=A_001 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:26:27.225+00:00 batch_start batch=A_002 trials=10 load_k=0
+[harness] 2026-10-14T05:26:32.467+00:00 batch_end batch=A_002 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:26:32.467+00:00 batch_start batch=A_003 trials=10 load_k=0
+[harness] 2026-10-14T05:26:37.832+00:00 batch_end batch=A_003 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:26:37.832+00:00 batch_start batch=A_004 trials=10 load_k=0
+[harness] 2026-10-14T05:26:43.190+00:00 batch_end batch=A_004 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:26:43.192+00:00 batch_start batch=A_005 trials=10 load_k=0
+[harness] 2026-10-14T05:26:48.527+00:00 batch_end batch=A_005 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:26:48.527+00:00 batch_start batch=A_006 trials=10 load_k=0
+[harness] 2026-10-14T05:26:53.905+00:00 batch_end batch=A_006 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:26:53.905+00:00 batch_start batch=A_007 trials=10 load_k=0
+[harness] 2026-10-14T05:26:59.166+00:00 batch_end batch=A_007 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:26:59.166+00:00 batch_start batch=A_008 trials=10 load_k=0
+[harness] 2026-10-14T05:27:04.649+00:00 batch_end batch=A_008 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:04.650+00:00 batch_start batch=A_009 trials=10 load_k=0
+[harness] 2026-10-14T05:27:10.077+00:00 batch_end batch=A_009 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:10.077+00:00 batch_start batch=A_010 trials=10 load_k=0
+[harness] 2026-10-14T05:27:15.451+00:00 batch_end batch=A_010 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:15.451+00:00 batch_start batch=A_011 trials=10 load_k=0
+[harness] 2026-10-14T05:27:20.767+00:00 batch_end batch=A_011 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:20.769+00:00 batch_start batch=A_012 trials=10 load_k=0
+[harness] 2026-10-14T05:27:26.172+00:00 batch_end batch=A_012 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:26.172+00:00 batch_start batch=A_013 trials=10 load_k=0
+[harness] 2026-10-14T05:27:31.558+00:00 batch_end batch=A_013 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:31.558+00:00 batch_start batch=A_014 trials=10 load_k=0
+[harness] 2026-10-14T05:27:36.819+00:00 batch_end batch=A_014 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:36.821+00:00 batch_start batch=A_015 trials=10 load_k=0
+[harness] 2026-10-14T05:27:42.143+00:00 batch_end batch=A_015 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:42.145+00:00 batch_start batch=A_016 trials=10 load_k=0
+[harness] 2026-10-14T05:27:47.441+00:00 batch_end batch=A_016 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:47.441+00:00 batch_start batch=A_017 trials=10 load_k=0
+[harness] 2026-10-14T05:27:52.628+00:00 batch_end batch=A_017 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:52.629+00:00 batch_start batch=A_018 trials=10 load_k=0
+[harness] 2026-10-14T05:27:57.888+00:00 batch_end batch=A_018 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:27:57.888+00:00 batch_start batch=A_019 trials=10 load_k=0
+[harness] 2026-10-14T05:28:03.119+00:00 batch_end batch=A_019 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:03.119+00:00 batch_start batch=A_020 trials=10 load_k=0
+[harness] 2026-10-14T05:28:08.488+00:00 batch_end batch=A_020 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:08.488+00:00 batch_start batch=A_021 trials=10 load_k=0
+[harness] 2026-10-14T05:28:14.585+00:00 batch_end batch=A_021 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:14.587+00:00 batch_start batch=A_022 trials=10 load_k=0
+[harness] 2026-10-14T05:28:20.184+00:00 batch_end batch=A_022 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:20.186+00:00 batch_start batch=A_023 trials=10 load_k=0
+[harness] 2026-10-14T05:28:25.719+00:00 batch_end batch=A_023 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:25.719+00:00 batch_start batch=A_024 trials=10 load_k=0
+[harness] 2026-10-14T05:28:31.164+00:00 batch_end batch=A_024 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:31.164+00:00 batch_start batch=A_025 trials=10 load_k=0
+[harness] 2026-10-14T05:28:36.413+00:00 batch_end batch=A_025 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:36.413+00:00 batch_start batch=A_026 trials=10 load_k=0
+[harness] 2026-10-14T05:28:41.593+00:00 batch_end batch=A_026 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:41.593+00:00 batch_start batch=A_027 trials=10 load_k=0
+[harness] 2026-10-14T05:28:46.761+00:00 batch_end batch=A_027 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:46.761+00:00 batch_start batch=A_028 trials=10 load_k=0
+[harness] 2026-10-14T05:28:51.903+00:00 batch_end batch=A_028 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:51.903+00:00 batch_start batch=A_029 trials=10 load_k=0
+[harness] 2026-10-14T05:28:57.102+00:00 batch_end batch=A_029 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:28:57.102+00:00 batch_start batch=A_030 trials=10 load_k=0
+[harness] 2026-10-14T05:29:02.236+00:00 batch_end batch=A_030 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:02.238+00:00 batch_start batch=A_031 trials=10 load_k=0
+[harness] 2026-10-14T05:29:08.026+00:00 batch_end batch=A_031 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:08.026+00:00 batch_start batch=A_032 trials=10 load_k=0
+[harness] 2026-10-14T05:29:13.701+00:00 batch_end batch=A_032 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:13.703+00:00 batch_start batch=A_033 trials=10 load_k=0
+[harness] 2026-10-14T05:29:19.317+00:00 batch_end batch=A_033 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:19.319+00:00 batch_start batch=A_034 trials=10 load_k=0
+[harness] 2026-10-14T05:29:24.510+00:00 batch_end batch=A_034 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:24.512+00:00 batch_start batch=A_035 trials=10 load_k=0
+[harness] 2026-10-14T05:29:29.710+00:00 batch_end batch=A_035 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:29.712+00:00 batch_start batch=A_036 trials=10 load_k=0
+[harness] 2026-10-14T05:29:35.150+00:00 batch_end batch=A_036 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:35.152+00:00 batch_start batch=A_037 trials=10 load_k=0
+[harness] 2026-10-14T05:29:40.652+00:00 batch_end batch=A_037 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:40.653+00:00 batch_start batch=A_038 trials=10 load_k=0
+[harness] 2026-10-14T05:29:46.226+00:00 batch_end batch=A_038 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:46.227+00:00 batch_start batch=A_039 trials=10 load_k=0
+[harness] 2026-10-14T05:29:51.801+00:00 batch_end batch=A_039 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:51.801+00:00 batch_start batch=A_040 trials=10 load_k=0
+[harness] 2026-10-14T05:29:58.649+00:00 batch_end batch=A_040 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:29:58.651+00:00 batch_start batch=A_041 trials=10 load_k=0
+[harness] 2026-10-14T05:30:05.374+00:00 batch_end batch=A_041 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:30:05.376+00:00 batch_start batch=A_042 trials=10 load_k=0
+[harness] 2026-10-14T05:30:11.975+00:00 batch_end batch=A_042 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:30:11.975+00:00 batch_start batch=A_043 trials=10 load_k=0
+[harness] 2026-10-14T05:30:18.092+00:00 batch_end batch=A_043 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:30:18.092+00:00 batch_start batch=A_044 trials=10 load_k=0
+[harness] 2026-10-14T05:30:23.996+00:00 batch_end batch=A_044 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:30:23.996+00:00 batch_start batch=A_045 trials=10 load_k=0
+[harness] 2026-10-14T05:30:30.828+00:00 batch_end batch=A_045 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:30:30.830+00:00 batch_start batch=A_046 trials=10 load_k=0
+[harness] 2026-10-14T05:30:38.783+00:00 batch_end batch=A_046 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:30:38.783+00:00 batch_start batch=A_047 trials=10 load_k=0
+[harness] 2026-10-14T05:30:48.200+00:00 batch_end batch=A_047 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:30:48.202+00:00 batch_start batch=A_048 trials=10 load_k=0
+[harness] 2026-10-14T05:30:55.025+00:00 batch_end batch=A_048 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:30:55.026+00:00 batch_start batch=A_049 trials=10 load_k=0
+[harness] 2026-10-14T05:31:02.816+00:00 batch_end batch=A_049 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:31:02.818+00:00 batch_start batch=A_050 trials=10 load_k=0
+[harness] 2026-10-14T05:31:13.344+00:00 batch_end batch=A_050 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:31:13.346+00:00 batch_start batch=A_051 trials=10 load_k=0
+[harness] 2026-10-14T05:31:24.108+00:00 batch_end batch=A_051 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:31:24.110+00:00 batch_start batch=A_052 trials=10 load_k=0
+[harness] 2026-10-14T05:31:34.769+00:00 batch_end batch=A_052 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:31:34.769+00:00 batch_start batch=A_053 trials=10 load_k=0
+[harness] 2026-10-14T05:31:42.365+00:00 batch_end batch=A_053 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:31:42.367+00:00 batch_start batch=A_054 trials=10 load_k=0
+[harness] 2026-10-14T05:31:48.471+00:00 batch_end batch=A_054 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:31:48.471+00:00 batch_start batch=A_055 trials=10 load_k=0
+[harness] 2026-10-14T05:31:54.186+00:00 batch_end batch=A_055 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:31:54.186+00:00 batch_start batch=A_056 trials=10 load_k=0
+[harness] 2026-10-14T05:31:59.778+00:00 batch_end batch=A_056 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:31:59.778+00:00 batch_start batch=A_057 trials=10 load_k=0
+[harness] 2026-10-14T05:32:05.398+00:00 batch_end batch=A_057 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:05.398+00:00 batch_start batch=A_058 trials=10 load_k=0
+[harness] 2026-10-14T05:32:11.398+00:00 batch_end batch=A_058 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:11.398+00:00 batch_start batch=A_059 trials=10 load_k=0
+[harness] 2026-10-14T05:32:18.265+00:00 batch_end batch=A_059 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:18.265+00:00 batch_start batch=A_060 trials=10 load_k=0
+[harness] 2026-10-14T05:32:23.770+00:00 batch_end batch=A_060 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:23.770+00:00 batch_start batch=A_061 trials=10 load_k=0
+[harness] 2026-10-14T05:32:29.460+00:00 batch_end batch=A_061 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:29.460+00:00 batch_start batch=A_062 trials=10 load_k=0
+[harness] 2026-10-14T05:32:37.378+00:00 batch_end batch=A_062 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:37.379+00:00 batch_start batch=A_063 trials=10 load_k=0
+[harness] 2026-10-14T05:32:43.447+00:00 batch_end batch=A_063 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:43.447+00:00 batch_start batch=A_064 trials=10 load_k=0
+[harness] 2026-10-14T05:32:49.497+00:00 batch_end batch=A_064 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:49.497+00:00 batch_start batch=A_065 trials=10 load_k=0
+[harness] 2026-10-14T05:32:55.474+00:00 batch_end batch=A_065 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:32:55.474+00:00 batch_start batch=A_066 trials=10 load_k=0
+[harness] 2026-10-14T05:33:01.360+00:00 batch_end batch=A_066 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:01.360+00:00 batch_start batch=A_067 trials=10 load_k=0
+[harness] 2026-10-14T05:33:07.259+00:00 batch_end batch=A_067 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:07.259+00:00 batch_start batch=A_068 trials=10 load_k=0
+[harness] 2026-10-14T05:33:13.239+00:00 batch_end batch=A_068 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:13.239+00:00 batch_start batch=A_069 trials=10 load_k=0
+[harness] 2026-10-14T05:33:19.240+00:00 batch_end batch=A_069 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:19.240+00:00 batch_start batch=A_070 trials=10 load_k=0
+[harness] 2026-10-14T05:33:24.961+00:00 batch_end batch=A_070 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:24.961+00:00 batch_start batch=A_071 trials=10 load_k=0
+[harness] 2026-10-14T05:33:30.761+00:00 batch_end batch=A_071 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:30.761+00:00 batch_start batch=A_072 trials=10 load_k=0
+[harness] 2026-10-14T05:33:36.555+00:00 batch_end batch=A_072 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:36.555+00:00 batch_start batch=A_073 trials=10 load_k=0
+[harness] 2026-10-14T05:33:42.466+00:00 batch_end batch=A_073 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:42.467+00:00 batch_start batch=A_074 trials=10 load_k=0
+[harness] 2026-10-14T05:33:48.132+00:00 batch_end batch=A_074 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:48.132+00:00 batch_start batch=A_075 trials=10 load_k=0
+[harness] 2026-10-14T05:33:53.893+00:00 batch_end batch=A_075 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:53.893+00:00 batch_start batch=A_076 trials=10 load_k=0
+[harness] 2026-10-14T05:33:59.693+00:00 batch_end batch=A_076 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:33:59.693+00:00 batch_start batch=A_077 trials=10 load_k=0
+[harness] 2026-10-14T05:34:05.454+00:00 batch_end batch=A_077 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:05.455+00:00 batch_start batch=A_078 trials=10 load_k=0
+[harness] 2026-10-14T05:34:11.000+00:00 batch_end batch=A_078 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:11.000+00:00 batch_start batch=A_079 trials=10 load_k=0
+[harness] 2026-10-14T05:34:16.681+00:00 batch_end batch=A_079 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:16.681+00:00 batch_start batch=A_080 trials=10 load_k=0
+[harness] 2026-10-14T05:34:22.432+00:00 batch_end batch=A_080 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:22.432+00:00 batch_start batch=A_081 trials=10 load_k=0
+[harness] 2026-10-14T05:34:28.235+00:00 batch_end batch=A_081 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:28.235+00:00 batch_start batch=A_082 trials=10 load_k=0
+[harness] 2026-10-14T05:34:34.173+00:00 batch_end batch=A_082 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:34.173+00:00 batch_start batch=A_083 trials=10 load_k=0
+[harness] 2026-10-14T05:34:40.201+00:00 batch_end batch=A_083 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:40.201+00:00 batch_start batch=A_084 trials=10 load_k=0
+[harness] 2026-10-14T05:34:48.234+00:00 batch_end batch=A_084 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:48.234+00:00 batch_start batch=A_085 trials=10 load_k=0
+[harness] 2026-10-14T05:34:56.212+00:00 batch_end batch=A_085 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:34:56.212+00:00 batch_start batch=A_086 trials=10 load_k=0
+[harness] 2026-10-14T05:35:02.337+00:00 batch_end batch=A_086 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:02.337+00:00 batch_start batch=A_087 trials=10 load_k=0
+[harness] 2026-10-14T05:35:08.381+00:00 batch_end batch=A_087 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:08.381+00:00 batch_start batch=A_088 trials=10 load_k=0
+[harness] 2026-10-14T05:35:14.232+00:00 batch_end batch=A_088 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:14.232+00:00 batch_start batch=A_089 trials=10 load_k=0
+[harness] 2026-10-14T05:35:19.913+00:00 batch_end batch=A_089 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:19.913+00:00 batch_start batch=A_090 trials=10 load_k=0
+[harness] 2026-10-14T05:35:25.641+00:00 batch_end batch=A_090 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:25.641+00:00 batch_start batch=A_091 trials=10 load_k=0
+[harness] 2026-10-14T05:35:31.410+00:00 batch_end batch=A_091 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:31.412+00:00 batch_start batch=A_092 trials=10 load_k=0
+[harness] 2026-10-14T05:35:39.885+00:00 batch_end batch=A_092 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:39.887+00:00 batch_start batch=A_093 trials=10 load_k=0
+[harness] 2026-10-14T05:35:45.548+00:00 batch_end batch=A_093 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:45.548+00:00 batch_start batch=A_094 trials=10 load_k=0
+[harness] 2026-10-14T05:35:51.188+00:00 batch_end batch=A_094 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:51.190+00:00 batch_start batch=A_095 trials=10 load_k=0
+[harness] 2026-10-14T05:35:56.985+00:00 batch_end batch=A_095 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:35:56.985+00:00 batch_start batch=A_096 trials=10 load_k=0
+[harness] 2026-10-14T05:36:02.694+00:00 batch_end batch=A_096 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:02.694+00:00 batch_start batch=A_097 trials=10 load_k=0
+[harness] 2026-10-14T05:36:08.405+00:00 batch_end batch=A_097 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:08.405+00:00 batch_start batch=A_098 trials=10 load_k=0
+[harness] 2026-10-14T05:36:14.004+00:00 batch_end batch=A_098 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:14.004+00:00 batch_start batch=A_099 trials=10 load_k=0
+[harness] 2026-10-14T05:36:19.791+00:00 batch_end batch=A_099 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:19.791+00:00 batch_start batch=A_100 trials=10 load_k=0
+[harness] 2026-10-14T05:36:25.555+00:00 batch_end batch=A_100 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:25.555+00:00 batch_start batch=A_101 trials=10 load_k=0
+[harness] 2026-10-14T05:36:31.110+00:00 batch_end batch=A_101 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:31.110+00:00 batch_start batch=A_102 trials=10 load_k=0
+[harness] 2026-10-14T05:36:36.565+00:00 batch_end batch=A_102 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:36.565+00:00 batch_start batch=A_103 trials=10 load_k=0
+[harness] 2026-10-14T05:36:42.307+00:00 batch_end batch=A_103 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:42.307+00:00 batch_start batch=A_104 trials=10 load_k=0
+[harness] 2026-10-14T05:36:48.796+00:00 batch_end batch=A_104 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:48.796+00:00 batch_start batch=A_105 trials=10 load_k=0
+[harness] 2026-10-14T05:36:54.556+00:00 batch_end batch=A_105 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:36:54.556+00:00 batch_start batch=A_106 trials=10 load_k=0
+[harness] 2026-10-14T05:37:00.343+00:00 batch_end batch=A_106 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:00.343+00:00 batch_start batch=A_107 trials=10 load_k=0
+[harness] 2026-10-14T05:37:05.969+00:00 batch_end batch=A_107 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:05.971+00:00 batch_start batch=A_108 trials=10 load_k=0
+[harness] 2026-10-14T05:37:11.710+00:00 batch_end batch=A_108 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:11.710+00:00 batch_start batch=A_109 trials=10 load_k=0
+[harness] 2026-10-14T05:37:17.105+00:00 batch_end batch=A_109 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:17.107+00:00 batch_start batch=A_110 trials=10 load_k=0
+[harness] 2026-10-14T05:37:22.733+00:00 batch_end batch=A_110 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:22.733+00:00 batch_start batch=A_111 trials=10 load_k=0
+[harness] 2026-10-14T05:37:29.214+00:00 batch_end batch=A_111 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:29.214+00:00 batch_start batch=A_112 trials=10 load_k=0
+[harness] 2026-10-14T05:37:35.153+00:00 batch_end batch=A_112 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:35.155+00:00 batch_start batch=A_113 trials=10 load_k=0
+[harness] 2026-10-14T05:37:41.076+00:00 batch_end batch=A_113 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:41.076+00:00 batch_start batch=A_114 trials=10 load_k=0
+[harness] 2026-10-14T05:37:46.929+00:00 batch_end batch=A_114 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:46.931+00:00 batch_start batch=A_115 trials=10 load_k=0
+[harness] 2026-10-14T05:37:52.532+00:00 batch_end batch=A_115 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:52.532+00:00 batch_start batch=A_116 trials=10 load_k=0
+[harness] 2026-10-14T05:37:59.188+00:00 batch_end batch=A_116 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:37:59.188+00:00 batch_start batch=A_117 trials=10 load_k=0
+[harness] 2026-10-14T05:38:05.098+00:00 batch_end batch=A_117 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:05.100+00:00 batch_start batch=A_118 trials=10 load_k=0
+[harness] 2026-10-14T05:38:11.489+00:00 batch_end batch=A_118 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:11.489+00:00 batch_start batch=A_119 trials=10 load_k=0
+[harness] 2026-10-14T05:38:17.391+00:00 batch_end batch=A_119 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:17.391+00:00 batch_start batch=A_120 trials=10 load_k=0
+[harness] 2026-10-14T05:38:23.444+00:00 batch_end batch=A_120 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:23.444+00:00 batch_start batch=A_121 trials=10 load_k=0
+[harness] 2026-10-14T05:38:30.306+00:00 batch_end batch=A_121 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:30.306+00:00 batch_start batch=A_122 trials=10 load_k=0
+[harness] 2026-10-14T05:38:36.097+00:00 batch_end batch=A_122 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:36.097+00:00 batch_start batch=A_123 trials=10 load_k=0
+[harness] 2026-10-14T05:38:41.628+00:00 batch_end batch=A_123 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:41.628+00:00 batch_start batch=A_124 trials=10 load_k=0
+[harness] 2026-10-14T05:38:47.079+00:00 batch_end batch=A_124 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:47.081+00:00 batch_start batch=A_125 trials=10 load_k=0
+[harness] 2026-10-14T05:38:52.416+00:00 batch_end batch=A_125 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:52.417+00:00 batch_start batch=A_126 trials=10 load_k=0
+[harness] 2026-10-14T05:38:57.847+00:00 batch_end batch=A_126 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:38:57.847+00:00 batch_start batch=A_127 trials=10 load_k=0
+[harness] 2026-10-14T05:39:03.225+00:00 batch_end batch=A_127 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:03.225+00:00 batch_start batch=A_128 trials=10 load_k=0
+[harness] 2026-10-14T05:39:08.718+00:00 batch_end batch=A_128 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:08.718+00:00 batch_start batch=A_129 trials=10 load_k=0
+[harness] 2026-10-14T05:39:14.253+00:00 batch_end batch=A_129 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:14.253+00:00 batch_start batch=A_130 trials=10 load_k=0
+[harness] 2026-10-14T05:39:22.296+00:00 batch_end batch=A_130 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:22.296+00:00 batch_start batch=A_131 trials=10 load_k=0
+[harness] 2026-10-14T05:39:29.739+00:00 batch_end batch=A_131 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:29.740+00:00 batch_start batch=A_132 trials=10 load_k=0
+[harness] 2026-10-14T05:39:37.768+00:00 batch_end batch=A_132 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:37.768+00:00 batch_start batch=A_133 trials=10 load_k=0
+[harness] 2026-10-14T05:39:46.541+00:00 batch_end batch=A_133 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:46.541+00:00 batch_start batch=A_134 trials=10 load_k=0
+[harness] 2026-10-14T05:39:53.476+00:00 batch_end batch=A_134 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:53.476+00:00 batch_start batch=A_135 trials=10 load_k=0
+[harness] 2026-10-14T05:39:59.609+00:00 batch_end batch=A_135 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:39:59.609+00:00 batch_start batch=A_136 trials=10 load_k=0
+[harness] 2026-10-14T05:40:05.684+00:00 batch_end batch=A_136 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:40:05.684+00:00 batch_start batch=A_137 trials=10 load_k=0
+[harness] 2026-10-14T05:40:14.981+00:00 batch_end batch=A_137 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:40:14.981+00:00 batch_start batch=A_138 trials=10 load_k=0
+[harness] 2026-10-14T05:40:22.914+00:00 batch_end batch=A_138 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:40:22.916+00:00 batch_start batch=A_139 trials=10 load_k=0
+[harness] 2026-10-14T05:40:31.382+00:00 batch_end batch=A_139 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:40:31.382+00:00 batch_start batch=A_140 trials=10 load_k=0
+[harness] 2026-10-14T05:40:40.188+00:00 batch_end batch=A_140 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:40:40.188+00:00 batch_start batch=A_141 trials=10 load_k=0
+[harness] 2026-10-14T05:40:46.031+00:00 batch_end batch=A_141 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:40:46.033+00:00 batch_start batch=A_142 trials=10 load_k=0
+[harness] 2026-10-14T05:40:52.520+00:00 batch_end batch=A_142 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:40:52.520+00:00 batch_start batch=A_143 trials=10 load_k=0
+[harness] 2026-10-14T05:41:00.335+00:00 batch_end batch=A_143 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:41:00.335+00:00 batch_start batch=A_144 trials=10 load_k=0
+[harness] 2026-10-14T05:41:09.747+00:00 batch_end batch=A_144 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:41:09.747+00:00 batch_start batch=A_145 trials=10 load_k=0
+[harness] 2026-10-14T05:41:17.508+00:00 batch_end batch=A_145 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:41:17.508+00:00 batch_start batch=A_146 trials=10 load_k=0
+[harness] 2026-10-14T05:41:26.069+00:00 batch_end batch=A_146 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:41:26.069+00:00 batch_start batch=A_147 trials=10 load_k=0
+[harness] 2026-10-14T05:41:33.353+00:00 batch_end batch=A_147 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:41:33.353+00:00 batch_start batch=A_148 trials=10 load_k=0
+[harness] 2026-10-14T05:41:38.708+00:00 batch_end batch=A_148 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:41:38.708+00:00 batch_start batch=A_149 trials=10 load_k=0
+[harness] 2026-10-14T05:41:43.890+00:00 batch_end batch=A_149 mismatches={'i5': 0, 'i4_rec': 0, 'i4_cl100': 0, 'i4_cl101': 0, 'base': 0}
+[harness] 2026-10-14T05:41:47.618+00:00 end 

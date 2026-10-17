@@ -1,0 +1,191 @@
+{
+  "v_fixed": 0.5,
+  "comparison": [
+    {
+      "y0": -0.15,
+      "physical_min_feasible_front_gap0": 0.3306884765625,
+      "controller_observed_failure_upto": 0.9,
+      "controller_margin_over_physical": 0.5693115234375
+    },
+    {
+      "y0": -0.14,
+      "physical_min_feasible_front_gap0": 0.32623291015625,
+      "controller_observed_failure_upto": 0.85,
+      "controller_margin_over_physical": 0.52376708984375
+    },
+    {
+      "y0": -0.13,
+      "physical_min_feasible_front_gap0": 0.3209228515625,
+      "controller_observed_failure_upto": 0.85,
+      "controller_margin_over_physical": 0.5290771484375
+    },
+    {
+      "y0": -0.12,
+      "physical_min_feasible_front_gap0": 0.3165283203125,
+      "controller_observed_failure_upto": 0.8,
+      "controller_margin_over_physical": 0.48347167968750004
+    },
+    {
+      "y0": -0.11,
+      "physical_min_feasible_front_gap0": 0.31195068359375,
+      "controller_observed_failure_upto": 0.8,
+      "controller_margin_over_physical": 0.48804931640625004
+    },
+    {
+      "y0": -0.1,
+      "physical_min_feasible_front_gap0": 0.306884765625,
+      "controller_observed_failure_upto": 0.8,
+      "controller_margin_over_physical": 0.49311523437500004
+    },
+    {
+      "y0": -0.09,
+      "physical_min_feasible_front_gap0": 0.2994384765625,
+      "controller_observed_failure_upto": 0.75,
+      "controller_margin_over_physical": 0.4505615234375
+    },
+    {
+      "y0": -0.08,
+      "physical_min_feasible_front_gap0": 0.2945556640625,
+      "controller_observed_failure_upto": 0.75,
+      "controller_margin_over_physical": 0.4554443359375
+    },
+    {
+      "y0": -0.07,
+      "physical_min_feasible_front_gap0": 0.288330078125,
+      "controller_observed_failure_upto": 0.7,
+      "controller_margin_over_physical": 0.41166992187499996
+    },
+    {
+      "y0": -0.06,
+      "physical_min_feasible_front_gap0": 0.28131103515625,
+      "controller_observed_failure_upto": 0.7,
+      "controller_margin_over_physical": 0.41868896484374996
+    },
+    {
+      "y0": -0.05,
+      "physical_min_feasible_front_gap0": 0.2757568359375,
+      "controller_observed_failure_upto": 0.65,
+      "controller_margin_over_physical": 0.3742431640625
+    },
+    {
+      "y0": -0.04,
+      "physical_min_feasible_front_gap0": 0.26904296875,
+      "controller_observed_failure_upto": 0.65,
+      "controller_margin_over_physical": 0.38095703125
+    },
+    {
+      "y0": -0.03,
+      "physical_min_feasible_front_gap0": 0.26141357421875,
+      "controller_observed_failure_upto": 0.6,
+      "controller_margin_over_physical": 0.33858642578125
+    },
+    {
+      "y0": -0.02,
+      "physical_min_feasible_front_gap0": 0.2537841796875,
+      "controller_observed_failure_upto": 0.6,
+      "controller_margin_over_physical": 0.3462158203125
+    },
+    {
+      "y0": -0.01,
+      "physical_min_feasible_front_gap0": 0.24365234375,
+      "controller_observed_failure_upto": 0.55,
+      "controller_margin_over_physical": 0.30634765625000004
+    },
+    {
+      "y0": 0.0,
+      "physical_min_feasible_front_gap0": 0.2362060546875,
+      "controller_observed_failure_upto": 0.5,
+      "controller_margin_over_physical": 0.2637939453125
+    },
+    {
+      "y0": 0.01,
+      "physical_min_feasible_front_gap0": 0.2266845703125,
+      "controller_observed_failure_upto": 0.5,
+      "controller_margin_over_physical": 0.2733154296875
+    },
+    {
+      "y0": 0.02,
+      "physical_min_feasible_front_gap0": 0.21826171875,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.03,
+      "physical_min_feasible_front_gap0": 0.2091064453125,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.04,
+      "physical_min_feasible_front_gap0": 0.197265625,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.05,
+      "physical_min_feasible_front_gap0": 0.18609619140625,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.06,
+      "physical_min_feasible_front_gap0": 0.1751708984375,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.07,
+      "physical_min_feasible_front_gap0": 0.161865234375,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.08,
+      "physical_min_feasible_front_gap0": 0.14764404296875,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.09,
+      "physical_min_feasible_front_gap0": 0.1358642578125,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.1,
+      "physical_min_feasible_front_gap0": 0.12103271484375,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.11,
+      "physical_min_feasible_front_gap0": 0.0997314453125,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.12,
+      "physical_min_feasible_front_gap0": 0.08282470703125,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.13,
+      "physical_min_feasible_front_gap0": 0.0662841796875,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.14,
+      "physical_min_feasible_front_gap0": 0.0435791015625,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    },
+    {
+      "y0": 0.15,
+      "physical_min_feasible_front_gap0": 0.01446533203125,
+      "controller_observed_failure_upto": null,
+      "controller_margin_over_physical": null
+    }
+  ]
+}

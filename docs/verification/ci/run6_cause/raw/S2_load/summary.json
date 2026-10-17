@@ -1,0 +1,3276 @@
+{
+ "exp_dir": "raw/S2_load",
+ "arms": {
+  "L16": {
+   "n_trials": 1000,
+   "load_k": [
+    16
+   ],
+   "probe": [
+    true
+   ],
+   "cond": [
+    "orig"
+   ],
+   "targets": {
+    "i5": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "374d25637b10be03"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 32.9958,
+     "max_run_time_ms": 32.994800000000005,
+     "mismatches_noviol": 0,
+     "n_noviol": 974,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 1000
+      },
+      "1": {
+       "8": 1000
+      },
+      "2": {
+       "8": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_rec": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "56233495f795981a"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 35.7093,
+     "max_run_time_ms": 35.65579999999999,
+     "mismatches_noviol": 0,
+     "n_noviol": 974,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 1000
+      },
+      "1": {
+       "4": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_cl100": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "697bf3580cb6cc5b"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 32.7314,
+     "max_run_time_ms": 32.7301,
+     "mismatches_noviol": 0,
+     "n_noviol": 974,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 1000
+      },
+      "1": {
+       "4": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_cl101": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "5b83f8b97903eaf5"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 35.3986,
+     "max_run_time_ms": 35.3638,
+     "mismatches_noviol": 0,
+     "n_noviol": 974,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 1000
+      },
+      "1": {
+       "8": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "base": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "534cd169893e3090"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 39.9647,
+     "max_run_time_ms": 32.6048,
+     "mismatches_noviol": 0,
+     "n_noviol": 974,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "1": 1000
+      },
+      "1": {
+       "1": 1000
+      },
+      "2": {
+       "1": 1000
+      }
+     },
+     "first_diffs": []
+    }
+   },
+   "cpu": {
+    "trials_with_cpu": 1000,
+    "other_gt_threshold": 26,
+    "violation_ide_only": 0,
+    "violation_even_excl_ide": 26,
+    "threshold": 10.0,
+    "violation_after_own_pid_reclass": 0,
+    "violation_top_processes_mean_pct": [
+     [
+      "python",
+      10.63838461538462
+     ],
+     [
+      "chrome",
+      0.5258461538461539
+     ],
+     [
+      "ASDSvc",
+      0.21961538461538457
+     ],
+     [
+      "Code",
+      0.2016153846153847
+     ],
+     [
+      "ASDUp",
+      0.128
+     ],
+     [
+      "svchost",
+      0.11784615384615385
+     ],
+     [
+      "sppsvc",
+      0.1053846153846154
+     ],
+     [
+      "System",
+      0.07730769230769231
+     ]
+    ],
+    "mean": {
+     "total_pct": 99.99982996361311,
+     "exp_pct": 5.430765999010953,
+     "load_pct": 80.63380431216787,
+     "other_pct": 2.6721121599576025,
+     "ide_pct": 1.097728346649513,
+     "other_excl_ide_pct": 1.5744792589703542,
+     "other_adj_pct": 2.300306835008756
+    },
+    "max_other": 14.261000000000001
+   }
+  },
+  "L32": {
+   "n_trials": 1000,
+   "load_k": [
+    32
+   ],
+   "probe": [
+    true
+   ],
+   "cond": [
+    "orig"
+   ],
+   "targets": {
+    "i5": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "374d25637b10be03"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 36.8877,
+     "max_run_time_ms": 31.6115,
+     "mismatches_noviol": 0,
+     "n_noviol": 954,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 1000
+      },
+      "1": {
+       "8": 1000
+      },
+      "2": {
+       "8": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_rec": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "56233495f795981a"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 52.6106,
+     "max_run_time_ms": 33.081599999999995,
+     "mismatches_noviol": 0,
+     "n_noviol": 954,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 1000
+      },
+      "1": {
+       "4": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_cl100": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "697bf3580cb6cc5b"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 43.4405,
+     "max_run_time_ms": 32.803700000000006,
+     "mismatches_noviol": 0,
+     "n_noviol": 954,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 1000
+      },
+      "1": {
+       "4": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_cl101": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "5b83f8b97903eaf5"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 31.2661,
+     "max_run_time_ms": 33.4936,
+     "mismatches_noviol": 0,
+     "n_noviol": 954,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 1000
+      },
+      "1": {
+       "8": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "base": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "534cd169893e3090"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 30.9646,
+     "max_run_time_ms": 30.1136,
+     "mismatches_noviol": 0,
+     "n_noviol": 954,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "1": 1000
+      },
+      "1": {
+       "1": 1000
+      },
+      "2": {
+       "1": 1000
+      }
+     },
+     "first_diffs": []
+    }
+   },
+   "cpu": {
+    "trials_with_cpu": 999,
+    "other_gt_threshold": 46,
+    "violation_ide_only": 0,
+    "violation_even_excl_ide": 46,
+    "threshold": 10.0,
+    "violation_after_own_pid_reclass": 19,
+    "violation_top_processes_mean_pct": [
+     [
+      "python",
+      25.496112258399297
+     ],
+     [
+      "Code",
+      0.3308403950853622
+     ],
+     [
+      "svchost",
+      0.12836208842541286
+     ],
+     [
+      "ASDSvc",
+      0.09989331203691872
+     ],
+     [
+      "claude",
+      0.08327060775576914
+     ],
+     [
+      "ASDUp",
+      0.07500127988440072
+     ],
+     [
+      "WmiPrvSE",
+      0.03147826086956522
+     ],
+     [
+      "MSPCManagerCore",
+      0.030169899354476302
+     ]
+    ],
+    "mean": {
+     "total_pct": 99.9997071104291,
+     "exp_pct": 5.714231559643815,
+     "load_pct": 83.05965513787896,
+     "other_pct": 3.807198405003678,
+     "ide_pct": 0.7285594307911485,
+     "other_excl_ide_pct": 3.078606625819704,
+     "other_adj_pct": 2.6065914752806507
+    },
+    "max_other": 98.973
+   }
+  },
+  "L8": {
+   "n_trials": 1000,
+   "load_k": [
+    8
+   ],
+   "probe": [
+    true
+   ],
+   "cond": [
+    "orig"
+   ],
+   "targets": {
+    "i5": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "374d25637b10be03"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 43.3639,
+     "max_run_time_ms": 35.877900000000004,
+     "mismatches_noviol": 0,
+     "n_noviol": 992,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 1000
+      },
+      "1": {
+       "8": 1000
+      },
+      "2": {
+       "8": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_rec": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "56233495f795981a"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 32.7302,
+     "max_run_time_ms": 30.7461,
+     "mismatches_noviol": 0,
+     "n_noviol": 992,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 1000
+      },
+      "1": {
+       "4": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_cl100": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "697bf3580cb6cc5b"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 42.4059,
+     "max_run_time_ms": 29.3128,
+     "mismatches_noviol": 0,
+     "n_noviol": 992,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 1000
+      },
+      "1": {
+       "4": 1000
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_cl101": {
+     "n": 1000,
+     "mismatch": 1,
+     "test_failed": 1,
+     "rate": 0.001,
+     "ci95": [
+      2.5317487491294045e-05,
+      0.005558924279826698
+     ],
+     "upper95_if_zero": null,
+     "deviate_from_modal": 1,
+     "distinct_signatures": 2,
+     "signature_set": [
+      "05eeb61ec26695be",
+      "5b83f8b97903eaf5"
+     ],
+     "trials_with_tl_fp": 1,
+     "tl_fp_solves": 1,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 999,
+      "mismatch=True,tl_fp_in_trial=True": 1
+     },
+     "first_diff_pairs": 1,
+     "first_diff_with_tl_fp": 1,
+     "first_diff_inputs_equal": 1,
+     "max_wall_ms": 52.91,
+     "max_run_time_ms": 52.863600000000005,
+     "mismatches_noviol": 0,
+     "n_noviol": 992,
+     "mismatch_other_adj_pct": [
+      2.55
+     ],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 1000
+      },
+      "1": {
+       "8": 1000
+      }
+     },
+     "first_diffs": [
+      {
+       "batch": "L8_092",
+       "trial": 4,
+       "pair": [
+        0,
+        1
+       ],
+       "first_delta_row": 83,
+       "max_abs_delta_diff_deg": 3.9916417547525285e-05,
+       "first_solve_diff": 54,
+       "first_solve_row": 83,
+       "in_equal": true,
+       "in_parts_diff": [],
+       "tl_fp": [
+        false,
+        true
+       ],
+       "window_a": [
+        [
+         51,
+         "solved",
+         25,
+         0.137,
+         false
+        ],
+        [
+         52,
+         "solved",
+         25,
+         0.137,
+         false
+        ],
+        [
+         53,
+         "solved",
+         25,
+         0.139,
+         false
+        ],
+        [
+         54,
+         "solved",
+         25,
+         0.139,
+         false
+        ],
+        [
+         55,
+         "solved",
+         25,
+         0.146,
+         false
+        ],
+        [
+         56,
+         "solved",
+         25,
+         0.138,
+         false
+        ],
+        [
+         57,
+         "solved",
+         25,
+         0.137,
+         false
+        ]
+       ],
+       "window_b": [
+        [
+         51,
+         "solved",
+         25,
+         0.149,
+         false
+        ],
+        [
+         52,
+         "solved",
+         25,
+         0.136,
+         false
+        ],
+        [
+         53,
+         "solved",
+         25,
+         0.136,
+         false
+        ],
+        [
+         54,
+         "solved",
+         23,
+         52.864,
+         true
+        ],
+        [
+         55,
+         "solved",
+         25,
+         0.142,
+         false
+        ],
+        [
+         56,
+         "solved",
+         25,
+         0.138,
+         false
+        ],
+        [
+         57,
+         "solved",
+         25,
+         0.14,
+         false
+        ]
+       ],
+       "other_cpu": 12.165
+      }
+     ]
+    },
+    "base": {
+     "n": 1000,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.003682083896865671
+     ],
+     "upper95_if_zero": 0.0029912495450953314,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "534cd169893e3090"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 1000
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 29.559,
+     "max_run_time_ms": 29.536,
+     "mismatches_noviol": 0,
+     "n_noviol": 992,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "1": 1000
+      },
+      "1": {
+       "1": 1000
+      },
+      "2": {
+       "1": 1000
+      }
+     },
+     "first_diffs": []
+    }
+   },
+   "cpu": {
+    "trials_with_cpu": 1000,
+    "other_gt_threshold": 8,
+    "violation_ide_only": 0,
+    "violation_even_excl_ide": 8,
+    "threshold": 10.0,
+    "violation_after_own_pid_reclass": 0,
+    "violation_top_processes_mean_pct": [
+     [
+      "python",
+      9.476108903120602
+     ],
+     [
+      "Code",
+      0.5708714694227648
+     ],
+     [
+      "AupASD",
+      0.46661027033001756
+     ],
+     [
+      "autoup",
+      0.282015311789021
+     ],
+     [
+      "svchost",
+      0.116375
+     ],
+     [
+      "ASDSvc",
+      0.041076495840098225
+     ]
+    ],
+    "mean": {
+     "total_pct": 99.9993183088763,
+     "exp_pct": 6.022683533399821,
+     "load_pct": 81.64990168130554,
+     "other_pct": 3.262549674429556,
+     "ide_pct": 1.5673445465890286,
+     "other_excl_ide_pct": 1.6952269348947118,
+     "other_adj_pct": 3.1303275633588563
+    },
+    "max_other": 12.165000000000001
+   }
+  }
+ },
+ "comparisons": [
+  {
+   "a": "L16",
+   "b": "L32",
+   "target": "i5",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L32",
+   "target": "i4_rec",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L32",
+   "target": "i4_cl100",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L32",
+   "target": "i4_cl101",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L32",
+   "target": "base",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L8",
+   "target": "i5",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L8",
+   "target": "i4_rec",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L8",
+   "target": "i4_cl100",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L8",
+   "target": "i4_cl101",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     1,
+     999
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L16",
+   "b": "L8",
+   "target": "base",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L32",
+   "b": "L8",
+   "target": "i5",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L32",
+   "b": "L8",
+   "target": "i4_rec",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L32",
+   "b": "L8",
+   "target": "i4_cl100",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L32",
+   "b": "L8",
+   "target": "i4_cl101",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     1,
+     999
+    ]
+   ],
+   "fisher_p": 1.0
+  },
+  {
+   "a": "L32",
+   "b": "L8",
+   "target": "base",
+   "table": [
+    [
+     0,
+     1000
+    ],
+    [
+     0,
+     1000
+    ]
+   ],
+   "fisher_p": 1.0
+  }
+ ],
+ "signature_across_arms": {
+  "i5": {
+   "per_arm": {
+    "L16": [
+     "374d25637b10be03"
+    ],
+    "L32": [
+     "374d25637b10be03"
+    ],
+    "L8": [
+     "374d25637b10be03"
+    ]
+   },
+   "identical_single": true
+  },
+  "i4_rec": {
+   "per_arm": {
+    "L16": [
+     "56233495f795981a"
+    ],
+    "L32": [
+     "56233495f795981a"
+    ],
+    "L8": [
+     "56233495f795981a"
+    ]
+   },
+   "identical_single": true
+  },
+  "i4_cl100": {
+   "per_arm": {
+    "L16": [
+     "697bf3580cb6cc5b"
+    ],
+    "L32": [
+     "697bf3580cb6cc5b"
+    ],
+    "L8": [
+     "697bf3580cb6cc5b"
+    ]
+   },
+   "identical_single": true
+  },
+  "i4_cl101": {
+   "per_arm": {
+    "L16": [
+     "5b83f8b97903eaf5"
+    ],
+    "L32": [
+     "5b83f8b97903eaf5"
+    ],
+    "L8": [
+     "05eeb61ec26695be",
+     "5b83f8b97903eaf5"
+    ]
+   },
+   "identical_single": false
+  },
+  "base": {
+   "per_arm": {
+    "L16": [
+     "534cd169893e3090"
+    ],
+    "L32": [
+     "534cd169893e3090"
+    ],
+    "L8": [
+     "534cd169893e3090"
+    ]
+   },
+   "identical_single": true
+  }
+ },
+ "events": [
+  {
+   "time": "2026-10-14T10:25:07.033+09:00",
+   "event": "start",
+   "exp": "S2_load"
+  },
+  {
+   "time": "2026-10-14T10:25:12.137+09:00",
+   "event": "schedule",
+   "total_batches": 300,
+   "already_done": 0
+  },
+  {
+   "time": "2026-10-14T10:25:12.167+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    15152,
+    2504,
+    13384,
+    6872,
+    3064,
+    6700,
+    11776,
+    16520
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:26:39.432+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T10:26:39.487+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    4172,
+    18156,
+    13772,
+    6588,
+    4288,
+    5080,
+    2016,
+    14192,
+    7124,
+    9828,
+    14788,
+    12080,
+    9032,
+    18192,
+    10700,
+    11732
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:28:22.459+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T10:28:22.590+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    1724,
+    2360,
+    6476,
+    18276,
+    7876,
+    6924,
+    8792,
+    16232,
+    13208,
+    4968,
+    5208,
+    9164,
+    2460,
+    17632,
+    14016,
+    15340,
+    14028,
+    14812,
+    9600,
+    11688,
+    15056,
+    15716,
+    17500,
+    17936,
+    14560,
+    11532,
+    13668,
+    16352,
+    4932,
+    11424,
+    9172,
+    17124
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:30:25.683+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T10:30:25.719+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    2900,
+    8616,
+    11272,
+    15884,
+    17872,
+    14732,
+    17624,
+    9260
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:31:58.202+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T10:31:58.278+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    6368,
+    16576,
+    16988,
+    17852,
+    15836,
+    11824,
+    11464,
+    6260,
+    17692,
+    15852,
+    17264,
+    2316,
+    18372,
+    3100,
+    6920,
+    1496
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:33:37.883+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T10:33:37.992+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    13484,
+    11688,
+    15952,
+    15556,
+    8240,
+    7924,
+    8912,
+    15720,
+    8776,
+    13388,
+    17800,
+    9704,
+    4988,
+    12800,
+    4792,
+    11988,
+    14756,
+    10328,
+    17484,
+    11648,
+    6948,
+    14292,
+    4868,
+    3636,
+    11788,
+    15936,
+    14132,
+    4288,
+    10008,
+    8124,
+    14392,
+    1996
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:35:41.790+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T10:35:41.823+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    8944,
+    2324,
+    13944,
+    6700,
+    1516,
+    15632,
+    7952,
+    14348
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:37:09.495+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T10:37:09.571+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    4644,
+    17212,
+    17968,
+    15420,
+    18072,
+    17516,
+    14444,
+    2500,
+    11956,
+    17568,
+    14968,
+    17936,
+    15728,
+    2652,
+    12308,
+    8724
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:38:58.131+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T10:38:58.242+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    17496,
+    13436,
+    17928,
+    1176,
+    16540,
+    10456,
+    2928,
+    6056,
+    7060,
+    10584,
+    6780,
+    10520,
+    5552,
+    2080,
+    6312,
+    11732,
+    7584,
+    1708,
+    13960,
+    8588,
+    3696,
+    17712,
+    14552,
+    11736,
+    3784,
+    3276,
+    5908,
+    8656,
+    18408,
+    11568,
+    12584,
+    18392
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:40:57.863+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T10:40:57.896+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    7056,
+    13452,
+    5336,
+    8900,
+    9556,
+    8752,
+    12596,
+    5324
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:42:22.395+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T10:42:22.454+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    15060,
+    10440,
+    13180,
+    5908,
+    12552,
+    12584,
+    10720,
+    3432,
+    11832,
+    14796,
+    12156,
+    5596,
+    11972,
+    14596,
+    6748,
+    7060
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:44:06.257+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T10:44:06.449+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    11392,
+    3064,
+    15584,
+    16328,
+    14608,
+    14300,
+    8200,
+    1804,
+    11884,
+    10180,
+    3696,
+    13884,
+    14004,
+    4908,
+    17024,
+    18228,
+    8324,
+    15244,
+    17580,
+    9940,
+    13256,
+    4212,
+    17128,
+    14344,
+    15680,
+    1948,
+    6960,
+    4956,
+    3144,
+    9664,
+    17108,
+    8280
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:46:01.564+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T10:46:01.598+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    4844,
+    15756,
+    6552,
+    13264,
+    15788,
+    14876,
+    13660,
+    8540
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:47:30.061+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T10:47:30.122+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    9160,
+    17520,
+    11736,
+    4748,
+    14644,
+    11724,
+    4516,
+    13668,
+    10408,
+    9336,
+    1656,
+    5968,
+    11648,
+    9200,
+    13104,
+    6700
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:49:03.340+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T10:49:03.489+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    8056,
+    7684,
+    12144,
+    12580,
+    15088,
+    2476,
+    532,
+    18392,
+    10936,
+    7124,
+    10452,
+    13408,
+    17116,
+    3496,
+    15936,
+    3248,
+    7544,
+    7260,
+    1072,
+    2364,
+    2976,
+    11240,
+    6016,
+    13208,
+    9232,
+    9816,
+    3084,
+    17420,
+    13504,
+    2892,
+    2972,
+    14340
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:50:53.636+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T10:50:53.673+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    1420,
+    11988,
+    16944,
+    7024,
+    8744,
+    11160,
+    14392,
+    13244
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:52:21.109+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T10:52:21.166+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    9016,
+    9656,
+    13264,
+    10556,
+    9920,
+    14244,
+    16932,
+    9872,
+    18084,
+    14228,
+    6460,
+    7108,
+    11596,
+    2360,
+    13196,
+    8656
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:54:03.131+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T10:54:03.293+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    11128,
+    14732,
+    468,
+    10464,
+    7180,
+    12496,
+    7380,
+    12768,
+    7520,
+    12636,
+    3688,
+    16872,
+    12452,
+    3676,
+    7596,
+    7996,
+    18152,
+    10500,
+    2136,
+    12596,
+    11424,
+    8532,
+    13208,
+    11272,
+    10456,
+    7776,
+    532,
+    10164,
+    6036,
+    5516,
+    16364,
+    4016
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:56:23.855+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T10:56:23.887+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    7052,
+    10472,
+    5336,
+    11448,
+    8004,
+    9468,
+    3152,
+    6040
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:57:54.574+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T10:57:54.658+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    2900,
+    6960,
+    4956,
+    17692,
+    9416,
+    9440,
+    2192,
+    5924,
+    12652,
+    7456,
+    5552,
+    7584,
+    17484,
+    16124,
+    17128,
+    6192
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T10:59:40.256+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T10:59:40.366+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    5324,
+    5732,
+    11464,
+    12740,
+    2080,
+    13392,
+    18036,
+    17464,
+    14800,
+    9852,
+    11904,
+    5996,
+    15884,
+    14708,
+    6768,
+    1504,
+    15768,
+    6616,
+    2828,
+    15400,
+    10788,
+    16608,
+    3168,
+    18080,
+    992,
+    17380,
+    11408,
+    12752,
+    1636,
+    7208,
+    5600,
+    8468
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:01:47.587+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:01:47.632+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    4808,
+    10816,
+    13044,
+    6512,
+    8356,
+    18220,
+    9052,
+    6696
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:03:23.435+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:03:23.508+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    12012,
+    11036,
+    10392,
+    11868,
+    4908,
+    17600,
+    17072,
+    16984,
+    8708,
+    12896,
+    11392,
+    17476,
+    14988,
+    9940,
+    2316,
+    18052
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:05:06.406+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:05:06.508+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    3268,
+    15924,
+    15476,
+    4516,
+    16140,
+    17792,
+    13404,
+    7660,
+    1156,
+    12256,
+    12908,
+    2852,
+    14936,
+    13608,
+    14028,
+    7956,
+    13916,
+    9516,
+    8772,
+    3248,
+    16812,
+    17548,
+    8228,
+    14544,
+    18316,
+    18076,
+    11308,
+    7280,
+    9960,
+    11880,
+    14852,
+    18212
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:07:10.230+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:07:10.273+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    14472,
+    9576,
+    1656,
+    11592,
+    6676,
+    9148,
+    10976,
+    2204
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:08:42.574+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:08:42.633+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    15024,
+    16616,
+    8020,
+    17748,
+    15768,
+    11160,
+    5604,
+    15372,
+    16704,
+    12372,
+    15224,
+    7124,
+    15028,
+    2596,
+    12304,
+    1800
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:10:26.839+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:10:26.982+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    18220,
+    7924,
+    14044,
+    2136,
+    2268,
+    5716,
+    9100,
+    11360,
+    13244,
+    1452,
+    16932,
+    16052,
+    13388,
+    14332,
+    11272,
+    2400,
+    4932,
+    15844,
+    18192,
+    1684,
+    2080,
+    4792,
+    3276,
+    13452,
+    17112,
+    14352,
+    17672,
+    16224,
+    3596,
+    18332,
+    11192,
+    5908
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:12:19.091+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:12:19.126+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    7380,
+    8252,
+    16192,
+    7420,
+    4296,
+    11988,
+    17224,
+    10264
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:13:55.300+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:13:55.375+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    12920,
+    12908,
+    3040,
+    12400,
+    5312,
+    14696,
+    4928,
+    10904,
+    14112,
+    11832,
+    17568,
+    17680,
+    7004,
+    6876,
+    1492,
+    7656
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:15:30.189+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:15:30.332+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    3200,
+    15676,
+    18316,
+    14272,
+    11592,
+    6884,
+    5028,
+    15700,
+    13696,
+    16364,
+    2596,
+    7060,
+    12032,
+    17368,
+    11916,
+    17764,
+    10280,
+    8692,
+    7088,
+    15864,
+    13856,
+    10304,
+    16000,
+    9256,
+    8488,
+    13768,
+    16960,
+    15920,
+    9440,
+    1044,
+    14832,
+    5720
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:17:19.508+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:17:19.550+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    15964,
+    15216,
+    11688,
+    6332,
+    16996,
+    11420,
+    4908,
+    5896
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:18:49.336+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:18:49.411+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    7996,
+    17224,
+    16192,
+    3944,
+    12796,
+    10344,
+    10800,
+    4916,
+    16536,
+    10024,
+    8528,
+    3096,
+    2156,
+    16220,
+    17532,
+    2460
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:20:34.183+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:20:34.293+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    14460,
+    15836,
+    15224,
+    12912,
+    14880,
+    13088,
+    9616,
+    3784,
+    7328,
+    15076,
+    18144,
+    5552,
+    6544,
+    8236,
+    8860,
+    6588,
+    12652,
+    13468,
+    4840,
+    17580,
+    6160,
+    12552,
+    18424,
+    11192,
+    6312,
+    7956,
+    16400,
+    10056,
+    5396,
+    13972,
+    15892,
+    15900
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:22:36.709+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:22:36.755+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    13080,
+    8248,
+    6744,
+    5980,
+    4736,
+    13200,
+    10476,
+    2076
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:24:16.148+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:24:16.228+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    11364,
+    8056,
+    7684,
+    4792,
+    1580,
+    9516,
+    4956,
+    8936,
+    16224,
+    5092,
+    6460,
+    6780,
+    15844,
+    5968,
+    11036,
+    3812
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:25:59.558+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:25:59.746+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    16340,
+    3764,
+    15112,
+    7672,
+    12584,
+    11904,
+    15004,
+    4992,
+    10012,
+    1552,
+    9420,
+    15752,
+    12784,
+    12504,
+    10652,
+    7440,
+    14072,
+    1996,
+    10576,
+    6844,
+    4784,
+    18276,
+    17564,
+    15536,
+    12904,
+    8280,
+    11612,
+    3104,
+    15348,
+    18080,
+    8296,
+    17548
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:28:06.401+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:28:06.434+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    17912,
+    3384,
+    5068,
+    5196,
+    10276,
+    15400,
+    16932,
+    13356
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:29:41.623+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:29:41.684+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    13240,
+    6948,
+    18184,
+    6696,
+    8532,
+    7212,
+    8848,
+    10480,
+    14684,
+    2364,
+    7588,
+    4996,
+    12972,
+    4320,
+    15164,
+    10976
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:31:27.946+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:31:28.096+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    7104,
+    10944,
+    6544,
+    11840,
+    18424,
+    608,
+    10852,
+    15056,
+    2116,
+    15452,
+    16836,
+    10512,
+    18396,
+    9828,
+    16960,
+    8892,
+    5720,
+    17800,
+    11996,
+    16440,
+    9468,
+    18360,
+    16588,
+    11084,
+    15864,
+    1468,
+    14392,
+    12980,
+    8152,
+    13172,
+    15172,
+    15340
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:33:33.096+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:33:33.128+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    14444,
+    2588,
+    17516,
+    17792,
+    13388,
+    5600,
+    15024,
+    11684
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:35:11.790+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:35:11.851+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    10672,
+    6536,
+    14272,
+    12156,
+    11884,
+    12060,
+    18420,
+    11736,
+    3268,
+    9704,
+    5320,
+    10440,
+    13080,
+    11904,
+    18124,
+    8176
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:37:03.873+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:37:04.292+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    9728,
+    14236,
+    16904,
+    17440,
+    12168,
+    17992,
+    3676,
+    7704,
+    2008,
+    13696,
+    4792,
+    6868,
+    10328,
+    16540,
+    10492,
+    7004,
+    1768,
+    7544,
+    14452,
+    13032,
+    6512,
+    12180,
+    17708,
+    13332,
+    11192,
+    17504,
+    14552,
+    6856,
+    13500,
+    16264,
+    12764,
+    12432
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:39:17.870+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:39:17.915+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    5020,
+    10596,
+    4400,
+    10472,
+    17596,
+    11156,
+    6264,
+    2016
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:40:48.223+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:40:48.287+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    6468,
+    9484,
+    13376,
+    17704,
+    6616,
+    4816,
+    6780,
+    17732,
+    4392,
+    16544,
+    13088,
+    14068,
+    11364,
+    2396,
+    4844,
+    12680
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:42:33.635+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:42:33.786+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    9616,
+    17416,
+    5752,
+    2804,
+    12468,
+    3384,
+    15672,
+    14028,
+    12920,
+    12452,
+    17424,
+    8580,
+    3268,
+    14988,
+    17016,
+    6948,
+    16872,
+    8056,
+    7052,
+    6392,
+    6136,
+    15024,
+    13388,
+    14172,
+    16220,
+    12768,
+    16868,
+    14000,
+    17552,
+    17836,
+    3592,
+    16400
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:44:24.992+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:44:25.026+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    9724,
+    16960,
+    15972,
+    13216,
+    12480,
+    13284,
+    13856,
+    12980
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:45:54.063+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:45:54.126+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    13972,
+    6004,
+    5460,
+    10576,
+    6264,
+    12584,
+    3160,
+    12308,
+    11156,
+    9428,
+    10540,
+    11540,
+    8776,
+    4788,
+    7056,
+    4908
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:47:30.867+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:47:31.059+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    6112,
+    15768,
+    4232,
+    12432,
+    7212,
+    15364,
+    6696,
+    6744,
+    6252,
+    10880,
+    11696,
+    2852,
+    3128,
+    8228,
+    16364,
+    2068,
+    4948,
+    12588,
+    9200,
+    14472,
+    13960,
+    15416,
+    16340,
+    1860,
+    13612,
+    9736,
+    14620,
+    15512,
+    11856,
+    18296,
+    2296,
+    11848
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:49:24.382+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:49:24.415+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    18024,
+    11092,
+    2040,
+    2452,
+    5624,
+    2280,
+    2016,
+    4808
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:50:54.599+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:50:54.680+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    6164,
+    15632,
+    4868,
+    17772,
+    8692,
+    12496,
+    13636,
+    3168,
+    15700,
+    7060,
+    15788,
+    6792,
+    10448,
+    8704,
+    13396,
+    10368
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:52:32.396+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:52:32.507+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    17672,
+    8444,
+    14236,
+    9136,
+    5440,
+    900,
+    9892,
+    13324,
+    13808,
+    14988,
+    14968,
+    15112,
+    10664,
+    11824,
+    7776,
+    10636,
+    6292,
+    12584,
+    6264,
+    17520,
+    8776,
+    10540,
+    18240,
+    8944,
+    10500,
+    17592,
+    2360,
+    10476,
+    6636,
+    7144,
+    11840,
+    15680
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:54:34.643+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T11:54:34.687+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    10204,
+    17760,
+    7416,
+    7656,
+    14176,
+    1636,
+    4980,
+    9352
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:56:08.045+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T11:56:08.122+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    12580,
+    12304,
+    12272,
+    16248,
+    13864,
+    15668,
+    13020,
+    15864,
+    14392,
+    7108,
+    16588,
+    12528,
+    6536,
+    2816,
+    11972,
+    6380
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T11:57:56.526+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T11:57:56.673+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    9960,
+    12928,
+    12204,
+    17100,
+    4548,
+    15476,
+    14684,
+    18116,
+    11740,
+    8296,
+    3056,
+    8588,
+    612,
+    13404,
+    15812,
+    6112,
+    4172,
+    8452,
+    18236,
+    10916,
+    16216,
+    11596,
+    13452,
+    2364,
+    17776,
+    9312,
+    13920,
+    16600,
+    4104,
+    14696,
+    9168,
+    4296
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T12:00:07.645+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T12:00:07.689+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    6252,
+    18076,
+    7832,
+    15488,
+    1496,
+    4996,
+    6124,
+    13284
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T12:01:42.899+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T12:01:42.948+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    10180,
+    16500,
+    17772,
+    12528,
+    17380,
+    10540,
+    10000,
+    9896,
+    8872,
+    4720,
+    2836,
+    9172,
+    4760,
+    12732,
+    10468,
+    1032
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T12:04:19.024+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T12:04:19.164+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    4544,
+    17920,
+    10480,
+    10484,
+    17480,
+    18184,
+    6392,
+    7864,
+    10024,
+    12940,
+    12908,
+    6368,
+    18060,
+    13080,
+    12120,
+    10196,
+    9452,
+    10700,
+    4400,
+    15076,
+    13180,
+    6792,
+    13788,
+    2196,
+    7380,
+    7456,
+    6544,
+    1480,
+    10012,
+    9240,
+    11732,
+    8340
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T12:06:24.026+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T12:06:24.068+09:00",
+   "event": "load_set",
+   "k": 8,
+   "pids": [
+    9724,
+    6908,
+    12428,
+    10028,
+    15412,
+    17016,
+    15804,
+    8936
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T12:07:54.843+09:00",
+   "event": "load_stop",
+   "k": 8
+  },
+  {
+   "time": "2026-10-14T12:07:54.904+09:00",
+   "event": "load_set",
+   "k": 16,
+   "pids": [
+    17160,
+    6492,
+    14168,
+    8720,
+    2892,
+    8452,
+    3592,
+    6152,
+    6896,
+    12212,
+    6924,
+    17844,
+    13192,
+    9968,
+    1028,
+    16500
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T12:09:38.582+09:00",
+   "event": "load_stop",
+   "k": 16
+  },
+  {
+   "time": "2026-10-14T12:09:38.921+09:00",
+   "event": "load_set",
+   "k": 32,
+   "pids": [
+    15484,
+    3000,
+    5388,
+    10332,
+    18404,
+    10500,
+    5020,
+    14176,
+    10304,
+    5980,
+    12856,
+    17684,
+    14936,
+    10008,
+    4068,
+    11560,
+    2816,
+    12460,
+    13436,
+    16440,
+    14260,
+    11356,
+    13884,
+    18188,
+    4524,
+    8616,
+    9828,
+    15400,
+    15288,
+    9200,
+    1032,
+    10180
+   ],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\Users\\SSAFY\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+   "settle_s": 12.0
+  },
+  {
+   "time": "2026-10-14T12:11:48.923+09:00",
+   "event": "load_stop",
+   "k": 32
+  },
+  {
+   "time": "2026-10-14T12:11:54.100+09:00",
+   "event": "end"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+  "onnxruntime_available": true,
+  "onnxruntime_version": "1.29.0",
+  "onnx_version": "1.22.0",
+  "export": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\MPC_LINETRACING\\thesis_v2\\results\\20260918_143759_3층PC108_onnx_benchmark\\policy_student.onnx",
+    "opset_version": 17,
+    "input_shape_used_for_export": [
+      1,
+      9
+    ],
+    "input_names": [
+      "input"
+    ],
+    "output_names": [
+      "output"
+    ],
+    "dynamic_batch_axis": true
+  },
+  "onnxruntime_providers_used": [
+    "CPUExecutionProvider"
+  ],
+  "onnxruntime_intra_op_num_threads": 1,
+  "onnxruntime_inter_op_num_threads": 1,
+  "validation": {
+    "n_samples": 1000,
+    "seed": 7,
+    "max_abs_diff_normalized_output": 5.9604644775390625e-06,
+    "max_abs_diff_delta_deg": 4.38690185546875e-05
+  },
+  "benchmark": {
+    "n_mpc": 3000,
+    "n_student": 6000,
+    "warmup_excluded": 50,
+    "timing_seed": 42,
+    "fixed_threads": 1,
+    "mpc_solve_ms": {
+      "mean": 0.14370732195379401,
+      "p50": 0.13980000221636146,
+      "p95": 0.1762000028975308,
+      "p99": 0.21510600810870514,
+      "max": 0.291000003926456,
+      "min": 0.10689999908208847,
+      "count": 2950
+    },
+    "old_mpc_solve_ms": {
+      "mean": 1.0694449152491623,
+      "p50": 1.043500000378117,
+      "p95": 1.201179999770829,
+      "p99": 1.3262539920106051,
+      "max": 10.849600002984516,
+      "min": 0.9897000127239153,
+      "count": 2950
+    },
+    "torch_infer_only_ms": {
+      "mean": 0.19879159675333885,
+      "p50": 0.19449999672360718,
+      "p95": 0.23716500145383185,
+      "p99": 0.29050200013443833,
+      "max": 0.6432000081986189,
+      "min": 0.18200000340584666,
+      "count": 5950
+    },
+    "torch_incl_normalization_ms": {
+      "mean": 0.22505011767082447,
+      "p50": 0.22089999401941895,
+      "p95": 0.2572650009824429,
+      "p99": 0.31030399797600705,
+      "max": 0.6415000098058954,
+      "min": 0.20680000307038426,
+      "count": 5950
+    },
+    "onnx_infer_only_ms": {
+      "mean": 0.03978764708985442,
+      "p50": 0.0391000066883862,
+      "p95": 0.04245499512762765,
+      "p99": 0.06590199962374758,
+      "max": 0.3665999975055456,
+      "min": 0.0363999861292541,
+      "count": 5950
+    },
+    "onnx_incl_normalization_ms": {
+      "mean": 0.04808596640574832,
+      "p50": 0.04669999179895967,
+      "p95": 0.060954998480156085,
+      "p99": 0.08240000170189887,
+      "max": 0.17470000602770597,
+      "min": 0.044200001866556704,
+      "count": 5950
+    },
+    "speedup_mpc_over_torch_incl_norm": 0.6328655771899744,
+    "speedup_mpc_over_onnx_incl_norm": 2.993576590295585,
+    "speedup_torch_over_onnx_incl_norm": 4.7301934220969155,
+    "speedup_mpc_over_torch_infer_only": 0.7187660903409847,
+    "speedup_mpc_over_onnx_infer_only": 3.575447015406419,
+    "speedup_torch_over_onnx_infer_only": 4.974423617717158,
+    "speedup_old_mpc_over_torch_incl_norm": 4.723857078449647,
+    "speedup_old_mpc_over_onnx_incl_norm": 22.344757679408474
+  }
+}

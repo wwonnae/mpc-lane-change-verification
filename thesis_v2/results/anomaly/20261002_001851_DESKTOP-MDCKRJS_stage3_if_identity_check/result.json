@@ -1,0 +1,7 @@
+{
+  "reference": "thesis_v2\\results\\anomaly\\20261002_001009_DESKTOP-MDCKRJS_it2_train_b",
+  "same_train_windows": true,
+  "n": 1877,
+  "max_abs_diff": 0.0,
+  "identical": true
+}

@@ -1,0 +1,34 @@
+{
+ "exp": "S3",
+ "out_dir": "C:/Users/SSAFY/Desktop/MPC_LINETRACING/docs/verification/ci/run6_cause/raw/S3",
+ "batch_size": 10,
+ "block": 5,
+ "settle_s": 12,
+ "_k_rule": "PLAN.md §3-2: S2_load orig 불일치율 L8 1/1000, L16 0/1000, L32 0/1000 -> 최고 k=8",
+ "arms": [
+  {
+   "name": "orig",
+   "root": "C:/Users/SSAFY/AppData/Local/Temp/run6_cause/copies/orig",
+   "targets": [
+    "i5",
+    "i4",
+    "base"
+   ],
+   "probe": true,
+   "load_k": 8,
+   "trials": 1000
+  },
+  {
+   "name": "A",
+   "root": "C:/Users/SSAFY/AppData/Local/Temp/run6_cause/copies/A",
+   "targets": [
+    "i5",
+    "i4",
+    "base"
+   ],
+   "probe": true,
+   "load_k": 8,
+   "trials": 1000
+  }
+ ]
+}

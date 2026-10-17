@@ -1,0 +1,8 @@
+[PASS] paper seed=0: 일치 (max|diff|=0.000000 rad)
+[PASS] paper seed=1: 일치 (max|diff|=0.000000 rad)
+[PASS] paper seed=2: 일치 (max|diff|=0.000000 rad)
+[PASS] left_obstacle seed=0: 일치 (max|diff|=0.000000 rad)
+[PASS] left_obstacle seed=1: 일치 (max|diff|=0.000000 rad)
+[PASS] left_obstacle seed=2: 일치 (max|diff|=0.000000 rad)
+
+전체 결과: PASS

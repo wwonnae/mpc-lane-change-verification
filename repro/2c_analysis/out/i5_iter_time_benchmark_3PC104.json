@@ -1,0 +1,49 @@
+{
+  "n_solve_calls": 45789,
+  "n_calls_iter_gt_0": 45789,
+  "wall_time_sec": 30.223334300000715,
+  "iter": {
+    "mean": 250.52032147458996,
+    "p50": 25.0,
+    "p95": 475.0,
+    "p99": 5750.0,
+    "max": 20000
+  },
+  "run_time_ms": {
+    "mean": 0.5290284566162179,
+    "p50": 0.0859,
+    "p95": 0.9665599999999999,
+    "p99": 11.24718000000003,
+    "max": 49.2702
+  },
+  "per_iter_time_ms": {
+    "mean": 0.00333168899460413,
+    "p50": 0.0034080000000000004,
+    "p95": 0.003992,
+    "p99": 0.005144000000000001,
+    "max": 0.055136000000000004
+  },
+  "status_counts": {
+    "solved": 45617,
+    "maximum iterations reached": 171,
+    "solved inaccurate": 1
+  },
+  "max_iter_candidates": {
+    "budget_5ms": {
+      "budget_ms": 5,
+      "max_iter_candidate": 972
+    },
+    "budget_10ms": {
+      "budget_ms": 10,
+      "max_iter_candidate": 1944
+    },
+    "budget_20ms": {
+      "budget_ms": 20,
+      "max_iter_candidate": 3888
+    },
+    "budget_30ms": {
+      "budget_ms": 30,
+      "max_iter_candidate": 5832
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+ "scenarios": [
+  "paper",
+  "left_obstacle"
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "n_solves": 351,
+ "max_abs_psi_rad": 0.28148671883718485,
+ "max_abs_delta_rad": 0.436376816443905,
+ "statuses": {
+  "solved": 351
+ },
+ "psi_limit_rad": 1.3962634015954636,
+ "psi_ratio": 0.20160001222945426,
+ "delta_limit_rad": 0.4363323129985824,
+ "delta_ratio": 1.0001019943836311
+}

@@ -1,0 +1,341 @@
+{
+ "exp_dir": "probe-out/run",
+ "arms": {
+  "A": {
+   "n_trials": 500,
+   "load_k": [
+    0
+   ],
+   "probe": [
+    true
+   ],
+   "cond": [
+    "A"
+   ],
+   "targets": {
+    "i5": {
+     "n": 500,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.007350610051907784
+     ],
+     "upper95_if_zero": 0.005973551516349596,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "374d25637b10be03"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 500
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 109.0237,
+     "max_run_time_ms": 112.5876,
+     "mismatches_noviol": 0,
+     "n_noviol": 329,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 500
+      },
+      "1": {
+       "8": 500
+      },
+      "2": {
+       "8": 500
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_rec": {
+     "n": 500,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.007350610051907784
+     ],
+     "upper95_if_zero": 0.005973551516349596,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "56233495f795981a"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 500
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 156.2152,
+     "max_run_time_ms": 155.9082,
+     "mismatches_noviol": 0,
+     "n_noviol": 329,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 500
+      },
+      "1": {
+       "4": 500
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_cl100": {
+     "n": 500,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.007350610051907784
+     ],
+     "upper95_if_zero": 0.005973551516349596,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "697bf3580cb6cc5b"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 500
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 119.6535,
+     "max_run_time_ms": 119.56169999999999,
+     "mismatches_noviol": 0,
+     "n_noviol": 329,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "4": 500
+      },
+      "1": {
+       "4": 500
+      }
+     },
+     "first_diffs": []
+    },
+    "i4_cl101": {
+     "n": 500,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.007350610051907784
+     ],
+     "upper95_if_zero": 0.005973551516349596,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "5b83f8b97903eaf5"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 500
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 238.4983,
+     "max_run_time_ms": 238.4129,
+     "mismatches_noviol": 0,
+     "n_noviol": 329,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "8": 500
+      },
+      "1": {
+       "8": 500
+      }
+     },
+     "first_diffs": []
+    },
+    "base": {
+     "n": 500,
+     "mismatch": 0,
+     "test_failed": 0,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.007350610051907784
+     ],
+     "upper95_if_zero": 0.005973551516349596,
+     "deviate_from_modal": 0,
+     "distinct_signatures": 1,
+     "signature_set": [
+      "534cd169893e3090"
+     ],
+     "trials_with_tl_fp": 0,
+     "tl_fp_solves": 0,
+     "tl_status_solves": 0,
+     "cooccur": {
+      "mismatch=False,tl_fp_in_trial=False": 500
+     },
+     "first_diff_pairs": 0,
+     "first_diff_with_tl_fp": 0,
+     "first_diff_inputs_equal": 0,
+     "max_wall_ms": 404.0004,
+     "max_run_time_ms": 65.9905,
+     "mismatches_noviol": 0,
+     "n_noviol": 329,
+     "mismatch_other_adj_pct": [],
+     "rho_updates_by_episode": {
+      "0": {
+       "1": 500
+      },
+      "1": {
+       "1": 500
+      },
+      "2": {
+       "1": 500
+      }
+     },
+     "first_diffs": []
+    }
+   },
+   "cpu": {
+    "trials_with_cpu": 500,
+    "other_gt_threshold": 171,
+    "violation_ide_only": 0,
+    "violation_even_excl_ide": 171,
+    "threshold": 10.0,
+    "violation_after_own_pid_reclass": 153,
+    "violation_top_processes_mean_pct": [
+     [
+      "svchost",
+      12.127648704851392
+     ],
+     [
+      "CompatTelRunner",
+      6.598051208686697
+     ],
+     [
+      "WindowsTerminal",
+      4.2684916336336824
+     ],
+     [
+      "MsMpEng",
+      1.8656738532727999
+     ],
+     [
+      "System",
+      0.865896891525122
+     ],
+     [
+      "TiWorker",
+      0.6752965276205262
+     ],
+     [
+      "UpdatePlatform.amd64fre",
+      0.26670563707157374
+     ],
+     [
+      "WmiPrvSE",
+      0.1865472013519609
+     ]
+    ],
+    "mean": {
+     "total_pct": 63.60851821142125,
+     "exp_pct": 26.335967252312862,
+     "load_pct": 0.0,
+     "other_pct": 14.414346229262007,
+     "ide_pct": 0.0,
+     "other_excl_ide_pct": 14.414346229262007,
+     "other_adj_pct": 13.669778938563832
+    },
+    "max_other": 71.963
+   }
+  }
+ },
+ "comparisons": [],
+ "signature_across_arms": {
+  "i5": {
+   "per_arm": {
+    "A": [
+     "374d25637b10be03"
+    ]
+   },
+   "identical_single": true
+  },
+  "i4_rec": {
+   "per_arm": {
+    "A": [
+     "56233495f795981a"
+    ]
+   },
+   "identical_single": true
+  },
+  "i4_cl100": {
+   "per_arm": {
+    "A": [
+     "697bf3580cb6cc5b"
+    ]
+   },
+   "identical_single": true
+  },
+  "i4_cl101": {
+   "per_arm": {
+    "A": [
+     "5b83f8b97903eaf5"
+    ]
+   },
+   "identical_single": true
+  },
+  "base": {
+   "per_arm": {
+    "A": [
+     "534cd169893e3090"
+    ]
+   },
+   "identical_single": true
+  }
+ },
+ "events": [
+  {
+   "time": "2026-10-14T04:27:50.401+00:00",
+   "event": "start",
+   "exp": "ci_A_none"
+  },
+  {
+   "time": "2026-10-14T04:27:58.034+00:00",
+   "event": "schedule",
+   "total_batches": 50,
+   "already_done": 0
+  },
+  {
+   "time": "2026-10-14T04:27:58.036+00:00",
+   "event": "load_set",
+   "k": 0,
+   "pids": [],
+   "method": "기본 인터프리터 순수 파이썬 바쁜 루프 x k(SPIN_CODE), 우선순위 Normal",
+   "exe": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64\\python.exe",
+   "settle_s": 0.0
+  },
+  {
+   "time": "2026-10-14T04:37:58.180+00:00",
+   "event": "end"
+  }
+ ]
+}

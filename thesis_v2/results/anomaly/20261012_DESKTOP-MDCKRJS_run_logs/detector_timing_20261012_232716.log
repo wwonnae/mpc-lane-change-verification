@@ -1,0 +1,8 @@
+cooldown 60s ...
+hostname=DESKTOP-MDCKRJS official_host=True meets_official_condition=True git={'commit': 'c560b8f2e3c1d1fac57229223aa4f492e3fc97df', 'dirty': False, 'tag': None}
+[A] steps=59331 wall=10.9s  detector p50/p99/max = 0.0113/0.0388/0.5791 ms  control+detector p99 = 1.2710 ms (2.54% of 50 ms)
+[B1] steps=59331 wall=374.4s  detector p50/p99/max = 6.0368/10.8394/68.3063 ms  control+detector p99 = 11.2895 ms (22.58% of 50 ms)
+[B2] steps=59331 wall=24.5s  detector p50/p99/max = 0.2011/0.5295/2.1802 ms  control+detector p99 = 1.5788 ms (3.16% of 50 ms)
+[HYBRID] steps=59331 wall=376.8s  detector p50/p99/max = 6.1488/10.3679/56.5821 ms  control+detector p99 = 10.7860 ms (21.57% of 50 ms)
+saved: thesis_v2\results\anomaly\20261012_232824_DESKTOP-MDCKRJS_detector_timing
+exit=0 start=2026-10-12 23:27:16 end=2026-10-12 23:41:34 elapsed=00:14:18.8402674

@@ -1,0 +1,148 @@
+{
+  "conditions": {
+    "paper": [
+      85
+    ],
+    "S4_low": [
+      85
+    ],
+    "S4_medium": [
+      85
+    ],
+    "S4_high": [
+      85
+    ],
+    "S5_delay1": [
+      85
+    ],
+    "S5_delay2": [
+      85
+    ],
+    "S6_psi-15": [
+      3,
+      6,
+      25,
+      29,
+      53,
+      58,
+      85,
+      88
+    ],
+    "S6_psi-10": [
+      29,
+      85
+    ],
+    "S6_psi-5": [
+      29,
+      85
+    ],
+    "S6_psi0": [
+      85
+    ],
+    "S6_psi5": [
+      85
+    ],
+    "S6_psi10": [
+      85
+    ],
+    "S6_psi15": [
+      85
+    ],
+    "S7a_length0.10": [
+      85
+    ],
+    "S7a_length0.15": [
+      85
+    ],
+    "S7a_length0.20": [
+      85
+    ],
+    "S7a_length0.30": [
+      85
+    ],
+    "S7a_length0.40": [
+      85
+    ],
+    "S7a_width0.075": [],
+    "S7a_width0.100": [],
+    "S7a_width0.200": [
+      3,
+      25,
+      29,
+      53,
+      58,
+      85,
+      88
+    ],
+    "S7a_width0.300": [],
+    "S7b_reargap0.1": [],
+    "S7b_reargap0.3": [],
+    "S7b_reargap0.5": [],
+    "S7b_reargap1.0": []
+  },
+  "n_conditions": 26,
+  "n_distinct_seeds_failing_somewhere": 8,
+  "distinct_failing_seeds": [
+    3,
+    6,
+    25,
+    29,
+    53,
+    58,
+    85,
+    88
+  ],
+  "per_seed_conditions": {
+    "3": [
+      "S6_psi-15",
+      "S7a_width0.200"
+    ],
+    "6": [
+      "S6_psi-15"
+    ],
+    "25": [
+      "S6_psi-15",
+      "S7a_width0.200"
+    ],
+    "29": [
+      "S6_psi-15",
+      "S6_psi-10",
+      "S6_psi-5",
+      "S7a_width0.200"
+    ],
+    "53": [
+      "S6_psi-15",
+      "S7a_width0.200"
+    ],
+    "58": [
+      "S6_psi-15",
+      "S7a_width0.200"
+    ],
+    "85": [
+      "paper",
+      "S4_low",
+      "S4_medium",
+      "S4_high",
+      "S5_delay1",
+      "S5_delay2",
+      "S6_psi-15",
+      "S6_psi-10",
+      "S6_psi-5",
+      "S6_psi0",
+      "S6_psi5",
+      "S6_psi10",
+      "S6_psi15",
+      "S7a_length0.10",
+      "S7a_length0.15",
+      "S7a_length0.20",
+      "S7a_length0.30",
+      "S7a_length0.40",
+      "S7a_width0.200"
+    ],
+    "88": [
+      "S6_psi-15",
+      "S7a_width0.200"
+    ]
+  },
+  "naive_sum_of_counts": 34
+}

@@ -1,0 +1,956 @@
+{
+ "purpose": "CI run #6 비결정 실패 — 전체 suite 반복",
+ "started": "2026-10-13T19:47:38",
+ "host": "DESKTOP-MDCKRJS",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "python": "3.9.12",
+ "cpu_count": 22,
+ "git": "4c0c503797fd5ee6f4f1bf8bf152186a149fd581",
+ "dirty": false,
+ "variant": "none",
+ "results": [
+  {
+   "load": "cpu_strong",
+   "pc_state_start": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "n_trials": 30,
+   "n_target_failed": 4,
+   "n_any_failed": 16,
+   "seconds": 2209.8,
+   "runs": [
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 53.73s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_normal_residuals_are_zero_without_noise[False]": {
+        "hits": 1,
+        "solve_calls": 118,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 58.21s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_left_clear_stuck_overrides_lc_without_stopping": {
+        "hits": 1,
+        "solve_calls": 42,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 60.64s (0:01:00)",
+     "failed": [
+      "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode"
+     ],
+     "target_failed": false,
+     "diff": [
+      [
+       "106",
+       "-3.6986460892168593",
+       "-3.952018384175463"
+      ]
+     ],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 3,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[lidar_dropout-trk-extra1]": {
+        "hits": 1,
+        "solve_calls": 99,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "hits": 1,
+        "solve_calls": 3068,
+        "outcome": "passed"
+       },
+       "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode": {
+        "hits": 1,
+        "solve_calls": 238,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 52.71s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 71.02s (0:01:11)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[0]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14040,
+      "n_hits": 4,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[0]": {
+        "hits": 1,
+        "solve_calls": 236,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[lidar_dropout-trk-extra1]": {
+        "hits": 1,
+        "solve_calls": 99,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[steer_delay-psi-extra3]": {
+        "hits": 1,
+        "solve_calls": 57,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_timing.py::test_timed_loop_matches_observational_runner[far-3000]": {
+        "hits": 1,
+        "solve_calls": 234,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[0]",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "3 failed, 337 passed, 6 warnings in 59.02s",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-1]",
+      "thesis_v2/anomaly/tests/test_hybrid.py::test_hybrid_recorder_does_not_change_control"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 4,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_b.py::test_step_features_shape_and_onehot": {
+        "hits": 1,
+        "solve_calls": 119,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "hits": 1,
+        "solve_calls": 3068,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-1]": {
+        "hits": 1,
+        "solve_calls": 236,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_hybrid.py::test_hybrid_recorder_does_not_change_control": {
+        "hits": 1,
+        "solve_calls": 240,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]",
+        "time_limit_hits": 0
+       },
+       {
+        "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-1]",
+        "time_limit_hits": 1
+       },
+       {
+        "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_hybrid_recorder_does_not_change_control",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 55.43s",
+     "failed": [
+      "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs"
+     ],
+     "target_failed": true,
+     "diff": [
+      [
+       "91",
+       "-18.59484058363793",
+       "-18.594840583248835"
+      ]
+     ],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 2,
+      "tests_with_hits": {
+       "thesis_v2/tests/test_i4_student.py::test_req_stu_02r_captured_delta_prev_is_previous_final": {
+        "hits": 1,
+        "solve_calls": 119,
+        "outcome": "passed"
+       },
+       "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs": {
+        "hits": 1,
+        "solve_calls": 354,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 65.65s (0:01:05)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 54.03s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_normal_noise_residuals_are_standardized": {
+        "hits": 1,
+        "solve_calls": 356,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "3 failed, 337 passed, 6 warnings in 72.09s (0:01:12)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[0]",
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+      "thesis_v2/anomaly/tests/test_hybrid.py::test_hybrid_recorder_does_not_change_control"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14036,
+      "n_hits": 8,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[0]": {
+        "hits": 1,
+        "solve_calls": 236,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]": {
+        "hits": 1,
+        "solve_calls": 216,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[ir_stuck-ey-extra2]": {
+        "hits": 1,
+        "solve_calls": 113,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "hits": 2,
+        "solve_calls": 3068,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_hybrid.py::test_detector_hybrid_online_equals_offline": {
+        "hits": 1,
+        "solve_calls": 43,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_hybrid.py::test_hybrid_recorder_does_not_change_control": {
+        "hits": 2,
+        "solve_calls": 240,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[0]",
+        "time_limit_hits": 1
+       },
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+        "time_limit_hits": 1
+       },
+       {
+        "test": "thesis_v2/anomaly/tests/test_hybrid.py::test_hybrid_recorder_does_not_change_control",
+        "time_limit_hits": 2
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 63.90s (0:01:03)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3201-True]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14036,
+      "n_hits": 9,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3201-True]": {
+        "hits": 1,
+        "solve_calls": 89,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_ir_stuck_overrides_ey_without_stopping": {
+        "hits": 1,
+        "solve_calls": 141,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4]": {
+        "hits": 1,
+        "solve_calls": 151,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[steer_delay-psi-extra3]": {
+        "hits": 2,
+        "solve_calls": 54,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_normal_noise_residuals_are_standardized": {
+        "hits": 3,
+        "solve_calls": 356,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_b.py::test_features_reflect_dropout_flag": {
+        "hits": 1,
+        "solve_calls": 107,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3201-True]",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 49.66s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 59.97s",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[1]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14037,
+      "n_hits": 3,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[1]": {
+        "hits": 2,
+        "solve_calls": 236,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_b.py::test_features_reflect_dropout_flag": {
+        "hits": 1,
+        "solve_calls": 106,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[1]",
+        "time_limit_hits": 2
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "2 failed, 338 passed, 6 warnings in 57.65s",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-2]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 2,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]": {
+        "hits": 1,
+        "solve_calls": 216,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-2]": {
+        "hits": 1,
+        "solve_calls": 216,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+        "time_limit_hits": 1
+       },
+       {
+        "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-2]",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 65.25s (0:01:05)",
+     "failed": [
+      "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc[100]"
+     ],
+     "target_failed": false,
+     "diff": [
+      [
+       "122",
+       "0.16550897989381586",
+       "0.16550691921974767"
+      ]
+     ],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc[100]": {
+        "hits": 1,
+        "solve_calls": 238,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc[100]",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 65.04s (0:01:05)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[lidar_dropout-trk-extra1]": {
+        "hits": 1,
+        "solve_calls": 99,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+        "time_limit_hits": 0
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 67.08s (0:01:07)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 3,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[ir_stuck-ey-extra2]": {
+        "hits": 1,
+        "solve_calls": 113,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[lidar_dropout-trk-extra1]": {
+        "hits": 1,
+        "solve_calls": 99,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_tracker_keeps_obstacles_per_lane": {
+        "hits": 1,
+        "solve_calls": 44,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 65.52s (0:01:05)",
+     "failed": [
+      "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs"
+     ],
+     "target_failed": true,
+     "diff": [
+      [
+       "11",
+       "8.28112661460753",
+       "8.28112555298103"
+      ]
+     ],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 5,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_right_clear_stuck_raises_rc": {
+        "hits": 1,
+        "solve_calls": 110,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_b.py::test_online_equals_offline[if]": {
+        "hits": 1,
+        "solve_calls": 279,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_b.py::test_step_features_shape_and_onehot": {
+        "hits": 1,
+        "solve_calls": 119,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "hits": 1,
+        "solve_calls": 3068,
+        "outcome": "passed"
+       },
+       "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs": {
+        "hits": 1,
+        "solve_calls": 354,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "2 failed, 338 passed, 6 warnings in 54.86s",
+     "failed": [
+      "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]"
+     ],
+     "target_failed": true,
+     "diff": [
+      [
+       "14",
+       "25.0",
+       "24.99898336360489"
+      ]
+     ],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 3,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_closed_loop.py::test_p0_matches_observational_runner[True-3200-True]": {
+        "hits": 1,
+        "solve_calls": 90,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]": {
+        "hits": 1,
+        "solve_calls": 216,
+        "outcome": "failed"
+       },
+       "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs": {
+        "hits": 1,
+        "solve_calls": 354,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+        "time_limit_hits": 1
+       },
+       {
+        "test": "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 62.71s (0:01:02)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "3 failed, 337 passed, 6 warnings in 66.40s (0:01:06)",
+     "failed": [
+      "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+      "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]"
+     ],
+     "target_failed": true,
+     "diff": [
+      [
+       "47",
+       "-2.600748267264864",
+       "-2.600822583691878"
+      ]
+     ],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 5,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]": {
+        "hits": 1,
+        "solve_calls": 216,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_ir_dropout_masks_ey_but_not_ir_miss": {
+        "hits": 1,
+        "solve_calls": 151,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_normal_noise_residuals_are_standardized": {
+        "hits": 1,
+        "solve_calls": 356,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "hits": 2,
+        "solve_calls": 3068,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+        "time_limit_hits": 1
+       },
+       {
+        "test": "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+        "time_limit_hits": 0
+       },
+       {
+        "test": "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+        "time_limit_hits": 0
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 56.11s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 64.28s (0:01:04)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14035,
+      "n_hits": 8,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[ir_dropout-ir_miss-extra4]": {
+        "hits": 2,
+        "solve_calls": 151,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[steer_delay-psi-extra3]": {
+        "hits": 2,
+        "solve_calls": 53,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_ir_dropout_masks_ey_but_not_ir_miss": {
+        "hits": 2,
+        "solve_calls": 151,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_b.py::test_features_reflect_dropout_flag": {
+        "hits": 1,
+        "solve_calls": 106,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_b.py::test_step_features_shape_and_onehot": {
+        "hits": 1,
+        "solve_calls": 119,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "2 failed, 338 passed, 6 warnings in 63.23s (0:01:03)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-1]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14037,
+      "n_hits": 7,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_closed_loop.py::test_p2_ir_stuck_overrides_ey_without_stopping": {
+        "hits": 1,
+        "solve_calls": 141,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]": {
+        "hits": 1,
+        "solve_calls": 215,
+        "outcome": "failed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_fault_raises_expected_channel[lidar_dropout-trk-extra1]": {
+        "hits": 2,
+        "solve_calls": 99,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_normal_noise_residuals_are_standardized": {
+        "hits": 1,
+        "solve_calls": 356,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_detector_b.py::test_online_equals_offline[ae]": {
+        "hits": 1,
+        "solve_calls": 43,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-1]": {
+        "hits": 1,
+        "solve_calls": 236,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+        "time_limit_hits": 1
+       },
+       {
+        "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-1]",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 60.30s (0:01:00)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 68.89s (0:01:08)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-2]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 2,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_eval_offline.py::test_compute_and_summarize_small": {
+        "hits": 1,
+        "solve_calls": 3068,
+        "outcome": "passed"
+       },
+       "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-2]": {
+        "hits": 1,
+        "solve_calls": 216,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-2]",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 60.29s (0:01:00)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/tests/test_i4_student.py::test_req_stu_02r_captured_delta_prev_is_previous_final": {
+        "hits": 1,
+        "solve_calls": 119,
+        "outcome": "passed"
+       }
+      },
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 60.65s (0:01:00)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]"
+     ],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 1,
+      "tests_with_hits": {
+       "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]": {
+        "hits": 1,
+        "solve_calls": 216,
+        "outcome": "failed"
+       }
+      },
+      "failed_tests": [
+       {
+        "test": "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+        "time_limit_hits": 1
+       }
+      ]
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 57.01s",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 62.65s (0:01:02)",
+     "failed": [],
+     "target_failed": false,
+     "diff": [],
+     "time_limit": {
+      "n_solve_calls": 14038,
+      "n_hits": 0,
+      "tests_with_hits": {},
+      "failed_tests": []
+     }
+    }
+   ]
+  }
+ ],
+ "finished": "2026-10-13T20:24:37"
+}

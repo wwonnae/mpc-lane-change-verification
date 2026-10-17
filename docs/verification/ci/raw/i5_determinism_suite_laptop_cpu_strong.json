@@ -1,0 +1,313 @@
+{
+ "purpose": "CI run #6 비결정 실패 — 전체 suite 반복",
+ "started": "2026-10-13T19:11:55",
+ "host": "DESKTOP-MDCKRJS",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "python": "3.9.12",
+ "cpu_count": 22,
+ "git": "4c0c503797fd5ee6f4f1bf8bf152186a149fd581",
+ "dirty": false,
+ "results": [
+  {
+   "load": "cpu_strong",
+   "pc_state_start": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "pc_state_end": {
+    "cpu_load_percent": 100,
+    "battery_status": 2
+   },
+   "n_trials": 30,
+   "n_target_failed": 1,
+   "n_any_failed": 15,
+   "seconds": 2051.5,
+   "runs": [
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 64.25s (0:01:04)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-2]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 56.67s",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 52.33s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 58.95s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 59.17s",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 57.92s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 68.71s (0:01:08)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 69.17s (0:01:09)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-0]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 56.69s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 68.46s (0:01:08)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-1]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 65.35s (0:01:05)",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 64.25s (0:01:04)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[0]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 63.73s (0:01:03)",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 62.27s (0:01:02)",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "8 failed, 332 passed, 6 warnings in 71.65s (0:01:11)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_b.py::test_detector_b_does_not_change_control",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-0]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[none-paper-generate_scenario-1]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-1]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-2]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-0]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-1]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-2]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 59.01s",
+     "failed": [
+      "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc[100]"
+     ],
+     "target_failed": false,
+     "diff": [
+      [
+       "29",
+       "0.0020321573246226063",
+       "0.0020321573360494337"
+      ]
+     ]
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 59.56s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "3 failed, 337 passed, 6 warnings in 66.32s (0:01:06)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_b.py::test_detector_b_does_not_change_control",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-2]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 63.00s (0:01:02)",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 59.63s",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[inactive_fault-paper-generate_scenario-2]"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "2 failed, 338 passed, 6 warnings in 68.92s (0:01:08)",
+     "failed": [
+      "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc[100]",
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[1]"
+     ],
+     "target_failed": false,
+     "diff": [
+      [
+       "139",
+       "0.10280740326644375",
+       "0.10280507504144094"
+      ]
+     ]
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 51.67s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "1 failed, 339 passed, 6 warnings in 59.46s",
+     "failed": [
+      "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc[101]"
+     ],
+     "target_failed": false,
+     "diff": [
+      [
+       "35",
+       "-0.002331551140305711",
+       "-0.002331626141429367"
+      ]
+     ]
+    },
+    {
+     "returncode": 1,
+     "tail": "7 failed, 333 passed, 6 warnings in 70.42s (0:01:10)",
+     "failed": [
+      "thesis_v2/tests/test_i4_student.py::test_i4_recorder_does_not_change_episode",
+      "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc[100]",
+      "thesis_v2/tests/test_i4_student.py::test_i4_closed_loop_matches_improved_runner_with_mpc[101]",
+      "thesis_v2/tests/test_improved_i5.py::test_i5_golden_determinism_three_runs",
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[2]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-0]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-2]"
+     ],
+     "target_failed": true,
+     "diff": [
+      [
+       "23",
+       "9.999999658164654",
+       "9.999999696875237"
+      ]
+     ]
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 60.36s (0:01:00)",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 59.05s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 61.21s (0:01:01)",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 1,
+     "tail": "4 failed, 336 passed, 6 warnings in 65.03s (0:01:05)",
+     "failed": [
+      "thesis_v2/anomaly/tests/test_detector_a.py::test_detector_a_with_gyro_does_not_change_control[0]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_to_improved_v2[detector-paper-generate_scenario-1]",
+      "thesis_v2/anomaly/tests/test_golden_equivalence.py::test_equivalent_with_s4_low_noise[1]",
+      "thesis_v2/anomaly/tests/test_hybrid.py::test_hybrid_recorder_does_not_change_control"
+     ],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 59.20s",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    },
+    {
+     "returncode": 0,
+     "tail": "340 passed, 6 warnings in 65.37s (0:01:05)",
+     "failed": [],
+     "target_failed": false,
+     "diff": []
+    }
+   ]
+  }
+ ],
+ "finished": "2026-10-13T19:46:14"
+}

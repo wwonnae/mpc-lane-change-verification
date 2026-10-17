@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "purpose": "dev 점검(보고서 수치 아님) — 시뮬레이션 주입 고장",
+    "detector": "B1",
+    "h": 0.6314774954541714,
+    "sigma_gyro_deg": 1.0,
+    "thresholds_dir": "thesis_v2/results/anomaly/20261001_235004_DESKTOP-MDCKRJS_stage3_threshold_b",
+    "seeds": [
+      3200,
+      3299
+    ],
+    "grace_steps": 10,
+    "model_dir": "thesis_v2\\results\\anomaly\\20261001_234706_DESKTOP-MDCKRJS_stage3_train_b"
+  },
+  "summary": {
+    "none": {
+      "n": 100,
+      "outcomes": {
+        "성공": 100
+      },
+      "false_alarm_episodes": {
+        "k": 1,
+        "n": 100,
+        "ci95": [
+          0.0017673865655472645,
+          0.0544875247609346
+        ]
+      }
+    },
+    "none_leftobs": {
+      "n": 100,
+      "outcomes": {
+        "SAFE_STOP": 100
+      },
+      "false_alarm_episodes": {
+        "k": 18,
+        "n": 100,
+        "ci95": [
+          0.11700131654251038,
+          0.26667536024213084
+        ]
+      }
+    },
+    "lidar_freeze": {
+      "n": 100,
+      "outcomes": {
+        "충돌": 100
+      },
+      "fault_started": 100,
+      "detected": 0,
+      "detected_ci95": [
+        0.0,
+        0.03699480747600191
+      ],
+      "delay_median": null,
+      "delay_p90": null,
+      "alarm_before_onset": 0,
+      "first_alarm_channels": {},
+      "failures": 100,
+      "alarm_before_failure": 0
+    },
+    "lidar_spike": {
+      "n": 100,
+      "outcomes": {
+        "성공": 99,
+        "충돌": 1
+      },
+      "fault_started": 100,
+      "detected": 13,
+      "detected_ci95": [
+        0.07757093858414264,
+        0.20980521894809878
+      ],
+      "delay_median": 2,
+      "delay_p90": 7,
+      "alarm_before_onset": 0,
+      "first_alarm_channels": {
+        "": 13
+      },
+      "failures": 1,
+      "alarm_before_failure": 0
+    },
+    "lidar_dropout": {
+      "n": 100,
+      "outcomes": {
+        "성공": 55,
+        "충돌": 30,
+        "이탈": 12,
+        "SAFE_STOP": 3
+      },
+      "fault_started": 100,
+      "detected": 6,
+      "detected_ci95": [
+        0.02778574526665662,
+        0.12476968531222507
+      ],
+      "delay_median": 53,
+      "delay_p90": 56,
+      "alarm_before_onset": 0,
+      "first_alarm_channels": {
+        "": 6
+      },
+      "failures": 42,
+      "alarm_before_failure": 2
+    },
+    "ir_stuck": {
+      "n": 100,
+      "outcomes": {
+        "성공": 74,
+        "이탈": 26
+      },
+      "fault_started": 100,
+      "detected": 5,
+      "detected_ci95": [
+        0.02154336145631356,
+        0.11175196527208817
+      ],
+      "delay_median": 43,
+      "delay_p90": 76,
+      "alarm_before_onset": 0,
+      "first_alarm_channels": {
+        "": 5
+      },
+      "failures": 26,
+      "alarm_before_failure": 1
+    },
+    "ir_dropout": {
+      "n": 100,
+      "outcomes": {
+        "성공": 100
+      },
+      "fault_started": 100,
+      "detected": 4,
+      "detected_ci95": [
+        0.015663050551848016,
+        0.09837217232607373
+      ],
+      "delay_median": 31,
+      "delay_p90": 56,
+      "alarm_before_onset": 0,
+      "first_alarm_channels": {
+        "": 4
+      },
+      "failures": 0,
+      "alarm_before_failure": 0
+    },
+    "right_clear_stuck": {
+      "n": 100,
+      "outcomes": {
+        "성공": 100
+      },
+      "fault_started": 100,
+      "detected": 1,
+      "detected_ci95": [
+        0.0017673865655472645,
+        0.0544875247609346
+      ],
+      "delay_median": 8,
+      "delay_p90": 8,
+      "alarm_before_onset": 1,
+      "first_alarm_channels": {
+        "": 1
+      },
+      "failures": 0,
+      "alarm_before_failure": 0
+    },
+    "steer_delay": {
+      "n": 100,
+      "outcomes": {
+        "성공": 80,
+        "충돌": 10,
+        "이탈": 10
+      },
+      "fault_started": 100,
+      "detected": 55,
+      "detected_ci95": [
+        0.45244427031643447,
+        0.6438562489359654
+      ],
+      "delay_median": 53,
+      "delay_p90": 73,
+      "alarm_before_onset": 0,
+      "first_alarm_channels": {
+        "": 55
+      },
+      "failures": 20,
+      "alarm_before_failure": 13
+    },
+    "steer_stuck": {
+      "n": 100,
+      "outcomes": {
+        "성공": 57,
+        "이탈": 42,
+        "SAFE_STOP": 1
+      },
+      "fault_started": 100,
+      "detected": 34,
+      "detected_ci95": [
+        0.25461379497543,
+        0.43722454341689065
+      ],
+      "delay_median": 20,
+      "delay_p90": 23,
+      "alarm_before_onset": 1,
+      "first_alarm_channels": {
+        "": 34
+      },
+      "failures": 42,
+      "alarm_before_failure": 22
+    },
+    "left_clear_stuck": {
+      "n": 100,
+      "outcomes": {
+        "이탈": 94,
+        "충돌": 6
+      },
+      "fault_started": 100,
+      "detected": 0,
+      "detected_ci95": [
+        0.0,
+        0.03699480747600191
+      ],
+      "delay_median": null,
+      "delay_p90": null,
+      "alarm_before_onset": 0,
+      "first_alarm_channels": {},
+      "failures": 100,
+      "alarm_before_failure": 0
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "purpose": "3단계 탐지기 B 학습(정상 데이터만)",
+  "iteration": 2,
+  "scenarios": [
+    "far",
+    "leftobs"
+  ],
+  "seeds_train": [
+    3300,
+    3379
+  ],
+  "seeds_val": [
+    3380,
+    3399
+  ],
+  "seeds_identity": [
+    3200,
+    3209
+  ],
+  "n_windows": {
+    "train": 22247,
+    "val": 5619,
+    "identity": 1877
+  },
+  "window": 10,
+  "channels": [
+    "fg",
+    "fg_noret",
+    "dfg",
+    "ey",
+    "ey_none",
+    "left_clear",
+    "right_clear",
+    "delta_prev_cmd_deg",
+    "yaw_rate_meas",
+    "v",
+    "fsm_KEEP_L2",
+    "fsm_EVADE_L",
+    "fsm_KEEP_L1",
+    "fsm_RETURN_TO_L2",
+    "fsm_SAFE_STOP"
+  ],
+  "train_windows_sha256": "8f4e12cf202cf334465b27de0f644e8eb3e5c8d1a6fd95ff1ff6ad2098bab784",
+  "sigma_gyro_deg": 1.0,
+  "if_params": {
+    "n_estimators": 200,
+    "max_samples": "auto",
+    "max_features": 1.0,
+    "bootstrap": false,
+    "random_state": 0,
+    "n_jobs": 1
+  },
+  "if_model_sha256": "728942fbb77de06c0db354af859fe3e00fadae2aaa8e12b3397798799b3d9cce",
+  "if_train_seconds": 1.2224538326263428,
+  "ae": {
+    "latent": 8,
+    "lr": 0.001,
+    "batch": 256,
+    "max_epochs": 100,
+    "patience": 10,
+    "seed": 0,
+    "torch_threads": 1,
+    "deterministic": true,
+    "epochs_run": 100,
+    "best_epoch": 98,
+    "best_val_mse": 0.054848183005448865,
+    "train_seconds": 35.29970955848694
+  },
+  "ae_model_sha256": "0cb6a7f9aee2494638519ffaf40dd71fabc7f80dcfcdcce3dfd435ed4e83d1e1",
+  "norm_sha256": "839a576a6396b040b7bda1eb64c9f6a216460e0b307421eea196301a52fe656d"
+}

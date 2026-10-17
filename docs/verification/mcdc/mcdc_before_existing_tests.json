@@ -1,0 +1,627 @@
+{
+ "n_step_calls": 22,
+ "restatement_mismatches": [],
+ "decisions": [
+  {
+   "decision": "D0",
+   "line": "fsm.py:51",
+   "from_state": "ANY",
+   "to_state": "SAFE_STOP",
+   "req": "REQ-FSM-02b, 03a",
+   "n_calls_evaluated": 22,
+   "observed_vectors": [
+    [
+     false,
+     false,
+     false
+    ],
+    [
+     false,
+     true,
+     true
+    ],
+    [
+     true,
+     false,
+     false
+    ],
+    [
+     true,
+     false,
+     true
+    ],
+    [
+     true,
+     true,
+     false
+    ],
+    [
+     true,
+     true,
+     true
+    ]
+   ],
+   "conditions": [
+    {
+     "condition": "cooldown_ok",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_any_state_to_safe_stop_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "SAFE_STOP"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_safe_stop",
+        "vector": [
+         false,
+         true,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      },
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_from_every_state[FSMState.KEEP_L2]",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "SAFE_STOP"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_safe_stop",
+        "vector": [
+         false,
+         true,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    },
+    {
+     "condition": "front_gap < G_SAFE_MIN",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_any_state_to_safe_stop_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "SAFE_STOP"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_negative_not_left_clear",
+        "vector": [
+         true,
+         false,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      },
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_from_every_state[FSMState.KEEP_L2]",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "SAFE_STOP"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_negative_not_left_clear",
+        "vector": [
+         true,
+         false,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    },
+    {
+     "condition": "not left_clear",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_any_state_to_safe_stop_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "SAFE_STOP"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_condition_negative_left_clear_true",
+        "vector": [
+         true,
+         true,
+         false
+        ],
+        "out": "EVADE_L"
+       },
+       "both_reachable_form": false
+      },
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_from_every_state[FSMState.KEEP_L2]",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "SAFE_STOP"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_condition_negative_left_clear_true",
+        "vector": [
+         true,
+         true,
+         false
+        ],
+        "out": "EVADE_L"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "decision": "D1",
+   "line": "fsm.py:55",
+   "from_state": "KEEP_L2",
+   "to_state": "EVADE_L",
+   "req": "REQ-FSM-02a, 03a",
+   "n_calls_evaluated": 6,
+   "observed_vectors": [
+    [
+     false,
+     true,
+     false
+    ],
+    [
+     false,
+     true,
+     true
+    ],
+    [
+     true,
+     true,
+     false
+    ],
+    [
+     true,
+     true,
+     true
+    ]
+   ],
+   "conditions": [
+    {
+     "condition": "cooldown_ok",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "EVADE_L"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l2_to_evade",
+        "vector": [
+         false,
+         true,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      },
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_condition_negative_left_clear_true",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "EVADE_L"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l2_to_evade",
+        "vector": [
+         false,
+         true,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      },
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_initial_fsm_cooldown_pre_expired",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "EVADE_L"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l2_to_evade",
+        "vector": [
+         false,
+         true,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    },
+    {
+     "condition": "front_gap < G_TRIG",
+     "unique_cause_pair_found": false,
+     "pair_found_reachable_form": false,
+     "pairs": []
+    },
+    {
+     "condition": "left_clear",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "EVADE_L"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_negative_not_left_clear",
+        "vector": [
+         true,
+         true,
+         false
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      },
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_safe_stop_condition_negative_left_clear_true",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "EVADE_L"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_negative_not_left_clear",
+        "vector": [
+         true,
+         true,
+         false
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      },
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_initial_fsm_cooldown_pre_expired",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "EVADE_L"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l2_to_evade_l_negative_not_left_clear",
+        "vector": [
+         true,
+         true,
+         false
+        ],
+        "out": "KEEP_L2"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "decision": "D2",
+   "line": "fsm.py:59",
+   "from_state": "EVADE_L",
+   "to_state": "KEEP_L1",
+   "req": "REQ-FSM-02c, 03a",
+   "n_calls_evaluated": 3,
+   "observed_vectors": [
+    [
+     false,
+     true
+    ],
+    [
+     true,
+     false
+    ],
+    [
+     true,
+     true
+    ]
+   ],
+   "conditions": [
+    {
+     "condition": "cooldown_ok",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_evade_l_to_keep_l1_positive",
+        "vector": [
+         true,
+         true
+        ],
+        "out": "KEEP_L1"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_evade_to_keep_l1",
+        "vector": [
+         false,
+         true
+        ],
+        "out": "EVADE_L"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    },
+    {
+     "condition": "|y - W| <= NEAR_L1",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_evade_l_to_keep_l1_positive",
+        "vector": [
+         true,
+         true
+        ],
+        "out": "KEEP_L1"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_evade_l_to_keep_l1_negative_far_from_l1",
+        "vector": [
+         true,
+         false
+        ],
+        "out": "EVADE_L"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "decision": "D3",
+   "line": "fsm.py:64",
+   "from_state": "KEEP_L1",
+   "to_state": "RETURN_TO_L2",
+   "req": "REQ-FSM-02d, 03a",
+   "n_calls_evaluated": 3,
+   "observed_vectors": [
+    [
+     false,
+     true,
+     true
+    ],
+    [
+     true,
+     true,
+     false
+    ],
+    [
+     true,
+     true,
+     true
+    ]
+   ],
+   "conditions": [
+    {
+     "condition": "cooldown_ok",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l1_to_return_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "RETURN_TO_L2"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_keep_l1_to_return",
+        "vector": [
+         false,
+         true,
+         true
+        ],
+        "out": "KEEP_L1"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    },
+    {
+     "condition": "t - state_enter_t > T_KEEP_L1_MIN",
+     "unique_cause_pair_found": false,
+     "pair_found_reachable_form": false,
+     "pairs": []
+    },
+    {
+     "condition": "right_clear",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l1_to_return_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "RETURN_TO_L2"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_keep_l1_to_return_negative_right_not_clear",
+        "vector": [
+         true,
+         true,
+         false
+        ],
+        "out": "KEEP_L1"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "decision": "D4",
+   "line": "fsm.py:68",
+   "from_state": "RETURN_TO_L2",
+   "to_state": "KEEP_L2",
+   "req": "REQ-FSM-02e, 03a",
+   "n_calls_evaluated": 3,
+   "observed_vectors": [
+    [
+     false,
+     true,
+     true
+    ],
+    [
+     true,
+     true,
+     false
+    ],
+    [
+     true,
+     true,
+     true
+    ]
+   ],
+   "conditions": [
+    {
+     "condition": "cooldown_ok",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_return_to_keep_l2_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_cooldown_blocks_return_to_keep_l2",
+        "vector": [
+         false,
+         true,
+         true
+        ],
+        "out": "RETURN_TO_L2"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    },
+    {
+     "condition": "|y| <= NEAR_L2",
+     "unique_cause_pair_found": false,
+     "pair_found_reachable_form": false,
+     "pairs": []
+    },
+    {
+     "condition": "|psi_deg| <= PSI_L2_LIMIT_DEG",
+     "unique_cause_pair_found": true,
+     "pair_found_reachable_form": false,
+     "pairs": [
+      {
+       "true_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_return_to_keep_l2_positive",
+        "vector": [
+         true,
+         true,
+         true
+        ],
+        "out": "KEEP_L2"
+       },
+       "false_case": {
+        "test": "thesis_v2/tests/test_fsm.py::test_return_to_keep_l2_negative_psi_too_large",
+        "vector": [
+         true,
+         true,
+         false
+        ],
+        "out": "RETURN_TO_L2"
+       },
+       "both_reachable_form": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

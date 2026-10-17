@@ -1,0 +1,71 @@
+{
+ "tests": "thesis_v2/tests/test_mutation_gaps_fsm.py",
+ "deselect_k": null,
+ "tests_sha256": "611c6df204e17e7f34fb1564c79934a08df6ffd83e8f7a6906fba5661ca45487",
+ "module": "fsm",
+ "started": "2026-10-13T18:16:01",
+ "git": {
+  "commit": "0b3f1af4f68f99d69d1dbd168e9143663eff4529",
+  "dirty": true
+ },
+ "python": "3.9.12",
+ "criterion3_docstring": {
+  "test_safe_stop_requires_front_gap_strictly_below_g_safe_min": true,
+  "test_keep_l1_return_requires_elapsed_strictly_above_t_keep_l1_min": true,
+  "test_return_to_keep_l2_accepts_y_exactly_near_l2": true,
+  "test_return_to_keep_l2_accepts_psi_exactly_limit": true
+ },
+ "mutants": [
+  {
+   "id": "fsm:014",
+   "line": 51,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.52,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_fsm::test_safe_stop_requires_front_gap_strictly_below_g_safe_min"
+  },
+  {
+   "id": "fsm:038",
+   "line": 64,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.57,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_fsm::test_keep_l1_return_requires_elapsed_strictly_above_t_keep_l1_min"
+  },
+  {
+   "id": "fsm:045",
+   "line": 68,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.56,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_fsm::test_return_to_keep_l2_accepts_y_exactly_near_l2"
+  },
+  {
+   "id": "fsm:047",
+   "line": 68,
+   "operator": "rel",
+   "killed": true,
+   "status": "killed",
+   "seconds": 0.51,
+   "returncode": 1,
+   "first_failure": "thesis_v2.tests.test_mutation_gaps_fsm::test_return_to_keep_l2_accepts_psi_exactly_limit"
+  }
+ ],
+ "criterion1_original": {
+  "status": "pass",
+  "seconds": 0.51
+ },
+ "summary": {
+  "criterion1_pass": true,
+  "criterion3_all": true,
+  "n_targets": 4,
+  "n_killed": 4,
+  "survived": []
+ }
+}
