@@ -513,7 +513,8 @@ def write_changelog():
              "| 위치 | 항목 | 이전 값(R2 단일) | 새 값(범위) |", "|---|---|---|---|"]
     for (loc, item), old, new in CHANGES:
         lines.append(f"| {loc} | {item} | {old} | {new} |")
-    (ROOT / "docs/revision/CSV_CHANGELOG.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    from build_report import gfm_safe_tildes  # GitHub 취소선 방지(범위 ~ → –)
+    (ROOT / "docs/revision/CSV_CHANGELOG.md").write_text(gfm_safe_tildes("\n".join(lines) + "\n"), encoding="utf-8")
 
 
 CHECK_POLICY = " → 처리: 개정판은 새 측정값(개정판_값)으로 교체, 제출본 값의 정의·출처 불명확은 부록 A에 기록"
